@@ -43,7 +43,7 @@
     'images': [
         'static/description/openeducat_placement_banner.jpg',
     ],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

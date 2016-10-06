@@ -71,7 +71,7 @@
     'images': [
         'static/description/openeducat_library_banner.jpg',
     ],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

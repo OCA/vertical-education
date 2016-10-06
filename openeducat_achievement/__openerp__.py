@@ -45,7 +45,7 @@
         'demo/op.achievement.type.csv',
         'demo/op.achievement.csv',
     ],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }

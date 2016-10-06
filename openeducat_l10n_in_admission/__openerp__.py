@@ -41,7 +41,7 @@
     'images': [
         'static/description/indian_openeducat_admission_banner.jpg',
     ],
-    'installable': True,
+    'installable': False,
     'auto_install': False,
     'application': True,
 }
