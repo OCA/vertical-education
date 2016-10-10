@@ -21,7 +21,7 @@
 
 {
     'name': 'OpenEduCat Scholarship',
-    'version': '2.4.0',
+    'version': '9.0.2.4.0',
     'category': 'Openerp Education',
     "sequence": 3,
     'summary': 'Manage Scholarship',
