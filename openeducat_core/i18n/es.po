@@ -35,7 +35,7 @@ msgstr "<b>Tu tablero de profesor está vacio.</b>"
 #. module: openeducat_core
 #: model:ir.actions.act_window,help:openeducat_core.open_board_student
 msgid "<b>Your student dashboard is empty.</b>"
-msgstr "<b>Tu tablero de estudiante está vacio.</b>"
+msgstr "<b>Tu tablero de alumno está vacio.</b>"
 
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.report_student_idcard
@@ -82,7 +82,7 @@ msgid ""
 "                                            in"
 msgstr ""
 "<font color=\"white\">.</font>\n"
-"                                         Es o fue estudiante de esta escuela/universidad\n"
+"                                         Es o fue alumno de esta escuela/universidad\n"
 "                                         Estudiando \n"
 "                                         en"
 
@@ -240,13 +240,13 @@ msgstr "Código de barras"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_batch_tree
 #: model:ir.ui.view,arch_db:openeducat_core.view_subject_registration_search
 msgid "Batch"
-msgstr "Grupo"
+msgstr "Grupo académico"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_batch_view
 #: model:ir.ui.menu,name:openeducat_core.menu_op_batch_sub
 msgid "Batches"
-msgstr "Grupos"
+msgstr "Grupos académicos"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_birth_date
@@ -734,7 +734,7 @@ msgstr "Facultades"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_tree
 #: model:res.groups,name:openeducat_core.group_op_faculty
 msgid "Faculty"
-msgstr "Faculta"
+msgstr "Facultad"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.open_board_faculty
@@ -1031,7 +1031,7 @@ msgstr "Última modificación en"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Last Name"
-msgstr "Last Name"
+msgstr "Apellido"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch_write_uid
