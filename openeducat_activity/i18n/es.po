@@ -56,7 +56,7 @@ msgstr "No se puede migrar, ¡Como los cursos seleccionados no comparten el mism
 #: code:addons/openeducat_activity/wizard/student_migrate_wizard.py:54
 #, python-format
 msgid "Can't migrate, Proceed for new admission"
-msgstr "No se puede migrar, Proceder a una nueva admisión"
+msgstr "No se puede migrar, crear una nueva admisión"
 
 #. module: openeducat_activity
 #: model:ir.ui.view,arch_db:openeducat_activity.student_migrate_form
@@ -99,7 +99,7 @@ msgstr "Nombre a mostrar"
 #. module: openeducat_activity
 #: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_faculty_id
 msgid "Faculty"
-msgstr "Facultad"
+msgstr "Profesor"
 
 #. module: openeducat_activity
 #: model:ir.ui.view,arch_db:openeducat_activity.student_migrate_form
@@ -115,7 +115,7 @@ msgstr "Curso de"
 #: code:addons/openeducat_activity/wizard/student_migrate_wizard.py:44
 #, python-format
 msgid "From Course must not be same                 as To Course!"
-msgstr "no debe ser el mismo                   para el curso!"
+msgstr "No debe ser el mismo                   para el curso!"
 
 #. module: openeducat_activity
 #: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_id
@@ -163,13 +163,13 @@ msgstr "Alumno"
 #. module: openeducat_activity
 #: model:ir.ui.view,arch_db:openeducat_activity.student_migrate_form
 msgid "Student Migrate"
-msgstr "Migración del Alumno"
+msgstr "Migración del alumno"
 
 #. module: openeducat_activity
 #: model:ir.actions.act_window,name:openeducat_activity.act_open_student_migrate_view
 #: model:ir.ui.menu,name:openeducat_activity.menu_student_migrate
 msgid "Student Migration"
-msgstr "Migración del Alumno"
+msgstr "Migración del alumno"
 
 #. module: openeducat_activity
 #: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate_student_ids
