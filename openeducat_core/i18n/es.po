@@ -503,7 +503,7 @@ msgstr "Registro del curso"
 #: code:addons/openeducat_core/models/subject_registration.py:80
 #, python-format
 msgid "Course not found on student's admission!"
-msgstr "Curso no encontrado en la admisión del estudiante"
+msgstr "Curso no encontrado en la admisión del alumno"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_course_view
@@ -521,13 +521,13 @@ msgstr "Crear empleado"
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_wizard_op_faculty_employee
 msgid "Create Employee and User of Faculty"
-msgstr "Crear empleado y usuario de la facultad"
+msgstr "Crear empleado y usuario del profesor"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_wizard_op_faculty
 #: model:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
 msgid "Create User for selected Faculty(s)"
-msgstr "Crear usuario para la (s) facultad (es) seleccionada (s)"
+msgstr "Crear usuario para lo(s) profesor(es) seleccionado(s)"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_wizard_op_student
@@ -725,7 +725,7 @@ msgstr "Tipo de evaluación"
 #: model:ir.ui.menu,name:openeducat_core.menu_op_faculty_main
 #: model:ir.ui.menu,name:openeducat_core.menu_op_faculty_root
 msgid "Faculties"
-msgstr "Facultades"
+msgstr "Profesores"
 
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
@@ -734,13 +734,13 @@ msgstr "Facultades"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_tree
 #: model:res.groups,name:openeducat_core.group_op_faculty
 msgid "Faculty"
-msgstr "Facultad"
+msgstr "Profesor"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.open_board_faculty
 #: model:ir.ui.view,arch_db:openeducat_core.board_faculty_form
 msgid "Faculty Dashboard"
-msgstr "Cuadro de instrumentos de la facultad"
+msgstr "Cuadro de instrumentos del profesor"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_fax
@@ -821,7 +821,7 @@ msgstr "General"
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_general
 msgid "General Management"
-msgstr "administración General"
+msgstr "Administración general"
 
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
@@ -966,13 +966,13 @@ msgstr "¿Es una empresa?"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_customer
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_customer
 msgid "Is a Customer"
-msgstr "Es Cliente"
+msgstr "Es cliente"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_supplier
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_supplier
 msgid "Is a Vendor"
-msgstr "Es un Proveedor"
+msgstr "Es un proveedor"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_function
@@ -1095,7 +1095,7 @@ msgstr "Correo"
 #. module: openeducat_core
 #: selection:op.faculty,gender:0 selection:op.student,gender:0
 msgid "Male"
-msgstr "Masculino"
+msgstr "Hombre"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course_max_unit_load
@@ -1347,7 +1347,7 @@ msgstr "Proporcionado por"
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
 msgid "Reject"
-msgstr "rechazar"
+msgstr "Rechazar"
 
 #. module: openeducat_core
 #: selection:op.subject.registration,state:0
@@ -1378,7 +1378,7 @@ msgstr "Número de rollo"
 #. module: openeducat_core
 #: sql_constraint:op.student.course:0
 msgid "Roll Number & Student must be unique per Batch!"
-msgstr "El número del rollo y el estudiante deben ser únicos por grupo"
+msgstr "El número del rollo y el alumno deben ser únicos por grupo"
 
 #. module: openeducat_core
 #: sql_constraint:op.student.course:0
@@ -1516,23 +1516,23 @@ msgstr "Calle2"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_student_tree
 #: model:res.groups,name:openeducat_core.group_op_student
 msgid "Student"
-msgstr "Estudiante"
+msgstr "Alumno"
 
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_op_student_course
 msgid "Student Course Details"
-msgstr "Detalles del curso del estudiante"
+msgstr "Detalles del curso del alumno"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.open_board_student
 #: model:ir.ui.view,arch_db:openeducat_core.board_student_form
 msgid "Student Dashboard"
-msgstr "Tablero de alumnos"
+msgstr "Tablero de alumno"
 
 #. module: openeducat_core
 #: model:ir.actions.report.xml,name:openeducat_core.action_report_student_idcard
 msgid "Student IdCard"
-msgstr "Credencial de estudiante"
+msgstr "Credencial de alumno"
 
 #. module: openeducat_core
 #: sql_constraint:op.student.course:0
@@ -1546,7 +1546,7 @@ msgstr "¡El estudiante debe ser único por grupo!"
 #: model:ir.ui.menu,name:openeducat_core.menu_op_student_root
 #: model:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
 msgid "Students"
-msgstr "Estudiantes"
+msgstr "Alumnos"
 
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_form
@@ -1558,19 +1558,19 @@ msgstr "Asunto"
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_subject
 msgid "Subject Management"
-msgstr "Gestión asignatura"
+msgstr "Gestión de asignatura"
 
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_subject_registration_view
 #: model:ir.ui.menu,name:openeducat_core.subject_registration_faculty_menu
 #: model:ir.ui.menu,name:openeducat_core.subject_registration_student_menu
 msgid "Subject Registration"
-msgstr "Registro asignatura"
+msgstr "Registro de asignatura"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_subject_type
 msgid "Subject Type"
-msgstr "Tipo asignatura"
+msgstr "Tipo de asignatura"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course_subject_ids
@@ -1591,7 +1591,7 @@ msgstr "asignaturas"
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Presentar"
 
 #. module: openeducat_core
 #: selection:op.subject.registration,state:0
@@ -1674,7 +1674,7 @@ msgstr "Zona horaria de la empresa, usada para mostrar la fecha y hora adecuadas
 #. module: openeducat_core
 #: selection:op.subject,type:0
 msgid "Theory"
-msgstr "Theory"
+msgstr "Teoría"
 
 #. module: openeducat_core
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty_property_account_payable_id
@@ -1732,7 +1732,7 @@ msgstr "Zona horaria"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_tz_offset
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_tz_offset
 msgid "Timezone offset"
-msgstr "Zona horaria"
+msgstr "Compemsar zona horaria"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_title
@@ -1772,7 +1772,7 @@ msgstr ""
 "Para agregar su primer informe a este panel, vaya a cualquier\n"
 "                        Menú, cambie a la vista de lista o gráfica y haga clic en\n"
 "                        <I> 'Añadir a\n"
-"                            Dashboard '</ i>\n"
+"                            tablero '</ i>\n"
 "                        En las opciones de búsqueda extendida."
 
 #. module: openeducat_core
@@ -1846,7 +1846,7 @@ msgstr "Utilizado para conectarse al sistema."
 #: model:ir.model.fields,help:openeducat_core.field_op_faculty_type
 #: model:ir.model.fields,help:openeducat_core.field_op_student_type
 msgid "Used to select automatically the right address according to the context in sales and purchases documents."
-msgstr "﻿Utilizado para seleccionar automáticamente la dirección correcta según el contexto en documentos de ventas y compras."
+msgstr "Utilizado para seleccionar automáticamente la dirección correcta según el contexto en documentos de ventas y compras."
 
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
