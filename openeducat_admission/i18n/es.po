@@ -54,7 +54,7 @@ msgstr "<strong>Análisis de admisión</strong>"
 #. module: openeducat_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
 msgid "<strong>Total Number of Students :</strong>"
-msgstr "<strong>Número total de estudiantes :</strong>"
+msgstr "<strong>Número total de alumnos :</strong>"
 
 #. module: openeducat_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
@@ -165,34 +165,34 @@ msgstr "Alumno actual"
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_application_date
 #: model:ir.ui.view,arch_db:openeducat_admission.view_op_admission_search
 msgid "Application Date"
-msgstr "Fecha de aplicación"
+msgstr "Fecha de solicitud"
 
 #. module: openeducat_admission
 #: code:addons/openeducat_admission/models/admission.py:180
 #, python-format
 msgid "Application Date should be between Start Date &                     End Date of Admission Register."
-msgstr "La fecha de la aplicación debe ser entre la fecha de inicio &                     Fecha de finalización del registro de admisión."
+msgstr "La fecha de la solicitud debe ser entre la fecha de inicio &                     Fecha de finalización del registro de admisión."
 
 #. module: openeducat_admission
 #: selection:op.admission.register,state:0
 msgid "Application Gathering"
-msgstr "Recopilación de aplicaciones"
+msgstr "Recopilación de solicitudes"
 
 #. module: openeducat_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
 msgid "Application No."
-msgstr "Número de aplicación"
+msgstr "Número de solicitud"
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_application_number
 msgid "Application Number"
-msgstr "Número de aplicación"
+msgstr "Número de solicitud"
 
 #. module: openeducat_admission
 #: model:ir.ui.menu,name:openeducat_admission.menu_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.view_op_admission_register_form
 msgid "Applications"
-msgstr "Aplicación"
+msgstr "Solicitudes"
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_batch_id
@@ -258,7 +258,7 @@ msgstr "Curso"
 #. module: openeducat_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.view_op_admission_graph
 msgid "Course By Admission"
-msgstr "Curso Por Admisión"
+msgstr "Admisión por curso"
 
 #. module: openeducat_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.view_op_student_inherit_admission_form
@@ -474,7 +474,7 @@ msgstr "Mail :"
 #. module: openeducat_admission
 #: selection:op.admission,gender:0
 msgid "Male"
-msgstr "Masculino"
+msgstr "Hombre"
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_register_max_count
@@ -576,7 +576,7 @@ msgstr "Curso anterior"
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_prev_institute_id
 msgid "Previous Institute"
-msgstr "Instituto Anterior"
+msgstr "Instituto anterior"
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission_prev_result
@@ -679,7 +679,7 @@ msgstr "Alumno"
 #. module: openeducat_admission
 #: model:ir.model,name:openeducat_admission.model_op_student_fees_details
 msgid "Student Fees Details"
-msgstr "Detalles de las cuotas estudiantiles"
+msgstr "Detalles de las cuotas del alumno"
 
 #. module: openeducat_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.report_admission_analysis
@@ -689,17 +689,17 @@ msgstr "Nombre del alumno"
 #. module: openeducat_admission
 #: model:ir.ui.view,arch_db:openeducat_admission.view_op_admission_form
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Presentar"
 
 #. module: openeducat_admission
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_student_fees_details_date
 msgid "Submit Date"
-msgstr "Fecha de envío"
+msgstr "Fecha de presentación"
 
 #. module: openeducat_admission
 #: selection:op.admission,state:0
 msgid "Submitted"
-msgstr "Enviado"
+msgstr "Presentado"
 
 #. module: openeducat_admission
 #: code:addons/openeducat_admission/models/admission.py:368
