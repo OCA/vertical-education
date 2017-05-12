@@ -94,22 +94,22 @@ msgstr "<strong>Certificado de buena fe</strong>"
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "A+ve"
-msgstr "A+ve"
+msgstr "A+"
 
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "A-ve"
-msgstr "A-ve"
+msgstr "A-"
 
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "AB+ve"
-msgstr "AB+ve"
+msgstr "AB+"
 
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "AB-ve"
-msgstr "AB-ve"
+msgstr "AB-"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_property_account_payable_id
@@ -196,12 +196,12 @@ msgstr "Aprobado"
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "B+ve"
-msgstr "B+ve"
+msgstr "B+"
 
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "B-ve"
-msgstr "B-ve"
+msgstr "B-"
 
 #. module: openeducat_core
 #: model:res.groups,name:openeducat_core.group_op_back_office
@@ -1031,7 +1031,7 @@ msgstr "Última modificación en"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Last Name"
-msgstr "Apellido"
+msgstr "2 Apellido"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch_write_uid
@@ -1134,7 +1134,7 @@ msgstr "Mensajes"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Middle Name"
-msgstr "Segundo nombre"
+msgstr "1 Apellido"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course_min_unit_load
@@ -1206,12 +1206,12 @@ msgstr "Número de mensajes no leidos"
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "O+ve"
-msgstr "O+ve"
+msgstr "O+"
 
 #. module: openeducat_core
 #: selection:op.faculty,blood_group:0 selection:op.student,blood_group:0
 msgid "O-ve"
-msgstr "O-ve"
+msgstr "O-"
 
 #. module: openeducat_core
 #: model:ir.module.category,name:openeducat_core.module_category_openeducat
@@ -1455,7 +1455,7 @@ msgstr "Caducidad de la suscripción"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_signup_token
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_signup_token
 msgid "Signup token"
-msgstr "token de sesión"
+msgstr "Token de sesión"
 
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_image_small
@@ -1553,7 +1553,7 @@ msgstr "Alumnos"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_tree
 msgid "Subject"
-msgstr "Asunto"
+msgstr "Asignatura"
 
 #. module: openeducat_core
 #: model:ir.ui.menu,name:openeducat_core.menu_op_school_config_subject
@@ -1586,7 +1586,7 @@ msgstr "Asignatura(s)"
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Subjects"
-msgstr "asignaturas"
+msgstr "Asignaturas"
 
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.view_subject_registration_form
