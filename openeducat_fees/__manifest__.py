@@ -21,31 +21,31 @@
 
 {
     'name': 'OpenEduCat Fees',
-    'version': '2.4.0',
-    'category': 'Openerp Education',
+    'version': '10.0.3.0.0',
+    'license': 'LGPL-3',
+    'category': 'Education',
     "sequence": 3,
     'summary': 'Manage Fees',
     'complexity': "easy",
-    'description': """
-        This module provide feature of fees collection &
-        other finance operations.
-
-    """,
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
     'depends': ['openeducat_core', 'account_accountant'],
     'data': [
+        'views/fees_terms_view.xml',
         'views/student_view.xml',
         'views/course_view.xml',
+        'security/fees_security.xml',
         'security/ir.model.access.csv'
     ],
     'images': [
         'static/description/openeducat_fees_banner.jpg',
     ],
-    'installable': False,
+    'demo': [
+        'demo/fees_terms_line_demo.xml',
+        'demo/fees_terms_demo.xml',
+        'demo/course_demo.xml',
+    ],
+    'installable': True,
     'auto_install': False,
     'application': True,
 }
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

@@ -19,8 +19,5 @@
 #
 ###############################################################################
 
-from . import report_book_barcode
-from . import report_student_library_card
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+from . import report_library_card_barcode
+from . import report_media_barcode

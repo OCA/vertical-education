@@ -19,8 +19,8 @@
 #
 ###############################################################################
 
-from openerp import models, fields, api
-from openerp.exceptions import ValidationError
+from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class OpAssignment(models.Model):
@@ -28,7 +28,7 @@ class OpAssignment(models.Model):
     _inherit = 'mail.thread'
     _description = 'Assignment'
 
-    name = fields.Char('Name', size=16, required=True)
+    name = fields.Char('Name', size=64, required=True)
     course_id = fields.Many2one('op.course', 'Course', required=True)
     batch_id = fields.Many2one('op.batch', 'Batch', required=True)
     subject_id = fields.Many2one('op.subject', 'Subject', required=True)
@@ -55,26 +55,26 @@ class OpAssignment(models.Model):
         'op.assignment.sub.line', 'assignment_id', 'Submissions')
     reviewer = fields.Many2one('op.faculty', 'Reviewer')
 
-    @api.one
+    @api.multi
     @api.constrains('issued_date', 'submission_date')
     def check_dates(self):
-        issued_date = fields.Date.from_string(self.issued_date)
-        submission_date = fields.Date.from_string(self.submission_date)
-        if issued_date > submission_date:
-            raise ValidationError(
-                "Submission Date cannot be set before Issue Date.")
+        for record in self:
+            issued_date = fields.Date.from_string(record.issued_date)
+            submission_date = fields.Date.from_string(record.submission_date)
+            if issued_date > submission_date:
+                raise ValidationError(_(
+                    "Submission Date cannot be set before Issue Date."))
 
     @api.onchange('course_id')
     def onchange_course(self):
         self.batch_id = False
 
-    @api.one
+    @api.multi
     def act_publish(self):
-        self.state = 'publish'
+        result = self.state = 'publish'
+        return result and result or False
 
-    @api.one
+    @api.multi
     def act_finish(self):
-        self.state = 'finish'
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+        result = self.state = 'finish'
+        return result and result or False

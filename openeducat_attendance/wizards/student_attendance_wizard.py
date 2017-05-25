@@ -19,8 +19,8 @@
 #
 ###############################################################################
 
-from openerp import models, fields, api
-from openerp.exceptions import ValidationError
+from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class StudentAttendance(models.TransientModel):
@@ -31,13 +31,15 @@ class StudentAttendance(models.TransientModel):
     to_date = fields.Date(
         'To Date', required=True, default=lambda self: fields.Date.today())
 
-    @api.one
+    @api.multi
     @api.constrains('from_date', 'to_date')
     def check_dates(self):
-        from_date = fields.Date.from_string(self.from_date)
-        to_date = fields.Date.from_string(self.to_date)
-        if to_date < from_date:
-            raise ValidationError("To Date cannot be set before From Date.")
+        for record in self:
+            from_date = fields.Date.from_string(record.from_date)
+            to_date = fields.Date.from_string(record.to_date)
+            if to_date < from_date:
+                raise ValidationError(
+                    _("To Date cannot be set before From Date."))
 
     @api.multi
     def print_report(self):
@@ -46,6 +48,3 @@ class StudentAttendance(models.TransientModel):
 
         return self.env['report'].get_action(
             self, 'openeducat_attendance.student_attendance_report', data=data)
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

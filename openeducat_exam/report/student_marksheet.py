@@ -22,21 +22,11 @@
 from datetime import datetime
 import time
 
-from openerp import models
-from openerp.report import report_sxw
+from odoo import models, api
 
 
-class MarksheetReport(report_sxw.rml_parse):
-
-    def __init__(self, cr, uid, name, context=None):
-        super(MarksheetReport, self).__init__(cr, uid, name, context=context)
-        self.localcontext.update({
-            'time': time,
-            'get_objects': self.get_objects,
-            'get_lines': self.get_lines,
-            'get_date': self.get_date,
-            'get_total': self.get_total
-        })
+class ReportMarksheetReport(models.AbstractModel):
+    _name = 'report.openeducat_exam.report_marksheet_report'
 
     def get_objects(self, objects):
         obj = []
@@ -55,15 +45,20 @@ class MarksheetReport(report_sxw.rml_parse):
         return str(date1.month) + ' / ' + str(date1.year)
 
     def get_total(self, marksheet_line):
-        total = [x.total_marks for x in marksheet_line.result_line]
+        total = [x.exam_id.total_marks for x in marksheet_line.result_line]
         return sum(total)
 
-
-class ReportMarksheetReport(models.AbstractModel):
-    _name = 'report.openeducat_exam.report_marksheet_report'
-    _inherit = 'report.abstract_report'
-    _template = 'openeducat_exam.report_marksheet_report'
-    _wrapped_report_class = MarksheetReport
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+    @api.model
+    def render_html(self, docids, data=None):
+        docs = self.env['op.marksheet.register'].browse(docids)
+        docargs = {
+            'doc_model': 'op.marksheet.register',
+            'docs': docs,
+            'time': time,
+            'get_objects': self.get_objects,
+            'get_lines': self.get_lines,
+            'get_date': self.get_date,
+            'get_total': self.get_total,
+        }
+        return self.env['report'] \
+            .render('openeducat_exam.report_marksheet_report', docargs)

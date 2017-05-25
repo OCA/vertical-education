@@ -19,7 +19,7 @@
 #
 ###############################################################################
 
-from openerp import models, fields
+from odoo import models, fields
 
 
 class OpSubject(models.Model):
@@ -33,6 +33,6 @@ class OpSubject(models.Model):
         [('theory', 'Theory'), ('practical', 'Practical'),
          ('both', 'Both'), ('other', 'Other')],
         'Type', default="theory", required=True)
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+    subject_type = fields.Selection(
+        [('compulsory', 'Compulsory'), ('elective', 'Elective')],
+        'Subject Type', default="compulsory", required=True)

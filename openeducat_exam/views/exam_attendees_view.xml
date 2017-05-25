@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="view_op_exam_attendees_tree" model="ir.ui.view">
             <field name="name">op.exam.attendees.tree</field>
             <field name="model">op.exam.attendees</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Exam Attendees">
+                <tree string="Exam Attendees" editable="top">
                     <field name="student_id" />
+                    <field name="exam_id" />
                     <field name="status" />
                     <field name="marks" />
+                    <field name="room_id"/>
                     <field name="note" />
-                    <field name="exam_id" />
                 </tree>
             </field>
         </record>
@@ -26,9 +27,10 @@
                             <field name="course_id" invisible="1" />
                             <field name="batch_id" invisible="1" />
                             <field name="exam_id" />
-                            <field name="student_id" domain="[('course_id','=',course_id),('batch_id','=',batch_id)]" />
+                            <field name="student_id" domain="[('course_detail_ids.course_id','=',course_id),('course_detail_ids.batch_id','=',batch_id)]" />
                             <field name="status" />
                             <field name="marks" />
+                            <field name="room_id"/>
                         </group>
                         <group string="Note">
                             <field name="note" nolabel="1"/>
@@ -80,4 +82,4 @@
             <field name="view_id" ref="view_op_exam_attendees_tree" />
         </record>
     </data>
-</openerp>
+</odoo>

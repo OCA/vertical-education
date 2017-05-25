@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="view_op_attendance_line_tree" model="ir.ui.view">
             <field name="name">op.attendance.line.tree</field>
@@ -26,7 +26,7 @@
                     <sheet>
                         <group col="4" colspan="4">
                             <field name="attendance_id" />
-                            <field name="student_id" domain="[('course_id','=',course_id),('batch_id','=',batch_id)]" />
+                            <field name="student_id" domain="[('course_detail_ids.course_id','=',course_id),('course_detail_ids.batch_id','=',batch_id)]" />
                             <field name="present" />
                             <field name="remark" />
                             <field name="course_id" />
@@ -34,6 +34,10 @@
                             <field name="attendance_date" />
                         </group>
                     </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
                 </form>
             </field>
         </record>
@@ -82,4 +86,4 @@
             <field name="view_id" ref="view_op_attendance_line_tree" />
         </record>
     </data>
-</openerp>
+</odoo>

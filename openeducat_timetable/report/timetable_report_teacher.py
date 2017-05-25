@@ -19,29 +19,20 @@
 #
 ###############################################################################
 
+import calendar
 from datetime import datetime
 import time
 
-from openerp import models, pooler
-from openerp.report import report_sxw
+from odoo import models, api, _
 
 
-class TimeTableTeacherGenerate(report_sxw.rml_parse):
-
-    def __init__(self, cr, uid, name, context=None):
-        super(TimeTableTeacherGenerate, self).__init__(
-            cr, uid, name, context=context)
-        self.localcontext.update({
-            'time': time,
-            'get_object': self.get_object,
-            'get_full_name': self.get_full_name,
-        })
+class ReportTimeTableTeacherGenerate(models.AbstractModel):
+    _name = 'report.openeducat_timetable.report_timetable_teacher_generate'
 
     def get_full_name(self, data):
-        faculty_name = self.pool.get('op.faculty').browse(
-            self.cr, self.uid, data['faculty_id'][0])
+        faculty_name = self.env['op.faculty'].browse(data['faculty_id'][0])
         return ' '.join([faculty_name.name,
-                         faculty_name.middle_name,
+                         faculty_name.middle_name or '',
                          faculty_name.last_name])
 
     def sort_tt(self, data_list):
@@ -62,28 +53,34 @@ class TimeTableTeacherGenerate(report_sxw.rml_parse):
                         m['line'][d['day']] = d
         return main_list
 
+    def get_heading(self):
+
+        dayofWeek = [_(calendar.day_name[0]),
+                     _(calendar.day_name[1]),
+                     _(calendar.day_name[2]),
+                     _(calendar.day_name[3]),
+                     _(calendar.day_name[4]),
+                     _(calendar.day_name[5])]
+        return dayofWeek
+
     def get_object(self, data):
 
-        dayofWeek = ['Monday', 'Tuesday', 'Wednesday',
-                     'Thursday', 'Friday', 'Saturday', 'Sunday']
-
         data_list = []
-        for timetable_obj in pooler.get_pool(self.cr.dbname).get(
-            'op.timetable').browse(
-                self.cr, self.uid, data['teacher_time_table_ids']):
+        for timetable_obj in self.env['op.session'].browse(
+                data['teacher_time_table_ids']):
             oldDate = datetime.strptime(
                 timetable_obj.start_datetime, "%Y-%m-%d %H:%M:%S")
-            day = dayofWeek[datetime.weekday(oldDate)]
+            day = datetime.weekday(oldDate)
 
             timetable_data = {
-                'period': timetable_obj.period_id.name,
-                'period_time': timetable_obj.period_id.hour + ':' +
-                timetable_obj.period_id.minute +
-                timetable_obj.period_id.am_pm,
-                'sequence': timetable_obj.period_id.sequence,
+                'period': timetable_obj.timing_id.name,
+                'period_time': timetable_obj.timing_id.hour + ':' +
+                timetable_obj.timing_id.minute +
+                timetable_obj.timing_id.am_pm,
+                'sequence': timetable_obj.timing_id.sequence,
                 'start_datetime': timetable_obj.start_datetime,
                 'end_datetime': timetable_obj.end_datetime[10:],
-                'day': day,
+                'day': str(day),
                 'subject': timetable_obj.subject_id.name,
                 'course': timetable_obj.course_id.name,
                 'batch': timetable_obj.batch_id.name,
@@ -94,12 +91,20 @@ class TimeTableTeacherGenerate(report_sxw.rml_parse):
         final_list = self.sort_tt(ttdl)
         return final_list
 
-
-class ReportTimeTableTeacherGenerate(models.AbstractModel):
-    _name = 'report.openeducat_timetable.report_timetable_teacher_generate'
-    _inherit = 'report.abstract_report'
-    _template = 'openeducat_timetable.report_timetable_teacher_generate'
-    _wrapped_report_class = TimeTableTeacherGenerate
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+    @api.model
+    def render_html(self, docids, data=None):
+        model = self.env.context.get('active_model')
+        docs = self.env[model].browse(self.env.context.get('active_id'))
+        docargs = {
+            'doc_ids': self.ids,
+            'doc_model': model,
+            'docs': docs,
+            'data': data,
+            'time': time,
+            'get_object': self.get_object,
+            'get_heading': self.get_heading,
+            'get_full_name': self.get_full_name,
+        }
+        return self.env['report'] \
+            .render('openeducat_timetable.report_timetable_teacher_generate',
+                    docargs)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record model="ir.ui.view" id="kanban_view_faculty">
             <field name="name">Faculty Kanban</field>
@@ -93,9 +93,9 @@
                             </h1>
                             <h1><table>
                                 <tr>
-                                <td><field name="name" required="1" placeholder="First Name" style="padding-right:10px" /></td>
-                                <td><field name="middle_name" placeholder="Middle Name" style="padding-right:10px" /></td>
-                                <td><field name="last_name" placeholder="Last Name" style="padding-right:10px" /></td>
+                                <td style="padding-right:10px"><field name="name" required="1" placeholder="First Name" /></td>
+                                <td style="padding-right:10px"><field name="middle_name" placeholder="Middle Name" /></td>
+                                <td style="padding-right:10px"><field name="last_name" placeholder="Last Name" /></td>
                                 </tr>
                                 </table>
                             </h1>
@@ -194,4 +194,4 @@
             <field name="view_id" ref="kanban_view_faculty" />
         </record>
     </data>
-</openerp>
+</odoo>

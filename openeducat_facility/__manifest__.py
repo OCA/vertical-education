@@ -21,14 +21,12 @@
 
 {
     'name': 'OpenEduCat Facility',
-    'version': '2.4.0',
-    'category': 'Openerp Education',
+    'version': '10.0.3.0.0',
+    'license': 'LGPL-3',
+    'category': 'Education',
     "sequence": 3,
     'summary': 'Manage Facility',
     'complexity': "easy",
-    'description': """
-        This module adds the feature of facility in Openeducat
-    """,
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
     'depends': ['openeducat_core'],
@@ -39,7 +37,7 @@
         'facility_menu.xml',
     ],
     'demo': [
-        'demo/op.facility.csv'
+        'demo/facility_demo.xml'
     ],
     'images': [
         'static/description/openeducat_facility_banner.jpg',
@@ -48,6 +46,3 @@
     'auto_install': False,
     'application': True,
 }
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

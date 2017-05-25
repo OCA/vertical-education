@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="view_op_admission_tree" model="ir.ui.view">
             <field name="name">op.admission.tree</field>
             <field name="model">op.admission</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <tree string="Admission">
+                <tree string="Registration">
                     <field name="title" />
                     <field name="name" />
                     <field name="middle_name" />
@@ -26,15 +26,14 @@
             <field name="model">op.admission</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <form string="Admission">
+                <form string="Registration">
                     <header groups="base.group_user">
-                        <button name="confirm_in_progress" states="draft" string="Confirm"
+                        <button string="Submit" states="draft" class="oe_highlight"
+                            type="object" name="submit_form"/>
+                        <button name="confirm_in_progress" states="submit" string="Confirm"
                             type="object" class="oe_highlight"/>
-                        <button name="create_invoice" states="confirm" string="Create Invoice"
-                            type="object" class="oe_highlight"/>
-                        <button name="payment_process" states="payment_process" string="Processed"
-                            type="object" class="oe_highlight"/>
-                        <button name="enroll_student" states="fees_paid,pending" string="Enroll"
+                        <button string="Admission Confirm" class="oe_highlight" states="confirm" type="object" name="admission_confirm"/>
+                        <button name="enroll_student" states="admission" string="Enroll"
                             type="object" class="oe_highlight"/>
                         <button name="confirm_rejected" states="payment_process,fees_paid,,pending" string="Reject"
                             type="object" />
@@ -46,9 +45,14 @@
                             type="object" />
                         <button name="open_student" states="done" string="Open Student Profile"
                             type="object" />
-                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,payment_process,fees_paid,done" />
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done" />
                     </header>
                     <sheet>
+                        <div class="oe_title">
+                            <field name="is_student"/>
+                            <label string="Already Student"/>
+                            <field name="student_id" placeholder="Student" options="{'no_create_edit': True}"  attrs="{'required':[('is_student','=',True)],'invisible': [('is_student','=', False)]}"/>
+                        </div>
                         <field name="photo" widget="image" class="oe_left oe_avatar" />
                         <div class="oe_title">
                             <h1>
@@ -66,14 +70,17 @@
                         <notebook colspan="4">
                             <page name="admission_detail" string="Admission Detail">
                                 <group col="4" colspan="4">
-                                    <field name="register_id" domain="[('state', 'in', ['application','admission','done'])]" widget="selection" />
+                                    <field name="register_id" domain="[('state', 'in', ['application','admission'])]" widget="selection" />
                                     <field name="application_number" />
                                     <field name="application_date" />
                                     <field name="admission_date" />
                                     <field name="course_id" />
-                                    <field name="batch_id" context="{'course_id': course_id,'get_parent_batch':1}" />
-                                    <field name="fees" />
+                                    <field name="batch_id" attrs="{'required': [('state','not in', ['draft', 'submit'])]}" context="{'course_id': course_id,'get_parent_batch':1}" />
+                                    <field name="fees" attrs="{'required': [('state','not in', ['draft', 'submit'])]}"/>
                                     <field name="due_date" />
+                                    <field name="fees_term_id" required="1"
+                                        attrs="{'readonly': [('state','not in', ['draft', 'submit', 'confirm'])]}"/>
+                                    <field name="partner_id" invisible="1"/>
                                 </group>
                             </page>
                             <page name="educational_detail" string="Educational Detail">
@@ -87,6 +94,7 @@
                                 <group col="4" colspan="4">
                                     <field name="gender" />
                                     <field name="birth_date" />
+                                    <field name="email" placeholder="Email" />
                                 </group>
                                 <label for="street" string="Address" />
                                 <div>
@@ -101,7 +109,6 @@
                                     <field name="country_id" placeholder="Country" options='{"no_open": True}' />
                                     <field name="phone" placeholder="Phone" />
                                     <field name="mobile" placeholder="Mobile" />
-                                    <field name="email" placeholder="Email" />
                                 </div>
                                 <group col="4" colspan="4">
                                     <field name="family_business" />
@@ -123,7 +130,7 @@
             <field name="model">op.admission</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
-                <search string="Admission">
+                <search string="Registration">
                     <field name="name" />
                     <field name="middle_name" />
                     <field name="last_name" />
@@ -134,6 +141,7 @@
                     <field name="course_id" />
                     <field name="batch_id" />
                     <newline />
+                    <filter name="enrolled_student" string="Enrolled" domain="[('state','=','done')]" />
                     <group expand="0" string="Group By...">
                         <filter string="Last Name" domain="[]"
                             context="{'group_by':'last_name'}" />
@@ -161,7 +169,7 @@
         </record>
 
         <record model="ir.actions.act_window" id="act_open_op_admission_view">
-            <field name="name">Admissions</field>
+            <field name="name">Registration</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">op.admission</field>
             <field name="view_type">form</field>
@@ -183,4 +191,4 @@
             <field name="view_id" ref="view_op_admission_tree" />
         </record>
     </data>
-</openerp>
+</odoo>

@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<openerp>
+<odoo>
     <data>
         <record id="op_faculty_create_employee_view" model="ir.ui.view">
             <field name="name">wizard.op.faculty.employee.form</field>
             <field name="model">wizard.op.faculty.employee</field>
             <field name="arch" type="xml">
                 <form string="Create Employee">
-                    <header groups="base.group_user">
-                        <button name="create_employee" type="object" string="Create Employee" class="oe_highlight" />
-                        <button string="Cancel" special="cancel" />
-                    </header>
                     <group col="4">
                         <field name="user_boolean" />
                     </group>
+                    <footer groups="base.group_user">
+                        <button name="create_employee" type="object" string="Create Employee" class="oe_highlight" />
+                        <button string="Cancel" special="cancel" />
+                    </footer>
                 </form>
             </field>
         </record>
@@ -26,4 +26,4 @@
             <field name="target">new</field>
         </record>
     </data>
-</openerp>
+</odoo>

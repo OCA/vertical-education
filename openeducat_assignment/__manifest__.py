@@ -21,32 +21,35 @@
 
 {
     'name': 'OpenEduCat Assignment',
-    'version': '2.4.0',
-    'category': 'Openerp Education',
+    'version': '10.0.3.0.0',
+    'license': 'LGPL-3',
+    'category': 'Education',
     "sequence": 3,
     'summary': 'Manage Assgiments',
     'complexity': "easy",
-    'description': """
-        This module provide feature of Assignments.
-
-    """,
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
     'depends': ['openeducat_core'],
     'data': [
         'security/ir.model.access.csv',
+        'security/op_assignment_security.xml',
         'views/assignment_view.xml',
         'views/assignment_type_view.xml',
         'views/assignment_sub_line_view.xml',
         'views/student_view.xml',
-        'dashboard/assignment_faculty_dashboard.xml',
         'dashboard/assignment_student_dashboard.xml',
+        'dashboard/assignment_faculty_dashboard.xml',
         'assignment_menu.xml'
     ],
     'demo': [
-        'demo/op.assignment.type.csv',
-        'demo/op.assignment.csv',
-        'demo/op.assignment.sub.line.csv'
+        'demo/assignment_type_demo.xml',
+        'demo/assignment_demo.xml',
+        'demo/assignment_sub_line_demo.xml'
+    ],
+    'test': [
+        'test/res_users_test.yml',
+        'test/assignment_sub_values.yml',
+        'test/assignment_creation_submission.yml'
     ],
     'images': [
         'static/description/openeducat_assignment_banner.jpg',
@@ -55,6 +58,3 @@
     'auto_install': False,
     'application': True,
 }
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

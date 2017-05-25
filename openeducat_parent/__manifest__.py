@@ -21,28 +21,26 @@
 
 {
     'name': 'OpenEduCat Parent',
-    'version': '2.4.0',
-    'category': 'Openerp Education',
+    'version': '10.0.3.0.0',
+    'license': 'LGPL-3',
+    'category': 'Education',
     "sequence": 3,
     'summary': 'Manage Parent',
     'complexity': "easy",
-    'description': """
-        This module provide parent management system over OpenERP
-    """,
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
     'depends': ['openeducat_core'],
     'data': [
         'security/op_parent_security.xml',
+        'views/student_view.xml',
         'views/parent_view.xml',
         'parent_menu.xml',
         'security/ir.model.access.csv'
     ],
     'demo': [
-        'demo/res.users.csv',
-        'demo/res.groups.csv',
-        'demo/res.partner.csv',
-        'demo/op.parent.csv',
+        'demo/res_partner_demo.xml',
+        'demo/res_users_demo.xml',
+        'demo/parent_demo.xml',
     ],
     'images': [
         'static/description/openeducat_parent_banner.jpg',
@@ -51,6 +49,3 @@
     'auto_install': False,
     'application': True,
 }
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

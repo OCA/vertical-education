@@ -34,12 +34,9 @@ class WizardOpStudent(models.TransientModel):
     student_ids = fields.Many2many(
         'op.student', default=_get_students, string='Students')
 
-    @api.one
+    @api.multi
     def create_student_user(self):
         user_group = self.env.ref('openeducat_core.group_op_student')
         active_ids = self.env.context.get('active_ids', []) or []
         records = self.env['op.student'].browse(active_ids)
         self.env['res.users'].create_user(records, user_group)
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

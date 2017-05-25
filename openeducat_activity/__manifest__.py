@@ -21,15 +21,12 @@
 
 {
     'name': 'OpenEduCat Activity',
-    'version': '2.4.0',
-    'category': 'Openerp Education',
+    'version': '10.0.3.0.0',
+    'license': 'LGPL-3',
+    'category': 'Education',
     "sequence": 3,
     'summary': 'Manage Activities',
     'complexity': "easy",
-    'description': """
-        This module provide feature of Activity Manangement.
-
-    """,
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
     'depends': ['openeducat_core'],
@@ -42,8 +39,8 @@
         'activity_menu.xml'
     ],
     'demo': [
-        'demo/op.activity.type.csv',
-        'demo/op.activity.csv',
+        'demo/activity_type_demo.xml',
+        'demo/activity_demo.xml',
     ],
     'images': [
         'static/description/openeducat_activity_banner.jpg',
@@ -52,6 +49,3 @@
     'auto_install': False,
     'application': True,
 }
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

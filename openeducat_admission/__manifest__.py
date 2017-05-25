@@ -21,21 +21,20 @@
 
 {
     'name': "OpenEduCat Admission",
-    'version': '2.4.0',
-    'category': 'Openerp Education',
+    'version': '10.0.3.0.0',
+    'license': 'LGPL-3',
+    'category': 'Education',
     'sequence': 3,
     'summary': "Manage Admissions""",
     'complexity': "easy",
-    'description': """
-        This is gives the feature of admission process.
-    """,
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
-    'depends': ['openeducat_fees'],
+    'depends': ['openeducat_fees', 'openeducat_core'],
     'data': [
         'views/admission_register_view.xml',
         'views/admission_view.xml',
         'views/admission_sequence.xml',
+        'views/student_view.xml',
         'report/report_menu.xml',
         'report/report_admission_analysis.xml',
         'wizard/admission_analysis_wizard_view.xml',
@@ -43,11 +42,16 @@
         'security/ir.model.access.csv',
     ],
     'demo': [
-        'demo/product.category.csv',
-        'demo/product.product.csv',
-        'demo/op.admission.register.csv',
-        'demo/op.admission.csv',
-        'demo/student_demo.xml',
+        'demo/product_category_demo.xml',
+        'demo/product_demo.xml',
+        'demo/admission_register_demo.xml',
+        'demo/admission_demo.xml',
+        'demo/student_fees_details_demo.xml',
+    ],
+    'test': [
+        'test/res_users_creation.yml',
+        'test/batch_course_fees.yml',
+        'test/admission_register_creation.yml',
     ],
     'images': [
         'static/description/openeducat_admission_banner.jpg',

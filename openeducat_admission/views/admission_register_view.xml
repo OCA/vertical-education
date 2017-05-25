@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="view_op_admission_register_tree" model="ir.ui.view">
             <field name="name">op.admission.register.tree</field>
@@ -50,7 +50,7 @@
                             <field name="max_count" />
                         </group>
                         <group string="Applications">
-                            <field name="admission_ids" nolabel="1" />
+                            <field name="admission_ids" nolabel="1" readonly="1" />
                         </group>
                     </sheet>
                     <div class="oe_chatter">
@@ -102,4 +102,4 @@
             <field name="view_id" ref="view_op_admission_register_tree" />
         </record>
     </data>
-</openerp>
+</odoo>

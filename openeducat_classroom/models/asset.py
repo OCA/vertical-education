@@ -19,7 +19,7 @@
 #
 ###############################################################################
 
-from openerp import models, fields
+from odoo import models, fields
 
 
 class OpAsset(models.Model):
@@ -29,6 +29,3 @@ class OpAsset(models.Model):
     product_id = fields.Many2one('product.product', 'Product', required=True)
     code = fields.Char('Code', size=256)
     product_uom_qty = fields.Float('Quantity', required=True)
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

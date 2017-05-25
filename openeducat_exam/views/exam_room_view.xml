@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="view_op_exam_room_tree" model="ir.ui.view">
             <field name="name">op.exam.room.tree</field>
@@ -10,7 +10,6 @@
                     <field name="name" />
                     <field name="classroom_id" />
                     <field name="capacity" />
-                    <field name="course_ids" />
                 </tree>
             </field>
         </record>
@@ -26,12 +25,6 @@
                                 <field name="name" />
                                 <field name="classroom_id" />
                                 <field name="capacity" />
-                            </group>
-                            <group string="Course(s)">
-                                <field name="course_ids" nolabel="1"/>
-                            </group>
-                            <group string="Student(s)">
-                                <field name="student_ids" nolabel="1"/>
                             </group>
                         </div>
                     </sheet>
@@ -73,4 +66,4 @@
             <field name="view_id" ref="view_op_exam_room_tree" />
         </record>
     </data>
-</openerp>
+</odoo>

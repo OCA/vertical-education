@@ -19,8 +19,8 @@
 #
 ###############################################################################
 
-from openerp import models, fields, api
-from openerp.exceptions import ValidationError
+from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class OpLibraryCardType(models.Model):
@@ -28,17 +28,18 @@ class OpLibraryCardType(models.Model):
     _description = 'Library Card Type'
 
     name = fields.Char('Name', size=256, required=True)
-    allow_book = fields.Integer('No of Books Allowed', size=10, required=True)
+    allow_media = fields.Integer('No of medias Allowed', size=10,
+                                 required=True)
     duration = fields.Integer(
         'Duration', help='Duration in terms of Number of Lead Days',
         required=True)
     penalty_amt_per_day = fields.Float('Penalty Amount per Day', required=True)
 
-    @api.constrains('allow_book', 'duration', 'penalty_amt_per_day')
+    @api.constrains('allow_media', 'duration', 'penalty_amt_per_day')
     def check_details(self):
-        if self.allow_book < 0 or self.duration < 0.0 or \
+        if self.allow_media < 0 or self.duration < 0.0 or \
                 self.penalty_amt_per_day < 0.0:
-            raise ValidationError('Enter proper value')
+            raise ValidationError(_('Enter proper value'))
 
 
 class OpLibraryCard(models.Model):
@@ -48,7 +49,7 @@ class OpLibraryCard(models.Model):
 
     partner_id = fields.Many2one(
         'res.partner', 'Student/Faculty', required=True)
-    number = fields.Char('Number', size=256, required=True)
+    number = fields.Char('Number', size=256, readonly=True)
     library_card_type_id = fields.Many2one(
         'op.library.card.type', 'Card Type', required=True)
     issue_date = fields.Date(
@@ -64,4 +65,22 @@ class OpLibraryCard(models.Model):
          'unique(number)', 'Library card Number should be unique per card!'),
     ]
 
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+    @api.model
+    def create(self, vals):
+        x = self.env['ir.sequence'].next_by_code(
+            'op.library.card') or '/'
+        vals['number'] = x
+        return super(OpLibraryCard, self).create(vals)
+
+    @api.onchange('type')
+    def onchange_type(self):
+        self.student_id = False
+        self.faculty_id = False
+        self.partner_id = False
+
+    @api.onchange('student_id', 'faculty_id')
+    def onchange_student_faculty(self):
+        if self.student_id:
+            self.partner_id = self.student_id.partner_id
+        if not self.student_id and self.faculty_id:
+            self.partner_id = self.faculty_id.partner_id

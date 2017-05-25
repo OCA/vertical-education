@@ -19,7 +19,8 @@
 #
 ###############################################################################
 
-from openerp import models, fields, api
+from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class OpAssignmentSubLine(models.Model):
@@ -43,26 +44,43 @@ class OpAssignmentSubLine(models.Model):
         'Submission Date', readonly=True,
         default=lambda self: fields.Datetime.now(), required=True)
     note = fields.Text('Note')
+    user_id = fields.Many2one(
+        'res.users', related='student_id.user_id', string='User')
+    faculty_user_id = fields.Many2one(
+        'res.users', related='assignment_id.faculty_id.user_id',
+        string='Faculty User')
 
-    @api.one
+    @api.multi
     def act_draft(self):
-        self.state = 'draft'
+        result = self.state = 'draft'
+        return result and result or False
 
-    @api.one
+    @api.multi
     def act_submit(self):
-        self.state = 'submit'
+        result = self.state = 'submit'
+        return result and result or False
 
-    @api.one
+    @api.multi
     def act_accept(self):
-        self.state = 'accept'
+        result = self.state = 'accept'
+        return result and result or False
 
-    @api.one
+    @api.multi
     def act_change_req(self):
-        self.state = 'change'
+        result = self.state = 'change'
+        return result and result or False
 
-    @api.one
+    @api.multi
     def act_reject(self):
-        self.state = 'reject'
+        result = self.state = 'reject'
+        return result and result or False
 
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+    @api.multi
+    def unlink(self):
+        for record in self:
+            if not record.state == 'draft' and not self.env.user.has_group(
+                    'openeducat_core.group_op_faculty'):
+                raise ValidationError(
+                    _("You can't delete none draft submissions!"))
+        res = super(OpAssignmentSubLine, self).unlink()
+        return res

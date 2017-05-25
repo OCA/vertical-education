@@ -19,7 +19,7 @@
 #
 ###############################################################################
 
-from openerp import models, fields
+from odoo import models, fields
 
 
 class OpParent(models.Model):
@@ -45,6 +45,3 @@ class ResUsers(models.Model):
     _inherit = "res.users"
 
     parent_ids = fields.One2many('op.parent', 'user_id', 'Parents')
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

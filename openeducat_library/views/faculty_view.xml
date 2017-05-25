@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<openerp>
+<odoo>
     <data>
         <record id="view_op_faculty_form_library_inherit" model="ir.ui.view">
             <field name="name">op.faculty.form.library.inherit</field>
@@ -12,12 +12,12 @@
                         <group>
                             <field name="library_card_id" />
                         </group>
-                        <group string="Book Movements">
-                            <field name="book_movement_lines" nolabel="1" />
+                        <group string="Media Movements">
+                            <field name="media_movement_lines" nolabel="1" />
                         </group>
                     </page>
                 </notebook>
             </field>
         </record>
     </data>
-</openerp>
+</odoo>

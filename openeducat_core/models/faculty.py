@@ -19,8 +19,8 @@
 #
 ###############################################################################
 
-from openerp import models, fields, api
-from openerp.exceptions import ValidationError
+from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class OpFaculty(models.Model):
@@ -52,25 +52,24 @@ class OpFaculty(models.Model):
     faculty_subject_ids = fields.Many2many('op.subject', string='Subject(s)')
     emp_id = fields.Many2one('hr.employee', 'Employee')
 
-    @api.one
+    @api.multi
     @api.constrains('birth_date')
     def _check_birthdate(self):
-        if self.birth_date > fields.Date.today():
-            raise ValidationError(
-                "Birth Date can't be greater than current date!")
+        for record in self:
+            if record.birth_date > fields.Date.today():
+                raise ValidationError(_(
+                    "Birth Date can't be greater than current date!"))
 
-    @api.one
+    @api.multi
     def create_employee(self):
-        vals = {
-            'name': self.name + ' ' + (self.middle_name or '') +
-            ' ' + self.last_name,
-            'country_id': self.nationality.id,
-            'gender': self.gender,
-            'address_home_id': self.partner_id.id
-        }
-        emp_id = self.env['hr.employee'].create(vals)
-        self.write({'emp_id': emp_id.id})
-        self.partner_id.write({'supplier': True, 'employee': True})
-
-
-# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+        for record in self:
+            vals = {
+                'name': record.name + ' ' + (record.middle_name or '') +
+                ' ' + record.last_name,
+                'country_id': record.nationality.id,
+                'gender': record.gender,
+                'address_home_id': record.partner_id.id
+            }
+            emp_id = self.env['hr.employee'].create(vals)
+            record.write({'emp_id': emp_id.id})
+            record.partner_id.write({'supplier': True, 'employee': True})
