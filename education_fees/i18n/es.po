@@ -1,0 +1,192 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* education_fees
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-11 07:47+0000\n"
+"PO-Revision-Date: 2017-05-11 10:30+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.1\n"
+
+#. module: education_fees
+#: model:ir.ui.view,arch_db:education_fees.view_op_student_form_fees_inherit
+msgid "<br/>Invoiced"
+msgstr "<br/>Facturado"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: education_fees
+#: selection:op.fees.terms,day_type:0
+msgid "After"
+msgstr "Después"
+
+#. module: education_fees
+#: selection:op.fees.terms,day_type:0
+msgid "Before"
+msgstr "Antes de"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_student_payment_token_count
+msgid "Count Payment Token"
+msgstr "Count Payment Token"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_create_uid
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_create_date
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_note
+msgid "Description"
+msgstr "Descripción"
+
+#. module: education_fees
+#: model:ir.ui.view,arch_db:education_fees.view_fees_terms_form
+msgid "Description..."
+msgstr "Descripción..."
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_display_name
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_due_days
+msgid "Due Days"
+msgstr "Días de vencimiento"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_fees_id
+msgid "Fees"
+msgstr "Matricula"
+
+#. module: education_fees
+#: model:ir.ui.view,arch_db:education_fees.view_fees_terms_form
+#: model:ir.ui.view,arch_db:education_fees.view_fees_terms_search
+#: model:ir.ui.view,arch_db:education_fees.view_fees_terms_tree
+msgid "Fees Reminder Terms"
+msgstr "recordatorios de cuotas"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_course_fees_term_id
+msgid "Fees Term"
+msgstr "Cuota"
+
+#. module: education_fees
+#: model:ir.ui.view,arch_db:education_fees.view_fees_terms_form
+msgid "Fees Term Line"
+msgstr "Línea plazo de cuotas"
+
+#. module: education_fees
+#: model:ir.actions.act_window,name:education_fees.act_open_fees_terms_view
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_name
+#: model:ir.ui.menu,name:education_fees.menu_fees_terms
+msgid "Fees Terms"
+msgstr "cuotas"
+
+#. module: education_fees
+#: code:addons/education_fees/models/fees_terms.py:49
+#, python-format
+msgid "Fees Terms must be Required!"
+msgstr "cuotas deben ser requeridos!"
+
+#. module: education_fees
+#: code:addons/education_fees/models/fees_terms.py:55
+#, python-format
+msgid "Fees terms must be divided             as such sum up in 100%"
+msgstr "Las cuotas deben ser divididos             como tal suma en 100%"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_id
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_id
+msgid "ID"
+msgstr "ID"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms___last_update
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_write_uid
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_write_date
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_no_days
+msgid "No of Days"
+msgstr "No de días"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_student_payment_token_ids
+msgid "Payment Tokens"
+msgstr "Payment Tokens"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_ids
+#: model:ir.ui.view,arch_db:education_fees.view_fees_terms_form
+msgid "Terms"
+msgstr "Términos"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_day_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: education_fees
+#: model:ir.model.fields,field_description:education_fees.field_op_fees_terms_line_value
+msgid "Value (%)"
+msgstr "Valor (%)"
+
+#. module: education_fees
+#: model:ir.model,name:education_fees.model_op_course
+msgid "op.course"
+msgstr "op.course"
+
+#. module: education_fees
+#: model:ir.model,name:education_fees.model_op_fees_terms
+msgid "op.fees.terms"
+msgstr "op.fees.terms"
+
+#. module: education_fees
+#: model:ir.model,name:education_fees.model_op_fees_terms_line
+msgid "op.fees.terms.line"
+msgstr "op.fees.terms.line"
+
+#. module: education_fees
+#: model:ir.model,name:education_fees.model_op_student
+msgid "op.student"
+msgstr "op.student"

@@ -3,7 +3,7 @@
 
 [report]
 include =
-    */openeducat/openeducat_erp/*
+    */education/education_erp/*
 
 omit =
     */tests/*
