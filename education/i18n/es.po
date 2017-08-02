@@ -92,26 +92,6 @@ msgid "<strong>Bonafide Certificate</strong>"
 msgstr "<strong>Certificado de buena fe</strong>"
 
 #. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "A+ve"
-msgstr "A+"
-
-#. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "A-ve"
-msgstr "A-"
-
-#. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "AB+ve"
-msgstr "AB+"
-
-#. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "AB-ve"
-msgstr "AB-"
-
-#. module: education
 #: model:ir.model.fields,field_description:education.field_education_faculty_property_account_payable_id
 #: model:ir.model.fields,field_description:education.field_education_student_property_account_payable_id
 #: model:ir.model.fields,field_description:education.field_res_users_property_account_payable_id
@@ -194,16 +174,6 @@ msgid "Approved"
 msgstr "Aprobado"
 
 #. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "B+ve"
-msgstr "B+"
-
-#. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "B-ve"
-msgstr "B-"
-
-#. module: education
 #: model:res.groups,name:education.group_education_back_office
 msgid "Back Office"
 msgstr "Back Office"
@@ -260,14 +230,6 @@ msgstr "Fecha de nacimiento"
 #, python-format
 msgid "Birth Date can't be greater than current date!"
 msgstr "La fecha de nacimiento no puede ser mayor que la fecha actual"
-
-#. module: education
-#: model:ir.model.fields,field_description:education.field_education_faculty_blood_group
-#: model:ir.model.fields,field_description:education.field_education_student_blood_group
-#: model:ir.ui.view,arch_db:education.view_education_faculty_search
-#: model:ir.ui.view,arch_db:education.view_education_student_search
-msgid "Blood Group"
-msgstr "Grupo sanguíneo"
 
 #. module: education
 #: model:ir.actions.report.xml,name:education.action_report_student_bonafide
@@ -1197,16 +1159,6 @@ msgstr "Número de mensajes que requieren una acción"
 #: model:ir.model.fields,help:education.field_education_student_message_unread_counter
 msgid "Number of unread messages"
 msgstr "Número de mensajes no leidos"
-
-#. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "O+ve"
-msgstr "O+"
-
-#. module: education
-#: selection:education.faculty,blood_group:0 selection:education.student,blood_group:0
-msgid "O-ve"
-msgstr "O-"
 
 #. module: education
 #: model:ir.module.category,name:education.module_category_education

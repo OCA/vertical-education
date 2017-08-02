@@ -8,7 +8,6 @@
             <field name="last_name">Dani</field>
             <field name="gender">f</field>
             <field name="birthdate_date">1992-05-06</field>
-            <field name="blood_group">A-</field>
             <field name="email">sumitasdani@demo.com</field>
             <field name="city">Banglore</field>
             <field name="country_id" ref="base.in" />
@@ -28,7 +27,6 @@
             <field name="last_name">Chua</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1989-11-05</field>
-            <field name="blood_group">AB+</field>
             <field name="email">xunkchua@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.cn" />
@@ -48,7 +46,6 @@
             <field name="last_name">Boon</field>
             <field name="gender">f</field>
             <field name="birthdate_date">1991-03-12</field>
-            <field name="blood_group">AB+</field>
             <field name="email">lillingiboon@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.hk" />
@@ -68,7 +65,6 @@
             <field name="last_name">Dani</field>
             <field name="gender">f</field>
             <field name="birthdate_date">1991-05-16</field>
-            <field name="blood_group">AB-</field>
             <field name="email">prachisdani@demo.com</field>
             <field name="city">Banglore</field>
             <field name="country_id" ref="base.in" />
@@ -88,7 +84,6 @@
             <field name="last_name">Cisse</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1991-09-12</field>
-            <field name="blood_group">AB+</field>
             <field name="email">valdezlcisse@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.km" />
@@ -108,7 +103,6 @@
             <field name="last_name">Aybar</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1990-12-12</field>
-            <field name="blood_group">B-</field>
             <field name="email">matthewkaybar@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.es" />
@@ -128,7 +122,6 @@
             <field name="last_name">Bitar</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1990-09-01</field>
-            <field name="blood_group">A+</field>
             <field name="email">dawudlbitar@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.sa" />
@@ -148,7 +141,6 @@
             <field name="last_name">Damian</field>
             <field name="gender">f</field>
             <field name="birthdate_date">1990-06-10</field>
-            <field name="blood_group">B-</field>
             <field name="email">laurazdamian@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.mx" />
@@ -168,7 +160,6 @@
             <field name="last_name">Parikh</field>
             <field name="gender">f</field>
             <field name="birthdate_date">1992-05-12</field>
-            <field name="blood_group">AB+</field>
             <field name="email">rishitatparikh@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
@@ -188,7 +179,6 @@
             <field name="last_name">Chaudhri</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1989-09-30</field>
-            <field name="blood_group">O+</field>
             <field name="email">abhinavychaudhri@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
@@ -208,7 +198,6 @@
             <field name="last_name">Jha</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1990-07-12</field>
-            <field name="blood_group">O+</field>
             <field name="email">deepakkjha@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
@@ -228,7 +217,6 @@
             <field name="last_name">Lan</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1991-12-03</field>
-            <field name="blood_group">B+</field>
             <field name="email">hungklan@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.cn" />
@@ -248,7 +236,6 @@
             <field name="last_name">Sim</field>
             <field name="gender">f</field>
             <field name="birthdate_date">1990-07-02</field>
-            <field name="blood_group">B+</field>
             <field name="email">qiangwsim@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.cn" />
@@ -268,7 +255,6 @@
             <field name="last_name">Sharma</field>
             <field name="gender">m</field>
             <field name="birthdate_date">1991-03-18</field>
-            <field name="blood_group">O+</field>
             <field name="email">hardikspatel@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
@@ -288,7 +274,6 @@
             <field name="last_name">Hasnandani</field>
             <field name="gender">f</field>
             <field name="birthdate_date">1991-11-02</field>
-            <field name="blood_group">AB-</field>
             <field name="email">shwetaohasnandani@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.in" />
@@ -308,7 +293,6 @@
             <field name="last_name">Fostar</field>
             <field name="gender">m</field>
             <field name="birthdate_date">2003-01-06</field>
-            <field name="blood_group">O+</field>
             <field name="email">danielwfostar@demo.com</field>
             <field name="city">Houston</field>
             <field name="country_id" ref="base.us" />
@@ -328,7 +312,6 @@
             <field name="last_name">Smith</field>
             <field name="gender">f</field>
             <field name="birthdate_date">2003-12-03</field>
-            <field name="blood_group">B-</field>
             <field name="email">alexisksmith@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.us" />
@@ -348,7 +331,6 @@
             <field name="last_name">Bennett</field>
             <field name="gender">f</field>
             <field name="birthdate_date">2003-04-03</field>
-            <field name="blood_group">AB-</field>
             <field name="email">masondbannett@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.us" />
@@ -368,7 +350,6 @@
             <field name="last_name">Palmer</field>
             <field name="gender">f</field>
             <field name="birthdate_date">2002-03-05</field>
-            <field name="blood_group">A+</field>
             <field name="email">graceepalmer@demo.com</field>
             <field name="city">Fort Worth</field>
             <field name="country_id" ref="base.us" />
@@ -388,7 +369,6 @@
             <field name="last_name">Clark</field>
             <field name="gender">m</field>
             <field name="birthdate_date">2003-09-04</field>
-            <field name="blood_group">B+</field>
             <field name="email">isaacfclark@demo.com</field>
             <field name="city"></field>
             <field name="country_id" ref="base.us" />

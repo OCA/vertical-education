@@ -64,9 +64,6 @@
                                                         <span t-field='o.last_name' />
                                                     </b>
                                                     <br></br>
-                                                    Blood Group :
-                                                    <span t-field='o.blood_group' />
-                                                    <br></br>
                                                     BirthDate :
                                                     <span t-field='o.birthdate_date' />
                                                 </div>

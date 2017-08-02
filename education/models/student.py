@@ -33,15 +33,6 @@ class EducationStudent(models.Model):
     _name = 'education.student'
     _inherits = {'res.partner': 'partner_id'}
 
-    middle_name = fields.Char('Middle Name', size=128)
-    last_name = fields.Char('Last Name', size=128, required=True)
-    blood_group = fields.Selection(
-        [('A+', 'A+ve'), ('B+', 'B+ve'), ('O+', 'O+ve'), ('AB+', 'AB+ve'),
-         ('A-', 'A-ve'), ('B-', 'B-ve'), ('O-', 'O-ve'), ('AB-', 'AB-ve')],
-        'Blood Group')
-    gender = fields.Selection(
-        [('m', 'Male'), ('f', 'Female'),
-         ('o', 'Other')], 'Gender', required=True)
     nationality = fields.Many2one('res.country', 'Nationality')
     emergency_contact = fields.Many2one(
         'res.partner', 'Emergency Contact')
