@@ -18,11 +18,11 @@
                                     <h4>
                                         <a type="open">
                                             <field name="name" />
-                                            <t t-if="record.middle_name.raw_value">
-                                                <field name="middle_name" />
+                                            <t t-if="record.lastname.raw_value">
+                                                <field name="lastname" />
                                             </t>
-                                            <t t-if="record.last_name.raw_value">
-                                                <field name="last_name" />
+                                            <t t-if="record.lastname2.raw_value">
+                                                <field name="lastname2" />
                                             </t>
                                         </a>
                                     </h4>
@@ -68,8 +68,8 @@
                 <tree string="Faculty">
                     <field name="title" />
                     <field name="name" />
-                    <field name="middle_name" />
-                    <field name="last_name" />
+                    <field name="lastname" />
+                    <field name="lastname2" />
                     <field name="emergency_contact" />
                 </tree>
             </field>
@@ -92,8 +92,8 @@
                             <h1><table>
                                 <tr>
                                 <td style="padding-right:10px"><field name="name" required="1" placeholder="First Name" /></td>
-                                <td style="padding-right:10px"><field name="middle_name" placeholder="Middle Name" /></td>
-                                <td style="padding-right:10px"><field name="last_name" placeholder="Last Name" /></td>
+                                <td style="padding-right:10px"><field name="lastname" placeholder="Middle Name" /></td>
+                                <td style="padding-right:10px"><field name="lastname2" placeholder="Last Name" /></td>
                                 </tr>
                                 </table>
                             </h1>

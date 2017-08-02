@@ -983,8 +983,8 @@ msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: education
-#: model:ir.model.fields,field_description:education.field_education_faculty_last_name
-#: model:ir.model.fields,field_description:education.field_education_student_last_name
+#: model:ir.model.fields,field_description:education.field_education_faculty_lastname2
+#: model:ir.model.fields,field_description:education.field_education_student_lastname2
 #: model:ir.ui.view,arch_db:education.view_education_faculty_form
 #: model:ir.ui.view,arch_db:education.view_education_student_form
 msgid "Last Name"
@@ -1086,8 +1086,8 @@ msgid "Messages"
 msgstr "Mensajes"
 
 #. module: education
-#: model:ir.model.fields,field_description:education.field_education_faculty_middle_name
-#: model:ir.model.fields,field_description:education.field_education_student_middle_name
+#: model:ir.model.fields,field_description:education.field_education_faculty_lastname
+#: model:ir.model.fields,field_description:education.field_education_student_lastname
 #: model:ir.ui.view,arch_db:education.view_education_faculty_form
 #: model:ir.ui.view,arch_db:education.view_education_student_form
 msgid "Middle Name"

@@ -12,8 +12,8 @@ class EducationFaculty(models.Model):
 
     partner_id = fields.Many2one(
         'res.partner', 'Partner', required=True, ondelete="cascade")
-    middle_name = fields.Char('Middle Name', size=128)
-    last_name = fields.Char('Last Name', size=128, required=True)
+    lastname = fields.Char('Middle Name', size=128)
+    lastname2 = fields.Char('Last Name', size=128, required=True)
     blood_group = fields.Selection(
         [('A+', 'A+ve'), ('B+', 'B+ve'), ('O+', 'O+ve'), ('AB+', 'AB+ve'),
          ('A-', 'A-ve'), ('B-', 'B-ve'), ('O-', 'O-ve'), ('AB-', 'AB-ve')],
@@ -46,8 +46,8 @@ class EducationFaculty(models.Model):
     def create_employee(self):
         for record in self:
             vals = {
-                'name': record.name + ' ' + (record.middle_name or '') +
-                ' ' + record.last_name,
+                'name': record.name + ' ' + (record.lastname or '') +
+                ' ' + record.lastname2,
                 'country_id': record.nationality.id,
                 'gender': record.gender,
                 'address_home_id': record.partner_id.id

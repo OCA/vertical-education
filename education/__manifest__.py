@@ -21,6 +21,7 @@
         'partner_firstname',
         'partner_second_lastname',
         'partner_contact_birthdate',
+        'partner_contact_nationality'
     ],
     'data': [
         'report/report_menu.xml',

@@ -60,8 +60,8 @@
                                                     style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
                                                     <b>
                                                         <span t-field='o.name' />
-                                                        <span t-field='o.middle_name' />
-                                                        <span t-field='o.last_name' />
+                                                        <span t-field='o.lastname' />
+                                                        <span t-field='o.lastname2' />
                                                     </b>
                                                     <br></br>
                                                     BirthDate :

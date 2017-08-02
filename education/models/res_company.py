@@ -24,7 +24,7 @@ class ResUsers(models.Model):
             if not rec.user_id:
                 user_vals = {
                     'name': rec.name,
-                    'login': rec.email or (rec.name + rec.last_name),
+                    'login': rec.email or (rec.name + rec.lastname2),
                     'partner_id': rec.partner_id.id
                 }
                 user_id = self.create(user_vals)

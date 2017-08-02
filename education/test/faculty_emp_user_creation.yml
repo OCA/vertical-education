@@ -14,8 +14,8 @@
   !record {model: education.faculty, id: faculty_aadolf_test}:
     name: 'Aadolf'
     title: base.res_partner_title_mister
-    middle_name: 'D'
-    last_name: 'Church'
+    lastname: 'D'
+    lastname2: 'Church'
     gender: 'male'
     birthdate_date: '1983-02-01'
     email: 'aadolfdchurch@demo.com'
@@ -55,8 +55,8 @@
   !record {model: education.faculty, id: faculty_dylan_test}:
     name: 'Dylan'
     title: base.res_partner_title_mister
-    middle_name: 'Q'
-    last_name: 'Hidalgo'
+    lastname: 'Q'
+    lastname2: 'Hidalgo'
     gender: 'male'
     birthdate_date: '1983-02-01'
     email: 'dylanqhidalgo@demo.com'

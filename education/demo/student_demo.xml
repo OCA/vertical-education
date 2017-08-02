@@ -3,10 +3,10 @@
     <data noupdate="1">
         <record id="education_student_1" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Sumita</field>
-            <field name="middle_name">S</field>
-            <field name="last_name">Dani</field>
-            <field name="gender">f</field>
+            <field name="firstname">Sumita</field>
+            <field name="lastname">S</field>
+            <field name="lastname2">Dani</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">1992-05-06</field>
             <field name="email">sumitasdani@demo.com</field>
             <field name="city">Banglore</field>
@@ -22,10 +22,10 @@
 
         <record id="education_student_2" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Xun</field>
-            <field name="middle_name">K</field>
-            <field name="last_name">Chua</field>
-            <field name="gender">m</field>
+            <field name="firstname">Xun</field>
+            <field name="lastname">K</field>
+            <field name="lastname2">Chua</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1989-11-05</field>
             <field name="email">xunkchua@demo.com</field>
             <field name="city"></field>
@@ -41,10 +41,10 @@
 
         <record id="education_student_3" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Liling</field>
-            <field name="middle_name">I</field>
-            <field name="last_name">Boon</field>
-            <field name="gender">f</field>
+            <field name="firstname">Liling</field>
+            <field name="lastname">I</field>
+            <field name="lastname2">Boon</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">1991-03-12</field>
             <field name="email">lillingiboon@demo.com</field>
             <field name="city"></field>
@@ -60,10 +60,10 @@
 
         <record id="education_student_4" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Prachi</field>
-            <field name="middle_name">S</field>
-            <field name="last_name">Dani</field>
-            <field name="gender">f</field>
+            <field name="firstname">Prachi</field>
+            <field name="lastname">S</field>
+            <field name="lastname2">Dani</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">1991-05-16</field>
             <field name="email">prachisdani@demo.com</field>
             <field name="city">Banglore</field>
@@ -79,10 +79,10 @@
 
         <record id="education_student_5" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Valdez</field>
-            <field name="middle_name">L</field>
-            <field name="last_name">Cisse</field>
-            <field name="gender">m</field>
+            <field name="firstname">Valdez</field>
+            <field name="lastname">L</field>
+            <field name="lastname2">Cisse</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1991-09-12</field>
             <field name="email">valdezlcisse@demo.com</field>
             <field name="city"></field>
@@ -98,10 +98,10 @@
 
         <record id="education_student_6" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Matthew</field>
-            <field name="middle_name">K</field>
-            <field name="last_name">Aybar</field>
-            <field name="gender">m</field>
+            <field name="firstname">Matthew</field>
+            <field name="lastname">K</field>
+            <field name="lastname2">Aybar</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1990-12-12</field>
             <field name="email">matthewkaybar@demo.com</field>
             <field name="city"></field>
@@ -117,10 +117,10 @@
 
         <record id="education_student_7" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Dawid</field>
-            <field name="middle_name">L</field>
-            <field name="last_name">Bitar</field>
-            <field name="gender">m</field>
+            <field name="firstname">Dawid</field>
+            <field name="lastname">L</field>
+            <field name="lastname2">Bitar</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1990-09-01</field>
             <field name="email">dawudlbitar@demo.com</field>
             <field name="city"></field>
@@ -136,10 +136,10 @@
 
         <record id="education_student_8" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Laura</field>
-            <field name="middle_name">Z</field>
-            <field name="last_name">Damian</field>
-            <field name="gender">f</field>
+            <field name="firstname">Laura</field>
+            <field name="lastname">Z</field>
+            <field name="lastname2">Damian</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">1990-06-10</field>
             <field name="email">laurazdamian@demo.com</field>
             <field name="city"></field>
@@ -155,10 +155,10 @@
 
         <record id="education_student_9" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Rishita</field>
-            <field name="middle_name">T</field>
-            <field name="last_name">Parikh</field>
-            <field name="gender">f</field>
+            <field name="firstname">Rishita</field>
+            <field name="lastname">T</field>
+            <field name="lastname2">Parikh</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">1992-05-12</field>
             <field name="email">rishitatparikh@demo.com</field>
             <field name="city"></field>
@@ -174,10 +174,10 @@
 
         <record id="education_student_10" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Abhinav</field>
-            <field name="middle_name">Y</field>
-            <field name="last_name">Chaudhri</field>
-            <field name="gender">m</field>
+            <field name="firstname">Abhinav</field>
+            <field name="lastname">Y</field>
+            <field name="lastname2">Chaudhri</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1989-09-30</field>
             <field name="email">abhinavychaudhri@demo.com</field>
             <field name="city"></field>
@@ -193,10 +193,10 @@
 
         <record id="education_student_11" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Deepak</field>
-            <field name="middle_name">K</field>
-            <field name="last_name">Jha</field>
-            <field name="gender">m</field>
+            <field name="firstname">Deepak</field>
+            <field name="lastname">K</field>
+            <field name="lastname2">Jha</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1990-07-12</field>
             <field name="email">deepakkjha@demo.com</field>
             <field name="city"></field>
@@ -212,10 +212,10 @@
 
         <record id="education_student_12" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Hung</field>
-            <field name="middle_name">K</field>
-            <field name="last_name">Lan</field>
-            <field name="gender">m</field>
+            <field name="firstname">Hung</field>
+            <field name="lastname">K</field>
+            <field name="lastname2">Lan</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1991-12-03</field>
             <field name="email">hungklan@demo.com</field>
             <field name="city"></field>
@@ -231,10 +231,10 @@
 
         <record id="education_student_13" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Qiang</field>
-            <field name="middle_name">W</field>
-            <field name="last_name">Sim</field>
-            <field name="gender">f</field>
+            <field name="firstname">Qiang</field>
+            <field name="lastname">W</field>
+            <field name="lastname2">Sim</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">1990-07-02</field>
             <field name="email">qiangwsim@demo.com</field>
             <field name="city"></field>
@@ -250,10 +250,10 @@
 
         <record id="education_student_14" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Hardik</field>
-            <field name="middle_name">S</field>
-            <field name="last_name">Sharma</field>
-            <field name="gender">m</field>
+            <field name="firstname">Hardik</field>
+            <field name="lastname">S</field>
+            <field name="lastname2">Sharma</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">1991-03-18</field>
             <field name="email">hardikspatel@demo.com</field>
             <field name="city"></field>
@@ -269,10 +269,10 @@
 
         <record id="education_student_15" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Shweta</field>
-            <field name="middle_name">O</field>
-            <field name="last_name">Hasnandani</field>
-            <field name="gender">f</field>
+            <field name="firstname">Shweta</field>
+            <field name="lastname">O</field>
+            <field name="lastname2">Hasnandani</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">1991-11-02</field>
             <field name="email">shwetaohasnandani@demo.com</field>
             <field name="city"></field>
@@ -288,10 +288,10 @@
 
         <record id="education_student_16" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Daniel</field>
-            <field name="middle_name">W</field>
-            <field name="last_name">Fostar</field>
-            <field name="gender">m</field>
+            <field name="firstname">Daniel</field>
+            <field name="lastname">W</field>
+            <field name="lastname2">Fostar</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">2003-01-06</field>
             <field name="email">danielwfostar@demo.com</field>
             <field name="city">Houston</field>
@@ -307,10 +307,10 @@
 
         <record id="education_student_17" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Alexis</field>
-            <field name="middle_name">K</field>
-            <field name="last_name">Smith</field>
-            <field name="gender">f</field>
+            <field name="firstname">Alexis</field>
+            <field name="lastname">K</field>
+            <field name="lastname2">Smith</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">2003-12-03</field>
             <field name="email">alexisksmith@demo.com</field>
             <field name="city"></field>
@@ -326,10 +326,10 @@
 
         <record id="education_student_18" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Mason</field>
-            <field name="middle_name">D</field>
-            <field name="last_name">Bennett</field>
-            <field name="gender">f</field>
+            <field name="firstname">Mason</field>
+            <field name="lastname">D</field>
+            <field name="lastname2">Bennett</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">2003-04-03</field>
             <field name="email">masondbannett@demo.com</field>
             <field name="city"></field>
@@ -345,10 +345,10 @@
 
         <record id="education_student_19" model="education.student">
             <field name="title" ref="base.res_partner_title_miss" />
-            <field name="name">Grace</field>
-            <field name="middle_name">E</field>
-            <field name="last_name">Palmer</field>
-            <field name="gender">f</field>
+            <field name="firstname">Grace</field>
+            <field name="lastname">E</field>
+            <field name="lastname2">Palmer</field>
+            <field name="gender">female</field>
             <field name="birthdate_date">2002-03-05</field>
             <field name="email">graceepalmer@demo.com</field>
             <field name="city">Fort Worth</field>
@@ -364,10 +364,10 @@
 
         <record id="education_student_20" model="education.student">
             <field name="title" ref="base.res_partner_title_mister" />
-            <field name="name">Isaac</field>
-            <field name="middle_name">F</field>
-            <field name="last_name">Clark</field>
-            <field name="gender">m</field>
+            <field name="firstname">Isaac</field>
+            <field name="lastname">F</field>
+            <field name="lastname2">Clark</field>
+            <field name="gender">male</field>
             <field name="birthdate_date">2003-09-04</field>
             <field name="email">isaacfclark@demo.com</field>
             <field name="city"></field>
