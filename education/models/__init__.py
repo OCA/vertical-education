@@ -3,7 +3,6 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
 
 from . import batch
-from . import category
 from . import course
 from . import faculty
 from . import hr

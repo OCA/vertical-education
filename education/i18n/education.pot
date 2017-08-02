@@ -270,12 +270,6 @@ msgid "Cancel"
 msgstr ""
 
 #. module: education
-#: model:ir.actions.act_window,name:education.act_open_education_category_view
-#: model:ir.ui.menu,name:education.menu_education_category_sub
-msgid "Categories"
-msgstr ""
-
-#. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_category_id
 #: model:ir.ui.view,arch_db:education.view_education_category_form
 #: model:ir.ui.view,arch_db:education.view_education_category_search
