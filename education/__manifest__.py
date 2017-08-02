@@ -13,7 +13,15 @@
     'summary': 'Manage Students, Faculties and Education Institute',
     'complexity': 'easy',
     'author': 'Tech Receptives',
-    'depends': ['board', 'document', 'hr', 'web', 'website'],
+    'depends': [
+        'board',
+        'document',
+        'hr',
+        'partner_contact_gender',
+        'partner_firstname',
+        'partner_second_lastname',
+        'partner_contact_birthdate',
+    ],
     'data': [
         'report/report_menu.xml',
         'report/report_student_bonafide.xml',
