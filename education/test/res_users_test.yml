@@ -11,7 +11,7 @@
 -
   !record {model: res.users, id: res_users_backoffice_admin_user_test}:
     groups_id:
-      - education_core.group_op_back_office_admin
+      - education.group_op_back_office_admin
 -
    Create a user as 'Backoffice user'
 -
@@ -25,4 +25,4 @@
 -
   !record {model: res.users, id: res_users_backoffice_user_test}:
     groups_id:
-      - education_core.group_op_back_office
+      - education.group_op_back_office

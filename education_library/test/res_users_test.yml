@@ -11,7 +11,7 @@
 -
   !record {model: res.users, id: res_users_backoffice_admin_user_test}:
     groups_id:
-      - education_core.group_op_back_office_admin
+      - education.group_op_back_office_admin
 -
    Create an user as 'Faculty'
 -
@@ -25,7 +25,7 @@
 -
   !record {model: res.users, id: res_users_faculty_user_test}:
     groups_id:
-      - education_core.group_op_faculty
+      - education.group_op_faculty
 -
    Create an user as 'Student'
 -
@@ -39,7 +39,7 @@
 -
   !record {model: res.users, id: res_users_student_user_test}:
     groups_id:
-      - education_core.group_op_student
+      - education.group_op_student
 -
    Create an user as 'Librarian'
 -

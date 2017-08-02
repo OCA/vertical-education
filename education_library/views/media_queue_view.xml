@@ -26,13 +26,13 @@
                     <header groups="base.group_user">
                         <button name="do_accept" string="Accept" type="object"
                             states="request" class="oe_highlight"
-                            groups="education_core.group_op_back_office_admin,education_library.group_op_library" />
+                            groups="education.group_op_back_office_admin,education_library.group_op_library" />
                         <button name="do_reject" string="Reject" type="object"
                             states="request,accept"
-                            groups="education_core.group_op_back_office_admin,education_library.group_op_library" />
+                            groups="education.group_op_back_office_admin,education_library.group_op_library" />
                         <button name="do_request_again" string="Request Again"
                             states="reject" type="object"
-                            groups="education_core.group_op_faculty,education_core.group_op_student" />
+                            groups="education.group_op_faculty,education.group_op_student" />
                         <field name="state" widget="statusbar" statusbar_visible="request,reject,accept"
                             statusbar_colors='{"reject":"red"}' />
                     </header>

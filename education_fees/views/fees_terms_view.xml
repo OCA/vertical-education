@@ -87,9 +87,9 @@
         </record>
         
         <menuitem id="menu_fees_terms"
-            parent="education_core.menu_op_school_config"
+            parent="education.menu_op_school_config"
             sequence="10"
-            groups="education_core.group_op_back_office"
+            groups="education.group_op_back_office"
             action="act_open_fees_terms_view"/>
     </data>
 </openerp>

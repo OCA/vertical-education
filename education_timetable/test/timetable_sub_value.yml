@@ -58,7 +58,7 @@
 -
   !record {model: res.users, id: res_users_faculty_user_test}:
     groups_id:
-      - education_core.group_op_faculty
+      - education.group_op_faculty
 -
    In order to use it in Timetable I create Faculty first
 -

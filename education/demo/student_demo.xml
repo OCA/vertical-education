@@ -18,7 +18,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_1" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_1.jpg" />
+                file="education/static/img/student_1.jpg" />
         </record>
 
         <record id="op_student_2" model="op.student">
@@ -38,7 +38,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_2" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_2.jpg" />
+                file="education/static/img/student_2.jpg" />
         </record>
 
         <record id="op_student_3" model="op.student">
@@ -58,7 +58,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_3" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_3.jpg" />
+                file="education/static/img/student_3.jpg" />
         </record>
 
         <record id="op_student_4" model="op.student">
@@ -78,7 +78,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_4" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_4.jpg" />
+                file="education/static/img/student_4.jpg" />
         </record>
 
         <record id="op_student_5" model="op.student">
@@ -98,7 +98,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_5" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_5.jpg" />
+                file="education/static/img/student_5.jpg" />
         </record>
 
         <record id="op_student_6" model="op.student">
@@ -118,7 +118,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_6" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_6.jpg" />
+                file="education/static/img/student_6.jpg" />
         </record>
 
         <record id="op_student_7" model="op.student">
@@ -138,7 +138,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_7" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_7.jpg" />
+                file="education/static/img/student_7.jpg" />
         </record>
 
         <record id="op_student_8" model="op.student">
@@ -158,7 +158,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_8" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_8.jpg" />
+                file="education/static/img/student_8.jpg" />
         </record>
 
         <record id="op_student_9" model="op.student">
@@ -178,7 +178,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_9" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_9.jpg" />
+                file="education/static/img/student_9.jpg" />
         </record>
 
         <record id="op_student_10" model="op.student">
@@ -198,7 +198,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_10" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_10.jpg" />
+                file="education/static/img/student_10.jpg" />
         </record>
 
         <record id="op_student_11" model="op.student">
@@ -218,7 +218,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_11" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_11.jpg" />
+                file="education/static/img/student_11.jpg" />
         </record>
 
         <record id="op_student_12" model="op.student">
@@ -238,7 +238,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_12" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_12.jpg" />
+                file="education/static/img/student_12.jpg" />
         </record>
 
         <record id="op_student_13" model="op.student">
@@ -258,7 +258,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_13" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_13.jpg" />
+                file="education/static/img/student_13.jpg" />
         </record>
 
         <record id="op_student_14" model="op.student">
@@ -278,7 +278,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_14" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_14.jpg" />
+                file="education/static/img/student_14.jpg" />
         </record>
 
         <record id="op_student_15" model="op.student">
@@ -298,7 +298,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_15" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_15.jpg" />
+                file="education/static/img/student_15.jpg" />
         </record>
 
         <record id="op_student_16" model="op.student">
@@ -318,7 +318,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_16" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_16.jpg" />
+                file="education/static/img/student_16.jpg" />
         </record>
 
         <record id="op_student_17" model="op.student">
@@ -338,7 +338,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_17" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_17.jpg" />
+                file="education/static/img/student_17.jpg" />
         </record>
 
         <record id="op_student_18" model="op.student">
@@ -358,7 +358,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_18" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_18.jpg" />
+                file="education/static/img/student_18.jpg" />
         </record>
 
         <record id="op_student_19" model="op.student">
@@ -378,7 +378,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_19" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_19.jpg" />
+                file="education/static/img/student_19.jpg" />
         </record>
 
         <record id="op_student_20" model="op.student">
@@ -398,7 +398,7 @@
             <field name="active">True</field>
             <field name="partner_id" ref="op_res_partner_20" />
             <field name="photo" type="base64"
-                file="education_core/static/img/student_20.jpg" />
+                file="education/static/img/student_20.jpg" />
         </record>
 
     </data>

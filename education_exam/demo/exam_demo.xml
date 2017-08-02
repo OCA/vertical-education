@@ -9,7 +9,7 @@
             <field name="min_marks">40</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_1" />
-            <field name="subject_id" ref="education_core.op_subject_1" />
+            <field name="subject_id" ref="education.op_subject_1" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-01 04:30')" />
             <field name="end_time"
@@ -23,7 +23,7 @@
             <field name="min_marks">40</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_1" />
-            <field name="subject_id" ref="education_core.op_subject_2" />
+            <field name="subject_id" ref="education.op_subject_2" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-02 04:30')" />
             <field name="end_time"
@@ -37,7 +37,7 @@
             <field name="min_marks">40</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_1" />
-            <field name="subject_id" ref="education_core.op_subject_3" />
+            <field name="subject_id" ref="education.op_subject_3" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-03 04:30')" />
             <field name="end_time"
@@ -51,7 +51,7 @@
             <field name="min_marks">40</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_1" />
-            <field name="subject_id" ref="education_core.op_subject_4" />
+            <field name="subject_id" ref="education.op_subject_4" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-04 04:30')" />
             <field name="end_time"
@@ -65,7 +65,7 @@
             <field name="min_marks">50</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_2" />
-            <field name="subject_id" ref="education_core.op_subject_9" />
+            <field name="subject_id" ref="education.op_subject_9" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-11 04:30')" />
             <field name="end_time"
@@ -79,7 +79,7 @@
             <field name="min_marks">50</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_2" />
-            <field name="subject_id" ref="education_core.op_subject_10" />
+            <field name="subject_id" ref="education.op_subject_10" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-12 04:30')" />
             <field name="end_time"
@@ -93,7 +93,7 @@
             <field name="min_marks">50</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_2" />
-            <field name="subject_id" ref="education_core.op_subject_11" />
+            <field name="subject_id" ref="education.op_subject_11" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-13 04:30')" />
             <field name="end_time"
@@ -107,7 +107,7 @@
             <field name="min_marks">50</field>
             <field name="total_marks">100</field>
             <field name="session_id" ref="op_exam_session_2" />
-            <field name="subject_id" ref="education_core.op_subject_12" />
+            <field name="subject_id" ref="education.op_subject_12" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-14 04:30')" />
             <field name="end_time"
@@ -121,7 +121,7 @@
             <field name="min_marks">35</field>
             <field name="total_marks">70</field>
             <field name="session_id" ref="op_exam_session_3" />
-            <field name="subject_id" ref="education_core.op_subject_9" />
+            <field name="subject_id" ref="education.op_subject_9" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-17 04:30')" />
             <field name="end_time"
@@ -135,7 +135,7 @@
             <field name="min_marks">35</field>
             <field name="total_marks">70</field>
             <field name="session_id" ref="op_exam_session_3" />
-            <field name="subject_id" ref="education_core.op_subject_10" />
+            <field name="subject_id" ref="education.op_subject_10" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-18 04:30')" />
             <field name="end_time"
@@ -149,7 +149,7 @@
             <field name="min_marks">35</field>
             <field name="total_marks">70</field>
             <field name="session_id" ref="op_exam_session_3" />
-            <field name="subject_id" ref="education_core.op_subject_11" />
+            <field name="subject_id" ref="education.op_subject_11" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-19 04:30')" />
             <field name="end_time"
@@ -163,7 +163,7 @@
             <field name="min_marks">35</field>
             <field name="total_marks">70</field>
             <field name="session_id" ref="op_exam_session_3" />
-            <field name="subject_id" ref="education_core.op_subject_12" />
+            <field name="subject_id" ref="education.op_subject_12" />
             <field name="start_time"
                 eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-20 04:30')" />
             <field name="end_time"

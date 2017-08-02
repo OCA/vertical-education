@@ -3,7 +3,7 @@
     <data>
         <record id="group_op_library" model="res.groups">
             <field name="name">Library</field>
-            <field name="category_id" ref="education_core.module_category_education_others" />
+            <field name="category_id" ref="education.module_category_education_others" />
             <field name="implied_ids" eval="[(4, ref('base.group_user')),(4, ref('account.group_account_invoice'))]"/>
             <field name="users" eval="[(4, ref('base.user_root'))]" />
         </record>
@@ -14,7 +14,7 @@
             <field name="model_id" ref="model_op_media_queue" />
             <field name="domain_force"> [('user_id','=',user.id)]</field>
             <field name="groups"
-                eval="[(4, ref('education_core.group_op_student'))]" />
+                eval="[(4, ref('education.group_op_student'))]" />
         </record>
 
         <record model="ir.rule" id="view_media_request_rule">
@@ -22,11 +22,11 @@
             <field name="model_id" ref="model_op_media_queue" />
             <field name="domain_force"> [(1,'=',1)]</field>
             <field name="groups"
-                eval="[(4, ref('education_core.group_op_back_office'))]" />
+                eval="[(4, ref('education.group_op_back_office'))]" />
         </record>
 
-        <record id="education_core.group_op_back_office" model="res.groups">
-            <field name="implied_ids" eval="[(4, ref('education_core.group_op_faculty')),(4, ref('base.group_partner_manager')),(4, ref('account.group_account_invoice'))]"/>
+        <record id="education.group_op_back_office" model="res.groups">
+            <field name="implied_ids" eval="[(4, ref('education.group_op_faculty')),(4, ref('base.group_partner_manager')),(4, ref('account.group_account_invoice'))]"/>
         </record>
     </data>
 </odoo>

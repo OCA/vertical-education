@@ -19,7 +19,7 @@ class WizardOpFaculty(models.TransientModel):
 
     @api.multi
     def create_faculty_user(self):
-        user_group = self.env.ref('education_core.group_op_faculty')
+        user_group = self.env.ref('education.group_op_faculty')
         active_ids = self.env.context.get('active_ids', []) or []
         records = self.env['op.faculty'].browse(active_ids)
         self.env['res.users'].create_user(records, user_group)

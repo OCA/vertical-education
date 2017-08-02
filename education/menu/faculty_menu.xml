@@ -2,14 +2,14 @@
 <odoo>
         <menuitem id="menu_op_faculty_root" name="Faculties"
             sequence="20"
-            web_icon="education_core,static/description/icon_faculty.png" />
+            web_icon="education,static/description/icon_faculty.png" />
 
         <menuitem id="menu_op_dashboard_faculty" name="Dashboard"
             sequence="10"
-            groups="education_core.group_op_back_office,education_core.group_op_back_office_admin,education_core.group_op_faculty"
+            groups="education.group_op_back_office,education.group_op_back_office_admin,education.group_op_faculty"
             parent="menu_op_faculty_root" action="open_board_faculty" />
 
         <menuitem id="subject_registration_faculty_menu" name="Subject Registration"
-            parent="education_core.menu_op_faculty_root" sequence="30"
-            action="act_subject_registration_view" groups="education_core.group_op_faculty" />
+            parent="education.menu_op_faculty_root" sequence="30"
+            action="act_subject_registration_view" groups="education.group_op_faculty" />
 </odoo>

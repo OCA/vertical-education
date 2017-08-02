@@ -5,7 +5,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_1" />
             <field name="exam_id" ref="op_exam_1" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_1" />
-            <field name="student_id" ref="education_core.op_student_1" />
+            <field name="student_id" ref="education.op_student_1" />
             <field name="status">pass</field>
             <field name="marks">55.00</field>
             <field name="per">55.00</field>
@@ -16,7 +16,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_2" />
             <field name="exam_id" ref="op_exam_1" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_1" />
-            <field name="student_id" ref="education_core.op_student_2" />
+            <field name="student_id" ref="education.op_student_2" />
             <field name="status">pass</field>
             <field name="marks">59.00</field>
             <field name="per">59.00</field>
@@ -27,7 +27,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_3" />
             <field name="exam_id" ref="op_exam_1" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_1" />
-            <field name="student_id" ref="education_core.op_student_3" />
+            <field name="student_id" ref="education.op_student_3" />
             <field name="status">pass</field>
             <field name="marks">75.00</field>
             <field name="per">75.00</field>
@@ -38,7 +38,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_4" />
             <field name="exam_id" ref="op_exam_1" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_1" />
-            <field name="student_id" ref="education_core.op_student_4" />
+            <field name="student_id" ref="education.op_student_4" />
             <field name="status">pass</field>
             <field name="marks">67.00</field>
             <field name="per">67.00</field>
@@ -54,7 +54,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_1" />
             <field name="exam_id" ref="op_exam_2" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_2" />
-            <field name="student_id" ref="education_core.op_student_1" />
+            <field name="student_id" ref="education.op_student_1" />
             <field name="status">pass</field>
             <field name="marks">45.00</field>
             <field name="per">45.00</field>
@@ -65,7 +65,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_2" />
             <field name="exam_id" ref="op_exam_2" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_2" />
-            <field name="student_id" ref="education_core.op_student_2" />
+            <field name="student_id" ref="education.op_student_2" />
             <field name="status">pass</field>
             <field name="marks">85.00</field>
             <field name="per">85.00</field>
@@ -76,7 +76,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_3" />
             <field name="exam_id" ref="op_exam_2" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_2" />
-            <field name="student_id" ref="education_core.op_student_3" />
+            <field name="student_id" ref="education.op_student_3" />
             <field name="status">pass</field>
             <field name="marks">65.00</field>
             <field name="per">65.00</field>
@@ -87,7 +87,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_4" />
             <field name="exam_id" ref="op_exam_2" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_2" />
-            <field name="student_id" ref="education_core.op_student_4" />
+            <field name="student_id" ref="education.op_student_4" />
             <field name="status">fail</field>
             <field name="marks">0.00</field>
             <field name="per">0.00</field>
@@ -102,7 +102,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_1" />
             <field name="exam_id" ref="op_exam_3" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_3" />
-            <field name="student_id" ref="education_core.op_student_1" />
+            <field name="student_id" ref="education.op_student_1" />
             <field name="status">pass</field>
             <field name="marks">55.00</field>
             <field name="per">55.00</field>
@@ -113,7 +113,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_2" />
             <field name="exam_id" ref="op_exam_3" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_3" />
-            <field name="student_id" ref="education_core.op_student_2" />
+            <field name="student_id" ref="education.op_student_2" />
             <field name="status">pass</field>
             <field name="marks">69.00</field>
             <field name="per">69.00</field>
@@ -124,7 +124,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_3" />
             <field name="exam_id" ref="op_exam_3" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_3" />
-            <field name="student_id" ref="education_core.op_student_3" />
+            <field name="student_id" ref="education.op_student_3" />
             <field name="status">pass</field>
             <field name="marks">84.00</field>
             <field name="per">84.00</field>
@@ -135,7 +135,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_4" />
             <field name="exam_id" ref="op_exam_3" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_3" />
-            <field name="student_id" ref="education_core.op_student_4" />
+            <field name="student_id" ref="education.op_student_4" />
             <field name="status">pass</field>
             <field name="marks">58.00</field>
             <field name="per">58.00</field>
@@ -150,7 +150,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_1" />
             <field name="exam_id" ref="op_exam_4" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_4" />
-            <field name="student_id" ref="education_core.op_student_1" />
+            <field name="student_id" ref="education.op_student_1" />
             <field name="status">pass</field>
             <field name="marks">88.00</field>
             <field name="per">88.00</field>
@@ -161,7 +161,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_2" />
             <field name="exam_id" ref="op_exam_4" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_4" />
-            <field name="student_id" ref="education_core.op_student_2" />
+            <field name="student_id" ref="education.op_student_2" />
             <field name="status">pass</field>
             <field name="marks">83.00</field>
             <field name="per">83.00</field>
@@ -172,7 +172,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_3" />
             <field name="exam_id" ref="op_exam_4" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_4" />
-            <field name="student_id" ref="education_core.op_student_3" />
+            <field name="student_id" ref="education.op_student_3" />
             <field name="status">pass</field>
             <field name="marks">57.00</field>
             <field name="per">57.00</field>
@@ -183,7 +183,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_4" />
             <field name="exam_id" ref="op_exam_4" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_4" />
-            <field name="student_id" ref="education_core.op_student_4" />
+            <field name="student_id" ref="education.op_student_4" />
             <field name="status">pass</field>
             <field name="marks">47.00</field>
             <field name="per">47.00</field>
@@ -202,7 +202,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_5" />
             <field name="exam_id" ref="op_exam_5" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_5" />
-            <field name="student_id" ref="education_core.op_student_9" />
+            <field name="student_id" ref="education.op_student_9" />
             <field name="status">pass</field>
             <field name="marks">56.00</field>
             <field name="per">56.00</field>
@@ -213,7 +213,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_6" />
             <field name="exam_id" ref="op_exam_5" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_5" />
-            <field name="student_id" ref="education_core.op_student_10" />
+            <field name="student_id" ref="education.op_student_10" />
             <field name="status">pass</field>
             <field name="marks">77.00</field>
             <field name="per">77.00</field>
@@ -224,7 +224,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_7" />
             <field name="exam_id" ref="op_exam_5" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_5" />
-            <field name="student_id" ref="education_core.op_student_11" />
+            <field name="student_id" ref="education.op_student_11" />
             <field name="status">fail</field>
             <field name="marks">0.00</field>
             <field name="per">0.00</field>
@@ -235,7 +235,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_8" />
             <field name="exam_id" ref="op_exam_5" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_5" />
-            <field name="student_id" ref="education_core.op_student_12" />
+            <field name="student_id" ref="education.op_student_12" />
             <field name="status">pass</field>
             <field name="marks">65.00</field>
             <field name="per">65.00</field>
@@ -251,7 +251,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_5" />
             <field name="exam_id" ref="op_exam_6" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_6" />
-            <field name="student_id" ref="education_core.op_student_9" />
+            <field name="student_id" ref="education.op_student_9" />
             <field name="status">pass</field>
             <field name="marks">55.00</field>
             <field name="per">55.00</field>
@@ -262,7 +262,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_6" />
             <field name="exam_id" ref="op_exam_6" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_6" />
-            <field name="student_id" ref="education_core.op_student_10" />
+            <field name="student_id" ref="education.op_student_10" />
             <field name="status">pass</field>
             <field name="marks">68.00</field>
             <field name="per">68.00</field>
@@ -273,7 +273,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_7" />
             <field name="exam_id" ref="op_exam_6" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_6" />
-            <field name="student_id" ref="education_core.op_student_11" />
+            <field name="student_id" ref="education.op_student_11" />
             <field name="status">pass</field>
             <field name="marks">61.00</field>
             <field name="per">61.00</field>
@@ -284,7 +284,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_8" />
             <field name="exam_id" ref="op_exam_6" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_6" />
-            <field name="student_id" ref="education_core.op_student_12" />
+            <field name="student_id" ref="education.op_student_12" />
             <field name="status">pass</field>
             <field name="marks">61.00</field>
             <field name="per">61.00</field>
@@ -300,7 +300,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_5" />
             <field name="exam_id" ref="op_exam_7" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_7" />
-            <field name="student_id" ref="education_core.op_student_9" />
+            <field name="student_id" ref="education.op_student_9" />
             <field name="status">pass</field>
             <field name="marks">85.00</field>
             <field name="per">85.00</field>
@@ -311,7 +311,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_6" />
             <field name="exam_id" ref="op_exam_7" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_7" />
-            <field name="student_id" ref="education_core.op_student_10" />
+            <field name="student_id" ref="education.op_student_10" />
             <field name="status">pass</field>
             <field name="marks">54.00</field>
             <field name="per">54.00</field>
@@ -322,7 +322,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_7" />
             <field name="exam_id" ref="op_exam_7" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_7" />
-            <field name="student_id" ref="education_core.op_student_11" />
+            <field name="student_id" ref="education.op_student_11" />
             <field name="status">pass</field>
             <field name="marks">59.00</field>
             <field name="per">59.00</field>
@@ -333,7 +333,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_8" />
             <field name="exam_id" ref="op_exam_7" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_7" />
-            <field name="student_id" ref="education_core.op_student_12" />
+            <field name="student_id" ref="education.op_student_12" />
             <field name="status">pass</field>
             <field name="marks">65.00</field>
             <field name="per">65.00</field>
@@ -348,7 +348,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_5" />
             <field name="exam_id" ref="op_exam_8" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_8" />
-            <field name="student_id" ref="education_core.op_student_9" />
+            <field name="student_id" ref="education.op_student_9" />
             <field name="status">pass</field>
             <field name="marks">55.00</field>
             <field name="per">55.00</field>
@@ -359,7 +359,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_6" />
             <field name="exam_id" ref="op_exam_8" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_8" />
-            <field name="student_id" ref="education_core.op_student_10" />
+            <field name="student_id" ref="education.op_student_10" />
             <field name="status">pass</field>
             <field name="marks">77.00</field>
             <field name="per">77.00</field>
@@ -370,7 +370,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_7" />
             <field name="exam_id" ref="op_exam_8" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_8" />
-            <field name="student_id" ref="education_core.op_student_11" />
+            <field name="student_id" ref="education.op_student_11" />
             <field name="status">pass</field>
             <field name="marks">79.00</field>
             <field name="per">79.00</field>
@@ -381,7 +381,7 @@
             <field name="marksheet_line_id" ref="op_marksheet_line_8" />
             <field name="exam_id" ref="op_exam_8" />
             <field name="exam_tmpl_id" ref="op_result_exam_line_8" />
-            <field name="student_id" ref="education_core.op_student_12" />
+            <field name="student_id" ref="education.op_student_12" />
             <field name="status">pass</field>
             <field name="marks">68.00</field>
             <field name="per">68.00</field>

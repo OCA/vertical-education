@@ -17,7 +17,7 @@
         <record model="ir.ui.view" id="session_faculty_dashboard_form_view">
             <field name="name">board.faculty.form</field>
             <field name="model">board.board</field>
-            <field name="inherit_id" ref="education_core.board_faculty_form" />
+            <field name="inherit_id" ref="education.board_faculty_form" />
             <field name="arch" type="xml">
                 <xpath expr="//board" position="inside">
                     <column>

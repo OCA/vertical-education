@@ -56,7 +56,7 @@
                                     <field name="subject_ids" nolabel="1" widget="many2many_tags" />
                                 </group>
                             </page>
-                            <page name="movements" string="Movements" groups="education_core.group_op_back_office,education_library.group_op_library,education_core.group_op_back_office_admin">
+                            <page name="movements" string="Movements" groups="education.group_op_back_office,education_library.group_op_library,education.group_op_back_office_admin">
                                 <field name="movement_line" colspan="4" nolabel="1" />
                             </page>
                             <page name="media_queue_requests" string="Media Queue Requests">

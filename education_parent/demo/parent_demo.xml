@@ -6,7 +6,7 @@
             <field name="name" ref="education_parent.res_partner_33" />
             <field name="user_id" ref="user_parent" />
             <field name="student_ids"
-                eval="[(6,0, [ref('education_core.op_student_1'), ref('education_core.op_student_4')])]" />
+                eval="[(6,0, [ref('education.op_student_1'), ref('education.op_student_4')])]" />
         </record>
 
     </data>

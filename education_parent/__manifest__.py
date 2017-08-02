@@ -29,7 +29,7 @@
     'complexity': "easy",
     'author': 'Tech Receptives',
     'website': 'http://www.education.org',
-    'depends': ['education_core'],
+    'depends': ['education'],
     'data': [
         'security/op_parent_security.xml',
         'views/student_view.xml',

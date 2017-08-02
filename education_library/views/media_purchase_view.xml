@@ -26,13 +26,13 @@
                     <header groups="base.group_user">
                         <button name="act_requested" states="draft" type="object"
                             string="Request media" class="oe_highlight"
-                            groups="education_core.group_op_student,education_core.group_op_faculty,education_library.group_op_library,education_core.group_op_back_office_admin" />
+                            groups="education.group_op_student,education.group_op_faculty,education_library.group_op_library,education.group_op_back_office_admin" />
                         <button name="act_accept" states="request" type="object"
                             string="Accept" class="oe_highlight"
-                            groups="education_core.group_op_back_office_admin,education_library.group_op_library" />
+                            groups="education.group_op_back_office_admin,education_library.group_op_library" />
                         <button name="act_reject" states="request" type="object"
                             string="Reject"
-                            groups="education_core.group_op_back_office_admin,education_library.group_op_library" />
+                            groups="education.group_op_back_office_admin,education_library.group_op_library" />
                         <field name="state" widget="statusbar" statusbar_visible="draft,request,accept" />
                     </header>
                     <sheet>

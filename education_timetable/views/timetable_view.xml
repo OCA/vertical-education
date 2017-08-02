@@ -28,19 +28,19 @@
                     <header>
                         <button type="object" name="lecture_confirm"
                             states="draft" string="Confirm"
-                            groups="education_core.group_op_faculty"
+                            groups="education.group_op_faculty"
                             class="oe_highlight" />
                         <button type="object" name="lecture_done"
                             states="confirm" string="Done"
-                            groups="education_core.group_op_faculty"
+                            groups="education.group_op_faculty"
                             class="oe_highlight" />
                         <button type="object" name="lecture_draft"
                             states="cancel" string="Set to Draft"
-                            groups="education_core.group_op_faculty"
+                            groups="education.group_op_faculty"
                             class="oe_highlight" />
                         <button type="object" name="lecture_cancel"
                             states="draft,confirm" string="Cancel"
-                            groups="education_core.group_op_faculty" />
+                            groups="education.group_op_faculty" />
                         <field name="state" widget="statusbar"
                             statusbar_visible="draft,confirm" />
                     </header>
