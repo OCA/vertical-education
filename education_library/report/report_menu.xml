@@ -4,7 +4,7 @@
         <report
             id="action_report_media_barcode"
             string="Media Barcode"
-            model="op.media"
+            model="education.media"
             report_type="qweb-pdf"
             file="education_library.report_media_barcode"
             name="education_library.report_media_barcode"
@@ -17,7 +17,7 @@
         <report
             id="action_report_student_library_card_barcode"
             string="Library Card Barcode"
-            model="op.library.card"
+            model="education.library.card"
             report_type="qweb-pdf"
             file="education_library.report_library_card_barcode"
             name="education_library.report_library_card_barcode"
@@ -30,7 +30,7 @@
         <report
             id="action_report_student_library_card"
             string="Library IdCard"
-            model="op.student"
+            model="education.student"
             report_type="qweb-pdf"
             file="education_library.report_student_library_card"
             name="education_library.report_student_library_card"

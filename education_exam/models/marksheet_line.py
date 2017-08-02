@@ -24,16 +24,16 @@ from odoo.exceptions import ValidationError
 
 
 class OpMarksheetLine(models.Model):
-    _name = 'op.marksheet.line'
+    _name = 'education.marksheet.line'
     _rec_name = 'student_id'
 
     marksheet_reg_id = fields.Many2one(
-        'op.marksheet.register', 'Marksheet Register')
+        'education.marksheet.register', 'Marksheet Register')
     evolution_type = fields.Selection(
         related='marksheet_reg_id.exam_session_id.evolution_type', store=True)
-    student_id = fields.Many2one('op.student', 'Student', required=True)
+    student_id = fields.Many2one('education.student', 'Student', required=True)
     result_line = fields.One2many(
-        'op.result.line', 'marksheet_line_id', 'Results')
+        'education.result.line', 'marksheet_line_id', 'Results')
     total_marks = fields.Integer("Total Marks", compute='_compute_total_marks')
     percentage = fields.Float("Percentage", compute='_compute_percentage')
     grade = fields.Char('Grade', readonly=True, compute='_compute_grade')

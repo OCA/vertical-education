@@ -1,7 +1,7 @@
 <odoo>
-        <record id="op_faculty_user_create_view" model="ir.ui.view">
-            <field name="name">wizard.op.faculty.form</field>
-            <field name="model">wizard.op.faculty</field>
+        <record id="education_faculty_user_create_view" model="ir.ui.view">
+            <field name="name">wizard.education.faculty.form</field>
+            <field name="model">wizard.education.faculty</field>
             <field name="arch" type="xml">
                 <form string="Create Users">
                     <p class="oe_grey">
@@ -20,6 +20,6 @@
         </record>
 
         <act_window id="action_faculty_user_create_view" multi="True"
-            name="Create Users" res_model="wizard.op.faculty" src_model="op.faculty"
+            name="Create Users" res_model="wizard.education.faculty" src_model="education.faculty"
             view_mode="form" target="new" view_type="form" />
 </odoo>

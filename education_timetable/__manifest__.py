@@ -42,14 +42,14 @@
         'dashboard/timetable_student_dashboard.xml',
         'dashboard/timetable_faculty_dashboard.xml',
         'security/ir.model.access.csv',
-        'security/op_timetable_security.xml',
+        'security/education_timetable_security.xml',
         'timetable_menu.xml',
         'wizard/session_confirmation.xml',
         'views/timetable_templates.xml',
     ],
     'demo': [
         'demo/timing_demo.xml',
-        'demo/op_timetable_demo.xml'
+        'demo/education_timetable_demo.xml'
     ],
     'test': [
         'test/timetable_sub_value.yml',

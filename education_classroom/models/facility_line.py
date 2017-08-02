@@ -24,6 +24,6 @@ from odoo import models, fields
 
 class OpFacilityLine(models.Model):
 
-    _inherit = 'op.facility.line'
+    _inherit = 'education.facility.line'
 
-    classroom_id = fields.Many2one('op.classroom', 'Classroom')
+    classroom_id = fields.Many2one('education.classroom', 'Classroom')

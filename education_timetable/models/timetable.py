@@ -35,29 +35,29 @@ week_days = [(calendar.day_name[0], _(calendar.day_name[0])),
 
 
 class OpSession(models.Model):
-    _name = 'op.session'
+    _name = 'education.session'
     _inherit = ['mail.thread']
     _description = 'Sessions'
     _rec_name = 'name'
 
     name = fields.Char(compute='_compute_name', string='Name', store=True)
     timing_id = fields.Many2one(
-        'op.timing', 'Timing', required=True, track_visibility="onchange")
+        'education.timing', 'Timing', required=True, track_visibility="onchange")
     start_datetime = fields.Datetime(
         'Start Time', required=True,
         default=lambda self: fields.Datetime.now())
     end_datetime = fields.Datetime(
         'End Time', required=True)
     course_id = fields.Many2one(
-        'op.course', 'Course', required=True)
+        'education.course', 'Course', required=True)
     faculty_id = fields.Many2one(
-        'op.faculty', 'Faculty', required=True)
+        'education.faculty', 'Faculty', required=True)
     batch_id = fields.Many2one(
-        'op.batch', 'Batch', required=True)
+        'education.batch', 'Batch', required=True)
     subject_id = fields.Many2one(
-        'op.subject', 'Subject', required=True)
+        'education.subject', 'Subject', required=True)
     classroom_id = fields.Many2one(
-        'op.classroom', 'Classroom')
+        'education.classroom', 'Classroom')
     color = fields.Integer('Color Index')
     type = fields.Selection(week_days, 'Days', translate=True)
     state = fields.Selection(
@@ -81,7 +81,7 @@ class OpSession(models.Model):
     def _compute_batch_users(self):
         for session in self:
             usr = []
-            students = self.env['op.student'].search(
+            students = self.env['education.student'].search(
                 [('course_detail_ids.batch_id', '=', session.batch_id.id)])
             for x in students:
                 if x.user_id:
@@ -123,7 +123,7 @@ class OpSession(models.Model):
         if res.faculty_id and res.faculty_id.user_id:
             partner_ids.append(res.faculty_id.user_id.partner_id.id)
         if res.batch_id and res.course_id:
-            course_val = self.env['op.student.course'].search([
+            course_val = self.env['education.student.course'].search([
                 ('batch_id', '=', res.batch_id.id),
                 ('course_id', '=', res.course_id.id)
             ])

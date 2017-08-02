@@ -23,23 +23,23 @@ from odoo import models, fields
 
 
 class OpAttendanceLine(models.Model):
-    _name = 'op.attendance.line'
+    _name = 'education.attendance.line'
     _inherit = ['mail.thread']
     _rec_name = 'attendance_id'
 
     attendance_id = fields.Many2one(
-        'op.attendance.sheet', 'Attendance Sheet', required=True,
+        'education.attendance.sheet', 'Attendance Sheet', required=True,
         track_visibility="onchange", ondelete="cascade")
     student_id = fields.Many2one(
-        'op.student', 'Student', required=True, track_visibility="onchange")
+        'education.student', 'Student', required=True, track_visibility="onchange")
     present = fields.Boolean(
         'Present ?', default=True, track_visibility="onchange")
     course_id = fields.Many2one(
-        'op.course', 'Course',
+        'education.course', 'Course',
         related='attendance_id.register_id.course_id', store=True,
         readonly=True)
     batch_id = fields.Many2one(
-        'op.batch', 'Batch',
+        'education.batch', 'Batch',
         related='attendance_id.register_id.batch_id', store=True,
         readonly=True)
     remark = fields.Char('Remark', size=256, track_visibility="onchange")

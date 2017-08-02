@@ -31,7 +31,7 @@ class AccountInvoice(models.Model):
     def action_invoice_paid(self):
         paid_invoice = super(AccountInvoice, self).action_invoice_paid()
         if paid_invoice and self:
-            movement = self.env['op.media.movement'].search(
+            movement = self.env['education.media.movement'].search(
                 [('invoice_id', '=', self.id)])
             if movement:
                 movement.state = 'return_done'

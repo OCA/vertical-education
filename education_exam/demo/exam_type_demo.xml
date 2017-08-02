@@ -2,12 +2,12 @@
 <odoo>
     <data noupdate="1">
 
-        <record id="op_exam_type_1" model="op.exam.type">
+        <record id="education_exam_type_1" model="education.exam.type">
             <field name="code">sees</field>
             <field name="name">Sessional</field>
         </record>
 
-        <record id="op_exam_type_2" model="op.exam.type">
+        <record id="education_exam_type_2" model="education.exam.type">
             <field name="code">anuu</field>
             <field name="name">Annual</field>
         </record>

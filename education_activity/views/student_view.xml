@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_student_form_timetable_inherit" model="ir.ui.view">
-            <field name="name">op.student.form.timetable_inherit</field>
-            <field name="model">op.student</field>
-            <field name="inherit_id" ref="education.view_op_student_form" />
+        <record id="view_education_student_form_timetable_inherit" model="ir.ui.view">
+            <field name="name">education.student.form.timetable_inherit</field>
+            <field name="model">education.student</field>
+            <field name="inherit_id" ref="education.view_education_student_form" />
             <field name="priority" eval="9" />
             <field name="arch" type="xml">
                 <notebook position="inside">

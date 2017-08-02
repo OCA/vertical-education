@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="op_all_student_form">
-            <field name="name">op.all.student.form</field>
-            <field name="model">op.all.student</field>
+        <record model="ir.ui.view" id="education_all_student_form">
+            <field name="name">education.all.student.form</field>
+            <field name="model">education.all.student</field>
             <field name="arch" type="xml">
                 <form string="Add Student(s)">
                     <sheet>
@@ -24,8 +24,8 @@
                 </form>
             </field>
         </record>
-        <act_window id="op_all_student_act" name="Attandance Sheet Import"
-            res_model="op.all.student" src_model="op.attendance.sheet"
+        <act_window id="education_all_student_act" name="Attandance Sheet Import"
+            res_model="education.all.student" src_model="education.attendance.sheet"
             view_mode="form" target="new" view_type="form" />
     </data>
 </odoo>

@@ -6,7 +6,7 @@
 -
   in order to move media movement workflow I create media movements
 -
-  !record {model: op.media.movement, id: media_movements_test}:
+  !record {model: education.media.movement, id: media_movements_test}:
     media_id: media_test
     media_unit_id: media_unit1_test
     library_card_id: library_card_test
@@ -16,12 +16,12 @@
 -
   I clicked on Issue media button in media movement
 -
-  !python {model: op.media.movement, id: media_movements_test}: |
+  !python {model: education.media.movement, id: media_movements_test}: |
     self.issue_media()
 -
   I check that Now media movement is "Issued"
 -
-  !assert {model: op.media.movement, id: media_movements_test}:
+  !assert {model: education.media.movement, id: media_movements_test}:
     - state == 'issue'
 -
   I called the "Return Media" wizard
@@ -35,11 +35,11 @@
 -
   !python {model: return.media, id: False}: |
     self.browse(ref("return_media_wiz_0")).with_context({"lang": 'en_US',
-      "tz": False, "active_model": "op.media.movement", "active_ids": [ref("media_movements_test")],
+      "tz": False, "active_model": "education.media.movement", "active_ids": [ref("media_movements_test")],
       "active_id": ref("media_movements_test"), }).do_return()
 -
   I check that Now media movement is "Return Done"
 -
-  !assert {model: op.media.movement, id: media_movements_test}:
+  !assert {model: education.media.movement, id: media_movements_test}:
     - state == 'return_done'
 

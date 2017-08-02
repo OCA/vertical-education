@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_attendance_sheet_tree" model="ir.ui.view">
-            <field name="name">op.attendance.sheet.tree</field>
-            <field name="model">op.attendance.sheet</field>
+        <record id="view_education_attendance_sheet_tree" model="ir.ui.view">
+            <field name="name">education.attendance.sheet.tree</field>
+            <field name="model">education.attendance.sheet</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Attendance Sheet">
@@ -16,9 +16,9 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_attendance_sheet_form" model="ir.ui.view">
-            <field name="name">op.attendance.sheet.form</field>
-            <field name="model">op.attendance.sheet</field>
+        <record id="view_education_attendance_sheet_form" model="ir.ui.view">
+            <field name="name">education.attendance.sheet.form</field>
+            <field name="model">education.attendance.sheet</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Attendance Sheet">
@@ -50,9 +50,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_attendance_sheet_search" model="ir.ui.view">
-            <field name="name">op.attendance.sheet.search</field>
-            <field name="model">op.attendance.sheet</field>
+        <record id="view_education_attendance_sheet_search" model="ir.ui.view">
+            <field name="name">education.attendance.sheet.search</field>
+            <field name="model">education.attendance.sheet</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Attendance Sheet">
@@ -69,27 +69,27 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_attendance_sheet_view">
+        <record model="ir.actions.act_window" id="act_open_education_attendance_sheet_view">
             <field name="name">Attendance Sheets</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.attendance.sheet</field>
+            <field name="res_model">education.attendance.sheet</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_attendance_sheet_search" />
+            <field name="search_view_id" ref="view_education_attendance_sheet_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_attendance_sheet_view_form">
-            <field name="act_window_id" ref="act_open_op_attendance_sheet_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_attendance_sheet_view_form">
+            <field name="act_window_id" ref="act_open_education_attendance_sheet_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_attendance_sheet_form" />
+            <field name="view_id" ref="view_education_attendance_sheet_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_attendance_sheet_view_tree">
-            <field name="act_window_id" ref="act_open_op_attendance_sheet_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_attendance_sheet_view_tree">
+            <field name="act_window_id" ref="act_open_education_attendance_sheet_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_attendance_sheet_tree" />
+            <field name="view_id" ref="view_education_attendance_sheet_tree" />
         </record>
     </data>
 </odoo>

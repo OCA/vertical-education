@@ -23,6 +23,6 @@ from odoo import models, fields
 
 
 class OpActivityType(models.Model):
-    _name = 'op.activity.type'
+    _name = 'education.activity.type'
 
     name = fields.Char('Name', size=128, required=True)

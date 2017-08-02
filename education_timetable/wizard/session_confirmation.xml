@@ -22,7 +22,7 @@
         </record>
         <act_window id="action_session_confirmation_view"
             multi="True" name="Confirmation" res_model="session.confirmation"
-            src_model="op.session" view_mode="form" target="new"
+            src_model="education.session" view_mode="form" target="new"
             view_type="form" />
     </data>
 </odoo>

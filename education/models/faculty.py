@@ -6,15 +6,14 @@ from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 
 
-class OpFaculty(models.Model):
-    _name = 'op.faculty'
+class EducationFaculty(models.Model):
+    _name = 'education.faculty'
     _inherits = {'res.partner': 'partner_id'}
 
     partner_id = fields.Many2one(
         'res.partner', 'Partner', required=True, ondelete="cascade")
     middle_name = fields.Char('Middle Name', size=128)
     last_name = fields.Char('Last Name', size=128, required=True)
-    birth_date = fields.Date('Birth Date', required=True)
     blood_group = fields.Selection(
         [('A+', 'A+ve'), ('B+', 'B+ve'), ('O+', 'O+ve'), ('AB+', 'AB+ve'),
          ('A-', 'A-ve'), ('B-', 'B-ve'), ('O-', 'O-ve'), ('AB-', 'AB-ve')],
@@ -32,14 +31,14 @@ class OpFaculty(models.Model):
     last_login = fields.Datetime(
         'Latest Connection', related='partner_id.user_id.login_date',
         readonly=1)
-    faculty_subject_ids = fields.Many2many('op.subject', string='Subject(s)')
+    faculty_subject_ids = fields.Many2many('education.subject', string='Subject(s)')
     emp_id = fields.Many2one('hr.employee', 'Employee')
 
     @api.multi
-    @api.constrains('birth_date')
+    @api.constrains('birthdate_date')
     def _check_birthdate(self):
         for record in self:
-            if record.birth_date > fields.Date.today():
+            if record.birthdate_date > fields.Date.today():
                 raise ValidationError(_(
                     "Birth Date can't be greater than current date!"))
 

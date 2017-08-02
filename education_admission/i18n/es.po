@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: Poedit 2.0.1\n"
 
 #. module: education_admission
-#: model:ir.model.fields,help:education_admission.field_op_student_fees_details_invoice_state
+#: model:ir.model.fields,help:education_admission.field_education_student_fees_details_invoice_state
 msgid ""
 " * The 'Draft' status is used when a user is encoding a new and unconfirmed Invoice.\n"
 " * The 'Pro-forma' status is used when the invoice does not have an invoice number.\n"
@@ -57,12 +57,12 @@ msgid "<strong>Total Number of Students :</strong>"
 msgstr "<strong>Número total de alumnos :</strong>"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Address"
 msgstr "Dirección"
 
 #. module: education_admission
-#: model:ir.model,name:education_admission.model_op_admission
+#: model:ir.model,name:education_admission.model_education_admission
 msgid "Admission"
 msgstr "Admisión"
 
@@ -79,91 +79,91 @@ msgid "Admission Analysis Report"
 msgstr "Informe de análisis de admisión"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
-#: selection:op.admission,state:0
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
+#: selection:education.admission,state:0
 msgid "Admission Confirm"
 msgstr "Confirmación de admisión"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_admission_date
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_admission_date
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Admission Date"
 msgstr "Fecha de admisión"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Admission Detail"
 msgstr "Detalles de admisión"
 
 #. module: education_admission
-#: model:product.category,name:education_admission.op_prod_cat1
+#: model:product.category,name:education_admission.education_prod_cat1
 msgid "Admission Fees"
 msgstr "Matricula de admisión"
 
 #. module: education_admission
-#: model:product.product,name:education_admission.op_product_1
-#: model:product.template,name:education_admission.op_product_1_product_template
+#: model:product.product,name:education_admission.education_product_1
+#: model:product.template,name:education_admission.education_product_1_product_template
 msgid "Admission Fees for BOA"
 msgstr "Admisión tasas para BOA"
 
 #. module: education_admission
-#: model:product.product,name:education_admission.op_product_2
-#: model:product.template,name:education_admission.op_product_2_product_template
+#: model:product.product,name:education_admission.education_product_2
+#: model:product.template,name:education_admission.education_product_2_product_template
 msgid "Admission Fees for G8-AR"
 msgstr "Admisión tasas para G8-AR"
 
 #. module: education_admission
-#: model:product.product,name:education_admission.op_product_6
-#: model:product.template,name:education_admission.op_product_6_product_template
+#: model:product.product,name:education_admission.education_product_6
+#: model:product.template,name:education_admission.education_product_6_product_template
 msgid "Admission Fees for Grade-8"
 msgstr "Admisión tasas para  Grado-8"
 
 #. module: education_admission
-#: model:product.product,name:education_admission.op_product_3
-#: model:product.template,name:education_admission.op_product_3_product_template
+#: model:product.product,name:education_admission.education_product_3
+#: model:product.template,name:education_admission.education_product_3_product_template
 msgid "Admission Fees for LTRP"
 msgstr "Admisión tasas para LTRP"
 
 #. module: education_admission
-#: model:product.product,name:education_admission.op_product_4
-#: model:product.template,name:education_admission.op_product_4_product_template
+#: model:product.product,name:education_admission.education_product_4
+#: model:product.template,name:education_admission.education_product_4_product_template
 msgid "Admission Fees for PPHD"
 msgstr "Admisión tasas para PPHD"
 
 #. module: education_admission
-#: selection:op.admission.register,state:0
+#: selection:education.admission.register,state:0
 msgid "Admission Process"
 msgstr "Proceso de admisión"
 
 #. module: education_admission
-#: model:ir.model,name:education_admission.model_op_admission_register
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_id
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_search
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_tree
+#: model:ir.model,name:education_admission.model_education_admission_register
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_id
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_tree
 msgid "Admission Register"
 msgstr "Registro de admisión"
 
 #. module: education_admission
-#: model:ir.actions.act_window,name:education_admission.act_open_op_admission_register_view
+#: model:ir.actions.act_window,name:education_admission.act_open_education_admission_register_view
 #: model:ir.ui.menu,name:education_admission.menu_admission_register
 msgid "Admission Registers"
 msgstr "Registros de admisión"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_admission_ids
-#: model:ir.ui.menu,name:education_admission.menu_op_admission_root
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_admission_ids
+#: model:ir.ui.menu,name:education_admission.menu_education_admission_root
 msgid "Admissions"
 msgstr "Admisión"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Already Student"
 msgstr "Alumno actual"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_application_date
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_application_date
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Application Date"
 msgstr "Fecha de solicitud"
 
@@ -174,7 +174,7 @@ msgid "Application Date should be between Start Date &                     End D
 msgstr "La fecha de la solicitud debe ser entre la fecha de inicio &                     Fecha de finalización del registro de admisión."
 
 #. module: education_admission
-#: selection:op.admission.register,state:0
+#: selection:education.admission.register,state:0
 msgid "Application Gathering"
 msgstr "Recopilación de solicitudes"
 
@@ -184,24 +184,24 @@ msgid "Application No."
 msgstr "Número de solicitud"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_application_number
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_application_number
 msgid "Application Number"
 msgstr "Número de solicitud"
 
 #. module: education_admission
 #: model:ir.ui.menu,name:education_admission.menu_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
 msgid "Applications"
 msgstr "Solicitudes"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_batch_id
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_batch_id
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Batch"
 msgstr "Grupo académico"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_birth_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_birthdate_date
 msgid "Birth Date"
 msgstr "Fecha de nacimiento"
 
@@ -213,114 +213,114 @@ msgstr "¡La fecha de nacimiento no puede ser mayor que la fecha actual!"
 
 #. module: education_admission
 #: model:ir.ui.view,arch_db:education_admission.admission_analysis_form
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
 msgid "Cancel"
 msgstr "Cancelar"
 
 #. module: education_admission
-#: selection:op.admission,state:0 selection:op.admission.register,state:0
+#: selection:education.admission,state:0 selection:education.admission.register,state:0
 msgid "Cancelled"
 msgstr "Cancelado"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_city
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_city
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "City"
 msgstr "Ciudad"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
 msgid "Confirm"
 msgstr "Confirmar"
 
 #. module: education_admission
-#: selection:op.admission,state:0 selection:op.admission.register,state:0
+#: selection:education.admission,state:0 selection:education.admission.register,state:0
 msgid "Confirmed"
 msgstr "Confirmado"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_country_id
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_country_id
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Country"
 msgstr "País"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_course_id
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_course_id
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_course_id
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_search
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_course_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_course_id
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Course"
 msgstr "Curso"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_graph
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_graph
 msgid "Course By Admission"
 msgstr "Admisión por curso"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_student_inherit_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_student_inherit_admission_form
 msgid "Create Invoice"
 msgstr "Crear factura"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_create_uid
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_create_uid
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_create_uid
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_create_uid
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_create_uid
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_create_uid
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_create_date
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_create_date
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_create_date
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_create_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_create_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_create_date
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_create_date
 msgid "Created on"
 msgstr "Creado el"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_display_name
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_display_name
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_display_name
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_display_name
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_display_name
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_display_name
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_display_name
 #: model:ir.model.fields,field_description:education_admission.field_report_education_admission_report_admission_analysis_display_name
 msgid "Display Name"
 msgstr "Nombre a mostrar"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
-#: selection:op.admission,state:0 selection:op.admission.register,state:0
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
+#: selection:education.admission,state:0 selection:education.admission.register,state:0
 msgid "Done"
 msgstr "Hecho"
 
 #. module: education_admission
-#: selection:op.admission,state:0 selection:op.admission.register,state:0
-#: selection:op.student.fees.details,state:0
+#: selection:education.admission,state:0 selection:education.admission.register,state:0
+#: selection:education.student.fees.details,state:0
 msgid "Draft"
 msgstr "Borrador"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_due_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_due_date
 msgid "Due Date"
 msgstr "Fecha vencimiento"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Educational Detail"
 msgstr "Detalles educativos"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_email
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_email
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Email"
 msgstr "Correo electrónico"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_end_date
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_end_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_end_date
 msgid "End Date"
 msgstr "Fecha finalización"
 
@@ -337,132 +337,132 @@ msgid "End Date cannot be set before             Start Date."
 msgstr "La fecha de finalización no se puede establecer antes             Fecha de inicio."
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Enroll"
 msgstr "Inscribirse"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Enrolled"
 msgstr "Inscrito"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_family_business
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_family_business
 msgid "Family Business"
 msgstr "Negocio familiar"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_family_income
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_family_income
 msgid "Family Income"
 msgstr "Ingresos familiares"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_fees
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_fees
 msgid "Fees"
 msgstr "Cargos"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_amount
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_amount
 msgid "Fees Amount"
 msgstr "Cantidad"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_detail_ids
-#: model:ir.ui.view,arch_db:education_admission.view_op_student_inherit_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_detail_ids
+#: model:ir.ui.view,arch_db:education_admission.view_education_student_inherit_admission_form
 msgid "Fees Collection Details"
 msgstr "Detalles de la cotización"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_fees_line_id
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_fees_line_id
 msgid "Fees Line"
 msgstr "Línea de tarifas"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_fees_term_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_fees_term_id
 msgid "Fees Term"
 msgstr "Cuotas"
 
 #. module: education_admission
-#: model:product.product,name:education_admission.op_product_5
-#: model:product.template,name:education_admission.op_product_5_product_template
+#: model:product.product,name:education_admission.education_product_5
+#: model:product.template,name:education_admission.education_product_5_product_template
 msgid "Fees for IELTS"
 msgstr "Tarifas para IELTS"
 
 #. module: education_admission
-#: selection:op.admission,gender:0
+#: selection:education.admission,gender:0
 msgid "Female"
 msgstr "Mujer"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_name
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_name
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "First Name"
 msgstr "Primer nombre"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_gender
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_gender
 msgid "Gender"
 msgstr "Sexo"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_search
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Group By..."
 msgstr "Agrupar por..."
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_id
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_id
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_id_4839
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_id_4839
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_id
 #: model:ir.model.fields,field_description:education_admission.field_report_education_admission_report_admission_analysis_id
 msgid "ID"
 msgstr "ID"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_invoice_id
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_invoice_id
 msgid "Invoice"
 msgstr "Factura"
 
 #. module: education_admission
-#: selection:op.student.fees.details,state:0
+#: selection:education.student.fees.details,state:0
 msgid "Invoice Created"
 msgstr "Creación de facturas"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_is_student
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_is_student
 msgid "Is Already Student"
 msgstr "Ya es alumno"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis___last_update
-#: model:ir.model.fields,field_description:education_admission.field_op_admission___last_update
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register___last_update
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details___last_update
+#: model:ir.model.fields,field_description:education_admission.field_education_admission___last_update
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register___last_update
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details___last_update
 #: model:ir.model.fields,field_description:education_admission.field_report_education_admission_report_admission_analysis___last_update
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_last_name
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_last_name
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Last Name"
 msgstr "Apellido"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_write_uid
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_write_uid
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_write_uid
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_write_uid
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_write_uid
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_write_uid
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_write_uid
 msgid "Last Updated by"
 msgstr "Última actualización por"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_write_date
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_write_date
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_write_date
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_write_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_write_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_write_date
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_write_date
 msgid "Last Updated on"
 msgstr "Última actualización el"
 
@@ -472,18 +472,18 @@ msgid "Mail :"
 msgstr "Mail :"
 
 #. module: education_admission
-#: selection:op.admission,gender:0
+#: selection:education.admission,gender:0
 msgid "Male"
 msgstr "Hombre"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_max_count
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_max_count
 msgid "Maximum No. of Admission"
 msgstr "Número máximo de admisión"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_middle_name
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_middle_name
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Middle Name"
 msgstr "Segundo nombre"
 
@@ -494,23 +494,23 @@ msgid "Min Admission can't be greater than Max Admission"
 msgstr "La admisión mínima no puede ser mayor que la admisión máxima"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_min_count
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_min_count
 msgid "Minimum No. of Admission"
 msgstr "Número mínimo de admisión"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_mobile
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_mobile
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Mobile"
 msgstr "Móvil"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_name
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_name
 msgid "Name"
 msgstr "Nombre"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_nbr
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_nbr
 msgid "No of Admission"
 msgstr "Número de Admisión"
 
@@ -521,34 +521,34 @@ msgid "No of Admission should be positive!"
 msgstr "¡Número de Admisión debe ser positivo!"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Open Student Profile"
 msgstr "Abrir perfil de Alumno"
 
 #. module: education_admission
-#: selection:op.admission,gender:0
+#: selection:education.admission,gender:0
 msgid "Other"
 msgstr "Otro"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_partner_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_partner_id
 msgid "Partner"
 msgstr "Empresa"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
-#: selection:op.admission,state:0
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
+#: selection:education.admission,state:0
 msgid "Pending"
 msgstr "Pendiente"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Personal Detail"
 msgstr "Detalle personal"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_phone
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_phone
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Phone"
 msgstr "Teléfono"
 
@@ -558,7 +558,7 @@ msgid "Phone :"
 msgstr "teléfono :"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_photo
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_photo
 msgid "Photo"
 msgstr "Foto"
 
@@ -569,17 +569,17 @@ msgid "Please assign batch."
 msgstr "Por favor, asigne grupo académico."
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_prev_course_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_prev_course_id
 msgid "Previous Course"
 msgstr "Curso anterior"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_prev_institute_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_prev_institute_id
 msgid "Previous Institute"
 msgstr "Instituto anterior"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_prev_result
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_prev_result
 msgid "Previous Result"
 msgstr "Resultado anterior"
 
@@ -589,95 +589,95 @@ msgid "Print"
 msgstr "Imprimir"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_product_id
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_product_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_product_id
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_product_id
 msgid "Product"
 msgstr "Producto"
 
 #. module: education_admission
-#: model:ir.actions.act_window,name:education_admission.act_open_op_admission_view
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_tree
+#: model:ir.actions.act_window,name:education_admission.act_open_education_admission_view
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_tree
 msgid "Registration"
 msgstr "Registro"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Reject"
 msgstr "Rechazar"
 
 #. module: education_admission
-#: selection:op.admission,state:0
+#: selection:education.admission,state:0
 msgid "Rejected"
 msgstr "Rechazado"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
 msgid "Set to Draft"
 msgstr "Cambiar a borrador"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
 msgid "Start Admission"
 msgstr "Iniciar la admisión"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_form
 msgid "Start Application"
 msgstr "Iniciar la aplicación"
 
 #. module: education_admission
 #: model:ir.model.fields,field_description:education_admission.field_admission_analysis_start_date
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_start_date
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_start_date
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_state
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_invoice_state
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_state
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_invoice_state
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "State"
 msgstr "Estado"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_state_id
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_state_id
 msgid "States"
 msgstr "Estados"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_register_state
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_state
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_search
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_search
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_register_state
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_state
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_search
 msgid "Status"
 msgstr "Estado"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_street
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_street
 msgid "Street"
 msgstr "Calle"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Street..."
 msgstr "Calle..."
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_street2
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_street2
 msgid "Street2"
 msgstr "Calle2"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_student_id
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_student_id
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_student_id
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_student_id
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Student"
 msgstr "Alumno"
 
 #. module: education_admission
-#: model:ir.model,name:education_admission.model_op_student_fees_details
+#: model:ir.model,name:education_admission.model_education_student_fees_details
 msgid "Student Fees Details"
 msgstr "Detalles de las cuotas del alumno"
 
@@ -687,17 +687,17 @@ msgid "Student Name"
 msgstr "Nombre del alumno"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Submit"
 msgstr "Presentar"
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_student_fees_details_date
+#: model:ir.model.fields,field_description:education_admission.field_education_student_fees_details_date
 msgid "Submit Date"
 msgstr "Fecha de presentación"
 
 #. module: education_admission
-#: selection:op.admission,state:0
+#: selection:education.admission,state:0
 msgid "Submitted"
 msgstr "Presentado"
 
@@ -716,23 +716,23 @@ msgid "There is no income account defined for this product: \"%s\".             
 msgstr "No hay una cuenta de ingresos definida para este producto: \"%s\".                  Es posible que tenga que instalar un gráfico de cuenta de Contabilidad                  Aplicación, menú de configuración."
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_title
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_title
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "Title"
 msgstr "Título"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_student_inherit_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_student_inherit_admission_form
 msgid "View Invoice"
 msgstr "Mirar la factura"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_form
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_form
 msgid "ZIP"
 msgstr "C.P."
 
 #. module: education_admission
-#: model:ir.model.fields,field_description:education_admission.field_op_admission_zip
+#: model:ir.model.fields,field_description:education_admission.field_education_admission_zip
 msgid "Zip"
 msgstr "C.P."
 
@@ -742,12 +742,12 @@ msgid "admission.analysis"
 msgstr "admission.analysis"
 
 #. module: education_admission
-#: model:ir.model,name:education_admission.model_op_student
-msgid "op.student"
-msgstr "op.student"
+#: model:ir.model,name:education_admission.model_education_student
+msgid "education.student"
+msgstr "education.student"
 
 #. module: education_admission
-#: model:ir.ui.view,arch_db:education_admission.view_op_admission_register_search
+#: model:ir.ui.view,arch_db:education_admission.view_education_admission_register_search
 msgid "product"
 msgstr "producto"
 

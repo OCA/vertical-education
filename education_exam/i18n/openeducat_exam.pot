@@ -16,59 +16,59 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_exam
-#: selection:op.exam.attendees,status:0
+#: selection:education.exam.attendees,status:0
 msgid "Absent"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_form
-#: field:op.exam,attendees_line:0
+#: view:education.exam:education_exam.view_education_exam_form
+#: field:education.exam,attendees_line:0
 msgid "Attendees"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam.session,batch_id:0
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam.session,batch_id:0
 msgid "Batch"
 msgstr ""
 
 
 #. module: education_exam
-#: selection:op.exam,evaluation_type:0
+#: selection:education.exam,evaluation_type:0
 msgid "CWA"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_form
+#: view:education.exam:education_exam.view_education_exam_form
 #: view:student.hall.ticket:education_exam.student_hall_ticket_form
 msgid "Cancel"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.exam,state:0
-#: selection:op.marksheet.register,status:0
+#: selection:education.exam,state:0
+#: selection:education.marksheet.register,status:0
 msgid "Cancelled"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.room,capacity:0
+#: field:education.exam.room,capacity:0
 msgid "Capacity"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.room,classroom_id:0
+#: field:education.exam.room,classroom_id:0
 msgid "Classroom"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.type:education_exam.view_op_exam_type_search
-#: field:op.exam.type,code:0
+#: view:education.exam.type:education_exam.view_education_exam_type_search
+#: field:education.exam.type,code:0
 msgid "Code"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam.session,course_id:0
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam.session,course_id:0
 #: view:website:education_exam.report_marksheet_report
 msgid "Course"
 msgstr ""
@@ -80,45 +80,45 @@ msgid "Course :"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.room:education_exam.view_op_exam_room_form
-#: field:op.exam.room,course_ids:0
+#: view:education.exam.room:education_exam.view_education_exam_room_form
+#: field:education.exam.room,course_ids:0
 msgid "Course(s)"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,create_uid:0
-#: field:op.exam.attendees,create_uid:0
-#: field:op.exam.res.allocation,create_uid:0
-#: field:op.exam.room,create_uid:0
-#: field:op.exam.session,create_uid:0
-#: field:op.exam.type,create_uid:0
-#: field:op.marksheet.line,create_uid:0
-#: field:op.marksheet.register,create_uid:0
-#: field:op.min.clear.criteria,create_uid:0
-#: field:op.pass.status,create_uid:0
-#: field:op.result.exam.line,create_uid:0
-#: field:op.result.line,create_uid:0
-#: field:op.result.template,create_uid:0
-#: field:op.result.template.line,create_uid:0
+#: field:education.exam,create_uid:0
+#: field:education.exam.attendees,create_uid:0
+#: field:education.exam.res.allocation,create_uid:0
+#: field:education.exam.room,create_uid:0
+#: field:education.exam.session,create_uid:0
+#: field:education.exam.type,create_uid:0
+#: field:education.marksheet.line,create_uid:0
+#: field:education.marksheet.register,create_uid:0
+#: field:education.min.clear.criteria,create_uid:0
+#: field:education.pass.status,create_uid:0
+#: field:education.result.exam.line,create_uid:0
+#: field:education.result.line,create_uid:0
+#: field:education.result.template,create_uid:0
+#: field:education.result.template.line,create_uid:0
 #: field:student.hall.ticket,create_uid:0
 msgid "Created by"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,create_date:0
-#: field:op.exam.attendees,create_date:0
-#: field:op.exam.res.allocation,create_date:0
-#: field:op.exam.room,create_date:0
-#: field:op.exam.session,create_date:0
-#: field:op.exam.type,create_date:0
-#: field:op.marksheet.line,create_date:0
-#: field:op.marksheet.register,create_date:0
-#: field:op.min.clear.criteria,create_date:0
-#: field:op.pass.status,create_date:0
-#: field:op.result.exam.line,create_date:0
-#: field:op.result.line,create_date:0
-#: field:op.result.template,create_date:0
-#: field:op.result.template.line,create_date:0
+#: field:education.exam,create_date:0
+#: field:education.exam.attendees,create_date:0
+#: field:education.exam.res.allocation,create_date:0
+#: field:education.exam.room,create_date:0
+#: field:education.exam.session,create_date:0
+#: field:education.exam.type,create_date:0
+#: field:education.marksheet.line,create_date:0
+#: field:education.marksheet.register,create_date:0
+#: field:education.min.clear.criteria,create_date:0
+#: field:education.pass.status,create_date:0
+#: field:education.result.exam.line,create_date:0
+#: field:education.result.line,create_date:0
+#: field:education.result.template,create_date:0
+#: field:education.result.template.line,create_date:0
 #: field:student.hall.ticket,create_date:0
 msgid "Created on"
 msgstr ""
@@ -129,38 +129,38 @@ msgid "Date"
 msgstr ""
 
 #. module: education_exam
-#: help:op.exam,message_last_post:0
+#: help:education.exam,message_last_post:0
 msgid "Date of the last message posted on the record."
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_form
+#: view:education.exam:education_exam.view_education_exam_form
 msgid "Description"
 msgstr ""
 
 #. module: education_exam
-#: field:op.result.template.line,detailed_report:0
+#: field:education.result.template.line,detailed_report:0
 msgid "Detailed Report"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_form
-#: selection:op.exam,state:0
+#: view:education.exam:education_exam.view_education_exam_form
+#: selection:education.exam,state:0
 msgid "Done"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.marksheet.register,status:0
+#: selection:education.marksheet.register,status:0
 msgid "Draft"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.session,end_date:0
+#: field:education.exam.session,end_date:0
 msgid "End Date"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,end_time:0
+#: field:education.exam,end_time:0
 msgid "End Time"
 msgstr ""
 
@@ -171,54 +171,54 @@ msgid "Enter proper marks!"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam,evaluation_type:0
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam,evaluation_type:0
 msgid "Evaluation Type"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.model,name:education_exam.model_op_exam
-#: view:op.exam:education_exam.view_op_exam_form
-#: view:op.exam:education_exam.view_op_exam_search
-#: view:op.exam:education_exam.view_op_exam_tree
-#: field:op.exam,name:0
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_search
-#: field:op.exam.attendees,exam_id:0
-#: view:op.exam.res.allocation:education_exam.view_op_exam_res_allocation_form
-#: view:op.exam.session:education_exam.view_op_exam_session_form
-#: field:op.exam.session,name:0
-#: field:op.marksheet.register,exam_session_id:0
-#: field:op.result.exam.line,exam_id:0
-#: view:op.result.line:education_exam.view_op_result_line_search
-#: field:op.result.line,exam_id:0
+#: model:ir.model,name:education_exam.model_education_exam
+#: view:education.exam:education_exam.view_education_exam_form
+#: view:education.exam:education_exam.view_education_exam_search
+#: view:education.exam:education_exam.view_education_exam_tree
+#: field:education.exam,name:0
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_search
+#: field:education.exam.attendees,exam_id:0
+#: view:education.exam.res.allocation:education_exam.view_education_exam_res_allocation_form
+#: view:education.exam.session:education_exam.view_education_exam_session_form
+#: field:education.exam.session,name:0
+#: field:education.marksheet.register,exam_session_id:0
+#: field:education.result.exam.line,exam_id:0
+#: view:education.result.line:education_exam.view_education_result_line_search
+#: field:education.result.line,exam_id:0
 msgid "Exam"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_exam_attendees_view
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_attendees_sub
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_attendees_sub_faculty
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_form
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_search
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_tree
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_attendees_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_attendees_sub
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_attendees_sub_faculty
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_form
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_search
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_tree
 msgid "Exam Attendees"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam,exam_code:0
-#: field:op.exam.session,exam_code:0
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam,exam_code:0
+#: field:education.exam.session,exam_code:0
 #: view:website:education_exam.report_marksheet_report
 msgid "Exam Code"
 msgstr ""
 
 #. module: education_exam
-#: field:op.result.template.line,exam_lines:0
+#: field:education.result.template.line,exam_lines:0
 msgid "Exam Lines"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.ui.menu,name:education_exam.menu_op_school_config_exam
+#: model:ir.ui.menu,name:education_exam.menu_education_school_config_exam
 msgid "Exam Management"
 msgstr ""
 
@@ -228,144 +228,144 @@ msgid "Exam Name"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_exam_res_allocation_view
-#: view:op.exam.res.allocation:education_exam.view_op_exam_res_allocation_form
-#: view:op.exam.res.allocation:education_exam.view_op_exam_res_allocation_search
-#: view:op.exam.res.allocation:education_exam.view_op_exam_res_allocation_tree
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_res_allocation_view
+#: view:education.exam.res.allocation:education_exam.view_education_exam_res_allocation_form
+#: view:education.exam.res.allocation:education_exam.view_education_exam_res_allocation_search
+#: view:education.exam.res.allocation:education_exam.view_education_exam_res_allocation_tree
 msgid "Exam Resource Allocation"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.ui.menu,name:education_exam.menu_op_school_exam_result
+#: model:ir.ui.menu,name:education_exam.menu_education_school_exam_result
 msgid "Exam Result"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.room:education_exam.view_op_exam_room_form
-#: view:op.exam.room:education_exam.view_op_exam_room_search
-#: view:op.exam.room:education_exam.view_op_exam_room_tree
+#: view:education.exam.room:education_exam.view_education_exam_room_form
+#: view:education.exam.room:education_exam.view_education_exam_room_search
+#: view:education.exam.room:education_exam.view_education_exam_room_tree
 msgid "Exam Room"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_exam_room_view
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_room_sub
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_room_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_room_sub
 msgid "Exam Rooms"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.model,name:education_exam.model_op_exam_session
-#: field:op.exam,session_id:0
-#: view:op.exam.session:education_exam.view_op_exam_session_form
-#: view:op.exam.session:education_exam.view_op_exam_session_search
-#: view:op.exam.session:education_exam.view_op_exam_session_tree
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_search
-#: field:op.result.template,exam_session_id:0
-#: field:op.result.template.line,exam_session_id:0
+#: model:ir.model,name:education_exam.model_education_exam_session
+#: field:education.exam,session_id:0
+#: view:education.exam.session:education_exam.view_education_exam_session_form
+#: view:education.exam.session:education_exam.view_education_exam_session_search
+#: view:education.exam.session:education_exam.view_education_exam_session_tree
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_search
+#: field:education.result.template,exam_session_id:0
+#: field:education.result.template.line,exam_session_id:0
 #: field:student.hall.ticket,exam_session_id:0
 msgid "Exam Session"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_exam_session_view
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_session
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_session_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_session
 msgid "Exam Sessions"
 msgstr ""
 
 #. module: education_exam
-#: view:op.result.exam.line:education_exam.view_op_result_exam_line_search
-#: view:op.result.exam.line:education_exam.view_op_result_exam_line_tree
-#: view:op.result.line:education_exam.view_op_result_line_search
-#: field:op.result.line,exam_tmpl_id:0
-#: view:op.result.template.line:education_exam.view_op_result_template_line_form
+#: view:education.result.exam.line:education_exam.view_education_result_exam_line_search
+#: view:education.result.exam.line:education_exam.view_education_result_exam_line_tree
+#: view:education.result.line:education_exam.view_education_result_line_search
+#: field:education.result.line,exam_tmpl_id:0
+#: view:education.result.template.line:education_exam.view_education_result_template_line_form
 msgid "Exam Template"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_result_exam_line_view
-#: model:ir.ui.menu,name:education_exam.menu_op_result_exam_line
+#: model:ir.actions.act_window,name:education_exam.act_open_education_result_exam_line_view
+#: model:ir.ui.menu,name:education_exam.menu_education_result_exam_line
 msgid "Exam Templates"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam,exam_type:0
-#: view:op.exam.type:education_exam.view_op_exam_type_form
-#: view:op.exam.type:education_exam.view_op_exam_type_search
-#: view:op.exam.type:education_exam.view_op_exam_type_tree
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam,exam_type:0
+#: view:education.exam.type:education_exam.view_education_exam_type_form
+#: view:education.exam.type:education_exam.view_education_exam_type_search
+#: view:education.exam.type:education_exam.view_education_exam_type_tree
 #: view:website:education_exam.report_marksheet_report
 msgid "Exam Type"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_exam_type_view
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_type_sub
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_type_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_type_sub
 msgid "Exam Types"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.res.allocation,exam_ids:0
-#: view:op.exam.session:education_exam.view_op_exam_session_form
-#: field:op.exam.session,exam_ids:0
+#: field:education.exam.res.allocation,exam_ids:0
+#: view:education.exam.session:education_exam.view_education_exam_session_form
+#: field:education.exam.session,exam_ids:0
 msgid "Exam(s)"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_exam_view
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_main
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_main_faculty
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_main
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_main_faculty
 msgid "Exams"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.ui.menu,name:education_exam.menu_op_exam_res_allocation_main
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_res_allocation_main
 msgid "Exams Resource Allocation"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.res.allocation:education_exam.view_op_exam_res_allocation_form
-#: field:op.exam.res.allocation,faculty_ids:0
+#: view:education.exam.res.allocation:education_exam.view_education_exam_res_allocation_form
+#: field:education.exam.res.allocation,faculty_ids:0
 msgid "Faculty"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.result.line,status:0
+#: selection:education.result.line,status:0
 msgid "Fail"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,message_follower_ids:0
+#: field:education.exam,message_follower_ids:0
 msgid "Followers"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.exam,evaluation_type:0
+#: selection:education.exam,evaluation_type:0
 msgid "GPA"
 msgstr ""
 
 #. module: education_exam
-#: view:op.result.template:education_exam.view_op_result_template_form
+#: view:education.result.template:education_exam.view_education_result_template_form
 msgid "Generate Result"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_search
-#: field:op.marksheet.register,generated_by:0
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_search
+#: field:education.marksheet.register,generated_by:0
 msgid "Generated By"
 msgstr ""
 
 #. module: education_exam
-#: field:op.marksheet.register,generated_date:0
+#: field:education.marksheet.register,generated_date:0
 msgid "Generated Date"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_search
-#: view:op.exam.type:education_exam.view_op_exam_type_search
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_search
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_search
-#: view:op.result.line:education_exam.view_op_result_line_search
+#: view:education.exam:education_exam.view_education_exam_search
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_search
+#: view:education.exam.type:education_exam.view_education_exam_type_search
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_search
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_search
+#: view:education.result.line:education_exam.view_education_result_line_search
 msgid "Group By..."
 msgstr ""
 
@@ -375,35 +375,35 @@ msgid "Hall Ticket For"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.exam,state:0
+#: selection:education.exam,state:0
 msgid "Held"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_form
+#: view:education.exam:education_exam.view_education_exam_form
 msgid "Held Exam"
 msgstr ""
 
 #. module: education_exam
-#: help:op.exam,message_summary:0
+#: help:education.exam,message_summary:0
 msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,id:0
-#: field:op.exam.attendees,id:0
-#: field:op.exam.res.allocation,id:0
-#: field:op.exam.room,id:0
-#: field:op.exam.session,id:0
-#: field:op.exam.type,id:0
-#: field:op.marksheet.line,id:0
-#: field:op.marksheet.register,id:0
-#: field:op.min.clear.criteria,id:0
-#: field:op.pass.status,id:0
-#: field:op.result.exam.line,id:0
-#: field:op.result.line,id:0
-#: field:op.result.template,id:0
-#: field:op.result.template.line,id:0
+#: field:education.exam,id:0
+#: field:education.exam.attendees,id:0
+#: field:education.exam.res.allocation,id:0
+#: field:education.exam.room,id:0
+#: field:education.exam.session,id:0
+#: field:education.exam.type,id:0
+#: field:education.marksheet.line,id:0
+#: field:education.marksheet.register,id:0
+#: field:education.min.clear.criteria,id:0
+#: field:education.pass.status,id:0
+#: field:education.result.exam.line,id:0
+#: field:education.result.line,id:0
+#: field:education.result.template,id:0
+#: field:education.result.template.line,id:0
 #: field:report.education_exam.report_exam_student_lable,id:0
 #: field:report.education_exam.report_marksheet_report,id:0
 #: field:report.education_exam.report_ticket,id:0
@@ -412,54 +412,54 @@ msgid "ID"
 msgstr ""
 
 #. module: education_exam
-#: help:op.exam,message_unread:0
+#: help:education.exam,message_unread:0
 msgid "If checked new messages require your attention."
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,message_is_follower:0
+#: field:education.exam,message_is_follower:0
 msgid "Is a Follower"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,message_last_post:0
+#: field:education.exam,message_last_post:0
 msgid "Last Message Date"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,write_uid:0
-#: field:op.exam.attendees,write_uid:0
-#: field:op.exam.res.allocation,write_uid:0
-#: field:op.exam.room,write_uid:0
-#: field:op.exam.session,write_uid:0
-#: field:op.exam.type,write_uid:0
-#: field:op.marksheet.line,write_uid:0
-#: field:op.marksheet.register,write_uid:0
-#: field:op.min.clear.criteria,write_uid:0
-#: field:op.pass.status,write_uid:0
-#: field:op.result.exam.line,write_uid:0
-#: field:op.result.line,write_uid:0
-#: field:op.result.template,write_uid:0
-#: field:op.result.template.line,write_uid:0
+#: field:education.exam,write_uid:0
+#: field:education.exam.attendees,write_uid:0
+#: field:education.exam.res.allocation,write_uid:0
+#: field:education.exam.room,write_uid:0
+#: field:education.exam.session,write_uid:0
+#: field:education.exam.type,write_uid:0
+#: field:education.marksheet.line,write_uid:0
+#: field:education.marksheet.register,write_uid:0
+#: field:education.min.clear.criteria,write_uid:0
+#: field:education.pass.status,write_uid:0
+#: field:education.result.exam.line,write_uid:0
+#: field:education.result.line,write_uid:0
+#: field:education.result.template,write_uid:0
+#: field:education.result.template.line,write_uid:0
 #: field:student.hall.ticket,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,write_date:0
-#: field:op.exam.attendees,write_date:0
-#: field:op.exam.res.allocation,write_date:0
-#: field:op.exam.room,write_date:0
-#: field:op.exam.session,write_date:0
-#: field:op.exam.type,write_date:0
-#: field:op.marksheet.line,write_date:0
-#: field:op.marksheet.register,write_date:0
-#: field:op.min.clear.criteria,write_date:0
-#: field:op.pass.status,write_date:0
-#: field:op.result.exam.line,write_date:0
-#: field:op.result.line,write_date:0
-#: field:op.result.template,write_date:0
-#: field:op.result.template.line,write_date:0
+#: field:education.exam,write_date:0
+#: field:education.exam.attendees,write_date:0
+#: field:education.exam.res.allocation,write_date:0
+#: field:education.exam.room,write_date:0
+#: field:education.exam.session,write_date:0
+#: field:education.exam.type,write_date:0
+#: field:education.marksheet.line,write_date:0
+#: field:education.marksheet.register,write_date:0
+#: field:education.min.clear.criteria,write_date:0
+#: field:education.pass.status,write_date:0
+#: field:education.result.exam.line,write_date:0
+#: field:education.result.line,write_date:0
+#: field:education.result.template,write_date:0
+#: field:education.result.template.line,write_date:0
 #: field:student.hall.ticket,write_date:0
 msgid "Last Updated on"
 msgstr ""
@@ -470,9 +470,9 @@ msgid "MarkSheet"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.attendees,marks:0
-#: view:op.result.line:education_exam.view_op_result_line_search
-#: field:op.result.line,marks:0
+#: field:education.exam.attendees,marks:0
+#: view:education.result.line:education_exam.view_education_result_line_search
+#: field:education.result.line,marks:0
 msgid "Marks"
 msgstr ""
 
@@ -482,62 +482,62 @@ msgid "Marksheet"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_form
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_search
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_tree
-#: view:op.result.line:education_exam.view_op_result_line_search
-#: field:op.result.line,marksheet_line_id:0
-#: field:op.result.line,result_id:0
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_form
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_search
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_tree
+#: view:education.result.line:education_exam.view_education_result_line_search
+#: field:education.result.line,marksheet_line_id:0
+#: field:education.result.line,result_id:0
 msgid "Marksheet Line"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_marksheet_line_view
-#: model:ir.ui.menu,name:education_exam.menu_op_marksheet_line_sub
-#: model:ir.ui.menu,name:education_exam.menu_op_marksheet_line_sub_faculty
+#: model:ir.actions.act_window,name:education_exam.act_open_education_marksheet_line_view
+#: model:ir.ui.menu,name:education_exam.menu_education_marksheet_line_sub
+#: model:ir.ui.menu,name:education_exam.menu_education_marksheet_line_sub_faculty
 msgid "Marksheet Lines"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_search
-#: field:op.marksheet.line,marksheet_reg_id:0
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_form
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_search
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_tree
-#: field:op.marksheet.register,name:0
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_search
+#: field:education.marksheet.line,marksheet_reg_id:0
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_form
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_search
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_tree
+#: field:education.marksheet.register,name:0
 msgid "Marksheet Register"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_marksheet_register_view
-#: model:ir.ui.menu,name:education_exam.menu_op_marksheet_register_sub
+#: model:ir.actions.act_window,name:education_exam.act_open_education_marksheet_register_view
+#: model:ir.ui.menu,name:education_exam.menu_education_marksheet_register_sub
 msgid "Marksheet Registers"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_form
-#: field:op.marksheet.register,marksheet_line:0
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_form
+#: field:education.marksheet.register,marksheet_line:0
 msgid "Marksheets"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,message_ids:0
+#: field:education.exam,message_ids:0
 msgid "Messages"
 msgstr ""
 
 #. module: education_exam
-#: help:op.exam,message_ids:0
+#: help:education.exam,message_ids:0
 msgid "Messages and communication history"
 msgstr ""
 
 #. module: education_exam
-#: field:op.pass.status,number:0
+#: field:education.pass.status,number:0
 msgid "Minimum Percentage"
 msgstr ""
 
 #. module: education_exam
-#: view:op.result.template:education_exam.view_op_result_template_form
-#: field:op.result.template,criteria_ids:0
+#: view:education.result.template:education_exam.view_education_result_template_form
+#: field:education.result.template,criteria_ids:0
 msgid "Minimum Qualification Criteria"
 msgstr ""
 
@@ -547,12 +547,12 @@ msgid "Month/Year of Passing"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.room,name:0
-#: view:op.exam.type:education_exam.view_op_exam_type_search
-#: field:op.exam.type,name:0
-#: field:op.min.clear.criteria,name:0
-#: field:op.pass.status,name:0
-#: field:op.result.template,name:0
+#: field:education.exam.room,name:0
+#: view:education.exam.type:education_exam.view_education_exam_type_search
+#: field:education.exam.type,name:0
+#: field:education.min.clear.criteria,name:0
+#: field:education.pass.status,name:0
+#: field:education.result.template,name:0
 msgid "Name"
 msgstr ""
 
@@ -562,25 +562,25 @@ msgid "Name :"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_form
-#: selection:op.exam,state:0
+#: view:education.exam:education_exam.view_education_exam_form
+#: selection:education.exam,state:0
 msgid "New Exam"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.exam,evaluation_type:0
+#: selection:education.exam,evaluation_type:0
 msgid "Normal"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,note:0
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_form
-#: field:op.exam.attendees,note:0
+#: field:education.exam,note:0
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_form
+#: field:education.exam.attendees,note:0
 msgid "Note"
 msgstr ""
 
 #. module: education_exam
-#: field:op.min.clear.criteria,number:0
+#: field:education.min.clear.criteria,number:0
 msgid "Number of Failed Subject"
 msgstr ""
 
@@ -595,40 +595,40 @@ msgid "Obtained Marks/Total Marks"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.result.line,status:0
+#: selection:education.result.line,status:0
 msgid "Pass"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_pass_status_view
-#: model:ir.model,name:education_exam.model_op_pass_status
-#: model:ir.ui.menu,name:education_exam.menu_op_pass_status
-#: view:op.pass.status:education_exam.view_op_pass_status_form
-#: view:op.pass.status:education_exam.view_op_pass_status_tree
-#: field:op.result.template,pass_status_ids:0
+#: model:ir.actions.act_window,name:education_exam.act_open_education_pass_status_view
+#: model:ir.model,name:education_exam.model_education_pass_status
+#: model:ir.ui.menu,name:education_exam.menu_education_pass_status
+#: view:education.pass.status:education_exam.view_education_pass_status_form
+#: view:education.pass.status:education_exam.view_education_pass_status_tree
+#: field:education.result.template,pass_status_ids:0
 msgid "Pass Status"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,min_marks:0
+#: field:education.exam,min_marks:0
 #: view:website:education_exam.report_marksheet_report
 msgid "Passing Marks"
 msgstr ""
 
 #. module: education_exam
-#: view:op.result.template:education_exam.view_op_result_template_form
+#: view:education.result.template:education_exam.view_education_result_template_form
 msgid "Passing Status"
 msgstr ""
 
 #. module: education_exam
-#: field:op.result.line,per:0
-#: field:op.result.line,total_marks:0
+#: field:education.result.line,per:0
+#: field:education.result.line,total_marks:0
 #: view:website:education_exam.report_marksheet_report
 msgid "Percentage"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.exam.attendees,status:0
+#: selection:education.exam.attendees,status:0
 msgid "Present"
 msgstr ""
 
@@ -638,80 +638,80 @@ msgid "Print"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_min_clearance_criteria_view
-#: model:ir.ui.menu,name:education_exam.menu_op_min_clearance_criteria
-#: view:op.min.clear.criteria:education_exam.view_op_min_clearance_criteria_form
-#: view:op.min.clear.criteria:education_exam.view_op_min_clearance_criteria_tree
+#: model:ir.actions.act_window,name:education_exam.act_open_education_min_clearance_criteria_view
+#: model:ir.ui.menu,name:education_exam.menu_education_min_clearance_criteria
+#: view:education.min.clear.criteria:education_exam.view_education_min_clearance_criteria_form
+#: view:education.min.clear.criteria:education_exam.view_education_min_clearance_criteria_tree
 msgid "Qualification Criteria"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,responsible_id:0
+#: field:education.exam,responsible_id:0
 msgid "Responsible"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_search
-#: field:op.marksheet.line,result:0
-#: view:op.result.exam.line:education_exam.view_op_result_exam_line_form
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_search
+#: field:education.marksheet.line,result:0
+#: view:education.result.exam.line:education_exam.view_education_result_exam_line_form
 #: view:website:education_exam.report_marksheet_report
 msgid "Result"
 msgstr ""
 
 #. module: education_exam
-#: field:op.result.template,result_date:0
+#: field:education.result.template,result_date:0
 msgid "Result Date"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.model,name:education_exam.model_op_result_exam_line
+#: model:ir.model,name:education_exam.model_education_result_exam_line
 msgid "Result Exam Line"
 msgstr ""
 
 #. module: education_exam
-#: view:op.result.line:education_exam.view_op_result_line_form
-#: view:op.result.line:education_exam.view_op_result_line_search
-#: view:op.result.line:education_exam.view_op_result_line_tree
+#: view:education.result.line:education_exam.view_education_result_line_form
+#: view:education.result.line:education_exam.view_education_result_line_search
+#: view:education.result.line:education_exam.view_education_result_line_tree
 msgid "Result Line"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_result_line_view
-#: model:ir.ui.menu,name:education_exam.menu_op_result_line_sub
-#: model:ir.ui.menu,name:education_exam.menu_op_result_line_sub_faculty
-#: field:op.result.exam.line,result_lines:0
+#: model:ir.actions.act_window,name:education_exam.act_open_education_result_line_view
+#: model:ir.ui.menu,name:education_exam.menu_education_result_line_sub
+#: model:ir.ui.menu,name:education_exam.menu_education_result_line_sub_faculty
+#: field:education.result.exam.line,result_lines:0
 msgid "Result Lines"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.model,name:education_exam.model_op_result_template
-#: view:op.result.template:education_exam.view_op_result_template_form
-#: view:op.result.template:education_exam.view_op_result_template_search
-#: view:op.result.template:education_exam.view_op_result_template_tree
+#: model:ir.model,name:education_exam.model_education_result_template
+#: view:education.result.template:education_exam.view_education_result_template_form
+#: view:education.result.template:education_exam.view_education_result_template_search
+#: view:education.result.template:education_exam.view_education_result_template_tree
 msgid "Result Template"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.model,name:education_exam.model_op_result_template_line
-#: field:op.result.template.line,result_id:0
+#: model:ir.model,name:education_exam.model_education_result_template_line
+#: field:education.result.template.line,result_id:0
 msgid "Result Template Line"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_result_template_view
-#: model:ir.ui.menu,name:education_exam.menu_op_result_template
+#: model:ir.actions.act_window,name:education_exam.act_open_education_result_template_view
+#: model:ir.ui.menu,name:education_exam.menu_education_result_template
 msgid "Result Templates"
 msgstr ""
 
 #. module: education_exam
-#: field:op.min.clear.criteria,result:0
-#: field:op.pass.status,result:0
+#: field:education.min.clear.criteria,result:0
+#: field:education.pass.status,result:0
 msgid "Result to Display"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_form
-#: field:op.marksheet.line,result_line:0
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_form
+#: field:education.marksheet.line,result_line:0
 msgid "Results"
 msgstr ""
 
@@ -722,17 +722,17 @@ msgid "Roll No :"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.session,room_id:0
+#: field:education.exam.session,room_id:0
 msgid "Room"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_form
+#: view:education.exam:education_exam.view_education_exam_form
 msgid "Schedule Exam"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.exam,state:0
+#: selection:education.exam,state:0
 msgid "Scheduled"
 msgstr ""
 
@@ -742,48 +742,48 @@ msgid "Seating Arrangement for Student Examination"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.res.allocation,exam_session_ids:0
+#: field:education.exam.res.allocation,exam_session_ids:0
 msgid "Select Exam Session"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.res.allocation:education_exam.view_op_exam_res_allocation_form
+#: view:education.exam.res.allocation:education_exam.view_education_exam_res_allocation_form
 msgid "Session"
 msgstr ""
 
 #. module: education_exam
-#: field:op.result.template,line_ids:0
+#: field:education.result.template,line_ids:0
 msgid "Session Lines"
 msgstr ""
 
 #. module: education_exam
-#: field:op.marksheet.line,exam_session_id:0
-#: field:op.result.exam.line,result_id:0
-#: view:op.result.template.line:education_exam.view_op_result_template_line_form
-#: view:op.result.template.line:education_exam.view_op_result_template_line_search
-#: view:op.result.template.line:education_exam.view_op_result_template_line_tree
+#: field:education.marksheet.line,exam_session_id:0
+#: field:education.result.exam.line,result_id:0
+#: view:education.result.template.line:education_exam.view_education_result_template_line_form
+#: view:education.result.template.line:education_exam.view_education_result_template_line_search
+#: view:education.result.template.line:education_exam.view_education_result_template_line_tree
 msgid "Session Template"
 msgstr ""
 
 #. module: education_exam
-#: model:ir.actions.act_window,name:education_exam.act_open_op_result_template_line_view
-#: model:ir.ui.menu,name:education_exam.menu_op_result_template_line
-#: view:op.result.template:education_exam.view_op_result_template_form
+#: model:ir.actions.act_window,name:education_exam.act_open_education_result_template_line_view
+#: model:ir.ui.menu,name:education_exam.menu_education_result_template_line
+#: view:education.result.template:education_exam.view_education_result_template_form
 msgid "Session Templates"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
+#: view:education.exam:education_exam.view_education_exam_search
 msgid "Standard"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam.session,start_date:0
+#: field:education.exam.session,start_date:0
 msgid "Start Date"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,start_time:0
+#: field:education.exam,start_time:0
 msgid "Start Time"
 msgstr ""
 
@@ -795,29 +795,29 @@ msgid "Start Time should be greater than End Time!"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam,state:0
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam,state:0
 msgid "State"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_search
-#: field:op.exam.attendees,status:0
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_search
-#: field:op.marksheet.register,status:0
-#: view:op.result.line:education_exam.view_op_result_line_search
-#: field:op.result.line,status:0
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_search
+#: field:education.exam.attendees,status:0
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_search
+#: field:education.marksheet.register,status:0
+#: view:education.result.line:education_exam.view_education_result_line_search
+#: field:education.result.line,status:0
 msgid "Status"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.attendees:education_exam.view_op_exam_attendees_search
-#: field:op.exam.attendees,student_id:0
-#: view:op.exam.res.allocation:education_exam.view_op_exam_res_allocation_form
-#: field:op.exam.res.allocation,student_ids:0
-#: view:op.marksheet.line:education_exam.view_op_marksheet_line_search
-#: field:op.marksheet.line,student_id:0
-#: field:op.result.line,student_id:0
+#: view:education.exam.attendees:education_exam.view_education_exam_attendees_search
+#: field:education.exam.attendees,student_id:0
+#: view:education.exam.res.allocation:education_exam.view_education_exam_res_allocation_form
+#: field:education.exam.res.allocation,student_ids:0
+#: view:education.marksheet.line:education_exam.view_education_marksheet_line_search
+#: field:education.marksheet.line,student_id:0
+#: field:education.result.line,student_id:0
 msgid "Student"
 msgstr ""
 
@@ -849,26 +849,26 @@ msgid "Student Name :"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam.room:education_exam.view_op_exam_room_form
-#: field:op.exam.room,student_ids:0
+#: view:education.exam.room:education_exam.view_education_exam_room_form
+#: field:education.exam.room,student_ids:0
 msgid "Student(s)"
 msgstr ""
 
 #. module: education_exam
-#: view:op.result.line:education_exam.view_op_result_line_search
+#: view:education.result.line:education_exam.view_education_result_line_search
 msgid "Students"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam,subject_id:0
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam,subject_id:0
 #: view:website:education_exam.report_marksheet_report
 #: view:website:education_exam.report_ticket
 msgid "Subject"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,message_summary:0
+#: field:education.exam,message_summary:0
 msgid "Summary"
 msgstr ""
 
@@ -883,56 +883,56 @@ msgid "Time"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_search
-#: field:op.marksheet.register,total_failed:0
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_search
+#: field:education.marksheet.register,total_failed:0
 msgid "Total Fail"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,total_marks:0
-#: field:op.marksheet.line,total_marks:0
+#: field:education.exam,total_marks:0
+#: field:education.marksheet.line,total_marks:0
 #: view:website:education_exam.report_marksheet_report
 msgid "Total Marks"
 msgstr ""
 
 #. module: education_exam
-#: view:op.marksheet.register:education_exam.view_op_marksheet_register_search
-#: field:op.marksheet.register,total_pass:0
+#: view:education.marksheet.register:education_exam.view_education_marksheet_register_search
+#: field:education.marksheet.register,total_pass:0
 msgid "Total Pass"
 msgstr ""
 
 #. module: education_exam
-#: field:op.marksheet.line,total_per:0
+#: field:education.marksheet.line,total_per:0
 msgid "Total Percentage"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,message_unread:0
+#: field:education.exam,message_unread:0
 msgid "Unread Messages"
 msgstr ""
 
 #. module: education_exam
-#: selection:op.marksheet.register,status:0
+#: selection:education.marksheet.register,status:0
 msgid "Validated"
 msgstr ""
 
 #. module: education_exam
-#: view:op.exam:education_exam.view_op_exam_search
-#: field:op.exam,venue:0
+#: view:education.exam:education_exam.view_education_exam_search
+#: field:education.exam,venue:0
 msgid "Venue"
 msgstr ""
 
 #. module: education_exam
-#: field:op.exam,website_message_ids:0
+#: field:education.exam,website_message_ids:0
 msgid "Website Messages"
 msgstr ""
 
 #. module: education_exam
-#: help:op.exam,website_message_ids:0
+#: help:education.exam,website_message_ids:0
 msgid "Website communication history"
 msgstr ""
 
 #. module: education_exam
-#: field:op.result.exam.line,weightage:0
+#: field:education.result.exam.line,weightage:0
 msgid "Weightage"
 msgstr ""

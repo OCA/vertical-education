@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Poedit 2.0.1\n"
 
 #. module: education_attendance
-#: model:ir.ui.menu,name:education_attendance.menu_op_attendance_root
+#: model:ir.ui.menu,name:education_attendance.menu_education_attendance_root
 msgid " Attendances"
 msgstr " Asistencia"
 
@@ -48,75 +48,75 @@ msgid "<strong>Student Attendance Detail</strong>"
 msgstr "<strong>Detalle de asistencia del Alumno</strong>"
 
 #. module: education_attendance
-#: model:ir.ui.view,arch_db:education_attendance.op_all_student_form
+#: model:ir.ui.view,arch_db:education_attendance.education_all_student_form
 msgid "Add Absent Student(s)"
 msgstr "Alumno(s) ausentes"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_student_ids
-#: model:ir.ui.view,arch_db:education_attendance.op_all_student_form
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_student_ids
+#: model:ir.ui.view,arch_db:education_attendance.education_all_student_form
 msgid "Add Student(s)"
 msgstr "Añadir alumno(s)"
 
 #. module: education_attendance
-#: model:ir.actions.act_window,name:education_attendance.op_all_student_act
+#: model:ir.actions.act_window,name:education_attendance.education_all_student_act
 msgid "Attandance Sheet Import"
 msgstr "Importación de hojas de asistencia"
 
 #. module: education_attendance
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_search
 msgid "Attendance"
 msgstr "Asistencia"
 
 #. module: education_attendance
-#: model:ir.actions.act_window,name:education_attendance.act_open_op_attendance_line_view
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_attendance_line
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_form
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_search
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_tree
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_form
+#: model:ir.actions.act_window,name:education_attendance.act_open_education_attendance_line_view
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_attendance_line
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_form
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_tree
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_form
 msgid "Attendance Line"
 msgstr "Línea de asistencia "
 
 #. module: education_attendance
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_form
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_search
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_tree
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_form
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_tree
 msgid "Attendance Register"
 msgstr "Registro de asistencia"
 
 #. module: education_attendance
-#: model:ir.actions.act_window,name:education_attendance.act_open_op_attendance_register_view
-#: model:ir.ui.menu,name:education_attendance.menu_op_attendance_register_sub
+#: model:ir.actions.act_window,name:education_attendance.act_open_education_attendance_register_view
+#: model:ir.ui.menu,name:education_attendance.menu_education_attendance_register_sub
 msgid "Attendance Registers"
 msgstr "Registros de asistencia"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_attendance_id
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_form
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_search
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_tree
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_attendance_id
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_form
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_tree
 msgid "Attendance Sheet"
 msgstr "Hoja de asistencia"
 
 #. module: education_attendance
-#: model:ir.actions.act_window,name:education_attendance.act_open_op_attendance_sheet_view
-#: model:ir.ui.menu,name:education_attendance.menu_op_attendance_sheet_sub
+#: model:ir.actions.act_window,name:education_attendance.act_open_education_attendance_sheet_view
+#: model:ir.ui.menu,name:education_attendance.menu_education_attendance_sheet_sub
 msgid "Attendance Sheets"
 msgstr "Hojas de asistencia"
 
 #. module: education_attendance
-#: model:ir.ui.menu,name:education_attendance.menu_op_attendance_line_sub
+#: model:ir.ui.menu,name:education_attendance.menu_education_attendance_line_sub
 msgid "Attendance lines"
 msgstr "Lineas de asistencia"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_batch_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_batch_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_batch_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_batch_id
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_search
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_search
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_batch_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_batch_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_batch_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_batch_id
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_search
 msgid "Batch"
 msgstr "Grupo académico"
 
@@ -126,64 +126,64 @@ msgid "Close"
 msgstr "Cerrar"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_code
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_search
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_code
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_search
 msgid "Code"
 msgstr "Código"
 
 #. module: education_attendance
-#: model:ir.ui.view,arch_db:education_attendance.op_all_student_form
+#: model:ir.ui.view,arch_db:education_attendance.education_all_student_form
 msgid "Confirm Student Selection"
 msgstr "Confirme la selección del Alumno"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_course_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_course_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_course_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_course_id
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_search
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_search
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_course_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_course_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_course_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_course_id
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_search
 msgid "Course"
 msgstr "Curso"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_create_uid
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_create_uid
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_create_uid
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_create_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_create_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_create_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_create_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_create_uid
 #: model:ir.model.fields,field_description:education_attendance.field_student_attendance_create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_create_date
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_create_date
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_create_date
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_create_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_create_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_create_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_create_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_create_date
 #: model:ir.model.fields,field_description:education_attendance.field_student_attendance_create_date
 msgid "Created on"
 msgstr "Creado el"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_attendance_date
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_attendance_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_attendance_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_attendance_date
 #: model:ir.ui.view,arch_db:education_attendance.student_attendance_report
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_search
 msgid "Date"
 msgstr "Fecha"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_display_name
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_display_name
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_display_name
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_display_name
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_display_name
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_display_name
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_display_name
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_display_name
 #: model:ir.model.fields,field_description:education_attendance.field_report_education_attendance_student_attendance_report_display_name
 #: model:ir.model.fields,field_description:education_attendance.field_student_attendance_display_name
 msgid "Display Name"
 msgstr "Nombre a mostrar"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_faculty_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_faculty_id
 msgid "Faculty"
 msgstr "Profesor"
 
@@ -198,60 +198,60 @@ msgid "Generate Attendance"
 msgstr "Generar asistencia"
 
 #. module: education_attendance
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_search
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_search
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_search
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_search
 msgid "Group By..."
 msgstr "Agrupar por..."
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_id
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_id
 #: model:ir.model.fields,field_description:education_attendance.field_report_education_attendance_student_attendance_report_id
 #: model:ir.model.fields,field_description:education_attendance.field_student_attendance_id
 msgid "ID"
 msgstr "ID"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student___last_update
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line___last_update
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register___last_update
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet___last_update
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student___last_update
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line___last_update
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register___last_update
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet___last_update
 #: model:ir.model.fields,field_description:education_attendance.field_report_education_attendance_student_attendance_report___last_update
 #: model:ir.model.fields,field_description:education_attendance.field_student_attendance___last_update
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_write_uid
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_write_uid
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_write_uid
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_write_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_write_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_write_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_write_uid
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_write_uid
 #: model:ir.model.fields,field_description:education_attendance.field_student_attendance_write_uid
 msgid "Last Updated by"
 msgstr "Última actualización por"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_all_student_write_date
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_write_date
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_write_date
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_write_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_all_student_write_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_write_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_write_date
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_write_date
 #: model:ir.model.fields,field_description:education_attendance.field_student_attendance_write_date
 msgid "Last Updated on"
 msgstr "Última actualización el"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_name
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_name
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_register_search
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_name
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_name
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_register_search
 msgid "Name"
 msgstr "Nombre"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_present
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_search
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_present
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_search
 msgid "Present ?"
 msgstr "Presente?"
 
@@ -261,30 +261,30 @@ msgid "Print"
 msgstr "Imprimir"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_register_id
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_search
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_register_id
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_search
 msgid "Register"
 msgstr "Registro"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_remark
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_remark
 #: model:ir.ui.view,arch_db:education_attendance.student_attendance_report
 msgid "Remark"
 msgstr "Observación"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_session_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_session_id
 msgid "Session"
 msgstr "Sesión"
 
 #. module: education_attendance
-#: sql_constraint:op.attendance.sheet:0
+#: sql_constraint:education.attendance.sheet:0
 msgid "Sheet must be unique per Register/Session."
 msgstr "La hoja debe ser única por Registro / Sesión."
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_line_student_id
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_line_search
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_line_student_id
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_line_search
 msgid "Student"
 msgstr "Alumno"
 
@@ -299,17 +299,17 @@ msgid "Student Attendance Report"
 msgstr "Informe de asistencia del alumno"
 
 #. module: education_attendance
-#: sql_constraint:op.attendance.line:0
+#: sql_constraint:education.attendance.line:0
 msgid "Student must be unique per Attendance."
 msgstr "El alumno debe ser único por Asistencia."
 
 #. module: education_attendance
-#: model:ir.ui.view,arch_db:education_attendance.view_op_attendance_sheet_form
+#: model:ir.ui.view,arch_db:education_attendance.view_education_attendance_sheet_form
 msgid "Students"
 msgstr "Alumno"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_register_subject_id
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_register_subject_id
 msgid "Subject"
 msgstr "Asunto"
 
@@ -325,34 +325,34 @@ msgid "To Date cannot be set before From Date."
 msgstr "Hasta la fecha no se puede establecer antes de la fecha."
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_total_absent
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_total_absent
 msgid "Total Absent"
 msgstr "Ausente total"
 
 #. module: education_attendance
-#: model:ir.model.fields,field_description:education_attendance.field_op_attendance_sheet_total_present
+#: model:ir.model.fields,field_description:education_attendance.field_education_attendance_sheet_total_present
 msgid "Total Present"
 msgstr "Presente total"
 
 #. module: education_attendance
-#: model:ir.model,name:education_attendance.model_op_all_student
-msgid "op.all.student"
-msgstr "op.all.student"
+#: model:ir.model,name:education_attendance.model_education_all_student
+msgid "education.all.student"
+msgstr "education.all.student"
 
 #. module: education_attendance
-#: model:ir.model,name:education_attendance.model_op_attendance_line
-msgid "op.attendance.line"
-msgstr "op.attendance.line"
+#: model:ir.model,name:education_attendance.model_education_attendance_line
+msgid "education.attendance.line"
+msgstr "education.attendance.line"
 
 #. module: education_attendance
-#: model:ir.model,name:education_attendance.model_op_attendance_register
-msgid "op.attendance.register"
-msgstr "op.attendance.register"
+#: model:ir.model,name:education_attendance.model_education_attendance_register
+msgid "education.attendance.register"
+msgstr "education.attendance.register"
 
 #. module: education_attendance
-#: model:ir.model,name:education_attendance.model_op_attendance_sheet
-msgid "op.attendance.sheet"
-msgstr "op.attendance.sheet"
+#: model:ir.model,name:education_attendance.model_education_attendance_sheet
+msgid "education.attendance.sheet"
+msgstr "education.attendance.sheet"
 
 #. module: education_attendance
 #: model:ir.model,name:education_attendance.model_report_education_attendance_student_attendance_report

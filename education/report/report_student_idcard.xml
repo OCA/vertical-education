@@ -68,7 +68,7 @@
                                                     <span t-field='o.blood_group' />
                                                     <br></br>
                                                     BirthDate :
-                                                    <span t-field='o.birth_date' />
+                                                    <span t-field='o.birthdate_date' />
                                                 </div>
                                             </td>
                                         </tr>

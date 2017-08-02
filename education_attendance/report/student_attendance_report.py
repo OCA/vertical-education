@@ -29,7 +29,7 @@ class StudentAttendanceReport(models.AbstractModel):
     _name = 'report.education_attendance.student_attendance_report'
 
     def get_student_name(self, data):
-        student = self.env['op.student'].browse(data['student_id'])
+        student = self.env['education.student'].browse(data['student_id'])
         if student:
             return ' '.join([student.name,
                              student.middle_name,
@@ -37,7 +37,7 @@ class StudentAttendanceReport(models.AbstractModel):
 
     def get_data(self, data):
 
-        sheet_search = self.env['op.attendance.sheet'].search(
+        sheet_search = self.env['education.attendance.sheet'].search(
             [('attendance_date', '>=', data['from_date']),
              ('attendance_date', '<=', data['to_date'])],
             order='attendance_date asc')

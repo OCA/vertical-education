@@ -26,7 +26,7 @@ from odoo.exceptions import ValidationError
 
 
 class OpAdmissionRegister(models.Model):
-    _name = 'op.admission.register'
+    _name = 'education.admission.register'
     _inherit = 'mail.thread'
     _description = 'Admission Register'
 
@@ -41,7 +41,7 @@ class OpAdmissionRegister(models.Model):
         default=(datetime.today() + relativedelta(days=30)),
         states={'draft': [('readonly', False)]})
     course_id = fields.Many2one(
-        'op.course', 'Course', required=True, readonly=True,
+        'education.course', 'Course', required=True, readonly=True,
         states={'draft': [('readonly', False)]}, track_visibility='onchange')
     min_count = fields.Integer(
         'Minimum No. of Admission', readonly=True,
@@ -54,7 +54,7 @@ class OpAdmissionRegister(models.Model):
         domain=[('type', '=', 'service')], readonly=True,
         states={'draft': [('readonly', False)]}, track_visibility='onchange')
     admission_ids = fields.One2many(
-        'op.admission', 'register_id', 'Admissions')
+        'education.admission', 'register_id', 'Admissions')
     state = fields.Selection(
         [('draft', 'Draft'), ('confirm', 'Confirmed'),
          ('cancel', 'Cancelled'), ('application', 'Application Gathering'),

@@ -33,16 +33,16 @@ class IssueMedia(models.TransientModel):
     """ Issue Media """
     _name = 'issue.media'
 
-    media_id = fields.Many2one('op.media', 'Media', required=True)
-    media_unit_id = fields.Many2one('op.media.unit', 'Media Unit',
+    media_id = fields.Many2one('education.media', 'Media', required=True)
+    media_unit_id = fields.Many2one('education.media.unit', 'Media Unit',
                                     required=True)
     type = fields.Selection(
         [('student', 'Student'), ('faculty', 'Faculty')],
         'Type', default='student', required=True)
-    student_id = fields.Many2one('op.student', 'Student')
-    faculty_id = fields.Many2one('op.faculty', 'Faculty')
+    student_id = fields.Many2one('education.student', 'Student')
+    faculty_id = fields.Many2one('education.faculty', 'Faculty')
     library_card_id = fields.Many2one(
-        'op.library.card', 'Library Card', required=True)
+        'education.library.card', 'Library Card', required=True)
     issued_date = fields.Date(
         'Issued Date', required=True, default=fields.Date.today())
     return_date = fields.Date('Return Date', required=True)
@@ -63,11 +63,11 @@ class IssueMedia(models.TransientModel):
                 days=self.library_card_id.library_card_type_id.duration)
 
     def check_max_issue(self, student_id, library_card_id):
-        media_movement_search = self.env["op.media.movement"].search(
+        media_movement_search = self.env["education.media.movement"].search(
             [('library_card_id', '=', library_card_id),
              ('student_id', '=', student_id),
              ('state', '=', 'issue')])
-        if len(media_movement_search) < self.env["op.library.card"].browse(
+        if len(media_movement_search) < self.env["education.library.card"].browse(
                 library_card_id).library_card_type_id.allow_media:
             return True
         else:
@@ -92,7 +92,7 @@ class IssueMedia(models.TransientModel):
                         'return_date': media.return_date,
                         'state': 'issue',
                     }
-                    self.env['op.media.movement'].create(media_movement_create)
+                    self.env['education.media.movement'].create(media_movement_create)
                     media.media_unit_id.state = 'issue'
                     value = {'type': 'ir.actions.act_window_close'}
                 else:

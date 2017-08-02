@@ -7,7 +7,7 @@
             <field name="password">parent</field>
             <field name="partner_id" ref="education_parent.res_partner_33"/>
             <field name="company_id" ref="base.main_company" />
-            <field name="groups_id" eval="[(4,ref('education_parent.group_op_parent'))]"/>
+            <field name="groups_id" eval="[(4,ref('education_parent.group_education_parent'))]"/>
         </record>
 
     </data>

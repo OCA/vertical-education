@@ -2,8 +2,8 @@
 <odoo>
     <data>
         <record id="view_media_unit_tree" model="ir.ui.view">
-            <field name="name">op.media.unit.tree</field>
-            <field name="model">op.media.unit</field>
+            <field name="name">education.media.unit.tree</field>
+            <field name="model">education.media.unit</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Media Units">
@@ -15,8 +15,8 @@
             </field>
         </record>
         <record id="view_media_unit_form" model="ir.ui.view">
-            <field name="name">op.media.unit.form</field>
-            <field name="model">op.media.unit</field>
+            <field name="name">education.media.unit.form</field>
+            <field name="model">education.media.unit</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Media Units">
@@ -24,11 +24,11 @@
                         <button name="%(issue_media_act)d" string="Issue Media"
                             type="action" context="{'default_media_id': media_id, 'default_media_unit_id': active_id}"
                             attrs="{'invisible':[('state','!=','available')]}"
-                            class="oe_highlight" groups="education_library.group_op_library" />
+                            class="oe_highlight" groups="education_library.group_education_library" />
                         <button name="%(return_media_act)d" string="Return Media"
                             type="action" context="{'default_media_id': media_id, 'default_media_unit_id': active_id}"
                             attrs="{'invisible':[('state','!=','issue')]}"
-                            class="oe_highlight" groups="education_library.group_op_library" />
+                            class="oe_highlight" groups="education_library.group_education_library" />
                         <field name="state" widget="statusbar" statusbar_visible="available,issue,reserve,lost"
                             statusbar_colors='{"r":"red"}' />
                     </header>
@@ -53,8 +53,8 @@
             </field>
         </record>
         <record id="view_media_unit_search" model="ir.ui.view">
-            <field name="name">op.media.unit.search</field>
-            <field name="model">op.media.unit</field>
+            <field name="name">education.media.unit.search</field>
+            <field name="model">education.media.unit</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="media Units">
@@ -72,7 +72,7 @@
         <record model="ir.actions.act_window" id="act_open_media_unit_view">
             <field name="name">Media Units</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.media.unit</field>
+            <field name="res_model">education.media.unit</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="domain">[]</field>

@@ -16,115 +16,115 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_classroom
-#: field:op.asset,asset_id:0
-#: field:op.classroom,asset_line:0
+#: field:education.asset,asset_id:0
+#: field:education.classroom,asset_line:0
 msgid "Asset"
 msgstr ""
 
 #. module: education_classroom
-#: view:op.classroom:education_classroom.view_op_classroom_form
+#: view:education.classroom:education_classroom.view_education_classroom_form
 msgid "Asset Management"
 msgstr ""
 
 #. module: education_classroom
-#: view:op.classroom:education_classroom.view_op_classroom_search
+#: view:education.classroom:education_classroom.view_education_classroom_search
 msgid "Capacity"
 msgstr ""
 
 #. module: education_classroom
-#: model:ir.ui.menu,name:education_classroom.menu_op_school_config_class_room
+#: model:ir.ui.menu,name:education_classroom.menu_education_school_config_class_room
 msgid "Class Room Management"
 msgstr ""
 
 #. module: education_classroom
-#: model:ir.actions.act_window,name:education_classroom.act_open_op_classroom_view
-#: model:ir.ui.menu,name:education_classroom.menu_op_classroom_sub
+#: model:ir.actions.act_window,name:education_classroom.act_open_education_classroom_view
+#: model:ir.ui.menu,name:education_classroom.menu_education_classroom_sub
 msgid "Class Rooms"
 msgstr ""
 
 #. module: education_classroom
-#: view:op.classroom:education_classroom.view_op_classroom_form
-#: view:op.classroom:education_classroom.view_op_classroom_search
-#: view:op.classroom:education_classroom.view_op_classroom_tree
-#: field:op.facility.line,classroom_id:0
+#: view:education.classroom:education_classroom.view_education_classroom_form
+#: view:education.classroom:education_classroom.view_education_classroom_search
+#: view:education.classroom:education_classroom.view_education_classroom_tree
+#: field:education.facility.line,classroom_id:0
 msgid "Classroom"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,code:0
-#: view:op.classroom:education_classroom.view_op_classroom_search
-#: field:op.classroom,code:0
+#: field:education.asset,code:0
+#: view:education.classroom:education_classroom.view_education_classroom_search
+#: field:education.classroom,code:0
 msgid "Code"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.classroom,course_id:0
+#: field:education.classroom,course_id:0
 msgid "Course"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,create_uid:0
-#: field:op.classroom,create_uid:0
+#: field:education.asset,create_uid:0
+#: field:education.classroom,create_uid:0
 msgid "Created by"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,create_date:0
-#: field:op.classroom,create_date:0
+#: field:education.asset,create_date:0
+#: field:education.classroom,create_date:0
 msgid "Created on"
 msgstr ""
 
 #. module: education_classroom
-#: view:op.classroom:education_classroom.view_op_classroom_form
+#: view:education.classroom:education_classroom.view_education_classroom_form
 msgid "Facilities"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.classroom,facilities:0
+#: field:education.classroom,facilities:0
 msgid "Facility Lines"
 msgstr ""
 
 #. module: education_classroom
-#: view:op.classroom:education_classroom.view_op_classroom_search
+#: view:education.classroom:education_classroom.view_education_classroom_search
 msgid "Group By..."
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,id:0
-#: field:op.classroom,id:0
+#: field:education.asset,id:0
+#: field:education.classroom,id:0
 msgid "ID"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,write_uid:0
-#: field:op.classroom,write_uid:0
+#: field:education.asset,write_uid:0
+#: field:education.classroom,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,write_date:0
-#: field:op.classroom,write_date:0
+#: field:education.asset,write_date:0
+#: field:education.classroom,write_date:0
 msgid "Last Updated on"
 msgstr ""
 
 #. module: education_classroom
-#: view:op.classroom:education_classroom.view_op_classroom_search
-#: field:op.classroom,name:0
+#: view:education.classroom:education_classroom.view_education_classroom_search
+#: field:education.classroom,name:0
 msgid "Name"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.classroom,capacity:0
+#: field:education.classroom,capacity:0
 msgid "No of Person"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,product_id:0
+#: field:education.asset,product_id:0
 msgid "Product"
 msgstr ""
 
 #. module: education_classroom
-#: field:op.asset,product_uom_qty:0
+#: field:education.asset,product_uom_qty:0
 msgid "Quantity"
 msgstr ""
 

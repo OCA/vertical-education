@@ -23,25 +23,25 @@ from odoo import models, fields
 
 
 class OpParent(models.Model):
-    _name = 'op.parent'
+    _name = 'education.parent'
 
     name = fields.Many2one(
         'res.partner', 'Name', default=lambda self: self.env[
             'res.partner'].search([('user_id', '=', self.env.uid)]),
         required=True)
-    student_ids = fields.Many2many('op.student', string='Student(s)')
+    student_ids = fields.Many2many('education.student', string='Student(s)')
     user_id = fields.Many2one(
         'res.users', 'User', default=lambda self: self.env.uid, required=True)
 
 
 class OpStudent(models.Model):
 
-    _inherit = 'op.student'
+    _inherit = 'education.student'
 
-    parent_ids = fields.Many2many('op.parent', string='Parent')
+    parent_ids = fields.Many2many('education.parent', string='Parent')
 
 
 class ResUsers(models.Model):
     _inherit = "res.users"
 
-    parent_ids = fields.One2many('op.parent', 'user_id', 'Parents')
+    parent_ids = fields.One2many('education.parent', 'user_id', 'Parents')

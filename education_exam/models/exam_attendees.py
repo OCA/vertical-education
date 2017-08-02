@@ -24,19 +24,19 @@ from odoo.exceptions import ValidationError
 
 
 class OpExamAttendees(models.Model):
-    _name = 'op.exam.attendees'
+    _name = 'education.exam.attendees'
     _rec_name = 'student_id'
 
-    student_id = fields.Many2one('op.student', 'Student', required=True)
+    student_id = fields.Many2one('education.student', 'Student', required=True)
     status = fields.Selection(
         [('present', 'Present'), ('absent', 'Absent')],
         'Status', default="present", required=True)
     marks = fields.Integer('Marks')
     note = fields.Text('Note')
-    exam_id = fields.Many2one('op.exam', 'Exam', required=True)
-    course_id = fields.Many2one('op.course', 'Course', readonly=True)
-    batch_id = fields.Many2one('op.batch', 'Batch', readonly=True)
-    room_id = fields.Many2one('op.exam.room', 'Room')
+    exam_id = fields.Many2one('education.exam', 'Exam', required=True)
+    course_id = fields.Many2one('education.course', 'Course', readonly=True)
+    batch_id = fields.Many2one('education.batch', 'Batch', readonly=True)
+    room_id = fields.Many2one('education.exam.room', 'Room')
 
     _sql_constraints = [
         ('unique_attendees',

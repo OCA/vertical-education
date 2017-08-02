@@ -2,42 +2,42 @@
 <odoo>
     <data noupdate="1">
 
-        <record id="op_session_1" model="op.session">
-            <field name="timing_id" ref="op_timing_1" />
-            <field name="faculty_id" ref="education.op_faculty_1" />
-            <field name="course_id" ref="education.op_course_2" />
-            <field name="batch_id" ref="education.op_batch_1" />
-            <field name="subject_id" ref="education.op_subject_6" />
+        <record id="education_session_1" model="education.session">
+            <field name="timing_id" ref="education_timing_1" />
+            <field name="faculty_id" ref="education.education_faculty_1" />
+            <field name="course_id" ref="education.education_course_2" />
+            <field name="batch_id" ref="education.education_batch_1" />
+            <field name="subject_id" ref="education.education_subject_6" />
             <field name="start_datetime" eval="time.strftime('%Y-%m-%d 04:30:00')" />
             <field name="end_datetime" eval="time.strftime('%Y-%m-%d 05:30:00')" />
         </record>
 
-        <record id="op_session_2" model="op.session">
-            <field name="timing_id" ref="op_timing_2" />
-            <field name="faculty_id" ref="education.op_faculty_3" />
-            <field name="course_id" ref="education.op_course_2" />
-            <field name="batch_id" ref="education.op_batch_1" />
-            <field name="subject_id" ref="education.op_subject_7" />
+        <record id="education_session_2" model="education.session">
+            <field name="timing_id" ref="education_timing_2" />
+            <field name="faculty_id" ref="education.education_faculty_3" />
+            <field name="course_id" ref="education.education_course_2" />
+            <field name="batch_id" ref="education.education_batch_1" />
+            <field name="subject_id" ref="education.education_subject_7" />
             <field name="start_datetime" eval="time.strftime('%Y-%m-%d 05:30:00')" />
             <field name="end_datetime" eval="time.strftime('%Y-%m-%d 06:30:00')" />
         </record>
 
-        <record id="op_session_3" model="op.session">
-            <field name="timing_id" ref="op_timing_2" />
-            <field name="faculty_id" ref="education.op_faculty_4" />
-            <field name="course_id" ref="education.op_course_2" />
-            <field name="batch_id" ref="education.op_batch_1" />
-            <field name="subject_id" ref="education.op_subject_8" />
+        <record id="education_session_3" model="education.session">
+            <field name="timing_id" ref="education_timing_2" />
+            <field name="faculty_id" ref="education.education_faculty_4" />
+            <field name="course_id" ref="education.education_course_2" />
+            <field name="batch_id" ref="education.education_batch_1" />
+            <field name="subject_id" ref="education.education_subject_8" />
             <field name="start_datetime" eval="time.strftime('%Y-%m-%d 06:30:00')" />
             <field name="end_datetime" eval="time.strftime('%Y-%m-%d 07:30:00')" />
         </record>
 
-        <record id="op_session_4" model="op.session">
-            <field name="timing_id" ref="op_timing_3" />
-            <field name="faculty_id" ref="education.op_faculty_6" />
-            <field name="course_id" ref="education.op_course_4" />
-            <field name="batch_id" ref="education.op_batch_3" />
-            <field name="subject_id" ref="education.op_subject_9" />
+        <record id="education_session_4" model="education.session">
+            <field name="timing_id" ref="education_timing_3" />
+            <field name="faculty_id" ref="education.education_faculty_6" />
+            <field name="course_id" ref="education.education_course_4" />
+            <field name="batch_id" ref="education.education_batch_3" />
+            <field name="subject_id" ref="education.education_subject_9" />
             <field name="start_datetime" eval="time.strftime('%Y-%m-%d 07:30:00')" />
             <field name="end_datetime" eval="time.strftime('%Y-%m-%d 08:30:00')" />
         </record>

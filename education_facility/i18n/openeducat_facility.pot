@@ -16,70 +16,70 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_facility
-#: view:op.facility:education_facility.view_op_facility_search
-#: field:op.facility,Code:0
+#: view:education.facility:education_facility.view_education_facility_search
+#: field:education.facility,Code:0
 msgid "Code"
 msgstr ""
 
 #. module: education_facility
-#: field:op.facility,create_uid:0
-#: field:op.facility.line,create_uid:0
+#: field:education.facility,create_uid:0
+#: field:education.facility.line,create_uid:0
 msgid "Created by"
 msgstr ""
 
 #. module: education_facility
-#: field:op.facility,create_date:0
-#: field:op.facility.line,create_date:0
+#: field:education.facility,create_date:0
+#: field:education.facility.line,create_date:0
 msgid "Created on"
 msgstr ""
 
 #. module: education_facility
-#: model:ir.actions.act_window,name:education_facility.act_open_op_facility_view
-#: model:ir.ui.menu,name:education_facility.menu_op_facility_sub
-#: view:op.facility.line:education_facility.op_facility_line_form_view
-#: view:op.facility.line:education_facility.op_facility_line_tree_view
+#: model:ir.actions.act_window,name:education_facility.act_open_education_facility_view
+#: model:ir.ui.menu,name:education_facility.menu_education_facility_sub
+#: view:education.facility.line:education_facility.education_facility_line_form_view
+#: view:education.facility.line:education_facility.education_facility_line_tree_view
 msgid "Facilities"
 msgstr ""
 
 #. module: education_facility
-#: view:op.facility:education_facility.view_op_facility_form
-#: view:op.facility:education_facility.view_op_facility_search
-#: view:op.facility:education_facility.view_op_facility_tree
-#: field:op.facility.line,facility_id:0
+#: view:education.facility:education_facility.view_education_facility_form
+#: view:education.facility:education_facility.view_education_facility_search
+#: view:education.facility:education_facility.view_education_facility_tree
+#: field:education.facility.line,facility_id:0
 msgid "Facility"
 msgstr ""
 
 #. module: education_facility
-#: view:op.facility:education_facility.view_op_facility_search
+#: view:education.facility:education_facility.view_education_facility_search
 msgid "Group By..."
 msgstr ""
 
 #. module: education_facility
-#: field:op.facility,id:0
-#: field:op.facility.line,id:0
+#: field:education.facility,id:0
+#: field:education.facility.line,id:0
 msgid "ID"
 msgstr ""
 
 #. module: education_facility
-#: field:op.facility,write_uid:0
-#: field:op.facility.line,write_uid:0
+#: field:education.facility,write_uid:0
+#: field:education.facility.line,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: education_facility
-#: field:op.facility,write_date:0
-#: field:op.facility.line,write_date:0
+#: field:education.facility,write_date:0
+#: field:education.facility.line,write_date:0
 msgid "Last Updated on"
 msgstr ""
 
 #. module: education_facility
-#: view:op.facility:education_facility.view_op_facility_search
-#: field:op.facility,Name:0
+#: view:education.facility:education_facility.view_education_facility_search
+#: field:education.facility,Name:0
 msgid "Name"
 msgstr ""
 
 #. module: education_facility
-#: field:op.facility.line,quantity:0
+#: field:education.facility.line,quantity:0
 msgid "Quantity"
 msgstr ""
 

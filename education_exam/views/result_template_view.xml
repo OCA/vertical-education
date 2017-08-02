@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_result_template_tree" model="ir.ui.view">
-            <field name="name">op.result.template.tree</field>
-            <field name="model">op.result.template</field>
+        <record id="view_education_result_template_tree" model="ir.ui.view">
+            <field name="name">education.result.template.tree</field>
+            <field name="model">education.result.template</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Result Template">
@@ -14,13 +14,13 @@
             </field>
         </record>
 
-        <record id="view_op_result_template_form" model="ir.ui.view">
-            <field name="name">op.result.template.form</field>
-            <field name="model">op.result.template</field>
+        <record id="view_education_result_template_form" model="ir.ui.view">
+            <field name="name">education.result.template.form</field>
+            <field name="model">education.result.template</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Result Template">
-                    <header groups="education.group_op_back_office_admin,education.group_op_back_office">
+                    <header groups="education.group_education_back_office_admin,education.group_education_back_office">
                         <button string="Generate Result" type="object" states="draft" name="generate_result" class="oe_highlight"/>
                         <field name="state" widget="statusbar" statusbar_visible="draft,result_generated" />
                     </header>
@@ -38,9 +38,9 @@
             </field>
         </record>
 
-        <record id="view_op_result_template_search" model="ir.ui.view">
-            <field name="name">op.result.template.search</field>
-            <field name="model">op.result.template</field>
+        <record id="view_education_result_template_search" model="ir.ui.view">
+            <field name="name">education.result.template.search</field>
+            <field name="model">education.result.template</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Result Template">
@@ -51,29 +51,29 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="act_open_op_result_template_view">
+        <record model="ir.actions.act_window" id="act_open_education_result_template_view">
             <field name="name">Result Templates</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.result.template</field>
+            <field name="res_model">education.result.template</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_result_template_search" />
+            <field name="search_view_id" ref="view_education_result_template_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
 
-        <record model="ir.actions.act_window.view" id="act_open_op_result_template_view_form">
-            <field name="act_window_id" ref="act_open_op_result_template_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_result_template_view_form">
+            <field name="act_window_id" ref="act_open_education_result_template_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_result_template_form" />
+            <field name="view_id" ref="view_education_result_template_form" />
         </record>
 
-        <record model="ir.actions.act_window.view" id="act_open_op_result_template_view_tree">
-            <field name="act_window_id" ref="act_open_op_result_template_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_result_template_view_tree">
+            <field name="act_window_id" ref="act_open_education_result_template_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_result_template_tree" />
+            <field name="view_id" ref="view_education_result_template_tree" />
         </record>
     </data>
 </odoo>

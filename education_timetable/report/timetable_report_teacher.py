@@ -30,7 +30,7 @@ class ReportTimeTableTeacherGenerate(models.AbstractModel):
     _name = 'report.education_timetable.report_timetable_teacher_generate'
 
     def get_full_name(self, data):
-        faculty_name = self.env['op.faculty'].browse(data['faculty_id'][0])
+        faculty_name = self.env['education.faculty'].browse(data['faculty_id'][0])
         return ' '.join([faculty_name.name,
                          faculty_name.middle_name or '',
                          faculty_name.last_name])
@@ -66,7 +66,7 @@ class ReportTimeTableTeacherGenerate(models.AbstractModel):
     def get_object(self, data):
 
         data_list = []
-        for timetable_obj in self.env['op.session'].browse(
+        for timetable_obj in self.env['education.session'].browse(
                 data['teacher_time_table_ids']):
             oldDate = datetime.strptime(
                 timetable_obj.start_datetime, "%Y-%m-%d %H:%M:%S")

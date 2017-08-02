@@ -24,7 +24,7 @@ from odoo.exceptions import ValidationError
 
 
 class OpMediaQueue(models.Model):
-    _name = 'op.media.queue'
+    _name = 'education.media.queue'
     _inherit = 'mail.thread'
     _rec_name = 'user_id'
     _description = 'Media Queue Request'
@@ -32,7 +32,7 @@ class OpMediaQueue(models.Model):
     name = fields.Char("Sequence No", readonly=True, copy=False, default='/')
     partner_id = fields.Many2one('res.partner', 'Student/Faculty')
     media_id = fields.Many2one(
-        'op.media', 'Media', required=True, track_visibility='onchange')
+        'education.media', 'Media', required=True, track_visibility='onchange')
     date_from = fields.Date(
         'From Date', required=True, default=fields.Date.today())
     date_to = fields.Date('To Date', required=True)
@@ -56,7 +56,7 @@ class OpMediaQueue(models.Model):
     def create(self, vals):
         if vals.get('name', '/') == '/':
             vals['name'] = self.env['ir.sequence'].next_by_code(
-                'op.media.queue') or '/'
+                'education.media.queue') or '/'
         return super(OpMediaQueue, self).create(vals)
 
     @api.multi

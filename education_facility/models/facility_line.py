@@ -24,10 +24,10 @@ from odoo.exceptions import ValidationError
 
 
 class OpFacilityLine(models.Model):
-    _name = 'op.facility.line'
+    _name = 'education.facility.line'
     _rec_name = 'facility_id'
 
-    facility_id = fields.Many2one('op.facility', 'Facility', required=True)
+    facility_id = fields.Many2one('education.facility', 'Facility', required=True)
     quantity = fields.Float('Quantity', required=True)
 
     @api.constrains('quantity')

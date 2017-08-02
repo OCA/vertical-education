@@ -2,9 +2,9 @@
 <openerp>
     <data>
 
-        <record id="view_op_held_exam_form" model="ir.ui.view">
-            <field name="name">op.held.exam.form</field>
-            <field name="model">op.held.exam</field>
+        <record id="view_education_held_exam_form" model="ir.ui.view">
+            <field name="name">education.held.exam.form</field>
+            <field name="model">education.held.exam</field>
             <field name="type">form</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
@@ -31,20 +31,20 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="act_open_op_held_exam_view">
+        <record model="ir.actions.act_window" id="act_open_education_held_exam_view">
             <field name="name">Held Exam Wizard</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.held.exam</field>
+            <field name="res_model">education.held.exam</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
 
-        <record model="ir.actions.act_window.view" id="act_open_op_held_exam_view_form">
-            <field name="act_window_id" ref="act_open_op_held_exam_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_held_exam_view_form">
+            <field name="act_window_id" ref="act_open_education_held_exam_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_held_exam_form" />
+            <field name="view_id" ref="view_education_held_exam_form" />
         </record>
 
     </data>

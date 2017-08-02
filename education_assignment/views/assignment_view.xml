@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_assignment_tree" model="ir.ui.view">
-            <field name="name">op.assignment.tree</field>
-            <field name="model">op.assignment</field>
+        <record id="view_education_assignment_tree" model="ir.ui.view">
+            <field name="name">education.assignment.tree</field>
+            <field name="model">education.assignment</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Assignment">
@@ -23,17 +23,17 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_assignment_form" model="ir.ui.view">
-            <field name="name">op.assignment.form</field>
-            <field name="model">op.assignment</field>
+        <record id="view_education_assignment_form" model="ir.ui.view">
+            <field name="name">education.assignment.form</field>
+            <field name="model">education.assignment</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Assignment">
                     <header groups="base.group_user">
                         <button name="act_publish" states="draft" type="object"
-                            string="Publish" class="oe_highlight" groups="education.group_op_faculty" />
+                            string="Publish" class="oe_highlight" groups="education.group_education_faculty" />
                         <button name="act_finish" class="oe_highlight" states="publish" type="object" string="Finish"
-                            groups="education.group_op_faculty" />
+                            groups="education.group_education_faculty" />
                         <field name="state" widget="statusbar" statusbar_visible="draft,publish,finish" />
                     </header>
                     <sheet>
@@ -90,9 +90,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_assignment_search" model="ir.ui.view">
-            <field name="name">op.assignment.search</field>
-            <field name="model">op.assignment</field>
+        <record id="view_education_assignment_search" model="ir.ui.view">
+            <field name="name">education.assignment.search</field>
+            <field name="model">education.assignment</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Assignment">
@@ -127,27 +127,27 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_assignment_view">
+        <record model="ir.actions.act_window" id="act_open_education_assignment_view">
             <field name="name">Assignments</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.assignment</field>
+            <field name="res_model">education.assignment</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_assignment_search" />
+            <field name="search_view_id" ref="view_education_assignment_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_assignment_view_form">
-            <field name="act_window_id" ref="act_open_op_assignment_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_assignment_view_form">
+            <field name="act_window_id" ref="act_open_education_assignment_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_assignment_form" />
+            <field name="view_id" ref="view_education_assignment_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_assignment_view_tree">
-            <field name="act_window_id" ref="act_open_op_assignment_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_assignment_view_tree">
+            <field name="act_window_id" ref="act_open_education_assignment_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_assignment_tree" />
+            <field name="view_id" ref="view_education_assignment_tree" />
         </record>
     </data>
 </odoo>

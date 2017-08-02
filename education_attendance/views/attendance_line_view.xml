@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_attendance_line_tree" model="ir.ui.view">
-            <field name="name">op.attendance.line.tree</field>
-            <field name="model">op.attendance.line</field>
+        <record id="view_education_attendance_line_tree" model="ir.ui.view">
+            <field name="name">education.attendance.line.tree</field>
+            <field name="model">education.attendance.line</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Attendance Line">
@@ -17,9 +17,9 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_attendance_line_form" model="ir.ui.view">
-            <field name="name">op.attendance.line.form</field>
-            <field name="model">op.attendance.line</field>
+        <record id="view_education_attendance_line_form" model="ir.ui.view">
+            <field name="name">education.attendance.line.form</field>
+            <field name="model">education.attendance.line</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Attendance Line">
@@ -41,9 +41,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_attendance_line_search" model="ir.ui.view">
-            <field name="name">op.attendance.line.search</field>
-            <field name="model">op.attendance.line</field>
+        <record id="view_education_attendance_line_search" model="ir.ui.view">
+            <field name="name">education.attendance.line.search</field>
+            <field name="model">education.attendance.line</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Attendance Line">
@@ -63,27 +63,27 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_attendance_line_view">
+        <record model="ir.actions.act_window" id="act_open_education_attendance_line_view">
             <field name="name">Attendance Line</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.attendance.line</field>
+            <field name="res_model">education.attendance.line</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_attendance_line_search" />
+            <field name="search_view_id" ref="view_education_attendance_line_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_attendance_line_view_form">
-            <field name="act_window_id" ref="act_open_op_attendance_line_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_attendance_line_view_form">
+            <field name="act_window_id" ref="act_open_education_attendance_line_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_attendance_line_form" />
+            <field name="view_id" ref="view_education_attendance_line_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_attendance_line_view_tree">
-            <field name="act_window_id" ref="act_open_op_attendance_line_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_attendance_line_view_tree">
+            <field name="act_window_id" ref="act_open_education_attendance_line_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_attendance_line_tree" />
+            <field name="view_id" ref="view_education_attendance_line_tree" />
         </record>
     </data>
 </odoo>

@@ -51,21 +51,21 @@
 -
   I check time table session generated and confirm it
 -
-  !python {model: op.session, id: False}: |
+  !python {model: education.session, id: False}: |
     sessions = self.search([('state', '=', 'draft')], limit=1)
     if sessions:
       sessions[0].lecture_confirm()
 -
   I check confirmed time table session and make it done
 -
-  !python {model: op.session, id: False}: |
+  !python {model: education.session, id: False}: |
     sessions = self.search([('state', '=', 'confirm')], limit=1)
     if sessions:
       sessions[0].lecture_done()
 -
   I check time table session generated and cancel it
 -
-  !python {model: op.session, id: False}: |
+  !python {model: education.session, id: False}: |
     sessions = self.search([('state', '=', 'draft')], limit=1)
     if sessions:
       sessions[0].lecture_cancel()

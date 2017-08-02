@@ -2,22 +2,22 @@
 <odoo>
     <data noupdate="1">
 
-        <record id="op_activity_1" model="op.activity">
+        <record id="education_activity_1" model="education.activity">
             <field name="description">Good presentation given</field>
             <field name="date"
                 eval="(DateTime.today() - relativedelta(months=1)).strftime('%Y-%m-14 %H:%M')" />
-            <field name="faculty_id" ref="education.op_faculty_1" />
-            <field name="student_id" ref="education.op_student_1" />
-            <field name="type_id" ref="op_activity_type_1" />
+            <field name="faculty_id" ref="education.education_faculty_1" />
+            <field name="student_id" ref="education.education_student_1" />
+            <field name="type_id" ref="education_activity_type_1" />
         </record>
 
-        <record id="op_activity_2" model="op.activity">
+        <record id="education_activity_2" model="education.activity">
             <field name="description">Reached 1 hour late</field>
             <field name="date"
                 eval="(DateTime.today() - relativedelta(months=1)).strftime('%Y-%m-12 %H:%M')" />
-            <field name="faculty_id" ref="education.op_faculty_2" />
-            <field name="student_id" ref="education.op_student_2" />
-            <field name="type_id" ref="op_activity_type_2" />
+            <field name="faculty_id" ref="education.education_faculty_2" />
+            <field name="student_id" ref="education.education_student_2" />
+            <field name="type_id" ref="education_activity_type_2" />
         </record>
 
     </data>

@@ -24,20 +24,20 @@ from odoo.exceptions import ValidationError
 
 
 class OpAssignment(models.Model):
-    _name = 'op.assignment'
+    _name = 'education.assignment'
     _inherit = 'mail.thread'
     _description = 'Assignment'
 
     name = fields.Char('Name', size=64, required=True)
-    course_id = fields.Many2one('op.course', 'Course', required=True)
-    batch_id = fields.Many2one('op.batch', 'Batch', required=True)
-    subject_id = fields.Many2one('op.subject', 'Subject', required=True)
+    course_id = fields.Many2one('education.course', 'Course', required=True)
+    batch_id = fields.Many2one('education.batch', 'Batch', required=True)
+    subject_id = fields.Many2one('education.subject', 'Subject', required=True)
     faculty_id = fields.Many2one(
-        'op.faculty', 'Faculty', default=lambda self: self.env[
-            'op.faculty'].search([('user_id', '=', self.env.uid)]),
+        'education.faculty', 'Faculty', default=lambda self: self.env[
+            'education.faculty'].search([('user_id', '=', self.env.uid)]),
         required=True)
     assignment_type_id = fields.Many2one(
-        'op.assignment.type', 'Assignment Type', required=True)
+        'education.assignment.type', 'Assignment Type', required=True)
     marks = fields.Float('Marks', track_visibility='onchange')
     description = fields.Text('Description', required=True)
     state = fields.Selection(
@@ -50,10 +50,10 @@ class OpAssignment(models.Model):
     submission_date = fields.Datetime(
         'Submission Date', required=True,
         track_visibility='onchange')
-    allocation_ids = fields.Many2many('op.student', string='Allocated To')
+    allocation_ids = fields.Many2many('education.student', string='Allocated To')
     assignment_sub_line = fields.One2many(
-        'op.assignment.sub.line', 'assignment_id', 'Submissions')
-    reviewer = fields.Many2one('op.faculty', 'Reviewer')
+        'education.assignment.sub.line', 'assignment_id', 'Submissions')
+    reviewer = fields.Many2one('education.faculty', 'Reviewer')
 
     @api.multi
     @api.constrains('issued_date', 'submission_date')

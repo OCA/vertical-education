@@ -22,20 +22,20 @@ from openerp import models, api, fields
 
 
 class OpHeldExam(models.TransientModel):
-    _name = 'op.held.exam'
+    _name = 'education.held.exam'
 
-    course_id = fields.Many2one('op.course', 'Course')
-    batch_id = fields.Many2one('op.batch', 'Batch')
-    exam_id = fields.Many2one('op.exam', 'Exam')
-    subject_id = fields.Many2one('op.subject', 'Subject')
+    course_id = fields.Many2one('education.course', 'Course')
+    batch_id = fields.Many2one('education.batch', 'Batch')
+    exam_id = fields.Many2one('education.exam', 'Exam')
+    subject_id = fields.Many2one('education.subject', 'Subject')
     attendees_line = fields.Many2many(
-        'op.exam.attendees', string='Attendees')
+        'education.exam.attendees', string='Attendees')
 
     @api.model
     def default_get(self, fields):
         res = super(OpHeldExam, self).default_get(fields)
         active_id = self.env.context.get('active_id', False)
-        exam = self.env['op.exam'].browse(active_id)
+        exam = self.env['education.exam'].browse(active_id)
         session = exam.session_id
         res.update({
             'batch_id': session.batch_id.id,

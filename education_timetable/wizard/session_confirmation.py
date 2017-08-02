@@ -29,7 +29,7 @@ class SessionConfirmation(models.TransientModel):
     @api.multi
     def state_confirmation(self):
         active_ids = self.env.context['active_ids']
-        lines = self.env['op.session'].search([('id', 'in', active_ids),
+        lines = self.env['education.session'].search([('id', 'in', active_ids),
                                                ('state', '=', 'draft')])
         for line in lines:
             line.lecture_confirm()

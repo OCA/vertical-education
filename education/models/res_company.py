@@ -16,7 +16,7 @@ class ResCompany(models.Model):
 class ResUsers(models.Model):
     _inherit = "res.users"
 
-    user_line = fields.One2many('op.student', 'user_id', 'User Line')
+    user_line = fields.One2many('education.student', 'user_id', 'User Line')
 
     @api.multi
     def create_user(self, records, user_group=None):

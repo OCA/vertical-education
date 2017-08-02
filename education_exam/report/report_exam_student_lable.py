@@ -55,12 +55,12 @@ class ReportExamStudentLable(models.AbstractModel):
         for d in docs:
             ret_list = []
             for line in d.exam_session_ids:
-                student_ids = self.env['op.student'].search(
+                student_ids = self.env['education.student'].search(
                     [('course_detail_ids.course_id', '=', line.course_id.id)],
                     order='id asc')
                 temp_list = []
                 for student in student_ids:
-                    student_course = self.env['op.student.course'].search(
+                    student_course = self.env['education.student.course'].search(
                         [('student_id', '=', student.id),
                          ('course_id', '=', line.course_id.id)])
                     res = {
@@ -80,9 +80,9 @@ class ReportExamStudentLable(models.AbstractModel):
 
     @api.model
     def render_html(self, docids, data=None):
-        docs = self.env['op.exam.res.allocation'].browse(docids)
+        docs = self.env['education.exam.res.allocation'].browse(docids)
         docargs = {
-            'doc_model': 'op.exam.res.allocation',
+            'doc_model': 'education.exam.res.allocation',
             'docs': docs,
             'time': time,
             'get_student_data': self.get_student_data(docs),

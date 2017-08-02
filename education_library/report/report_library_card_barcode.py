@@ -49,9 +49,9 @@ class ReportLibraryCardBarcode(models.AbstractModel):
 
     @api.model
     def render_html(self, docids, data=None):
-        docs = self.env['op.library.card'].browse(docids)
+        docs = self.env['education.library.card'].browse(docids)
         docargs = {
-            'doc_model': 'op.library.card',
+            'doc_model': 'education.library.card',
             'docs': docs,
             'time': time,
             'get_barcode': self.get_barcode,

@@ -23,7 +23,7 @@ from odoo import models, fields, api
 
 
 class OpMediaPurchase(models.Model):
-    _name = 'op.media.purchase'
+    _name = 'education.media.purchase'
     _inherit = 'mail.thread'
     _description = 'Media Purchase Request'
 
@@ -33,9 +33,9 @@ class OpMediaPurchase(models.Model):
     edition = fields.Char('Edition')
     publisher = fields.Char('Publisher(s)', size=256)
     course_ids = fields.Many2one(
-        'op.course', 'Course', required=True, track_visibility='onchange')
+        'education.course', 'Course', required=True, track_visibility='onchange')
     subject_ids = fields.Many2one(
-        'op.subject', 'Subject', required=True, track_visibility='onchange')
+        'education.subject', 'Subject', required=True, track_visibility='onchange')
     requested_id = fields.Many2one(
         'res.partner', 'Requested By',
         default=lambda self: self.env['res.partner'].search(
@@ -44,7 +44,7 @@ class OpMediaPurchase(models.Model):
         [('draft', 'Draft'), ('request', 'Requested'), ('reject', 'Rejected'),
          ('accept', 'Accepted')], 'State', readonly=True,
         default='draft', track_visibility='onchange')
-    media_type_id = fields.Many2one('op.media.type', 'Media Type')
+    media_type_id = fields.Many2one('education.media.type', 'Media Type')
 
     @api.multi
     def act_requested(self):

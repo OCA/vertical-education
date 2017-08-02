@@ -18,31 +18,31 @@ msgstr ""
 "Language: de\n"
 
 #. module: education_activity
-#: view:op.activity:education_activity.view_op_activity_form
-#: view:op.activity:education_activity.view_op_activity_search
-#: view:op.activity:education_activity.view_op_activity_tree
-#: view:op.student:education_activity.view_op_student_form_timetable_inherit
-#: field:op.student,activity_log:0
+#: view:education.activity:education_activity.view_education_activity_form
+#: view:education.activity:education_activity.view_education_activity_search
+#: view:education.activity:education_activity.view_education_activity_tree
+#: view:education.student:education_activity.view_education_student_form_timetable_inherit
+#: field:education.student,activity_log:0
 msgid "Activity Log"
 msgstr "Aktivitätsprotokoll"
 
 #. module: education_activity
-#: model:ir.actions.act_window,name:education_activity.act_open_op_activity_view
-#: model:ir.ui.menu,name:education_activity.menu_op_activity_sub
+#: model:ir.actions.act_window,name:education_activity.act_open_education_activity_view
+#: model:ir.ui.menu,name:education_activity.menu_education_activity_sub
 msgid "Activity Logs"
 msgstr "Aktivitätsprotokolle"
 
 #. module: education_activity
-#: field:op.activity,type_id:0
-#: view:op.activity.type:education_activity.view_op_activity_type_form
-#: view:op.activity.type:education_activity.view_op_activity_type_search
-#: view:op.activity.type:education_activity.view_op_activity_type_tree
+#: field:education.activity,type_id:0
+#: view:education.activity.type:education_activity.view_education_activity_type_form
+#: view:education.activity.type:education_activity.view_education_activity_type_search
+#: view:education.activity.type:education_activity.view_education_activity_type_tree
 msgid "Activity Type"
 msgstr "Aktivitätstyp"
 
 #. module: education_activity
-#: model:ir.actions.act_window,name:education_activity.act_open_op_activity_type_view
-#: model:ir.ui.menu,name:education_activity.menu_op_activity_type_sub
+#: model:ir.actions.act_window,name:education_activity.act_open_education_activity_type_view
+#: model:ir.ui.menu,name:education_activity.menu_education_activity_type_sub
 msgid "Activity Types"
 msgstr "Aktivitätstypen"
 
@@ -52,24 +52,24 @@ msgid "Cancel"
 msgstr "Abbrechen"
 
 #. module: education_activity
-#: field:op.activity,create_uid:0 field:op.activity.type,create_uid:0
+#: field:education.activity,create_uid:0 field:education.activity.type,create_uid:0
 #: field:student.migrate,create_uid:0
 msgid "Created by"
 msgstr ""
 
 #. module: education_activity
-#: field:op.activity,create_date:0 field:op.activity.type,create_date:0
+#: field:education.activity,create_date:0 field:education.activity.type,create_date:0
 #: field:student.migrate,create_date:0
 msgid "Created on"
 msgstr ""
 
 #. module: education_activity
-#: field:op.activity,date:0 field:student.migrate,date:0
+#: field:education.activity,date:0 field:student.migrate,date:0
 msgid "Date"
 msgstr "Datum"
 
 #. module: education_activity
-#: field:op.activity,faculty_id:0
+#: field:education.activity,faculty_id:0
 msgid "Faculty"
 msgstr "Fakultät"
 
@@ -84,30 +84,30 @@ msgid "From Course"
 msgstr "Von Kurs"
 
 #. module: education_activity
-#: field:op.activity,id:0 field:op.activity.type,id:0
+#: field:education.activity,id:0 field:education.activity.type,id:0
 #: field:student.migrate,id:0
 msgid "ID"
 msgstr "ID"
 
 #. module: education_activity
-#: field:op.activity,write_uid:0 field:op.activity.type,write_uid:0
+#: field:education.activity,write_uid:0 field:education.activity.type,write_uid:0
 #: field:student.migrate,write_uid:0
 msgid "Last Updated by"
 msgstr ""
 
 #. module: education_activity
-#: field:op.activity,write_date:0 field:op.activity.type,write_date:0
+#: field:education.activity,write_date:0 field:education.activity.type,write_date:0
 #: field:student.migrate,write_date:0
 msgid "Last Updated on"
 msgstr ""
 
 #. module: education_activity
-#: field:op.activity.type,name:0
+#: field:education.activity.type,name:0
 msgid "Name"
 msgstr "Name"
 
 #. module: education_activity
-#: field:op.activity,student_id:0
+#: field:education.activity,student_id:0
 msgid "Student"
 msgstr "Schüler"
 

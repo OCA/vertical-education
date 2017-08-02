@@ -108,37 +108,37 @@ msgid "${object.get_subject()}"
 msgstr "${object.get_subject()}"
 
 #. module: education_timetable
-#: selection:op.timing,minute:0
+#: selection:education.timing,minute:0
 msgid "00"
 msgstr "00"
 
 #. module: education_timetable
-#: selection:op.timing,hour:0
+#: selection:education.timing,hour:0
 msgid "10"
 msgstr "10"
 
 #. module: education_timetable
-#: selection:op.timing,hour:0
+#: selection:education.timing,hour:0
 msgid "11"
 msgstr "11"
 
 #. module: education_timetable
-#: selection:op.timing,hour:0
+#: selection:education.timing,hour:0
 msgid "12"
 msgstr "12"
 
 #. module: education_timetable
-#: selection:op.timing,minute:0
+#: selection:education.timing,minute:0
 msgid "15"
 msgstr "15"
 
 #. module: education_timetable
-#: selection:op.timing,minute:0
+#: selection:education.timing,minute:0
 msgid "30"
 msgstr "30"
 
 #. module: education_timetable
-#: selection:op.timing,minute:0
+#: selection:education.timing,minute:0
 msgid "45"
 msgstr "45"
 
@@ -206,12 +206,12 @@ msgid "<strong>TimeTables</strong>"
 msgstr "<strong>Horarios</strong>"
 
 #. module: education_timetable
-#: selection:op.timing,am_pm:0
+#: selection:education.timing,am_pm:0
 msgid "AM"
 msgstr "AM"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_am_pm
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_am_pm
 msgid "AM/PM"
 msgstr "AM/PM"
 
@@ -226,25 +226,25 @@ msgstr ""
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_batch_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_batch_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_batch_id
 #: model:ir.model.fields,field_description:education_timetable.field_time_table_report_batch_id
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 msgid "Batch"
 msgstr "Grupo académico"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_form
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_form
 msgid "Cancel"
 msgstr "Cancelar"
 
 #. module: education_timetable
-#: selection:op.session,state:0
+#: selection:education.session,state:0
 msgid "Canceled"
 msgstr "Cancelado"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_classroom_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_classroom_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_classroom_id
 msgid "Classroom"
 msgstr "Aula"
 
@@ -255,12 +255,12 @@ msgid "Close"
 msgstr "Cerrar"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_color
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_color
 msgid "Color Index"
 msgstr "Índice de Colores"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_form
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_form
 msgid "Confirm"
 msgstr "Confirmar"
 
@@ -270,23 +270,23 @@ msgid "Confirmation"
 msgstr "Confirmación"
 
 #. module: education_timetable
-#: selection:op.session,state:0
+#: selection:education.session,state:0
 msgid "Confirmed"
 msgstr "Confirmado"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_course_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_course_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_course_id
 #: model:ir.model.fields,field_description:education_timetable.field_time_table_report_course_id
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 msgid "Course"
 msgstr "Curso"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_create_uid
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_create_uid
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_create_uid
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_create_uid
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_session_confirmation_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_time_table_report_create_uid
 msgid "Created by"
@@ -295,8 +295,8 @@ msgstr "Creado por"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_create_date
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_create_date
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_create_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_create_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_session_confirmation_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_time_table_report_create_date
 msgid "Created on"
@@ -308,7 +308,7 @@ msgid "Day"
 msgstr "Día"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_type
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_type
 msgid "Days"
 msgstr "Días"
 
@@ -320,8 +320,8 @@ msgstr "Borrar"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_display_name
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_display_name
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_display_name
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_display_name
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_report_education_timetable_report_timetable_student_generate_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_report_education_timetable_report_timetable_teacher_generate_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_session_confirmation_display_name
@@ -330,18 +330,18 @@ msgid "Display Name"
 msgstr "Nombre a mostrar"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_form
-#: selection:op.session,state:0
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_form
+#: selection:education.session,state:0
 msgid "Done"
 msgstr "Hecho"
 
 #. module: education_timetable
-#: selection:op.session,state:0
+#: selection:education.session,state:0
 msgid "Draft"
 msgstr "Borrador"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_duration
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_duration
 msgid "Duration"
 msgstr "Duración"
 
@@ -369,7 +369,7 @@ msgid "End Date cannot be set before             Start Date."
 msgstr "La fecha de finalización no se puede establecer antes                 de la fecha de inicio."
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_end_datetime
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_end_datetime
 msgid "End Time"
 msgstr "Hora de finalización"
 
@@ -381,9 +381,9 @@ msgstr "La hora de finalización no se puede establecer antes de la hora de inic
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_faculty_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_faculty_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_faculty_id
 #: model:ir.model.fields,field_description:education_timetable.field_time_table_report_faculty_id
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 #: selection:time.table.report,state:0
 msgid "Faculty"
 msgstr "Profesor"
@@ -391,7 +391,7 @@ msgstr "Profesor"
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: model:ir.ui.view,arch_db:education_timetable.view_generate_time_table_form
-#: selection:op.session,type:0
+#: selection:education.session,type:0
 msgid "Friday"
 msgstr "Viernes"
 
@@ -420,20 +420,20 @@ msgid "Generate Time Table Report"
 msgstr "Generar informe de tabla de tiempo"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 msgid "Group By..."
 msgstr "Agrupar por..."
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_hour
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_hour
 msgid "Hours"
 msgstr "Horas"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_id
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_id
 #: model:ir.model.fields,field_description:education_timetable.field_report_education_timetable_report_timetable_student_generate_id
 #: model:ir.model.fields,field_description:education_timetable.field_report_education_timetable_report_timetable_teacher_generate_id
 #: model:ir.model.fields,field_description:education_timetable.field_session_confirmation_id
@@ -444,8 +444,8 @@ msgstr "ID"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table___last_update
-#: model:ir.model.fields,field_description:education_timetable.field_op_session___last_update
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing___last_update
+#: model:ir.model.fields,field_description:education_timetable.field_education_session___last_update
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_report_education_timetable_report_timetable_student_generate___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_report_education_timetable_report_timetable_teacher_generate___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_session_confirmation___last_update
@@ -456,8 +456,8 @@ msgstr "Última modificación en"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_write_uid
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_write_uid
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_write_uid
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_write_uid
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_session_confirmation_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_time_table_report_write_uid
 msgid "Last Updated by"
@@ -466,28 +466,28 @@ msgstr "Última actualización por"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_generate_time_table_write_date
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_write_date
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_write_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_write_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_session_confirmation_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_time_table_report_write_date
 msgid "Last Updated on"
 msgstr "Última actualización el"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_minute
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_minute
 msgid "Minute"
 msgstr "Minuto"
 
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: model:ir.ui.view,arch_db:education_timetable.view_generate_time_table_form
-#: selection:op.session,type:0
+#: selection:education.session,type:0
 msgid "Monday"
 msgstr "Lunes"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_name
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_name
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_name
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_name
 msgid "Name"
 msgstr "Nombre"
 
@@ -503,16 +503,16 @@ msgid "PERIOD"
 msgstr "PERÍODO"
 
 #. module: education_timetable
-#: selection:op.timing,am_pm:0
+#: selection:education.timing,am_pm:0
 msgid "PM"
 msgstr "PM"
 
 #. module: education_timetable
-#: model:ir.model,name:education_timetable.model_op_timing
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
-#: model:ir.ui.view,arch_db:education_timetable.view_op_timing_form
-#: model:ir.ui.view,arch_db:education_timetable.view_op_timing_search
-#: model:ir.ui.view,arch_db:education_timetable.view_op_timing_tree
+#: model:ir.model,name:education_timetable.model_education_timing
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_timing_form
+#: model:ir.ui.view,arch_db:education_timetable.view_education_timing_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_timing_tree
 msgid "Period"
 msgstr "Período"
 
@@ -524,7 +524,7 @@ msgstr "Proceder"
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: model:ir.ui.view,arch_db:education_timetable.view_generate_time_table_form
-#: selection:op.session,type:0
+#: selection:education.session,type:0
 msgid "Saturday"
 msgstr "Sábado"
 
@@ -540,12 +540,12 @@ msgid "Select date range for a week!"
 msgstr "Seleccione el rango de fechas para una semana!"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_timing_sequence
+#: model:ir.model.fields,field_description:education_timetable.field_education_timing_sequence
 msgid "Sequence"
 msgstr "Secuencia"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_form
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_form
 msgid "Session"
 msgstr "Sesión"
 
@@ -560,17 +560,17 @@ msgid "Session Line"
 msgstr "Línea de sesión"
 
 #. module: education_timetable
-#: model:ir.actions.act_window,name:education_timetable.act_op_faculty_period_today
-#: model:ir.actions.act_window,name:education_timetable.act_op_student_period_today
-#: model:ir.actions.act_window,name:education_timetable.act_open_op_session_view
-#: model:ir.model,name:education_timetable.model_op_session
-#: model:ir.model.fields,field_description:education_timetable.field_op_faculty_session_ids
-#: model:ir.ui.menu,name:education_timetable.menu_op_timetable
+#: model:ir.actions.act_window,name:education_timetable.act_education_faculty_period_today
+#: model:ir.actions.act_window,name:education_timetable.act_education_student_period_today
+#: model:ir.actions.act_window,name:education_timetable.act_open_education_session_view
+#: model:ir.model,name:education_timetable.model_education_session
+#: model:ir.model.fields,field_description:education_timetable.field_education_faculty_session_ids
+#: model:ir.ui.menu,name:education_timetable.menu_education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_generate_time_table_form
-#: model:ir.ui.view,arch_db:education_timetable.view_op_faculty_form_session_inherit
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_calendar
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_tree
+#: model:ir.ui.view,arch_db:education_timetable.view_education_faculty_form_session_inherit
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_calendar
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_tree
 msgid "Sessions"
 msgstr "Sesiones"
 
@@ -581,7 +581,7 @@ msgid "Sessions for Today"
 msgstr "Sesiones de Hoy"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_form
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_form
 msgid "Set to Draft"
 msgstr "Cambiar a borrador"
 
@@ -592,17 +592,17 @@ msgid "Start Date"
 msgstr "Fecha de inicio"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_start_datetime
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_start_datetime
 msgid "Start Time"
 msgstr "Hora de inicio"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 msgid "State"
 msgstr "Estado"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_state
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_state
 msgid "Status"
 msgstr "Estados"
 
@@ -613,13 +613,13 @@ msgstr "Alumno "
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_subject_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_subject_id
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_subject_id
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 msgid "Subject"
 msgstr "Asunto"
 
 #. module: education_timetable
-#: selection:op.session,type:0
+#: selection:education.session,type:0
 msgid "Sunday"
 msgstr "Domingo"
 
@@ -631,7 +631,7 @@ msgstr "Línea de tabla"
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: model:ir.ui.view,arch_db:education_timetable.view_generate_time_table_form
-#: selection:op.session,type:0
+#: selection:education.session,type:0
 msgid "Thursday"
 msgstr "Jueves"
 
@@ -667,43 +667,43 @@ msgid "TimeTable for Students"
 msgstr "Horario para los alumnos"
 
 #. module: education_timetable
-#: model:ir.ui.menu,name:education_timetable.menu_op_timetable_root
+#: model:ir.ui.menu,name:education_timetable.menu_education_timetable_root
 msgid "TimeTables"
 msgstr "Horarios"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_gen_time_table_line_timing_id
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_timing_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_timing_id
 msgid "Timing"
 msgstr "Horario/ duración"
 
 #. module: education_timetable
-#: model:ir.actions.act_window,name:education_timetable.act_open_op_timing_view
-#: model:ir.ui.menu,name:education_timetable.menu_op_period
+#: model:ir.actions.act_window,name:education_timetable.act_open_education_timing_view
+#: model:ir.ui.menu,name:education_timetable.menu_education_period
 msgid "Timings"
 msgstr "Horarios"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_op_session_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 msgid "Today"
 msgstr "Hoy"
 
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: model:ir.ui.view,arch_db:education_timetable.view_generate_time_table_form
-#: selection:op.session,type:0
+#: selection:education.session,type:0
 msgid "Tuesday"
 msgstr "Martes"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_op_session_user_ids
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_user_ids
 msgid "Users"
 msgstr "Usuarios"
 
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: model:ir.ui.view,arch_db:education_timetable.view_generate_time_table_form
-#: selection:op.session,type:0
+#: selection:education.session,type:0
 msgid "Wednesday"
 msgstr "Miércoles"
 
@@ -718,9 +718,9 @@ msgid "Yes"
 msgstr "Sí"
 
 #. module: education_timetable
-#: model:ir.model,name:education_timetable.model_op_faculty
-msgid "op.faculty"
-msgstr "op.faculty"
+#: model:ir.model,name:education_timetable.model_education_faculty
+msgid "education.faculty"
+msgstr "education.faculty"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_session_confirmation_form

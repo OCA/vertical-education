@@ -2,15 +2,15 @@
 <odoo>
     <data noupdate="1">
 
-        <record id="op_publisher_1" model="op.publisher">
+        <record id="education_publisher_1" model="education.publisher">
             <field name="name">O'Relly Publication</field>
         </record>
 
-        <record id="op_publisher_2" model="op.publisher">
+        <record id="education_publisher_2" model="education.publisher">
             <field name="name">Delhi Publications</field>
         </record>
 
-        <record id="op_publisher_3" model="op.publisher">
+        <record id="education_publisher_3" model="education.publisher">
             <field name="name">Wiley Publications</field>
         </record>
 

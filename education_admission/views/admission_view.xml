@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_admission_tree" model="ir.ui.view">
-            <field name="name">op.admission.tree</field>
-            <field name="model">op.admission</field>
+        <record id="view_education_admission_tree" model="ir.ui.view">
+            <field name="name">education.admission.tree</field>
+            <field name="model">education.admission</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Registration">
@@ -14,16 +14,16 @@
                     <field name="application_number" />
                     <field name="admission_date" />
                     <field name="application_date" />
-                    <field name="birth_date" />
+                    <field name="birthdate_date" />
                     <field name="course_id" />
                     <field name="batch_id" />
                     <field name="state" />
                 </tree>
             </field>
         </record>
-        <record id="view_op_admission_form" model="ir.ui.view">
-            <field name="name">op.admission.form</field>
-            <field name="model">op.admission</field>
+        <record id="view_education_admission_form" model="ir.ui.view">
+            <field name="name">education.admission.form</field>
+            <field name="model">education.admission</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Registration">
@@ -93,7 +93,7 @@
                             <page name="personal_detail" string="Personal Detail">
                                 <group col="4" colspan="4">
                                     <field name="gender" />
-                                    <field name="birth_date" />
+                                    <field name="birthdate_date" />
                                     <field name="email" placeholder="Email" />
                                 </group>
                                 <label for="street" string="Address" />
@@ -125,9 +125,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_admission_search" model="ir.ui.view">
-            <field name="name">op.admission.search</field>
-            <field name="model">op.admission</field>
+        <record id="view_education_admission_search" model="ir.ui.view">
+            <field name="name">education.admission.search</field>
+            <field name="model">education.admission</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Registration">
@@ -137,7 +137,7 @@
                     <field name="application_number" />
                     <field name="admission_date" />
                     <field name="application_date" />
-                    <field name="birth_date" />
+                    <field name="birthdate_date" />
                     <field name="course_id" />
                     <field name="batch_id" />
                     <newline />
@@ -157,9 +157,9 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="view_op_admission_graph">
-            <field name="name">op.admission.graph</field>
-            <field name="model">op.admission</field>
+        <record model="ir.ui.view" id="view_education_admission_graph">
+            <field name="name">education.admission.graph</field>
+            <field name="model">education.admission</field>
             <field name="arch" type="xml">
                 <graph string="Course By Admission" type="pie">
                     <field name="course_id" />
@@ -168,27 +168,27 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="act_open_op_admission_view">
+        <record model="ir.actions.act_window" id="act_open_education_admission_view">
             <field name="name">Registration</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.admission</field>
+            <field name="res_model">education.admission</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form,graph</field>
-            <field name="search_view_id" ref="view_op_admission_search" />
+            <field name="search_view_id" ref="view_education_admission_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_admission_view_form">
-            <field name="act_window_id" ref="act_open_op_admission_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_admission_view_form">
+            <field name="act_window_id" ref="act_open_education_admission_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_admission_form" />
+            <field name="view_id" ref="view_education_admission_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_admission_view_tree">
-            <field name="act_window_id" ref="act_open_op_admission_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_admission_view_tree">
+            <field name="act_window_id" ref="act_open_education_admission_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_admission_tree" />
+            <field name="view_id" ref="view_education_admission_tree" />
         </record>
     </data>
 </odoo>

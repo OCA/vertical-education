@@ -2,46 +2,46 @@
 <odoo>
     <data noupdate="1">
 
-        <record id="op_facility_line_1" model="op.facility.line">
+        <record id="education_facility_line_1" model="education.facility.line">
             <field name="quantity">2</field>
-            <field name="classroom_id" ref="op_classroom_1" />
-            <field name="facility_id" ref="education_facility.op_facility_1" />
+            <field name="classroom_id" ref="education_classroom_1" />
+            <field name="facility_id" ref="education_facility.education_facility_1" />
         </record>
 
-        <record id="op_facility_line_2" model="op.facility.line">
+        <record id="education_facility_line_2" model="education.facility.line">
             <field name="quantity">1</field>
-            <field name="classroom_id" ref="op_classroom_1" />
-            <field name="facility_id" ref="education_facility.op_facility_2" />
+            <field name="classroom_id" ref="education_classroom_1" />
+            <field name="facility_id" ref="education_facility.education_facility_2" />
         </record>
 
-        <record id="op_facility_line_3" model="op.facility.line">
+        <record id="education_facility_line_3" model="education.facility.line">
             <field name="quantity">1</field>
-            <field name="classroom_id" ref="op_classroom_1" />
-            <field name="facility_id" ref="education_facility.op_facility_3" />
+            <field name="classroom_id" ref="education_classroom_1" />
+            <field name="facility_id" ref="education_facility.education_facility_3" />
         </record>
 
-        <record id="op_facility_line_4" model="op.facility.line">
+        <record id="education_facility_line_4" model="education.facility.line">
             <field name="quantity">2</field>
-            <field name="classroom_id" ref="op_classroom_2" />
-            <field name="facility_id" ref="education_facility.op_facility_1" />
+            <field name="classroom_id" ref="education_classroom_2" />
+            <field name="facility_id" ref="education_facility.education_facility_1" />
         </record>
 
-        <record id="op_facility_line_5" model="op.facility.line">
+        <record id="education_facility_line_5" model="education.facility.line">
             <field name="quantity">1</field>
-            <field name="classroom_id" ref="op_classroom_2" />
-            <field name="facility_id" ref="education_facility.op_facility_2" />
+            <field name="classroom_id" ref="education_classroom_2" />
+            <field name="facility_id" ref="education_facility.education_facility_2" />
         </record>
 
-        <record id="op_facility_line_6" model="op.facility.line">
+        <record id="education_facility_line_6" model="education.facility.line">
             <field name="quantity">1</field>
-            <field name="classroom_id" ref="op_classroom_3" />
-            <field name="facility_id" ref="education_facility.op_facility_3" />
+            <field name="classroom_id" ref="education_classroom_3" />
+            <field name="facility_id" ref="education_facility.education_facility_3" />
         </record>
 
-        <record id="op_facility_line_7" model="op.facility.line">
+        <record id="education_facility_line_7" model="education.facility.line">
             <field name="quantity">1</field>
-            <field name="classroom_id" ref="op_classroom_4" />
-            <field name="facility_id" ref="education_facility.op_facility_1" />
+            <field name="classroom_id" ref="education_classroom_4" />
+            <field name="facility_id" ref="education_facility.education_facility_1" />
         </record>
 
     </data>

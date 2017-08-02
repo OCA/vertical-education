@@ -24,17 +24,17 @@ from odoo.exceptions import ValidationError
 
 
 class OpExamSession(models.Model):
-    _name = 'op.exam.session'
+    _name = 'education.exam.session'
     _description = 'Exam Session'
 
     name = fields.Char('Exam Session', size=256, required=True)
-    course_id = fields.Many2one('op.course', 'Course', required=True)
-    batch_id = fields.Many2one('op.batch', 'Batch', required=True)
+    course_id = fields.Many2one('education.course', 'Course', required=True)
+    batch_id = fields.Many2one('education.batch', 'Batch', required=True)
     exam_code = fields.Char('Exam Session Code', size=8, required=True)
     start_date = fields.Date('Start Date', required=True)
     end_date = fields.Date('End Date', required=True)
-    exam_ids = fields.One2many('op.exam', 'session_id', 'Exam(s)')
-    exam_type = fields.Many2one('op.exam.type', 'Exam Type', required=True)
+    exam_ids = fields.One2many('education.exam', 'session_id', 'Exam(s)')
+    exam_type = fields.Many2one('education.exam.type', 'Exam Type', required=True)
     evolution_type = fields.Selection(
         [('normal', 'Normal'), ('grade', 'Grade')],
         'Evolution type', default="normal", required=True)

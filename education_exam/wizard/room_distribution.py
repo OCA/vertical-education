@@ -24,7 +24,7 @@ from openerp import models, api, fields, exceptions, _
 class OpRoomDistribution(models.TransientModel):
 
     """ Exam Room Distribution """
-    _name = 'op.room.distribution'
+    _name = 'education.room.distribution'
 
     @api.multi
     @api.depends('student_ids')
@@ -45,28 +45,28 @@ class OpRoomDistribution(models.TransientModel):
                     room_capacity += (room.capacity or 0)
             record.room_capacity = room_capacity
 
-    exam_id = fields.Many2one('op.exam', 'Exam')
-    subject_id = fields.Many2one('op.subject', 'Subject')
+    exam_id = fields.Many2one('education.exam', 'Exam')
+    subject_id = fields.Many2one('education.subject', 'Subject')
     name = fields.Char("Exam")
     start_time = fields.Datetime("Start Time")
     end_time = fields.Datetime("End Time")
-    exam_session = fields.Many2one("op.exam.session", 'Exam Session')
-    course_id = fields.Many2one("op.course", 'Course')
-    batch_id = fields.Many2one("op.batch", 'Batch')
+    exam_session = fields.Many2one("education.exam.session", 'Exam Session')
+    course_id = fields.Many2one("education.course", 'Course')
+    batch_id = fields.Many2one("education.batch", 'Batch')
     total_student = fields.Integer(
         "Total Student", compute="_compute_get_total_student")
     room_capacity = fields.Integer(
         "Room Capacity", compute="_compute_get_room_capacity")
-    room_ids = fields.Many2many("op.exam.room", string="Exam Rooms")
-    student_ids = fields.Many2many("op.student", String='Student')
+    room_ids = fields.Many2many("education.exam.room", string="Exam Rooms")
+    student_ids = fields.Many2many("education.student", String='Student')
 
     @api.model
     def default_get(self, fields):
         res = super(OpRoomDistribution, self).default_get(fields)
         active_id = self.env.context.get('active_id', False)
-        exam = self.env['op.exam'].browse(active_id)
+        exam = self.env['education.exam'].browse(active_id)
         session = exam.session_id
-        reg_ids = self.env['op.subject.registration'].search(
+        reg_ids = self.env['education.subject.registration'].search(
             [('course_id', '=', session.course_id.id)])
         student_ids = []
         for reg in reg_ids:
@@ -105,7 +105,7 @@ class OpRoomDistribution(models.TransientModel):
                 for i in range(room.capacity):
                     if not student_ids:
                         continue
-                    self.env['op.exam.attendees'].create({
+                    self.env['education.exam.attendees'].create({
                         'exam_id': exam.exam_id.id,
                         'student_id': student_ids[0],
                         'status': 'present',

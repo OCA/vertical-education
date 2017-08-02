@@ -24,16 +24,16 @@ from odoo.exceptions import ValidationError
 
 
 class OpAssignmentSubLine(models.Model):
-    _name = 'op.assignment.sub.line'
+    _name = 'education.assignment.sub.line'
     _inherit = 'mail.thread'
     _rec_name = 'assignment_id'
     _description = 'Assignment Submission'
 
     assignment_id = fields.Many2one(
-        'op.assignment', 'Assignment', required=True)
+        'education.assignment', 'Assignment', required=True)
     student_id = fields.Many2one(
-        'op.student', 'Student',
-        default=lambda self: self.env['op.student'].search(
+        'education.student', 'Student',
+        default=lambda self: self.env['education.student'].search(
             [('user_id', '=', self.env.uid)]), required=True)
     description = fields.Text('Description', track_visibility='onchange')
     state = fields.Selection(
@@ -79,7 +79,7 @@ class OpAssignmentSubLine(models.Model):
     def unlink(self):
         for record in self:
             if not record.state == 'draft' and not self.env.user.has_group(
-                    'education.group_op_faculty'):
+                    'education.group_education_faculty'):
                 raise ValidationError(
                     _("You can't delete none draft submissions!"))
         res = super(OpAssignmentSubLine, self).unlink()

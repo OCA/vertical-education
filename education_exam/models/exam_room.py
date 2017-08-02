@@ -24,10 +24,10 @@ from odoo.exceptions import ValidationError
 
 
 class OpExamRoom(models.Model):
-    _name = 'op.exam.room'
+    _name = 'education.exam.room'
 
     name = fields.Char('Name', size=256, required=True)
-    classroom_id = fields.Many2one('op.classroom', 'Classroom', required=True)
+    classroom_id = fields.Many2one('education.classroom', 'Classroom', required=True)
     capacity = fields.Integer('Capacity', required=True)
 
     @api.constrains('capacity')

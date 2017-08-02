@@ -2,9 +2,9 @@
 <openerp>
     <data>
 
-        <record id="view_op_room_distribution_form" model="ir.ui.view">
-            <field name="name">op.room.distribution.form</field>
-            <field name="model">op.room.distribution</field>
+        <record id="view_education_room_distribution_form" model="ir.ui.view">
+            <field name="name">education.room.distribution.form</field>
+            <field name="model">education.room.distribution</field>
             <field name="type">form</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
@@ -40,20 +40,20 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="act_open_op_room_distribution_view">
+        <record model="ir.actions.act_window" id="act_open_education_room_distribution_view">
             <field name="name">Exam Room Distribution</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.room.distribution</field>
+            <field name="res_model">education.room.distribution</field>
             <field name="view_type">form</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
 
-        <record model="ir.actions.act_window.view" id="act_open_op_room_distribution_view_form">
-            <field name="act_window_id" ref="act_open_op_room_distribution_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_room_distribution_view_form">
+            <field name="act_window_id" ref="act_open_education_room_distribution_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_room_distribution_form" />
+            <field name="view_id" ref="view_education_room_distribution_form" />
         </record>
 
     </data>

@@ -18,26 +18,26 @@ msgstr ""
 "X-Generator: Poedit 2.0.1\n"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_code
-#: model:ir.ui.view,arch_db:education_facility.view_op_facility_search
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_code
+#: model:ir.ui.view,arch_db:education_facility.view_education_facility_search
 msgid "Code"
 msgstr "Código"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_create_uid
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_create_uid
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_create_uid
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_create_date
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_create_date
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_create_date
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_create_date
 msgid "Created on"
 msgstr "Creado el"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_display_name
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_display_name
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_display_name
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_display_name
 msgid "Display Name"
 msgstr "Nombre a mostrar"
 
@@ -48,67 +48,67 @@ msgid "Enter proper Quantity in Facilities!"
 msgstr "¡Ingrese la cantidad adecuada en las instalaciones!"
 
 #. module: education_facility
-#: model:ir.actions.act_window,name:education_facility.act_open_op_facility_view
-#: model:ir.ui.menu,name:education_facility.menu_op_facility_sub
-#: model:ir.ui.view,arch_db:education_facility.op_facility_line_form_view
-#: model:ir.ui.view,arch_db:education_facility.op_facility_line_tree_view
+#: model:ir.actions.act_window,name:education_facility.act_open_education_facility_view
+#: model:ir.ui.menu,name:education_facility.menu_education_facility_sub
+#: model:ir.ui.view,arch_db:education_facility.education_facility_line_form_view
+#: model:ir.ui.view,arch_db:education_facility.education_facility_line_tree_view
 msgid "Facilities"
 msgstr "Instalaciones"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_facility_id
-#: model:ir.ui.view,arch_db:education_facility.view_op_facility_form
-#: model:ir.ui.view,arch_db:education_facility.view_op_facility_search
-#: model:ir.ui.view,arch_db:education_facility.view_op_facility_tree
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_facility_id
+#: model:ir.ui.view,arch_db:education_facility.view_education_facility_form
+#: model:ir.ui.view,arch_db:education_facility.view_education_facility_search
+#: model:ir.ui.view,arch_db:education_facility.view_education_facility_tree
 msgid "Facility"
 msgstr "Instalaciones"
 
 #. module: education_facility
-#: model:ir.ui.view,arch_db:education_facility.view_op_facility_search
+#: model:ir.ui.view,arch_db:education_facility.view_education_facility_search
 msgid "Group By..."
 msgstr "Agrupar por..."
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_id
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_id
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_id
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_id
 msgid "ID"
 msgstr "ID"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility___last_update
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line___last_update
+#: model:ir.model.fields,field_description:education_facility.field_education_facility___last_update
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line___last_update
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_write_uid
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_write_uid
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_write_uid
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_write_uid
 msgid "Last Updated by"
 msgstr "Última actualización por"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_write_date
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_write_date
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_write_date
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_write_date
 msgid "Last Updated on"
 msgstr "Última actualización el"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_name
-#: model:ir.ui.view,arch_db:education_facility.view_op_facility_search
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_name
+#: model:ir.ui.view,arch_db:education_facility.view_education_facility_search
 msgid "Name"
 msgstr "Nombre"
 
 #. module: education_facility
-#: model:ir.model.fields,field_description:education_facility.field_op_facility_line_quantity
+#: model:ir.model.fields,field_description:education_facility.field_education_facility_line_quantity
 msgid "Quantity"
 msgstr "Cantidad"
 
 #. module: education_facility
-#: model:ir.model,name:education_facility.model_op_facility
-msgid "op.facility"
-msgstr "op.facility"
+#: model:ir.model,name:education_facility.model_education_facility
+msgid "education.facility"
+msgstr "education.facility"
 
 #. module: education_facility
-#: model:ir.model,name:education_facility.model_op_facility_line
-msgid "op.facility.line"
-msgstr "op.facility.line"
+#: model:ir.model,name:education_facility.model_education_facility_line
+msgid "education.facility.line"
+msgstr "education.facility.line"

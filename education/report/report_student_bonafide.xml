@@ -62,7 +62,7 @@
                                             <strong>
                                                 (
                                                 <u>
-                                                    <span t-esc="o.birth_date" />
+                                                    <span t-esc="o.birthdate_date" />
                                                 </u>
                                                 ).
                                             </strong>

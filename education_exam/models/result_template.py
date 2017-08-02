@@ -24,19 +24,19 @@ from odoo.exceptions import ValidationError
 
 
 class OpResultTemplate(models.Model):
-    _name = 'op.result.template'
+    _name = 'education.result.template'
     _description = 'Result Template'
     _rec_name = 'name'
 
     exam_session_id = fields.Many2one(
-        'op.exam.session', 'Exam Session', required=True)
+        'education.exam.session', 'Exam Session', required=True)
     evolution_type = fields.Selection(
         related='exam_session_id.evolution_type', store=True)
     name = fields.Char("Name", size=254, required=True)
     result_date = fields.Date(
         'Result Date', required=True, default=fields.Date.today())
     grade_ids = fields.Many2many(
-        'op.grade.configuration', string='Grade Configuration')
+        'education.grade.configuration', string='Grade Configuration')
     state = fields.Selection(
         [('draft', 'Draft'), ('result_generated', 'Result Generated')],
         'State', default='draft')
@@ -70,7 +70,7 @@ class OpResultTemplate(models.Model):
     @api.multi
     def generate_result(self):
         for record in self:
-            marksheet_reg_id = self.env['op.marksheet.register'].create({
+            marksheet_reg_id = self.env['education.marksheet.register'].create({
                 'name': 'Mark Sheet for %s' % record.exam_session_id.name,
                 'exam_session_id': record.exam_session_id.id,
                 'generated_date': fields.Date.today(),
@@ -81,7 +81,7 @@ class OpResultTemplate(models.Model):
             student_dict = {}
             for exam in record.exam_session_id.exam_ids:
                 for attendee in exam.attendees_line:
-                    result_line_id = self.env['op.result.line'].create({
+                    result_line_id = self.env['education.result.line'].create({
                         'student_id': attendee.student_id.id,
                         'exam_id': exam.id,
                         'marks': str(attendee.marks and attendee.marks or 0),
@@ -90,7 +90,7 @@ class OpResultTemplate(models.Model):
                         student_dict[attendee.student_id.id] = []
                     student_dict[attendee.student_id.id].append(result_line_id)
             for student in student_dict:
-                marksheet_line_id = self.env['op.marksheet.line'].create({
+                marksheet_line_id = self.env['education.marksheet.line'].create({
                     'student_id': student,
                     'marksheet_reg_id': marksheet_reg_id.id,
                 })

@@ -22,15 +22,15 @@ from odoo import models, api, fields, exceptions, _
 
 
 class OpFeesTermsLine(models.Model):
-    _name = 'op.fees.terms.line'
+    _name = 'education.fees.terms.line'
 
     due_days = fields.Integer('Due Days')
     value = fields.Float('Value (%)')
-    fees_id = fields.Many2one('op.fees.terms', 'Fees')
+    fees_id = fields.Many2one('education.fees.terms', 'Fees')
 
 
 class OpFeesTerms(models.Model):
-    _name = 'op.fees.terms'
+    _name = 'education.fees.terms'
 
     name = fields.Char('Fees Terms', required=True)
     active = fields.Boolean('Active', default=True)
@@ -40,7 +40,7 @@ class OpFeesTerms(models.Model):
     no_days = fields.Integer('No of Days')
     day_type = fields.Selection([('before', 'Before'), ('after', 'After')],
                                 'Type')
-    line_ids = fields.One2many('op.fees.terms.line', 'fees_id', 'Terms')
+    line_ids = fields.One2many('education.fees.terms.line', 'fees_id', 'Terms')
 
     @api.model
     def create(self, vals):

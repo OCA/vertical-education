@@ -2,9 +2,9 @@
 <odoo>
     <data>
         <!-- Library Card Type -->
-        <record id="view_op_library_card_type_tree" model="ir.ui.view">
-            <field name="name">op.library.card.type.tree</field>
-            <field name="model">op.library.card.type</field>
+        <record id="view_education_library_card_type_tree" model="ir.ui.view">
+            <field name="name">education.library.card.type.tree</field>
+            <field name="model">education.library.card.type</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Library Card Type">
@@ -15,9 +15,9 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_library_card_type_form" model="ir.ui.view">
-            <field name="name">op.library.card.type.form</field>
-            <field name="model">op.library.card.type</field>
+        <record id="view_education_library_card_type_form" model="ir.ui.view">
+            <field name="name">education.library.card.type.form</field>
+            <field name="model">education.library.card.type</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Library Card Type">
@@ -32,9 +32,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_library_card_type_search" model="ir.ui.view">
-            <field name="name">op.library.card.type.search</field>
-            <field name="model">op.library.card.type</field>
+        <record id="view_education_library_card_type_search" model="ir.ui.view">
+            <field name="name">education.library.card.type.search</field>
+            <field name="model">education.library.card.type</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Library Card Type">
@@ -47,32 +47,32 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_library_card_type_view">
+        <record model="ir.actions.act_window" id="act_open_education_library_card_type_view">
             <field name="name">Library Card Types</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.library.card.type</field>
+            <field name="res_model">education.library.card.type</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_library_card_type_search" />
+            <field name="search_view_id" ref="view_education_library_card_type_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_library_card_type_view_form">
-            <field name="act_window_id" ref="act_open_op_library_card_type_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_library_card_type_view_form">
+            <field name="act_window_id" ref="act_open_education_library_card_type_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_library_card_type_form" />
+            <field name="view_id" ref="view_education_library_card_type_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_library_card_type_view_tree">
-            <field name="act_window_id" ref="act_open_op_library_card_type_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_library_card_type_view_tree">
+            <field name="act_window_id" ref="act_open_education_library_card_type_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_library_card_type_tree" />
+            <field name="view_id" ref="view_education_library_card_type_tree" />
         </record>
         <!-- Library Card -->
-        <record id="view_op_library_card_tree" model="ir.ui.view">
-            <field name="name">op.library.card.tree</field>
-            <field name="model">op.library.card</field>
+        <record id="view_education_library_card_tree" model="ir.ui.view">
+            <field name="name">education.library.card.tree</field>
+            <field name="model">education.library.card</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Library Card">
@@ -83,9 +83,9 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_library_card_form" model="ir.ui.view">
-            <field name="name">op.library.card.form</field>
-            <field name="model">op.library.card</field>
+        <record id="view_education_library_card_form" model="ir.ui.view">
+            <field name="name">education.library.card.form</field>
+            <field name="model">education.library.card</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Library Card">
@@ -103,9 +103,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_library_card_search" model="ir.ui.view">
-            <field name="name">op.library.card.search</field>
-            <field name="model">op.library.card</field>
+        <record id="view_education_library_card_search" model="ir.ui.view">
+            <field name="name">education.library.card.search</field>
+            <field name="model">education.library.card</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Library Card">
@@ -119,27 +119,27 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_library_card_view">
+        <record model="ir.actions.act_window" id="act_open_education_library_card_view">
             <field name="name">Library Cards</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.library.card</field>
+            <field name="res_model">education.library.card</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_library_card_search" />
+            <field name="search_view_id" ref="view_education_library_card_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_library_card_view_form">
-            <field name="act_window_id" ref="act_open_op_library_card_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_library_card_view_form">
+            <field name="act_window_id" ref="act_open_education_library_card_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_library_card_form" />
+            <field name="view_id" ref="view_education_library_card_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_library_card_view_tree">
-            <field name="act_window_id" ref="act_open_op_library_card_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_library_card_view_tree">
+            <field name="act_window_id" ref="act_open_education_library_card_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_library_card_tree" />
+            <field name="view_id" ref="view_education_library_card_tree" />
         </record>
     </data>
 </odoo>

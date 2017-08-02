@@ -24,15 +24,15 @@ from odoo.exceptions import ValidationError
 
 
 class OpExam(models.Model):
-    _name = 'op.exam'
+    _name = 'education.exam'
     _inherit = 'mail.thread'
     _description = 'Exam'
 
-    session_id = fields.Many2one('op.exam.session', 'Exam Session')
-    subject_id = fields.Many2one('op.subject', 'Subject', required=True)
+    session_id = fields.Many2one('education.exam.session', 'Exam Session')
+    subject_id = fields.Many2one('education.subject', 'Subject', required=True)
     exam_code = fields.Char('Exam Code', size=8, required=True)
     attendees_line = fields.One2many(
-        'op.exam.attendees', 'exam_id', 'Attendees', readonly=True)
+        'education.exam.attendees', 'exam_id', 'Attendees', readonly=True)
     start_time = fields.Datetime('Start Time', required=True)
     end_time = fields.Datetime('End Time', required=True)
     state = fields.Selection(
@@ -41,7 +41,7 @@ class OpExam(models.Model):
          ('cancel', 'Cancelled'), ('done', 'Done')], 'State',
         readonly=True, default='draft', track_visibility='onchange')
     note = fields.Text('Note')
-    responsible_id = fields.Many2many('op.faculty', string='Responsible')
+    responsible_id = fields.Many2many('education.faculty', string='Responsible')
     name = fields.Char('Exam', size=256, required=True)
     total_marks = fields.Integer('Total Marks', required=True)
     min_marks = fields.Integer('Passing Marks', required=True)

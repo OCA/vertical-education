@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <menuitem id="menu_op_admission_config_main" parent="education.menu_op_school_config"
+        <menuitem id="menu_education_admission_config_main" parent="education.menu_education_school_config"
             sequence="80" name="Configuration" />
     </data>
 </odoo>

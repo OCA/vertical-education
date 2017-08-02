@@ -2,7 +2,7 @@
 <odoo>
         <record model="ir.ui.view" id="kanban_view_student">
             <field name="name">Student Kanban</field>
-            <field name="model">op.student</field>
+            <field name="model">education.student</field>
             <field name="arch" type="xml">
                 <kanban class="o_hr_employee_kanban">
                     <templates>
@@ -10,7 +10,7 @@
                             <div class="oe_kanban_global_click">
                                 <div class="o_kanban_image">
                                     <a type="open">
-                                        <img t-att-src="kanban_image('op.student', 'photo', record.id.value)"
+                                        <img t-att-src="kanban_image('education.student', 'photo', record.id.value)"
                                             class="oe_employee_picture" />
                                     </a>
                                 </div>
@@ -61,9 +61,9 @@
             </field>
         </record>
 
-        <record id="view_op_student_tree" model="ir.ui.view">
-            <field name="name">op.student.tree</field>
-            <field name="model">op.student</field>
+        <record id="view_education_student_tree" model="ir.ui.view">
+            <field name="name">education.student.tree</field>
+            <field name="model">education.student</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Student">
@@ -78,9 +78,9 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_student_form" model="ir.ui.view">
-            <field name="name">op.student.form</field>
-            <field name="model">op.student</field>
+        <record id="view_education_student_form" model="ir.ui.view">
+            <field name="name">education.student.form</field>
+            <field name="model">education.student</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Student">
@@ -106,7 +106,7 @@
                                 <group col="4" colspan="4"
                                     name="personal_detail">
                                     <field name="gender" />
-                                    <field name="birth_date" />
+                                    <field name="birthdate_date" />
                                     <field name="nationality" />
                                     <field name="visa_info" />
                                     <field name="lang" />
@@ -183,9 +183,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_student_search" model="ir.ui.view">
-            <field name="name">op.student.search</field>
-            <field name="model">op.student</field>
+        <record id="view_education_student_search" model="ir.ui.view">
+            <field name="name">education.student.search</field>
+            <field name="model">education.student</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Student">
@@ -203,30 +203,30 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_student_view">
+        <record model="ir.actions.act_window" id="act_open_education_student_view">
             <field name="name">Students</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.student</field>
+            <field name="res_model">education.student</field>
             <field name="view_type">form</field>
             <field name="view_mode">kanban,tree,form</field>
-            <field name="search_view_id" ref="view_op_student_search" />
+            <field name="search_view_id" ref="view_education_student_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_student_view_form">
-            <field name="act_window_id" ref="act_open_op_student_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_student_view_form">
+            <field name="act_window_id" ref="act_open_education_student_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_student_form" />
+            <field name="view_id" ref="view_education_student_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_student_view_tree">
-            <field name="act_window_id" ref="act_open_op_student_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_student_view_tree">
+            <field name="act_window_id" ref="act_open_education_student_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_student_tree" />
+            <field name="view_id" ref="view_education_student_tree" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_student_view_kanban">
-            <field name="act_window_id" ref="act_open_op_student_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_student_view_kanban">
+            <field name="act_window_id" ref="act_open_education_student_view" />
             <field name="sequence" eval="5" />
             <field name="view_mode">kanban</field>
             <field name="view_id" ref="kanban_view_student" />

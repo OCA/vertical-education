@@ -24,7 +24,7 @@ from odoo.exceptions import ValidationError
 
 
 class OpLibraryCardType(models.Model):
-    _name = 'op.library.card.type'
+    _name = 'education.library.card.type'
     _description = 'Library Card Type'
 
     name = fields.Char('Name', size=256, required=True)
@@ -43,7 +43,7 @@ class OpLibraryCardType(models.Model):
 
 
 class OpLibraryCard(models.Model):
-    _name = 'op.library.card'
+    _name = 'education.library.card'
     _rec_name = 'number'
     _description = 'Library Card'
 
@@ -51,14 +51,14 @@ class OpLibraryCard(models.Model):
         'res.partner', 'Student/Faculty', required=True)
     number = fields.Char('Number', size=256, readonly=True)
     library_card_type_id = fields.Many2one(
-        'op.library.card.type', 'Card Type', required=True)
+        'education.library.card.type', 'Card Type', required=True)
     issue_date = fields.Date(
         'Issue Date', required=True, default=fields.Date.today())
     type = fields.Selection(
         [('student', 'Student'), ('faculty', 'Faculty')],
         'Type', default='student', required=True)
-    student_id = fields.Many2one('op.student', 'Student')
-    faculty_id = fields.Many2one('op.faculty', 'Faculty')
+    student_id = fields.Many2one('education.student', 'Student')
+    faculty_id = fields.Many2one('education.faculty', 'Faculty')
 
     _sql_constraints = [
         ('unique_library_card_number',
@@ -68,7 +68,7 @@ class OpLibraryCard(models.Model):
     @api.model
     def create(self, vals):
         x = self.env['ir.sequence'].next_by_code(
-            'op.library.card') or '/'
+            'education.library.card') or '/'
         vals['number'] = x
         return super(OpLibraryCard, self).create(vals)
 

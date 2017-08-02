@@ -6,7 +6,7 @@
 -
   In order to create assignment first I create assignment type
 -
-  !record {model: op.assignment.type, id: assignment_type_ea_test}:
+  !record {model: education.assignment.type, id: assignment_type_ea_test}:
     name: 'External Assignment'
     code: 'ea'
 -
@@ -17,7 +17,7 @@
 -
    In order to use it in assignment I create Course
 -
-  !record {model: op.course, id: course_test}:
+  !record {model: education.course, id: course_test}:
     name: 'Bachelor of Accountancy Test'
     code: 'tboa'
     evaluation_type: 'GPA'
@@ -25,7 +25,7 @@
 -
    In order to use it in assignment I create Batch
 -
-  !record {model: op.batch, id: batch_test}:
+  !record {model: education.batch, id: batch_test}:
     name: 'BOA-S1'
     code: 'boas1'
     course_id: course_test
@@ -39,13 +39,13 @@
 -
    In order to use it in assignment I create Faculty first
 -
-  !record {model: op.faculty, id: faculty_dylan_test}:
+  !record {model: education.faculty, id: faculty_dylan_test}:
     name: 'Dylan'
     title: base.res_partner_title_mister
     middle_name: 'Q'
     last_name: 'Hidalgo'
     gender: 'male'
-    birth_date: '1983-02-01'
+    birthdate_date: '1983-02-01'
     blood_group: 'O+'
     email: 'dylanqhidalgo@demo.com'
     city: 'New Jersey'
@@ -59,7 +59,7 @@
 -
   In order to use it in assignment I create Subject
 -
-  !record {model: op.subject, id: subject_fa_test}:
+  !record {model: education.subject, id: subject_fa_test}:
     name: 'Financial Accounting'
     code: 'BOA1-001'
     type: 'theory'
@@ -71,13 +71,13 @@
 -
   I create student for Allocation
 -
-  !record {model: op.student, id: student_sumita_test}:
+  !record {model: education.student, id: student_sumita_test}:
     name: 'Sumita'
     title: base.res_partner_title_miss
     middle_name: 'S'
     last_name: 'Dani'
     gender: 'f'
-    birth_date: '1992-05-06'
+    birthdate_date: '1992-05-06'
     blood_group: 'A-'
     email: 'sumitasdani@demo.com'
     city: 'Banglore'
@@ -100,13 +100,13 @@
 -
   I create student for Allocation
 -
-  !record {model: op.student, id: student_sangita_test}:
+  !record {model: education.student, id: student_sangita_test}:
     name: 'Sangita'
     title: base.res_partner_title_miss
     middle_name: 'S'
     last_name: 'Dani'
     gender: 'f'
-    birth_date: '1992-05-06'
+    birthdate_date: '1992-05-06'
     blood_group: 'A-'
     email: 'sangitadani@demo.com'
     city: 'Banglore'

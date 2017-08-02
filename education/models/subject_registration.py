@@ -6,23 +6,23 @@ from odoo.exceptions import ValidationError
 from openerp import models, fields, api, _
 
 
-class OpSubjectRegistration(models.Model):
-    _name = 'op.subject.registration'
+class EducationSubjectRegistration(models.Model):
+    _name = 'education.subject.registration'
     _inherit = ['mail.thread']
 
     name = fields.Char('Name', readonly=True, default='New')
-    student_id = fields.Many2one('op.student', 'Student', required=True,
+    student_id = fields.Many2one('education.student', 'Student', required=True,
                                  track_visibility='onchange')
-    course_id = fields.Many2one('op.course', 'Course', required=True,
+    course_id = fields.Many2one('education.course', 'Course', required=True,
                                 track_visibility='onchange')
-    batch_id = fields.Many2one('op.batch', 'Batch', required=True,
+    batch_id = fields.Many2one('education.batch', 'Batch', required=True,
                                track_visibility='onchange')
     compulsory_subject_ids = fields.Many2many(
-        'op.subject', 'subject_compulsory_rel',
+        'education.subject', 'subject_compulsory_rel',
         'register_id', 'subject_id', string="Compulsory Subjects",
         readonly=True)
     elective_subject_ids = fields.Many2many(
-        'op.subject', string="Elective Subjects")
+        'education.subject', string="Elective Subjects")
     state = fields.Selection([
         ('draft', 'Draft'), ('submitted', 'Submitted'),
         ('approved', 'Approved'), ('rejected', 'Rejected')],
@@ -49,7 +49,7 @@ class OpSubjectRegistration(models.Model):
                 subject_ids.append(sub.id)
             for sub in record.elective_subject_ids:
                 subject_ids.append(sub.id)
-            course_id = self.env['op.student.course'].search([
+            course_id = self.env['education.student.course'].search([
                 ('student_id', '=', record.student_id.id),
                 ('course_id', '=', record.course_id.id)
             ], limit=1)
@@ -70,8 +70,8 @@ class OpSubjectRegistration(models.Model):
     def create(self, vals):
         if vals.get('name', 'New') == 'New':
             vals['name'] = self.env['ir.sequence'].next_by_code(
-                'op.subject.registration') or '/'
-        return super(OpSubjectRegistration, self).create(vals)
+                'education.subject.registration') or '/'
+        return super(EducationSubjectRegistration, self).create(vals)
 
     @api.multi
     def get_subjects(self):

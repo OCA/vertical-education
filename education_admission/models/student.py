@@ -23,15 +23,15 @@ from odoo.exceptions import UserError
 
 
 class OpStudentFeesDetails(models.Model):
-    _name = 'op.student.fees.details'
+    _name = 'education.student.fees.details'
     _description = 'Student Fees Details'
 
-    fees_line_id = fields.Many2one('op.fees.terms.line', 'Fees Line')
+    fees_line_id = fields.Many2one('education.fees.terms.line', 'Fees Line')
     invoice_id = fields.Many2one('account.invoice', 'Invoice')
     amount = fields.Float('Fees Amount')
     date = fields.Date('Submit Date')
     product_id = fields.Many2one('product.product', 'Product')
-    student_id = fields.Many2one('op.student', 'Student')
+    student_id = fields.Many2one('education.student', 'Student')
     state = fields.Selection([
         ('draft', 'Draft'), ('invoice', 'Invoice Created')], 'Status')
     invoice_state = fields.Selection([
@@ -112,7 +112,7 @@ class OpStudentFeesDetails(models.Model):
 
 
 class OpStudent(models.Model):
-    _inherit = 'op.student'
+    _inherit = 'education.student'
 
-    fees_detail_ids = fields.One2many('op.student.fees.details', 'student_id',
+    fees_detail_ids = fields.One2many('education.student.fees.details', 'student_id',
                                       'Fees Collection Details')

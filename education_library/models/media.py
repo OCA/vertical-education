@@ -23,26 +23,26 @@ from odoo import models, fields
 
 
 class OpMedia(models.Model):
-    _name = 'op.media'
+    _name = 'education.media'
 
     name = fields.Char('Title', size=128, required=True)
     isbn = fields.Char('ISBN Code', size=64)
-    tags = fields.Many2many('op.tag', string='Tag(s)')
+    tags = fields.Many2many('education.tag', string='Tag(s)')
     author_ids = fields.Many2many(
-        'op.author', string='Author(s)', required=True)
+        'education.author', string='Author(s)', required=True)
     edition = fields.Char('Edition')
     description = fields.Text('Description')
     publisher_ids = fields.Many2many(
-        'op.publisher', string='Publisher(s)', required=True)
-    course_ids = fields.Many2many('op.course', string='Course')
-    movement_line = fields.One2many('op.media.movement', 'media_id',
+        'education.publisher', string='Publisher(s)', required=True)
+    course_ids = fields.Many2many('education.course', string='Course')
+    movement_line = fields.One2many('education.media.movement', 'media_id',
                                     'Movements')
     subject_ids = fields.Many2many(
-        'op.subject', string='Subjects')
+        'education.subject', string='Subjects')
     internal_code = fields.Char('Internal Code', size=64)
-    queue_ids = fields.One2many('op.media.queue', 'media_id', 'Media Queue')
-    unit_ids = fields.One2many('op.media.unit', 'media_id', 'Units')
-    media_type_id = fields.Many2one('op.media.type', 'Media Type')
+    queue_ids = fields.One2many('education.media.queue', 'media_id', 'Media Queue')
+    unit_ids = fields.One2many('education.media.unit', 'media_id', 'Units')
+    media_type_id = fields.Many2one('education.media.type', 'Media Type')
 
     _sql_constraints = [
         ('unique_name_isbn',

@@ -29,9 +29,9 @@ class ReturnMedia(models.TransientModel):
     """ Retrun Media Wizard """
     _name = 'return.media'
 
-    media_id = fields.Many2one('op.media', 'Media', readonly=True)
+    media_id = fields.Many2one('education.media', 'Media', readonly=True)
     media_unit_id = fields.Many2one(
-        'op.media.unit', 'Media Unit', readonly=True, required=True)
+        'education.media.unit', 'Media Unit', readonly=True, required=True)
     actual_return_date = fields.Date(
         'Actual Return Date', default=lambda self: fields.Date.today(),
         required=True)
@@ -41,7 +41,7 @@ class ReturnMedia(models.TransientModel):
         for media in self:
             if media.media_unit_id.state and \
                     media.media_unit_id.state == 'issue':
-                media_move_search = self.env['op.media.movement'].search(
+                media_move_search = self.env['education.media.movement'].search(
                     [('media_unit_id', '=', media.media_unit_id.id),
                      ('state', '=', 'issue')])
                 if not media_move_search:

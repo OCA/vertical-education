@@ -24,12 +24,12 @@ from odoo.exceptions import ValidationError
 
 
 class OpMarksheetRegister(models.Model):
-    _name = 'op.marksheet.register'
+    _name = 'education.marksheet.register'
 
     exam_session_id = fields.Many2one(
-        'op.exam.session', 'Exam Session', required=True)
+        'education.exam.session', 'Exam Session', required=True)
     marksheet_line = fields.One2many(
-        'op.marksheet.line', 'marksheet_reg_id', 'Marksheets')
+        'education.marksheet.line', 'marksheet_reg_id', 'Marksheets')
     generated_date = fields.Date(
         'Generated Date', required=True, default=fields.Date.today())
     generated_by = fields.Many2one(
@@ -43,7 +43,7 @@ class OpMarksheetRegister(models.Model):
         'Total Fail', compute='_compute_total_failed')
     name = fields.Char('Marksheet Register', size=256, required=True)
     result_template_id = fields.Many2one(
-        'op.result.template', 'Result Template', required=True)
+        'education.result.template', 'Result Template', required=True)
 
     @api.constrains('total_pass', 'total_failed')
     def _check_marks(self):

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record model="ir.actions.act_window" id="act_op_student_assignment">
+        <record model="ir.actions.act_window" id="act_education_student_assignment">
             <field name="name">Student Assignment</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.assignment.sub.line</field>
+            <field name="res_model">education.assignment.sub.line</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_assignment_sub_line_search" />
+            <field name="search_view_id" ref="view_education_assignment_sub_line_search" />
             <field name="domain">[('user_id','=',uid)]</field>
             <field name="context">{}</field>
         </record>
@@ -18,7 +18,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//board" position="inside">
                     <column>
-                        <action name="%(act_op_student_assignment)d" string="Assignment To Submit" />
+                        <action name="%(act_education_student_assignment)d" string="Assignment To Submit" />
                     </column>
                 </xpath>
             </field>

@@ -1,7 +1,7 @@
 -
   create Fees Term for BOA
 -
-  !record {model: op.fees.terms, id: fees_term_boa_test}:
+  !record {model: education.fees.terms, id: fees_term_boa_test}:
     name: 'BOA Fees Term'
     note: 'BOA Fees Terms and Condition'
     active: True
@@ -36,7 +36,7 @@
 -
   I create Course for admission Register
 -
-  !record {model: op.course, id: course_test}:
+  !record {model: education.course, id: course_test}:
     name: 'Bachelor of Accountancy Test'
     code: 'tboa'
     evaluation_type: 'GPA'
@@ -44,7 +44,7 @@
 -
   I create Batch for admission
 -
-  !record {model: op.batch, id: batch_test}:
+  !record {model: education.batch, id: batch_test}:
     name: 'BOA-S1'
     code: 'boas1'
     course_id: course_test
@@ -63,13 +63,13 @@
 -
   I create student for admission
 -
-  !record {model: op.student, id: student_sumita_test}:
+  !record {model: education.student, id: student_sumita_test}:
     name: 'Sumita'
     title: base.res_partner_title_miss
     middle_name: 'S'
     last_name: 'Dani'
     gender: 'f'
-    birth_date: '1992-05-06'
+    birthdate_date: '1992-05-06'
     blood_group: 'A-'
     email: 'sumitasdani@demo.com'
     city: 'Banglore'
@@ -82,13 +82,13 @@
 -
   I create student for admission
 -
-  !record {model: op.student, id: student_sneha_test}:
+  !record {model: education.student, id: student_sneha_test}:
     name: 'Sneha'
     title: base.res_partner_title_miss
     middle_name: 'S'
     last_name: 'Patel'
     gender: 'f'
-    birth_date: '1992-07-05'
+    birthdate_date: '1992-07-05'
     blood_group: 'A-'
     email: 'snehapatel@demo.com'
     city: 'Banglore'

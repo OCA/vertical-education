@@ -23,7 +23,7 @@ from odoo import models, api
 
 
 class OpStudent(models.Model):
-    _inherit = 'op.student'
+    _inherit = 'education.student'
 
     @api.multi
     def action_view_invoice(self):

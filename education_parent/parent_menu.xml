@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <menuitem id="menu_op_parent_root" name="Parents"
+        <menuitem id="menu_education_parent_root" name="Parents"
             sequence="110" web_icon="education_parent,static/description/icon.png" />
 
-        <menuitem id="menu_op_parent_main_parent" name="Parents"
-            parent="menu_op_parent_root" sequence="10" />
+        <menuitem id="menu_education_parent_main_parent" name="Parents"
+            parent="menu_education_parent_root" sequence="10" />
 
-        <menuitem id="menu_op_parent_sub_parent" name="Parents"
-            parent="menu_op_parent_main_parent" sequence="10"
-            action="act_open_op_parent_view"
-            groups="group_op_parent,education.group_op_back_office" />
+        <menuitem id="menu_education_parent_sub_parent" name="Parents"
+            parent="menu_education_parent_main_parent" sequence="10"
+            action="act_open_education_parent_view"
+            groups="group_education_parent,education.group_education_back_office" />
 
-        <menuitem id="menu_op_student_main_parent" name="Students"
-            parent="menu_op_parent_root" sequence="20" />
+        <menuitem id="menu_education_student_main_parent" name="Students"
+            parent="menu_education_parent_root" sequence="20" />
 
-        <menuitem id="menu_op_student_sub_parent" name="Students"
-            parent="menu_op_student_main_parent" sequence="10"
-            action="act_open_op_student_parent_view"
-            groups="group_op_parent,education.group_op_back_office" />
+        <menuitem id="menu_education_student_sub_parent" name="Students"
+            parent="menu_education_student_main_parent" sequence="10"
+            action="act_open_education_student_parent_view"
+            groups="group_education_parent,education.group_education_back_office" />
 
         <menuitem name="Human Resources" id="hr.menu_hr_root"
             sequence="110" />

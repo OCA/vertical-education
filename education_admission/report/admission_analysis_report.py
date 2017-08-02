@@ -28,7 +28,7 @@ class ReportAdmissionAnalysis(models.AbstractModel):
     _name = 'report.education_admission.report_admission_analysis'
 
     def get_total_student(self, data):
-        student_search = self.env['op.admission'].search_count(
+        student_search = self.env['education.admission'].search_count(
             [('state', '=', 'done'),
              ('course_id', '=', data['course_id'][0]),
              ('admission_date', '>=', data['start_date']),
@@ -37,7 +37,7 @@ class ReportAdmissionAnalysis(models.AbstractModel):
 
     def get_data(self, data):
         lst = []
-        student_search = self.env['op.admission'].search(
+        student_search = self.env['education.admission'].search(
             [('state', '=', 'done'),
              ('course_id', '=', data['course_id'][0]),
              ('admission_date', '>=', data['start_date']),

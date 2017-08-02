@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_session_tree" model="ir.ui.view">
-            <field name="name">op.session.tree</field>
-            <field name="model">op.session</field>
+        <record id="view_education_session_tree" model="ir.ui.view">
+            <field name="name">education.session.tree</field>
+            <field name="model">education.session</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Sessions">
@@ -19,28 +19,28 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_session_form" model="ir.ui.view">
-            <field name="name">op.session.form</field>
-            <field name="model">op.session</field>
+        <record id="view_education_session_form" model="ir.ui.view">
+            <field name="name">education.session.form</field>
+            <field name="model">education.session</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Session">
                     <header>
                         <button type="object" name="lecture_confirm"
                             states="draft" string="Confirm"
-                            groups="education.group_op_faculty"
+                            groups="education.group_education_faculty"
                             class="oe_highlight" />
                         <button type="object" name="lecture_done"
                             states="confirm" string="Done"
-                            groups="education.group_op_faculty"
+                            groups="education.group_education_faculty"
                             class="oe_highlight" />
                         <button type="object" name="lecture_draft"
                             states="cancel" string="Set to Draft"
-                            groups="education.group_op_faculty"
+                            groups="education.group_education_faculty"
                             class="oe_highlight" />
                         <button type="object" name="lecture_cancel"
                             states="draft,confirm" string="Cancel"
-                            groups="education.group_op_faculty" />
+                            groups="education.group_education_faculty" />
                         <field name="state" widget="statusbar"
                             statusbar_visible="draft,confirm" />
                     </header>
@@ -67,9 +67,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_session_search" model="ir.ui.view">
-            <field name="name">op.session.search</field>
-            <field name="model">op.session</field>
+        <record id="view_education_session_search" model="ir.ui.view">
+            <field name="name">education.session.search</field>
+            <field name="model">education.session</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Sessions">
@@ -101,9 +101,9 @@
                 </search>
             </field>
         </record>
-        <record id="view_op_session_calendar" model="ir.ui.view">
-            <field name="name">op.session.calendar</field>
-            <field name="model">op.session</field>
+        <record id="view_education_session_calendar" model="ir.ui.view">
+            <field name="name">education.session.calendar</field>
+            <field name="model">education.session</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <calendar string="Sessions" date_start="start_datetime"
@@ -120,7 +120,7 @@
 
         <record model="ir.ui.view" id="view_session_kanban">
             <field name="name">session.kanban</field>
-            <field name="model">op.session</field>
+            <field name="model">education.session</field>
             <field name="arch" type="xml">
                 <kanban default_group_by="type" class="o_kanban_small_column">
                     <field name="type" />
@@ -190,7 +190,7 @@
                                     </div>
                                     <div class="oe_kanban_bottom_right">
                                         <img
-                                            t-att-src="kanban_image('op.faculty', 'photo', record.faculty_id.raw_value)"
+                                            t-att-src="kanban_image('education.faculty', 'photo', record.faculty_id.raw_value)"
                                             t-att-title="record.faculty_id.value"
                                             width="24" height="24"
                                             class="oe_kanban_avatar" />
@@ -204,30 +204,30 @@
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="act_open_op_session_view">
+        <record model="ir.actions.act_window" id="act_open_education_session_view">
             <field name="name">Sessions</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.session</field>
+            <field name="res_model">education.session</field>
             <field name="view_type">form</field>
             <field name="view_mode">kanban,calendar</field>
-            <field name="search_view_id" ref="view_op_session_search" />
+            <field name="search_view_id" ref="view_education_session_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_session_view_form">
-            <field name="act_window_id" ref="act_open_op_session_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_session_view_form">
+            <field name="act_window_id" ref="act_open_education_session_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_session_form" />
+            <field name="view_id" ref="view_education_session_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_session_view_tree">
-            <field name="act_window_id" ref="act_open_op_session_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_session_view_tree">
+            <field name="act_window_id" ref="act_open_education_session_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_session_tree" />
+            <field name="view_id" ref="view_education_session_tree" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_session_view_kanban">
-            <field name="act_window_id" ref="act_open_op_session_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_session_view_kanban">
+            <field name="act_window_id" ref="act_open_education_session_view" />
             <field name="sequence" eval="5" />
             <field name="view_mode">kanban</field>
             <field name="view_id" ref="view_session_kanban" />

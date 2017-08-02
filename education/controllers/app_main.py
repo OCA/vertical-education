@@ -36,26 +36,26 @@ class EducationAppController(http.Controller):
         assigned_books = 0
 
         if user_id:
-            student = request.env['op.student'].sudo().search(
+            student = request.env['education.student'].sudo().search(
                 [('user_id', '=', user_id)], limit=1)
             if student:
                 assignment = request.env['ir.model'].sudo().search(
-                    [('model', '=', 'op.assignment')])
+                    [('model', '=', 'education.assignment')])
                 if assignment:
-                    total_assignments = request.env['op.assignment'] \
+                    total_assignments = request.env['education.assignment'] \
                         .sudo().search_count(
                         [('allocation_ids', 'in', student.id),
                          ('state', '=', 'publish')])
-                    total_submissions = request.env['op.assignment.sub.line'] \
+                    total_submissions = request.env['education.assignment.sub.line'] \
                         .sudo().search_count(
                         [('student_id', '=', student.id),
                          ('state', '=', 'submit')])
 
                 batch_ids = [x.batch_id.id for x in student.course_detail_ids]
                 session = request.env['ir.model'].sudo().search(
-                    [('model', '=', 'op.session')])
+                    [('model', '=', 'education.session')])
                 if session and batch_ids:
-                    today_lectures = request.env['op.session'] \
+                    today_lectures = request.env['education.session'] \
                         .sudo().search_count(
                         [('batch_id', 'in', batch_ids),
                          ('start_datetime', '>=',
@@ -64,9 +64,9 @@ class EducationAppController(http.Controller):
                           datetime.today().strftime('%Y-%m-%d 23:59:59'))])
 
                 library = request.env['ir.model'].sudo().search(
-                    [('model', '=', 'op.media.movement')])
+                    [('model', '=', 'education.media.movement')])
                 if library:
-                    assigned_books = request.env['op.media.movement'] \
+                    assigned_books = request.env['education.media.movement'] \
                         .sudo().search_count(
                         [('student_id', '=', student.id),
                          ('state', '=', 'issue')])
@@ -85,25 +85,25 @@ class EducationAppController(http.Controller):
         today_lectures = 0
 
         if user_id:
-            faculty = request.env['op.faculty'].sudo().search(
+            faculty = request.env['education.faculty'].sudo().search(
                 [('user_id', '=', user_id)], limit=1)
             if faculty:
                 assignment = request.env['ir.model'].sudo().search(
-                    [('model', '=', 'op.assignment')])
+                    [('model', '=', 'education.assignment')])
                 if assignment:
-                    total_assignments = request.env['op.assignment'] \
+                    total_assignments = request.env['education.assignment'] \
                         .sudo().search_count(
                         [('faculty_id', '=', faculty.id),
                          ('state', 'in', ['draft', 'publish'])])
-                    total_submissions = request.env['op.assignment.sub.line'] \
+                    total_submissions = request.env['education.assignment.sub.line'] \
                         .sudo().search_count(
                         [('assignment_id.faculty_id', '=', faculty.id),
                          ('state', '=', 'submit')])
 
                 session = request.env['ir.model'].sudo().search(
-                    [('model', '=', 'op.session')])
+                    [('model', '=', 'education.session')])
                 if session:
-                    today_lectures = request.env['op.session'] \
+                    today_lectures = request.env['education.session'] \
                         .sudo().search_count(
                         [('faculty_id', '=', faculty.id),
                          ('start_datetime', '>=',

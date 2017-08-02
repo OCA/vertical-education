@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_classroom_tree" model="ir.ui.view">
-            <field name="name">op.classroom.tree</field>
-            <field name="model">op.classroom</field>
+        <record id="view_education_classroom_tree" model="ir.ui.view">
+            <field name="name">education.classroom.tree</field>
+            <field name="model">education.classroom</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Classroom">
@@ -14,9 +14,9 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_classroom_form" model="ir.ui.view">
-            <field name="name">op.classroom.form</field>
-            <field name="model">op.classroom</field>
+        <record id="view_education_classroom_form" model="ir.ui.view">
+            <field name="name">education.classroom.form</field>
+            <field name="model">education.classroom</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Classroom">
@@ -47,9 +47,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_classroom_search" model="ir.ui.view">
-            <field name="name">op.classroom.search</field>
-            <field name="model">op.classroom</field>
+        <record id="view_education_classroom_search" model="ir.ui.view">
+            <field name="name">education.classroom.search</field>
+            <field name="model">education.classroom</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Classroom">
@@ -66,27 +66,27 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_classroom_view">
+        <record model="ir.actions.act_window" id="act_open_education_classroom_view">
             <field name="name">Class Rooms</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.classroom</field>
+            <field name="res_model">education.classroom</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_classroom_search" />
+            <field name="search_view_id" ref="view_education_classroom_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_classroom_view_form">
-            <field name="act_window_id" ref="act_open_op_classroom_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_classroom_view_form">
+            <field name="act_window_id" ref="act_open_education_classroom_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_classroom_form" />
+            <field name="view_id" ref="view_education_classroom_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_classroom_view_tree">
-            <field name="act_window_id" ref="act_open_op_classroom_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_classroom_view_tree">
+            <field name="act_window_id" ref="act_open_education_classroom_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_classroom_tree" />
+            <field name="view_id" ref="view_education_classroom_tree" />
         </record>
     </data>
 </odoo>

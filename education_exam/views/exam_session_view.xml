@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_exam_session_tree" model="ir.ui.view">
-            <field name="name">op.exam.session.tree</field>
-            <field name="model">op.exam.session</field>
+        <record id="view_education_exam_session_tree" model="ir.ui.view">
+            <field name="name">education.exam.session.tree</field>
+            <field name="model">education.exam.session</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <tree string="Exam Session">
@@ -19,9 +19,9 @@
                 </tree>
             </field>
         </record>
-        <record id="view_op_exam_session_form" model="ir.ui.view">
-            <field name="name">op.exam.session.form</field>
-            <field name="model">op.exam.session</field>
+        <record id="view_education_exam_session_form" model="ir.ui.view">
+            <field name="name">education.exam.session.form</field>
+            <field name="model">education.exam.session</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <form string="Exam Session">
@@ -55,9 +55,9 @@
                 </form>
             </field>
         </record>
-        <record id="view_op_exam_session_search" model="ir.ui.view">
-            <field name="name">op.exam.session.search</field>
-            <field name="model">op.exam.session</field>
+        <record id="view_education_exam_session_search" model="ir.ui.view">
+            <field name="name">education.exam.session.search</field>
+            <field name="model">education.exam.session</field>
             <field name="priority" eval="8" />
             <field name="arch" type="xml">
                 <search string="Exam Session">
@@ -71,27 +71,27 @@
                 </search>
             </field>
         </record>
-        <record model="ir.actions.act_window" id="act_open_op_exam_session_view">
+        <record model="ir.actions.act_window" id="act_open_education_exam_session_view">
             <field name="name">Exam Sessions</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">op.exam.session</field>
+            <field name="res_model">education.exam.session</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="search_view_id" ref="view_op_exam_session_search" />
+            <field name="search_view_id" ref="view_education_exam_session_search" />
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_exam_session_view_form">
-            <field name="act_window_id" ref="act_open_op_exam_session_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_exam_session_view_form">
+            <field name="act_window_id" ref="act_open_education_exam_session_view" />
             <field name="sequence" eval="20" />
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_op_exam_session_form" />
+            <field name="view_id" ref="view_education_exam_session_form" />
         </record>
-        <record model="ir.actions.act_window.view" id="act_open_op_exam_session_view_tree">
-            <field name="act_window_id" ref="act_open_op_exam_session_view" />
+        <record model="ir.actions.act_window.view" id="act_open_education_exam_session_view_tree">
+            <field name="act_window_id" ref="act_open_education_exam_session_view" />
             <field name="sequence" eval="10" />
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_op_exam_session_tree" />
+            <field name="view_id" ref="view_education_exam_session_tree" />
         </record>
     </data>
 </odoo>

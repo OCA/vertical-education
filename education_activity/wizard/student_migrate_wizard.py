@@ -29,12 +29,12 @@ class StudentMigrate(models.TransientModel):
     _name = 'student.migrate'
 
     date = fields.Date('Date', required=True, default=fields.Date.today())
-    course_from_id = fields.Many2one('op.course', 'From Course', required=True)
-    course_to_id = fields.Many2one('op.course', 'To Course', required=True)
-    batch_id = fields.Many2one('op.batch', 'To Batch')
+    course_from_id = fields.Many2one('education.course', 'From Course', required=True)
+    course_to_id = fields.Many2one('education.course', 'To Course', required=True)
+    batch_id = fields.Many2one('education.batch', 'To Batch')
     optional_sub = fields.Boolean("Optional Subjects")
     student_ids = fields.Many2many(
-        'op.student', string='Student(s)', required=True)
+        'education.student', string='Student(s)', required=True)
 
     @api.multi
     @api.constrains('course_from_id', 'course_to_id')
@@ -61,7 +61,7 @@ class StudentMigrate(models.TransientModel):
     @api.multi
     def student_migrate_forward(self):
         for record in self:
-            activity_type = self.env["op.activity.type"]
+            activity_type = self.env["education.activity.type"]
             act_type = activity_type.search(
                 [('name', '=', 'Migration')], limit=1)
             if not act_type:
@@ -76,12 +76,12 @@ class StudentMigrate(models.TransientModel):
                     record.course_from_id.name +
                     ' to ' + record.course_to_id.name
                 }
-                self.env['op.activity'].create(activity_vals)
-                student_course = self.env['op.student.course'].search(
+                self.env['education.activity'].create(activity_vals)
+                student_course = self.env['education.student.course'].search(
                     [('student_id', '=', student.id),
                      ('course_id', '=', record.course_from_id.id)])
                 student_course.write({'course_id': record.course_to_id.id})
-                reg_id = self.env['op.subject.registration'].create({
+                reg_id = self.env['education.subject.registration'].create({
                     'student_id': student.id,
                     'batch_id': record.batch_id.id,
                     'course_id': record.course_to_id.id,

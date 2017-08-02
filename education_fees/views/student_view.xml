@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_student_form_fees_inherit" model="ir.ui.view">
-            <field name="name">op.student.form.fees.inherit</field>
-            <field name="model">op.student</field>
-            <field name="inherit_id" ref="education.view_op_student_form" />
+        <record id="view_education_student_form_fees_inherit" model="ir.ui.view">
+            <field name="name">education.student.form.fees.inherit</field>
+            <field name="model">education.student</field>
+            <field name="inherit_id" ref="education.view_education_student_form" />
             <field name="priority" eval="9" />
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='photo']" position="before">
@@ -13,7 +13,7 @@
                         id="invoice_button"
                         icon="fa-pencil-square-o"
                         name="action_view_invoice"
-                        groups="education.group_op_back_office">
+                        groups="education.group_education_back_office">
                         <div><strong><field name="total_invoiced" widget="monetary"/></strong><br/>Invoiced</div>
                     </button>
                 </xpath>

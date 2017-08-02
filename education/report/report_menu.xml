@@ -2,7 +2,7 @@
 <odoo>
         <report
             id="action_report_student_idcard"
-            model="op.student"
+            model="education.student"
             string="Student IdCard"
             report_type="qweb-pdf"
             name="education.report_student_idcard"
@@ -10,7 +10,7 @@
         />
         <report
             id="action_report_student_bonafide"
-            model="op.student"
+            model="education.student"
             string="Bonafide Certificate"
             report_type="qweb-pdf"
             name="education.report_student_bonafide"

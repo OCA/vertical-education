@@ -33,9 +33,9 @@ class SessionReport(models.TransientModel):
     state = fields.Selection(
         [('faculty', 'Faculty'), ('student', 'Student')],
         string='Select', required=True, default='faculty')
-    course_id = fields.Many2one('op.course', 'Course')
-    batch_id = fields.Many2one('op.batch', 'Batch')
-    faculty_id = fields.Many2one('op.faculty', 'Faculty')
+    course_id = fields.Many2one('education.course', 'Course')
+    batch_id = fields.Many2one('education.batch', 'Batch')
+    faculty_id = fields.Many2one('education.faculty', 'Faculty')
     start_date = fields.Date(
         'Start Date', required=True,
         default=(datetime.today() - relativedelta(
@@ -70,7 +70,7 @@ class SessionReport(models.TransientModel):
             ['start_date', 'end_date', 'course_id', 'batch_id', 'state',
              'faculty_id'])[0]
         if data['state'] == 'student':
-            time_table_ids = self.env['op.session'].search(
+            time_table_ids = self.env['education.session'].search(
                 [('course_id', '=', data['course_id'][0]),
                  ('batch_id', '=', data['batch_id'][0]),
                  ('start_datetime', '>', data['start_date'] + '%H:%M:%S'),
@@ -82,7 +82,7 @@ class SessionReport(models.TransientModel):
                 self, 'education_timetable.report_timetable_student_generate',
                 data=data)
         else:
-            teacher_time_table_ids = self.env['op.session'].search(
+            teacher_time_table_ids = self.env['education.session'].search(
                 [('start_datetime', '>', data['start_date'] + '%H:%M:%S'),
                  ('end_datetime', '<', data['end_date'] + '%H:%M:%S'),
                  ('faculty_id', '=', data['faculty_id'][0])],

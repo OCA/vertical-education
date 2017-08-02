@@ -6,7 +6,7 @@
 -
    Create an Attendance Register 
 -
-  !record {model: op.attendance.register, id: attendance_register_test}:
+  !record {model: education.attendance.register, id: attendance_register_test}:
     code: 'BOA-S1A1'
     name: 'BOA-S1A1'
     course_id: course_test
@@ -19,7 +19,7 @@
 -
    Create an Attendance sheet 
 -
-  !record {model: op.attendance.sheet, id: attendance_sheet_test}:
+  !record {model: education.attendance.sheet, id: attendance_sheet_test}:
     name: 'AR1-AS1'
     register_id: attendance_register_test
     attendance_date: !eval datetime.today()

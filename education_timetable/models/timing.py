@@ -23,7 +23,7 @@ from odoo import models, fields
 
 
 class OpTiming(models.Model):
-    _name = 'op.timing'
+    _name = 'education.timing'
     _description = 'Period'
     _order = 'sequence'
 

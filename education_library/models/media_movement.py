@@ -32,22 +32,22 @@ def days_between(to_date, from_date):
 
 
 class OpMediaMovement(models.Model):
-    _name = 'op.media.movement'
+    _name = 'education.media.movement'
     _inherit = 'mail.thread'
     _description = 'Media Movement'
     _rec_name = 'media_id'
 
-    media_id = fields.Many2one('op.media', 'Media', required=True)
+    media_id = fields.Many2one('education.media', 'Media', required=True)
     media_unit_id = fields.Many2one(
-        'op.media.unit', 'Media Unit', required=True,
+        'education.media.unit', 'Media Unit', required=True,
         track_visibility='onchange')
     type = fields.Selection(
         [('student', 'Student'), ('faculty', 'Faculty')], 'Student/Faculty',
         required=True)
-    student_id = fields.Many2one('op.student', 'Student')
-    faculty_id = fields.Many2one('op.faculty', 'Faculty')
+    student_id = fields.Many2one('education.student', 'Student')
+    faculty_id = fields.Many2one('education.faculty', 'Faculty')
     library_card_id = fields.Many2one(
-        'op.library.card', 'Library Card', required=True,
+        'education.library.card', 'Library Card', required=True,
         track_visibility='onchange')
     issued_date = fields.Date(
         'Issued Date', required=True, default=fields.Date.today())
@@ -138,7 +138,7 @@ class OpMediaMovement(models.Model):
     def create_penalty_invoice(self):
         for rec in self:
             account_id = False
-            product = self.env.ref('education_library.op_product_7')
+            product = self.env.ref('education_library.education_product_7')
             if product.id:
                 account_id = product.property_account_income_id.id
             if not account_id:

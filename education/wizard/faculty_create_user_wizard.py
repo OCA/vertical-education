@@ -5,8 +5,8 @@
 from openerp import models, fields, api
 
 
-class WizardOpFaculty(models.TransientModel):
-    _name = 'wizard.op.faculty'
+class WizardEducationFaculty(models.TransientModel):
+    _name = 'wizard.education.faculty'
     _description = "Create User for selected Faculty(s)"
 
     def _get_faculties(self):
@@ -15,11 +15,11 @@ class WizardOpFaculty(models.TransientModel):
         return []
 
     faculty_ids = fields.Many2many(
-        'op.faculty', default=_get_faculties, string='Faculties')
+        'education.faculty', default=_get_faculties, string='Faculties')
 
     @api.multi
     def create_faculty_user(self):
-        user_group = self.env.ref('education.group_op_faculty')
+        user_group = self.env.ref('education.group_education_faculty')
         active_ids = self.env.context.get('active_ids', []) or []
-        records = self.env['op.faculty'].browse(active_ids)
+        records = self.env['education.faculty'].browse(active_ids)
         self.env['res.users'].create_user(records, user_group)

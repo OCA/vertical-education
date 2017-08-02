@@ -32,7 +32,7 @@ class ReserveMedia(models.TransientModel):
     @api.multi
     def set_partner(self):
         for media in self:
-            self.env['op.media.movement'].browse(
+            self.env['education.media.movement'].browse(
                 self.env.context.get('active_ids', False)).write(
                 {'partner_id': media.partner_id.id,
                  'reserver_name': media.partner_id.name, 'state': 'reserve'})

@@ -23,6 +23,6 @@ from odoo import models, fields
 
 
 class OpStudent(models.Model):
-    _inherit = 'op.student'
+    _inherit = 'education.student'
 
-    allocation_ids = fields.Many2many('op.assignment', string='Assignment(s)')
+    allocation_ids = fields.Many2many('education.assignment', string='Assignment(s)')

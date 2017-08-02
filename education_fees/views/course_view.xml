@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record id="view_op_course_tree_pt_inherit" model="ir.ui.view">
-            <field name="name">op.course.tree.pt.inherit</field>
-            <field name="model">op.course</field>
-            <field name="inherit_id" ref="education.view_op_course_tree" />
+        <record id="view_education_course_tree_pt_inherit" model="ir.ui.view">
+            <field name="name">education.course.tree.pt.inherit</field>
+            <field name="model">education.course</field>
+            <field name="inherit_id" ref="education.view_education_course_tree" />
             <field name="priority" eval="9" />
             <field name="arch" type="xml">
                 <field name="evaluation_type" position="after">
@@ -12,10 +12,10 @@
                 </field>
             </field>
         </record>
-        <record id="view_op_course_form_pt_inherit" model="ir.ui.view">
-            <field name="name">op.course.form.pt.inherit</field>
-            <field name="model">op.course</field>
-            <field name="inherit_id" ref="education.view_op_course_form" />
+        <record id="view_education_course_form_pt_inherit" model="ir.ui.view">
+            <field name="name">education.course.form.pt.inherit</field>
+            <field name="model">education.course</field>
+            <field name="inherit_id" ref="education.view_education_course_form" />
             <field name="priority" eval="9" />
             <field name="arch" type="xml">
                 <field name="evaluation_type" position="after">

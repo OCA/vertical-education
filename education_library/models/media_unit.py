@@ -23,16 +23,16 @@ from odoo import models, fields, api
 
 
 class OpMediaUnit(models.Model):
-    _name = 'op.media.unit'
+    _name = 'education.media.unit'
     _inherit = 'mail.thread'
     _description = 'Media Unit'
 
     name = fields.Char('Name', required=True)
     media_id = fields.Many2one(
-        'op.media', 'Media', required=True, track_visibility='onchange')
+        'education.media', 'Media', required=True, track_visibility='onchange')
     barcode = fields.Char('Barcode', size=20)
     movement_lines = fields.One2many(
-        'op.media.movement', 'media_unit_id', 'Movements')
+        'education.media.movement', 'media_unit_id', 'Movements')
     state = fields.Selection(
         [('available', 'Available'), ('issue', 'Issued')],
         'State', default='available', track_visibility='onchange')
@@ -48,7 +48,7 @@ class OpMediaUnit(models.Model):
     @api.model
     def create(self, vals):
         x = self.env['ir.sequence'].next_by_code(
-            'op.media.unit') or '/'
+            'education.media.unit') or '/'
         vals['barcode'] = x
         return super(OpMediaUnit, self).create(vals)
 

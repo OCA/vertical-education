@@ -31,7 +31,7 @@
     'website': 'http://www.education.org',
     'depends': ['education'],
     'data': [
-        'security/op_parent_security.xml',
+        'security/education_parent_security.xml',
         'views/student_view.xml',
         'views/parent_view.xml',
         'parent_menu.xml',

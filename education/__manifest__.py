@@ -21,7 +21,7 @@
         'wizard/faculty_create_employee_wizard_view.xml',
         'wizard/faculty_create_user_wizard_view.xml',
         'wizard/students_create_user_wizard_view.xml',
-        'security/op_security.xml',
+        'security/education_security.xml',
         'security/ir.model.access.csv',
         'views/student_view.xml',
         'views/hr_view.xml',

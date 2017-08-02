@@ -27,7 +27,7 @@ from odoo.exceptions import ValidationError, UserError
 
 
 class OpAdmission(models.Model):
-    _name = 'op.admission'
+    _name = 'education.admission'
     _inherit = 'mail.thread'
     _rec_name = 'application_number'
     _order = "application_number desc"
@@ -48,7 +48,7 @@ class OpAdmission(models.Model):
         'Application Number', size=16, required=True, copy=False,
         states={'done': [('readonly', True)]},
         default=lambda self:
-        self.env['ir.sequence'].next_by_code('op.admission'))
+        self.env['ir.sequence'].next_by_code('education.admission'))
     admission_date = fields.Date(
         'Admission Date', copy=False,
         states={'done': [('readonly', True)]})
@@ -56,13 +56,13 @@ class OpAdmission(models.Model):
         'Application Date', required=True, copy=False,
         states={'done': [('readonly', True)]},
         default=lambda self: fields.Datetime.now())
-    birth_date = fields.Date(
+    birthdate_date = fields.Date(
         'Birth Date', required=True, states={'done': [('readonly', True)]})
     course_id = fields.Many2one(
-        'op.course', 'Course', required=True,
+        'education.course', 'Course', required=True,
         states={'done': [('readonly', True)]})
     batch_id = fields.Many2one(
-        'op.batch', 'Batch', required=False,
+        'education.batch', 'Batch', required=False,
         states={'done': [('readonly', True)],
                 'fees_paid': [('required', True)]})
     street = fields.Char(
@@ -95,7 +95,7 @@ class OpAdmission(models.Model):
         'res.partner', 'Previous Institute',
         states={'done': [('readonly', True)]})
     prev_course_id = fields.Many2one(
-        'op.course', 'Previous Course', states={'done': [('readonly', True)]})
+        'education.course', 'Previous Course', states={'done': [('readonly', True)]})
     prev_result = fields.Char(
         'Previous Result', size=256, states={'done': [('readonly', True)]})
     family_business = fields.Char(
@@ -106,14 +106,14 @@ class OpAdmission(models.Model):
         [('m', 'Male'), ('f', 'Female'), ('o', 'Other')], 'Gender',
         required=True, states={'done': [('readonly', True)]})
     student_id = fields.Many2one(
-        'op.student', 'Student', states={'done': [('readonly', True)]})
+        'education.student', 'Student', states={'done': [('readonly', True)]})
     nbr = fields.Integer('No of Admission', readonly=True)
     register_id = fields.Many2one(
-        'op.admission.register', 'Admission Register', required=True,
+        'education.admission.register', 'Admission Register', required=True,
         states={'done': [('readonly', True)]})
     partner_id = fields.Many2one('res.partner', 'Partner')
     is_student = fields.Boolean('Is Already Student')
-    fees_term_id = fields.Many2one('op.fees.terms', 'Fees Term')
+    fees_term_id = fields.Many2one('education.fees.terms', 'Fees Term')
 
     @api.onchange('student_id', 'is_student')
     def onchange_student(self):
@@ -123,7 +123,7 @@ class OpAdmission(models.Model):
             self.name = student.name
             self.middle_name = student.middle_name
             self.last_name = student.last_name
-            self.birth_date = student.birth_date
+            self.birthdate_date = student.birthdate_date
             self.gender = student.gender
             self.photo = student.photo or False
             self.street = student.street or False
@@ -143,7 +143,7 @@ class OpAdmission(models.Model):
             self.name = ''
             self.middle_name = ''
             self.last_name = ''
-            self.birth_date = ''
+            self.birthdate_date = ''
             self.gender = ''
             self.photo = False
             self.street = ''
@@ -182,10 +182,10 @@ class OpAdmission(models.Model):
                     End Date of Admission Register."))
 
     @api.multi
-    @api.constrains('birth_date')
+    @api.constrains('birthdate_date')
     def _check_birthdate(self):
         for record in self:
-            if record.birth_date > fields.Date.today():
+            if record.birthdate_date > fields.Date.today():
                 raise ValidationError(_(
                     "Birth Date can't be greater than current date!"))
 
@@ -217,7 +217,7 @@ class OpAdmission(models.Model):
                 'name': student.name,
                 'middle_name': student.middle_name,
                 'last_name': student.last_name,
-                'birth_date': student.birth_date,
+                'birthdate_date': student.birthdate_date,
                 'gender': student.gender,
                 'course_id':
                 student.course_id and student.course_id.id or False,
@@ -246,7 +246,7 @@ class OpAdmission(models.Model):
     @api.multi
     def enroll_student(self):
         for record in self:
-            total_admission = self.env['op.admission'].search_count(
+            total_admission = self.env['education.admission'].search_count(
                 [('register_id', '=', record.register_id.id),
                  ('state', '=', 'done')])
             if record.register_id.max_count:
@@ -257,7 +257,7 @@ class OpAdmission(models.Model):
             if not record.student_id:
                 vals = record.get_student_vals()
                 vals.update({'partner_id': record.partner_id.id})
-                student_id = self.env['op.student'].create(vals).id
+                student_id = self.env['education.student'].create(vals).id
             else:
                 student_id = record.student_id.id
                 record.student_id.write({
@@ -286,7 +286,7 @@ class OpAdmission(models.Model):
                         'state': 'draft',
                     }
                     val.append([0, False, dict_val])
-                self.env['op.student'].browse(student_id).write({
+                self.env['education.student'].browse(student_id).write({
                     'fees_detail_ids': val
                 })
             record.write({
@@ -295,7 +295,7 @@ class OpAdmission(models.Model):
                 'admission_date': fields.Date.today(),
                 'student_id': student_id,
             })
-            reg_id = self.env['op.subject.registration'].create({
+            reg_id = self.env['education.subject.registration'].create({
                 'student_id': student_id,
                 'batch_id': record.batch_id.id,
                 'course_id': record.course_id.id,
@@ -327,13 +327,13 @@ class OpAdmission(models.Model):
 
     @api.multi
     def open_student(self):
-        form_view = self.env.ref('education.view_op_student_form')
-        tree_view = self.env.ref('education.view_op_student_tree')
+        form_view = self.env.ref('education.view_education_student_form')
+        tree_view = self.env.ref('education.view_education_student_tree')
         value = {
             'domain': str([('id', '=', self.student_id.id)]),
             'view_type': 'form',
             'view_mode': 'tree, form',
-            'res_model': 'op.student',
+            'res_model': 'education.student',
             'view_id': False,
             'views': [(form_view and form_view.id or False, 'form'),
                       (tree_view and tree_view.id or False, 'tree')],

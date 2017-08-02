@@ -18,61 +18,61 @@ msgstr ""
 "X-Generator: Poedit 2.0.1\n"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
 msgid "Accept"
 msgstr "Aceptar"
 
 #. module: education_assignment
-#: selection:op.assignment.sub.line,state:0
+#: selection:education.assignment.sub.line,state:0
 msgid "Accepted"
 msgstr "Aceptado"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_allocation_ids
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_allocation_ids
 msgid "Allocated To"
 msgstr "Asignado a"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
 msgid "Allocation"
 msgstr "Asignación"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
 msgid "Allocation Infomation"
 msgstr "Información de asignación"
 
 #. module: education_assignment
-#: model:ir.model,name:education_assignment.model_op_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_assignment_id
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_tree
-#: model:ir.ui.view,arch_db:education_assignment.view_op_student_form_assignment_inherit
+#: model:ir.model,name:education_assignment.model_education_assignment
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_assignment_id
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_tree
+#: model:ir.ui.view,arch_db:education_assignment.view_education_student_form_assignment_inherit
 msgid "Assignment"
 msgstr "Tarea"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
 msgid "Assignment Name"
 msgstr "Nombre de la tarea"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_tree
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_tree
 msgid "Assignment Sub Line"
 msgstr "Línea secundaria de tarea"
 
 #. module: education_assignment
-#: model:ir.model,name:education_assignment.model_op_assignment_sub_line
+#: model:ir.model,name:education_assignment.model_education_assignment_sub_line
 msgid "Assignment Submission"
 msgstr "Tarea enviada"
 
 #. module: education_assignment
-#: model:ir.actions.act_window,name:education_assignment.act_open_op_assignment_sub_line_view
-#: model:ir.ui.menu,name:education_assignment.menu_op_assignment_sub_line_sub
+#: model:ir.actions.act_window,name:education_assignment.act_open_education_assignment_sub_line_view
+#: model:ir.ui.menu,name:education_assignment.menu_education_assignment_sub_line_sub
 msgid "Assignment Submissions"
 msgstr "Tareas enviadas"
 
@@ -82,30 +82,30 @@ msgid "Assignment To Submit"
 msgstr "Tarea a enviar"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_assignment_type_id
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_assignment_type_id
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
 msgid "Assignment Type"
 msgstr "Tipo de  tarea"
 
 #. module: education_assignment
-#: model:ir.actions.act_window,name:education_assignment.act_open_op_assignment_type_view
-#: model:ir.ui.menu,name:education_assignment.menu_op_assignment_type_sub
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_type_form
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_type_tree
+#: model:ir.actions.act_window,name:education_assignment.act_open_education_assignment_type_view
+#: model:ir.ui.menu,name:education_assignment.menu_education_assignment_type_sub
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_type_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_type_tree
 msgid "Assignment Types"
 msgstr "Tipos de tarea"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_student_allocation_ids
+#: model:ir.model.fields,field_description:education_assignment.field_education_student_allocation_ids
 msgid "Assignment(s)"
 msgstr "Tarea(s)"
 
 #. module: education_assignment
-#: model:ir.actions.act_window,name:education_assignment.act_open_op_assignment_view
-#: model:ir.ui.menu,name:education_assignment.menu_op_assignment_main
-#: model:ir.ui.menu,name:education_assignment.menu_op_assignment_root
-#: model:ir.ui.menu,name:education_assignment.menu_op_assignment_sub
-#: model:ir.ui.view,arch_db:education_assignment.view_op_student_form_assignment_inherit
+#: model:ir.actions.act_window,name:education_assignment.act_open_education_assignment_view
+#: model:ir.ui.menu,name:education_assignment.menu_education_assignment_main
+#: model:ir.ui.menu,name:education_assignment.menu_education_assignment_root
+#: model:ir.ui.menu,name:education_assignment.menu_education_assignment_sub
+#: model:ir.ui.view,arch_db:education_assignment.view_education_student_form_assignment_inherit
 msgid "Assignments"
 msgstr "Asignaciones"
 
@@ -115,231 +115,231 @@ msgid "Assignments to Approve"
 msgstr "Tareas para aprobar"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
 msgid "Basic Information"
 msgstr "Información básica"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_batch_id
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_batch_id
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
 msgid "Batch"
 msgstr "Grupo académico"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
 msgid "Change And Resubmit"
 msgstr "Cambiar y renviar"
 
 #. module: education_assignment
-#: selection:op.assignment.sub.line,state:0
+#: selection:education.assignment.sub.line,state:0
 msgid "Change Req."
 msgstr "Cambiio Req."
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
 msgid "Change Require"
 msgstr "Requiere cambio"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_code
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_type_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_code
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_type_search
 msgid "Code"
 msgstr "Código"
 
 #. module: education_assignment
-#: model:ir.ui.menu,name:education_assignment.menu_op_assignment_configuration
+#: model:ir.ui.menu,name:education_assignment.menu_education_assignment_configuration
 msgid "Configuration"
 msgstr "Configuración"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_course_id
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_course_id
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
 msgid "Course"
 msgstr "Curso"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_create_uid
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_create_uid
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_create_uid
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_create_uid
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_create_uid
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_create_date
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_create_date
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_create_date
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_create_date
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_create_date
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_create_date
 msgid "Created on"
 msgstr "Creado el"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_description
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_description
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_description
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_description
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
 msgid "Description"
 msgstr "Descripción"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_display_name
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_display_name
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_display_name
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_display_name
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_display_name
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_display_name
 msgid "Display Name"
 msgstr "Nombre a mostrar"
 
 #. module: education_assignment
-#: selection:op.assignment,state:0 selection:op.assignment.sub.line,state:0
+#: selection:education.assignment,state:0 selection:education.assignment.sub.line,state:0
 msgid "Draft"
 msgstr "Borrador"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_faculty_id
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_faculty_id
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
 msgid "Faculty"
 msgstr "Profesor"
 
 #. module: education_assignment
-#: model:ir.actions.act_window,name:education_assignment.act_op_faculty_assignment
+#: model:ir.actions.act_window,name:education_assignment.act_education_faculty_assignment
 msgid "Faculty Assignment"
 msgstr "Profesor asignado"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_faculty_user_id
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_faculty_user_id
 msgid "Faculty User"
 msgstr "Usuario profesor"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
 msgid "Finish"
 msgstr "Terminar"
 
 #. module: education_assignment
-#: selection:op.assignment,state:0
+#: selection:education.assignment,state:0
 msgid "Finished"
 msgstr "Terminado"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_type_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_type_search
 msgid "Group By..."
 msgstr "Agrupar por..."
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_id
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_id
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_id
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_id
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_id
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_id
 msgid "ID"
 msgstr "ID"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_issued_date
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_issued_date
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
 msgid "Issued Date"
 msgstr "Fecha de emisión"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment___last_update
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line___last_update
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type___last_update
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment___last_update
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line___last_update
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type___last_update
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_write_uid
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_write_uid
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_write_uid
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_write_uid
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_write_uid
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_write_uid
 msgid "Last Updated by"
 msgstr "Última actualización por"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_write_date
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_write_date
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_write_date
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_write_date
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_write_date
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_write_date
 msgid "Last Updated on"
 msgstr "Última actualización el"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_marks
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_marks
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
 msgid "Marks"
 msgstr "Marcas"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_name
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_type_name
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_type_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_name
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_type_name
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_type_search
 msgid "Name"
 msgstr "Nombre"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_note
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_note
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
 msgid "Note"
 msgstr "Nota"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
 msgid "Publish"
 msgstr "Publicar"
 
 #. module: education_assignment
-#: selection:op.assignment,state:0
+#: selection:education.assignment,state:0
 msgid "Published"
 msgstr "Publicado"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
 msgid "Reject"
 msgstr "Rechazar"
 
 #. module: education_assignment
-#: selection:op.assignment.sub.line,state:0
+#: selection:education.assignment.sub.line,state:0
 msgid "Rejected"
 msgstr "Rechazado"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
 msgid "Resubmit"
 msgstr "Reenviar"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_reviewer
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_reviewer
 msgid "Reviewer"
 msgstr "Reviewer"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_state
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_state
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_state
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_state
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
 msgid "State"
 msgstr "Estado"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_student_id
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_student_id
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
 msgid "Student"
 msgstr "Alumno"
 
 #. module: education_assignment
-#: model:ir.actions.act_window,name:education_assignment.act_op_student_assignment
+#: model:ir.actions.act_window,name:education_assignment.act_education_student_assignment
 msgid "Student Assignment"
 msgstr "Asignación estudiantil"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_subject_id
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_subject_id
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
 msgid "Subject"
 msgstr "Asunto"
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_submission_date
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_submission_date
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_search
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_search
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_submission_date
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_submission_date
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_search
 msgid "Submission Date"
 msgstr "Día de entrega"
 
@@ -350,34 +350,34 @@ msgid "Submission Date cannot be set before Issue Date."
 msgstr "La fecha de entrega no se puede establecer antes de la fecha de publicación."
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_assignment_sub_line
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_form
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_assignment_sub_line
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_form
 msgid "Submissions"
 msgstr "Entregas"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_sub_line_form
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_sub_line_form
 msgid "Submit"
 msgstr "Entregar"
 
 #. module: education_assignment
-#: selection:op.assignment.sub.line,state:0
+#: selection:education.assignment.sub.line,state:0
 msgid "Submitted"
 msgstr "Entregado"
 
 #. module: education_assignment
-#: model:ir.ui.view,arch_db:education_assignment.view_op_assignment_type_search
+#: model:ir.ui.view,arch_db:education_assignment.view_education_assignment_type_search
 msgid "Tag"
 msgstr "Etiqueta"
 
 #. module: education_assignment
-#: model:ir.model.fields,help:education_assignment.field_op_assignment_sub_line_faculty_user_id
-#: model:ir.model.fields,help:education_assignment.field_op_assignment_sub_line_user_id
+#: model:ir.model.fields,help:education_assignment.field_education_assignment_sub_line_faculty_user_id
+#: model:ir.model.fields,help:education_assignment.field_education_assignment_sub_line_user_id
 msgid "The internal user that is in charge of communicating with this contact if any."
 msgstr "El usuario interno encargado de comunicarse con este contacto si lo hubiese."
 
 #. module: education_assignment
-#: model:ir.model.fields,field_description:education_assignment.field_op_assignment_sub_line_user_id
+#: model:ir.model.fields,field_description:education_assignment.field_education_assignment_sub_line_user_id
 msgid "User"
 msgstr "Usuario"
 
@@ -388,11 +388,11 @@ msgid "You can't delete none draft submissions!"
 msgstr "¡No puedes borrar ninguna presentación de borrador!"
 
 #. module: education_assignment
-#: model:ir.model,name:education_assignment.model_op_assignment_type
-msgid "op.assignment.type"
-msgstr "op.assignment.type"
+#: model:ir.model,name:education_assignment.model_education_assignment_type
+msgid "education.assignment.type"
+msgstr "education.assignment.type"
 
 #. module: education_assignment
-#: model:ir.model,name:education_assignment.model_op_student
-msgid "op.student"
-msgstr "op.student"
+#: model:ir.model,name:education_assignment.model_education_student
+msgid "education.student"
+msgstr "education.student"

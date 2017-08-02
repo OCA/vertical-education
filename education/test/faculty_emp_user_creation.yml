@@ -11,13 +11,13 @@
 -
   In order to check employee creation create Faculty first
 -
-  !record {model: op.faculty, id: faculty_aadolf_test}:
+  !record {model: education.faculty, id: faculty_aadolf_test}:
     name: 'Aadolf'
     title: base.res_partner_title_mister
     middle_name: 'D'
     last_name: 'Church'
     gender: 'male'
-    birth_date: '1983-02-01'
+    birthdate_date: '1983-02-01'
     blood_group: 'A+'
     email: 'aadolfdchurch@demo.com'
     city: 'New York'
@@ -30,19 +30,19 @@
 -
   I called the "Create Employee" wizard
 -
-  !record {model: wizard.op.faculty.employee, id: faculty_employee_wiz_0}:
+  !record {model: wizard.education.faculty.employee, id: faculty_employee_wiz_0}:
     user_boolean: True
 -
   I clicked on Create Employee Button
 -
-  !python {model: wizard.op.faculty.employee, id: False}: |
+  !python {model: wizard.education.faculty.employee, id: False}: |
     self.browse(ref("faculty_employee_wiz_0")).with_context({"lang": 'en_US',
-      "tz": False, "active_model": "op.faculty", "active_ids": [ref("faculty_aadolf_test")],
+      "tz": False, "active_model": "education.faculty", "active_ids": [ref("faculty_aadolf_test")],
       "active_id": ref("faculty_aadolf_test"), }).create_employee()
 -
   I check that the employee field is set automatically when create employee.
 -
-  !assert {model: op.faculty, id: faculty_aadolf_test}:
+  !assert {model: education.faculty, id: faculty_aadolf_test}:
     - emp_id.id != False
 
 -
@@ -53,13 +53,13 @@
 -
   In order to check employee creation without user create Faculty first
 -
-  !record {model: op.faculty, id: faculty_dylan_test}:
+  !record {model: education.faculty, id: faculty_dylan_test}:
     name: 'Dylan'
     title: base.res_partner_title_mister
     middle_name: 'Q'
     last_name: 'Hidalgo'
     gender: 'male'
-    birth_date: '1983-02-01'
+    birthdate_date: '1983-02-01'
     blood_group: 'O+'
     email: 'dylanqhidalgo@demo.com'
     city: 'New Jersey'
@@ -72,19 +72,19 @@
 -
   I called again the "Create Employee" wizard
 -
-  !record {model: wizard.op.faculty.employee, id: faculty_employee_wiz_1}:
+  !record {model: wizard.education.faculty.employee, id: faculty_employee_wiz_1}:
     user_boolean: False
 -
   I clicked on Create Employee Button
 -
-  !python {model: wizard.op.faculty.employee, id: False}: |
+  !python {model: wizard.education.faculty.employee, id: False}: |
     self.browse(ref("faculty_employee_wiz_1")).with_context({"lang": 'en_US',
-      "tz": False, "active_model": "op.faculty", "active_ids": [ref("faculty_dylan_test")],
+      "tz": False, "active_model": "education.faculty", "active_ids": [ref("faculty_dylan_test")],
       "active_id": ref("faculty_dylan_test"), }).create_employee()
 -
   I check that the Employee field is set automatically when create Employee.
 -
-  !assert {model: op.faculty, id: faculty_dylan_test}:
+  !assert {model: education.faculty, id: faculty_dylan_test}:
     - emp_id.id != False
 
 

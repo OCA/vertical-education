@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="op_facility_line_tree_view">
-            <field name="name">op.facility.line.tree</field>
-            <field name="model">op.facility.line</field>
+        <record model="ir.ui.view" id="education_facility_line_tree_view">
+            <field name="name">education.facility.line.tree</field>
+            <field name="model">education.facility.line</field>
             <field name="arch" type="xml">
                 <tree string="Facilities">
                     <field name="facility_id" />
@@ -11,9 +11,9 @@
                 </tree>
             </field>
         </record>
-        <record id="op_facility_line_form_view" model="ir.ui.view">
-            <field name="name">op.facility.line.form</field>
-            <field name="model">op.facility.line</field>
+        <record id="education_facility_line_form_view" model="ir.ui.view">
+            <field name="name">education.facility.line.form</field>
+            <field name="model">education.facility.line</field>
             <field name="arch" type="xml">
                 <form string="Facilities">
                     <group colspan="4" col="4">

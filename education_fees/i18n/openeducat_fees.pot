@@ -16,12 +16,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_fees
-#: view:op.student:education_fees.view_op_student_form_fees_inherit
+#: view:education.student:education_fees.view_education_student_form_fees_inherit
 msgid "Invoiced"
 msgstr ""
 
 #. module: education_fees
-#: field:op.course,payment_term:0
+#: field:education.course,payment_term:0
 msgid "Payment Term"
 msgstr ""
 

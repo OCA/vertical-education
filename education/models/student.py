@@ -6,15 +6,15 @@ from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 
 
-class OpStudentCourse(models.Model):
-    _name = 'op.student.course'
+class EducationStudentCourse(models.Model):
+    _name = 'education.student.course'
     _description = 'Student Course Details'
 
-    student_id = fields.Many2one('op.student', 'Student', ondelete="cascade")
-    course_id = fields.Many2one('op.course', 'Course', required=True)
-    batch_id = fields.Many2one('op.batch', 'Batch', required=True)
+    student_id = fields.Many2one('education.student', 'Student', ondelete="cascade")
+    course_id = fields.Many2one('education.course', 'Course', required=True)
+    batch_id = fields.Many2one('education.batch', 'Batch', required=True)
     roll_number = fields.Char('Roll Number')
-    subject_ids = fields.Many2many('op.subject', string='Subjects')
+    subject_ids = fields.Many2many('education.subject', string='Subjects')
 
     _sql_constraints = [
         ('unique_name_roll_number_id',
@@ -29,13 +29,12 @@ class OpStudentCourse(models.Model):
     ]
 
 
-class OpStudent(models.Model):
-    _name = 'op.student'
+class EducationStudent(models.Model):
+    _name = 'education.student'
     _inherits = {'res.partner': 'partner_id'}
 
     middle_name = fields.Char('Middle Name', size=128)
     last_name = fields.Char('Last Name', size=128, required=True)
-    birth_date = fields.Date('Birth Date', required=True)
     blood_group = fields.Selection(
         [('A+', 'A+ve'), ('B+', 'B+ve'), ('O+', 'O+ve'), ('AB+', 'AB+ve'),
          ('A-', 'A-ve'), ('B-', 'B-ve'), ('O-', 'O-ve'), ('AB-', 'AB-ve')],
@@ -52,14 +51,14 @@ class OpStudent(models.Model):
     partner_id = fields.Many2one(
         'res.partner', 'Partner', required=True, ondelete="cascade")
     gr_no = fields.Char("GR Number", size=20)
-    category_id = fields.Many2one('op.category', 'Category')
-    course_detail_ids = fields.One2many('op.student.course', 'student_id',
+    category_id = fields.Many2one('education.category', 'Category')
+    course_detail_ids = fields.One2many('education.student.course', 'student_id',
                                         'Course Details')
 
     @api.multi
-    @api.constrains('birth_date')
+    @api.constrains('birthdate_date')
     def _check_birthdate(self):
         for record in self:
-            if record.birth_date > fields.Date.today():
+            if record.birthdate_date > fields.Date.today():
                 raise ValidationError(_(
                     "Birth Date can't be greater than current date!"))

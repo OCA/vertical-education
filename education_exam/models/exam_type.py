@@ -23,7 +23,7 @@ from odoo import models, fields
 
 
 class OpExamType(models.Model):
-    _name = 'op.exam.type'
+    _name = 'education.exam.type'
 
     name = fields.Char('Name', size=256, required=True)
     code = fields.Char('Code', size=4, required=True)

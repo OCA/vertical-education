@@ -16,66 +16,66 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_timetable
-#: selection:op.period,minute:0
+#: selection:education.period,minute:0
 msgid "00"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,hour:0
+#: selection:education.period,hour:0
 msgid "10"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,hour:0
+#: selection:education.period,hour:0
 msgid "11"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,hour:0
+#: selection:education.period,hour:0
 msgid "12"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,minute:0
+#: selection:education.period,minute:0
 msgid "15"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,minute:0
+#: selection:education.period,minute:0
 msgid "30"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,minute:0
+#: selection:education.period,minute:0
 msgid "45"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,am_pm:0
+#: selection:education.period,am_pm:0
 msgid "AM"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.period,am_pm:0
+#: field:education.period,am_pm:0
 msgid "AM/PM"
 msgstr ""
 
 #. module: education_timetable
 #: field:generate.time.table,batch_id:0
-#: view:op.timetable:education_timetable.view_op_timetable_search
-#: field:op.timetable,batch_id:0
+#: view:education.timetable:education_timetable.view_education_timetable_search
+#: field:education.timetable,batch_id:0
 #: field:time.table.report,batch_id:0
 msgid "Batch"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_timetable_kanban
+#: view:education.timetable:education_timetable.view_timetable_kanban
 #: view:website:education_timetable.report_timetable_student_generate
 msgid "Batch:"
 msgstr ""
 
 #. module: education_timetable
-#: model:ir.actions.act_window,name:education_timetable.act_op_faculty_period_today
+#: model:ir.actions.act_window,name:education_timetable.act_education_faculty_period_today
 msgid "Book"
 msgstr ""
 
@@ -91,28 +91,28 @@ msgid "Close"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.timetable,color:0
+#: field:education.timetable,color:0
 msgid "Color Index"
 msgstr ""
 
 #. module: education_timetable
 #: field:generate.time.table,course_id:0
-#: view:op.timetable:education_timetable.view_op_timetable_search
-#: field:op.timetable,course_id:0
+#: view:education.timetable:education_timetable.view_education_timetable_search
+#: field:education.timetable,course_id:0
 #: field:time.table.report,course_id:0
 msgid "Course"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_timetable_kanban
+#: view:education.timetable:education_timetable.view_timetable_kanban
 msgid "Course:"
 msgstr ""
 
 #. module: education_timetable
 #: field:gen.time.table.line,create_uid:0
 #: field:generate.time.table,create_uid:0
-#: field:op.period,create_uid:0
-#: field:op.timetable,create_uid:0
+#: field:education.period,create_uid:0
+#: field:education.timetable,create_uid:0
 #: field:time.table.report,create_uid:0
 msgid "Created by"
 msgstr ""
@@ -120,8 +120,8 @@ msgstr ""
 #. module: education_timetable
 #: field:gen.time.table.line,create_date:0
 #: field:generate.time.table,create_date:0
-#: field:op.period,create_date:0
-#: field:op.timetable,create_date:0
+#: field:education.period,create_date:0
+#: field:education.timetable,create_date:0
 #: field:time.table.report,create_date:0
 msgid "Created on"
 msgstr ""
@@ -132,27 +132,27 @@ msgid "Day"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.timetable,type:0
+#: field:education.timetable,type:0
 msgid "Days"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_timetable_kanban
+#: view:education.timetable:education_timetable.view_timetable_kanban
 msgid "Delete"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.period,duration:0
+#: field:education.period,duration:0
 msgid "Duration"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_timetable_kanban
+#: view:education.timetable:education_timetable.view_timetable_kanban
 msgid "Edit..."
 msgstr ""
 
 #. module: education_timetable
-#: field:op.timetable,end_datetime:0
+#: field:education.timetable,end_datetime:0
 msgid "End"
 msgstr ""
 
@@ -170,8 +170,8 @@ msgstr ""
 
 #. module: education_timetable
 #: field:gen.time.table.line,faculty_id:0
-#: view:op.timetable:education_timetable.view_op_timetable_search
-#: field:op.timetable,faculty_id:0
+#: view:education.timetable:education_timetable.view_education_timetable_search
+#: field:education.timetable,faculty_id:0
 #: field:time.table.report,faculty_id:0
 #: selection:time.table.report,state:0
 msgid "Faculty"
@@ -188,14 +188,14 @@ msgid "Faculty Time Table"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_timetable_kanban
+#: view:education.timetable:education_timetable.view_timetable_kanban
 msgid "Faculty:"
 msgstr ""
 
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: view:generate.time.table:education_timetable.view_generate_time_table_form
-#: selection:op.timetable,type:0
+#: selection:education.timetable,type:0
 msgid "Friday"
 msgstr ""
 
@@ -233,20 +233,20 @@ msgid "Generate TimeTable"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_op_timetable_search
+#: view:education.timetable:education_timetable.view_education_timetable_search
 msgid "Group By..."
 msgstr ""
 
 #. module: education_timetable
-#: field:op.period,hour:0
+#: field:education.period,hour:0
 msgid "Hours"
 msgstr ""
 
 #. module: education_timetable
 #: field:gen.time.table.line,id:0
 #: field:generate.time.table,id:0
-#: field:op.period,id:0
-#: field:op.timetable,id:0
+#: field:education.period,id:0
+#: field:education.timetable,id:0
 #: field:report.education_timetable.report_timetable_student_generate,id:0
 #: field:report.education_timetable.report_timetable_teacher_generate,id:0
 #: field:time.table.report,id:0
@@ -256,8 +256,8 @@ msgstr ""
 #. module: education_timetable
 #: field:gen.time.table.line,write_uid:0
 #: field:generate.time.table,write_uid:0
-#: field:op.period,write_uid:0
-#: field:op.timetable,write_uid:0
+#: field:education.period,write_uid:0
+#: field:education.timetable,write_uid:0
 #: field:time.table.report,write_uid:0
 msgid "Last Updated by"
 msgstr ""
@@ -265,8 +265,8 @@ msgstr ""
 #. module: education_timetable
 #: field:gen.time.table.line,write_date:0
 #: field:generate.time.table,write_date:0
-#: field:op.period,write_date:0
-#: field:op.timetable,write_date:0
+#: field:education.period,write_date:0
+#: field:education.timetable,write_date:0
 #: field:time.table.report,write_date:0
 msgid "Last Updated on"
 msgstr ""
@@ -278,19 +278,19 @@ msgid "MON"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.period,minute:0
+#: field:education.period,minute:0
 msgid "Minute"
 msgstr ""
 
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: view:generate.time.table:education_timetable.view_generate_time_table_form
-#: selection:op.timetable,type:0
+#: selection:education.timetable,type:0
 msgid "Monday"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.period,name:0
+#: field:education.period,name:0
 msgid "Name"
 msgstr ""
 
@@ -301,19 +301,19 @@ msgid "PERIOD"
 msgstr ""
 
 #. module: education_timetable
-#: selection:op.period,am_pm:0
+#: selection:education.period,am_pm:0
 msgid "PM"
 msgstr ""
 
 #. module: education_timetable
 #: field:gen.time.table.line,period_id:0
-#: model:ir.actions.act_window,name:education_timetable.act_op_student_period_today
-#: model:ir.model,name:education_timetable.model_op_period
-#: view:op.period:education_timetable.view_op_period_form
-#: view:op.period:education_timetable.view_op_period_search
-#: view:op.period:education_timetable.view_op_period_tree
-#: view:op.timetable:education_timetable.view_op_timetable_search
-#: field:op.timetable,period_id:0
+#: model:ir.actions.act_window,name:education_timetable.act_education_student_period_today
+#: model:ir.model,name:education_timetable.model_education_period
+#: view:education.period:education_timetable.view_education_period_form
+#: view:education.period:education_timetable.view_education_period_search
+#: view:education.period:education_timetable.view_education_period_tree
+#: view:education.timetable:education_timetable.view_education_timetable_search
+#: field:education.timetable,period_id:0
 msgid "Period"
 msgstr ""
 
@@ -324,8 +324,8 @@ msgid "Period for Today"
 msgstr ""
 
 #. module: education_timetable
-#: model:ir.actions.act_window,name:education_timetable.act_open_op_period_view
-#: model:ir.ui.menu,name:education_timetable.menu_op_period
+#: model:ir.actions.act_window,name:education_timetable.act_open_education_period_view
+#: model:ir.ui.menu,name:education_timetable.menu_education_period
 msgid "Periods"
 msgstr ""
 
@@ -338,7 +338,7 @@ msgstr ""
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: view:generate.time.table:education_timetable.view_generate_time_table_form
-#: selection:op.timetable,type:0
+#: selection:education.timetable,type:0
 msgid "Saturday"
 msgstr ""
 
@@ -348,12 +348,12 @@ msgid "Select"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.period,sequence:0
+#: field:education.period,sequence:0
 msgid "Sequence"
 msgstr ""
 
 #. module: education_timetable
-#: field:op.timetable,start_datetime:0
+#: field:education.timetable,start_datetime:0
 msgid "Start"
 msgstr ""
 
@@ -370,13 +370,13 @@ msgstr ""
 
 #. module: education_timetable
 #: field:gen.time.table.line,subject_id:0
-#: view:op.timetable:education_timetable.view_op_timetable_search
-#: field:op.timetable,subject_id:0
+#: view:education.timetable:education_timetable.view_education_timetable_search
+#: field:education.timetable,subject_id:0
 msgid "Subject"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_timetable_kanban
+#: view:education.timetable:education_timetable.view_timetable_kanban
 msgid "Subject:"
 msgstr ""
 
@@ -400,22 +400,22 @@ msgstr ""
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: view:generate.time.table:education_timetable.view_generate_time_table_form
-#: selection:op.timetable,type:0
+#: selection:education.timetable,type:0
 msgid "Thursday"
 msgstr ""
 
 #. module: education_timetable
 #: field:gen.time.table.line,gen_time_table:0
 #: view:generate.time.table:education_timetable.view_generate_time_table_form
-#: model:ir.model,name:education_timetable.model_op_timetable
-#: view:op.faculty:education_timetable.view_op_faculty_form_timetable_inherit
-#: field:op.faculty,timetable_ids:0
-#: view:op.timetable:education_timetable.view_op_timetable_calendar
-#: view:op.timetable:education_timetable.view_op_timetable_calendar_dash
-#: view:op.timetable:education_timetable.view_op_timetable_faculty_calendar_dash
-#: view:op.timetable:education_timetable.view_op_timetable_form
-#: view:op.timetable:education_timetable.view_op_timetable_search
-#: view:op.timetable:education_timetable.view_op_timetable_tree
+#: model:ir.model,name:education_timetable.model_education_timetable
+#: view:education.faculty:education_timetable.view_education_faculty_form_timetable_inherit
+#: field:education.faculty,timetable_ids:0
+#: view:education.timetable:education_timetable.view_education_timetable_calendar
+#: view:education.timetable:education_timetable.view_education_timetable_calendar_dash
+#: view:education.timetable:education_timetable.view_education_timetable_faculty_calendar_dash
+#: view:education.timetable:education_timetable.view_education_timetable_form
+#: view:education.timetable:education_timetable.view_education_timetable_search
+#: view:education.timetable:education_timetable.view_education_timetable_tree
 #: view:website:education_timetable.report_timetable_student_generate
 msgid "Time Table"
 msgstr ""
@@ -437,9 +437,9 @@ msgid "Time Table Report"
 msgstr ""
 
 #. module: education_timetable
-#: model:ir.actions.act_window,name:education_timetable.act_open_op_timetable_view
-#: model:ir.ui.menu,name:education_timetable.menu_op_timetable
-#: model:ir.ui.menu,name:education_timetable.menu_op_timetable_main
+#: model:ir.actions.act_window,name:education_timetable.act_open_education_timetable_view
+#: model:ir.ui.menu,name:education_timetable.menu_education_timetable
+#: model:ir.ui.menu,name:education_timetable.menu_education_timetable_main
 msgid "Time Tables"
 msgstr ""
 
@@ -455,14 +455,14 @@ msgid "To Date:"
 msgstr ""
 
 #. module: education_timetable
-#: view:op.timetable:education_timetable.view_op_timetable_search
+#: view:education.timetable:education_timetable.view_education_timetable_search
 msgid "Today"
 msgstr ""
 
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: view:generate.time.table:education_timetable.view_generate_time_table_form
-#: selection:op.timetable,type:0
+#: selection:education.timetable,type:0
 msgid "Tuesday"
 msgstr ""
 
@@ -475,7 +475,7 @@ msgstr ""
 #. module: education_timetable
 #: selection:gen.time.table.line,day:0
 #: view:generate.time.table:education_timetable.view_generate_time_table_form
-#: selection:op.timetable,type:0
+#: selection:education.timetable,type:0
 msgid "Wednesday"
 msgstr ""
 

@@ -22,7 +22,7 @@ from odoo import models, fields
 
 
 class OpGradeConfiguration(models.Model):
-    _name = 'op.grade.configuration'
+    _name = 'education.grade.configuration'
     _rec_name = 'result'
 
     min_per = fields.Integer('Minimum Percentage', required=True)

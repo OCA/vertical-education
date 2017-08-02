@@ -48,9 +48,9 @@ class ReportMediaBarcode(models.AbstractModel):
 
     @api.model
     def render_html(self, docids, data=None):
-        docs = self.env['op.media'].browse(docids)
+        docs = self.env['education.media'].browse(docids)
         docargs = {
-            'doc_model': 'op.media',
+            'doc_model': 'education.media',
             'docs': docs,
             'time': time,
             'get_barcode': self.get_barcode,

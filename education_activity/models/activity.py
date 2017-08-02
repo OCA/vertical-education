@@ -23,12 +23,12 @@ from odoo import models, fields
 
 
 class OpActivity(models.Model):
-    _name = 'op.activity'
+    _name = 'education.activity'
     _rec_name = 'student_id'
     _inherit = 'mail.thread'
 
-    student_id = fields.Many2one('op.student', 'Student', required=True)
-    faculty_id = fields.Many2one('op.faculty', 'Faculty')
-    type_id = fields.Many2one('op.activity.type', 'Activity Type')
+    student_id = fields.Many2one('education.student', 'Student', required=True)
+    faculty_id = fields.Many2one('education.faculty', 'Faculty')
+    type_id = fields.Many2one('education.activity.type', 'Activity Type')
     description = fields.Text('Description')
     date = fields.Date('Date', default=fields.Date.today())

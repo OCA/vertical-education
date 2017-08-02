@@ -51,12 +51,12 @@ class ReportTicket(models.AbstractModel):
 
     def get_data(self, data):
         final_lst = []
-        exam_session = self.env['op.exam.session'].browse(
+        exam_session = self.env['education.exam.session'].browse(
             data['exam_session_id'][0])
-        student_search = self.env['op.student'].search(
+        student_search = self.env['education.student'].search(
             [('course_detail_ids.course_id', '=', exam_session.course_id.id)])
         for student in student_search:
-            student_course = self.env['op.student.course'].search(
+            student_course = self.env['education.student.course'].search(
                 [('student_id', '=', student.id),
                  ('course_id', '=', exam_session.course_id.id)])
             res = {
