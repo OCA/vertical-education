@@ -13,7 +13,9 @@ class OpCourse(models.Model):
     parent_id = fields.Many2one('op.course', 'Parent Course')
     section = fields.Char('Section', size=32, required=True)
     evaluation_type = fields.Selection(
-        [('normal', 'Normal'), ('GPA', 'GPA'), ('CWA', 'CWA'), ('CCE', 'CCE')],
+        [('normal', 'Normal'),
+         ('GPA', 'Grade Point Average'),
+         ('CWA', 'Course Weighted Average')],
         'Evaluation Type', default="normal", required=True)
     subject_ids = fields.Many2many('op.subject', string='Subject(s)')
     max_unit_load = fields.Float("Maximum Unit Load")

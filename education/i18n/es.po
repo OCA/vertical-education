@@ -287,11 +287,6 @@ msgstr "Rebote"
 
 #. module: education_core
 #: selection:op.course,evaluation_type:0
-msgid "CCE"
-msgstr "CCE"
-
-#. module: education_core
-#: selection:op.course,evaluation_type:0
 msgid "CWA"
 msgstr "CWA"
 

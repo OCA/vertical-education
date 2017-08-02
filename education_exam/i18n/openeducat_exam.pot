@@ -32,10 +32,6 @@ msgstr ""
 msgid "Batch"
 msgstr ""
 
-#. module: education_exam
-#: selection:op.exam,evaluation_type:0
-msgid "CCE"
-msgstr ""
 
 #. module: education_exam
 #: selection:op.exam,evaluation_type:0
@@ -940,4 +936,3 @@ msgstr ""
 #: field:op.result.exam.line,weightage:0
 msgid "Weightage"
 msgstr ""
-
