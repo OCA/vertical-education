@@ -34,7 +34,7 @@
         'views/subject_registration_view.xml',
         'dashboard/student_dashboard_view.xml',
         'dashboard/faculty_dashboard_view.xml',
-        'menu/education_core_menu.xml',
+        'menu/education_menu.xml',
         'menu/faculty_menu.xml',
         'menu/student_menu.xml',
     ],
