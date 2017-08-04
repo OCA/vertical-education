@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<odoo>
-    <data>
-        <menuitem id="menu_education_facility_sub" name="Facilities"
-            parent="education.menu_education_school_config_general" sequence="20"
-            action="act_open_education_facility_view" groups="education.group_education_back_office,education.group_education_back_office_admin" />
-    </data>
-</odoo>

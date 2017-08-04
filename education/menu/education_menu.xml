@@ -35,6 +35,7 @@
         <menuitem id="menu_education_subject_sub" name="Subjects" sequence="10" parent="menu_education_school_config_subject"
             action="act_open_education_subject_view" groups="group_education_back_office,group_education_back_office_admin,education.group_education_faculty" />
 
+         <menuitem id="menu_education_school_config_general" name="General Management" parent="menu_education_school_config" sequence="80"/>
 
         <!-- Activity Root -->
         <menuitem id="menu_education_school_config_activity" name="Activity Management" parent="menu_education_school_config" sequence="40" />
