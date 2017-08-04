@@ -12,7 +12,7 @@
     'sequence': 1,
     'summary': 'Manage Students, Faculties and Education Institute',
     'complexity': 'easy',
-    'author': 'Tech Receptives',
+    'author': 'Tech Receptives, PESOL, Odoo Community Association (OCA)',
     'depends': [
         'board',
         'document',
@@ -45,9 +45,7 @@
         'menu/student_menu.xml',
     ],
     'demo': [
-        'demo/base_demo.xml',
         'demo/res_partner_demo.xml',
-        'demo/res_users_demo.xml',
         'demo/subject_demo.xml',
         'demo/course_demo.xml',
         'demo/batch_demo.xml',
