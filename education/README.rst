@@ -2,9 +2,9 @@
    :target: http://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-=========
-Education
-=========
+===========================
+Education Management System
+===========================
 
 This module provide Education Management System over Odoo
 

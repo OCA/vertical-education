@@ -35,7 +35,8 @@ class EducationBatch(models.Model):
             while courses.parent_id:
                 lst.append(courses.parent_id.id)
                 courses = courses.parent_id
-            batches = self.env['education.batch'].search([('course_id', 'in', lst)])
+            batches = self.env['education.batch'].search(
+                [('course_id', 'in', lst)])
             return batches.name_get()
         return super(EducationBatch, self).name_search(
             name, args, operator=operator, limit=limit)
