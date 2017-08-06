@@ -53,10 +53,6 @@
         'demo/student_course_demo.xml',
         'demo/faculty_demo.xml',
     ],
-    'test': [
-        'test/res_users_test.yml',
-        'test/faculty_emp_user_creation.yml',
-    ],
     'installable': True,
     'auto_install': False,
     'application': True,
