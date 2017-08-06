@@ -21,14 +21,13 @@
 
 {
     'name': 'Education Attendance',
-    'version': '10.0.3.0.0',
+    'version': '10.0.1.0.0',
     'license': 'LGPL-3',
     'category': 'Education',
     "sequence": 3,
     'summary': 'Manage Attendances',
     'complexity': "easy",
-    'author': 'Tech Receptives',
-    'website': 'http://www.education.org',
+    'author': 'Tech Receptives, PESOL, Odoo Community Association (OCA)',
     'depends': ['education', 'education_timetable'],
     'data': [
         'security/ir.model.access.csv',
@@ -39,7 +38,7 @@
         'wizards/student_attendance_wizard_view.xml',
         'report/student_attendance_report.xml',
         'report/report_menu.xml',
-        'attendance_menu.xml'
+        'views/attendance_menu.xml'
     ],
     'test': [
         'test/res_users_test.yml',
@@ -51,10 +50,7 @@
         'demo/attendance_sheet_demo.xml',
         'demo/attendance_line_demo.xml',
     ],
-    'images': [
-        'static/description/education_attendance_banner.jpg',
-    ],
-    'installable': False,
+    'installable': True,
     'auto_install': False,
-    'application': True,
+    'application': False,
 }
