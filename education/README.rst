@@ -33,6 +33,7 @@ Using this module, you can manage:
 - Subjects.
 - Courses with their Subjects.
 - Batches, that are courses that are done in a specific dates.
+- Subjects Registration.
 - Admission Details for each Student in each Batch.
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas

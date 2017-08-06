@@ -2,7 +2,7 @@
 # Copyright 2009-TODAY Tech-Receptives(<http://www.techreceptives.com>)
 # Copyright 2017 Pesol (<http://pesol.es>)
 #                Angel Moya <angel.moya@pesol.es>
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
 
 {
     'name': 'Education',
