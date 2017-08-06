@@ -1,27 +1,11 @@
 # -*- coding: utf-8 -*-
-##############################################################################
-#
-#    Tech-Receptives Solutions Pvt. Ltd.
-#    Copyright (C) 2009-TODAY Tech Receptives(<http://www.techreceptives.com>).
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Lesser General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Lesser General Public License for more details.
-#
-#    You should have received a copy of the GNU Lesser General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
+# Copyright 2009-TODAY Tech-Receptives(<http://www.techreceptives.com>)
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
+
 from odoo import models, api, fields, exceptions, _
 
 
-class OpFeesTermsLine(models.Model):
+class EducationFeesTermsLine(models.Model):
     _name = 'education.fees.terms.line'
 
     due_days = fields.Integer('Due Days')
@@ -29,7 +13,7 @@ class OpFeesTermsLine(models.Model):
     fees_id = fields.Many2one('education.fees.terms', 'Fees')
 
 
-class OpFeesTerms(models.Model):
+class EducationFeesTerms(models.Model):
     _name = 'education.fees.terms'
 
     name = fields.Char('Fees Terms', required=True)
@@ -44,7 +28,7 @@ class OpFeesTerms(models.Model):
 
     @api.model
     def create(self, vals):
-        res = super(OpFeesTerms, self).create(vals)
+        res = super(EducationFeesTerms, self).create(vals)
         if not res.line_ids:
             raise exceptions.AccessError(_("Fees Terms must be Required!"))
         total = 0.0

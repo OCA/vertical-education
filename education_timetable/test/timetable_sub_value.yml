@@ -63,10 +63,10 @@
    In order to use it in Timetable I create Faculty first
 -
   !record {model: education.faculty, id: faculty_dylan_test}:
-    name: 'Dylan'
+    firstname: 'Dylan'
     title: base.res_partner_title_mister
-    middle_name: 'Q'
-    last_name: 'Hidalgo'
+    lastname: 'Q'
+    lastname2: 'Hidalgo'
     gender: 'male'
     birthdate_date: '1983-02-01'
     blood_group: 'O+'

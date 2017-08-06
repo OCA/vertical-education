@@ -1,23 +1,6 @@
 # -*- coding: utf-8 -*-
-###############################################################################
-#
-#    Tech-Receptives Solutions Pvt. Ltd.
-#    Copyright (C) 2009-TODAY Tech-Receptives(<http://www.techreceptives.com>).
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Lesser General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Lesser General Public License for more details.
-#
-#    You should have received a copy of the GNU Lesser General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-###############################################################################
+# Copyright 2009-TODAY Tech-Receptives(<http://www.techreceptives.com>)
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
 
 import calendar
 import datetime
@@ -34,7 +17,7 @@ week_days = [(calendar.day_name[0], _(calendar.day_name[0])),
              (calendar.day_name[6], _(calendar.day_name[6]))]
 
 
-class OpSession(models.Model):
+class Session(models.Model):
     _name = 'education.session'
     _inherit = ['mail.thread']
     _description = 'Sessions'
@@ -114,7 +97,7 @@ class OpSession(models.Model):
 
     @api.model
     def create(self, values):
-        res = super(OpSession, self).create(values)
+        res = super(Session, self).create(values)
         mfids = res.message_follower_ids
         partner_val = []
         partner_ids = []
@@ -191,7 +174,7 @@ class OpSession(models.Model):
     @api.multi
     @api.model
     def write(self, vals):
-        data = super(OpSession,
+        data = super(Session,
                      self.with_context(check_move_validity=False)).write(vals)
         if self.state not in ('draft', 'done'):
             self.notify_user()
