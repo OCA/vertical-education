@@ -1279,7 +1279,7 @@ msgid "Profile"
 msgstr "Perfil"
 
 #. module: education
-#. openerp-web
+#. odoo-web
 #: code:addons/education/static/src/xml/base.xml:11
 #, python-format
 msgid "Provided by"
@@ -1557,7 +1557,7 @@ msgid "Tax Identification Number. Fill it if the company is subjected to taxes. 
 msgstr "Número de identificación fiscal. Llénelo si la compañía esta sujeta a impuestos. Usado por algunos documentos legales."
 
 #. module: education
-#. openerp-web
+#. odoo-web
 #: code:addons/education/static/src/xml/base.xml:11
 #, python-format
 msgid "Tech Receptives"

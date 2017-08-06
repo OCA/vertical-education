@@ -1,23 +1,6 @@
 # -*- coding: utf-8 -*-
-###############################################################################
-#
-#    Tech-Receptives Solutions Pvt. Ltd.
-#    Copyright (C) 2009-TODAY Tech-Receptives(<http://www.techreceptives.com>).
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Lesser General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Lesser General Public License for more details.
-#
-#    You should have received a copy of the GNU Lesser General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-###############################################################################
+# Copyright 2009-TODAY Tech-Receptives(<http://www.techreceptives.com>)
+# License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
 
 import time
 
@@ -64,9 +47,7 @@ class ReportTicket(models.AbstractModel):
                 'exam_code': exam_session.exam_code,
                 'course': exam_session.course_id.name,
                 'student': student.name,
-                'photo': student.photo,
-                'student_middle': student.middle_name,
-                'student_last': student.last_name,
+                'image': student.image,
                 'roll_number': student_course.roll_number,
                 'line': self.get_subject(exam_session),
             }

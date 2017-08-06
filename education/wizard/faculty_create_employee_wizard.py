@@ -2,7 +2,7 @@
 # Copyright 2009-TODAY Tech-Receptives(<http://www.techreceptives.com>)
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html)
 
-from openerp import models, fields, api
+from odoo import models, fields, api
 
 
 class WizardEducationFacultyEmployee(models.TransientModel):

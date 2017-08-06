@@ -1192,7 +1192,7 @@ msgid "Practical"
 msgstr ""
 
 #. module: education
-#. openerp-web
+#. odoo-web
 #: code:addons/education/static/src/xml/base.xml:11
 #, python-format
 msgid "Provided by"
@@ -1411,7 +1411,7 @@ msgid "Tax Identification Number. Fill it if the company is subjected to taxes. 
 msgstr ""
 
 #. module: education
-#. openerp-web
+#. odoo-web
 #: code:addons/education/static/src/xml/base.xml:11
 #, python-format
 msgid "Tech Receptives"

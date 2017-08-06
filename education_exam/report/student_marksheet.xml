@@ -44,10 +44,6 @@
                                                                 :
                                                                 <span
                                                                     t-raw="'%s' % line.student_id.name if line.student_id.name else ''" />
-                                                                <span
-                                                                    t-raw="'%s' % line.student_id.middle_name if line.student_id.middle_name else ''" />
-                                                                <span
-                                                                    t-raw="'%s' % line.student_id.last_name if line.student_id.last_name else ''" />
                                                             </td>
                                                             <td
                                                                 width="15%">
@@ -210,10 +206,6 @@
                                                                 :
                                                                 <span
                                                                     t-raw="'%s' % line.student_id.name if line.student_id.name else ''" />
-                                                                <span
-                                                                    t-raw="'%s' % line.student_id.middle_name if line.student_id.middle_name else ''" />
-                                                                <span
-                                                                    t-raw="'%s' % line.student_id.last_name if line.student_id.last_name else ''" />
                                                             </td>
                                                             <td
                                                                 width="15%">
