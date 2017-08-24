@@ -8,11 +8,11 @@ Education Management System - Attendance
 
 This module provide attendance for Education Management System over Odoo.
 
-Features includes managing Attendance Sheets and Attendance Registers.
+Features includes managing:
 
-Attendance Sheet can register Attendance Lines for each student on a session.
-
-Attendance Register can group several Attendance Sheets for same batch.
+* Attendance Sheets and Attendance Registers.
+* Attendance Sheet can register Attendance Lines for each student on a session.
+* Attendance Register can group several Attendance Sheets for same batch.
 
 Usage
 =====
@@ -34,6 +34,7 @@ Known issues / Roadmap
 
 * Wizard to create Attendance Register for course, subject or faculty, by day or week.
 * Create Attendance Lines for Attendance Sheet on Session onchange.
+* On Attendance Sheet Session onchange update attendance date.
 * Report to print Attendance Sheet.
 * Report to print Attendance Register.
 
