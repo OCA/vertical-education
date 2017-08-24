@@ -6,7 +6,7 @@
 Education Management System - Attendance
 ========================================
 
-This module provide attendance for Education Management System over Odoo
+This module provide attendance for Education Management System over Odoo.
 
 Features includes managing Attendance Sheets and Attendance Registers.
 
@@ -19,7 +19,7 @@ Usage
 
 First of all you need to create timetable and generate session, see education_timetable module.
 
-Then you can:
+Then, on Attendances menu, you can:
 * create an Attendance Register, for a batch, it can be done for a week or day.
 * create several Attendance Sheets for this Attendance Register, one per session.
 * On each Attendance Sheet you can create Attencance Line for each student.
