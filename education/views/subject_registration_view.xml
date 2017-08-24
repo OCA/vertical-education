@@ -50,7 +50,7 @@
                             <field name="max_unit_load" />
                         </group>
                         <button name="get_subjects" type="object" string="Get Subjects" class="oe_highlight" />
-                        <group>
+                        <group name="subjects">
                             <separator string="Compulsory Subjects"
                                 colspan="2" />
                             <field name="compulsory_subject_ids" nolabel="1" />
