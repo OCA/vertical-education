@@ -12,6 +12,9 @@ class EducationStudentCourse(models.Model):
     _description = 'Student Course Details'
     _rec_name = 'name'
 
+    name = fields.Char(
+        string='Name')
+
     student_id = fields.Many2one(
         'education.student', 'Student', ondelete="cascade")
     course_id = fields.Many2one('education.course', 'Course', required=True)

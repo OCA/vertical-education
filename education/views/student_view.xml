@@ -57,6 +57,7 @@
                         <separator string="Admission Details" colspan="4"/>
                         <field name="course_detail_ids" nolabel="1">
                             <tree string="Course Details">
+                                <field name="name"/>
                                 <field name="course_id"/>
                                 <field name="batch_id"/>
                                 <field name="roll_number"/>
