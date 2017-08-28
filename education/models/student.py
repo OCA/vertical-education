@@ -10,6 +10,7 @@ from odoo import models, fields
 class EducationStudentCourse(models.Model):
     _name = 'education.student.course'
     _description = 'Student Course Details'
+    _rec_name = 'name'
 
     student_id = fields.Many2one(
         'education.student', 'Student', ondelete="cascade")
