@@ -65,6 +65,7 @@
                             </tree>
                             <form>
                                 <group cols="2" colspan="2">
+                                    <field name="name" />
                                     <field name="course_id"/>
                                     <field name="batch_id" domain="[('course_id', '=', course_id)]"/>
                                     <field name="roll_number"/>

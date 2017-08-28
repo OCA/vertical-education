@@ -3,6 +3,7 @@
     <data noupdate="1">
 
         <record id="education_student_course_1" model="education.student.course">
+            <field name="name">Course 1</field>
             <field name="student_id" ref="education_student_1" />
             <field name="course_id" ref="education_course_2" />
             <field name="batch_id" ref="education_batch_1" />
@@ -10,6 +11,7 @@
         </record>
 
         <record id="education_student_course_2" model="education.student.course">
+            <field name="name">Course 2</field>
             <field name="student_id" ref="education_student_2" />
             <field name="course_id" ref="education_course_2" />
             <field name="batch_id" ref="education_batch_1" />
@@ -17,6 +19,7 @@
         </record>
 
         <record id="education_student_course_3" model="education.student.course">
+            <field name="name">Course 3</field>
             <field name="student_id" ref="education_student_3" />
             <field name="course_id" ref="education_course_2" />
             <field name="batch_id" ref="education_batch_1" />
@@ -24,6 +27,7 @@
         </record>
 
         <record id="education_student_course_4" model="education.student.course">
+            <field name="name">Course 4</field>
             <field name="student_id" ref="education_student_4" />
             <field name="course_id" ref="education_course_2" />
             <field name="batch_id" ref="education_batch_1" />
@@ -31,6 +35,7 @@
         </record>
 
         <record id="education_student_course_5" model="education.student.course">
+            <field name="name">Course 5</field>
             <field name="student_id" ref="education_student_5" />
             <field name="course_id" ref="education_course_3" />
             <field name="batch_id" ref="education_batch_2" />
@@ -38,6 +43,7 @@
         </record>
 
         <record id="education_student_course_6" model="education.student.course">
+            <field name="name">Course 6</field>
             <field name="student_id" ref="education_student_6" />
             <field name="course_id" ref="education_course_3" />
             <field name="batch_id" ref="education_batch_2" />
@@ -45,6 +51,7 @@
         </record>
 
         <record id="education_student_course_7" model="education.student.course">
+            <field name="name">Course 7</field>
             <field name="student_id" ref="education_student_7" />
             <field name="course_id" ref="education_course_3" />
             <field name="batch_id" ref="education_batch_2" />
@@ -52,6 +59,7 @@
         </record>
 
         <record id="education_student_course_8" model="education.student.course">
+            <field name="name">Course 8</field>
             <field name="student_id" ref="education_student_8" />
             <field name="course_id" ref="education_course_3" />
             <field name="batch_id" ref="education_batch_2" />
@@ -59,6 +67,7 @@
         </record>
 
         <record id="education_student_course_9" model="education.student.course">
+            <field name="name">Course 9</field>
             <field name="student_id" ref="education_student_9" />
             <field name="course_id" ref="education_course_4" />
             <field name="batch_id" ref="education_batch_3" />
@@ -66,6 +75,7 @@
         </record>
 
         <record id="education_student_course_10" model="education.student.course">
+            <field name="name">Course 10</field>
             <field name="student_id" ref="education_student_10" />
             <field name="course_id" ref="education_course_4" />
             <field name="batch_id" ref="education_batch_3" />
@@ -73,6 +83,7 @@
         </record>
 
         <record id="education_student_course_11" model="education.student.course">
+            <field name="name">Course 11</field>
             <field name="student_id" ref="education_student_11" />
             <field name="course_id" ref="education_course_4" />
             <field name="batch_id" ref="education_batch_3" />
@@ -80,6 +91,7 @@
         </record>
 
         <record id="education_student_course_12" model="education.student.course">
+            <field name="name">Course 12</field>
             <field name="student_id" ref="education_student_12" />
             <field name="course_id" ref="education_course_4" />
             <field name="batch_id" ref="education_batch_3" />
@@ -87,6 +99,7 @@
         </record>
 
         <record id="education_student_course_13" model="education.student.course">
+            <field name="name">Course 13</field>
             <field name="student_id" ref="education_student_13" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_4" />
@@ -94,6 +107,7 @@
         </record>
 
         <record id="education_student_course_14" model="education.student.course">
+            <field name="name">Course 14</field>
             <field name="student_id" ref="education_student_14" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_4" />
@@ -101,6 +115,7 @@
         </record>
 
         <record id="education_student_course_15" model="education.student.course">
+            <field name="name">Course 15</field>
             <field name="student_id" ref="education_student_15" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_5" />
@@ -108,6 +123,7 @@
         </record>
 
         <record id="education_student_course_16" model="education.student.course">
+            <field name="name">Course 16</field>
             <field name="student_id" ref="education_student_16" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_5" />
@@ -115,6 +131,7 @@
         </record>
 
         <record id="education_student_course_17" model="education.student.course">
+            <field name="name">Course 17</field>
             <field name="student_id" ref="education_student_17" />
             <field name="course_id" ref="education_course_6" />
             <field name="batch_id" ref="education_batch_6" />
@@ -122,6 +139,7 @@
         </record>
 
         <record id="education_student_course_18" model="education.student.course">
+            <field name="name">Course 18</field>
             <field name="student_id" ref="education_student_18" />
             <field name="course_id" ref="education_course_6" />
             <field name="batch_id" ref="education_batch_6" />
@@ -129,6 +147,7 @@
         </record>
 
         <record id="education_student_course_19" model="education.student.course">
+            <field name="name">Course 19</field>
             <field name="student_id" ref="education_student_19" />
             <field name="course_id" ref="education_course_6" />
             <field name="batch_id" ref="education_batch_6" />
@@ -136,6 +155,7 @@
         </record>
 
         <record id="education_student_course_20" model="education.student.course">
+            <field name="name">Course 20</field>
             <field name="student_id" ref="education_student_20" />
             <field name="course_id" ref="education_course_6" />
             <field name="batch_id" ref="education_batch_6" />
@@ -143,6 +163,7 @@
         </record>
 
         <record id="education_student_course_21" model="education.student.course">
+            <field name="name">Course 21</field>
             <field name="student_id" ref="education_student_1" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_5" />
@@ -150,6 +171,7 @@
         </record>
 
         <record id="education_student_course_22" model="education.student.course">
+            <field name="name">Course 22</field>
             <field name="student_id" ref="education_student_2" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_5" />
@@ -157,6 +179,7 @@
         </record>
 
         <record id="education_student_course_23" model="education.student.course">
+            <field name="name">Course 23</field>
             <field name="student_id" ref="education_student_3" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_5" />
@@ -164,6 +187,7 @@
         </record>
 
         <record id="education_student_course_24" model="education.student.course">
+            <field name="name">Course 24</field>
             <field name="student_id" ref="education_student_4" />
             <field name="course_id" ref="education_course_5" />
             <field name="batch_id" ref="education_batch_5" />

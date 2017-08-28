@@ -13,7 +13,7 @@ class EducationStudentCourse(models.Model):
     _rec_name = 'name'
 
     name = fields.Char(
-        string='Name')
+        string='Name', required=True)
 
     student_id = fields.Many2one(
         'education.student', 'Student', ondelete="cascade")
