@@ -9,6 +9,8 @@ from odoo import models, fields, api, _
 class EducationSubjectRegistration(models.Model):
     _name = 'education.subject.registration'
     _inherit = ['mail.thread']
+    _rec_name = 'course_id'
+
 
     name = fields.Char('Name', readonly=True, default='New')
     student_id = fields.Many2one('education.student', 'Student', required=True,
