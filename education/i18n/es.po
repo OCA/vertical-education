@@ -1506,7 +1506,7 @@ msgstr "Gestión de asignatura"
 #: model:ir.ui.menu,name:education.subject_registration_faculty_menu
 #: model:ir.ui.menu,name:education.subject_registration_student_menu
 msgid "Subject Registration"
-msgstr "Registro de asignatura"
+msgstr "Matrícula"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_subject_subject_type
@@ -1673,7 +1673,7 @@ msgstr "Zona horaria"
 #: model:ir.model.fields,field_description:education.field_education_faculty_tz_offset
 #: model:ir.model.fields,field_description:education.field_education_student_tz_offset
 msgid "Timezone offset"
-msgstr "Compemsar zona horaria"
+msgstr "Compensar zona horaria"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_faculty_title
