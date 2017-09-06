@@ -953,7 +953,7 @@ msgstr "Idioma"
 #: model:ir.ui.view,arch_db:education.kanban_view_faculty
 #: model:ir.ui.view,arch_db:education.kanban_view_student
 msgid "Language:"
-msgstr "Language:"
+msgstr "Idioma:"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_faculty_message_last_post
