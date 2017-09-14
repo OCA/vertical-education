@@ -118,6 +118,8 @@ msgid "Action Needed"
 msgstr "Acción Necesaria"
 
 #. module: education
+#: selection:education.batch,state:0
+#: model:ir.model.fields,field_description:education.field_education_batch_active
 #: model:ir.model.fields,field_description:education.field_education_faculty_active
 #: model:ir.model.fields,field_description:education.field_education_student_active
 msgid "Active"
@@ -1425,6 +1427,7 @@ msgid "State"
 msgstr "Estado"
 
 #. module: education
+#: model:ir.model.fields,field_description:education.field_education_batch_state
 #: model:ir.ui.view,arch_db:education.view_subject_registration_search
 msgid "Status"
 msgstr "Estado"
@@ -1915,3 +1918,23 @@ msgstr "o"
 #: model:ir.model.fields,field_description:education.field_education_subject_registration_state
 msgid "state"
 msgstr "Estado"
+
+#. module: education
+#: selection:education.batch,state:0
+msgid "Cancelled"
+msgstr "Anulado"
+
+#. module: education
+#: selection:education.batch,state:0
+msgid "Finished"
+msgstr "Finalizado"
+
+#. module: education
+#: selection:education.batch,state:0
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_batch_faculty_id
+msgid "Teacher in charge"
+msgstr "Profesor responsable"

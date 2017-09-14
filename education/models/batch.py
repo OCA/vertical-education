@@ -16,6 +16,20 @@ class EducationBatch(models.Model):
     end_date = fields.Date('End Date', required=True)
     course_id = fields.Many2one('education.course', 'Course', required=True)
 
+    faculty_id = fields.Many2one(
+        comodel_name='education.faculty',
+        string='Teacher in charge')
+    state = fields.Selection([
+        ('active', 'Active'),
+        ('pending', 'Pending'),
+        ('finished', 'Finished'),
+        ('cancel', 'Cancelled'),
+    ], string='Status', readonly=True, index=True, track_visibility='onchange',
+        default='active')
+
+    active = fields.Boolean(
+        string='Active', default=True)
+
     @api.multi
     @api.constrains('start_date', 'end_date')
     def check_dates(self):
