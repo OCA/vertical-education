@@ -461,6 +461,7 @@ msgstr "Curso no encontrado en la admisión del alumno"
 #. module: education
 #: model:ir.actions.act_window,name:education.act_open_education_course_view
 #: model:ir.ui.menu,name:education.menu_education_course_sub
+#: model:ir.ui.view,arch_db:education.view_subject_registration_form
 msgid "Courses"
 msgstr "Cursos"
 
