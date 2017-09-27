@@ -25,11 +25,21 @@ class EducationSubjectRegistration(models.Model):
         readonly=True)
     elective_subject_ids = fields.Many2many(
         'education.subject', string="Elective Subjects")
-    state = fields.Selection([
-        ('draft', 'Draft'), ('submitted', 'Submitted'),
-        ('approved', 'Approved'), ('rejected', 'Rejected')],
-        default='draft', string='state', copy=False,
-        track_visibility='onchange')
+
+    state = fields.Selection(
+        [('pending', 'Pending'),
+         ('active', 'Active'),
+         ('re-enrol', 'Re-enrol'),
+         ('cancelled', 'Cancelled'),
+         ('drop', 'Drop'),
+         ('finished', 'Finished')],
+        string='Status',
+        default='pending')
+    # state = fields.Selection([
+    #     ('draft', 'Draft'), ('submitted', 'Submitted'),
+    #     ('approved', 'Approved'), ('rejected', 'Rejected')],
+    #     default='draft', string='state', copy=False,
+    #     track_visibility='onchange')
     max_unit_load = fields.Float('Maximum Unit Load',
                                  track_visibility='onchange')
     min_unit_load = fields.Float('Minimum Unit Load',
@@ -37,11 +47,11 @@ class EducationSubjectRegistration(models.Model):
 
     @api.multi
     def action_reset_draft(self):
-        self.state = 'draft'
+        self.state = 'pending'
 
     @api.multi
     def action_reject(self):
-        self.state = 'rejected'
+        self.state = 'cancelled'
 
     @api.multi
     def action_approve(self):
@@ -59,14 +69,14 @@ class EducationSubjectRegistration(models.Model):
                 course_id.write({
                     'subject_ids': [[6, 0, list(set(subject_ids))]]
                 })
-                record.state = 'approved'
+                record.state = 'finished'
             else:
                 raise ValidationError(
                     _("Course not found on student's admission!"))
 
     @api.multi
     def action_submitted(self):
-        self.state = 'submitted'
+        self.state = 'active'
 
     @api.model
     def create(self, vals):

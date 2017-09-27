@@ -119,9 +119,11 @@ msgstr "Acción Necesaria"
 
 #. module: education
 #: selection:education.batch,state:0
+#: selection:education.subject.registration,state:0
 #: model:ir.model.fields,field_description:education.field_education_batch_active
 #: model:ir.model.fields,field_description:education.field_education_faculty_active
 #: model:ir.model.fields,field_description:education.field_education_student_active
+#: selection:subject.registration,state:0
 msgid "Active"
 msgstr "Activo"
 
@@ -1921,19 +1923,37 @@ msgid "state"
 msgstr "Estado"
 
 #. module: education
+#: selection:education.subject.registration,state:0
 #: selection:education.batch,state:0
+#: selection:subject.registration,state:0
 msgid "Cancelled"
 msgstr "Anulado"
 
 #. module: education
 #: selection:education.batch,state:0
+#: selection:education.subject.registration,state:0
+#: selection:subject.registration,state:0
 msgid "Finished"
 msgstr "Finalizado"
 
 #. module: education
 #: selection:education.batch,state:0
+#: selection:education.subject.registration,state:0
+#: selection:subject.registration,state:0
 msgid "Pending"
 msgstr "Pendiente"
+
+#. module: education
+#: selection:education.subject.registration,state:0
+#: selection:subject.registration,state:0
+msgid "Re-enrol"
+msgstr "Rematriculado"
+
+#. module: education
+#: selection:education.subject.registration,state:0
+#: selection:subject.registration,state:0
+msgid "Drop"
+msgstr "Baja"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_batch_faculty_id
