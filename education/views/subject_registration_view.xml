@@ -23,7 +23,7 @@
       <form string="Course Registration">
         <header>
           <button name="action_submitted" string="Submit" groups="education.group_education_student" type="object" class="oe_highlight" states="pending"/>
-          <button name="action_approve" string="Approve" groups="education.group_education_faculty" type="object" class="oe_highlight" states="active"/>
+          <button name="action_approve" string="Approve" groups="education.group_education_faculty" type="object" class="oe_highlight" states="active,re-enrol"/>
           <button name="action_reject" string="Reject" groups="education.group_education_faculty" type="object" class="oe_highlight" states="active"/>
           <button string="Reset to Draft" class="oe_highlight" groups="education.group_education_student" states="drop" type="object" name="action_reset_draft"/>
           <field name="state" widget="statusbar" statusbar_visible="pending,active,re-enrol,cancelled,drop,finished"/>
