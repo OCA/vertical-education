@@ -1314,7 +1314,7 @@ msgstr "Usuario OpenERP"
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_subject_registration_form
 msgid "Reset to Draft"
-msgstr "Rematricular"
+msgstr "Dar de alta"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_course_roll_number
