@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <report
+            id="report_student_timetable_generate"
+            string="TimeTable for Students"
+            model="education.session" report_type="qweb-pdf"
+            file="education_timetable.report_timetable_student_generate"
+            name="education_timetable.report_timetable_student_generate"
+            menu="False"
+            auto="False"
+        />
+
+        <report
+            id="report_teacher_timetable_generate"
+            string="TimeTable for Faculties"
+            model="education.session"
+            report_type="qweb-pdf"
+            file="education_timetable.report_timetable_teacher_generate"
+            name="education_timetable.report_timetable_teacher_generate"
+            menu="False"
+            auto="False"
+        />
+    </data>
+</odoo>

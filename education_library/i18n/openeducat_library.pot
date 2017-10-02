@@ -1,0 +1,948 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* education_library
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-01 07:46+0000\n"
+"PO-Revision-Date: 2015-10-01 07:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+#: view:education.book.purchase:education_library.view_education_purchase_form
+#: view:education.book.queue:education_library.view_education_book_queue_form
+msgid "Accept"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.purchase,state:0
+#: selection:education.book.queue,state:0
+msgid "Accepted"
+msgstr ""
+
+#. module: education_library
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: field:education.book.movement,actual_return_date:0
+#: field:return.book,actual_return_date:0
+#: field:return.date,actual_return_date:0
+msgid "Actual Return Date"
+msgstr ""
+
+#. module: education_library
+#: field:education.author,address:0
+#: field:education.publisher,address_id:0
+msgid "Address"
+msgstr ""
+
+#. module: education_library
+#: view:education.author:education_library.view_education_author_form
+#: view:education.author:education_library.view_education_author_search
+#: view:education.author:education_library.view_education_author_tree
+msgid "Author"
+msgstr ""
+
+#. module: education_library
+#: field:education.book,author_ids:0
+#: field:education.book.purchase,author:0
+msgid "Author(s)"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_author_view
+#: model:ir.ui.menu,name:education_library.menu_education_author_sub
+#: model:ir.ui.menu,name:education_library.menu_education_sub_author_library
+msgid "Authors"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.movement,state:0
+#: selection:education.book.unit,state:0
+msgid "Available"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.unit,barcode:0
+#: view:website:education_library.report_book_barcode
+msgid "Barcode"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_education_book_month
+#: model:ir.actions.act_window,name:education_library.act_education_book_today
+#: field:issue.book,book_id:0
+#: view:education.book:education_library.view_education_book_form
+#: view:education.book:education_library.view_education_book_search
+#: view:education.book:education_library.view_education_book_tree
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: field:education.book.movement,book_id:0
+#: view:education.book.queue:education_library.view_education_book_queue_form
+#: view:education.book.queue:education_library.view_education_book_queue_search
+#: field:education.book.queue,book_id:0
+#: view:education.book.unit:education_library.view_book_unit_search
+#: field:education.book.unit,book_id:0
+#: field:return.book,book_id:0
+msgid "Book"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.report.xml,name:education_library.action_report_book_barcode
+msgid "Book Barcode"
+msgstr ""
+
+#. module: education_library
+#: view:issue.book:education_library.issue_book_form
+msgid "Book Issue"
+msgstr ""
+
+#. module: education_library
+#: model:ir.model,name:education_library.model_education_book_movement
+#: view:education.book.movement:education_library.view_education_book_movement_form
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: view:education.book.movement:education_library.view_education_book_movement_tree
+msgid "Book Movement"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_book_movement_view
+#: model:ir.ui.menu,name:education_library.menu_education_book_movement_sub
+#: view:education.faculty:education_library.view_education_faculty_form_library_inherit
+#: view:education.student:education_library.view_education_student_form_library_inherit
+msgid "Book Movements"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+msgid "Book Name"
+msgstr ""
+
+#. module: education_library
+#: model:ir.model,name:education_library.model_education_book_purchase
+msgid "Book Purchase Request"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_purchase_view
+#: model:ir.ui.menu,name:education_library.menu_education_book_request_library_sub
+#: model:ir.ui.menu,name:education_library.menu_education_book_request_main_faculty
+#: model:ir.ui.menu,name:education_library.menu_education_book_request_student_sub
+msgid "Book Purchase Requests"
+msgstr ""
+
+#. module: education_library
+#: field:education.book,queue_ids:0
+msgid "Book Queue"
+msgstr ""
+
+#. module: education_library
+#: model:ir.model,name:education_library.model_education_book_queue
+#: view:education.book:education_library.view_education_book_form
+#: view:education.book.queue:education_library.view_education_book_queue_form
+#: view:education.book.queue:education_library.view_education_book_queue_search
+#: view:education.book.queue:education_library.view_education_book_queue_tree
+msgid "Book Queue Request"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_book_queue_view
+#: model:ir.ui.menu,name:education_library.menu_education_book_queue_faculty
+#: model:ir.ui.menu,name:education_library.menu_education_book_queue_request_library_sub
+#: model:ir.ui.menu,name:education_library.menu_education_book_queue_student
+#: model:ir.ui.menu,name:education_library.menu_education_book_queue_sub
+#: view:education.book:education_library.view_education_book_form
+msgid "Book Queue Requests"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/models/book_movement.py:119
+#: model:ir.actions.act_window,name:education_library.reserve_book_act
+#: view:reserve.book:education_library.reserve_book_form
+#, python-format
+msgid "Book Reservation"
+msgstr ""
+
+#. module: education_library
+#: view:return.book:education_library.return_book_form
+msgid "Book Return"
+msgstr ""
+
+#. module: education_library
+#: model:ir.model,name:education_library.model_education_book_unit
+#: field:issue.book,book_unit_id:0
+#: field:education.book.movement,book_unit_id:0
+#: field:return.book,book_unit_id:0
+#: view:website:education_library.report_book_barcode
+msgid "Book Unit"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/wizards/issue_book.py:84
+#, python-format
+msgid "Book Unit can not be issued because it's state is : %s"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/wizards/return_book.py:54
+#, python-format
+msgid "Book Unit can not be returned because it's state is : %s"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_book_unit_view
+#: view:education.book.unit:education_library.view_book_unit_form
+#: view:education.book.unit:education_library.view_book_unit_search
+#: view:education.book.unit:education_library.view_book_unit_tree
+msgid "Book Units"
+msgstr ""
+
+#. module: education_library
+#: view:education.author:education_library.view_education_author_form
+#: field:education.author,book_ids:0
+#: view:education.publisher:education_library.view_education_publisher_form
+#: field:education.publisher,book_ids:0
+msgid "Book(s)"
+msgstr ""
+
+#. module: education_library
+#: view:website:education_library.report_book_barcode
+msgid "Book(s) Barcode"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_book_view
+#: model:ir.ui.menu,name:education_library.menu_library_books
+#: model:ir.ui.menu,name:education_library.menu_education_book_student
+#: model:ir.ui.menu,name:education_library.menu_education_book_sub
+#: model:ir.ui.menu,name:education_library.menu_education_sub_book_library
+msgid "Books"
+msgstr ""
+
+#. module: education_library
+#: model:ir.ui.menu,name:education_library.menu_education_book_unit_library
+#: model:ir.ui.menu,name:education_library.menu_education_book_unit_education
+#: model:ir.ui.menu,name:education_library.menu_education_book_unit_student
+msgid "Books Units"
+msgstr ""
+
+#. module: education_library
+#: view:issue.book:education_library.issue_book_form
+#: view:reserve.book:education_library.reserve_book_form
+#: view:return.book:education_library.return_book_form
+#: view:return.date:education_library.return_date_form
+msgid "Cancel"
+msgstr ""
+
+#. module: education_library
+#: field:education.library.card,library_card_type_id:0
+msgid "Card Type"
+msgstr ""
+
+#. module: education_library
+#: model:ir.ui.menu,name:education_library.menu_education_library_main_library
+msgid "Configuration"
+msgstr ""
+
+#. module: education_library
+#: field:education.book,course_ids:0
+#: field:education.book.purchase,course_ids:0
+msgid "Course"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+msgid "Courses"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,create_uid:0
+#: field:education.author,create_uid:0
+#: field:education.book,create_uid:0
+#: field:education.book.movement,create_uid:0
+#: field:education.book.purchase,create_uid:0
+#: field:education.book.queue,create_uid:0
+#: field:education.book.unit,create_uid:0
+#: field:education.library.card,create_uid:0
+#: field:education.library.card.type,create_uid:0
+#: field:education.publisher,create_uid:0
+#: field:education.tag,create_uid:0
+#: field:reserve.book,create_uid:0
+#: field:return.book,create_uid:0
+#: field:return.date,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,create_date:0
+#: field:education.author,create_date:0
+#: field:education.book,create_date:0
+#: field:education.book.movement,create_date:0
+#: field:education.book.purchase,create_date:0
+#: field:education.book.queue,create_date:0
+#: field:education.book.unit,create_date:0
+#: field:education.library.card,create_date:0
+#: field:education.library.card.type,create_date:0
+#: field:education.publisher,create_date:0
+#: field:education.tag,create_date:0
+#: field:reserve.book,create_date:0
+#: field:return.book,create_date:0
+#: field:return.date,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: education_library
+#: help:education.book.movement,message_last_post:0
+#: help:education.book.purchase,message_last_post:0
+#: help:education.book.queue,message_last_post:0
+#: help:education.book.unit,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+#: field:education.book,description:0
+msgid "Description"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.purchase,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: education_library
+#: view:board.board:education_library.board_libray_form
+msgid "Due Book of Month"
+msgstr ""
+
+#. module: education_library
+#: view:board.board:education_library.board_libray_form
+msgid "Due Book of Today"
+msgstr ""
+
+#. module: education_library
+#: field:education.library.card.type,duration:0
+msgid "Duration"
+msgstr ""
+
+#. module: education_library
+#: help:education.library.card.type,duration:0
+msgid "Duration in terms of Number of Lead Days"
+msgstr ""
+
+#. module: education_library
+#: view:website:education_library.report_student_library_card
+msgid "E-mail :"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_search
+#: field:education.book,edition:0
+#: field:education.book.purchase,edition:0
+msgid "Edition"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+msgid "Education Details"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/wizards/issue_book.py:84
+#: code:addons/education_library/wizards/issue_book.py:89
+#: code:addons/education_library/wizards/return_book.py:54
+#, python-format
+msgid "Error!"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,faculty_id:0
+#: selection:issue.book,type:0
+#: field:education.book.movement,faculty_id:0
+#: selection:education.book.movement,type:0
+#: field:education.book.purchase,faculty_id:0
+#: field:education.library.card,faculty_id:0
+#: selection:education.library.card,type:0
+msgid "Faculty"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,message_follower_ids:0
+#: field:education.book.purchase,message_follower_ids:0
+#: field:education.book.queue,message_follower_ids:0
+#: field:education.book.unit,message_follower_ids:0
+msgid "Followers"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.queue,date_from:0
+msgid "From Date"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/models/book_queue.py:53
+#, python-format
+msgid "From Date should be greater than To Date!"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_search
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: view:education.book.queue:education_library.view_education_book_queue_search
+#: view:education.book.unit:education_library.view_book_unit_search
+#: view:education.library.card:education_library.view_education_library_card_search
+#: view:education.library.card.type:education_library.view_education_library_card_type_search
+#: view:education.publisher:education_library.view_education_publisher_search
+#: view:education.tag:education_library.view_education_tag_search
+msgid "Group By..."
+msgstr ""
+
+#. module: education_library
+#: help:education.book.movement,message_summary:0
+#: help:education.book.purchase,message_summary:0
+#: help:education.book.queue,message_summary:0
+#: help:education.book.unit,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,id:0
+#: field:education.author,id:0
+#: field:education.book,id:0
+#: field:education.book.movement,id:0
+#: field:education.book.purchase,id:0
+#: field:education.book.queue,id:0
+#: field:education.book.unit,id:0
+#: field:education.library.card,id:0
+#: field:education.library.card.type,id:0
+#: field:education.publisher,id:0
+#: field:education.tag,id:0
+#: field:report.education_library.report_book_barcode,id:0
+#: field:report.education_library.report_student_library_card,id:0
+#: field:reserve.book,id:0
+#: field:return.book,id:0
+#: field:return.date,id:0
+msgid "ID"
+msgstr ""
+
+#. module: education_library
+#: field:education.book,isbn:0
+msgid "ISBN Code"
+msgstr ""
+
+#. module: education_library
+#: help:education.book.movement,message_unread:0
+#: help:education.book.purchase,message_unread:0
+#: help:education.book.queue,message_unread:0
+#: help:education.book.unit,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: education_library
+#: field:education.book,internal_code:0
+msgid "Internal Code"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,message_is_follower:0
+#: field:education.book.purchase,message_is_follower:0
+#: field:education.book.queue,message_is_follower:0
+#: field:education.book.unit,message_is_follower:0
+msgid "Is a Follower"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.issue_book_act
+#: view:education.book.movement:education_library.view_education_book_movement_form
+#: view:education.book.unit:education_library.view_book_unit_form
+msgid "Issue Book"
+msgstr ""
+
+#. module: education_library
+#: field:education.library.card,issue_date:0
+msgid "Issue Date"
+msgstr ""
+
+#. module: education_library
+#: view:website:education_library.report_student_library_card
+msgid "Issue Date :"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/models/book_movement.py:67
+#, python-format
+msgid "Issue Date should be greater than Return Date."
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.movement,state:0
+#: selection:education.book.unit,state:0
+msgid "Issued"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,issued_date:0
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: field:education.book.movement,issued_date:0
+msgid "Issued Date"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,message_last_post:0
+#: field:education.book.purchase,message_last_post:0
+#: field:education.book.queue,message_last_post:0
+#: field:education.book.unit,message_last_post:0
+msgid "Last Message Date"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,write_uid:0
+#: field:education.author,write_uid:0
+#: field:education.book,write_uid:0
+#: field:education.book.movement,write_uid:0
+#: field:education.book.purchase,write_uid:0
+#: field:education.book.queue,write_uid:0
+#: field:education.book.unit,write_uid:0
+#: field:education.library.card,write_uid:0
+#: field:education.library.card.type,write_uid:0
+#: field:education.publisher,write_uid:0
+#: field:education.tag,write_uid:0
+#: field:reserve.book,write_uid:0
+#: field:return.book,write_uid:0
+#: field:return.date,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,write_date:0
+#: field:education.author,write_date:0
+#: field:education.book,write_date:0
+#: field:education.book.movement,write_date:0
+#: field:education.book.purchase,write_date:0
+#: field:education.book.queue,write_date:0
+#: field:education.book.unit,write_date:0
+#: field:education.library.card,write_date:0
+#: field:education.library.card.type,write_date:0
+#: field:education.publisher,write_date:0
+#: field:education.tag,write_date:0
+#: field:reserve.book,write_date:0
+#: field:return.book,write_date:0
+#: field:return.date,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.purchase,librarian_id:0
+#: model:res.groups,name:education_library.group_education_library
+msgid "Librarian"
+msgstr ""
+
+#. module: education_library
+#: model:ir.ui.menu,name:education_library.menu_education_dashboard_librarian
+msgid "Librarian Dashboard"
+msgstr ""
+
+#. module: education_library
+#: model:ir.ui.menu,name:education_library.menu_education_book_request_faculty
+#: model:ir.ui.menu,name:education_library.menu_education_library_root
+#: model:ir.ui.menu,name:education_library.menu_education_school_library_config
+#: model:ir.ui.menu,name:education_library.menu_education_school_library_root
+#: model:ir.ui.menu,name:education_library.menu_student_library_main
+#: view:education.faculty:education_library.view_education_faculty_form_library_inherit
+#: view:education.student:education_library.view_education_student_form_library_inherit
+msgid "Library"
+msgstr ""
+
+#. module: education_library
+#: model:ir.model,name:education_library.model_education_library_card
+#: field:issue.book,library_card_id:0
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: field:education.book.movement,library_card_id:0
+#: field:education.faculty,library_card_id:0
+#: view:education.library.card:education_library.view_education_library_card_form
+#: view:education.library.card:education_library.view_education_library_card_search
+#: view:education.library.card:education_library.view_education_library_card_tree
+#: field:education.student,library_card_id:0
+msgid "Library Card"
+msgstr ""
+
+#. module: education_library
+#: view:website:education_library.report_student_library_card
+msgid "Library Card No :"
+msgstr ""
+
+#. module: education_library
+#: model:ir.model,name:education_library.model_education_library_card_type
+#: view:education.library.card.type:education_library.view_education_library_card_type_form
+#: view:education.library.card.type:education_library.view_education_library_card_type_search
+#: view:education.library.card.type:education_library.view_education_library_card_type_tree
+msgid "Library Card Type"
+msgstr ""
+
+#. module: education_library
+#: view:website:education_library.report_student_library_card
+msgid "Library Card Type :"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_library_card_type_view
+#: model:ir.ui.menu,name:education_library.menu_education_library_card_type_sub
+msgid "Library Card Types"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_library_card_view
+#: model:ir.ui.menu,name:education_library.menu_education_library_card_sub
+msgid "Library Cards"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.report.xml,name:education_library.action_report_student_library_card
+msgid "Library IdCard"
+msgstr ""
+
+#. module: education_library
+#: view:board.board:education_library.board_libray_form
+#: model:ir.actions.act_window,name:education_library.open_board_libray
+msgid "Libray Dashboard"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.movement,state:0
+#: selection:education.book.unit,state:0
+msgid "Lost"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/wizards/issue_book.py:89
+#, python-format
+msgid "Maximum Number of book allowed for %s is : %s"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,message_ids:0
+#: field:education.book.purchase,message_ids:0
+#: field:education.book.queue,message_ids:0
+#: field:education.book.unit,message_ids:0
+msgid "Messages"
+msgstr ""
+
+#. module: education_library
+#: help:education.book.movement,message_ids:0
+#: help:education.book.purchase,message_ids:0
+#: help:education.book.queue,message_ids:0
+#: help:education.book.unit,message_ids:0
+msgid "Messages and communication history"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+#: field:education.book,movement_line:0
+#: view:education.book.unit:education_library.view_book_unit_form
+#: field:education.book.unit,movement_lines:0
+#: field:education.faculty,book_movement_lines:0
+#: field:education.student,book_movement_lines:0
+msgid "Movements"
+msgstr ""
+
+#. module: education_library
+#: field:education.author,name:0
+#: view:education.book.queue:education_library.view_education_book_queue_form
+#: field:education.book.unit,name:0
+#: field:education.library.card.type,name:0
+#: field:education.publisher,name:0
+#: view:education.tag:education_library.view_education_tag_search
+#: field:education.tag,name:0
+msgid "Name"
+msgstr ""
+
+#. module: education_library
+#: field:education.library.card.type,allow_book:0
+msgid "No of Books Allowed"
+msgstr ""
+
+#. module: education_library
+#: field:education.library.card,number:0
+msgid "Number"
+msgstr ""
+
+#. module: education_library
+#: view:education.book.queue:education_library.view_education_book_queue_search
+msgid "Partner"
+msgstr ""
+
+#. module: education_library
+#: field:reserve.book,partner_id:0
+msgid "Partner id"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,penalty:0
+msgid "Penalty"
+msgstr ""
+
+#. module: education_library
+#: field:education.library.card.type,penalty_amt_per_day:0
+msgid "Penalty Amount per Day"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,partner_id:0
+msgid "Person"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,reserver_name:0
+msgid "Person Name"
+msgstr ""
+
+#. module: education_library
+#: view:website:education_library.report_student_library_card
+msgid "Phone :"
+msgstr ""
+
+#. module: education_library
+#: view:issue.book:education_library.issue_book_form
+#: view:reserve.book:education_library.reserve_book_form
+#: view:return.book:education_library.return_book_form
+#: view:return.date:education_library.return_date_form
+msgid "Proceed"
+msgstr ""
+
+#. module: education_library
+#: view:education.publisher:education_library.view_education_publisher_form
+#: view:education.publisher:education_library.view_education_publisher_search
+#: view:education.publisher:education_library.view_education_publisher_tree
+msgid "Publisher"
+msgstr ""
+
+#. module: education_library
+#: field:education.book,publisher_ids:0
+#: field:education.book.purchase,publisher:0
+msgid "Publisher(s)"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_publisher_view
+#: model:ir.ui.menu,name:education_library.menu_education_publisher_sub
+#: model:ir.ui.menu,name:education_library.menu_education_sub_publisher_library
+msgid "Publishers"
+msgstr ""
+
+#. module: education_library
+#: view:education.book.purchase:education_library.view_education_purchase_form
+#: view:education.book.purchase:education_library.view_education_purchase_search
+#: view:education.book.purchase:education_library.view_education_purchase_tree
+msgid "Purchase Request"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+#: view:education.book.purchase:education_library.view_education_purchase_form
+#: view:education.book.queue:education_library.view_education_book_queue_form
+msgid "Reject"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.purchase,state:0
+#: selection:education.book.queue,state:0
+msgid "Rejected"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.queue,state:0
+msgid "Request"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+#: view:education.book.queue:education_library.view_education_book_queue_form
+msgid "Request Again"
+msgstr ""
+
+#. module: education_library
+#: view:education.book.purchase:education_library.view_education_purchase_form
+msgid "Request Book"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.purchase,state:0
+msgid "Requested"
+msgstr ""
+
+#. module: education_library
+#: view:education.book.movement:education_library.view_education_book_movement_form
+msgid "Reservation Detail"
+msgstr ""
+
+#. module: education_library
+#: view:education.book.movement:education_library.view_education_book_movement_form
+msgid "Reserve Book"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.movement,state:0
+#: selection:education.book.unit,state:0
+msgid "Reserved"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.return_book_act
+#: view:education.book.movement:education_library.view_education_book_movement_form
+#: view:education.book.unit:education_library.view_book_unit_form
+msgid "Return Book"
+msgstr ""
+
+#. module: education_library
+#: code:addons/education_library/models/book_movement.py:106
+#: model:ir.actions.act_window,name:education_library.return_date_act
+#: field:issue.book,return_date:0
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: field:education.book.movement,return_date:0
+#: view:return.date:education_library.return_date_form
+#, python-format
+msgid "Return Date"
+msgstr ""
+
+#. module: education_library
+#: selection:education.book.movement,state:0
+msgid "Returned"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.queue,name:0
+msgid "Sequence No"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.purchase,state:0
+#: view:education.book.unit:education_library.view_book_unit_search
+#: field:education.book.unit,state:0
+msgid "State"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,state:0
+#: view:education.book.queue:education_library.view_education_book_queue_search
+#: field:education.book.queue,state:0
+msgid "Status"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,student_id:0
+#: selection:issue.book,type:0
+#: view:education.book.movement:education_library.view_education_book_movement_search
+#: field:education.book.movement,student_id:0
+#: selection:education.book.movement,type:0
+#: field:education.book.purchase,student_id:0
+#: field:education.library.card,student_id:0
+#: selection:education.library.card,type:0
+msgid "Student"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,type:0
+#: field:education.book.queue,partner_id:0
+#: field:education.library.card,partner_id:0
+msgid "Student/Faculty"
+msgstr ""
+
+#. module: education_library
+#: view:education.book.movement:education_library.view_education_book_movement_form
+msgid "Student/Faculty Detail"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.purchase,subject_ids:0
+msgid "Subject"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+#: field:education.book,subject_ids:0
+msgid "Subjects"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,message_summary:0
+#: field:education.book.purchase,message_summary:0
+#: field:education.book.queue,message_summary:0
+#: field:education.book.unit,message_summary:0
+msgid "Summary"
+msgstr ""
+
+#. module: education_library
+#: view:education.tag:education_library.view_education_tag_form
+#: view:education.tag:education_library.view_education_tag_search
+#: view:education.tag:education_library.view_education_tag_tree
+msgid "Tag"
+msgstr ""
+
+#. module: education_library
+#: field:education.book,tags:0
+msgid "Tag(s)"
+msgstr ""
+
+#. module: education_library
+#: model:ir.actions.act_window,name:education_library.act_open_education_tag_view
+#: model:ir.ui.menu,name:education_library.menu_education_tag_sub
+msgid "Tags"
+msgstr ""
+
+#. module: education_library
+#: field:education.book,name:0
+#: field:education.book.purchase,name:0
+msgid "Title"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.queue,date_to:0
+msgid "To Date"
+msgstr ""
+
+#. module: education_library
+#: field:issue.book,type:0
+#: field:education.library.card,type:0
+msgid "Type"
+msgstr ""
+
+#. module: education_library
+#: view:education.book:education_library.view_education_book_form
+#: field:education.book,unit_ids:0
+msgid "Units"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,message_unread:0
+#: field:education.book.purchase,message_unread:0
+#: field:education.book.queue,message_unread:0
+#: field:education.book.unit,message_unread:0
+msgid "Unread Messages"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.queue,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: education_library
+#: field:education.book.movement,website_message_ids:0
+#: field:education.book.purchase,website_message_ids:0
+#: field:education.book.queue,website_message_ids:0
+#: field:education.book.unit,website_message_ids:0
+msgid "Website Messages"
+msgstr ""
+
+#. module: education_library
+#: help:education.book.movement,website_message_ids:0
+#: help:education.book.purchase,website_message_ids:0
+#: help:education.book.queue,website_message_ids:0
+#: help:education.book.unit,website_message_ids:0
+msgid "Website communication history"
+msgstr ""
+

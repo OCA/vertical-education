@@ -1,0 +1,85 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* education_facility
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-28 11:18+0000\n"
+"PO-Revision-Date: 2015-09-28 11:18+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_facility
+#: view:education.facility:education_facility.view_education_facility_search
+#: field:education.facility,Code:0
+msgid "Code"
+msgstr ""
+
+#. module: education_facility
+#: field:education.facility,create_uid:0
+#: field:education.facility.line,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: education_facility
+#: field:education.facility,create_date:0
+#: field:education.facility.line,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: education_facility
+#: model:ir.actions.act_window,name:education_facility.act_open_education_facility_view
+#: model:ir.ui.menu,name:education_facility.menu_education_facility_sub
+#: view:education.facility.line:education_facility.education_facility_line_form_view
+#: view:education.facility.line:education_facility.education_facility_line_tree_view
+msgid "Facilities"
+msgstr ""
+
+#. module: education_facility
+#: view:education.facility:education_facility.view_education_facility_form
+#: view:education.facility:education_facility.view_education_facility_search
+#: view:education.facility:education_facility.view_education_facility_tree
+#: field:education.facility.line,facility_id:0
+msgid "Facility"
+msgstr ""
+
+#. module: education_facility
+#: view:education.facility:education_facility.view_education_facility_search
+msgid "Group By..."
+msgstr ""
+
+#. module: education_facility
+#: field:education.facility,id:0
+#: field:education.facility.line,id:0
+msgid "ID"
+msgstr ""
+
+#. module: education_facility
+#: field:education.facility,write_uid:0
+#: field:education.facility.line,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_facility
+#: field:education.facility,write_date:0
+#: field:education.facility.line,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_facility
+#: view:education.facility:education_facility.view_education_facility_search
+#: field:education.facility,Name:0
+msgid "Name"
+msgstr ""
+
+#. module: education_facility
+#: field:education.facility.line,quantity:0
+msgid "Quantity"
+msgstr ""
+

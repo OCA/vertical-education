@@ -1,0 +1,1030 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* education_exam
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-09 10:07+0000\n"
+"PO-Revision-Date: 2017-05-09 13:11+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.1\n"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"<b>Course\n"
+"                                                                </b>"
+msgstr ""
+"<b>Curso\n"
+"                                                                </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+msgid "<b>Course : </b>"
+msgstr "<b>Curso : </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"<b>Exam\n"
+"                                                                    Code\n"
+"                                                                </b>"
+msgstr ""
+"<b>Examen\n"
+"                                                                    Código\n"
+"                                                                </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"<b>Exam\n"
+"                                                                    Name\n"
+"                                                                </b>"
+msgstr ""
+"<b>Examen\n"
+"                                                                    Nombre\n"
+"                                                                </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+msgid "<b>Hall Ticket</b>"
+msgstr "<b>Entrada a sala</b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+msgid "<b>Roll No : </b>"
+msgstr "<b>No de rollo : </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"<b>Student\n"
+"                                                                    Name\n"
+"                                                                </b>"
+msgstr ""
+"<b>Alumno\n"
+"                                                                    Nombre\n"
+"                                                                </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"<b>Student\n"
+"                                                                    Nameeee\n"
+"                                                                </b>"
+msgstr ""
+"<b>Alumno\n"
+"                                                                    Nombre\n"
+"                                                                </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+msgid "<b>Student Name : </b>"
+msgstr "<b>Nombre del alumno : </b>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"<strong>MarkSheet\n"
+"                                                    </strong>"
+msgstr ""
+"<strong>Marcar hoja\n"
+"                                                    </strong>"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+#: selection:education.exam.attendees,status:0
+msgid "Absent"
+msgstr "Ausente"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_held_exam_form
+msgid "Absent Attendees"
+msgstr "Ausente asistente"
+
+#. module: education_exam
+#: code:addons/education_exam/models/result_template.py:51
+#, python-format
+msgid "All subject exam should be done."
+msgstr "Todo el examen de la asignatura debe ser hecho."
+
+#. module: education_exam
+#: sql_constraint:education.exam.attendees:0
+msgid "Attendee must be unique per exam."
+msgstr "El asistente debe ser único por examen."
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_line
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_attendees_line
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+msgid "Attendees"
+msgstr "Asistentes"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_batch_id
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_batch_id
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_batch_id
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_batch_id
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+msgid "Batch"
+msgstr "Grupo académico"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.student_hall_ticket_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: education_exam
+#: selection:education.exam,state:0 selection:education.marksheet.register,status:0
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_capacity
+msgid "Capacity"
+msgstr "Capacidad"
+
+#. module: education_exam
+#: code:addons/education_exam/models/exam_room.py:38
+#, python-format
+msgid "Capacity over Classroom capacity!"
+msgstr "Capacidad del aula superada!"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_classroom_id
+msgid "Classroom"
+msgstr "Aula"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_code
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_type_search
+msgid "Code"
+msgstr "Código"
+
+#. module: education_exam
+#: model:ir.ui.menu,name:education_exam.menu_exam_configuration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_course_id
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_course_id
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_course_id
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_course_id
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+msgid "Course"
+msgstr "Curso"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_create_uid
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_create_date
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_create_date
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+msgid "Date"
+msgstr "Fecha"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_display_name
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_display_name
+#: model:ir.model.fields,field_description:education_exam.field_report_education_exam_report_marksheet_report_display_name
+#: model:ir.model.fields,field_description:education_exam.field_report_education_exam_report_ticket_display_name
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+#: selection:education.exam,state:0
+msgid "Done"
+msgstr "Hecho"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+#: selection:education.exam,state:0 selection:education.marksheet.register,status:0
+#: selection:education.result.template,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_end_date
+msgid "End Date"
+msgstr "Fecha finalización"
+
+#. module: education_exam
+#: code:addons/education_exam/models/exam_session.py:46
+#, python-format
+msgid "End Date cannot be set before Start Date."
+msgstr "La fecha de finalización no se puede establecer antes de la fecha de inicio."
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_end_time
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_end_time
+msgid "End Time"
+msgstr "Hora de finalización"
+
+#. module: education_exam
+#: code:addons/education_exam/models/exam.py:60
+#, python-format
+msgid "End Time cannot be set             before Start Time."
+msgstr "No se puede establecer la hora de finalización antes de la hora de inicio."
+
+#. module: education_exam
+#: code:addons/education_exam/models/exam_room.py:36
+#, python-format
+msgid "Enter proper Capacity"
+msgstr "Introduzca la capacidad adecuada"
+
+#. module: education_exam
+#: code:addons/education_exam/models/result_line.py:44
+#, python-format
+msgid "Enter proper Marks or Percentage!"
+msgstr "Introduzca las marcas o el porcentaje adecuado!"
+
+#. module: education_exam
+#: code:addons/education_exam/models/marksheet_line.py:46
+#, python-format
+msgid "Enter proper marks or percentage!"
+msgstr "Introduzca las marcas o el porcentaje adecuado"
+
+#. module: education_exam
+#: code:addons/education_exam/models/exam.py:52
+#: code:addons/education_exam/models/exam_attendees.py:56
+#, python-format
+msgid "Enter proper marks!"
+msgstr "Introduzca las marcas adecuadas"
+
+#. module: education_exam
+#: code:addons/education_exam/models/marksheet_register.py:51
+#, python-format
+msgid "Enter proper pass or fail!"
+msgstr "¡Introduzca el pase correcto o no!"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_evolution_type
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_evolution_type
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_evolution_type
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_evolution_type
+msgid "Evolution type"
+msgstr "Tipo de evolución"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_exam_id
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_name
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_exam_id
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_exam_id
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_exam_id
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_name
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_session_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_tree
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_search
+msgid "Exam"
+msgstr "Examen"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"Exam\n"
+"                                                            Type"
+msgstr ""
+"Examen\n"
+"                                                            Tipo"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_attendees_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_attendees_sub
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_tree
+#: model:ir.ui.view,arch_db:education_exam.view_education_room_distribution_form
+msgid "Exam Attendees"
+msgstr "Asistentes al examen"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_exam_code
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+msgid "Exam Code"
+msgstr "Código del examen"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_room_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_room_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_room_tree
+msgid "Exam Room"
+msgstr "salón de examen"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_room_distribution_view
+#: model:ir.ui.view,arch_db:education_exam.view_education_room_distribution_form
+msgid "Exam Room Distribution"
+msgstr "Distribución del salón de examen"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_room_view
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_room_ids
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_room_sub
+#: model:ir.ui.view,arch_db:education_exam.view_education_room_distribution_form
+msgid "Exam Rooms"
+msgstr "Salones de examen"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_exam_session
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_id
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_name
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_exam_session_id
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_exam_session_id
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_exam_session
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket_exam_session_id
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_session_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_session_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_session_tree
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_search
+msgid "Exam Session"
+msgstr "Sesión de examen"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_exam_code
+msgid "Exam Session Code"
+msgstr "Código de sesión de examen"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_session_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_session
+msgid "Exam Sessions"
+msgstr "Sesiones de examenes"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_exam_type
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_type_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_type_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_type_tree
+msgid "Exam Type"
+msgstr "Tipo de examen"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_type_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_type_sub
+msgid "Exam Types"
+msgstr "Tipos de examen"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_exam_ids
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_session_form
+msgid "Exam(s)"
+msgstr "Examen (s)"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_exam_view
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_main
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_root
+#: model:ir.ui.menu,name:education_exam.menu_education_school_exam_result
+msgid "Exams"
+msgstr "Examenes"
+
+#. module: education_exam
+#: selection:education.marksheet.line,status:0 selection:education.result.line,status:0
+msgid "Fail"
+msgstr "Suspender"
+
+#. module: education_exam
+#: model:ir.ui.menu,name:education_exam.menu_education_exam_general
+msgid "General"
+msgstr "General"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_template_form
+msgid "Generate Result"
+msgstr "Generar resultado"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_generated_by
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_search
+msgid "Generated By"
+msgstr "Generado por"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_generated_date
+msgid "Generated Date"
+msgstr "Fecha Generada"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_grade
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_grade
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+#: selection:education.exam.session,evolution_type:0
+msgid "Grade"
+msgstr "Grado"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_grade_configuration_view
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_grade_ids
+#: model:ir.ui.menu,name:education_exam.menu_education_grade_configuration
+#: model:ir.ui.view,arch_db:education_exam.view_education_grade_configuration_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_grade_configuration_tree
+msgid "Grade Configuration"
+msgstr "Configuración del grado"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_template_form
+msgid "Grades"
+msgstr "Grados"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_type_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_line_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_search
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_held_exam_form
+#: selection:education.exam,state:0
+msgid "Held"
+msgstr "Retenida"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+msgid "Held Exam"
+msgstr "Examen retenido"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_held_exam_view
+#: model:ir.ui.view,arch_db:education_exam.view_education_held_exam_form
+msgid "Held Exam Wizard"
+msgstr "Held Exam Wizard"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_id
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_id
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_id
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_id_4947
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_id
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_id
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_id
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_id
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_id
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_id
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_id
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_id
+#: model:ir.model.fields,field_description:education_exam.field_report_education_exam_report_marksheet_report_id
+#: model:ir.model.fields,field_description:education_exam.field_report_education_exam_report_ticket_id
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket_id
+msgid "ID"
+msgstr "ID"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template___last_update
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution___last_update
+#: model:ir.model.fields,field_description:education_exam.field_report_education_exam_report_marksheet_report___last_update
+#: model:ir.model.fields,field_description:education_exam.field_report_education_exam_report_ticket___last_update
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_write_uid
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_write_date
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_write_date
+#: model:ir.model.fields,field_description:education_exam.field_student_hall_ticket_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_marks
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_marks
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_search
+msgid "Marks"
+msgstr "Marcas"
+
+#. module: education_exam
+#: model:ir.actions.report.xml,name:education_exam.report_marksheet
+msgid "Marksheet"
+msgstr "Marcar hoja"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_marksheet_line_id
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_line_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_line_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_line_tree
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_search
+msgid "Marksheet Line"
+msgstr "Línea de marcar hoja"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_marksheet_line_view
+#: model:ir.ui.menu,name:education_exam.menu_education_marksheet_line_sub
+msgid "Marksheet Lines"
+msgstr "Líneas de marcar hoja"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_marksheet_reg_id
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_name
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_line_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_tree
+msgid "Marksheet Register"
+msgstr "Registro de marcar hoja"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_marksheet_register_view
+#: model:ir.ui.menu,name:education_exam.menu_education_marksheet_register_sub
+msgid "Marksheet Registers"
+msgstr "Registros de marcar hojas"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_marksheet_line
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_form
+msgid "Marksheets"
+msgstr "Marcar hojas"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_max_per
+msgid "Maximum Percentage"
+msgstr "Porcentaje máximo"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_min_per
+msgid "Minimum Percentage"
+msgstr "Porcentaje mínimo "
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"Month/Year\n"
+"                                                            of Passing"
+msgstr ""
+"Mes/año\n"
+"                                                            de aprobación"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_room_name
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_type_name
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_name
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_type_search
+msgid "Name"
+msgstr "Nombre"
+
+#. module: education_exam
+#: selection:education.exam.session,evolution_type:0
+msgid "Normal"
+msgstr "Normal"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_note
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_note
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_form
+msgid "Note"
+msgstr "Nota"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"Obtained\n"
+"                                                            Grade"
+msgstr ""
+"Obtenido\n"
+"                                                            Grado"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"Obtained\n"
+"                                                            Marks"
+msgstr ""
+"Obtenido\n"
+"                                                            Marcas"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"Obtained\n"
+"                                                            Marks/Total\n"
+"                                                            Marks"
+msgstr ""
+"Obtenido\n"
+"                                                            Marcas/Total\n"
+"                                                            Marcas"
+
+#. module: education_exam
+#: selection:education.marksheet.line,status:0 selection:education.result.line,status:0
+msgid "Pass"
+msgstr "Aprobar"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"Passing\n"
+"                                                            Marks"
+msgstr ""
+"Aprobado\n"
+"                                                            Marcas"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_min_marks
+msgid "Passing Marks"
+msgstr "Marcas pasadas"
+
+#. module: education_exam
+#: code:addons/education_exam/models/exam.py:54
+#, python-format
+msgid "Passing Marks can't be greater than Total Marks"
+msgstr "Marcas pasadas no pueden ser mayores que Marcas totales"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_percentage
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid "Percentage"
+msgstr "Porcentaje"
+
+#. module: education_exam
+#: code:addons/education_exam/models/result_template.py:68
+#, python-format
+msgid "Percentage range conflict with other record."
+msgstr "El intervalo de porcentaje está en conflicto con otro registro."
+
+#. module: education_exam
+#: selection:education.exam.attendees,status:0
+msgid "Present"
+msgstr "Presente"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.student_hall_ticket_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_responsible_id
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid "Result"
+msgstr "Resultado"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_result_date
+msgid "Result Date"
+msgstr "Fecha del resultado"
+
+#. module: education_exam
+#: selection:education.result.template,state:0
+msgid "Result Generated"
+msgstr "Resultado generado"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_tree
+msgid "Result Line"
+msgstr "Línea de resultado"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_result_line_view
+#: model:ir.ui.menu,name:education_exam.menu_education_result_line_sub
+msgid "Result Lines"
+msgstr "Líneas de resultado"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_result_template
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_result_template_id
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_template_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_template_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_template_tree
+msgid "Result Template"
+msgstr "Plantilla de resultados"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.act_open_education_result_template_view
+#: model:ir.ui.menu,name:education_exam.menu_education_result_template
+msgid "Result Templates"
+msgstr "Plantillas de resultados"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+#: selection:education.exam,state:0
+msgid "Result Updated"
+msgstr "Result Updated"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_grade_configuration_result
+msgid "Result to Display"
+msgstr "Resultado a mostrar"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_result_line
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_line_form
+msgid "Results"
+msgstr "Resultados"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_room_id
+msgid "Room"
+msgstr "salón"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_room_capacity
+msgid "Room Capacity"
+msgstr "Capacidad del salón"
+
+#. module: education_exam
+#: code:addons/education_exam/wizard/room_distribution.py:99
+#, python-format
+msgid "Room capacity must be greater than total number                       of student"
+msgstr "La capacidad de la sala debe ser mayor que el número total de alumnos"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_form
+#: model:ir.ui.view,arch_db:education_exam.view_education_room_distribution_form
+msgid "Schedule Exam"
+msgstr "Hora del examen"
+
+#. module: education_exam
+#: selection:education.exam,state:0
+msgid "Scheduled"
+msgstr "Fijar horario"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+msgid "Standard"
+msgstr "Estandar"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_start_date
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_start_time
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_start_time
+msgid "Start Time"
+msgstr "Hora de inicio"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_state
+#: model:ir.model.fields,field_description:education_exam.field_education_result_template_state
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+msgid "State"
+msgstr "Estado"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_status
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_status
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_status
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_status
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_search
+msgid "Status"
+msgstr "Estado"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_attendees_student_id
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_student_id
+#: model:ir.model.fields,field_description:education_exam.field_education_result_line_student_id
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_attendees_search
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_line_search
+msgid "Student"
+msgstr "Alumno"
+
+#. module: education_exam
+#: model:ir.actions.report.xml,name:education_exam.action_student_hall_ticket_report
+#: model:ir.ui.view,arch_db:education_exam.student_hall_ticket_form
+msgid "Student Hall Ticket"
+msgstr "Entrada del alumno"
+
+#. module: education_exam
+#: model:ir.actions.act_window,name:education_exam.student_hall_ticket_act
+#: model:ir.ui.menu,name:education_exam.menu_student_hall_ticket
+msgid "Student Hall Tickets"
+msgstr "Entradas de  los alumnos"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_student_ids
+msgid "Student ids"
+msgstr "ID alumno"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.view_education_result_line_search
+msgid "Students"
+msgstr "Alumnos"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_subject_id
+#: model:ir.model.fields,field_description:education_exam.field_education_held_exam_subject_id
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_subject_id
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+#: model:ir.ui.view,arch_db:education_exam.view_education_exam_search
+msgid "Subject"
+msgstr "Asunto"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+msgid "Supervisor Sign"
+msgstr "Señal del supervisor"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_ticket
+msgid "Time"
+msgstr "Tiempo"
+
+#. module: education_exam
+#: model:ir.ui.view,arch_db:education_exam.report_marksheet_report
+msgid ""
+"Total\n"
+"                                                            Marks"
+msgstr ""
+"Total\n"
+"                                                            Marcas"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_total_failed
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_search
+msgid "Total Fail"
+msgstr "Total de fallos"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_total_marks
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_line_total_marks
+msgid "Total Marks"
+msgstr "Total Marcas"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_marksheet_register_total_pass
+#: model:ir.ui.view,arch_db:education_exam.view_education_marksheet_register_search
+msgid "Total Pass"
+msgstr "Total aprobados"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_room_distribution_total_student
+msgid "Total Student"
+msgstr "Total alumno"
+
+#. module: education_exam
+#: selection:education.marksheet.register,status:0
+msgid "Validated"
+msgstr "Validado"
+
+#. module: education_exam
+#: model:ir.model.fields,field_description:education_exam.field_education_exam_session_venue
+msgid "Venue"
+msgstr "Lugar del proceso"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_exam_attendees
+msgid "education.exam.attendees"
+msgstr "education.exam.attendees"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_exam_room
+msgid "education.exam.room"
+msgstr "education.exam.room"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_exam_type
+msgid "education.exam.type"
+msgstr "education.exam.type"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_grade_configuration
+msgid "education.grade.configuration"
+msgstr "education.grade.configuration"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_held_exam
+msgid "education.held.exam"
+msgstr "education.held.exam"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_marksheet_line
+msgid "education.marksheet.line"
+msgstr "education.marksheet.line"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_marksheet_register
+msgid "education.marksheet.register"
+msgstr "education.marksheet.register"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_result_line
+msgid "education.result.line"
+msgstr "education.result.line"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_education_room_distribution
+msgid "education.room.distribution"
+msgstr "education.room.distribution"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_report_education_exam_report_marksheet_report
+msgid "report.education_exam.report_marksheet_report"
+msgstr "report.education_exam.report_marksheet_report"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_report_education_exam_report_ticket
+msgid "report.education_exam.report_ticket"
+msgstr "report.education_exam.report_ticket"
+
+#. module: education_exam
+#: model:ir.model,name:education_exam.model_student_hall_ticket
+msgid "student.hall.ticket"
+msgstr "student.hall.ticket"

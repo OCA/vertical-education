@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="education_attendance_line_1" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_1" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_2" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_1" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_3" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_1" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_4" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_1" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_5" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_2" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_6" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_2" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_7" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_2" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_8" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_2" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_9" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_3" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_10" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_3" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_11" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_3" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_12" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_3" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_13" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_4" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_14" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_4" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_15" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_4" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_16" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_4" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_17" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_5" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_18" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_5" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_19" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_5" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_20" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_5" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_21" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_6" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_22" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_6" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_23" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_6" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_24" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_6" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_25" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_7" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_26" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_7" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_27" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_7" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_28" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_7" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_29" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_8" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_30" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_8" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_31" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_8" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_32" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_8" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_33" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_9" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_34" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_9" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_35" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_9" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_36" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_9" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_37" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_10" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_38" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_10" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_39" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_10" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_40" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_10" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_41" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_11" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_42" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_11" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_43" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_11" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_44" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_11" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_45" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_12" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_46" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_12" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_47" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_12" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_48" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_12" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_49" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_13" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_50" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_13" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_51" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_13" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_52" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_13" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_53" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_14" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_54" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_14" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_55" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_14" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_56" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_14" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_57" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_15" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_58" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_15" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_59" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_15" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_60" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_15" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_61" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_16" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_62" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_16" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_63" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_16" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_64" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_16" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_65" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_17" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_66" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_17" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_67" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_17" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_68" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_17" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_69" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_18" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_70" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_18" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_71" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_18" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_72" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_18" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_73" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_19" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_74" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_19" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_75" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_19" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_76" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_19" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_77" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_20" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_78" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_20" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_79" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_20" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_80" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_20" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_81" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_21" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_82" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_21" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_83" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_21" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_84" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_21" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_85" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_22" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_86" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_22" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_87" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_22" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_88" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_22" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_89" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_23" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_90" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_23" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_91" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_23" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_92" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_23" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_93" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_24" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_94" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_24" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_95" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_24" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_96" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_24" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_97" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_25" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_98" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_25" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_99" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_25" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_100" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_25" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_101" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_26" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_102" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_26" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_103" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_26" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_104" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_26" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_105" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_27" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_106" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_27" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_107" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_27" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_108" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_27" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_109" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_28" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_110" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_28" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_111" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_28" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_112" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_28" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_113" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_29" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_114" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_29" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_115" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_29" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_116" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_29" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_117" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_30" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_118" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_30" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_119" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_30" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_120" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_30" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+        <record id="education_attendance_line_121" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_31" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_122" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_31" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_123" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_31" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_124" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_31" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_4" />
+        </record>
+
+
+
+
+
+        <record id="education_attendance_line_125" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_32" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_126" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_32" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_127" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_32" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_128" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_33" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_129" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_33" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_130" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_33" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_131" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_34" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_132" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_34" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_133" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_34" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_134" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_35" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_135" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_35" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_136" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_35" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_137" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_36" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_138" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_36" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_139" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_36" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_140" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_37" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_141" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_37" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_142" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_37" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_143" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_38" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_144" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_38" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_145" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_38" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_146" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_39" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_147" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_39" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_148" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_39" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_149" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_40" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_150" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_40" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_151" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_40" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_152" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_41" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_153" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_41" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_154" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_41" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_155" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_42" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_156" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_42" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_157" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_42" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_158" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_43" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_159" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_43" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_160" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_43" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_161" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_44" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_162" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_44" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_163" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_44" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_164" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_45" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_165" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_45" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_166" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_45" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_167" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_46" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_168" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_46" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_169" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_46" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_170" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_47" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_171" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_47" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_172" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_47" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_173" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_48" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_174" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_48" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_175" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_48" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_176" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_49" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_177" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_49" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_178" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_49" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_179" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_50" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_180" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_50" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_181" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_50" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_182" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_51" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_183" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_51" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_184" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_51" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_185" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_52" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_186" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_52" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_187" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_52" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_188" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_53" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_189" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_53" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_190" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_53" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_191" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_54" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_192" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_54" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_193" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_54" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_194" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_55" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_195" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_55" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_196" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_55" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_197" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_56" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_198" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_56" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_199" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_56" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_200" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_57" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_201" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_57" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_202" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_57" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_203" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_58" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_204" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_58" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_205" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_58" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_206" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_59" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_207" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_59" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_208" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_59" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_209" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_60" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_210" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_60" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_211" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_60" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_212" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_61" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_213" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_61" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_214" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_61" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+        <record id="education_attendance_line_215" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_62" />
+            <field name="present" eval="False" />
+            <field name="student_id" ref="education.education_student_1" />
+        </record>
+        <record id="education_attendance_line_216" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_62" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_2" />
+        </record>
+        <record id="education_attendance_line_217" model="education.attendance.line">
+            <field name="attendance_id" ref="education_attendance_sheet_62" />
+            <field name="present" eval="True" />
+            <field name="student_id" ref="education.education_student_3" />
+        </record>
+
+    </data>
+</odoo>

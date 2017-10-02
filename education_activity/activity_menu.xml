@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_education_activity_sub" name="Activity Logs"
+            parent="education.menu_education_general_student" sequence="10"
+            action="act_open_education_activity_view" groups="education.group_education_student" />
+
+        <menuitem id="menu_education_activity_type_sub" name="Activity Types"
+            parent="education.menu_education_school_config_activity" sequence="10"
+            action="act_open_education_activity_type_view" groups="education.group_education_back_office" />
+
+        <menuitem id="menu_student_migrate" name="Student Migration"
+            parent="education.menu_education_general_main" sequence="30"
+            action="act_open_student_migrate_view"
+            groups="education.group_education_back_office" />
+    </data>
+</odoo>

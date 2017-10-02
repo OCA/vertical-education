@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="view_education_batch_tree" model="ir.ui.view">
+    <field name="name">education.batch.tree</field>
+    <field name="model">education.batch</field>
+    <field name="priority" eval="8"/>
+    <field name="arch" type="xml">
+      <tree string="Batch">
+        <field name="name"/>
+        <field name="code"/>
+        <field name="start_date"/>
+        <field name="end_date"/>
+        <field name="course_id"/>
+        <field name="faculty_id"/>
+        <field name="state"/>
+      </tree>
+    </field>
+  </record>
+  <record id="view_education_batch_form" model="ir.ui.view">
+    <field name="name">education.batch.form</field>
+    <field name="model">education.batch</field>
+    <field name="priority" eval="8"/>
+    <field name="arch" type="xml">
+      <form string="Batch">
+        <header>
+          <field name="state" widget="statusbar" statusbar_visible="active,pending,finished,cancel" clickable="True"/>
+        </header>
+        <sheet>
+          <div class="oe_button_box" name="button_box">
+            <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+              <field name="active" widget="boolean_button" options="{'terminology': 'archive'}" on_change="1" modifiers="{}"/>
+            </button>
+          </div>
+          <group col="4" name="main">
+            <field name="name"/>
+            <field name="code"/>
+            <field name="start_date"/>
+            <field name="end_date"/>
+            <field name="course_id"/>
+            <field name="faculty_id"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+  <record id="view_education_batch_search" model="ir.ui.view">
+    <field name="name">education.batch.search</field>
+    <field name="model">education.batch</field>
+    <field name="priority" eval="8"/>
+    <field name="arch" type="xml">
+      <search string="Batch">
+        <field name="code"/>
+        <field name="name"/>
+        <field name="faculty_id"/>
+        <field name="start_date"/>
+        <field name="end_date"/>
+        <field name="course_id"/>
+        <field name="state"/>
+        <field name="active"/>
+        <filter string="Archived" domain="[('active', '=', False)]"/>
+        <newline/>
+        <group expand="0" string="Group By...">
+          <filter string="Start Date" domain="[]" context="{'group_by':'start_date'}"/>
+          <filter string="End Date" domain="[]" context="{'group_by':'end_date'}"/>
+          <filter string="Course" domain="[]" context="{'group_by':'course_id'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
+  <record model="ir.actions.act_window" id="act_open_education_batch_view">
+    <field name="name">Batches</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">education.batch</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+    <field name="search_view_id" ref="view_education_batch_search"/>
+    <field name="domain">[]</field>
+    <field name="context">{}</field>
+  </record>
+  <record model="ir.actions.act_window.view" id="act_open_education_batch_view_form">
+    <field name="act_window_id" ref="act_open_education_batch_view"/>
+    <field name="sequence" eval="20"/>
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="view_education_batch_form"/>
+  </record>
+  <record model="ir.actions.act_window.view" id="act_open_education_batch_view_tree">
+    <field name="act_window_id" ref="act_open_education_batch_view"/>
+    <field name="sequence" eval="10"/>
+    <field name="view_mode">tree</field>
+    <field name="view_id" ref="view_education_batch_tree"/>
+  </record>
+</odoo>

@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* education_classroom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-29 11:11+0000\n"
+"PO-Revision-Date: 2015-09-29 11:11+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_classroom
+#: field:education.asset,asset_id:0
+#: field:education.classroom,asset_line:0
+msgid "Asset"
+msgstr ""
+
+#. module: education_classroom
+#: view:education.classroom:education_classroom.view_education_classroom_form
+msgid "Asset Management"
+msgstr ""
+
+#. module: education_classroom
+#: view:education.classroom:education_classroom.view_education_classroom_search
+msgid "Capacity"
+msgstr ""
+
+#. module: education_classroom
+#: model:ir.ui.menu,name:education_classroom.menu_education_school_config_class_room
+msgid "Class Room Management"
+msgstr ""
+
+#. module: education_classroom
+#: model:ir.actions.act_window,name:education_classroom.act_open_education_classroom_view
+#: model:ir.ui.menu,name:education_classroom.menu_education_classroom_sub
+msgid "Class Rooms"
+msgstr ""
+
+#. module: education_classroom
+#: view:education.classroom:education_classroom.view_education_classroom_form
+#: view:education.classroom:education_classroom.view_education_classroom_search
+#: view:education.classroom:education_classroom.view_education_classroom_tree
+#: field:education.facility.line,classroom_id:0
+msgid "Classroom"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,code:0
+#: view:education.classroom:education_classroom.view_education_classroom_search
+#: field:education.classroom,code:0
+msgid "Code"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.classroom,course_id:0
+msgid "Course"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,create_uid:0
+#: field:education.classroom,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,create_date:0
+#: field:education.classroom,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: education_classroom
+#: view:education.classroom:education_classroom.view_education_classroom_form
+msgid "Facilities"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.classroom,facilities:0
+msgid "Facility Lines"
+msgstr ""
+
+#. module: education_classroom
+#: view:education.classroom:education_classroom.view_education_classroom_search
+msgid "Group By..."
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,id:0
+#: field:education.classroom,id:0
+msgid "ID"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,write_uid:0
+#: field:education.classroom,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,write_date:0
+#: field:education.classroom,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_classroom
+#: view:education.classroom:education_classroom.view_education_classroom_search
+#: field:education.classroom,name:0
+msgid "Name"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.classroom,capacity:0
+msgid "No of Person"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,product_id:0
+msgid "Product"
+msgstr ""
+
+#. module: education_classroom
+#: field:education.asset,product_uom_qty:0
+msgid "Quantity"
+msgstr ""
+

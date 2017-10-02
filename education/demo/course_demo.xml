@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="education_course_1" model="education.course">
+            <field name="code">boa</field>
+            <field name="name">Bachelor of Accountancy</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">Bachelors Course</field>
+            <field name="subject_ids" eval="" />
+        </record>
+
+        <record id="education_course_2" model="education.course">
+            <field name="code">boa1</field>
+            <field name="name">BOA-Sem-1</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">Bachelor's Degree-Sem 1</field>
+            <field name="parent_id" ref="education_course_1" />
+            <field name="subject_ids"
+                eval="[(6,0, [ref('education_subject_1'), ref('education_subject_2'), ref('education_subject_3'), ref('education_subject_4')])]" />
+        </record>
+
+        <record id="education_course_3" model="education.course">
+            <field name="code">boa2</field>
+            <field name="name">BOA-Sem-2</field>
+            <field name="evaluation_type">GPA</field>
+            <field name="section">Bachelor's Degree-Sem 2</field>
+            <field name="parent_id" ref="education_course_1" />
+            <field name="subject_ids"
+                eval="[(6,0, [ref('education_subject_5'), ref('education_subject_6'), ref('education_subject_7'), ref('education_subject_8')])]" />
+        </record>
+
+        <record id="education_course_4" model="education.course">
+            <field name="code">lrtp</field>
+            <field name="name">Land Restoration Programme</field>
+            <field name="evaluation_type">normal</field>
+            <field name="section">Bachelors Course</field>
+            <field name="subject_ids"
+                eval="[(6,0, [ref('education_subject_9'), ref('education_subject_10'), ref('education_subject_11'), ref('education_subject_12')])]" />
+        </record>
+
+        <record id="education_course_5" model="education.course">
+            <field name="code">ielts</field>
+            <field name="name">IELTS</field>
+            <field name="evaluation_type">normal</field>
+            <field name="section">2015-I</field>
+            <field name="subject_ids"
+                eval="[(6,0, [ref('education_subject_13'), ref('education_subject_14'), ref('education_subject_15'), ref('education_subject_16')])]" />
+        </record>
+
+        <record id="education_course_6" model="education.course">
+            <field name="code">g8c</field>
+            <field name="name">Grade-8-Course</field>
+            <field name="evaluation_type">normal</field>
+            <field name="section">K-12-Grade 8</field>
+            <field name="subject_ids"
+                eval="[(6,0, [ref('education_subject_17'), ref('education_subject_18'), ref('education_subject_19'), ref('education_subject_20')])]" />
+        </record>
+
+    </data>
+</odoo>

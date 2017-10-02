@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* education_parent
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-30 06:59+0000\n"
+"PO-Revision-Date: 2015-09-30 06:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_parent
+#: field:education.parent,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: education_parent
+#: field:education.parent,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: education_parent
+#: view:education.parent:education_parent.view_education_parent_search
+msgid "Group By..."
+msgstr ""
+
+#. module: education_parent
+#: field:education.parent,id:0
+msgid "ID"
+msgstr ""
+
+#. module: education_parent
+#: field:education.parent,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_parent
+#: field:education.parent,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_parent
+#: view:education.parent:education_parent.view_education_parent_search
+#: field:education.parent,name:0
+msgid "Name"
+msgstr ""
+
+#. module: education_parent
+#: model:ir.actions.act_window,name:education_parent.act_open_education_parent_view
+#: model:ir.ui.menu,name:education_parent.menu_education_parent_main_parent
+#: model:ir.ui.menu,name:education_parent.menu_education_parent_root
+#: model:ir.ui.menu,name:education_parent.menu_education_parent_sub_parent
+#: view:education.parent:education_parent.view_education_parent_form
+#: view:education.parent:education_parent.view_education_parent_search
+#: view:education.parent:education_parent.view_education_parent_tree
+#: field:education.student,parent_ids:0
+#: model:res.groups,name:education_parent.group_education_parent
+msgid "Parent"
+msgstr ""
+
+#. module: education_parent
+#: view:education.parent:education_parent.view_education_parent_form
+msgid "Parent Name"
+msgstr ""
+
+#. module: education_parent
+#: view:education.student:education_parent.parent_student_form_view
+#: field:res.users,parent_ids:0
+msgid "Parents"
+msgstr ""
+
+#. module: education_parent
+#: view:education.parent:education_parent.view_education_parent_form
+#: field:education.parent,student_ids:0
+msgid "Student(s)"
+msgstr ""
+
+#. module: education_parent
+#: model:ir.ui.menu,name:education_parent.menu_education_student_main_parent
+#: model:ir.ui.menu,name:education_parent.menu_education_student_sub_parent
+msgid "Students"
+msgstr ""
+
+#. module: education_parent
+#: field:education.parent,user_id:0
+msgid "User"
+msgstr ""
+
+#. module: education_parent
+#: view:education.parent:education_parent.view_education_parent_form
+msgid "User Id"
+msgstr ""
+
+#. module: education_parent
+#: model:ir.model,name:education_parent.model_res_users
+msgid "Users"
+msgstr ""
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <menuitem id="menu_education_student_root" name="Students"
+            sequence="25"
+            web_icon="education,static/description/icon_student.png" />
+
+        <menuitem id="menu_education_dashboard_student" name="Dashboard"
+            sequence="10" groups="education.group_education_student"
+            parent="menu_education_student_root" action="open_board_student" />
+
+        <menuitem id="menu_education_student_main_student" name="Profile"
+            parent="menu_education_student_root" sequence="20"
+            action="act_open_education_student_view" groups="group_education_student" />
+
+        <menuitem id="menu_education_general_student" parent="menu_education_student_root"
+            sequence="20" name="General" />
+
+        <menuitem id="subject_registration_student_menu" name="Subject Registration"
+            parent="education.menu_education_general_student" sequence="30"
+            action="act_subject_registration_view" groups="education.group_education_student" />
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <report
+            id="action_report_student_idcard"
+            model="education.student"
+            string="Student IdCard"
+            report_type="qweb-pdf"
+            name="education.report_student_idcard"
+            file="education.report_student_idcard"
+        />
+        <report
+            id="action_report_student_bonafide"
+            model="education.student"
+            string="Bonafide Certificate"
+            report_type="qweb-pdf"
+            name="education.report_student_bonafide"
+            file="education.report_student_bonafide"
+        />
+</odoo>

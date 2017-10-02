@@ -1,0 +1,139 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* education_activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-28 11:50+0000\n"
+"PO-Revision-Date: 2015-09-28 11:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_activity
+#: view:education.activity:education_activity.view_education_activity_form
+#: view:education.activity:education_activity.view_education_activity_search
+#: view:education.activity:education_activity.view_education_activity_tree
+#: view:education.student:education_activity.view_education_student_form_timetable_inherit
+#: field:education.student,activity_log:0
+msgid "Activity Log"
+msgstr ""
+
+#. module: education_activity
+#: model:ir.actions.act_window,name:education_activity.act_open_education_activity_view
+#: model:ir.ui.menu,name:education_activity.menu_education_activity_sub
+msgid "Activity Logs"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,type_id:0
+#: view:education.activity.type:education_activity.view_education_activity_type_form
+#: view:education.activity.type:education_activity.view_education_activity_type_search
+#: view:education.activity.type:education_activity.view_education_activity_type_tree
+msgid "Activity Type"
+msgstr ""
+
+#. module: education_activity
+#: model:ir.actions.act_window,name:education_activity.act_open_education_activity_type_view
+#: model:ir.ui.menu,name:education_activity.menu_education_activity_type_sub
+msgid "Activity Types"
+msgstr ""
+
+#. module: education_activity
+#: view:student.migrate:education_activity.student_migrate_form
+msgid "Cancel"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,create_uid:0
+#: field:education.activity.type,create_uid:0
+#: field:student.migrate,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,create_date:0
+#: field:education.activity.type,create_date:0
+#: field:student.migrate,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,date:0
+#: field:student.migrate,date:0
+msgid "Date"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,faculty_id:0
+msgid "Faculty"
+msgstr ""
+
+#. module: education_activity
+#: view:student.migrate:education_activity.student_migrate_form
+msgid "Forward"
+msgstr ""
+
+#. module: education_activity
+#: field:student.migrate,course_from_id:0
+msgid "From Course"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,id:0
+#: field:education.activity.type,id:0
+#: field:student.migrate,id:0
+msgid "ID"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,write_uid:0
+#: field:education.activity.type,write_uid:0
+#: field:student.migrate,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,write_date:0
+#: field:education.activity.type,write_date:0
+#: field:student.migrate,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity.type,name:0
+msgid "Name"
+msgstr ""
+
+#. module: education_activity
+#: field:education.activity,student_id:0
+msgid "Student"
+msgstr ""
+
+#. module: education_activity
+#: view:student.migrate:education_activity.student_migrate_form
+msgid "Student Migrate"
+msgstr ""
+
+#. module: education_activity
+#: model:ir.ui.menu,name:education_activity.menu_student_migrate
+#: model:ir.actions.act_window,name:education_activity.act_open_student_migrate_view
+msgid "Student Migration"
+msgstr ""
+
+#. module: education_activity
+#: view:student.migrate:education_activity.student_migrate_form
+#: field:student.migrate,student_ids:0
+msgid "Student(s)"
+msgstr ""
+
+#. module: education_activity
+#: field:student.migrate,course_to_id:0
+msgid "To Course"
+msgstr ""
+

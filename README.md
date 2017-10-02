@@ -1,17 +1,17 @@
-[![Build Status](https://travis-ci.org/openeducat/openeducat_erp.svg?branch=10.0)](https://travis-ci.org/openeducat/openeducat_erp)
-[![Coverage Status](https://coveralls.io/repos/openeducat/openeducat_erp/badge.svg?branch=10.0&service=github)](https://coveralls.io/github/openeducat/openeducat_erp?branch=10.0)
+[![Build Status](https://travis-ci.org/education/education_erp.svg?branch=10.0)](https://travis-ci.org/education/education_erp)
+[![Coverage Status](https://coveralls.io/repos/education/education_erp/badge.svg?branch=10.0&service=github)](https://coveralls.io/github/education/education_erp?branch=10.0)
 
-OpenEduCat for Odoo 10
+Education for Odoo 10
 =====================
 
-OpenEduCat is a fully open source ERP system for educational institute, for efficient management of students, faculties, courses and classes keeping a collaborative platform.
+Education is a fully open source ERP system for educational institute, for efficient management of students, faculties, courses and classes keeping a collaborative platform.
 
-Based on best of class enterprise level architecture make OpenEduCat ready to use in environments like local infrastructure or a highly scalable cloud environment.
+Based on best of class enterprise level architecture make Education ready to use in environments like local infrastructure or a highly scalable cloud environment.
 
-To install OpenEduCat, Install Odoo / OpenERP  and go to `Settings -> Apps` and search `OpenEduCat` and that's it module is available for installation, click on `install`, that's it. 
+To install Education, Install Odoo / OpenERP  and go to `Settings -> Apps` and search `Education` and that's it module is available for installation, click on `install`, that's it. 
 
 Links
 =====
 
-* Documentation: http://doc.openeducat.org/
-* Changelog: [openeducat_erp/doc/changelog.rst](openeducat_erp/doc/changelog.rst)
+* Documentation: http://doc.education.org/
+* Changelog: [education_erp/doc/changelog.rst](education_erp/doc/changelog.rst)

@@ -1,0 +1,208 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* education_activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-08 08:28+0000\n"
+"PO-Revision-Date: 2017-05-08 11:49+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.1\n"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_student_activity_log
+#: model:ir.ui.view,arch_db:education_activity.view_education_activity_form
+#: model:ir.ui.view,arch_db:education_activity.view_education_activity_search
+#: model:ir.ui.view,arch_db:education_activity.view_education_activity_tree
+#: model:ir.ui.view,arch_db:education_activity.view_education_student_form_timetable_inherit
+msgid "Activity Log"
+msgstr "Registro de actividades"
+
+#. module: education_activity
+#: model:ir.actions.act_window,name:education_activity.act_open_education_activity_view
+#: model:ir.ui.menu,name:education_activity.menu_education_activity_sub
+msgid "Activity Logs"
+msgstr "Registros de actividad"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_id
+#: model:ir.ui.view,arch_db:education_activity.view_education_activity_type_form
+#: model:ir.ui.view,arch_db:education_activity.view_education_activity_type_search
+#: model:ir.ui.view,arch_db:education_activity.view_education_activity_type_tree
+msgid "Activity Type"
+msgstr "Tipo de actividad"
+
+#. module: education_activity
+#: model:ir.actions.act_window,name:education_activity.act_open_education_activity_type_view
+#: model:ir.ui.menu,name:education_activity.menu_education_activity_type_sub
+msgid "Activity Types"
+msgstr "Tipos de actividad"
+
+#. module: education_activity
+#: code:addons/education_activity/wizard/student_migrate_wizard.py:50
+#, python-format
+msgid "Can't migrate, As selected courses don't                         share same parent course!"
+msgstr "No se puede migrar, ¡Como los cursos seleccionados no comparten el mismo curso para padres!"
+
+#. module: education_activity
+#: code:addons/education_activity/wizard/student_migrate_wizard.py:54
+#, python-format
+msgid "Can't migrate, Proceed for new admission"
+msgstr "No se puede migrar, crear una nueva admisión"
+
+#. module: education_activity
+#: model:ir.ui.view,arch_db:education_activity.student_migrate_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_create_uid
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_create_uid
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_create_date
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_create_date
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_date
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_description
+#: model:ir.ui.view,arch_db:education_activity.view_education_activity_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_display_name
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_display_name
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_faculty_id
+msgid "Faculty"
+msgstr "Profesor"
+
+#. module: education_activity
+#: model:ir.ui.view,arch_db:education_activity.student_migrate_form
+msgid "Forward"
+msgstr "Adelante"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_course_from_id
+msgid "From Course"
+msgstr "Curso de"
+
+#. module: education_activity
+#: code:addons/education_activity/wizard/student_migrate_wizard.py:44
+#, python-format
+msgid "From Course must not be same                 as To Course!"
+msgstr "No debe ser el mismo                   para el curso!"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_id
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_id_4298
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_id
+msgid "ID"
+msgstr "ID"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity___last_update
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type___last_update
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_write_uid
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_write_uid
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_write_date
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_write_date
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_type_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_optional_sub
+msgid "Optional Subjects"
+msgstr "Asignaturas opcionales"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_education_activity_student_id
+msgid "Student"
+msgstr "Alumno"
+
+#. module: education_activity
+#: model:ir.ui.view,arch_db:education_activity.student_migrate_form
+msgid "Student Migrate"
+msgstr "Migración del alumno"
+
+#. module: education_activity
+#: model:ir.actions.act_window,name:education_activity.act_open_student_migrate_view
+#: model:ir.ui.menu,name:education_activity.menu_student_migrate
+msgid "Student Migration"
+msgstr "Migración del alumno"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_student_ids
+#: model:ir.ui.view,arch_db:education_activity.student_migrate_form
+msgid "Student(s)"
+msgstr "Alumno(s)"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_batch_id
+msgid "To Batch"
+msgstr "a grupo académico"
+
+#. module: education_activity
+#: model:ir.model.fields,field_description:education_activity.field_student_migrate_course_to_id
+msgid "To Course"
+msgstr "a curso"
+
+#. module: education_activity
+#: model:ir.model,name:education_activity.model_education_activity
+msgid "education.activity"
+msgstr "education.activity"
+
+#. module: education_activity
+#: model:ir.model,name:education_activity.model_education_activity_type
+msgid "education.activity.type"
+msgstr "education.activity.type"
+
+#. module: education_activity
+#: model:ir.model,name:education_activity.model_education_student
+msgid "education.student"
+msgstr "education.student"
+
+#. module: education_activity
+#: model:ir.model,name:education_activity.model_student_migrate
+msgid "student.migrate"
+msgstr "student.migrate"
