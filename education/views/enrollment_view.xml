@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_enrollment_form" model="ir.ui.view">
+    <field name="name">view.education.enrollment.form</field>
+    <field name="model">education.enrollment</field>
+    <field name="arch" type="xml">
+      <form string="Education enrollment">
+        <sheet>
+          <h1>
+            <group name="main" col="4">
+              <field name="name" nolabel="1" placeholder="Name"/>
+            </group>
+            <group >
+              <field name="code" nolabel="1" placeholder="Code"/>
+            </group>
+          </h1>
+          <group name="Information" col="4">
+            <field name="student_id"/>
+            <field name="course_id"/>
+            <field name="group_id"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_education_enrollment_tree" model="ir.ui.view">
+    <field name="name">view.education.enrollment.tree</field>
+    <field name="model">education.enrollment</field>
+    <field name="arch" type="xml">
+      <tree string="Educaiton enrollment">
+        <field name="name"/>
+        <field name="code"/>
+        <field name="student_id"/>
+        <field name="course_id"/>
+        <field name="group_id"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_education_enrollment_search" model="ir.ui.view">
+    <field name="name">view.education.enrollment.search</field>
+    <field name="model">education.enrollment</field>
+    <field name="arch" type="xml">
+      <search string="enrollments">
+        <field name="name"/>
+        <field name="code"/>
+        <field name="student_id"/>
+        <field name="course_id"/>
+        <field name="group_id"/>
+        <group string="Group By" name="groupby">
+          <filter string="Name" context="{'group_by': 'name'}"/>
+          <filter string="Code" context="{'group_by': 'code'}"/>
+          <filter string="Student" context="{'group_by': 'student_id'}"/>
+          <filter string="Course" context="{'group_by': 'course_id'}"/>
+          <filter string="Group" context="{'group_by': 'group_id'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record id="education_enrollment_action" model="ir.actions.act_window">
+    <field name="name">Enrollments</field>
+    <field name="res_model">education.enrollment</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+        Click to create a new Enrollment.
+      </p>
+    </field>
+  </record>
+
+  <menuitem id="education_enrollment" parent="education_enrollment_root" action="education_enrollment_action" sequence="20"/>
+
+</odoo>

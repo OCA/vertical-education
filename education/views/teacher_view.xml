@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_teacher_kanban" model="ir.ui.view">
+    <field name="name">education.teacher.kanban</field>
+    <field name="model">education.teacher</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+    <field name="arch" type="xml">
+      <xpath expr="//kanban" position="attributes">
+        <attribute name="string">Faculties</attribute>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_education_teacher_form" model="ir.ui.view">
+    <field name="name">education.teacher.form</field>
+    <field name="model">education.teacher</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//form" position="attributes">
+        <attribute name="string">teacher</attribute>
+      </xpath>
+      <field name="company_type" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <field name="function" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <field name="fax" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <field name="website" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <page name='sales_purchases' position="attributes">
+        <attribute name="invisible">True</attribute>
+      </page>
+      <page name='internal_notes' position="before">
+        <page name="educational" string="Educational"></page>
+      </page>
+    </field>
+  </record>
+
+  <record id="view_education_teacher" model="ir.ui.view">
+    <field name="name">education.teacher.tree</field>
+    <field name="model">education.teacher</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="base.view_partner_tree"/>
+    <field name="arch" type="xml">
+      <xpath expr="//tree" position="attributes">
+        <attribute name="string">Faculties</attribute>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_education_teacher_search" model="ir.ui.view">
+    <field name="name">view.education.teacher.search</field>
+    <field name="model">education.teacher</field>
+    <field name="arch" type="xml">
+      <search string="teachers">
+        <!-- <field name="name"/>
+        <field name="code"/>
+        <field name="course_id"/>
+        <field name="teacher_id"/> -->
+
+        <group string="Group By" name="groupby">
+          <!-- <filter string="Name" context="{'group_by': 'name'}"/>
+          <filter string="Code" context="{'group_by': 'code'}"/>
+          <filter string="teacher" context="{'group_by': 'teacher_id'}"/>
+          <filter string="Course" context="{'group_by': 'course_id'}"/> -->
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="education_teacher_action">
+    <field name="name">Teachers</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">education.teacher</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="domain">[]</field>
+    <field name="context">{}</field>
+  </record>
+
+  <menuitem id="education_teacher_menu" parent="" action="education_teacher_action" sequence="20"/>
+
+</odoo>

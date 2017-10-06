@@ -7,13 +7,17 @@ class EducationEnrollment(models.Model):
     _name = "education.enrollment"
     _rec_name = 'code'
 
-    code = fields.Char()
+    code = fields.Char(
+        string='Code', required=True)
+    name = fields.Char(
+        string='Name', required=True)
+
     student_id = fields.Many2one(
         comodel_name='education.student',
-        string='Student')
+        string='Student', required=True)
     course_id = fields.Many2one(
         comodel_name='education.course',
-        string='Course')
+        string='Course', required=True)
     group_id = fields.Many2one(
         comodel_name='education.group',
-        string='Group')
+        string='Group', required=True)

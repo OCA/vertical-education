@@ -15,6 +15,15 @@
         "base",
     ],
     "data": [
+        'views/menu_view.xml',
+        'views/course_view.xml',
+        'views/enrollment_view.xml',
+        'views/group_view.xml',
+        'views/record_view.xml',
+        'views/student_view.xml',
+        'views/teacher_view.xml',
+        'security/ir.model.access.csv',
+        'security/some_model_security.xml'
     ],
     "demo": [
     ],

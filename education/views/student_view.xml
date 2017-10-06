@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_student_kanban" model="ir.ui.view">
+    <field name="name">education.student.kanban</field>
+    <field name="model">education.student</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="base.res_partner_kanban_view"/>
+    <field name="arch" type="xml">
+      <xpath expr="//kanban" position="attributes">
+        <attribute name="string">Faculties</attribute>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_education_student_form" model="ir.ui.view">
+    <field name="name">education.student.form</field>
+    <field name="model">education.student</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//form" position="attributes">
+        <attribute name="string">Faculty</attribute>
+      </xpath>
+      <field name="company_type" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <field name="function" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <field name="fax" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <field name="website" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </field>
+      <page name='sales_purchases' position="attributes">
+        <attribute name="invisible">True</attribute>
+      </page>
+      <page name='internal_notes' position="before">
+        <page name="educational" string="Educational">
+          <group col="4" colspan="4">
+            <field name="ref"/>
+          </group>
+          <!-- <group>
+            <separator string="Admission Details" colspan="4"/>
+            <field name="record_ids" nolabel="1">
+              <tree string="Record Details">
+                <field name="name"/>
+                <field name="student_id"/>
+                <field name="course_id"/>
+                <field name="group_ids" widget="many2many_tags"/>
+              </tree>
+              <form>
+                <group cols="2" colspan="2">
+                  <field name="name"/>
+                  <field name="course_id"/>
+                  <field name="course_id"/>
+                  <field name="group_ids"/>
+                </group>
+              </form>
+            </field>
+          </group> -->
+        </page>
+      </page>
+    </field>
+  </record>
+
+  <record id="view_education_student_tree" model="ir.ui.view">
+    <field name="name">education.student.tree</field>
+    <field name="model">education.student</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="base.view_partner_tree"/>
+    <field name="arch" type="xml">
+      <xpath expr="//tree" position="attributes">
+        <attribute name="string">Faculties</attribute>
+      </xpath>
+      <xpath expr="//tree" position="inside">
+        <field name="active"/>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_education_student_search" model="ir.ui.view">
+    <field name="name">view.education.student.search</field>
+    <field name="model">education.student</field>
+    <field name="arch" type="xml">
+      <search string="students">
+        <!-- <field name="name"/>
+        <field name="code"/>
+        <field name="course_id"/>
+        <field name="student_id"/> -->
+
+        <group string="Group By" name="groupby">
+          <!-- <filter string="Name" context="{'group_by': 'name'}"/>
+          <filter string="Code" context="{'group_by': 'code'}"/>
+          <filter string="Student" context="{'group_by': 'student_id'}"/>
+          <filter string="Course" context="{'group_by': 'course_id'}"/> -->
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="education_student_action">
+    <field name="name">Students</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">education.student</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="domain">[]</field>
+    <field name="context">{}</field>
+  </record>
+
+  <menuitem id="education_student_menu" parent="" action="education_student_action" sequence="20"/>
+
+</odoo>

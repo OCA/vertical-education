@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+  <menuitem id="education_base_menu" name="Education" sequence="1"/>
+
+  <menuitem id="education_course_root" parent="education.education_base_menu" name="Education Courses" sequence="2"/>
+
+  <menuitem id="education_group_root" parent="education.education_base_menu" name="Education Groups" sequence="4"/>
+
+  <menuitem id="education_enrollment_root" parent="education.education_base_menu" name="Education Enrollments" sequence="6"/>
+
+  <menuitem id="education_record_root" parent="education.education_base_menu" name="Education Records" sequence="8"/>
+
+</data>
+
+</odoo>
