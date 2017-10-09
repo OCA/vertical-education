@@ -6,19 +6,27 @@
     <field name="model">education.group</field>
     <field name="arch" type="xml">
       <form string="Education group">
+        <header>
+          <button name="do_toggle_active" type="object" attrs="{'invisible': [('state','in',['active','cancel'])]}" string="Toggle Active" class="oe_highlight"/>
+          <button name="do_toggle_cancelled" type="object" attrs="{'invisible': [('state','in',['active','cancel', 'done'])]}" string="Cancelled" class="oe_highlight"/>
+          <field name="state" widget="statusbar"/>
+        </header>
         <sheet>
-          <h1>
-            <group name="main" col="4">
-              <field name="name" nolabel="1" placeholder="Name"/>
-            </group>
-            <group >
-              <field name="code" nolabel="1" placeholder="Code"/>
-            </group>
-          </h1>
+          <div class="oe_title">
+            <h1>
+              <field name="code" readonly="1"/>
+            </h1>
+          </div>
+          <group >
+            <field name="name"/>
+          </group>
           <group col="4">
             <field name="course_id"/>
-            <field name="record_id"/>
+            <field name="teacher_in_charge"/>
           </group>
+          <!-- <group name="Students">
+              <field name="record_id"/>
+          </group> -->
         </sheet>
       </form>
     </field>
@@ -67,6 +75,13 @@
     </field>
   </record>
 
-  <menuitem id="education_group" parent="education_group_root" action="education_group_action" sequence="20"/>
+  <record id="group_sequence" model="ir.sequence">
+    <field name="name">Group Sequence</field>
+    <field name="code">education.group</field>
+    <field name="prefix">GRP</field>
+    <field name="padding">4</field>
+  </record>
+
+  <menuitem id="education_group" parent="education_course_root" action="education_group_action" sequence="20"/>
 
 </odoo>

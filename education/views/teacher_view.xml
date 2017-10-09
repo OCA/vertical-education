@@ -84,6 +84,6 @@
     <field name="context">{}</field>
   </record>
 
-  <menuitem id="education_teacher_menu" parent="" action="education_teacher_action" sequence="20"/>
+  <menuitem id="education_teacher_menu" parent="education_teacher_root" action="education_teacher_action" sequence="20"/>
 
 </odoo>

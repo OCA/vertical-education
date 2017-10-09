@@ -19,3 +19,9 @@ class EducationRecord(models.Model):
         comodel_name='education.group',
         inverse_name='record_id',
         string='Groups')
+
+    state = fields.Selection(
+        [('active', 'Active'),
+         ('done', 'Done'),
+         ('cancelled', 'Cancelled')],
+        string='Status')

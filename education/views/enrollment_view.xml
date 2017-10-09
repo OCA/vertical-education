@@ -5,13 +5,16 @@
     <field name="model">education.enrollment</field>
     <field name="arch" type="xml">
       <form string="Education enrollment">
+        <header>
+          <button name="do_toggle_done" type="object" attrs="{'invisible': [('state','in',['pending'])]}" string="Toggle Done" class="oe_highlight"/>
+          <button name="cancelled_enrollment" type="object" attrs="{'invisible': [('state','in',['drop'])]}" string="Cancel Enroll" class="oe_highlight"/>
+          <button name="do_re_enroll" type="object" attrs="{'invisible': [('state','in',['drop', 'finished'])]}" string="Re-Enroll" class="oe_highlight"/>
+          <field name="state" widget="statusbar" />
+        </header>
         <sheet>
           <h1>
             <group name="main" col="4">
-              <field name="name" nolabel="1" placeholder="Name"/>
-            </group>
-            <group >
-              <field name="code" nolabel="1" placeholder="Code"/>
+              <field name="code" readonly="1"/>
             </group>
           </h1>
           <group name="Information" col="4">
@@ -29,7 +32,6 @@
     <field name="model">education.enrollment</field>
     <field name="arch" type="xml">
       <tree string="Educaiton enrollment">
-        <field name="name"/>
         <field name="code"/>
         <field name="student_id"/>
         <field name="course_id"/>
@@ -43,13 +45,11 @@
     <field name="model">education.enrollment</field>
     <field name="arch" type="xml">
       <search string="enrollments">
-        <field name="name"/>
         <field name="code"/>
         <field name="student_id"/>
         <field name="course_id"/>
         <field name="group_id"/>
         <group string="Group By" name="groupby">
-          <filter string="Name" context="{'group_by': 'name'}"/>
           <filter string="Code" context="{'group_by': 'code'}"/>
           <filter string="Student" context="{'group_by': 'student_id'}"/>
           <filter string="Course" context="{'group_by': 'course_id'}"/>
@@ -70,6 +70,13 @@
     </field>
   </record>
 
-  <menuitem id="education_enrollment" parent="education_enrollment_root" action="education_enrollment_action" sequence="20"/>
+  <record id="group_sequence" model="ir.sequence">
+    <field name="name">Enrollment Sequence</field>
+    <field name="code">education.enrollment</field>
+    <field name="prefix">ENR</field>
+    <field name="padding">4</field>
+  </record>
+
+  <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="1"/>
 
 </odoo>

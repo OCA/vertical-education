@@ -64,6 +64,6 @@
     </field>
   </record>
 
-  <menuitem id="education_record" parent="education_record_root" action="education_record_action" sequence="20"/>
+  <menuitem id="education_record" parent="education_student_root" action="education_record_action" sequence="20"/>
 
 </odoo>

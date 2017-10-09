@@ -110,6 +110,6 @@
     <field name="context">{}</field>
   </record>
 
-  <menuitem id="education_student_menu" parent="" action="education_student_action" sequence="20"/>
+  <menuitem id="education_student_menu" parent="education_student_root" action="education_student_action" sequence="20"/>
 
 </odoo>

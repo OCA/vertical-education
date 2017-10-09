@@ -5,16 +5,18 @@
     <field name="model">education.course</field>
     <field name="arch" type="xml">
       <form string="Education Course">
+        <header>
+          <button name="do_toggle_cancelled" type="object" attrs="{'invisible': [('state','in',['done','cancelled'])]}" string="Cancelled" class="oe_highlight"/>
+          <field name="state" widget="statusbar"/>
+        </header>
         <sheet>
           <h1>
-            <group name="main" col="4">
-              <field name="name" nolabel="1" placeholder="Name"/>
-            </group>
-            <group >
-              <field name="code" nolabel="1" placeholder="Code"/>
+            <group name="main" col="1">
+              <field name="code" nolabel="1" placeholder="Code" style="width:150px;"/>
             </group>
           </h1>
-          <group name="Category">
+          <group col="4">
+            <field name="name"/>
             <field name="category_id"/>
           </group>
           <group name="Subjects" string="Subjects">

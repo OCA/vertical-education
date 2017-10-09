@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields
+from odoo import models, fields, api, _
 
 
 class EducationCourseCategory(models.Model):
@@ -22,7 +22,17 @@ class EducationCourse(models.Model):
     code = fields.Char(string='Code', required=True)
     category_id = fields.Many2one(
         comodel_name='education.course.category',
-        string='Category', required=True)
+        string='Category')
     subject_ids = fields.Many2many(
         comodel_name='education.subject',
         string='Subjects')
+
+    state = fields.Selection(
+        [('active', 'Active'),
+         ('cancelled', 'Cancelled')],
+        string='Status',
+        default="active")
+
+    @api.multi
+    def do_toggle_cancelled(self):
+        self.state = 'cancelled'
