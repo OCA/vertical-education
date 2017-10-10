@@ -28,7 +28,8 @@ class EducationRecord(models.Model):
         [('active', 'Active'),
          ('done', 'Done'),
          ('cancelled', 'Cancelled')],
-        string='Status')
+        string='Status',
+        default="active")
 
     _sql_constraints = [
         ('unique_course_record_id',

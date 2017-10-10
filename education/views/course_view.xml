@@ -40,7 +40,6 @@
         <field name="name"/>
         <field name="code"/>
         <field name="category_id"/>
-        <field name="state" />
       </tree>
     </field>
   </record>

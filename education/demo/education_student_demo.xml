@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright <YEAR(S)> <AUTHOR(S)>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+  <data noupdate="1">
+    <record id="education_student_1" model="education.student">
+      <field name="title" ref="base.res_partner_title_miss"/>
+      <field name="firstname">Meleena</field>
+      <field name="gender">female</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">meleena@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_1"/>
+    </record>
+
+    <record id="education_student_2" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Baraka</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">baraka@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_2"/>
+    </record>
+
+    <record id="education_student_3" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Scorpion</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">scorpion@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_3"/>
+    </record>
+
+    <record id="education_student_4" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Sub Zero</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">subzero@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_4"/>
+    </record>
+
+    <record id="education_student_5" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Liu Kang</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">liukang@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_5"/>
+    </record>
+
+    <record id="education_student_6" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Smoke</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">smoke@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_6"/>
+    </record>
+
+    <record id="education_student_7" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Jax</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">jax@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_7"/>
+    </record>
+
+    <record id="education_student_8" model="education.student">
+      <field name="title" ref="base.res_partner_title_miss"/>
+      <field name="firstname">Sonya</field>
+      <field name="gender">female</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">sonya@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_8"/>
+    </record>
+
+    <record id="education_student_9" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Sektor</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">sektor@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_9"/>
+    </record>
+
+    <record id="education_student_10" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Cyrax</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">cyrax@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_10"/>
+    </record>
+
+    <record id="education_student_11" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Goro</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">goro@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_11"/>
+    </record>
+
+    <record id="education_student_12" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Shao Kahn</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">shaokahn@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_12"/>
+    </record>
+
+    <record id="education_student_13" model="education.student">
+      <field name="title" ref="base.res_partner_title_miss"/>
+      <field name="firstname">Kitana</field>
+      <field name="gender">female</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">kitana@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_13"/>
+    </record>
+
+    <record id="education_student_14" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Ermac</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">ermac@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_14"/>
+    </record>
+
+    <record id="education_student_15" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Raiden</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">raiden@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_15"/>
+    </record>
+
+    <record id="education_student_16" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Johnny Cage</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">johnnycage@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_16"/>
+    </record>
+
+    <record id="education_student_17" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Kun Lao</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">kunlao@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_17"/>
+    </record>
+
+    <record id="education_student_18" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Reptile</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">reptile@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_18"/>
+    </record>
+
+    <record id="education_student_19" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Quan Chi</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">quanchi@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_19"/>
+    </record>
+
+    <record id="education_student_20" model="education.student">
+      <field name="title" ref="base.res_partner_title_mister"/>
+      <field name="firstname">Kano</field>
+      <field name="gender">male</field>
+      <field name="birthdate_date">1992-05-06</field>
+      <field name="email">kano@demo.com</field>
+      <field name="city">New York</field>
+      <field name="country_id" ref="base.us"/>
+      <field name="nationality" ref="base.us"/>
+      <field name="type">contact</field>
+      <field name="customer">True</field>
+      <field name="active">True</field>
+      <field name="partner_id" ref="education_res_partner_20"/>
+    </record>
+
+  </data>
+</odoo>
