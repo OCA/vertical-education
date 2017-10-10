@@ -6,77 +6,88 @@
     <field name="arch" type="xml">
       <form string="Education enrollment">
         <header>
+          <button name="do_toggle_approve" type="object" attrs="{'invisible': [('state','in',['active', 'drop', 'cancelled'])]}" string="Toggle Approve" class="oe_highlight"/>
           <button name="do_toggle_done" type="object" attrs="{'invisible': [('state','in',['pending'])]}" string="Toggle Done" class="oe_highlight"/>
-          <button name="cancelled_enrollment" type="object" attrs="{'invisible': [('state','in',['drop'])]}" string="Cancel Enroll" class="oe_highlight"/>
-          <button name="do_re_enroll" type="object" attrs="{'invisible': [('state','in',['drop', 'finished'])]}" string="Re-Enroll" class="oe_highlight"/>
-          <field name="state" widget="statusbar" />
+          <button name="cancelled_enrollment" type="object" attrs="{'invisible': [('state','in',['pending','drop','cancelled'])]}" string="Cancel Enroll" class="oe_highlight"/>
+          <button name="do_re_enroll" type="object" attrs="{'invisible': [('state','in',['pending', 'active', 'cancelled'])]}" string="Re-Enroll" class="oe_highlight"/>
+          <field name="state" widget="statusbar"/>
         </header>
         <sheet>
-          <h1>
-            <group name="main" col="4">
+          <div class="oe_title">
+            <h1>
               <field name="code" readonly="1"/>
-            </group>
-          </h1>
+            </h1>
+          </div>
           <group name="Information" col="4">
             <field name="student_id"/>
             <field name="course_id"/>
             <field name="group_id"/>
           </group>
-        </sheet>
-      </form>
-    </field>
-  </record>
+          <notebook>
+            <page string="Academic Information">
+              <button class="oe_highlight" string="Get Subjects" name="get_subjects" type="object" context="{}" style="margin-top:10px;"/>
+              <group name="subjects">
+                <separator string="Subjects" colspan="2"/>
+                  <field name="subject_ids" nolabel="1"/>
+                </group>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
 
-  <record id="view_education_enrollment_tree" model="ir.ui.view">
-    <field name="name">view.education.enrollment.tree</field>
-    <field name="model">education.enrollment</field>
-    <field name="arch" type="xml">
-      <tree string="Educaiton enrollment">
-        <field name="code"/>
-        <field name="student_id"/>
-        <field name="course_id"/>
-        <field name="group_id"/>
-      </tree>
-    </field>
-  </record>
+    <record id="view_education_enrollment_tree" model="ir.ui.view">
+      <field name="name">view.education.enrollment.tree</field>
+      <field name="model">education.enrollment</field>
+      <field name="arch" type="xml">
+        <tree string="Educaiton enrollment">
+          <field name="code"/>
+          <field name="student_id"/>
+          <field name="course_id"/>
+          <field name="group_id"/>
+          <field name="state" />
+        </tree>
+      </field>
+    </record>
 
-  <record id="view_education_enrollment_search" model="ir.ui.view">
-    <field name="name">view.education.enrollment.search</field>
-    <field name="model">education.enrollment</field>
-    <field name="arch" type="xml">
-      <search string="enrollments">
-        <field name="code"/>
-        <field name="student_id"/>
-        <field name="course_id"/>
-        <field name="group_id"/>
-        <group string="Group By" name="groupby">
-          <filter string="Code" context="{'group_by': 'code'}"/>
-          <filter string="Student" context="{'group_by': 'student_id'}"/>
-          <filter string="Course" context="{'group_by': 'course_id'}"/>
-          <filter string="Group" context="{'group_by': 'group_id'}"/>
-        </group>
-      </search>
-    </field>
-  </record>
+    <record id="view_education_enrollment_search" model="ir.ui.view">
+      <field name="name">view.education.enrollment.search</field>
+      <field name="model">education.enrollment</field>
+      <field name="arch" type="xml">
+        <search string="enrollments">
+          <field name="code"/>
+          <field name="student_id"/>
+          <field name="course_id"/>
+          <field name="group_id"/>
+          <group string="Group By" name="groupby">
+            <filter string="Code" context="{'group_by': 'code'}"/>
+            <filter string="Student" context="{'group_by': 'student_id'}"/>
+            <filter string="Course" context="{'group_by': 'course_id'}"/>
+            <filter string="Group" context="{'group_by': 'group_id'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
 
-  <record id="education_enrollment_action" model="ir.actions.act_window">
-    <field name="name">Enrollments</field>
-    <field name="res_model">education.enrollment</field>
-    <field name="view_mode">tree,form</field>
-    <field name="help" type="html">
-      <p class="oe_view_nocontent_create">
-        Click to create a new Enrollment.
-      </p>
-    </field>
-  </record>
+    <record id="education_enrollment_action" model="ir.actions.act_window">
+      <field name="name">Enrollments</field>
+      <field name="res_model">education.enrollment</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to create a new Enrollment.
+        </p>
+      </field>
+    </record>
 
-  <record id="group_sequence" model="ir.sequence">
-    <field name="name">Enrollment Sequence</field>
-    <field name="code">education.enrollment</field>
-    <field name="prefix">ENR</field>
-    <field name="padding">4</field>
-  </record>
+    <record id="enrollment_sequence" model="ir.sequence">
+      <field name="name">Enrollment Sequence</field>
+      <field name="code">education.enrollment</field>
+      <field name="prefix">ENR</field>
+      <field name="padding">4</field>
+    </record>
 
-  <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="1"/>
+    <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="1"/>
 
-</odoo>
+  </odoo>

@@ -8,7 +8,7 @@ class EducationStudent(models.Model):
     _inherits = {'res.partner': 'partner_id'}
 
     partner_id = fields.Many2one(
-        'res.partner')
+        'res.partner', 'Partner', required=True, ondelete="cascade")
     record_ids = fields.One2many(
         'education.record',
         'student_id',

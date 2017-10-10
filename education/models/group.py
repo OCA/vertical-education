@@ -5,6 +5,7 @@ from odoo import models, fields, api, _
 
 class EducationGroup(models.Model):
     _name = "education.group"
+    _rec_name = 'code'
 
     name = fields.Char(
         string='Name', required=True)
@@ -13,10 +14,14 @@ class EducationGroup(models.Model):
         string='Code', required=True, default=lambda self: _('New'))
 
     course_id = fields.Many2one(
-        comodel_name='education.course', required=True)
-    record_id = fields.Many2one(
+        comodel_name='education.course',
+        required=True,
+        string="Course")
+    record_ids = fields.One2many(
         comodel_name='education.record',
-        string='Record')  # cambiar por un one2many o quitar
+        inverse_name='group_id',
+        string='Records')
+
     date_from = fields.Date(string='From Date')
     date_to = fields.Date(string='To Date')
     enrollment_ids = fields.One2many(
@@ -43,6 +48,11 @@ class EducationGroup(models.Model):
     @api.multi
     def do_toggle_cancelled(self):
         self.state = 'cancelled'
+        if self.record_ids:
+            for record in self.record_ids:
+                for line in record.student_id.record_ids:
+                    if record.code == line.code:
+                        line.unlink()
 
     @api.model
     def create(self, vals):

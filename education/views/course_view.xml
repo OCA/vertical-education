@@ -5,23 +5,28 @@
     <field name="model">education.course</field>
     <field name="arch" type="xml">
       <form string="Education Course">
-        <header>
-          <button name="do_toggle_cancelled" type="object" attrs="{'invisible': [('state','in',['done','cancelled'])]}" string="Cancelled" class="oe_highlight"/>
-          <field name="state" widget="statusbar"/>
-        </header>
         <sheet>
+          <div class="oe_button_box" name="button_box">
+            <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+              <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+            </button>
+          </div>
           <h1>
             <group name="main" col="1">
-              <field name="code" nolabel="1" placeholder="Code" style="width:150px;"/>
+              <field name="code" nolabel="1" placeholder="Code"/>
             </group>
           </h1>
           <group col="4">
             <field name="name"/>
             <field name="category_id"/>
           </group>
-          <group name="Subjects" string="Subjects">
-            <field name="subject_ids" nolabel='1'/>
-          </group>
+          <notebook>
+            <page string="Subjects">
+              <group name="Subjects">
+                <field name="subject_ids" nolabel='1'/>
+              </group>
+            </page>
+          </notebook>
         </sheet>
       </form>
     </field>
@@ -35,6 +40,7 @@
         <field name="name"/>
         <field name="code"/>
         <field name="category_id"/>
+        <field name="state" />
       </tree>
     </field>
   </record>
@@ -47,6 +53,7 @@
         <field name="name"/>
         <field name="code"/>
         <field name="category_id"/>
+        <filter name="active" string="Archived" domain="[('active', '=', False)]"/>
         <group string="Group By" name="groupby">
           <filter name="name" string="Name" context="{'group_by': 'name'}"/>
           <filter name="code" string="Code" context="{'group_by': 'code'}"/>

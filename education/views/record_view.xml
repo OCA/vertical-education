@@ -8,7 +8,7 @@
         <sheet>
           <h1>
             <group name="main">
-              <field name="name" nolabel="1" placeholder="Name"/>
+              <field name="code" readonly="1"/>
             </group>
           </h1>
           <group col="4">
@@ -16,7 +16,7 @@
             <field name="course_id"/>
           </group>
           <group string="Groups">
-            <field name="group_ids" nolabel="1"/>
+            <field name="group_id" nolabel="1"/>
           </group>
         </sheet>
       </form>
@@ -28,7 +28,7 @@
     <field name="model">education.record</field>
     <field name="arch" type="xml">
       <tree string="Educaiton record">
-        <field name="name"/>
+        <field name="code"/>
         <field name="student_id"/>
         <field name="course_id"/>
       </tree>
@@ -40,11 +40,10 @@
     <field name="model">education.record</field>
     <field name="arch" type="xml">
       <search string="records">
-        <field name="name"/>
+        <field name="code"/>
         <field name="student_id"/>
         <field name="course_id"/>
         <group string="Group By" name="groupby">
-          <filter string="Name" context="{'group_by': 'name'}"/>
           <filter string="Code" context="{'group_by': 'code'}"/>
           <filter string="Student" context="{'group_by': 'student_id'}"/>
           <filter string="Course" context="{'group_by': 'course_id'}"/>
@@ -64,6 +63,13 @@
     </field>
   </record>
 
-  <menuitem id="education_record" parent="education_student_root" action="education_record_action" sequence="20"/>
+  <record id="record_sequence" model="ir.sequence">
+    <field name="name">Record Sequence</field>
+    <field name="code">education.record</field>
+    <field name="prefix">EXP</field>
+    <field name="padding">4</field>
+  </record>
+
+  <!-- <menuitem id="education_record" parent="education_student_root" action="education_record_action" sequence="20"/> -->
 
 </odoo>

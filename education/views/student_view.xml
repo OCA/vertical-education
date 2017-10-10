@@ -41,25 +41,25 @@
           <group col="4" colspan="4">
             <field name="ref"/>
           </group>
-          <!-- <group>
+          <group>
             <separator string="Admission Details" colspan="4"/>
-            <field name="record_ids" nolabel="1">
+            <field name="record_ids" nolabel="1" >
               <tree string="Record Details">
-                <field name="name"/>
+                <field name="code"/>
                 <field name="student_id"/>
                 <field name="course_id"/>
-                <field name="group_ids" widget="many2many_tags"/>
+                <field name="group_id" />
               </tree>
               <form>
                 <group cols="2" colspan="2">
-                  <field name="name"/>
+                  <field name="code"/>
+                  <field name="student_id"/>
                   <field name="course_id"/>
-                  <field name="course_id"/>
-                  <field name="group_ids"/>
+                  <field name="group_id"/>
                 </group>
               </form>
             </field>
-          </group> -->
+          </group>
         </page>
       </page>
     </field>

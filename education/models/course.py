@@ -13,6 +13,9 @@ class EducationSubject(models.Model):
     _name = "education.subject"
 
     name = fields.Char(string='Name', required=True)
+    course_id = fields.Many2one(
+        comodel_name='education.course',
+        string='Course')
 
 
 class EducationCourse(models.Model):
@@ -27,12 +30,5 @@ class EducationCourse(models.Model):
         comodel_name='education.subject',
         string='Subjects')
 
-    state = fields.Selection(
-        [('active', 'Active'),
-         ('cancelled', 'Cancelled')],
-        string='Status',
-        default="active")
-
-    @api.multi
-    def do_toggle_cancelled(self):
-        self.state = 'cancelled'
+    active = fields.Boolean(
+        string='Active', default=True)

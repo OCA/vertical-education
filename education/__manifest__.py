@@ -17,6 +17,7 @@
     "data": [
         'views/menu_view.xml',
         'views/course_view.xml',
+        'views/subject_view.xml',
         'views/enrollment_view.xml',
         'views/group_view.xml',
         'views/record_view.xml',
