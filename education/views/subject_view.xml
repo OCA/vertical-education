@@ -15,9 +15,6 @@
               <field name="name"/>
             </group>
           </h1>
-          <group>
-            <field name="course_id"/>
-          </group>
         </sheet>
       </form>
     </field>
@@ -29,7 +26,6 @@
     <field name="arch" type="xml">
       <tree string="Educaiton subject">
         <field name="name"/>
-        <field name="course_id"/>
       </tree>
     </field>
   </record>
