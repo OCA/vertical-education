@@ -25,7 +25,6 @@
           </group>
           <notebook>
             <page string="Academic Information">
-              <button class="oe_highlight" string="Get Subjects" name="get_subjects" type="object" context="{}" style="margin-top:10px;"/>
               <group name="subjects">
                 <separator string="Subjects" colspan="2"/>
                   <field name="subject_ids" nolabel="1"/>
@@ -88,6 +87,6 @@
       <field name="padding">4</field>
     </record>
 
-    <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="1"/>
+    <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="20"/>
 
   </odoo>
