@@ -300,6 +300,11 @@ msgid "Courses"
 msgstr "Cursos"
 
 #. module: education
+#: model:ir.ui.menu,name:education.education_invoicing_method_root
+msgid "Invoicing Method"
+msgstr "Método de Facturación"
+
+#. module: education
 #: model:ir.model.fields,field_description:education.field_education_course_category_create_uid
 #: model:ir.model.fields,field_description:education.field_education_course_create_uid
 #: model:ir.model.fields,field_description:education.field_education_enrollment_create_uid
