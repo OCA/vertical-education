@@ -8,7 +8,7 @@
       <field name="name">1-A</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
-      <field name="course_id" ref="education_course_1"/>
+      <field name="course_id" ref="education.education_course_1"/>
     </record>
     <record id="education_group_2" model="education.group">
       <field name="name">1-B</field>

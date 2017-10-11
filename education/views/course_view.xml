@@ -20,9 +20,9 @@
             <field name="name"/>
             <field name="category_id"/>
           </group>
-          <notebook>
-            <page string="Subjects">
-              <group name="Subjects">
+          <notebook name="subjects">
+            <page name="subjects" string="Subjects">
+              <group name="subjects">
                 <field name="subject_ids" nolabel='1'/>
               </group>
             </page>

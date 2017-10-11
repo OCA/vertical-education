@@ -7,121 +7,121 @@
     <record id="education_record_1" model="education.record">
       <field name="student_id" ref="education_student_1"/>
       <field name="course_id" ref="education_course_1"/>
-      <field name="batch_id" ref="education_batch_1"/>
+      <field name="group_id" ref="education_group_1"/>
     </record>
 
     <record id="education_record_2" model="education.record">
       <field name="student_id" ref="education_student_2"/>
       <field name="course_id" ref="education_course_1"/>
-      <field name="batch_id" ref="education_batch_2"/>
+      <field name="group_id" ref="education_group_2"/>
     </record>
 
     <record id="education_record_3" model="education.record">
       <field name="student_id" ref="education_student_3"/>
       <field name="course_id" ref="education_course_2"/>
-      <field name="batch_id" ref="education_batch_3"/>
+      <field name="group_id" ref="education_group_3"/>
     </record>
 
     <record id="education_record_4" model="education.record">
       <field name="student_id" ref="education_student_4"/>
       <field name="course_id" ref="education_course_2"/>
-      <field name="batch_id" ref="education_batch_4"/>
+      <field name="group_id" ref="education_group_4"/>
     </record>
 
     <record id="education_record_5" model="education.record">
       <field name="student_id" ref="education_student_5"/>
       <field name="course_id" ref="education_course_3"/>
-      <field name="batch_id" ref="education_batch_5"/>
+      <field name="group_id" ref="education_group_5"/>
     </record>
 
     <record id="education_record_6" model="education.record">
       <field name="student_id" ref="education_student_6"/>
       <field name="course_id" ref="education_course_3"/>
-      <field name="batch_id" ref="education_batch_6"/>
+      <field name="group_id" ref="education_group_6"/>
     </record>
 
     <record id="education_record_7" model="education.record">
       <field name="student_id" ref="education_student_7"/>
       <field name="course_id" ref="education_course_4"/>
-      <field name="batch_id" ref="education_batch_7"/>
+      <field name="group_id" ref="education_group_7"/>
     </record>
 
     <record id="education_record_8" model="education.record">
       <field name="student_id" ref="education_student_8"/>
       <field name="course_id" ref="education_course_4"/>
-      <field name="batch_id" ref="education_batch_8"/>
+      <field name="group_id" ref="education_group_8"/>
     </record>
 
     <record id="education_record_9" model="education.record">
       <field name="student_id" ref="education_student_9"/>
       <field name="course_id" ref="education_course_5"/>
-      <field name="batch_id" ref="education_batch_9"/>
+      <field name="group_id" ref="education_group_9"/>
     </record>
 
     <record id="education_record_10" model="education.record">
       <field name="student_id" ref="education_student_10"/>
       <field name="course_id" ref="education_course_1"/>
-      <field name="batch_id" ref="education_batch_1"/>
+      <field name="group_id" ref="education_group_1"/>
     </record>
 
     <record id="education_record_11" model="education.record">
       <field name="student_id" ref="education_student_11"/>
       <field name="course_id" ref="education_course_1"/>
-      <field name="batch_id" ref="education_batch_2"/>
+      <field name="group_id" ref="education_group_2"/>
     </record>
 
     <record id="education_record_12" model="education.record">
       <field name="student_id" ref="education_student_12"/>
       <field name="course_id" ref="education_course_2"/>
-      <field name="batch_id" ref="education_batch_3"/>
+      <field name="group_id" ref="education_group_3"/>
     </record>
 
     <record id="education_record_13" model="education.record">
       <field name="student_id" ref="education_student_13"/>
       <field name="course_id" ref="education_course_2"/>
-      <field name="batch_id" ref="education_batch_4"/>
+      <field name="group_id" ref="education_group_4"/>
     </record>
 
     <record id="education_record_14" model="education.record">
       <field name="student_id" ref="education_student_14"/>
       <field name="course_id" ref="education_course_3"/>
-      <field name="batch_id" ref="education_batch_5"/>
+      <field name="group_id" ref="education_group_5"/>
     </record>
 
     <record id="education_record_15" model="education.record">
       <field name="student_id" ref="education_student_15"/>
       <field name="course_id" ref="education_course_3"/>
-      <field name="batch_id" ref="education_batch_5"/>
+      <field name="group_id" ref="education_group_5"/>
     </record>
 
     <record id="education_record_16" model="education.record">
       <field name="student_id" ref="education_student_16"/>
       <field name="course_id" ref="education_course_4"/>
-      <field name="batch_id" ref="education_batch_7"/>
+      <field name="group_id" ref="education_group_7"/>
     </record>
 
     <record id="education_record_17" model="education.record">
       <field name="student_id" ref="education_student_17"/>
       <field name="course_id" ref="education_course_4"/>
-      <field name="batch_id" ref="education_batch_8"/>
+      <field name="group_id" ref="education_group_8"/>
     </record>
 
     <record id="education_record_18" model="education.record">
       <field name="student_id" ref="education_student_18"/>
       <field name="course_id" ref="education_course_5"/>
-      <field name="batch_id" ref="education_batch_9"/>
+      <field name="group_id" ref="education_group_9"/>
     </record>
 
     <record id="education_record_19" model="education.record">
       <field name="student_id" ref="education_student_19"/>
       <field name="course_id" ref="education_course_5"/>
-      <field name="batch_id" ref="education_batch_10"/>
+      <field name="group_id" ref="education_group_10"/>
     </record>
 
     <record id="education_record_20" model="education.record">
       <field name="student_id" ref="education_student_20"/>
       <field name="course_id" ref="education_course_5"/>
-      <field name="batch_id" ref="education_batch_10"/>
+      <field name="group_id" ref="education_group_10"/>
     </record>
 
   </data>

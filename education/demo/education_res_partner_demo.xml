@@ -7,14 +7,17 @@
 
     <record id="education_res_partner_1" model="res.partner">
       <field name="name">Meleena</field>
+      <field name="email">meleena@demo.com</field>
     </record>
 
     <record id="education_res_partner_2" model="res.partner">
       <field name="name">Baraka</field>
+      <field name="email">baraka@demo.com</field>
     </record>
 
     <record id="education_res_partner_3" model="res.partner">
       <field name="name">Scorpion</field>
+      <field name="email">baraka@demo.com</field>
     </record>
 
     <record id="education_res_partner_4" model="res.partner">

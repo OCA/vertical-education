@@ -36,3 +36,10 @@ class EducationRecord(models.Model):
          'unique(course_id,group_id,student_id)',
          'Student must be unique per Record!'),
     ]
+
+    @api.model
+    def create(self, vals):
+        if vals.get('code', 'New') == 'New':
+            vals['code'] = self.env['ir.sequence'].next_by_code(
+                'education.record') or 'New'
+        return super(EducationRecord, self).create(vals)

@@ -62,6 +62,14 @@ class EducationEnrollment(models.Model):
                         _("Course not found on student's records!"))
 
     @api.multi
+    def action_reset_draft(self):
+        self.state = 'pending'
+
+    @api.multi
+    def cancelled_enrollment(self):
+        self.state = 'cancelled'
+
+    @api.multi
     def get_subjects(self):
         for record in self:
             subject_ids = []

@@ -7,6 +7,8 @@
     <record id="education_student_1" model="education.student">
       <field name="title" ref="base.res_partner_title_miss"/>
       <field name="firstname">Meleena</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">female</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">meleena@demo.com</field>
@@ -22,6 +24,8 @@
     <record id="education_student_2" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Baraka</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">baraka@demo.com</field>
@@ -37,6 +41,8 @@
     <record id="education_student_3" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Scorpion</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">scorpion@demo.com</field>
@@ -52,6 +58,8 @@
     <record id="education_student_4" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Sub Zero</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">subzero@demo.com</field>
@@ -67,6 +75,8 @@
     <record id="education_student_5" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Liu Kang</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">liukang@demo.com</field>
@@ -82,6 +92,8 @@
     <record id="education_student_6" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Smoke</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">smoke@demo.com</field>
@@ -97,6 +109,8 @@
     <record id="education_student_7" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Jax</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">jax@demo.com</field>
@@ -112,6 +126,8 @@
     <record id="education_student_8" model="education.student">
       <field name="title" ref="base.res_partner_title_miss"/>
       <field name="firstname">Sonya</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">female</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">sonya@demo.com</field>
@@ -127,6 +143,8 @@
     <record id="education_student_9" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Sektor</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">sektor@demo.com</field>
@@ -142,6 +160,8 @@
     <record id="education_student_10" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Cyrax</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">cyrax@demo.com</field>
@@ -157,6 +177,8 @@
     <record id="education_student_11" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Goro</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">goro@demo.com</field>
@@ -172,6 +194,8 @@
     <record id="education_student_12" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Shao Kahn</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">shaokahn@demo.com</field>
@@ -187,6 +211,8 @@
     <record id="education_student_13" model="education.student">
       <field name="title" ref="base.res_partner_title_miss"/>
       <field name="firstname">Kitana</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">female</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">kitana@demo.com</field>
@@ -202,6 +228,8 @@
     <record id="education_student_14" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Ermac</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">ermac@demo.com</field>
@@ -217,6 +245,8 @@
     <record id="education_student_15" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Raiden</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">raiden@demo.com</field>
@@ -232,6 +262,8 @@
     <record id="education_student_16" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Johnny Cage</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">johnnycage@demo.com</field>
@@ -247,6 +279,8 @@
     <record id="education_student_17" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Kun Lao</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">kunlao@demo.com</field>
@@ -262,6 +296,8 @@
     <record id="education_student_18" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Reptile</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">reptile@demo.com</field>
@@ -277,6 +313,8 @@
     <record id="education_student_19" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Quan Chi</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">quanchi@demo.com</field>
@@ -292,6 +330,8 @@
     <record id="education_student_20" model="education.student">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Kano</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1992-05-06</field>
       <field name="email">kano@demo.com</field>

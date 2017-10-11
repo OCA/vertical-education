@@ -42,17 +42,8 @@ class EducationGroup(models.Model):
         default="pending")
 
     @api.multi
-    def do_toggle_active(self):
+    def set_active(self):
         self.state = 'active'
-
-    @api.multi
-    def do_toggle_cancelled(self):
-        self.state = 'cancelled'
-        if self.record_ids:
-            for record in self.record_ids:
-                for line in record.student_id.record_ids:
-                    if record.code == line.code:
-                        line.unlink()
 
     @api.model
     def create(self, vals):

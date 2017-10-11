@@ -7,8 +7,6 @@
     <field name="arch" type="xml">
       <form string="Education group">
         <header>
-          <button name="do_toggle_active" type="object" attrs="{'invisible': [('state','in',['active','cancel'])]}" string="Toggle Active" class="oe_highlight"/>
-          <button name="do_toggle_cancelled" type="object" attrs="{'invisible': [('state','in',['active','cancel', 'done'])]}" string="Cancelled" class="oe_highlight"/>
           <field name="state" widget="statusbar"/>
         </header>
         <sheet>
@@ -20,14 +18,14 @@
           <group >
             <field name="name"/>
           </group>
-          <group col="4">
+          <group name="general" col="4">
             <field name="course_id"/>
             <field name="teacher_in_charge"/>
             <field name="date_from"/>
             <field name="date_to"/>
           </group>
           <notebook>
-            <page string="Students">
+            <page name="students" string="Students">
               <group name="Students">
                 <field name="record_ids" nolabel="1" readonly="1"/>
               </group>

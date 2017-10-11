@@ -7,6 +7,8 @@
     <record id="education_teacher_1" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Rain</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">rain@demo.com</field>
@@ -22,6 +24,8 @@
     <record id="education_teacher_2" model="education.teacher">
       <field name="title" ref="base.res_partner_title_miss"/>
       <field name="firstname">Sindel</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">female</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">sindelm@demo.com</field>
@@ -37,6 +41,8 @@
     <record id="education_teacher_3" model="education.teacher">
       <field name="title" ref="base.res_partner_title_miss"/>
       <field name="firstname">Jade</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">female</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">jade@demo.com</field>
@@ -52,6 +58,8 @@
     <record id="education_teacher_4" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Kabal</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">kabal@demo.com</field>
@@ -67,6 +75,8 @@
     <record id="education_teacher_5" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Nightwolf</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">nightwolf@demo.com</field>
@@ -82,6 +92,8 @@
     <record id="education_teacher_6" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Shang Tsung</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">shangtsung@demo.com</field>
@@ -97,6 +109,8 @@
     <record id="education_teacher_7" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Kotal Kahn</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">kotalkahn@demo.com</field>
@@ -112,6 +126,8 @@
     <record id="education_teacher_8" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Takahashi Takeda</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">takahashitakeda@demo.com</field>
@@ -127,6 +143,8 @@
     <record id="education_teacher_9" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Kenshi</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">Kenshi@demo.com</field>
@@ -142,6 +160,8 @@
     <record id="education_teacher_10" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Bo' Rai Cho</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">boraicho@demo.com</field>
@@ -157,6 +177,8 @@
     <record id="education_teacher_11" model="education.teacher">
       <field name="title" ref="base.res_partner_title_mister"/>
       <field name="firstname">Jason Voorhees</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">male</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">jasonvoorhees@demo.com</field>
@@ -172,6 +194,8 @@
     <record id="education_teacher_12" model="education.teacher">
       <field name="title" ref="base.res_partner_title_miss"/>
       <field name="firstname">Tanya</field>
+      <field name="lastname">M</field>
+      <field name="lastname2">K</field>
       <field name="gender">female</field>
       <field name="birthdate_date">1983-02-01</field>
       <field name="email">tanya@demo.com</field>

@@ -13,6 +13,11 @@
     "installable": True,
     "depends": [
         "base",
+        'partner_contact_gender',
+        'partner_firstname',
+        'partner_second_lastname',
+        'partner_contact_birthdate',
+        'partner_contact_nationality',
     ],
     "data": [
         'views/menu_view.xml',
@@ -29,10 +34,10 @@
     "demo": [
         'demo/education_res_partner_demo.xml',
         'demo/education_subject_demo.xml',
+        'demo/education_teacher_demo.xml',
+        'demo/education_student_demo.xml',
         'demo/education_course_demo.xml',
         'demo/education_group_demo.xml',
-        'demo/education_student_demo.xml',
         'demo/education_record_demo.xml',
-        'demo/education_teacher_demo.xml',
     ],
 }

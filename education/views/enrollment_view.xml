@@ -21,7 +21,7 @@
           <group name="Information" col="4">
             <field name="student_id"/>
             <field name="course_id"/>
-            <field name="group_id"/>
+            <field name="group_id" domain="[('course_id', '=', course_id)]"/>
           </group>
           <notebook>
             <page string="Academic Information">
