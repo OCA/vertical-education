@@ -6,29 +6,29 @@
   <data noupdate="1">
 
     <record id="education_course_1" model="education.course">
-      <field name="code">ESO</field>
-      <field name="name">1-ESO</field>
+      <field name="code">COM</field>
+      <field name="name">Computing</field>
       <field name="subject_ids" eval="[(6,0, [ref('education_subject_1'), ref('education_subject_5'), ref('education_subject_9'), ref('education_subject_13'), ref('education_subject_17')])]"/>
     </record>
 
     <record id="education_course_2" model="education.course">
-      <field name="code">ESO</field>
-      <field name="name">2-ESO</field>
+      <field name="code">PRO</field>
+      <field name="name">Programming</field>
       <field name="subject_ids" eval="[(6,0, [ref('education_subject_2'), ref('education_subject_6'), ref('education_subject_10'), ref('education_subject_14'), ref('education_subject_18')])]"/>
     </record>
 
     <record id="education_course_3" model="education.course">
-      <field name="code">ESO</field>
-      <field name="name">3-ESO</field>
+      <field name="code">DB</field>
+      <field name="name">Data Bases</field>
       <field name="subject_ids" eval="[(6,0, [ref('education_subject_3'), ref('education_subject_7'), ref('education_subject_11'), ref('education_subject_15'), ref('education_subject_19')])]"/>
     </record>
 
     <record id="education_course_4" model="education.course">
-      <field name="code">ESO</field>
-      <field name="name">4-ESO</field>
+      <field name="code">SEC</field>
+      <field name="name">Security</field>
       <field name="subject_ids" eval="[(6,0, [ref('education_subject_4'), ref('education_subject_8'), ref('education_subject_12'), ref('education_subject_16'), ref('education_subject_20')])]"/>
     </record>
-    
+
     <record id="education_course_5" model="education.course">
       <field name="code">BACH</field>
       <field name="name">bachelor's degree</field>

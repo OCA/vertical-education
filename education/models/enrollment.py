@@ -81,3 +81,12 @@ class EducationEnrollment(models.Model):
             vals['code'] = self.env['ir.sequence'].next_by_code(
                 'education.enrollment') or 'New'
         return super(EducationEnrollment, self).create(vals)
+
+    @api.multi
+    def get_subjects(self):
+        for record in self:
+            subject_ids = []
+            if record.course_id and record.course_id.subject_ids:
+                for subject in record.course_id.subject_ids:
+                    subject_ids.append(subject.id)
+            record.subject_ids = [(6, 0, subject_ids)]

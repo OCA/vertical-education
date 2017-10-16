@@ -5,52 +5,52 @@
 <odoo>
   <data noupdate="1">
     <record id="education_group_1" model="education.group">
-      <field name="name">1-A</field>
+      <field name="name">COM-1</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education.education_course_1"/>
     </record>
     <record id="education_group_2" model="education.group">
-      <field name="name">1-B</field>
+      <field name="name">COM-2</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education_course_1"/>
     </record>
 
     <record id="education_group_3" model="education.group">
-      <field name="name">2-A</field>
+      <field name="name">PRO-1</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education_course_2"/>
     </record>
     <record id="education_group_4" model="education.group">
-      <field name="name">2-B</field>
+      <field name="name">PRO-2</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education_course_2"/>
     </record>
 
     <record id="education_group_5" model="education.group">
-      <field name="name">3-A</field>
+      <field name="name">DB-1</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education_course_3"/>
     </record>
     <record id="education_group_6" model="education.group">
-      <field name="name">3-B</field>
+      <field name="name">DB-2</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education_course_3"/>
     </record>
 
     <record id="education_group_7" model="education.group">
-      <field name="name">4-A</field>
+      <field name="name">SEC-1</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education_course_4"/>
     </record>
     <record id="education_group_8" model="education.group">
-      <field name="name">4-B</field>
+      <field name="name">SEC-2</field>
       <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education_course_4"/>
