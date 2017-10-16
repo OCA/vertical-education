@@ -13,9 +13,6 @@ class EducationSubject(models.Model):
     _name = "education.subject"
 
     name = fields.Char(string='Name', required=True)
-    course_id = fields.Many2one(
-        comodel_name='education.course',
-        string='Course')
 
 
 class EducationCourse(models.Model):

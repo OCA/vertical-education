@@ -63,20 +63,17 @@ class EducationEnrollment(models.Model):
 
     @api.multi
     def action_reset_draft(self):
+        self.ensure_one()
         self.state = 'pending'
 
     @api.multi
     def cancelled_enrollment(self):
+        self.ensure_one()
         self.state = 'cancelled'
 
-    @api.multi
-    def get_subjects(self):
-        for record in self:
-            subject_ids = []
-            if record.course_id and record.course_id.subject_ids:
-                for subject in record.course_id.subject_ids:
-                    subject_ids.append(subject.id)
-            record.subject_ids = [(6, 0, subject_ids)]
+    @api.onchange('course_id')
+    def onchange_course_id(self):
+        self.subject_ids = [(6, 0, self.course_id.subject_ids.ids)]
 
     @api.model
     def create(self, vals):

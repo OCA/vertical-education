@@ -7,7 +7,7 @@
     <field name="inherit_id" ref="base.res_partner_kanban_view"/>
     <field name="arch" type="xml">
       <xpath expr="//kanban" position="attributes">
-        <attribute name="string">Faculties</attribute>
+        <attribute name="string">Students</attribute>
       </xpath>
     </field>
   </record>
@@ -19,15 +19,12 @@
     <field name="inherit_id" ref="base.view_partner_form"/>
     <field name="arch" type="xml">
       <xpath expr="//form" position="attributes">
-        <attribute name="string">Faculty</attribute>
+        <attribute name="string">Student</attribute>
       </xpath>
       <field name="company_type" position="attributes">
         <attribute name="invisible">True</attribute>
       </field>
       <field name="function" position="attributes">
-        <attribute name="invisible">True</attribute>
-      </field>
-      <field name="fax" position="attributes">
         <attribute name="invisible">True</attribute>
       </field>
       <field name="website" position="attributes">
@@ -42,9 +39,9 @@
             <field name="ref"/>
           </group>
           <group>
-            <separator string="Admission Details" colspan="4"/>
+            <separator string="Academic Records" colspan="4"/>
             <field name="record_ids" nolabel="1" >
-              <tree string="Record Details">
+              <tree>
                 <field name="code"/>
                 <field name="student_id"/>
                 <field name="course_id"/>
@@ -52,9 +49,8 @@
                 <field name="state" />
               </tree>
               <form>
-                <group cols="2" colspan="2">
+                <group>
                   <field name="code"/>
-                  <field name="student_id"/>
                   <field name="course_id"/>
                   <field name="group_id"/>
                 </group>
@@ -73,31 +69,11 @@
     <field name="inherit_id" ref="base.view_partner_tree"/>
     <field name="arch" type="xml">
       <xpath expr="//tree" position="attributes">
-        <attribute name="string">Faculties</attribute>
+        <attribute name="string">Students</attribute>
       </xpath>
       <xpath expr="//tree" position="inside">
         <field name="active"/>
       </xpath>
-    </field>
-  </record>
-
-  <record id="view_education_student_search" model="ir.ui.view">
-    <field name="name">view.education.student.search</field>
-    <field name="model">education.student</field>
-    <field name="arch" type="xml">
-      <search string="students">
-        <!-- <field name="name"/>
-        <field name="code"/>
-        <field name="course_id"/>
-        <field name="student_id"/> -->
-
-        <group string="Group By" name="groupby">
-          <!-- <filter string="Name" context="{'group_by': 'name'}"/>
-          <filter string="Code" context="{'group_by': 'code'}"/>
-          <filter string="Student" context="{'group_by': 'student_id'}"/>
-          <filter string="Course" context="{'group_by': 'course_id'}"/> -->
-        </group>
-      </search>
     </field>
   </record>
 
@@ -111,6 +87,6 @@
     <field name="context">{}</field>
   </record>
 
-  <menuitem id="education_student_menu" parent="education_student_root" action="education_student_action" sequence="20"/>
+  <menuitem id="education_student_menu" parent="education_student_root" action="education_student_action" sequence="10"/>
 
 </odoo>

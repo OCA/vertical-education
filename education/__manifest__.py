@@ -13,11 +13,6 @@
     "installable": True,
     "depends": [
         "base",
-        'partner_contact_gender',
-        'partner_firstname',
-        'partner_second_lastname',
-        'partner_contact_birthdate',
-        'partner_contact_nationality',
     ],
     "data": [
         'views/menu_view.xml',

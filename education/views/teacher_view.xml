@@ -19,15 +19,12 @@
     <field name="inherit_id" ref="base.view_partner_form"/>
     <field name="arch" type="xml">
       <xpath expr="//form" position="attributes">
-        <attribute name="string">teacher</attribute>
+        <attribute name="string">Teacher</attribute>
       </xpath>
       <field name="company_type" position="attributes">
         <attribute name="invisible">True</attribute>
       </field>
       <field name="function" position="attributes">
-        <attribute name="invisible">True</attribute>
-      </field>
-      <field name="fax" position="attributes">
         <attribute name="invisible">True</attribute>
       </field>
       <field name="website" position="attributes">
@@ -49,28 +46,8 @@
     <field name="inherit_id" ref="base.view_partner_tree"/>
     <field name="arch" type="xml">
       <xpath expr="//tree" position="attributes">
-        <attribute name="string">Faculties</attribute>
+        <attribute name="string">Teachers</attribute>
       </xpath>
-    </field>
-  </record>
-
-  <record id="view_education_teacher_search" model="ir.ui.view">
-    <field name="name">view.education.teacher.search</field>
-    <field name="model">education.teacher</field>
-    <field name="arch" type="xml">
-      <search string="teachers">
-        <!-- <field name="name"/>
-        <field name="code"/>
-        <field name="course_id"/>
-        <field name="teacher_id"/> -->
-
-        <group string="Group By" name="groupby">
-          <!-- <filter string="Name" context="{'group_by': 'name'}"/>
-          <filter string="Code" context="{'group_by': 'code'}"/>
-          <filter string="teacher" context="{'group_by': 'teacher_id'}"/>
-          <filter string="Course" context="{'group_by': 'course_id'}"/> -->
-        </group>
-      </search>
     </field>
   </record>
 
