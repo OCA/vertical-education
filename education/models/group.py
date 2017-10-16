@@ -5,7 +5,7 @@ from odoo import models, fields, api, _
 
 class EducationGroup(models.Model):
     _name = "education.group"
-    _rec_name = 'code'
+    _rec_name = 'name'
 
     name = fields.Char(
         string='Name', required=True)

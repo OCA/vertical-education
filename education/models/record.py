@@ -27,7 +27,7 @@ class EducationRecord(models.Model):
     state = fields.Selection(
         [('active', 'Active'),
          ('done', 'Done'),
-         ('cancelled', 'Cancelled')],
+         ('drop', 'Drop')],
         string='Status',
         default="active")
 

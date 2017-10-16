@@ -6,10 +6,9 @@
     <field name="arch" type="xml">
       <form string="Education enrollment">
         <header>
-          <button name="do_toggle_approve" type="object" attrs="{'invisible': [('state','in',['active', 'drop', 'cancelled'])]}" string="Toggle Approve" class="oe_highlight"/>
-          <button name="do_toggle_done" type="object" attrs="{'invisible': [('state','in',['pending'])]}" string="Toggle Done" class="oe_highlight"/>
+          <button name="do_toggle_approve" type="object" attrs="{'invisible': [('state','in',['active', 'drop', 'cancelled', 'finished'])]}" string="Toggle Approve" class="oe_highlight"/>
           <button name="cancelled_enrollment" type="object" attrs="{'invisible': [('state','in',['pending','drop','cancelled'])]}" string="Cancel Enroll" class="oe_highlight"/>
-          <button name="do_re_enroll" type="object" attrs="{'invisible': [('state','in',['pending', 'active', 'cancelled'])]}" string="Re-Enroll" class="oe_highlight"/>
+          <!-- <button name="do_re_enroll" type="object" attrs="{'invisible': [('state','in',['drop'])]}" string="Re-Enroll" class="oe_highlight"/> -->
           <field name="state" widget="statusbar"/>
         </header>
         <sheet>

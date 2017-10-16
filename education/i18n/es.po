@@ -115,6 +115,11 @@ msgid "Cancelled"
 msgstr "Anulado"
 
 #. module: education
+#: selection:education.record,state:0
+msgid "Drop"
+msgstr "Baja"
+
+#. module: education
 #: model:ir.ui.view,arch_db:education.view_education_course_form
 #: model:ir.ui.view,arch_db:education.view_education_group_form
 msgid "Cancelled"

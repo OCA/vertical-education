@@ -49,6 +49,7 @@
                 <field name="student_id"/>
                 <field name="course_id"/>
                 <field name="group_id" />
+                <field name="state" />
               </tree>
               <form>
                 <group cols="2" colspan="2">
