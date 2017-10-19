@@ -34,5 +34,11 @@
       <field name="name">bachelor's degree</field>
       <field name="subject_ids" eval=""/>
     </record>
+
+    <record id="education_course_6" model="education.course">
+      <field name="code">PACK</field>
+      <field name="name">Computing Pack</field>
+      <field name="subject_ids" eval=""/>
+    </record>
   </data>
 </odoo>
