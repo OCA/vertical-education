@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class EducationGroup(models.Model):
@@ -12,38 +13,42 @@ class EducationGroup(models.Model):
 
     code = fields.Char(
         string='Code', required=True, default=lambda self: _('New'))
-
     course_id = fields.Many2one(
         comodel_name='education.course',
         required=True,
         string="Course")
-    record_ids = fields.One2many(
-        comodel_name='education.record',
-        inverse_name='group_id',
-        string='Records')
-
     date_from = fields.Date(string='From Date')
     date_to = fields.Date(string='To Date')
     enrollment_ids = fields.One2many(
         comodel_name='education.enrollment',
         inverse_name='group_id',
         string='Enrollments')
-
-    teacher_in_charge = fields.Many2one(
+    tutor_id = fields.Many2one(
         comodel_name='education.teacher',
-        string='Teacher in charge')
-
+        string='Tutor')
     state = fields.Selection(
-        [('pending', 'Pending'),
+        [('draft', 'Draft'),
          ('active', 'Active'),
-         ('cancelled', 'Cancelled'),
-         ('done', 'Done')],
+         ('done', 'Done'),
+         ('cancel', 'Cancelled')],
         string='Status',
-        default="pending")
+        default="draft")
 
-    @api.multi
-    def set_active(self):
+    def action_draft(self):
+        self.ensure_one()
+        self.state = 'draft'
+
+    def action_active(self):
+        self.ensure_one()
         self.state = 'active'
+
+    def action_done(self):
+        self.ensure_one()
+        self.state = 'done'
+
+    def action_cancel(self):
+        self.ensure_one()
+        self.state = 'cancel'
 
     @api.model
     def create(self, vals):
@@ -51,3 +56,11 @@ class EducationGroup(models.Model):
             vals['code'] = self.env['ir.sequence'].next_by_code(
                 'education.group') or 'New'
         return super(EducationGroup, self).create(vals)
+
+    @api.multi
+    def unlink(self):
+        if self.record_ids:
+            raise ValidationError(
+                _('You can not delete a group with registered students'))
+        else:
+            super(EducationGroup, self).unlink()

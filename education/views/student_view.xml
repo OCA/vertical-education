@@ -43,18 +43,8 @@
             <field name="record_ids" nolabel="1" >
               <tree>
                 <field name="code"/>
-                <field name="student_id"/>
                 <field name="course_id"/>
-                <field name="group_id" />
-                <field name="state" />
               </tree>
-              <form>
-                <group>
-                  <field name="code"/>
-                  <field name="course_id"/>
-                  <field name="group_id"/>
-                </group>
-              </form>
             </field>
           </group>
         </page>

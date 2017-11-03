@@ -21,6 +21,12 @@ msgid "Academic Information"
 msgstr "Información Académica"
 
 #. module: education
+#: code:addons/education/models/group.py:60
+#, python-format
+msgid "You can not delete a group with registered students"
+msgstr "No puedes borrar un grupo académico con alumnos matriculados"
+
+#. module: education
 #: model:ir.ui.view,arch_db:education.view_education_student_form
 msgid "Admission Details"
 msgstr "Expedientes Académicos"
@@ -478,7 +484,7 @@ msgstr "Matrículas"
 #. module: education
 #: model:ir.ui.menu,name:education.education_exam_root
 msgid "Exams"
-msgstr "Examenes"
+msgstr "Exámenes"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_student_kanban

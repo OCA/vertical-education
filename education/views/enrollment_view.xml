@@ -6,10 +6,10 @@
     <field name="arch" type="xml">
       <form string="Education enrollment">
         <header>
-          <button name="do_toggle_approve" type="object" attrs="{'invisible': [('state','in',['active', 'drop', 'cancelled', 'finished'])]}" string="Toggle Approve" class="oe_highlight"/>
-          <button name="cancelled_enrollment" type="object" attrs="{'invisible': [('state','in',['pending','drop','cancelled'])]}" string="Cancel Enroll" class="oe_highlight"/>
-          <!-- <button name="do_re_enroll" type="object" attrs="{'invisible': [('state','in',['drop'])]}" string="Re-Enroll" class="oe_highlight"/> -->
-          <field name="state" widget="statusbar"/>
+          <button name="action_draft" type="object" states="cancel" string="To draft" class="oe_highlight"/>
+          <button name="action_done" type="object" states="draft" string="Enroll" class="oe_highlight"/>
+          <button name="action_cancel" type="object" states="draft" string="Cancel" class="oe_highlight"/>
+          <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
         </header>
         <sheet>
           <div class="oe_title">
@@ -21,6 +21,8 @@
             <field name="student_id"/>
             <field name="course_id"/>
             <field name="group_id" domain="[('course_id', '=', course_id)]"/>
+            <field name="record_id"  attrs="{'invisible':[('state','!=', 'done')]}" />
+
           </group>
           <notebook>
             <page string="Academic Information">
@@ -39,7 +41,7 @@
       <field name="name">view.education.enrollment.tree</field>
       <field name="model">education.enrollment</field>
       <field name="arch" type="xml">
-        <tree string="Educaiton enrollment">
+        <tree string="Enrollments">
           <field name="code"/>
           <field name="student_id"/>
           <field name="course_id"/>

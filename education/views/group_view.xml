@@ -7,7 +7,11 @@
     <field name="arch" type="xml">
       <form string="Education group">
         <header>
-          <field name="state" widget="statusbar"/>
+          <button name="action_draft" type="object" states="cancel" string="To draft" class="oe_highlight"/>
+          <button name="action_active" type="object" states="draft" string="Active" class="oe_highlight"/>
+          <button name="action_done" type="object" states="active" string="Done" class="oe_highlight"/>
+          <button name="action_cancel" type="object" states="draft" string="Cancel" class="oe_highlight"/>
+          <field name="state" widget="statusbar" statusbar_visible="draft,active,done"/>
         </header>
         <sheet>
           <div class="oe_title">
@@ -20,14 +24,20 @@
           </group>
           <group name="general" col="4">
             <field name="course_id"/>
-            <field name="teacher_in_charge"/>
+            <field name="tutor_id"/>
             <field name="date_from"/>
             <field name="date_to"/>
           </group>
           <notebook>
             <page name="students" string="Students">
-              <group name="Students">
-                <field name="record_ids" nolabel="1" readonly="1"/>
+              <group name="Enrollments">
+                <field name="enrollment_ids" nolabel="1" readonly="1">
+                    <tree>
+                      <field name="code"/>
+                      <field name="student_id"/>
+                      <field name="state" />
+                    </tree>
+                </field>
               </group>
             </page>
           </notebook>
@@ -59,7 +69,6 @@
         <field name="name"/>
         <field name="code"/>
         <field name="course_id"/>
-        <field name="record_ids"/>
         <field name="date_from"/>
         <field name="date_to"/>
         <field name="state" />
@@ -67,7 +76,6 @@
           <filter string="Name" context="{'group_by': 'name'}"/>
           <filter string="Code" context="{'group_by': 'code'}"/>
           <filter string="Course" context="{'group_by': 'course_id'}"/>
-          <filter string="Record" context="{'group_by': 'record_ids'}"/>
         </group>
       </search>
     </field>

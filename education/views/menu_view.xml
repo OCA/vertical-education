@@ -9,7 +9,7 @@
     <menuitem id="education_invoicing_method_root" parent="education.education_base_menu" name="Invoicing Method" sequence="5"/>
 
     <menuitem id="education_config_root" parent="education.education_base_menu" name="Configuration" sequence="20"/>
-    <menuitem id="education_exam_root" parent="education_config_root" name="Exams" sequence="11"/>
+    <menuitem id="education_exam_root" parent="education.education_base_menu" name="Exams" sequence="11"/>
     <menuitem id="education_assistance_root" parent="education.education_base_menu" name="Assistance" sequence="12"/>
   </data>
 

@@ -3,8 +3,7 @@
 #                Angel Moya <angel.moya@pesol.es>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
-from openerp.tests.common import TransactionCase
-import odoo
+from odoo.tests.common import TransactionCase
 
 
 class TestEducationEnrollment(TransactionCase):
@@ -24,23 +23,3 @@ class TestEducationEnrollment(TransactionCase):
             'course_id': course_id.id,
             'group_id': group_id.id
         })
-
-        # Get subject function
-    def test_get_subjects(self):
-        self.enrollment_id.get_subjects()
-
-        # submitt enrollment
-    def test_do_toggle_submitted(self):
-        self.enrollment_id.do_toggle_submitted()
-
-        # approve enrollment
-    def test_do_toggle_approve(self):
-        self.enrollment_id.do_toggle_approve()
-
-        # reset draft enrollment
-    def test_action_reset_draft(self):
-        self.enrollment_id.action_reset_draft()
-
-        # cancell enrollment
-    def test_cancelled_enrollment(self):
-        self.enrollment_id.cancelled_enrollment()

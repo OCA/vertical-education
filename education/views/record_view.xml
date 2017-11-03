@@ -15,8 +15,21 @@
             <field name="student_id"/>
             <field name="course_id"/>
           </group>
-          <group string="Groups">
-            <field name="group_id" nolabel="1"/>
+          <group string="Enrollments" name="enrollments">
+            <field name="enrollment_ids" nolabel="1" readonly="1">
+                <tree>
+                  <field name="code"/>
+                  <field name="group_id"/>
+                  <field name="state" />
+                </tree>
+            </field>
+          </group>
+          <group string="Subjects" name="subjects">
+            <field name="record_subject_ids" nolabel="1" readonly="1">
+                <tree>
+                  <field name="subject_id"/>
+                </tree>
+            </field>
           </group>
         </sheet>
       </form>

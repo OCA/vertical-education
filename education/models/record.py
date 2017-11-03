@@ -15,27 +15,14 @@ class EducationRecord(models.Model):
     course_id = fields.Many2one(
         comodel_name='education.course',
         string='Course', required=True)
-    # group_ids = fields.One2many(
-    #     comodel_name='education.group',
-    #     inverse_name='record_ids',
-    #     string='Groups')
-
-    group_id = fields.Many2one(
-        comodel_name='education.group',
-        string='Group')
-
-    state = fields.Selection(
-        [('active', 'Active'),
-         ('done', 'Done'),
-         ('drop', 'Drop')],
-        string='Status',
-        default="active")
-
-    _sql_constraints = [
-        ('unique_course_record_id',
-         'unique(course_id,group_id,student_id)',
-         'Student must be unique per Record!'),
-    ]
+    enrollment_ids = fields.One2many(
+        comodel_name='education.enrollment',
+        inverse_name='record_id',
+        string='Enrollments')
+    record_subject_ids = fields.One2many(
+        comodel_name='education.record.subject',
+        inverse_name='record_id',
+        string='Enrollments')
 
     @api.model
     def create(self, vals):
@@ -43,3 +30,15 @@ class EducationRecord(models.Model):
             vals['code'] = self.env['ir.sequence'].next_by_code(
                 'education.record') or 'New'
         return super(EducationRecord, self).create(vals)
+
+
+class EducationRecordSubject(models.Model):
+    _name = "education.record.subject"
+    _rec_name = 'subject_id'
+
+    subject_id = fields.Many2one(
+        comodel_name='education.subject',
+        string='Subject')
+    record_id = fields.Many2one(
+        comodel_name='education.record',
+        string='Record')

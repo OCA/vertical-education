@@ -13,11 +13,6 @@
     "installable": True,
     "depends": [
         "base",
-        'partner_contact_gender',
-        'partner_firstname',
-        'partner_second_lastname',
-        'partner_contact_birthdate',
-        'partner_contact_nationality'
     ],
     "data": [
         'views/menu_view.xml',
@@ -29,7 +24,7 @@
         'views/student_view.xml',
         'views/teacher_view.xml',
         'security/ir.model.access.csv',
-        'security/some_model_security.xml'
+        'security/education_security.xml'
     ],
     "demo": [
         'demo/education_res_partner_demo.xml',
