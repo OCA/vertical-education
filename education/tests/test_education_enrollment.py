@@ -12,14 +12,13 @@ class TestEducationEnrollment(TransactionCase):
         super(TestEducationEnrollment, self).setUp()
 
         # Enrollment data
-        student_id = self.env.ref('education.education_student_1')
-        course_id = self.env.ref('education.education_course_1')
-        group_id = self.env.ref('education.education_group_1')
-        enrollment_obj = self.env['education.enrollment']
+        self.enrollment = self.env.ref('education.education_enrollment_1')
 
-        # Create enrollment
-        self.enrollment_id = enrollment_obj.create({
-            'student_id': student_id.id,
-            'course_id': course_id.id,
-            'group_id': group_id.id
-        })
+    def test_action_done(self):
+        self.enrollment.action_done()
+        record_subject_ids = \
+            self.enrollment.record_id.record_subject_ids.mapped('subject_id')
+        course_subject_ids = \
+            self.enrollment.subject_ids
+
+        self.assertEquals(record_subject_ids, course_subject_ids)

@@ -16,23 +16,28 @@ class EducationTimetableLine(models.Model):
 
     course_id = fields.Many2one(
         comodel_name='education.course',
-        string='Course')
+        string='Course',
+        required=True)
 
     group_id = fields.Many2one(
         comodel_name='education.group',
-        string='Group')
+        string='Group',
+        required=True)
 
     subject_id = fields.Many2one(
         comodel_name='education.subject',
-        string='Subject')
+        string='Subject',
+        required=True)
 
     teacher_id = fields.Many2one(
         comodel_name='education.teacher',
-        string='Teacher')
+        string='Teacher',
+        required=True)
 
     timerange_id = fields.Many2one(
         comodel_name='education.timerange',
-        string='Time Range')
+        string='Time Range',
+        required=True)
 
     day = fields.Selection(
         [('0', 'Monday'),
@@ -40,19 +45,23 @@ class EducationTimetableLine(models.Model):
          ('2', 'Wednesday'),
          ('3', 'Thursday'),
          ('4', 'Friday')],
-        string='Days')
+        string='Days',
+        required=True)
 
-    start_date = fields.Datetime(
-        string='Start Date')
+    date_from = fields.Date(
+        string='Start Date',
+        required=True)
 
-    end_date = fields.Datetime(
-        string='End Date')
+    date_to = fields.Date(
+        string='End Date',
+        required=True)
 
     state = fields.Selection(
         [('draft', 'Draft'),
          ('done', 'Done')],
         string='Status',
-        default='draft')
+        default='draft',
+        required=True)
 
     session_ids = fields.One2many(
         comodel_name='education.session',
@@ -70,15 +79,15 @@ class EducationTimetableLine(models.Model):
         self.ensure_one()
         self.state = 'done'
         session_obj = self.env['education.session']
-        end = fields.Date.from_string(self.start_date)
-        start = fields.Date.from_string(self.end_date)
+        end = fields.Date.from_string(self.date_from)
+        start = fields.Date.from_string(self.date_to)
         days = []
         for day in self.get_days(end, start):
-            if day.weekday() == int(self.days):
+            if day.weekday() == int(self.day):
                 days.append(day)
         for record in self:
             for day in days:
-                session_id = session_obj.create({
+                session_obj.create({
                     'timetable_id': record.id,
                     'date': day
                 })
@@ -93,5 +102,5 @@ class EducationTimetableLine(models.Model):
     @api.onchange('group_id')
     def _onchange_group_id(self):
         for record in self:
-            record.start_date = record.group_id.date_from
-            record.end_date = record.group_id.date_to
+            record.date_from = record.group_id.date_from
+            record.date_to = record.group_id.date_to

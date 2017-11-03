@@ -18,8 +18,8 @@
               <field name="teacher_id"/>
               <field name="day"/>
               <field name="timerange_id"/>
-              <field name="start_date"/>
-              <field name="end_date"/>
+              <field name="date_from"/>
+              <field name="date_to"/>
             </group>
             <group name="name" attrs="{'invisible': [('state', '!=', 'done')]}">
                 <field name="session_ids" nolabel="1"/>
@@ -40,8 +40,8 @@
           <field name="teacher_id"/>
           <field name="timerange_id"/>
           <field name="day"/>
-          <field name="start_date"/>
-          <field name="end_date"/>
+          <field name="date_from"/>
+          <field name="date_to"/>
           <field name="state"/>
         </tree>
       </field>
@@ -58,8 +58,8 @@
           <field name="teacher_id"/>
           <field name="timerange_id"/>
           <field name="day"/>
-          <field name="start_date"/>
-          <field name="end_date"/>
+          <field name="date_from"/>
+          <field name="date_to"/>
           <group string="Group By" name="groupby">
             <filter string="Course" context="{'group_by': 'course_id'}"/>
             <filter string="Group" context="{'group_by': 'group_id'}"/>

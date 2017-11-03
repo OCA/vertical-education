@@ -27,8 +27,8 @@ class TestEducationTimetableLine(TransactionCase):
         subject_id = self.env.ref('education.education_subject_1')
         teacher_id = self.env.ref('education.education_teacher_1')
         days = ('0', 'Monday')
-        start_date = fields.Date.from_string('2017/10/1')
-        end_date = fields.Date.from_string('2017/10/31')
+        date_from = fields.Date.from_string('2017/10/1')
+        date_to = fields.Date.from_string('2017/10/31')
 
         # Create Timetable Line
         self.education_timetable_id = education_timetable_obj.create({
@@ -38,8 +38,8 @@ class TestEducationTimetableLine(TransactionCase):
             'teacher_id': teacher_id.id,
             'timerange_id': timerange_id.id,
             'days': days,
-            'start_date': start_date,
-            'end_date': end_date,
+            'date_from': date_from,
+            'date_to': date_to,
         })
 
         # Generate New Sessions

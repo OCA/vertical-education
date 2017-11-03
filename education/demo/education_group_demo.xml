@@ -6,8 +6,8 @@
   <data noupdate="1">
     <record id="education_group_1" model="education.group">
       <field name="name">COM-1</field>
-      <field name="date_from" eval="(DateTime.today() - relativedelta(years=1)).strftime('%Y-06-02 %H:%M')"/>
-      <field name="date_to" eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-02 %H:%M')"/>
+      <field name="date_from" eval="DateTime.today().strftime('%Y-06-02 %H:%M')"/>
+      <field name="date_to" eval="(DateTime.today() + relativedelta(month=1)).strftime('%Y-06-02 %H:%M')"/>
       <field name="course_id" ref="education.education_course_1"/>
     </record>
     <record id="education_group_2" model="education.group">

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright <YEAR(S)>
+<AUTHOR(S)>     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+  <odoo>
+      <record id="education_timerange_1" model="education.timerange">
+        <field name="name">9:00-10:00</field>
+        <field name="start_time" eval="9"/>
+        <field name="end_time" eval="10"/>
+      </record>
+      <record id="education_timerange_2" model="education.timerange">
+        <field name="name">10:00-11:00</field>
+        <field name="start_time" eval="10"/>
+        <field name="end_time" eval="11"/>
+      </record>
+      <record id="education_timerange_3" model="education.timerange">
+        <field name="name">11:00-12:00</field>
+        <field name="start_time" eval="11"/>
+        <field name="end_time" eval="12"/>
+      </record>
+      <record id="education_timerange_4" model="education.timerange">
+        <field name="name">12:00-13:00</field>
+        <field name="start_time" eval="12"/>
+        <field name="end_time" eval="13"/>
+      </record>
+      <record id="education_timerange_5" model="education.timerange">
+        <field name="name">13:00-14:00</field>
+        <field name="start_time" eval="13"/>
+        <field name="end_time" eval="14"/>
+      </record>
+  </odoo>

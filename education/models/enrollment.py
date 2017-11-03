@@ -26,7 +26,7 @@ class EducationEnrollment(models.Model):
         relation='enrollment_subject_rel',
         string='Subjects')
     state = fields.Selection(
-        [('draft', 'draft'),
+        [('draft', 'Draft'),
          ('done', 'Done'),
          ('cancel', 'Cancelled')],
         string='Status',
@@ -63,12 +63,16 @@ class EducationEnrollment(models.Model):
             })
         self.write({
             'state': 'done',
-            'record_id': self.id
+            'record_id': record.id
         })
 
     @api.onchange('course_id')
     def onchange_course_id(self):
-        self.subject_ids = [(6, 0, self.course_id.subject_ids.ids)]
+        if self.course_id:
+            self.subject_ids = [(6, 0, self.course_id.subject_ids.ids)]
+        else:
+            self.subject_ids = False
+        self.group_id = False
 
     @api.model
     def create(self, vals):

@@ -140,7 +140,7 @@ msgid "Education timerange"
 msgstr "Rango Horarios"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_end_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_date_to
 msgid "End Date"
 msgstr "Fecha finalización"
 
@@ -278,7 +278,7 @@ msgid "Set Presence"
 msgstr "Asignar Presencia"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_start_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_date_from
 msgid "Start Date"
 msgstr "Fecha de inicio"
 

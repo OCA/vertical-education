@@ -23,5 +23,9 @@
         'views/student_view.xml',
         'wizard/session_presence_view.xml'
     ],
+    'demo': [
+        'demo/timerange_demo.xml',
+        'demo/timetable_demo.xml',
+    ],
     'installable': True,
 }
