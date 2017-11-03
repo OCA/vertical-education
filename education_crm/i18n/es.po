@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* education_crm
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-11 08:57+0000\n"
+"PO-Revision-Date: 2017-10-11 08:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_contact_birthdate
+msgid "Contact birthdate"
+msgstr "Fecha nacimiento contacto"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_contact_gender
+msgid "Contact gender"
+msgstr "Género contacto"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_contact_nationality
+msgid "Contact nationality"
+msgstr "Nacionalidad contacto"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_course_id
+msgid "Course"
+msgstr "Curso"
+
+#. module: education_crm
+#: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
+msgid "Create Enrollment"
+msgstr "Crear Matrícula"
+
+#. module: education_crm
+#: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
+msgid "Create Student"
+msgstr "Crear Alumno"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: education_crm
+#: model:ir.actions.act_window,name:education_crm.enrollment_wizard_action
+#: model:ir.ui.view,arch_db:education_crm.view_education_enrollment_wizard_form
+msgid "Enrollment"
+msgstr "Matrícula"
+
+#. module: education_crm
+#: selection:crm.lead,contact_gender:0
+msgid "Female"
+msgstr "Mujer"
+
+#. module: education_crm
+#: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
+msgid "First name"
+msgstr "Nombre"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_group_id
+msgid "Group"
+msgstr "Grupo"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_id
+msgid "ID"
+msgstr "ID"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_last_name
+msgid "Last name"
+msgstr "Apellido"
+
+#. module: education_crm
+#: model:ir.model,name:education_crm.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Iniciativa/Oportunidad"
+
+#. module: education_crm
+#: selection:crm.lead,contact_gender:0
+msgid "Male"
+msgstr "Hombre"
+
+#. module: education_crm
+#: selection:crm.lead,contact_gender:0
+msgid "Other"
+msgstr "Otro"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_second_last_name
+msgid "Second last name"
+msgstr "Segundo apellido"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_student_id
+msgid "Student"
+msgstr "Alumno"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_record_id
+msgid "Student record"
+msgstr "Expediente académico"
+
+#. module: education_crm
+#: model:ir.model,name:education_crm.model_education_enrollment_wizard
+msgid "education.enrollment.wizard"
+msgstr "education.enrollment.wizard"
+
+#. module: education_crm
+#: code:addons/education_crm/models/education_crm.py:90
+#, python-format
+msgid "the user already exist"
+msgstr "¡El usuario ya existe!"

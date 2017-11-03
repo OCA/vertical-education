@@ -5,10 +5,10 @@ from odoo import models, fields, api, _
 
 class EducationRecord(models.Model):
     _name = "education.record"
+    _rec_name = 'code'
 
     code = fields.Char(
         string='Code', required=True, default=lambda self: _('New'))
-
     student_id = fields.Many2one(
         comodel_name='education.student',
         string='Student', required=True)

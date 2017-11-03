@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import models, api, fields, _
+from odoo.osv import expression
 
 
 class EducationExam(models.Model):
@@ -33,6 +34,14 @@ class EducationExam(models.Model):
 
     date = fields.Date(
         string='Date')
+
+    @api.onchange('group_id')
+    def _change_group_id(self):
+        if not self.group_id:
+            return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
+        subject_fields_domain = [
+            ('id', 'in', self.group_id.course_id.subject_ids.ids)]
+        return {'domain': {'subject_id': subject_fields_domain}}
 
     @api.multi
     def _compute_name(self):

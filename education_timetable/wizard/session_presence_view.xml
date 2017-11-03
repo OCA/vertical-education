@@ -5,7 +5,6 @@
     <field name="model">education.session.presence</field>
     <field name="arch" type="xml">
       <form string="Wizard Session Presence">
-        <sheet>
           <group name="main">
             <field name="session_id"/>
           </group>
@@ -18,7 +17,6 @@
               </tree>
             </field>
           </group>
-        </sheet>
         <footer>
           <button name="create_ausences" class="oe_highlight" type="object" string="Save"/>
           or

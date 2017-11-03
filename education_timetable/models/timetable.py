@@ -6,6 +6,7 @@
 
 from odoo import models, api, fields, _
 from datetime import timedelta
+from odoo.osv import expression
 
 
 class EducationTimetableLine(models.Model):
@@ -67,6 +68,14 @@ class EducationTimetableLine(models.Model):
         comodel_name='education.session',
         inverse_name='timetable_id',
         string='Sessions')
+
+    @api.onchange('course_id')
+    def _change_course_id(self):
+        if not self.group_id:
+            return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
+        subject_fields_domain = [
+            ('id', 'in', self.course_id.subject_ids.ids)]
+        return {'domain': {'subject_id': subject_fields_domain}}
 
     @api.multi
     def get_days(self, start, end):
