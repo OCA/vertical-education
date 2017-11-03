@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_student_form_timetable_inherit" model="ir.ui.view">
+    <field name="name">view.education.student.form.inherit</field>
+    <field name="model">education.student</field>
+    <field name="inherit_id" ref="education.view_education_student_form"/>
+    <field name="arch" type="xml">
+      <page name="educational" position="after">
+        <page string="Ausences">
+          <group string="Student Ausences">
+            <field name="ausence_ids" nolabel="1">
+              <tree>
+                <field name="session_id"/>
+                <field name="notes"/>
+                <field name="supporting_document"/>
+              </tree>
+            </field>
+          </group>
+        </page>
+      </page>
+    </field>
+  </record>
+</odoo>

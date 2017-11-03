@@ -1,0 +1,199 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* education_evaluation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-24 16:23+0000\n"
+"PO-Revision-Date: 2017-10-24 16:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: education_evaluation
+#: model:ir.actions.act_window,help:education_evaluation.education_exam_action
+msgid "Click to create a new Education Exam."
+msgstr "Click para crear un nuevo Examen."
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_create_uid
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: education_evaluation
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_form
+msgid "Set Done"
+msgstr "Finalizar"
+
+#. module: education_evaluation
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_form
+msgid "Set Planned"
+msgstr "Planificar"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_create_date
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_date
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_search
+msgid "Date"
+msgstr "Fecha"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_display_name
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: education_evaluation
+#: selection:education.exam,state:0
+msgid "Done"
+msgstr "Finalizado"
+
+#. module: education_evaluation
+#: selection:education.exam,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: education_evaluation
+#: model:ir.actions.act_window,name:education_evaluation.education_exam_action
+#: model:ir.ui.menu,name:education_evaluation.education_exam_menu
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_form
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_search
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_tree
+msgid "Education Exam"
+msgstr "Exámenes"
+
+#. module: education_evaluation
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_result_search
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_result_tree
+msgid "Education Result"
+msgstr "Education Result"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_exam_id
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_result_search
+msgid "Exam"
+msgstr "Examen"
+
+#. module: education_evaluation
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_student_form_evaluation_inherit
+msgid "Exam Results"
+msgstr "Resultados Examen"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_group_exam_ids
+msgid "Exams"
+msgstr "Exámenes"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_group_id
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_search
+msgid "Group"
+msgstr "Grupo"
+
+#. module: education_evaluation
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_search
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_result_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_id
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_id
+msgid "ID"
+msgstr "ID"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam___last_update
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_write_uid
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_write_date
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_name
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_form
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_search
+msgid "Name"
+msgstr "Nombre"
+
+#. module: education_evaluation
+#: selection:education.exam,state:0
+msgid "Planned"
+msgstr "Planificado"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_result_ids
+#: model:ir.model.fields,field_description:education_evaluation.field_education_student_result_ids
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_student_form_evaluation_inherit
+msgid "Results"
+msgstr "Exámenes"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_score
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_result_search
+msgid "Score"
+msgstr "Nota"
+
+#. module: education_evaluation
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_search
+msgid "State"
+msgstr "Estado"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_state
+msgid "Status"
+msgstr "Estado"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_result_student_id
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_result_search
+msgid "Student"
+msgstr "Alumno"
+
+#. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_exam_subject_id
+#: model:ir.ui.view,arch_db:education_evaluation.view_education_exam_search
+msgid "Subject"
+msgstr "Asignatura"
+
+#. module: education_evaluation
+#: model:ir.model,name:education_evaluation.model_education_exam
+msgid "education.exam"
+msgstr "education.exam"
+
+#. module: education_evaluation
+#: model:ir.model,name:education_evaluation.model_education_group
+msgid "education.group"
+msgstr "education.group"
+
+#. module: education_evaluation
+#: model:ir.model,name:education_evaluation.model_education_result
+msgid "education.result"
+msgstr "education.result"
+
+#. module: education_evaluation
+#: model:ir.model,name:education_evaluation.model_education_student
+msgid "education.student"
+msgstr "education.student"

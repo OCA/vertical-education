@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="view_education_timetable_line_form" model="ir.ui.view">
+      <field name="name">view.education.timetable.line.form</field>
+      <field name="model">education.timetable.line</field>
+      <field name="arch" type="xml">
+        <form string="Education Timetable">
+          <header>
+            <button name="generate_new_sessions" type="object" attrs="{'invisible': [('state','!=','draft')]}" string="Generate New Sessions" class="oe_highlight"/>
+            <field name="state" widget="statusbar"/>
+          </header>
+          <sheet>
+            <group string="Education Timetable" col="4">
+              <field name="course_id"/>
+              <field name="group_id" domain="[('course_id', '=', course_id)]"/>
+              <field name="subject_id"/>
+              <field name="teacher_id"/>
+              <field name="day"/>
+              <field name="timerange_id"/>
+              <field name="start_date"/>
+              <field name="end_date"/>
+            </group>
+            <group name="name" attrs="{'invisible': [('state', '!=', 'done')]}">
+                <field name="session_ids" nolabel="1"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_education_timetable_tree" model="ir.ui.view">
+      <field name="name">view.education.timetable.tree</field>
+      <field name="model">education.timetable.line</field>
+      <field name="arch" type="xml">
+        <tree string="Education Timetable">
+          <field name="course_id"/>
+          <field name="group_id"/>
+          <field name="subject_id"/>
+          <field name="teacher_id"/>
+          <field name="timerange_id"/>
+          <field name="day"/>
+          <field name="start_date"/>
+          <field name="end_date"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_education_timetable_search" model="ir.ui.view">
+      <field name="name">view.education.timetable.search</field>
+      <field name="model">education.timetable.line</field>
+      <field name="arch" type="xml">
+        <search string="Education Timetable">
+          <field name="course_id"/>
+          <field name="group_id"/>
+          <field name="subject_id"/>
+          <field name="teacher_id"/>
+          <field name="timerange_id"/>
+          <field name="day"/>
+          <field name="start_date"/>
+          <field name="end_date"/>
+          <group string="Group By" name="groupby">
+            <filter string="Course" context="{'group_by': 'course_id'}"/>
+            <filter string="Group" context="{'group_by': 'group_id'}"/>
+            <filter string="Subject" context="{'group_by': 'subject_id'}"/>
+            <filter string="teacher_id" context="{'group_by': 'teacher_id'}"/>
+            <filter string="Days" context="{'group_by': 'day'}"/>
+            <filter string="timetable_id" context="{'group_by': 'timerange_id'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
+
+    <record id="education_timetable_action" model="ir.actions.act_window">
+      <field name="name">Education Timetable</field>
+      <field name="res_model">education.timetable.line</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to create a new Education Timetable.
+        </p>
+      </field>
+    </record>
+
+    <record id="timetable_line_sequence" model="ir.sequence">
+      <field name="name">Timetable Sequence</field>
+      <field name="code">education.timetable.line</field>
+      <field name="prefix">HOR</field>
+      <field name="padding">3</field>
+    </record>
+
+    <menuitem id="education_timetable_menu" parent="education.education_assistance_root" action="education_timetable_action" sequence="20"/>
+
+  </data>
+</odoo>

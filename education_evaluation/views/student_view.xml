@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_student_form_evaluation_inherit" model="ir.ui.view">
+    <field name="name">view.education.student.form.inherit</field>
+    <field name="model">education.student</field>
+    <field name="inherit_id" ref="education.view_education_student_form"/>
+    <field name="arch" type="xml">
+      <page name="educational" position="after">
+        <page string="Results">
+          <group string="Exam Results">
+            <field name="result_ids" nolabel="1">
+              <tree>
+                <field name="exam_id"/>
+                <field name="score"/>
+              </tree>
+            </field>
+          </group>
+        </page>
+      </page>
+    </field>
+  </record>
+</odoo>

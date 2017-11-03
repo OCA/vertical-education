@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_session_presence_form" model="ir.ui.view">
+    <field name="name">view.education.session.presence.form</field>
+    <field name="model">education.session.presence</field>
+    <field name="arch" type="xml">
+      <form string="Wizard Session Presence">
+        <sheet>
+          <group name="main">
+            <field name="session_id"/>
+          </group>
+          <group string="Students Presence">
+            <field name="session_presence_ids" nolabel="1">
+              <tree editable="bottom">
+                <field name="student_id"/>
+                <field name="lack"/>
+                <field name="notes"/>
+              </tree>
+            </field>
+          </group>
+        </sheet>
+        <footer>
+          <button name="create_ausences" class="oe_highlight" type="object" string="Save"/>
+          or
+          <button class="oe_link" special="cancel" string="Cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_education_session_presence_line_tree" model="ir.ui.view">
+    <field name="name">view.education.session.presence.line.tree</field>
+    <field name="model">education.session.presence.line</field>
+    <field name="arch" type="xml">
+      <tree string="Session Presence Lines">
+        <field name="student_id"/>
+        <field name="lack"/>
+        <field name="notes"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_education_session_presence_line_form" model="ir.ui.view">
+    <field name="name">view.education.session.presence.line.form</field>
+    <field name="model">education.session.presence.line</field>
+    <field name="arch" type="xml">
+      <form string="Wizard Session Presence Lines">
+        <sheet>
+          <group col="4">
+            <field name="student_id"/>
+            <field name="lack"/>
+          </group>
+          <field name="notes" attrs="{'invisible': [('lack', '=', False)]}"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="wizard_education_session_presence_action" model="ir.actions.act_window">
+    <field name="name">Education Session Presence</field>
+    <field name="res_model">education.session.presence</field>
+    <field name="src_model">education.session</field>
+    <field name="view_mode">tree,form</field>
+    <field name="view_id" ref="view_education_session_presence_form"/>
+    <field name="target">new</field>
+  </record>
+
+  <record id="view_education_session_form_inherit" model="ir.ui.view">
+    <field name="name">view.education.session.form.inherit</field>
+    <field name="model">education.session</field>
+    <field name="inherit_id" ref="education_timetable.view_education_session_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button name="%(wizard_education_session_presence_action)d" type="action" attrs="{'invisible': [('state','!=','draft')]}" string="Set Presence" class="oe_highlight" context="{'default_session_id': active_id}"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>
