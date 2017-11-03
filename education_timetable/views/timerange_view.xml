@@ -53,7 +53,7 @@
       </field>
     </record>
 
-    <menuitem id="education_timerange_menu" parent="education.education_assistance_root" action="education_timerange_action" sequence="20"/>
+    <menuitem id="education_timerange_menu" parent="education_assistance_root" action="education_timerange_action" sequence="20"/>
 
   </data>
 </odoo>

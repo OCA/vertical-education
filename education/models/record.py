@@ -14,7 +14,8 @@ class EducationRecord(models.Model):
         string='Student', required=True)
     course_id = fields.Many2one(
         comodel_name='education.course',
-        string='Course', required=True)
+        string='Course',
+        required=True)
     enrollment_ids = fields.One2many(
         comodel_name='education.enrollment',
         inverse_name='record_id',
@@ -42,3 +43,13 @@ class EducationRecordSubject(models.Model):
     record_id = fields.Many2one(
         comodel_name='education.record',
         string='Record')
+    student_id = fields.Many2one(
+        comodel_name='education.student',
+        string='Student',
+        related='record_id.student_id',
+        store=True)
+    course_id = fields.Many2one(
+        comodel_name='education.course',
+        string='Course',
+        related='record_id.course_id',
+        store=True)

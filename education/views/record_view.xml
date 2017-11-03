@@ -83,6 +83,9 @@
     <field name="padding">4</field>
   </record>
 
+  <menuitem id="record_menu" parent="education_record_root"
+    action="education_record_action" sequence="10"/>
+
   <!-- <menuitem id="education_record" parent="education_student_root" action="education_record_action" sequence="20"/> -->
 
 </odoo>

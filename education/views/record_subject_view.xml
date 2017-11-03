@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_record_subject_form" model="ir.ui.view">
+      <field name="name">view.record_subject.form</field>
+      <field name="model">education.record.subject</field>
+      <field name="arch" type="xml">
+        <form string="Subject Record">
+          <sheet>
+            <group name="main">
+              <field name="student_id" />
+              <field name="course_id" />
+              <field name="subject_id" />
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_record_subject_tree" model="ir.ui.view">
+      <field name="name">view.record_subject.tree</field>
+      <field name="model">education.record.subject</field>
+      <field name="arch" type="xml">
+        <tree string="Subject Record">
+          <field name="student_id" />
+          <field name="course_id" />
+          <field name="subject_id" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_record_subject_search" model="ir.ui.view">
+      <field name="name">view.record_subject.search</field>
+      <field name="model">education.record.subject</field>
+      <field name="arch" type="xml">
+        <search string="Subject Record">
+          <field name="student_id" />
+          <field name="course_id" />
+          <field name="subject_id" />
+          <group string="Group By" name="groupby">
+            <filter name="student_id_groupby" string="student_id"
+              context="{'group_by': 'student_id'}" />
+            <filter name="course_id_groupby" string="course_id"
+              context="{'group_by': 'course_id'}" />
+            <filter name="subject_id_groupby" string="subject_id"
+              context="{'group_by': 'subject_id'}" />
+          </group>
+        </search>
+      </field>
+    </record>
+
+    <record id="record_subject_action" model="ir.actions.act_window">
+      <field name="name">Subject Records</field>
+      <field name="res_model">education.record.subject</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to create a new Subject Record.
+        </p>
+      </field>
+    </record>
+
+    <menuitem id="record_subject_menu" parent="education_record_root"
+      action="record_subject_action" sequence="20"/>
+
+</odoo>

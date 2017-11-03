@@ -21,6 +21,7 @@
         'views/enrollment_view.xml',
         'views/group_view.xml',
         'views/record_view.xml',
+        'views/record_subject_view.xml',
         'views/student_view.xml',
         'views/teacher_view.xml',
         'security/ir.model.access.csv',

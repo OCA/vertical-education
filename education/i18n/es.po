@@ -482,7 +482,7 @@ msgid "Enrollments"
 msgstr "Matrículas"
 
 #. module: education
-#: model:ir.ui.menu,name:education.education_exam_root
+#: model:ir.ui.menu,name:education_exam_root
 msgid "Exams"
 msgstr "Exámenes"
 

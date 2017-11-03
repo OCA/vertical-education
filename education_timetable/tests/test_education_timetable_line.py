@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 from odoo.tests.common import TransactionCase
-import odoo
+from odoo import fields
 
 
 class TestEducationTimetableLine(TransactionCase):
@@ -12,7 +12,7 @@ class TestEducationTimetableLine(TransactionCase):
     def setUp(self):
         super(TestEducationTimetableLine, self).setUp()
 
-        #TimeRange data
+        # TimeRange data
         timerange_obj = self.env['education.timerange']
         timerange_id = timerange_obj.create({
             'name': '08:15-09:10',

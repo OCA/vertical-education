@@ -42,10 +42,15 @@ class EducationExam(models.Model):
 
     @api.multi
     def set_planned(self):
+        self.ensure_one()
         self.state = 'planned'
         values = []
-        for record in self.group_id.record_ids:
-            values.append((0, 0, {'student_id': record.student_id.id}))
+        for record_subject in self.group_id.enrollment_ids.mapped(
+                'record_id.record_subject_ids').filtered(
+                    lambda r: r.subject_id == self.subject_id
+        ):
+            values.append((0, 0, {
+                'record_subject_id': record_subject and record_subject.id}))
         self.result_ids = values
 
     @api.multi
