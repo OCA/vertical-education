@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api, _
+from odoo.exceptions import ValidationError
 
 
 class EducationEnrollment(models.Model):
@@ -56,11 +57,15 @@ class EducationEnrollment(models.Model):
                 (0, 0, {'subject_id': subject.id})
                 for subject in self.subject_ids
             ]
-            record = record_obj.create({
-                'student_id': self.student_id.id,
-                'course_id': self.course_id.id,
-                'record_subject_ids': record_subject_values
-            })
+            if not self.subject_ids and not self.course_id.subject_ids:
+                raise ValidationError(
+                    _("You must add subjects to complete the enrollment"))
+            else:
+                record = record_obj.create({
+                    'student_id': self.student_id.id,
+                    'course_id': self.course_id.id,
+                    'record_subject_ids': record_subject_values
+                })
         self.write({
             'state': 'done',
             'record_id': record.id
