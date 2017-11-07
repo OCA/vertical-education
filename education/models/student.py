@@ -14,7 +14,7 @@ class EducationStudent(models.Model):
         'student_id',
         'Academic Records')
 
-    def open_partner_history(self):
+    def action_view_partner_invoices(self):
         action = self.env.ref('account.action_invoice_refund_out_tree')
         result = action.read()[0]
         result['domain'] = [('partner_id', '=', self.partner_id.id)]

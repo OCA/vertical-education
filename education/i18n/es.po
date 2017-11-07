@@ -21,6 +21,26 @@ msgid "Academic Information"
 msgstr "Información Académica"
 
 #. module: education
+#: model:ir.actions.act_window,name:education.education_course_category_action
+#: model:ir.model,name:education.model_education_course_category
+#: model:ir.ui.menu,name:education.education_course_category_menu
+#: model:ir.ui.view,arch_db:education.view_education_course_category_form
+#: model:ir.ui.view,arch_db:education.view_education_course_category_search
+#: model:ir.ui.view,arch_db:education.view_education_course_category_tree
+msgid "Course Category"
+msgstr "Categorías"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_course_category_parent_id
+msgid "Parent Category"
+msgstr "Categoría padre"
+
+#. module: education
+#: model:ir.actions.act_window,help:education.education_course_category_action
+msgid "Click to create a new Course Category."
+msgstr "Click para crear una nueva Categoría del Curso."
+
+#. module: education
 #: code:addons/education/models/group.py:60
 #, python-format
 msgid "You can not delete a group with registered students"
@@ -39,6 +59,7 @@ msgstr "# de Pedido de Venta"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_record_ids
+#: model:ir.ui.view,arch_db:education.view_education_student_form
 msgid "Academic Records"
 msgstr "Expediente Académico"
 
@@ -111,6 +132,12 @@ msgid "Cancel Enroll"
 msgstr "Anular Matrícula"
 
 #. module: education
+#: model:ir.ui.view,arch_db:education.view_education_enrollment_form
+#: model:ir.ui.view,arch_db:education.view_education_group_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: education
 #: selection:education.course,state:0
 #: selection:education.enrollment,state:0
 #: selection:education.group,state:0
@@ -121,21 +148,26 @@ msgid "Cancelled"
 msgstr "Anulado"
 
 #. module: education
-#: selection:education.record,state:0
-msgid "Drop"
-msgstr "Baja"
-
-#. module: education
 #: model:ir.ui.view,arch_db:education.view_education_course_form
 #: model:ir.ui.view,arch_db:education.view_education_group_form
 msgid "Cancelled"
 msgstr "Anular"
 
 #. module: education
-#: model:ir.model.fields,field_description:education.field_education_course_category_id_1556
+#: model:ir.model.fields,field_description:education.field_education_course_category_id_1543
 #: model:ir.ui.view,arch_db:education.view_education_course_search
 msgid "Category"
 msgstr "Categoría"
+
+#. module: education
+#: model:ir.ui.view,arch_db:education.view_education_course_tree
+msgid "Category"
+msgstr "Categoría"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_course_category_complete_name
+msgid "Complete Name"
+msgstr "Nombre completo"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_channel_ids
@@ -388,15 +420,16 @@ msgid "Display Name"
 msgstr "Nombre a mostrar"
 
 #. module: education
+#: selection:education.enrollment,state:0
 #: selection:education.group,state:0
-#: selection:education.record,state:0
+#: model:ir.ui.view,arch_db:education.view_education_group_form
 msgid "Done"
 msgstr "Finalizado"
 
 #. module: education
 #: selection:education.enrollment,state:0
-msgid "Drop"
-msgstr "Baja"
+msgid "Draft"
+msgstr "Borrador"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_course_tree
@@ -475,6 +508,11 @@ msgid "Employee"
 msgstr "Empleado"
 
 #. module: education
+#: model:ir.ui.view,arch_db:education.view_education_enrollment_form
+msgid "Enroll"
+msgstr "Matricular"
+
+#. module: education
 #: model:ir.actions.act_window,name:education.education_enrollment_action
 #: model:ir.model.fields,field_description:education.field_education_group_enrollment_ids
 #: model:ir.ui.menu,name:education.education_enrollment
@@ -504,11 +542,6 @@ msgstr "Profesor"
 #: model:ir.model.fields,field_description:education.field_education_teacher_fax
 msgid "Fax"
 msgstr "Fax"
-
-#. module: education
-#: selection:education.enrollment,state:0
-msgid "Finished"
-msgstr "Finalizado"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_property_account_position_id
@@ -800,12 +833,29 @@ msgstr "Móvil"
 #: model:ir.model.fields,field_description:education.field_education_student_name
 #: model:ir.model.fields,field_description:education.field_education_subject_name
 #: model:ir.model.fields,field_description:education.field_education_teacher_name
+#: model:ir.ui.view,arch_db:education.view_education_course_category_search
 #: model:ir.ui.view,arch_db:education.view_education_course_search
 #: model:ir.ui.view,arch_db:education.view_education_group_search
 #: model:ir.ui.view,arch_db:education.view_education_record_form
 #: model:ir.ui.view,arch_db:education.view_education_record_search
 msgid "Name"
 msgstr "Nombre"
+
+#. module: education
+#: model:ir.actions.act_window,name:education.education_enrollment_action
+#: model:ir.model.fields,field_description:education.field_education_group_enrollment_ids
+#: model:ir.model.fields,field_description:education.field_education_record_enrollment_ids
+#: model:ir.model.fields,field_description:education.field_education_record_record_subject_ids
+#: model:ir.ui.menu,name:education.education_enrollment
+#: model:ir.ui.view,arch_db:education.view_education_enrollment_tree
+#: model:ir.ui.view,arch_db:education.view_education_record_form
+msgid "Enrollments"
+msgstr "Matrículas"
+
+#. module: education
+#: model:ir.model.fields,field_description:education.field_education_record_subject_subject_id
+msgid "Subject"
+msgstr "Asignatura"
 
 #. module: education
 #: code:addons/education/models/group.py:13
@@ -856,6 +906,11 @@ msgid "Partner id"
 msgstr "Partner id"
 
 #. module: education
+#: model:ir.ui.view,arch_db:education.view_education_course_category_search
+msgid "Parent"
+msgstr "Categoría Padre"
+
+#. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_debit_limit
 #: model:ir.model.fields,field_description:education.field_education_teacher_debit_limit
 msgid "Payable Limit"
@@ -866,12 +921,6 @@ msgstr "Límite a pagar"
 #: model:ir.model.fields,field_description:education.field_education_teacher_payment_token_ids
 msgid "Payment Tokens"
 msgstr "Tableros de pago"
-
-#. module: education
-#: selection:education.enrollment,state:0
-#: selection:education.group,state:0
-msgid "Pending"
-msgstr "Pendiente"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_phone
@@ -1050,8 +1099,15 @@ msgstr "Alumnos"
 #: model:ir.ui.menu,name:education.education_subject_menu
 #: model:ir.ui.view,arch_db:education.view_education_course_form
 #: model:ir.ui.view,arch_db:education.view_education_enrollment_form
+#: model:ir.ui.view,arch_db:education.view_education_record_form
 msgid "Subjects"
 msgstr "Asignaturas"
+
+#. module: education
+#: code:addons/education/models/enrollment.py:62
+#, python-format
+msgid "You must add subjects to complete the enrollment"
+msgstr "Debes añadir asignaturas para completar la matrícula"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_vat

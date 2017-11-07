@@ -22,7 +22,7 @@
               <field name="date_to"/>
             </group>
             <group name="name" attrs="{'invisible': [('state', '!=', 'done')]}">
-                <field name="session_ids" nolabel="1"/>
+              <field name="session_ids" nolabel="1"/>
             </group>
           </sheet>
         </form>
@@ -83,15 +83,30 @@
       </field>
     </record>
 
-    <record id="timetable_line_sequence" model="ir.sequence">
-      <field name="name">Timetable Sequence</field>
-      <field name="code">education.timetable.line</field>
-      <field name="prefix">HOR</field>
-      <field name="padding">3</field>
-    </record>
+    <!-- <record id="view_calendar_timetable" model="ir.ui.view">
+      <field name="name">view_calendar_timetable</field>
+      <field name="model">education.timetable.line</field>
+      <field name="arch" type="xml">
+        <field name="form_view_id" ref="view_education_timetable_line_form">
+          <calendar mode="week" date_start="date_from" date_end="date_to">
+            <field name="day"/>
+            <field name="subject_id"/>
+            <field name="teacher_id"/>
+            <field name="date_from"/>
+            <field name="date_to"/>
+          </calendar>
+        </field>
+      </record> -->
 
-    <menuitem id="education_assistance_root" parent="education.education_base_menu" name="Timetable" sequence="60"/>
-    <menuitem id="education_timetable_menu" parent="education_assistance_root" action="education_timetable_action" sequence="20"/>
+      <record id="timetable_line_sequence" model="ir.sequence">
+        <field name="name">Timetable Sequence</field>
+        <field name="code">education.timetable.line</field>
+        <field name="prefix">HOR</field>
+        <field name="padding">3</field>
+      </record>
 
-  </data>
-</odoo>
+      <menuitem id="education_assistance_root" parent="education.education_base_menu" name="Timetable" sequence="60"/>
+      <menuitem id="education_timetable_menu" parent="education_assistance_root" action="education_timetable_action" sequence="20"/>
+
+    </data>
+  </odoo>
