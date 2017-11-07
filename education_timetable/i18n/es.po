@@ -140,6 +140,12 @@ msgid "Education timerange"
 msgstr "Rango Horarios"
 
 #. module: education_timetable
+#: model:ir.ui.menu,name:education_timetable.education_assistance_root
+#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
+msgid "Timetable"
+msgstr "Horario"
+
+#. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_date_to
 msgid "End Date"
 msgstr "Fecha finalización"

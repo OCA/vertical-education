@@ -74,6 +74,17 @@ msgid "Education Exam"
 msgstr "Exámenes"
 
 #. module: education_evaluation
+#: model:ir.model.fields,field_description:education_evaluation.field_education_record_subject_evaluation_result_ids
+#: model:ir.ui.menu,name:education_evaluation.education_exam_root
+msgid "Evaluations"
+msgstr "Evaluaciones"
+
+#. module: education_evaluation
+#: model:ir.ui.view,arch_db:education_evaluation.view_record_subject_evaluation_form
+msgid "Evaulations"
+msgstr "Evaluaciones"
+
+#. module: education_evaluation
 #: model:ir.ui.view,arch_db:education_evaluation.view_education_result_search
 #: model:ir.ui.view,arch_db:education_evaluation.view_education_result_tree
 msgid "Education Result"
