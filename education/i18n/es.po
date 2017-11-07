@@ -903,7 +903,7 @@ msgstr "Registro"
 
 #. module: education
 #: model:ir.actions.act_window,name:education.education_record_action
-#: model:ir.ui.menu,name:education.education_record
+#: model:ir.ui.menu,name:education.education_record_root
 #: model:ir.ui.menu,name:education.record_menu
 msgid "Records"
 msgstr "Expedientes Académicos"
