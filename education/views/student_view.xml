@@ -40,7 +40,7 @@
           </group>
           <group>
             <separator string="Academic Records" colspan="4"/>
-            <field name="record_ids" nolabel="1" >
+            <field name="record_ids" nolabel="1">
               <tree>
                 <field name="code"/>
                 <field name="course_id"/>
