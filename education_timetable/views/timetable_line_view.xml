@@ -32,7 +32,6 @@
     <record id="view_education_timetable_tree" model="ir.ui.view">
       <field name="name">view.education.timetable.tree</field>
       <field name="model">education.timetable.line</field>
-      <field name="view_mode">tree,calender</field>
       <field name="arch" type="xml">
         <tree string="Education Timetable">
           <field name="course_id"/>

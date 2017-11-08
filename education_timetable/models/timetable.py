@@ -120,11 +120,3 @@ class EducationTimetableLine(models.Model):
         for record in self:
             record.date_from = record.group_id.date_from
             record.date_to = record.group_id.date_to
-
-
-class CalendarEvent(models.Model):
-    _inherit = 'calendar.event'
-
-    timetable_id = fields.Many2one(
-        comodel_name='education.timetable.line',
-        string='Timetable')
