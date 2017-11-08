@@ -37,11 +37,11 @@
           <field name="course_id" />
           <field name="subject_id" />
           <group string="Group By" name="groupby">
-            <filter name="student_id_groupby" string="student_id"
+            <filter name="student_id_groupby" string="Student"
               context="{'group_by': 'student_id'}" />
-            <filter name="course_id_groupby" string="course_id"
+            <filter name="course_id_groupby" string="Course"
               context="{'group_by': 'course_id'}" />
-            <filter name="subject_id_groupby" string="subject_id"
+            <filter name="subject_id_groupby" string="Subject"
               context="{'group_by': 'subject_id'}" />
           </group>
         </search>

@@ -31,6 +31,39 @@ msgid "Course Category"
 msgstr "Categorías"
 
 #. module: education
+#: model:ir.actions.act_window,help:education.record_subject_action
+msgid "Click to create a new Subject Record."
+msgstr "Click para crear un nuevo Expediente de Asignatura."
+
+#. module: education
+#: model:ir.actions.act_window,name:education.record_subject_action
+#: model:ir.ui.menu,name:education.record_subject_menu
+msgid "Subject Records"
+msgstr "Expediente de Asignaturas"
+
+#. module: education
+#: model:ir.ui.view,arch_db:education.view_record_subject_form
+#: model:ir.ui.view,arch_db:education.view_record_subject_search
+#: model:ir.ui.view,arch_db:education.view_record_subject_tree
+msgid "Subject Record"
+msgstr "Expediente de asignatura"
+
+#. module: education
+#: model:ir.ui.view,arch_db:education.view_record_subject_search
+msgid "Course"
+msgstr "Curso"
+
+#. module: education
+#: model:ir.ui.view,arch_db:education.view_record_subject_search
+msgid "Student"
+msgstr "Alumno"
+
+#. module: education
+#: model:ir.ui.view,arch_db:education.view_record_subject_search
+msgid "Subject"
+msgstr "Asignatura"
+
+#. module: education
 #: model:ir.model.fields,field_description:education.field_education_course_category_parent_id
 msgid "Parent Category"
 msgstr "Categoría padre"
@@ -82,12 +115,11 @@ msgid "Action Needed"
 msgstr "Acción Necesaria"
 
 #. module: education
-#: selection:education.course,state:0
-#: selection:education.enrollment,state:0
 #: selection:education.group,state:0
-#: selection:education.record,state:0
+#: model:ir.model.fields,field_description:education.field_education_course_active
 #: model:ir.model.fields,field_description:education.field_education_student_active
 #: model:ir.model.fields,field_description:education.field_education_teacher_active
+#: model:ir.ui.view,arch_db:education.view_education_group_form
 msgid "Active"
 msgstr "Activo"
 
@@ -328,6 +360,7 @@ msgstr "País"
 #: model:ir.model.fields,field_description:education.field_education_group_course_id
 #: model:ir.model.fields,field_description:education.field_education_record_course_id
 #: model:ir.model.fields,field_description:education.field_education_subject_course_id
+#: model:ir.model.fields,field_description:education.field_education_record_subject_course_id
 #: model:ir.ui.view,arch_db:education.view_education_enrollment_search
 #: model:ir.ui.view,arch_db:education.view_education_group_search
 #: model:ir.ui.view,arch_db:education.view_education_record_search
@@ -352,6 +385,7 @@ msgstr "Método de Facturación"
 #: model:ir.model.fields,field_description:education.field_education_course_create_uid
 #: model:ir.model.fields,field_description:education.field_education_enrollment_create_uid
 #: model:ir.model.fields,field_description:education.field_education_group_create_uid
+#: model:ir.model.fields,field_description:education.field_education_record_subject_create_uid
 #: model:ir.model.fields,field_description:education.field_education_record_create_uid
 #: model:ir.model.fields,field_description:education.field_education_student_create_uid
 #: model:ir.model.fields,field_description:education.field_education_subject_create_uid
@@ -364,6 +398,7 @@ msgstr "Creado por"
 #: model:ir.model.fields,field_description:education.field_education_course_create_date
 #: model:ir.model.fields,field_description:education.field_education_enrollment_create_date
 #: model:ir.model.fields,field_description:education.field_education_group_create_date
+#: model:ir.model.fields,field_description:education.field_education_record_subject_create_date
 #: model:ir.model.fields,field_description:education.field_education_record_create_date
 #: model:ir.model.fields,field_description:education.field_education_student_create_date
 #: model:ir.model.fields,field_description:education.field_education_subject_create_date
@@ -412,6 +447,7 @@ msgstr "Grado de confianza para este deudor"
 #: model:ir.model.fields,field_description:education.field_education_course_display_name
 #: model:ir.model.fields,field_description:education.field_education_enrollment_display_name
 #: model:ir.model.fields,field_description:education.field_education_group_display_name
+#: model:ir.model.fields,field_description:education.field_education_record_subject_display_name
 #: model:ir.model.fields,field_description:education.field_education_record_display_name
 #: model:ir.model.fields,field_description:education.field_education_student_display_name
 #: model:ir.model.fields,field_description:education.field_education_subject_display_name
@@ -428,6 +464,7 @@ msgstr "Finalizado"
 
 #. module: education
 #: selection:education.enrollment,state:0
+#: selection:education.group,state:0
 msgid "Draft"
 msgstr "Borrador"
 
@@ -620,6 +657,7 @@ msgstr "Contiene entradas irreconciliadas"
 #: model:ir.model.fields,field_description:education.field_education_enrollment_id
 #: model:ir.model.fields,field_description:education.field_education_group_id
 #: model:ir.model.fields,field_description:education.field_education_record_id
+#: model:ir.model.fields,field_description:education.field_education_record_subject_id
 #: model:ir.model.fields,field_description:education.field_education_student_id
 #: model:ir.model.fields,field_description:education.field_education_subject_id
 #: model:ir.model.fields,field_description:education.field_education_teacher_id
@@ -753,6 +791,7 @@ msgstr "Última modificación en"
 #: model:ir.model.fields,field_description:education.field_education_course_write_uid
 #: model:ir.model.fields,field_description:education.field_education_enrollment_write_uid
 #: model:ir.model.fields,field_description:education.field_education_group_write_uid
+#: model:ir.model.fields,field_description:education.field_education_record_subject_write_uid
 #: model:ir.model.fields,field_description:education.field_education_record_write_uid
 #: model:ir.model.fields,field_description:education.field_education_student_write_uid
 #: model:ir.model.fields,field_description:education.field_education_subject_write_uid
@@ -765,6 +804,7 @@ msgstr "Última actualización por"
 #: model:ir.model.fields,field_description:education.field_education_course_write_date
 #: model:ir.model.fields,field_description:education.field_education_enrollment_write_date
 #: model:ir.model.fields,field_description:education.field_education_group_write_date
+#: model:ir.model.fields,field_description:education.field_education_record_subject_write_date
 #: model:ir.model.fields,field_description:education.field_education_record_write_date
 #: model:ir.model.fields,field_description:education.field_education_student_write_date
 #: model:ir.model.fields,field_description:education.field_education_subject_write_date
@@ -946,6 +986,7 @@ msgstr "Rematricular"
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_enrollment_record_id
 #: model:ir.model.fields,field_description:education.field_education_group_record_id
+#: model:ir.model.fields,field_description:education.field_education_record_subject_record_id
 #: model:ir.ui.view,arch_db:education.view_education_group_search
 msgid "Record"
 msgstr "Registro"
@@ -1080,8 +1121,10 @@ msgstr "Calle2"
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_enrollment_student_id
 #: model:ir.model.fields,field_description:education.field_education_record_student_id
+#: model:ir.model.fields,field_description:education.field_education_record_subject_student_id
 #: model:ir.ui.view,arch_db:education.view_education_enrollment_search
 #: model:ir.ui.view,arch_db:education.view_education_record_search
+#: model:ir.ui.view,arch_db:education.view_education_student_form
 msgid "Student"
 msgstr "Alumno"
 
@@ -1089,6 +1132,9 @@ msgstr "Alumno"
 #: model:ir.actions.act_window,name:education.education_student_action
 #: model:ir.ui.menu,name:education.education_student_menu
 #: model:ir.ui.menu,name:education.education_student_root
+#: model:ir.ui.view,arch_db:education.view_education_group_form
+#: model:ir.ui.view,arch_db:education.view_education_student_kanban
+#: model:ir.ui.view,arch_db:education.view_education_student_tree
 msgid "Students"
 msgstr "Alumnos"
 

@@ -16,9 +16,15 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_ausence_ids
+msgid "Ausence"
+msgstr "Faltas"
+
+#. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_ids
 #: model:ir.model.fields,field_description:education_timetable.field_education_student_ausence_ids
 #: model:ir.ui.view,arch_db:education_timetable.view_education_student_form_timetable_inherit
+#: model:ir.ui.view,arch_db:education_timetable.view_record_subject_evaluation_form
 msgid "Ausences"
 msgstr "Asistencias"
 
@@ -260,7 +266,7 @@ msgstr "Sesión"
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_form
 msgid "Session Ausences"
-msgstr "Session Ausences"
+msgstr "Asistencias"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_presence_id
