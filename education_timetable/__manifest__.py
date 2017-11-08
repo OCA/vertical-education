@@ -15,6 +15,7 @@
     'author': 'PESOL, Odoo Community Association (OCA)',
     'depends': [
         'education',
+        'calendar'
     ],
     'data': [
         'views/timetable_line_view.xml',

@@ -79,5 +79,8 @@ class EducationCourse(models.Model):
         column2='subject_id',
         string='Subjects')
 
+    duration = fields.Float(
+        string='Duration')
+
     active = fields.Boolean(
         string='Active', default=True)

@@ -19,6 +19,7 @@
           <group col="4">
             <field name="name"/>
             <field name="category_id"/>
+            <field name="duration" widget="float_time"/>
           </group>
           <notebook name="subjects">
             <page name="subjects" string="Subjects">
@@ -40,6 +41,7 @@
         <field name="name"/>
         <field name="code"/>
         <field name="category_id"/>
+        <field name="duration" widget="float_time"/>
       </tree>
     </field>
   </record>
@@ -52,11 +54,13 @@
         <field name="name"/>
         <field name="code"/>
         <field name="category_id"/>
+        <field name="duration" />
         <filter name="active" string="Archived" domain="[('active', '=', False)]"/>
         <group string="Group By" name="groupby">
-          <filter name="name" string="Name" context="{'group_by': 'name'}"/>
-          <filter name="code" string="Code" context="{'group_by': 'code'}"/>
-          <filter name="category_id" string="Category" context="{'group_by': 'category_id'}"/>
+          <filter string="Name" context="{'group_by': 'name'}"/>
+          <filter string="Code" context="{'group_by': 'code'}"/>
+          <filter string="Category" context="{'group_by': 'category_id'}"/>
+          <filter string="Duration" context="{'group_by': 'duration'}"/>
         </group>
       </search>
     </field>

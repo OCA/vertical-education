@@ -469,6 +469,12 @@ msgid "Draft"
 msgstr "Borrador"
 
 #. module: education
+#: model:ir.model.fields,field_description:education.field_education_course_duration
+#: model:ir.ui.view,arch_db:education.view_education_course_search
+msgid "Duration"
+msgstr "Duración"
+
+#. module: education
 #: model:ir.ui.view,arch_db:education.view_education_course_tree
 msgid "Educaiton Course"
 msgstr "Educaiton Course"

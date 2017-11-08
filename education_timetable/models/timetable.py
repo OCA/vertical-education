@@ -20,6 +20,13 @@ class EducationTimetableLine(models.Model):
         string='Course',
         required=True)
 
+    user_id = fields.Many2one(
+        comodel_name='res.users',
+        string='Salesperson',
+        index=True,
+        track_visibility='onchange',
+        default=lambda self: self.env.user)
+
     group_id = fields.Many2one(
         comodel_name='education.group',
         string='Group',
@@ -49,11 +56,11 @@ class EducationTimetableLine(models.Model):
         string='Days',
         required=True)
 
-    date_from = fields.Date(
+    date_from = fields.Datetime(
         string='Start Date',
         required=True)
 
-    date_to = fields.Date(
+    date_to = fields.Datetime(
         string='End Date',
         required=True)
 
@@ -113,3 +120,11 @@ class EducationTimetableLine(models.Model):
         for record in self:
             record.date_from = record.group_id.date_from
             record.date_to = record.group_id.date_to
+
+
+class CalendarEvent(models.Model):
+    _inherit = 'calendar.event'
+
+    timetable_id = fields.Many2one(
+        comodel_name='education.timetable.line',
+        string='Timetable')
