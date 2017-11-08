@@ -21,11 +21,13 @@ class EducationExam(models.Model):
 
     group_id = fields.Many2one(
         comodel_name='education.group',
-        string='Group')
+        string='Group',
+        required=True)
 
     subject_id = fields.Many2one(
         comodel_name='education.subject',
-        string='Subject')
+        string='Subject',
+        required=True)
 
     result_ids = fields.One2many(
         comodel_name='education.result',
@@ -33,7 +35,8 @@ class EducationExam(models.Model):
         string='Results')
 
     date = fields.Date(
-        string='Date')
+        string='Date',
+        required=True)
 
     @api.onchange('group_id')
     def _change_group_id(self):
