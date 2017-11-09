@@ -60,7 +60,7 @@ class EducationGroup(models.Model):
 
     @api.multi
     def unlink(self):
-        if self.record_ids:
+        if self.enrollment_ids:
             raise ValidationError(
                 _('You can not delete a group with registered students'))
         else:
