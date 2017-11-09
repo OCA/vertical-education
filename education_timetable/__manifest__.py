@@ -14,6 +14,7 @@
     'complexity': 'easy',
     'author': 'PESOL, Odoo Community Association (OCA)',
     'depends': [
+        'base',
         'education',
         'calendar',
         'mail'

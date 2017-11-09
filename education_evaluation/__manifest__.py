@@ -12,7 +12,8 @@
     "application": True,
     "installable": True,
     "depends": [
-        "education",
+        'base',
+        'education',
         'mail'
     ],
     "data": [
