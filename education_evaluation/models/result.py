@@ -6,6 +6,7 @@ from odoo import models, fields
 
 class EducationResult(models.Model):
     _name = 'education.result'
+    _inherit = ['mail.thread']
 
     exam_id = fields.Many2one(
         comodel_name='education.exam',

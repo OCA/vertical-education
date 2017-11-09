@@ -6,6 +6,7 @@ from odoo.exceptions import ValidationError
 
 class EducationEnrollment(models.Model):
     _name = "education.enrollment"
+    _inherit = ['mail.thread']
     _rec_name = 'code'
 
     code = fields.Char(

@@ -9,6 +9,7 @@ from odoo import models, api, fields
 
 class EducationSession(models.Model):
     _name = 'education.session'
+    _inherit = ['mail.thread']
     _rec_name = 'code'
 
     code = fields.Char(

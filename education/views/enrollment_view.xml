@@ -21,73 +21,76 @@
             <field name="student_id"/>
             <field name="course_id"/>
             <field name="group_id" domain="[('course_id', '=', course_id)]"/>
-            <field name="record_id"  attrs="{'invisible':[('state','!=', 'done')]}" />
-
+            <field name="record_id" attrs="{'invisible':[('state','!=', 'done')]}"/>
           </group>
           <notebook>
             <page string="Academic Information">
               <group name="subjects">
                 <separator string="Subjects" colspan="2"/>
-                  <field name="subject_ids" nolabel="1"/>
-                </group>
-              </page>
-            </notebook>
-          </sheet>
-        </form>
-      </field>
-    </record>
+                <field name="subject_ids" nolabel="1"/>
+              </group>
+            </page>
+          </notebook>
+        </sheet>
+        <div class="oe_chatter">
+          <field name="message_follower_ids" widget="mail_followers"/>
+          <field name="message_ids" widget="mail_thread"/>
+        </div>
+      </form>
+    </field>
+  </record>
 
-    <record id="view_education_enrollment_tree" model="ir.ui.view">
-      <field name="name">view.education.enrollment.tree</field>
-      <field name="model">education.enrollment</field>
-      <field name="arch" type="xml">
-        <tree string="Enrollments">
-          <field name="code"/>
-          <field name="student_id"/>
-          <field name="course_id"/>
-          <field name="group_id"/>
-          <field name="state" />
-        </tree>
-      </field>
-    </record>
+  <record id="view_education_enrollment_tree" model="ir.ui.view">
+    <field name="name">view.education.enrollment.tree</field>
+    <field name="model">education.enrollment</field>
+    <field name="arch" type="xml">
+      <tree string="Enrollments">
+        <field name="code"/>
+        <field name="student_id"/>
+        <field name="course_id"/>
+        <field name="group_id"/>
+        <field name="state"/>
+      </tree>
+    </field>
+  </record>
 
-    <record id="view_education_enrollment_search" model="ir.ui.view">
-      <field name="name">view.education.enrollment.search</field>
-      <field name="model">education.enrollment</field>
-      <field name="arch" type="xml">
-        <search string="enrollments">
-          <field name="code"/>
-          <field name="student_id"/>
-          <field name="course_id"/>
-          <field name="group_id"/>
-          <group string="Group By" name="groupby">
-            <filter string="Code" context="{'group_by': 'code'}"/>
-            <filter string="Student" context="{'group_by': 'student_id'}"/>
-            <filter string="Course" context="{'group_by': 'course_id'}"/>
-            <filter string="Group" context="{'group_by': 'group_id'}"/>
-          </group>
-        </search>
-      </field>
-    </record>
+  <record id="view_education_enrollment_search" model="ir.ui.view">
+    <field name="name">view.education.enrollment.search</field>
+    <field name="model">education.enrollment</field>
+    <field name="arch" type="xml">
+      <search string="enrollments">
+        <field name="code"/>
+        <field name="student_id"/>
+        <field name="course_id"/>
+        <field name="group_id"/>
+        <group string="Group By" name="groupby">
+          <filter string="Code" context="{'group_by': 'code'}"/>
+          <filter string="Student" context="{'group_by': 'student_id'}"/>
+          <filter string="Course" context="{'group_by': 'course_id'}"/>
+          <filter string="Group" context="{'group_by': 'group_id'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
 
-    <record id="education_enrollment_action" model="ir.actions.act_window">
-      <field name="name">Enrollments</field>
-      <field name="res_model">education.enrollment</field>
-      <field name="view_mode">tree,form</field>
-      <field name="help" type="html">
-        <p class="oe_view_nocontent_create">
-          Click to create a new Enrollment.
-        </p>
-      </field>
-    </record>
+  <record id="education_enrollment_action" model="ir.actions.act_window">
+    <field name="name">Enrollments</field>
+    <field name="res_model">education.enrollment</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+        Click to create a new Enrollment.
+      </p>
+    </field>
+  </record>
 
-    <record id="enrollment_sequence" model="ir.sequence">
-      <field name="name">Enrollment Sequence</field>
-      <field name="code">education.enrollment</field>
-      <field name="prefix">ENR</field>
-      <field name="padding">4</field>
-    </record>
+  <record id="enrollment_sequence" model="ir.sequence">
+    <field name="name">Enrollment Sequence</field>
+    <field name="code">education.enrollment</field>
+    <field name="prefix">ENR</field>
+    <field name="padding">4</field>
+  </record>
 
-    <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="20"/>
+  <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="20"/>
 
-  </odoo>
+</odoo>

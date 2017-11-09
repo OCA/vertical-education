@@ -49,6 +49,7 @@ class EducationCourseCategory(models.Model):
 
 class EducationSubject(models.Model):
     _name = "education.subject"
+    _inherit = ['mail.thread']
 
     name = fields.Char(string='Name', required=True)
 
@@ -62,6 +63,7 @@ class EducationSubject(models.Model):
 
 class EducationCourse(models.Model):
     _name = "education.course"
+    _inherit = ['mail.thread']
 
     name = fields.Char(
         string='Name',

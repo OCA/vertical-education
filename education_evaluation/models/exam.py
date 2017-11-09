@@ -7,6 +7,7 @@ from odoo.osv import expression
 
 class EducationExam(models.Model):
     _name = 'education.exam'
+    _inherit = ['mail.thread']
 
     name = fields.Char(
         string='Name',

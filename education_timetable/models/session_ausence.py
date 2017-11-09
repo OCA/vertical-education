@@ -9,6 +9,7 @@ from odoo import models, api, fields, _
 
 class EducationSessionAusence(models.Model):
     _name = 'education.session.ausence'
+    _inherit = ['mail.thread']
 
     session_id = fields.Many2one(
         comodel_name='education.session',

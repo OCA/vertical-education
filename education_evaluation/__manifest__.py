@@ -13,6 +13,7 @@
     "installable": True,
     "depends": [
         "education",
+        'mail'
     ],
     "data": [
         'views/exam_view.xml',

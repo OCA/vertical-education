@@ -13,6 +13,7 @@
     "installable": True,
     "depends": [
         "base",
+        'mail'
     ],
     "data": [
         'views/menu_view.xml',
