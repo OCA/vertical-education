@@ -9,4 +9,3 @@ class EducationTeacher(models.Model):
 
     partner_id = fields.Many2one(
         'res.partner', 'Partner', required=True, ondelete="cascade")
-

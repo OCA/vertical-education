@@ -77,14 +77,6 @@ class EducationTimetableLine(models.Model):
         inverse_name='timetable_id',
         string='Sessions')
 
-    @api.onchange('course_id')
-    def _change_course_id(self):
-        if not self.group_id:
-            return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
-        subject_fields_domain = [
-            ('id', 'in', self.course_id.subject_ids.ids)]
-        return {'domain': {'subject_id': subject_fields_domain}}
-
     @api.multi
     def get_days(self, start, end):
         step = timedelta(days=1)
@@ -121,3 +113,8 @@ class EducationTimetableLine(models.Model):
         for record in self:
             record.date_from = record.group_id.date_from
             record.date_to = record.group_id.date_to
+        if not self.group_id:
+            return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
+        subject_fields_domain = [
+            ('id', 'in', self.group_id.course_id.subject_ids.ids)]
+        return {'domain': {'subject_id': subject_fields_domain}}
