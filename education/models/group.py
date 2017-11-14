@@ -35,6 +35,11 @@ class EducationGroup(models.Model):
         string='Status',
         default="draft")
 
+    active = fields.Boolean(
+        'Active', default=True,
+        help="If unchecked, it will allow you to hide the Group without removing it.")
+
+
     def action_draft(self):
         self.ensure_one()
         self.state = 'draft'

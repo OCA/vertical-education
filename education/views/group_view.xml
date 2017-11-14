@@ -14,6 +14,11 @@
           <field name="state" widget="statusbar" statusbar_visible="draft,active,done"/>
         </header>
         <sheet>
+          <div class="oe_button_box" name="button_box" modifiers="{}">
+            <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive" modifiers="{}" options="{}">
+              <field name="active" widget="boolean_button" options="{'terminology': 'archive'}" modifiers="{}"/>
+            </button>
+          </div>
           <div class="oe_title">
             <h1>
               <field name="code" readonly="1"/>
