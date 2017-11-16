@@ -45,6 +45,21 @@ class EducationEnrollment(models.Model):
         self.state = 'cancel'
 
     @api.multi
+    def get_record_values(self):
+        record_subject_values = [
+            (0, 0, {'subject_id': subject.id})
+            for subject in self.subject_ids
+        ]
+        if not self.subject_ids and not self.course_id.subject_ids:
+            raise ValidationError(
+                _("You must add subjects to complete the enrollment"))
+        return {
+            'student_id': self.student_id.id,
+            'course_id': self.course_id.id,
+            'record_subject_ids': record_subject_values
+        }
+
+    @api.multi
     def action_done(self):
         self.ensure_one()
         record_obj = self.env['education.record']
@@ -54,19 +69,8 @@ class EducationEnrollment(models.Model):
         ], limit=1)
 
         if not record:
-            record_subject_values = [
-                (0, 0, {'subject_id': subject.id})
-                for subject in self.subject_ids
-            ]
-            if not self.subject_ids and not self.course_id.subject_ids:
-                raise ValidationError(
-                    _("You must add subjects to complete the enrollment"))
-            else:
-                record = record_obj.create({
-                    'student_id': self.student_id.id,
-                    'course_id': self.course_id.id,
-                    'record_subject_ids': record_subject_values
-                })
+            data = self.get_record_values()
+            record = record_obj.create(data)
         self.write({
             'state': 'done',
             'record_id': record.id
