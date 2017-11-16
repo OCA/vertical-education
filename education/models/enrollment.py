@@ -50,7 +50,8 @@ class EducationEnrollment(models.Model):
             (0, 0, {'subject_id': subject.id})
             for subject in self.subject_ids
         ]
-        if not self.subject_ids and not self.course_id.subject_ids:
+        if not self.subject_ids and not self.course_id.subject_ids\
+                and not self.pack:
             raise ValidationError(
                 _("You must add subjects to complete the enrollment"))
         return {
@@ -58,6 +59,11 @@ class EducationEnrollment(models.Model):
             'course_id': self.course_id.id,
             'record_subject_ids': record_subject_values
         }
+
+    @api.multi
+    def set_done(self):
+        self.ensure_one()
+        self.state = 'done'
 
     @api.multi
     def action_done(self):
@@ -71,10 +77,8 @@ class EducationEnrollment(models.Model):
         if not record:
             data = self.get_record_values()
             record = record_obj.create(data)
-        self.write({
-            'state': 'done',
-            'record_id': record.id
-        })
+        self.record_id = record.id
+        self.set_done()
 
     @api.onchange('course_id')
     def onchange_course_id(self):
