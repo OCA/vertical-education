@@ -73,7 +73,6 @@ class EducationEnrollment(models.Model):
             ('student_id', '=', self.student_id.id),
             ('course_id', '=', self.course_id.id)
         ], limit=1)
-
         if not record:
             data = self.get_record_values()
             record = record_obj.create(data)
