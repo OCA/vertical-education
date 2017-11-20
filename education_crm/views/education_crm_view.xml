@@ -32,7 +32,7 @@
         <field name="course_id" />
         <field name="enrollment_id" readonly="1"  attrs="{'invisible':[('enrollment_id','=', False)]}" />
       </xpath>
-      <!--xpath expr="//field[@name='partner_name']" position="attributes">
+      <!-- <xpath expr="//field[@name='partner_name']" position="attributes">
         <attribute name="string">First name</attribute>
       </xpath>
       <xpath expr="//field[@name='partner_name']" position="after">
@@ -41,7 +41,7 @@
         <field name="contact_birthdate"/>
         <field name="contact_gender"/>
         <field name="contact_nationality"/>
-      </xpath -->
+      </xpath> -->
     </field>
   </record>
 

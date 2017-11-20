@@ -16,12 +16,16 @@
             <group name="data">
               <field name="date"/>
             </group>
+            <group col="4">
+              <field name="start_time"/>
+              <field name="end_time"/>
+            </group>
             <group string="Session Ausences">
               <field name="ausence_ids" nolabel="1">
                 <tree>
-                  <field name="student_id" />
-                  <field name="notes" />
-                  <field name="supporting_document" />
+                  <field name="student_id"/>
+                  <field name="notes"/>
+                  <field name="supporting_document"/>
                 </tree>
               </field>
             </group>
@@ -65,11 +69,24 @@
     <record id="education_session_action" model="ir.actions.act_window">
       <field name="name">Education Session</field>
       <field name="res_model">education.session</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,calendar</field>
       <field name="help" type="html">
         <p class="oe_view_nocontent_create">
           Click to create a new Education Session.
         </p>
+      </field>
+    </record>
+
+    <record id="view_calendar_session" model="ir.ui.view">
+      <field name="name">view_calendar_session</field>
+      <field name="model">education.session</field>
+      <field name="priority" eval="1"/>
+      <field name="arch" type="xml">
+        <calendar string="Sessions" date_start="start_time" date_stop="end_time" color="user_id" mode="month">
+          <field name="group_id"/>
+          <field name="teacher_id"/>
+          <field name="subject_id"/>
+        </calendar>
       </field>
     </record>
 

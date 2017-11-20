@@ -92,7 +92,7 @@
       <field name="model">education.timetable.line</field>
       <field name="priority" eval="1"/>
       <field name="arch" type="xml">
-        <calendar string="Timetable" date_start="date_from" date_stop="date_to" color="user_id">
+        <calendar string="Timetable" date_start="date_from" date_stop="date_to" color="user_id" mode="month">
           <field name="subject_id"/>
           <field name="teacher_id"/>
         </calendar>
