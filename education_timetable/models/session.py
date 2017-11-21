@@ -77,10 +77,14 @@ class EducationSession(models.Model):
                  )
     def _compute_time(self):
         for session in self:
-            start_time = str(session.timetable_id.timerange_id.start_time).split('.')
-            end_time = str(session.timetable_id.timerange_id.end_time).split('.')
-            date = session.date.split('-')
-            session.start_time = datetime(int(date[0]), int(
-                date[1]), int(date[2]), int(start_time[0])-1, int(start_time[1]), 0)
-            session.end_time = datetime(int(date[0]), int(
-            date[1]), int(date[2]), int(end_time[0])-1, int(end_time[1]), 0)
+            if session.timetable_id:
+                start_time = str(
+                    session.timetable_id.timerange_id.start_time).split('.')
+                end_time = str(
+                    session.timetable_id.timerange_id.end_time).split('.')
+                if session.date:
+                    date = session.date.split('-')
+                    session.start_time = datetime(int(date[0]), int(
+                        date[1]), int(date[2]), int(start_time[0]) - 1, int(start_time[1]), 0)
+                    session.end_time = datetime(int(date[0]), int(
+                        date[1]), int(date[2]), int(end_time[0]) - 1, int(end_time[1]), 0)
