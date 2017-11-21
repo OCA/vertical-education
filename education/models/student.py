@@ -8,11 +8,14 @@ class EducationStudent(models.Model):
     _inherits = {'res.partner': 'partner_id'}
 
     partner_id = fields.Many2one(
-        'res.partner', 'Partner', required=True, ondelete="cascade")
+        comodel_name='res.partner',
+        string='Partner',
+        required=True,
+        ondelete="cascade")
     record_ids = fields.One2many(
-        'education.record',
-        'student_id',
-        'Academic Records')
+        comodel_name='education.record',
+        inverse_name='student_id',
+        string='Academic Records')
 
     def action_view_partner_invoices(self):
         action = self.env.ref('account.action_invoice_refund_out_tree')

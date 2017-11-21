@@ -122,14 +122,14 @@ msgid "Other"
 msgstr "Otro"
 
 #. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_second_last_name
-msgid "Second last name"
-msgstr "Segundo apellido"
+#: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
+msgid "Partner"
+msgstr "Contacto"
 
 #. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_student_id
-msgid "Student"
-msgstr "Alumno"
+#: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
+msgid "Partner name"
+msgstr "Nombre"
 
 #. module: education_crm
 #: model:ir.model.fields,field_description:education_crm.field_crm_lead_record_id

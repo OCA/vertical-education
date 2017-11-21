@@ -27,11 +27,6 @@ class Lead(models.Model):
         comodel_name='education.enrollment',
         string='Enrollment')
 
-    partner_id = fields.Many2one(
-        comodel_name='res.partner',
-        related="student_id.partner_id",
-        store=True)
-
     @api.multi
     def create_student(self):
         self.ensure_one()
@@ -63,35 +58,32 @@ class Lead(models.Model):
             raise ValidationError(
                 _("the user already exist"))
 
-    def _onchange_student_id_values(self):
-        student = self.student_id
-        if student:
+    def _onchange_partner_id_values(self):
+        partner = self.partner_id
+        if partner:
             return {
-                'partner_name': student.name,
-                'title': student.title.id,
-                'street': student.street,
-                'street2': student.street2,
-                'city': student.city,
-                'state_id': student.state_id.id,
-                'country_id': student.country_id.id,
-                'email_from': student.email,
-                'phone': student.phone,
-                'mobile': student.mobile,
-                'zip': student.zip,
-                'function': student.function,
+                'partner_name': partner.firstname,
+                'lastname': partner.lastname,
+                'title': partner.title.id,
+                'street': partner.street,
+                'street2': partner.street2,
+                'city': partner.city,
+                'state_id': partner.state_id.id,
+                'country_id': partner.country_id.id,
+                'email_from': partner.email,
+                'phone': partner.phone,
+                'mobile': partner.mobile,
+                'zip': partner.zip,
+                'function': partner.function,
             }
         else:
             return {}
 
-    @api.onchange('student_id')
-    def _onchange_student_id(self):
-        self.update(self._onchange_student_id_values())
+    @api.onchange('partner_id')
+    def _onchange_partner_id(self):
+        self.update(self._onchange_partner_id_values())
 
     def create_enrollment(self):
-        # TODO: el grupo no es obligatorio para crear la matricula
-        # crear la matricula para asociarla al lead
-        # y simplemente mostrar el lead creado, en lugar de mostrar el
-        # formulario para crear
         return {
             'name': 'Enrollment Registration',
             'type': 'ir.actions.act_window',

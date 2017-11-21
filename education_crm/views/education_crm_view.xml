@@ -18,19 +18,25 @@
         <attribute name="invisible">1</attribute>
       </xpath-->
       <xpath expr="//button[@name='action_set_won']" position="after">
-        <button string="Create Student" name="create_student" type="object" context="{}" class="oe_highlight"/>
+        <!-- <button string="Create Student" name="create_student" type="object" context="{}" class="oe_highlight"/> -->
 
-        <button string="Create Enrollment" name="create_enrollment" type="object" context="{'default_student_id': student_id, 'default_course_id': course_id}" class="oe_highlight"/>
+        <button string="Create Enrollment" name="create_enrollment" type="object" context="{'default_partner_id': partner_id, 'default_course_id': course_id}" class="oe_highlight"/>
+      </xpath>
+      <!-- <xpath expr="//field[@name='partner_id']" position="attributes">
+        <attribute name="invisible">1</attribute>
+      </xpath> -->
+      <xpath expr="//field[@name='partner_id']" position="after">
+        <!-- <field
+          name="student_id"
+          context="{'search_default_customer': 1, 'default_name': partner_name, 'default_street': street, 'default_street2': street2, 'default_city': city, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_function': function, 'default_phone': phone, 'default_mobile': mobile, 'default_email': email_from, 'default_user_id': user_id, 'default_team_id': team_id}"/> -->
+        <!-- <field name="course_id" /> -->
+        <field name="enrollment_id" readonly="1"  attrs="{'invisible':[('enrollment_id','=', False)]}" />
       </xpath>
       <xpath expr="//field[@name='partner_id']" position="attributes">
-        <attribute name="invisible">1</attribute>
+        <attribute name="string">Partner</attribute>
       </xpath>
-      <xpath expr="//field[@name='partner_id']" position="after">
-        <field
-          name="student_id"
-          context="{'search_default_customer': 1, 'default_name': partner_name, 'default_street': street, 'default_street2': street2, 'default_city': city, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_function': function, 'default_phone': phone, 'default_mobile': mobile, 'default_email': email_from, 'default_user_id': user_id, 'default_team_id': team_id}"/>
-        <field name="course_id" />
-        <field name="enrollment_id" readonly="1"  attrs="{'invisible':[('enrollment_id','=', False)]}" />
+      <xpath expr="//field[@name='partner_name']" position="attributes">
+        <attribute name="string">Partner name</attribute>
       </xpath>
       <!-- <xpath expr="//field[@name='partner_name']" position="attributes">
         <attribute name="string">First name</attribute>
