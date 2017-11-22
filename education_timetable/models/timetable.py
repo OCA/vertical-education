@@ -11,7 +11,6 @@ from odoo.osv import expression
 
 class EducationTimetableLine(models.Model):
     _name = 'education.timetable.line'
-    _inherit = ['mail.thread']
 
     name = fields.Char(
         string='Name', required=True, default=lambda self: _('New'))
@@ -20,13 +19,6 @@ class EducationTimetableLine(models.Model):
         comodel_name='education.course',
         string='Course',
         required=True)
-
-    user_id = fields.Many2one(
-        comodel_name='res.users',
-        string='Salesperson',
-        index=True,
-        track_visibility='onchange',
-        default=lambda self: self.env.user)
 
     group_id = fields.Many2one(
         comodel_name='education.group',
@@ -57,11 +49,11 @@ class EducationTimetableLine(models.Model):
         string='Days',
         required=True)
 
-    date_from = fields.Datetime(
+    date_from = fields.Date(
         string='Start Date',
         required=True)
 
-    date_to = fields.Datetime(
+    date_to = fields.Date(
         string='End Date',
         required=True)
 
@@ -76,6 +68,14 @@ class EducationTimetableLine(models.Model):
         comodel_name='education.session',
         inverse_name='timetable_id',
         string='Sessions')
+
+    @api.onchange('course_id')
+    def _change_course_id(self):
+        if not self.group_id:
+            return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
+        subject_fields_domain = [
+            ('id', 'in', self.course_id.subject_ids.ids)]
+        return {'domain': {'subject_id': subject_fields_domain}}
 
     @api.multi
     def get_days(self, start, end):
@@ -113,8 +113,3 @@ class EducationTimetableLine(models.Model):
         for record in self:
             record.date_from = record.group_id.date_from
             record.date_to = record.group_id.date_to
-        if not self.group_id:
-            return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
-        subject_fields_domain = [
-            ('id', 'in', self.group_id.course_id.subject_ids.ids)]
-        return {'domain': {'subject_id': subject_fields_domain}}
