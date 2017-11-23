@@ -70,6 +70,14 @@ class EducationTimetableLine(models.Model):
         inverse_name='timetable_id',
         string='Sessions')
 
+    user_id = fields.Many2one(
+        comodel_name='res.users',
+        string='Salesperson',
+        index=True,
+        track_visibility='onchange',
+        default=lambda self: self.env.user)
+
+
     @api.onchange('course_id')
     def _change_course_id(self):
         if not self.group_id:
