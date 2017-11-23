@@ -11,6 +11,7 @@ from odoo.osv import expression
 
 class EducationTimetableLine(models.Model):
     _name = 'education.timetable.line'
+    _inherit = ['mail.thread']
 
     name = fields.Char(
         string='Name', required=True, default=lambda self: _('New'))
