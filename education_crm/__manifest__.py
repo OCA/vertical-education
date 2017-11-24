@@ -7,7 +7,7 @@
 
 {
     'name': 'Education CRM',
-    'version': '10.0.1.0.0',
+    'version': '11.0.1.0.0',
     'license': 'AGPL-3',
     'category': 'Sales',
     'sequence': 1,
@@ -19,6 +19,7 @@
     ],
     'data': [
         'views/education_crm_view.xml',
+        'wizard/wizard_crm_postponed_view.xml'
     ],
     'installable': True,
 }

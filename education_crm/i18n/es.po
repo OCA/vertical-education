@@ -16,6 +16,59 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_crm
+#: model:ir.actions.act_window,name:crm.crm_lost_reason_action
+#: model:ir.ui.menu,name:crm.menu_crm_lost_reason
+msgid "Lost Reasons"
+msgstr "Etiquetas pérdida"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_wizard_crm_postponed_tag_ids
+msgid "Postponed tags"
+msgstr "Etiqueta pospuesto"
+
+#. module: education_crm
+#: model:ir.actions.act_window,name:education_crm.postponed_tags_action
+#: model:ir.ui.menu,name:education_crm.posponed_tags_menu
+msgid "Postponed Tags"
+msgstr "Etiquetas pospuesto"
+
+#. module: education_crm
+#: model:ir.actions.act_window,help:education_crm.postponed_tags_action
+msgid "Click to create a new Postponed Tags."
+msgstr "Click para crear nuevas etiquetas de Pospuesto."
+
+#. module: education_crm
+#: model:ir.ui.view,arch_db:education_crm.view_wizard_crm_postponed_form
+msgid "CRM postponed"
+msgstr "CRM postponed"
+
+#. module: education_crm
+#: model:ir.actions.act_window,name:education_crm.wizard_education_crm_tag_action
+msgid "Education CRM Tags"
+msgstr "Etiquetas Pospuesto"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_tag_pos_ids
+msgid "Tags"
+msgstr "Etiquetas pospuesto"
+
+#. module: education_crm
+#: model:ir.ui.view,arch_db:education_crm.view_crm_form_inherit
+msgid "Set posponed"
+msgstr "Marcar como pospuesto"
+
+#. module: education_crm
+#: model:ir.actions.act_window,name:education_crm.crm_lost_reason_tag_action
+#: model:ir.ui.menu,name:education_crm.crm_lost_reason_tags
+msgid "Lost Tags"
+msgstr "Etiquetas perdida"
+
+#. module: education_crm
+#: model:ir.model.fields,field_description:education_crm.field_education_crm_tags_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: education_crm
 #: model:ir.model.fields,field_description:education_crm.field_crm_lead_contact_birthdate
 msgid "Contact birthdate"
 msgstr "Fecha nacimiento contacto"
