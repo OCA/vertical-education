@@ -56,8 +56,17 @@
     <field name="model">crm.lead</field>
     <field name="inherit_id" ref="crm.view_create_opportunity_simplified"/>
     <field name="arch" type="xml">
+      <xpath expr="//field[@name='name']" position="attributes">
+        <attribute name="invisible">True</attribute>
+      </xpath>
       <xpath expr="//field[@name='partner_id']" position="after">
         <field name="course_id"/>
+      </xpath>
+      <xpath expr="//field[@name='name']" position="attributes">
+          <attribute name="required">False</attribute>
+      </xpath>
+      <xpath expr="//field[@name='partner_id']" position="attributes">
+        <attribute name="required">True</attribute>
       </xpath>
     </field>
   </record>
