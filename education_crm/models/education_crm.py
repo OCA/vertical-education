@@ -126,4 +126,5 @@ class Lead(models.Model):
             'view_mode': 'form',
             'view_id': False,
             'form_view_id': 'education.education_enrollment_action',
+            'context': {'default_lead_id': self.id}
         }

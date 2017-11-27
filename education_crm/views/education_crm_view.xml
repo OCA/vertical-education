@@ -38,6 +38,12 @@
       <xpath expr="//field[@name='partner_name']" position="attributes">
         <attribute name="string">Partner name</attribute>
       </xpath>
+      <xpath expr="//field[@name='name']" position="attributes">
+          <attribute name="required">False</attribute>
+      </xpath>
+      <xpath expr="//field[@name='partner_id']" position="attributes">
+          <attribute name="required">True</attribute>
+      </xpath>
       <!-- <xpath expr="//field[@name='partner_name']" position="attributes">
         <attribute name="string">First name</attribute>
       </xpath>
@@ -70,5 +76,4 @@
       </xpath>
     </field>
   </record>
-
 </odoo>
