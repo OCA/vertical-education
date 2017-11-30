@@ -19,3 +19,5 @@ class EducationEnrollment(models.Model):
         if self.lead_id:
             self.lead_id.action_set_won()
             super(EducationEnrollment, self).action_done()
+        else:
+            super(EducationEnrollment, self).action_done()

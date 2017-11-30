@@ -39,7 +39,6 @@ class EducationGroup(models.Model):
         'Active', default=True,
         help="If unchecked, it will allow you to hide the Group without removing it.")
 
-
     def action_draft(self):
         self.ensure_one()
         self.state = 'draft'
@@ -65,8 +64,9 @@ class EducationGroup(models.Model):
 
     @api.multi
     def unlink(self):
-        if self.enrollment_ids:
-            raise ValidationError(
-                _('You can not delete a group with registered students'))
-        else:
-            super(EducationGroup, self).unlink()
+        for group in self:
+            if group.enrollment_ids:
+                raise ValidationError(
+                    _('You can not delete a group with registered students'))
+            else:
+                super(EducationGroup, group).unlink()
