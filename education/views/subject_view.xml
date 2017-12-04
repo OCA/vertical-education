@@ -45,6 +45,6 @@
     </field>
   </record>
 
-  <menuitem id="education_subject_menu" parent="education_course_root" action="education_subject_action" sequence="20"/>
+  <menuitem id="education_subject_menu" parent="education_course_root" action="education_subject_action" sequence="100"/>
 
 </odoo>

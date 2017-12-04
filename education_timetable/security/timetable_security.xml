@@ -5,7 +5,7 @@
 <odoo>
 
   <record id="education_category" model="ir.module.category">
-    <field name="name">Vertical Education</field>
+    <field name="name">Education Timetable</field>
   </record>
 
   <record id="education_user" model="res.groups">

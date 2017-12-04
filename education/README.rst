@@ -8,12 +8,12 @@ Education Management
 
 This module extends the functionality of Odoo to support Education Management
 and to allow you to manage:
+
 - Courses
 - Groups
 - Enrollments
 - Academic Records
 - Teachers
-...
 
 Installation
 ============
@@ -49,8 +49,6 @@ To use this module, you need to:
 
 Known issues / Roadmap
 ======================
-
-* ...
 
 Bug Tracker
 ===========

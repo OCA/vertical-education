@@ -19,7 +19,9 @@
     "data": [
         'views/exam_view.xml',
         'views/result_view.xml',
-        'views/student_view.xml'
+        'views/student_view.xml',
+        'security/evaluation_security.xml',
+        'security/ir.model.access.csv'
     ],
     "demo": [
     ],

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_education_session,access_education_session,model_education_session,,1,0,0,0
+access_education_timerange,access_education_timerange,model_education_timerange,,1,0,0,0
+access_education_timetable_line,access_education_timetable_line,model_education_timetable_line,,1,0,0,0
+access_education_session_ausence,access_education_session_ausence,model_education_session_ausence,,1,0,0,0

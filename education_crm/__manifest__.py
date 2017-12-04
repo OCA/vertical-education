@@ -19,7 +19,9 @@
     ],
     'data': [
         'views/education_crm_view.xml',
-        'wizard/wizard_crm_postponed_view.xml'
+        'wizard/wizard_crm_postponed_view.xml',
+        'security/crm_tags_security.xml',
+        'security/ir.model.access.csv'
     ],
     'installable': True,
 }

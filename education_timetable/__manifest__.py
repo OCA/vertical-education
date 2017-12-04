@@ -24,7 +24,9 @@
         'views/session_view.xml',
         'views/timerange_view.xml',
         'views/student_view.xml',
-        'wizard/session_presence_view.xml'
+        'wizard/session_presence_view.xml',
+        'security/timetable_security.xml',
+        'security/ir.model.access.csv'
     ],
     'demo': [
         'demo/timerange_demo.xml',

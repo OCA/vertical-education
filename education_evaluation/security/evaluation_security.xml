@@ -5,7 +5,7 @@
 <odoo>
 
   <record id="education_category" model="ir.module.category">
-    <field name="name">Vertical Education</field>
+    <field name="name">Education Exam</field>
   </record>
 
   <record id="education_user" model="res.groups">
@@ -19,5 +19,4 @@
     <field name="implied_ids" eval="[(4, ref('education_user'))]"/>
     <field name="users" eval="[(4, ref('base.user_root'))]"/>
   </record>
-
 </odoo>
