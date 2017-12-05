@@ -48,16 +48,12 @@ class Lead(models.Model):
     @api.model
     def create(self, vals):
         partner_id = self.env['res.partner'].browse(vals.get('partner_id'))
-        if vals.get('partner_id') and vals.get('course_id'):
+        if vals.get('course_id'):
             course_id = self.env['education.course'].browse(
                 vals.get('course_id'))
             vals.update({
-                'name': '%s [%s]' % (
-                    partner_id.name, course_id.name)
-            })
-        else:
-            vals.update({
-                'name': partner_id.name
+                'name': '%s' % (
+                    course_id.name)
             })
         return super(Lead, self).create(vals)
 
