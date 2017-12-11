@@ -172,6 +172,7 @@ msgid "Generate New Sessions"
 msgstr "Generar Sesiones"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_group_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_group_id
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
 msgid "Group"
@@ -280,9 +281,17 @@ msgid "Session Presence Lines"
 msgstr "Lineas de presencia"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_teacher_session_ids
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_session_ids
+#: model:ir.ui.view,arch_db:education_timetable.view_calendar_session
+#: model:ir.ui.view,arch_db:education_timetable.view_education_teacher_form_timetable_inherit
 msgid "Sessions"
 msgstr "Sesiones"
+
+#. module: education_timetable
+#: model:ir.ui.view,arch_db:education_timetable.view_education_teacher_form_timetable_inherit
+msgid "Teacher Sessions"
+msgstr "Asistencia Profesor"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_form_inherit
@@ -327,6 +336,7 @@ msgid "Students Presence"
 msgstr "Presencia de alumnos"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_subject_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_subject_id
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
 msgid "Subject"
