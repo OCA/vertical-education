@@ -78,8 +78,8 @@ class EducationTimetableLine(models.Model):
         default=lambda self: self.env.user)
 
 
-    @api.onchange('course_id')
-    def _change_course_id(self):
+    @api.onchange('group_id')
+    def _change_group_id(self):
         if not self.group_id:
             return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
         subject_fields_domain = [
@@ -107,6 +107,7 @@ class EducationTimetableLine(models.Model):
             for day in days:
                 session_obj.create({
                     'timetable_id': record.id,
+                    'timerange_id': record.timerange_id.id,
                     'date': day
                 })
 

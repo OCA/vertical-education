@@ -57,9 +57,11 @@
         <search string="Education Session">
           <field name="date"/>
           <field name="timetable_id"/>
+          <field name="timerange_id" />
           <group string="Group By" name="groupby">
             <filter string="State" context="{'group_by': 'state'}"/>
             <filter string="Timetable" context="{'group_by': 'timetable_id'}"/>
+            <filter string="Timerange" context="{'group_by': 'timerange_id'}"/>
             <filter string="Date" context="{'group_by': 'date'}"/>
           </group>
         </search>
@@ -86,6 +88,7 @@
           <field name="group_id"/>
           <field name="teacher_id"/>
           <field name="subject_id"/>
+          <field name="timerange_id"/>
         </calendar>
       </field>
     </record>

@@ -64,6 +64,10 @@ class EducationSession(models.Model):
         related='timetable_id.group_id',
         string='Group')
 
+    timerange_id = fields.Many2one(
+        comodel_name='education.timerange',
+        string='Timerange')
+
     @api.model
     def create(self, vals):
         if vals.get('code', 'New') == 'New':

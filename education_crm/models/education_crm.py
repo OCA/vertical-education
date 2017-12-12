@@ -45,6 +45,9 @@ class Lead(models.Model):
     stage = fields.Boolean(
         string='stage')
 
+    date = fields.Date(
+        string='Date')
+
     @api.model
     def create(self, vals):
         partner_id = self.env['res.partner'].browse(vals.get('partner_id'))
