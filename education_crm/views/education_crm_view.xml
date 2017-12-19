@@ -19,6 +19,7 @@
       </xpath-->
       <xpath expr="//button[@name='action_set_won']" position="after">
         <!-- <button string="Create Student" name="create_student" type="object" context="{}" class="oe_highlight"/> -->
+        <field name="course_id" invisible="1"/>
 
         <button string="Create Enrollment" name="create_enrollment" type="object" context="{'default_partner_id': partner_id, 'default_course_id': course_id}" class="oe_highlight"/>
       </xpath>
