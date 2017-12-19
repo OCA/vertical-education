@@ -43,6 +43,7 @@
       </xpath>
       <xpath expr="//field[@name='partner_id']" position="attributes">
         <attribute name="required">True</attribute>
+        <attribute name="domain">"[('customer', '=', False)]"</attribute>
       </xpath>
       <!-- <xpath expr="//field[@name='partner_name']" position="attributes">
         <attribute name="string">First name</attribute>
