@@ -25,6 +25,7 @@
         'views/timerange_view.xml',
         'views/student_view.xml',
         'views/teacher_view.xml',
+        'data/day_data.xml',
         'wizard/session_presence_view.xml',
         'security/timetable_security.xml',
         'security/ir.model.access.csv'

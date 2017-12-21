@@ -10,3 +10,4 @@ from . import timerange
 from . import session
 from . import student
 from . import teacher
+from . import day

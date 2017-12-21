@@ -189,12 +189,12 @@ msgstr "Anular"
 #: model:ir.model.fields,field_description:education.field_education_course_category_id_1543
 #: model:ir.ui.view,arch_db:education.view_education_course_search
 msgid "Category"
-msgstr "Categoría"
+msgstr "Área/Temática"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_course_tree
 msgid "Category"
-msgstr "Categoría"
+msgstr "Área/Temática"
 
 #. module: education
 #: model:ir.model.fields,field_description:education.field_education_course_category_complete_name

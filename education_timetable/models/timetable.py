@@ -41,14 +41,22 @@ class EducationTimetableLine(models.Model):
         string='Time Range',
         required=True)
 
-    day = fields.Selection(
-        [('0', 'Monday'),
-         ('1', 'Tuesday'),
-         ('2', 'Wednesday'),
-         ('3', 'Thursday'),
-         ('4', 'Friday')],
-        string='Days',
-        required=True)
+    # day = fields.Selection(
+    #     [('0', 'Monday'),
+    #      ('1', 'Tuesday'),
+    #      ('2', 'Wednesday'),
+    #      ('3', 'Thursday'),
+    #      ('4', 'Friday')],
+    #     string='Days',
+    #     required=True)
+
+    day_ids = fields.Many2many(
+        comodel_name='education.day',
+        relation='timetable_day_rel',
+        column1='timetable_id',
+        column2='day_id',
+        string='Days')
+
 
     date_from = fields.Date(
         string='Start Date',
@@ -100,8 +108,11 @@ class EducationTimetableLine(models.Model):
         end = fields.Date.from_string(self.date_from)
         start = fields.Date.from_string(self.date_to)
         days = []
+        day_ids_codes = []
+        for code in self.day_ids:
+            day_ids_codes.append(code.code)
         for day in self.get_days(end, start):
-            if day.weekday() == int(self.day):
+            if day.weekday() in day_ids_codes:
                 days.append(day)
         for record in self:
             for day in days:

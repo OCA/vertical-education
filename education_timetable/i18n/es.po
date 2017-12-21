@@ -26,7 +26,7 @@ msgstr "Faltas"
 #: model:ir.ui.view,arch_db:education_timetable.view_education_student_form_timetable_inherit
 #: model:ir.ui.view,arch_db:education_timetable.view_record_subject_evaluation_form
 msgid "Ausences"
-msgstr "Asistencias"
+msgstr "Faltas de asistencia"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_presence_form
@@ -49,6 +49,7 @@ msgid "Click to create a new Education timerange."
 msgstr "Click para crear un nuevo Rango Horario."
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_code
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_code
 msgid "Code"
 msgstr "Código"
@@ -86,10 +87,9 @@ msgid "Date"
 msgstr "Fecha"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_day
-#: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
-msgid "Day"
-msgstr "Día"
+#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_day_ids
+msgid "Days"
+msgstr "Días"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_display_name
@@ -125,7 +125,7 @@ msgstr "Sesiones"
 #. module: education_timetable
 #: model:ir.actions.act_window,name:education_timetable.wizard_education_session_presence_action
 msgid "Education Session Presence"
-msgstr "Education Session Presence"
+msgstr "Faltas de asistecia"
 
 #. module: education_timetable
 #: model:ir.actions.act_window,name:education_timetable.education_timetable_action
@@ -157,6 +157,7 @@ msgid "End Date"
 msgstr "Fecha finalización"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_end_time
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_end_time
 msgid "End time"
 msgstr "Hora fin"
@@ -267,7 +268,7 @@ msgstr "Sesión"
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_form
 msgid "Session Ausences"
-msgstr "Asistencias"
+msgstr "Faltas"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_presence_id
@@ -296,7 +297,7 @@ msgstr "Asistencia Profesor"
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_form_inherit
 msgid "Set Presence"
-msgstr "Asignar Presencia"
+msgstr "Asignar Faltas"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_date_from
@@ -304,6 +305,7 @@ msgid "Start Date"
 msgstr "Fecha de inicio"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_start_time
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_start_time
 msgid "Start time"
 msgstr "Hora inicio"
@@ -333,7 +335,7 @@ msgstr "Faltas del Alumno"
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_presence_form
 msgid "Students Presence"
-msgstr "Presencia de alumnos"
+msgstr "Asignar faltas asistencia"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_subject_id
