@@ -55,7 +55,7 @@ class EducationEnrollment(models.Model):
             raise ValidationError(
                 _("You must add subjects to complete the enrollment"))
         return {
-            'student_id': self.student_id.id,
+            'partner_id': self.partner_id.id,
             'course_id': self.course_id.id,
             'record_subject_ids': record_subject_values
         }
