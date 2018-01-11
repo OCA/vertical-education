@@ -9,7 +9,7 @@
     'name': 'Education CRM',
     'version': '11.0.1.0.0',
     'license': 'AGPL-3',
-    'category': 'Sales',
+    'category': 'CRM',
     'sequence': 1,
     'complexity': 'easy',
     'author': 'PESOL, Odoo Community Association (OCA)',
@@ -19,9 +19,6 @@
     ],
     'data': [
         'views/education_crm_view.xml',
-        'wizard/wizard_crm_postponed_view.xml',
-        'security/crm_tags_security.xml',
-        'security/ir.model.access.csv'
     ],
     'installable': True,
 }

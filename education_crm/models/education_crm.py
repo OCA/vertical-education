@@ -5,18 +5,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 from odoo import models, fields, api, _
+from odoo.tools.safe_eval import safe_eval
 from odoo.exceptions import ValidationError
-
-
-class EducationCrmTags(models.Model):
-    _name = 'education.crm.tags'
-
-    name = fields.Char(required=True)
-    color = fields.Integer(string='Color Index')
-
-    _sql_constraints = [
-        ('name_uniq', 'unique (name)', "Tag name already exists !"),
-    ]
 
 
 class Lead(models.Model):
@@ -37,16 +27,6 @@ class Lead(models.Model):
     enrollment_id = fields.Many2one(
         comodel_name='education.enrollment',
         string='Enrollment')
-
-    tag_pos_ids = fields.Many2many(
-        comodel_name='education.crm.tags',
-        string='Tags')
-
-    stage = fields.Boolean(
-        string='stage')
-
-    date = fields.Date(
-        string='Date')
 
     @api.model
     def create(self, vals):

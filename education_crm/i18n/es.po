@@ -4,84 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-11 08:57+0000\n"
-"PO-Revision-Date: 2017-10-11 08:57+0000\n"
+"POT-Creation-Date: 2018-01-11 10:43+0000\n"
+"PO-Revision-Date: 2018-01-11 10:43+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-
-#. module: education_crm
-#: model:ir.actions.act_window,name:crm.crm_lost_reason_action
-#: model:ir.ui.menu,name:crm.menu_crm_lost_reason
-msgid "Lost Reasons"
-msgstr "Etiquetas pérdida"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_wizard_crm_postponed_tag_ids
-msgid "Postponed tags"
-msgstr "Etiqueta pospuesto"
-
-#. module: education_crm
-#: model:ir.actions.act_window,name:education_crm.postponed_tags_action
-#: model:ir.ui.menu,name:education_crm.posponed_tags_menu
-msgid "Postponed Tags"
-msgstr "Etiquetas pospuesto"
-
-#. module: education_crm
-#: model:ir.actions.act_window,help:education_crm.postponed_tags_action
-msgid "Click to create a new Postponed Tags."
-msgstr "Click para crear nuevas etiquetas de Pospuesto."
-
-#. module: education_crm
-#: model:ir.ui.view,arch_db:education_crm.view_wizard_crm_postponed_form
-msgid "CRM postponed"
-msgstr "CRM postponed"
-
-#. module: education_crm
-#: model:ir.actions.act_window,name:education_crm.wizard_education_crm_tag_action
-msgid "Education CRM Tags"
-msgstr "Etiquetas Pospuesto"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_tag_pos_ids
-msgid "Tags"
-msgstr "Etiquetas pospuesto"
-
-#. module: education_crm
-#: model:ir.ui.view,arch_db:education_crm.view_crm_form_inherit
-msgid "Set posponed"
-msgstr "Marcar como pospuesto"
-
-#. module: education_crm
-#: model:ir.actions.act_window,name:education_crm.crm_lost_reason_tag_action
-#: model:ir.ui.menu,name:education_crm.crm_lost_reason_tags
-msgid "Lost Tags"
-msgstr "Etiquetas perdida"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_crm_tags_name
-msgid "Name"
-msgstr "Nombre"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_contact_birthdate
-msgid "Contact birthdate"
-msgstr "Fecha nacimiento contacto"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_contact_gender
-msgid "Contact gender"
-msgstr "Género contacto"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_contact_nationality
-msgid "Contact nationality"
-msgstr "Nacionalidad contacto"
 
 #. module: education_crm
 #: model:ir.model.fields,field_description:education_crm.field_crm_lead_course_id
@@ -94,40 +26,9 @@ msgid "Create Enrollment"
 msgstr "Crear Matrícula"
 
 #. module: education_crm
-#: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
-msgid "Create Student"
-msgstr "Crear Alumno"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_create_uid
-msgid "Created by"
-msgstr "Creado por"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_create_date
-msgid "Created on"
-msgstr "Creado el"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_display_name
-msgid "Display Name"
-msgstr "Nombre a mostrar"
-
-#. module: education_crm
-#: model:ir.actions.act_window,name:education_crm.enrollment_wizard_action
-#: model:ir.ui.view,arch_db:education_crm.view_education_enrollment_wizard_form
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_enrollment_id
 msgid "Enrollment"
 msgstr "Matrícula"
-
-#. module: education_crm
-#: selection:crm.lead,contact_gender:0
-msgid "Female"
-msgstr "Mujer"
-
-#. module: education_crm
-#: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
-msgid "First name"
-msgstr "Nombre"
 
 #. module: education_crm
 #: model:ir.model.fields,field_description:education_crm.field_crm_lead_group_id
@@ -135,29 +36,9 @@ msgid "Group"
 msgstr "Grupo"
 
 #. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_id
-msgid "ID"
-msgstr "ID"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard___last_update
-msgid "Last Modified on"
-msgstr "Última modificación en"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_write_uid
-msgid "Last Updated by"
-msgstr "Última actualización por"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_wizard_write_date
-msgid "Last Updated on"
-msgstr "Última actualización el"
-
-#. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_last_name
-msgid "Last name"
-msgstr "Apellido"
+#: model:ir.model.fields,field_description:education_crm.field_education_enrollment_lead_id
+msgid "Lead"
+msgstr "Iniciativa"
 
 #. module: education_crm
 #: model:ir.model,name:education_crm.model_crm_lead
@@ -165,19 +46,9 @@ msgid "Lead/Opportunity"
 msgstr "Iniciativa/Oportunidad"
 
 #. module: education_crm
-#: selection:crm.lead,contact_gender:0
-msgid "Male"
-msgstr "Hombre"
-
-#. module: education_crm
-#: selection:crm.lead,contact_gender:0
-msgid "Other"
-msgstr "Otro"
-
-#. module: education_crm
 #: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
 msgid "Partner"
-msgstr "Contacto"
+msgstr "Empresa"
 
 #. module: education_crm
 #: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
@@ -185,17 +56,17 @@ msgid "Partner name"
 msgstr "Nombre"
 
 #. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_record_id
-msgid "Student record"
-msgstr "Expediente académico"
+#: model:ir.model.fields,field_description:education_crm.field_crm_lead_student_id
+msgid "Student"
+msgstr "Alumno"
 
 #. module: education_crm
-#: model:ir.model,name:education_crm.model_education_enrollment_wizard
-msgid "education.enrollment.wizard"
-msgstr "education.enrollment.wizard"
+#: model:ir.model,name:education_crm.model_education_enrollment
+msgid "education.enrollment"
+msgstr "education.enrollment"
 
 #. module: education_crm
-#: code:addons/education_crm/models/education_crm.py:90
+#: code:addons/education_crm/models/education_crm.py:72
 #, python-format
 msgid "the user already exist"
 msgstr "¡El usuario ya existe!"
