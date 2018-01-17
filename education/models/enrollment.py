@@ -93,3 +93,11 @@ class EducationEnrollment(models.Model):
             vals['code'] = self.env['ir.sequence'].next_by_code(
                 'education.enrollment') or 'New'
         return super(EducationEnrollment, self).create(vals)
+
+    @api.constrains('student_id', 'group_id')
+    def _check_student_per_group(self):
+        for enrollment in self.filtered(
+            lambda e: e.student_id == self.student_id and
+                e.group_id == self.group_id):
+            raise ValidationError(
+                "The student has already been enrolled in that academic group")
