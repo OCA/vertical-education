@@ -28,18 +28,6 @@ class Lead(models.Model):
         comodel_name='education.enrollment',
         string='Enrollment')
 
-    @api.model
-    def create(self, vals):
-        partner_id = self.env['res.partner'].browse(vals.get('partner_id'))
-        if vals.get('course_id'):
-            course_id = self.env['education.course'].browse(
-                vals.get('course_id'))
-            vals.update({
-                'name': '%s' % (
-                    course_id.name)
-            })
-        return super(Lead, self).create(vals)
-
     @api.multi
     def create_student(self):
         self.ensure_one()
@@ -71,30 +59,36 @@ class Lead(models.Model):
             raise ValidationError(
                 _("the user already exist"))
 
-    def _onchange_partner_id_values(self):
-        partner = self.partner_id
-        if partner:
-            return {
-                'partner_name': partner.firstname,
-                'lastname': partner.lastname,
-                'title': partner.title.id,
-                'street': partner.street,
-                'street2': partner.street2,
-                'city': partner.city,
-                'state_id': partner.state_id.id,
-                'country_id': partner.country_id.id,
-                'email_from': partner.email,
-                'phone': partner.phone,
-                'mobile': partner.mobile,
-                'zip': partner.zip,
-                'function': partner.function,
-            }
-        else:
-            return {}
+    def _onchange_partner_id_values(self, partner_id):
+        values = super(Lead, self)._onchange_partner_id_values(partner_id)
+        import wdb; wdb.set_trace()
+        # if partner_id:
+        #     partner = self.env['res.partner'].browse(partner_id)
+        #
+        #     partner_name = partner.parent_id.name
+        #     if not partner_name and partner.is_company:
+        #         partner_name = partner.name
+        #     return {
+        #         'partner_name': partner_name,
+        #         'lastname': partner.lastname,
+        #         'title': partner.title.id,
+        #         'street': partner.street,
+        #         'street2': partner.street2,
+        #         'city': partner.city,
+        #         'state_id': partner.state_id.id,
+        #         'country_id': partner.country_id.id,
+        #         'email_from': partner.email,
+        #         'phone': partner.phone,
+        #         'mobile': partner.mobile,
+        #         'zip': partner.zip,
+        #         'function': partner.function,
+        #     }
+        # return {}
 
     @api.onchange('partner_id')
     def _onchange_partner_id(self):
-        self.update(self._onchange_partner_id_values())
+        self.update(self._onchange_partner_id_values(
+            self.partner_id.id if self.partner_id else False))
 
     def create_enrollment(self):
         return {

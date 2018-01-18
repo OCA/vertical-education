@@ -48,7 +48,7 @@ msgstr "Iniciativa/Oportunidad"
 #. module: education_crm
 #: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
 msgid "Partner"
-msgstr "Empresa"
+msgstr "Contacto"
 
 #. module: education_crm
 #: model:ir.ui.view,arch_db:education_crm.view_education_crm_course
