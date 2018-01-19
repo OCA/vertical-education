@@ -271,6 +271,18 @@ msgid "Code"
 msgstr "Código"
 
 #. module: education
+#: code:addons/education/models/enrollment.py:104
+#, python-format
+msgid "The student has already been enrolled in "
+msgstr "El alumno ya ha sido matriculado en "
+
+#. module: education
+#: code:addons/education/models/enrollment.py:107
+#, python-format
+msgid "The student has already been enrolled in this pack"
+msgstr "El alumno ya ha sido matriculado en este pack"
+
+#. module: education
 #: model:ir.model.fields,field_description:education.field_education_student_color
 #: model:ir.model.fields,field_description:education.field_education_teacher_color
 msgid "Color Index"

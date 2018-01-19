@@ -60,33 +60,33 @@ class Lead(models.Model):
                 _("the user already exist"))
 
     def _onchange_partner_id_values(self, partner_id):
+        values = super(Lead, self)._onchange_partner_id_values(partner_id)
         if partner_id:
-            partner = self.env['res.partner'].browse(partner_id)
-
-            partner_name = partner.parent_id.name
-            if not partner_name and partner.is_company:
-                partner_name = partner.name
-            return {
-                'partner_name': partner_name,
-                'lastname': partner.lastname,
-                'title': partner.title.id,
-                'street': partner.street,
-                'street2': partner.street2,
-                'city': partner.city,
-                'state_id': partner.state_id.id,
-                'country_id': partner.country_id.id,
-                'email_from': partner.email,
-                'phone': partner.phone,
-                'mobile': partner.mobile,
-                'zip': partner.zip,
-                'function': partner.function,
+            values.update({
+                'contact_name': False,
+                'partner_name': self.partner_id.firstname,
+                'lastname': self.partner_id.lastname,
+            })
+        else:
+            values = {
+                'partner_name': False,
+                'contact_name': False,
+                'lastname': False,
+                'title': False,
+                'street': False,
+                'street2': False,
+                'city': False,
+                'state_id': False,
+                'country_id': False,
+                'email_from': False,
+                'phone': False,
+                'mobile': False,
+                'zip': False,
+                'function': False,
+                'website': False,
             }
-        return {}
-
-    @api.onchange('partner_id')
-    def _onchange_partner_id(self):
-        self.update(self._onchange_partner_id_values(
-            self.partner_id.id if self.partner_id else False))
+            return values
+        return values
 
     def create_enrollment(self):
         return {

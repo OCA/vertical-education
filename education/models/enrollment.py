@@ -94,10 +94,14 @@ class EducationEnrollment(models.Model):
                 'education.enrollment') or 'New'
         return super(EducationEnrollment, self).create(vals)
 
-    @api.constrains('student_id', 'group_id')
+    @api.constrains('student_id', 'group_id', 'record_id')
     def _check_student_per_group(self):
-        for enrollment in self.filtered(
-            lambda e: e.student_id == self.student_id and
-                e.group_id == self.group_id):
-            raise ValidationError(
-                "The student has already been enrolled in that academic group")
+        for enrollment in self.search([]).filtered(
+            lambda e: e.student_id.id == self.student_id.id and
+                e.group_id.id == self.group_id.id):
+            if enrollment.enrollment_date and enrollment.group_id:
+                raise ValidationError(
+                    _("The student has already been enrolled in ") + enrollment.group_id.name)
+            elif enrollment.enrollment_date and enrollment.record_id:
+                raise ValidationError(
+                    _("The student has already been enrolled in this pack"))
