@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright <YEAR(S)> <AUTHOR(S)>
-     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<!-- Copyright <YEAR(S)> <AUTHOR(S)> License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 
 <odoo>
 
@@ -10,14 +9,15 @@
 
   <record id="education_user" model="res.groups">
     <field name="name">User</field>
-    <field name="category_id" ref="education_category"/>
+    <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    <field name="users" eval="[(4, ref('base.user_root'))]"/>
+    <field name="category_id" ref="education.education_category"/>
   </record>
 
   <record id="education_manager" model="res.groups">
     <field name="name">Manager</field>
-    <field name="category_id" ref="education_category"/>
-    <field name="implied_ids" eval="[(4, ref('education_user'))]"/>
-    <field name="users" eval="[(4, ref('base.user_root'))]"/>
+    <field name="category_id" ref="education.education_category"/>
+    <field name="implied_ids" eval="[(4, ref('education.education_user'))]"/>
   </record>
 
 </odoo>
