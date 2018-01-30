@@ -98,7 +98,7 @@ class EducationEnrollment(models.Model):
     def _check_student_per_group(self):
         for enrollment in self.search([]).filtered(
             lambda e: e.student_id.id == self.student_id.id and
-                e.group_id.id == self.group_id.id):
+                e.group_id.id == self.group_id.id and e.state not in ('draft', 'drop')):
             if enrollment.enrollment_date and enrollment.group_id:
                 raise ValidationError(
                     _("The student has already been enrolled in ") + enrollment.group_id.name)
