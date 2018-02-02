@@ -57,7 +57,6 @@ class EducationTimetableLine(models.Model):
         column2='day_id',
         string='Days')
 
-
     date_from = fields.Date(
         string='Start Date',
         required=True)
@@ -84,7 +83,6 @@ class EducationTimetableLine(models.Model):
         index=True,
         track_visibility='onchange',
         default=lambda self: self.env.user)
-
 
     @api.onchange('group_id')
     def _change_group_id(self):

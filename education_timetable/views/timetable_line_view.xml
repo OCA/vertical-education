@@ -21,8 +21,7 @@
               <field name="date_from"/>
               <field name="date_to"/>
             </group>
-            <group>
-            </group>
+            <group></group>
             <newline/>
             <group name="name" attrs="{'invisible': [('state', '!=', 'done')]}">
               <field name="session_ids" nolabel="1"/>
