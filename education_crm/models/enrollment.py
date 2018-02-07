@@ -7,6 +7,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
 
+
 class EducationEnrollment(models.Model):
     _inherit = 'education.enrollment'
 
@@ -18,6 +19,4 @@ class EducationEnrollment(models.Model):
     def action_done(self):
         if self.lead_id:
             self.lead_id.action_set_won()
-            super(EducationEnrollment, self).action_done()
-        else:
-            super(EducationEnrollment, self).action_done()
+        super(EducationEnrollment, self).action_done()
