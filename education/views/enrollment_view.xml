@@ -20,7 +20,7 @@
           <group name="Information" col="4">
             <field name="student_id"/>
             <field name="course_id"/>
-            <field name="group_id" domain="[('course_id', '=', course_id)]"/>
+            <field name="group_id" domain="[('course_id', '=', course_id), ('state', 'in', ['active'])]"/>
             <field name="record_id" attrs="{'invisible':[('state','!=', 'done')]}"/>
           </group>
           <notebook>
