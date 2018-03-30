@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <!-- <record id="education_crm_team" model="res.groups"> <field name="name">Education Team</field> <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/> </record> -->
-
-  <!-- <menuitem id="menu_student" name="Students" parent="sales_team.menu_base_partner" action="education.act_open_education_student_view" sequence="5"/> <menuitem id="menu_faculty" name="Registration Student" parent="sales_team.menu_base_partner"
-  action="education.act_subject_registration_view" sequence="5"/> -->
-
   <record id="view_education_crm_course" model="ir.ui.view">
     <field name="name">education.crm.course.form</field>
     <field name="model">crm.lead</field>
     <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
     <field name="arch" type="xml">
-      <!--xpath expr="//button[@name='action_set_won']" position="attributes"> <attribute name="invisible">1</attribute> </xpath-->
       <xpath expr="//button[@name='action_set_won']" position="after">
-        <!-- <button string="Create Student" name="create_student" type="object" context="{}" class="oe_highlight"/> -->
-
         <field name="course_id" invisible="1"/>
-
         <button string="Create Enrollment" name="create_enrollment" type="object" context="{'default_partner_id': partner_id, 'default_course_id': course_id}" class="oe_highlight"/>
       </xpath>
-      <!-- <xpath expr="//field[@name='partner_id']" position="attributes"> <attribute name="invisible">1</attribute> </xpath> -->
       <xpath expr="//field[@name='partner_id']" position="after">
-        <!-- <field name="student_id" context="{'search_default_customer': 1, 'default_name': partner_name, 'default_street': street, 'default_street2': street2, 'default_city': city, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id':
-        country_id, 'default_function': function, 'default_phone': phone, 'default_mobile': mobile, 'default_email': email_from, 'default_user_id': user_id, 'default_team_id': team_id}"/> -->
-        <!-- <field name="course_id" /> -->
         <field name="enrollment_id" readonly="1" attrs="{'invisible':[('enrollment_id','=', False)]}"/>
       </xpath>
       <xpath expr="//field[@name='partner_id']" position="attributes">
@@ -38,8 +25,6 @@
         <attribute name="required">True</attribute>
         <attribute name="domain"></attribute>
       </xpath>
-      <!-- <xpath expr="//field[@name='partner_name']" position="attributes"> <attribute name="string">First name</attribute> </xpath> <xpath expr="//field[@name='partner_name']" position="after"> <field name="last_name"/> <field name="second_last_name"/>
-      <field name="contact_birthdate"/> <field name="contact_gender"/> <field name="contact_nationality"/> </xpath> -->
     </field>
   </record>
 

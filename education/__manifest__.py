@@ -27,8 +27,8 @@
         #'views/student_view.xml',
         #'views/teacher_view.xml',
         'views/partner_view.xml',
+        'security/education_security.xml',
         'security/ir.model.access.csv',
-        'security/education_security.xml'
     ],
     "demo": [
         'demo/education_res_partner_demo.xml',

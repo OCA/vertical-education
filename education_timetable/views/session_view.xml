@@ -94,7 +94,7 @@
     </record>
 
     <record id="session_sequence" model="ir.sequence">
-      <field name="name">Edcation Session Sequence</field>
+      <field name="name">Education Session Sequence</field>
       <field name="code">education.session</field>
       <field name="prefix">SES</field>
       <field name="padding">3</field>

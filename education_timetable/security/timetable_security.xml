@@ -4,21 +4,21 @@
 
 <odoo>
 
-  <record id="education_category" model="ir.module.category">
+  <record id="timetable_category" model="ir.module.category">
     <field name="name">Education Timetable</field>
   </record>
 
-  <record id="education_user" model="res.groups">
+  <record id="timetable_user" model="res.groups">
     <field name="name">User</field>
     <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
     <field name="users" eval="[(4, ref('base.user_root'))]"/>
-    <field name="category_id" ref="education_timetable.education_category"/>
+    <field name="category_id" ref="education_timetable.timetable_category"/>
   </record>
 
-  <record id="education_manager" model="res.groups">
+  <record id="timetable_manager" model="res.groups">
     <field name="name">Manager</field>
-    <field name="category_id" ref="education_timetable.education_category"/>
-    <field name="implied_ids" eval="[(4, ref('education_user'))]"/>
+    <field name="category_id" ref="education_timetable.timetable_category"/>
+    <field name="implied_ids" eval="[(4, ref('education_timetable.timetable_user'))]"/>
   </record>
 
 </odoo>
