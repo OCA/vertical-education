@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 # Copyright 2017 Pesol (<http://pesol.es>)
 #                Angel Moya <angel.moya@pesol.es>
 #                Luis Adan Jimenez Hernandez <luis.jimenez@pesol.es>
@@ -7,8 +7,8 @@
 from odoo import models, api, fields, _
 
 
-class EducationTeacher(models.Model):
-    _inherit = 'education.teacher'
+class ResPartner(models.Model):
+    _inherit = 'res.partner'
 
     session_ids = fields.One2many(
         comodel_name='education.session',

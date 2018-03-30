@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 # Copyright 2017 Pesol (<http://pesol.es>)
 #                Angel Moya <angel.moya@pesol.es>
 #                Luis Adan Jimenez Hernandez <luis.jimenez@pesol.es>
@@ -20,7 +20,7 @@ class EducationSessionAusence(models.Model):
         string='Subject Record')
 
     student_id = fields.Many2one(
-        comodel_name='education.student',
+        comodel_name='res.partner',
         string='Student')
 
     notes = fields.Char(

@@ -1427,8 +1427,8 @@ msgstr "education.record"
 
 #. module: education
 #: model:ir.model,name:education.model_education_student
-msgid "education.student"
-msgstr "education.student"
+msgid "res.partner"
+msgstr "res.partner"
 
 #. module: education
 #: model:ir.model,name:education.model_education_subject
@@ -1437,8 +1437,8 @@ msgstr "education.subject"
 
 #. module: education
 #: model:ir.model,name:education.model_education_teacher
-msgid "education.teacher"
-msgstr "education.teacher"
+msgid "res.partner"
+msgstr "res.partner"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_enrollment_search

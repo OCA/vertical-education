@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import models, fields
@@ -20,7 +20,7 @@ class EducationResult(models.Model):
         string='Subject Record')
 
     student_id = fields.Many2one(
-        comodel_name='education.student',
+        comodel_name='res.partner',
         string='Student',
         related='record_subject_id.record_id.student_id')
 
