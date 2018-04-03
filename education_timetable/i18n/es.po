@@ -417,8 +417,8 @@ msgstr "education.session.presence.line"
 
 #. module: education_timetable
 #: model:ir.model,name:education_timetable.model_education_student
-msgid "education.student"
-msgstr "education.student"
+msgid "res.partner"
+msgstr "res.partner"
 
 #. module: education_timetable
 #: model:ir.model,name:education_timetable.model_education_timerange

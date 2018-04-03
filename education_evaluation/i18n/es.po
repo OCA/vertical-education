@@ -206,5 +206,5 @@ msgstr "education.result"
 
 #. module: education_evaluation
 #: model:ir.model,name:education_evaluation.model_education_student
-msgid "education.student"
-msgstr "education.student"
+msgid "res.partner"
+msgstr "res.partner"

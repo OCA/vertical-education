@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 # Copyright 2017 Pesol (<http://pesol.es>)
 #                Angel Moya <angel.moya@pesol.es>
 #                Luis Adan Jimenez Hernandez <luis.jimenez@pesol.es>
@@ -21,7 +21,7 @@ class Lead(models.Model):
         string='Course')
 
     student_id = fields.Many2one(
-        comodel_name='education.student',
+        comodel_name='res.partner',
         string='Student')
 
     enrollment_id = fields.Many2one(
@@ -34,7 +34,7 @@ class Lead(models.Model):
         ctx = self.env.context.copy()
         if 'default_type' in ctx:
             ctx.pop('default_type')
-        student_obj = self.env['education.student']
+        student_obj = self.env['res.partner']
         ctx = self.env.context.copy()
         if 'default_type' in ctx:
             ctx.pop('default_type')

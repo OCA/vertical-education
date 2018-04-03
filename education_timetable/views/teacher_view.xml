@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
   <record id="view_education_teacher_form_timetable_inherit" model="ir.ui.view">
-    <field name="name">view.education.teacher.form.inherit</field>
-    <field name="model">education.teacher</field>
-    <field name="inherit_id" ref="education.view_education_teacher_form"/>
+    <field name="name">view.res.partner.form.inherit</field>
+    <field name="model">res.partner</field>
+    <field name='inherit_id' ref='base.view_partner_form'/>
     <field name="arch" type="xml">
-      <page name="educational" position="after">
-        <page string="Sessions">
-          <group string="Teacher Sessions">
+      <page name='internal_notes' position="before">
+        <page string="Sessions"  attrs="{'invisible':[('teacher','=', False)]}" >
+          <group string="Sessions">
             <field name="session_ids" nolabel="1">
               <tree>
                 <field name="date"/>

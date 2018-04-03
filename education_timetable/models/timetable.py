@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 # Copyright 2017 Pesol (<http://pesol.es>)
 #                Angel Moya <angel.moya@pesol.es>
 #                Luis Adan Jimenez Hernandez <luis.jimenez@pesol.es>
@@ -32,7 +32,7 @@ class EducationTimetableLine(models.Model):
         required=True)
 
     teacher_id = fields.Many2one(
-        comodel_name='education.teacher',
+        comodel_name='res.partner',
         string='Teacher',
         required=True)
 

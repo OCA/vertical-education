@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="view_partner_education_form" model="ir.ui.view">
+    <field name="name">res.partner.education.form</field>
+    <field name="model">res.partner</field>
+    <field name="priority" eval="1"/>
+    <field name='inherit_id' ref='base.view_partner_form'/>
+    <field name="arch" type="xml">
+      <group name="container_row_2" position="inside">
+        <group string="Education" name="education">
+          <field name="teacher"/>
+          <field name="student"/>
+        </group>
+      </group>
+      <page name='internal_notes' position="before">
+        <page name="educational" string="Educational" attrs="{'invisible':[('student','=', False)]}">
+          <group string="Academic Records" name="academic_record">
+            <field name="record_ids" nolabel="1">
+              <tree>
+                <field name="code"/>
+                <field name="course_id"/>
+              </tree>
+            </field>
+          </group>
+        </page>
+      </page>
+    </field>
+  </record>
+
+ <record id="view_res_partner_education_filter" model="ir.ui.view">
+      <field name="name">res.partner.education.select</field>
+      <field name="model">res.partner</field>
+      <field name='inherit_id' ref='base.view_res_partner_filter'/>
+      <field name="arch" type="xml">
+          <filter name="supplier" position="after">
+            <filter string="Student" name="student" domain="[('student','=',1)]"/>
+            <filter string="Teacher" name="teacher" domain="[('teacher','=',1)]"/>
+          </filter>
+      </field>
+  </record>
+  <record model="ir.actions.act_window" id="education_student_action">
+    <field name="name">Students</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">res.partner</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">kanban,tree,form</field>
+    <field name="domain">[]</field>
+    <field name="context">{
+            'default_student': True,
+            'search_default_student': True,
+        }
+    </field>
+  </record>
+
+  <menuitem id="education_student_menu" parent="education_student_root" action="education_student_action" sequence="10"/>
+
+    <record model="ir.actions.act_window" id="education_teacher_action">
+      <field name="name">Teachers</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">res.partner</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">kanban,tree,form</field>
+      <field name="domain">[]</field>
+      <field name="context">{
+              'default_teacher': True,
+              'search_default_teacher': True,
+          }
+      </field>
+    </record>
+
+    <menuitem id="education_teacher_menu" parent="education_teacher_root" action="education_teacher_action" sequence="20"/>
+
+</odoo>

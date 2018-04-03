@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
@@ -25,7 +25,7 @@ class EducationGroup(models.Model):
         inverse_name='group_id',
         string='Enrollments')
     tutor_id = fields.Many2one(
-        comodel_name='education.teacher',
+        comodel_name='res.partner',
         string='Tutor')
     state = fields.Selection(
         [('draft', 'Draft'),

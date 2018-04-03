@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 
 from odoo import models, fields, api, _
 from odoo.exceptions import ValidationError
@@ -12,8 +12,8 @@ class EducationEnrollment(models.Model):
     code = fields.Char(
         string='Code', required=True, default=lambda self: _('New'))
     student_id = fields.Many2one(
-        comodel_name='education.student',
-        string='Student')
+        comodel_name='res.partner',
+        string='Student', required=True)
     course_id = fields.Many2one(
         comodel_name='education.course',
         string='Course', required=True)
