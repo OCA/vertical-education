@@ -13,7 +13,7 @@ class EducationEnrollment(models.Model):
         string='Code', required=True, default=lambda self: _('New'))
     student_id = fields.Many2one(
         comodel_name='education.student',
-        string='Student', required=True)
+        string='Student')
     course_id = fields.Many2one(
         comodel_name='education.course',
         string='Course', required=True)
