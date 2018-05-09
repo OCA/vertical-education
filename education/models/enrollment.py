@@ -102,7 +102,8 @@ class EducationEnrollment(models.Model):
                 not in ('draft', 'drop')):
             if enrollment.enrollment_date and enrollment.record_id:
                 if enrollment.group_id.id in enrollment.record_id.\
-                        enrollment_ids.mapped('group_id').ids:
+                        enrollment_ids.mapped('group_id').ids and \
+                        self.record_id.id != enrollment.record_id.id:
                     raise ValidationError(
                         _("The student has already been enrolled in ")
                         + enrollment.group_id.name)
