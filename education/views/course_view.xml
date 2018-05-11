@@ -20,6 +20,7 @@
             <field name="name"/>
             <field name="category_id"/>
             <field name="duration" widget="float_time"/>
+            <field name="company_id" widget="selection" groups="base.group_multi_company"/>
           </group>
           <notebook name="subjects">
             <page name="subjects" string="Subjects">

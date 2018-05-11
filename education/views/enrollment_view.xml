@@ -22,6 +22,7 @@
             <field name="course_id"/>
             <field name="group_id" domain="[('course_id', '=', course_id), ('state', 'in', ['active'])]"/>
             <field name="record_id" attrs="{'invisible':[('state','!=', 'done')]}"/>
+            <field name="company_id" widget="selection" groups="base.group_multi_company"/>
           </group>
           <notebook>
             <page string="Academic Information">

@@ -18,6 +18,10 @@ class EducationGroup(models.Model):
         comodel_name='education.course',
         required=True,
         string="Course")
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        default=lambda self: self.env.user.company_id.id,
+        string='Company')
     date_from = fields.Date(string='From Date')
     date_to = fields.Date(string='To Date')
     enrollment_ids = fields.One2many(
@@ -55,12 +59,17 @@ class EducationGroup(models.Model):
         self.ensure_one()
         self.state = 'cancel'
 
-    @api.model
-    def create(self, vals):
-        if vals.get('code', 'New') == 'New':
-            vals['code'] = self.env['ir.sequence'].next_by_code(
-                'education.group') or 'New'
-        return super(EducationGroup, self).create(vals)
+    # @api.model
+    # def create(self, vals):
+    #     if vals.get('code', _('New')) == _('New'):
+    #         if 'company_id' in vals:
+    #             vals['code'] = self.env['ir.sequence'].with_context(
+    #                 force_company=vals['company_id']).next_by_code(
+    #                 'education.group') or _('New')
+    #         else:
+    #             vals['code'] = self.env['ir.sequence'].next_by_code(
+    #                 'education.group') or _('New')
+    #     return super(EducationGroup, self).create(vals)
 
     @api.multi
     def unlink(self):
