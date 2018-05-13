@@ -13,7 +13,7 @@
           </div>
           <h1>
             <group name="main" col="1">
-              <field name="name" nolabel="1" placeholder="Code"/>
+              <field name="name" nolabel="1" placeholder="Course Name"/>
             </group>
           </h1>
           <group col="4">
