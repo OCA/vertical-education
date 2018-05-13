@@ -69,8 +69,7 @@ class EducationCourse(models.Model):
         string='Name',
         required=True)
     code = fields.Char(
-        string='Code',
-        required=True)
+        string='Code')
     category_id = fields.Many2one(
         comodel_name='education.course.category',
         string='Category')

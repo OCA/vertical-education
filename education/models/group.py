@@ -10,20 +10,36 @@ class EducationGroup(models.Model):
     _rec_name = 'name'
 
     name = fields.Char(
-        string='Name', required=True)
-
+        string='Name',
+        required=True,
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     code = fields.Char(
-        string='Code', required=True, default=lambda self: _('New'))
+        string='Code',
+        required=True,
+        default=lambda self: _('New'),
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     course_id = fields.Many2one(
         comodel_name='education.course',
         required=True,
-        string="Course")
+        string="Course",
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     company_id = fields.Many2one(
         comodel_name='res.company',
         default=lambda self: self.env.user.company_id.id,
-        string='Company')
-    date_from = fields.Date(string='From Date')
-    date_to = fields.Date(string='To Date')
+        string='Company',
+        readonly=True,
+        states={'draft': [('readonly', False)]})
+    date_from = fields.Date(
+        string='From Date',
+        readonly=True,
+        states={'draft': [('readonly', False)]})
+    date_to = fields.Date(
+        string='To Date',
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     enrollment_ids = fields.One2many(
         comodel_name='education.enrollment',
         inverse_name='group_id',
@@ -38,7 +54,6 @@ class EducationGroup(models.Model):
          ('cancel', 'Cancelled')],
         string='Status',
         default="draft")
-
     active = fields.Boolean(
         'Active', default=True,
         help="If unchecked, it will allow you to hide the Group without removing it.")

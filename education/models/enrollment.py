@@ -10,27 +10,46 @@ class EducationEnrollment(models.Model):
     _rec_name = 'code'
 
     code = fields.Char(
-        string='Code', required=True, default=lambda self: _('New'))
+        string='Code',
+        required=True,
+        default=lambda self: _('New'),
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     company_id = fields.Many2one(
         comodel_name='res.company',
         default=lambda self: self.env.user.company_id.id,
-        string='Company')
+        string='Company',
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     student_id = fields.Many2one(
         comodel_name='res.partner',
-        string='Student', required=True)
+        string='Student',
+        required=True,
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     course_id = fields.Many2one(
         comodel_name='education.course',
-        string='Course', required=True)
+        string='Course',
+        required=True,
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     group_id = fields.Many2one(
         comodel_name='education.group',
-        string='Group', required=True)
+        string='Group',
+        required=True,
+        readonly=True,
+        states={'draft': [('readonly', False)]})
     record_id = fields.Many2one(
         comodel_name='education.record',
         string='Record')
     subject_ids = fields.Many2many(
         comodel_name='education.subject',
         relation='enrollment_subject_rel',
-        string='Subjects')
+        string='Subjects',
+        readonly=True,
+        states={'draft': [('readonly', False)]})
+    enrollment_date = fields.Date(
+        string='Enrollment Date')
     state = fields.Selection(
         [('draft', 'Draft'),
          ('done', 'Done'),
@@ -82,6 +101,8 @@ class EducationEnrollment(models.Model):
             data = self.get_record_values()
             record = record_obj.create(data)
         self.record_id = record.id
+        self.student_id.student = True
+        self.enrollment_date = fields.Date.today()
         self.set_done()
 
     @api.onchange('course_id')
