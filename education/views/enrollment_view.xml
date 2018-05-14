@@ -46,6 +46,7 @@
     <field name="model">education.enrollment</field>
     <field name="arch" type="xml">
       <tree string="Enrollments">
+        <field name="enrollment_date"/>
         <field name="code"/>
         <field name="student_id"/>
         <field name="course_id"/>
