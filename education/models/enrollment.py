@@ -63,6 +63,7 @@ class EducationEnrollment(models.Model):
     @api.multi
     def set_done(self):
         self.ensure_one()
+        self.student_id.student = True
         self.state = 'done'
 
     @api.multi

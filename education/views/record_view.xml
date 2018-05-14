@@ -76,11 +76,12 @@
     </field>
   </record>
 
-  <record id="record_sequence" model="ir.sequence">
+  <record id="record_sequence_1" model="ir.sequence">
     <field name="name">Record Sequence</field>
     <field name="code">education.record</field>
     <field name="prefix">RCD</field>
     <field name="padding">4</field>
+    <field eval="1" name="company_id"/>
   </record>
 
   <menuitem id="record_menu" parent="education_record_root"

@@ -84,11 +84,12 @@
     </field>
   </record>
 
-  <record id="enrollment_sequence" model="ir.sequence">
+  <record id="enrollment_sequence_1" model="ir.sequence">
     <field name="name">Enrollment Sequence</field>
     <field name="code">education.enrollment</field>
     <field name="prefix">ENR</field>
     <field name="padding">4</field>
+    <field eval="1" name="company_id"/>
   </record>
 
   <menuitem id="education_enrollment" parent="education_student_root" action="education_enrollment_action" sequence="20"/>

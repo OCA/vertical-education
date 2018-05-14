@@ -101,11 +101,12 @@
     </field>
   </record>
 
-  <record id="group_sequence" model="ir.sequence">
+  <record id="group_sequence_1" model="ir.sequence">
     <field name="name">Group Sequence</field>
     <field name="code">education.group</field>
     <field name="prefix">GRP</field>
     <field name="padding">4</field>
+    <field eval="1" name="company_id"/>
   </record>
 
   <menuitem id="education_group" parent="education_course_root" action="education_group_action" sequence="20"/>
