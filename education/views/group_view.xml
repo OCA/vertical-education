@@ -32,6 +32,7 @@
             <field name="tutor_id"/>
             <field name="date_from"/>
             <field name="date_to"/>
+            <field name="company_id" widget="selection" groups="base.group_multi_company"/>
           </group>
           <notebook>
             <page name="students" string="Students">

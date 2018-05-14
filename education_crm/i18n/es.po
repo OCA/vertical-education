@@ -56,11 +56,6 @@ msgid "Partner name"
 msgstr "Nombre"
 
 #. module: education_crm
-#: model:ir.model.fields,field_description:education_crm.field_crm_lead_student_id
-msgid "Student"
-msgstr "Alumno"
-
-#. module: education_crm
 #: model:ir.model,name:education_crm.model_education_enrollment
 msgid "education.enrollment"
 msgstr "education.enrollment"

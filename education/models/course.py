@@ -69,11 +69,14 @@ class EducationCourse(models.Model):
         string='Name',
         required=True)
     code = fields.Char(
-        string='Code',
-        required=True)
+        string='Code')
     category_id = fields.Many2one(
         comodel_name='education.course.category',
         string='Category')
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        default=lambda self: self.env.user.company_id.id,
+        string='Company')
     subject_ids = fields.Many2many(
         comodel_name='education.subject',
         relation='course_subject_rel',

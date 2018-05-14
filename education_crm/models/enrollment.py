@@ -18,5 +18,6 @@ class EducationEnrollment(models.Model):
     @api.multi
     def action_done(self):
         if self.lead_id:
+            self.lead_id.date_won = fields.Date.today()
             self.lead_id.action_set_won()
         super(EducationEnrollment, self).action_done()
