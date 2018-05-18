@@ -16,6 +16,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education
+#: model:ir.model.fields,field_description:education.field_education_enrollment_enrollment_date
+msgid "Enrollment Date"
+msgstr "Fecha de Matriculación"
+
+#. module: education
 #: model:ir.ui.view,arch_db:education.view_education_enrollment_form
 msgid "Academic Information"
 msgstr "Información Académica"

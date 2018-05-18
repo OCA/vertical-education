@@ -8,7 +8,7 @@
         <header>
           <button name="action_draft" type="object" states="cancel" string="To draft" class="oe_highlight"/>
           <button name="action_done" type="object" states="draft" string="Enroll" class="oe_highlight"/>
-          <button name="action_cancel" type="object" states="draft" string="Cancel" class="oe_highlight"/>
+          <button name="action_cancel" type="object" states="draft,done" string="Cancel" class="oe_highlight"/>
           <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
         </header>
         <sheet>

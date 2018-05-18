@@ -8,6 +8,7 @@ class EducationEnrollment(models.Model):
     _name = "education.enrollment"
     _inherit = ['mail.thread']
     _rec_name = 'code'
+    _order = 'enrollment_date desc'
 
     code = fields.Char(
         string='Code',
