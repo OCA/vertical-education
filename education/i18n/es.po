@@ -22,6 +22,12 @@ msgstr "Fecha de Matriculación"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_enrollment_form
+#: model:ir.ui.view,arch_db:education.view_education_group_form
+msgid "To draft"
+msgstr "Borrador"
+
+#. module: education
+#: model:ir.ui.view,arch_db:education.view_education_enrollment_form
 msgid "Academic Information"
 msgstr "Información Académica"
 
