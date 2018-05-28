@@ -70,3 +70,4 @@ class EducationSessionPresence(models.TransientModel):
                         'notes': line.notes
                     })
         self.session_id.ausence_ids = values
+        self.session_id.state = 'done'
