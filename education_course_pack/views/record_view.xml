@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="view_education_recod_pack_form" model="ir.ui.view">
+    <field name="name">education.record.pack.form</field>
+    <field name="model">education.record</field>
+    <field name='inherit_id' ref='education.view_education_record_form'/>
+    <field name="arch" type="xml">
+      <field name="course_id" position="after">
+        <field name="pack"/>
+      </field>
+      <field name="pack" position="after">
+        <field name="parent_record_id" attrs="{'invisible': ['|',('parent_record_id', '=', False), ('pack', '=', True)]}"/>
+      </field>
+      <group name="subjects" position='attributes'>
+        <attribute name='attrs'>{'invisible': [('pack','!=',False)]}</attribute>
+      </group>
+      <group name="subjects" position="before">
+        <group string="Child Records" name="child_records" attrs="{'invisible': [('pack', '=', False)]}">
+          <field name="pack_record_ids" nolabel="1">
+            <tree>
+              <field name="code"/>
+              <field name="course_id"/>
+            </tree>
+          </field>
+        </group>
+      </group>
+    </field>
+  </record>
+</odoo>

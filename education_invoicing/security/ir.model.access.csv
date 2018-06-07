@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_invoicing_method,access_invoicing_method,model_education_invoicing_method,,1,1,1,1
+access_education_group_invoicing_method,access_education_group_invoicing_method,model_education_enrollment_invoicing_line,,1,1,1,1

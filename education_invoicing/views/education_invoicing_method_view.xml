@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_invoicing_method_form" model="ir.ui.view">
+    <field name="name">view.education_invoicing_method.form</field>
+    <field name="model">education.invoicing.method</field>
+    <field name="arch" type="xml">
+      <form string="Invoicing Method">
+        <sheet>
+          <group name="main">
+            <field name="enrollment_amount"/>
+            <field name="amount"/>
+            <field name="quantity"/>
+            <field name="recurring_interval"/>
+            <field name="recurring_rule_type"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_education_invoicing_method_tree" model="ir.ui.view">
+    <field name="name">view.education_invoicing_method.tree</field>
+    <field name="model">education.invoicing.method</field>
+    <field name="arch" type="xml">
+      <tree string="Invoicing Method">
+        <field name="enrollment_amount"/>
+        <field name="amount"/>
+        <field name="quantity"/>
+        <field name="recurring_interval"/>
+        <field name="recurring_rule_type"/>
+      </tree>
+    </field>
+  </record>
+
+</odoo>

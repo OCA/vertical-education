@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="view_education_course_pack_form" model="ir.ui.view">
+    <field name="name">education.course.pack.form</field>
+    <field name="model">education.course</field>
+    <field name='inherit_id' ref='education.view_education_course_form'/>
+    <field name="arch" type="xml">
+      <field name="category_id" position="after">
+        <field name="pack"/>
+        <!-- <field name="price"/> -->
+      </field>
+      <page name="subjects" position='attributes'>
+        <attribute name='attrs'>{'invisible': [('pack','!=',False)]}</attribute>
+      </page>
+      <notebook name="subjects" position="inside">
+        <page string="Course Packs" attrs="{'invisible': [('pack', '!=', True)]}">
+          <group string="Included Courses" attrs="{'invisible': [('pack','!=',True)]}">
+            <field name="course_pack_line_ids" nolabel="1"/>
+          </group>
+          <group string="Included in Packs" attrs="{'invisible': [('pack','!=',False)]}">
+            <field name="course_pack_ids" nolabel="1"/>
+          </group>
+        </page>
+      </notebook>
+    </field>
+  </record>
+</odoo>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_wizard_account_invoice_form" model="ir.ui.view">
+    <field name="name">view.wizard.account.invoice.form</field>
+    <field name="model">wizard.account.invoice</field>
+    <field name="arch" type="xml">
+      <form string="Partial Payment">
+        <sheet>
+          <group name="main" col="4">
+            <field name="partial_amount"/>
+          </group>
+        </sheet>
+        <footer>
+          <button name="validate_partial_payment" class="oe_highlight" type="object" string="Save"/>
+          or
+          <button class="oe_link" special="cancel" string="Cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <record id="wizard_account_invoice_action" model="ir.actions.act_window">
+    <field name="name">Partial Payment</field>
+    <field name="res_model">wizard.account.invoice</field>
+    <field name="src_model">account.invoice</field>
+    <field name="view_mode">tree,form</field>
+    <field name="view_id" ref="view_wizard_account_invoice_form"/>
+    <field name="target">new</field>
+  </record>
+
+  <record id="view_account_invoice_form" model="ir.ui.view">
+    <field name="name">view.account.invoice.form</field>
+    <field name="model">account.invoice</field>
+    <field name="inherit_id" ref="account.invoice_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//header" position="inside">
+        <button string="Validate and Paid" name="paid_and_validate" type="object" context="{}" class="oe_highlight" states="draft,open"/>
+        <button string="Validate partial payment" name="%(wizard_account_invoice_action)d" type="action" states="draft,open" context="{'invoice_id': active_id}" class="oe_highlight"/>
+      </xpath>
+    </field>
+  </record>
+
+</odoo>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_enrollment_pack_form" model="ir.ui.view">
+    <field name="name">view.enrollment.pack.form</field>
+    <field name="model">education.enrollment</field>
+    <field name='inherit_id' ref='education.view_education_enrollment_form'/>
+    <field name="arch" type="xml">
+      <field name="group_id" position="after">
+        <field name="pack" readonly="1"/>
+      </field>
+      <field name="group_id" position="attributes">
+        <attribute name='context'>{'default_course_id': course_id}</attribute>
+        <attribute name="attrs">{'required': [('pack', '=', False)], 'invisible': [('pack', '=', True)], 'readonly': [('state', 'in', ['done', 'in_process'])]}</attribute>
+      </field>
+      <field name="record_id" position="attributes">
+        <attribute name="attrs">{'invisible': [('state', 'not in', ['done','in_process'])]}</attribute>
+      </field>
+      <field name="pack" position="after">
+        <field name="parent_enrollment_id" attrs="{'invisible': ['|',('parent_enrollment_id', '=', False), ('pack', '=', True)]}"/>
+      </field>
+      <field name="state" position="attributes">
+        <attribute name="statusbar_visible">draft,in_process,done</attribute>
+      </field>
+
+      <!-- <button name="get_subjects" position='attributes'>
+        <attribute name='invisible'>True</attribute>
+      </button> -->
+      <group name="subjects" position='before'>
+        <!-- <button style="margin-top:10px;" string="Get Enrollments" name="create_pack_lines" type="object" class="oe_highlight" attrs="{'invisible': [('pack','!=',True)]}"/> -->
+        <group name="pack" string="Included Enrollments" attrs="{'invisible': [('pack','!=',True)]}">
+          <field name="pack_enrollment_ids" nolabel="1">
+            <tree create="false">
+              <field name="code"/>
+              <field name="course_id"/>
+              <field name="state"/>
+            </tree>
+          </field>
+        </group>
+      </group>
+      <group name="subjects" position="attributes">
+        <!-- <button style="margin-top:10px;" string="Get Subjects" name="get_subjects" type="object" context="{}" class="oe_highlight" attrs="{'invisible': [('pack', '=', True)]}"/> -->
+        <attribute name="attrs">{'required': [('pack', '=', False)], 'invisible': [('pack', '=', True)]}</attribute>
+      </group>
+      <xpath expr="//field[@name='group_id']" position="attributes">
+        <attribute name="attrs">{'required': [('pack', '=', False)], 'invisible': [('pack', '=', True)]}</attribute>
+      </xpath>
+    </field>
+  </record>
+  <!-- <record id="view_education_subject_tree_inherit" model="ir.ui.view">
+    <field name="name">education.subject.tree</field>
+    <field name="model">education.subject</field>
+    <field name='inherit_id' ref='education.view_education_subject_tree'/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='name']" position="before">
+        <field name="course_id"/>
+      </xpath>
+    </field>
+  </record>
+  <record id="view_education_subject_form_inherit" model="ir.ui.view">
+    <field name="name">education.subject.form</field>
+    <field name="model">education.subject</field>
+    <field name='inherit_id' ref='education.view_education_subject_form'/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='name']" position="after">
+        <field name="course_id"/>
+      </xpath>
+    </field>
+  </record> -->
+
+</odoo>
