@@ -43,7 +43,8 @@ class EducationGroup(models.Model):
     enrollment_ids = fields.One2many(
         comodel_name='education.enrollment',
         inverse_name='group_id',
-        string='Enrollments')
+        string='Enrollments',
+        copy=False)
     tutor_id = fields.Many2one(
         comodel_name='res.partner',
         string='Tutor')
