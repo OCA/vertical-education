@@ -15,11 +15,8 @@
     'depends': [
         'education',
         'account',
-        #'account_payment_partner'
     ],
     'data': [
-        # 'wizard/wizard_invoicing_method_view.xml',
-        # 'wizard/wizard_account_invoice_view.xml',
         'views/education_invoicing_method_view.xml',
         'views/education_enrollment_view.xml',
         'views/education_group_view.xml',

@@ -78,15 +78,18 @@ class EducationEnrollment(models.Model):
         self.ensure_one()
         # TODO: generate invoices on planned date
         product_obj = self.env['product.product'].search([
-            ('name', '=', 'Pagos')
+            ('name', '=', 'Pagos'),
+            ('company_id', '=', self.env.user.company_id.id)
         ])
         if not product_obj:
             product_obj = self.env['product.product'].create({
                 'name': 'Pagos',
                 'taxes_id': False,
                 'supplier_taxes_id': False,
-                'type': 'service'
+                'type': 'service',
+                'company_id': self.env.user.company_id.id
             })
+        product_id = product_obj and product_obj[0]
         invoice_obj = self.env['account.invoice']
         account_journal_obj = self.env['account.journal']
         account_journal_id = account_journal_obj.search([
@@ -116,7 +119,7 @@ class EducationEnrollment(models.Model):
                         last_date = line_date
 
                 invoice_line_data = {
-                    'product_id': product_obj.id,
+                    'product_id': product_id.id,
                     'name': line.name,
                     'account_id':
                     account_journal_id.default_debit_account_id.id,
