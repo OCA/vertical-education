@@ -43,6 +43,30 @@ class EducationEnrollment(models.Model):
         compute='_compute_total',)
     date = fields.Date(
         string='Date')
+    amount = fields.Float(
+        string='Amount')
+    enrollment_amount = fields.Float(
+        string='Enrollment Amount')
+    quantity = fields.Integer(
+        string='Quantity',
+        default=1)
+    recurring_rule_type = fields.Selection(
+        [('none', 'None'),
+         ('daily', 'Day(s)'),
+         ('weekly', 'Week(s)'),
+         ('monthly', 'Month(s)'),
+         ('monthlylastday', 'Month(s) last day'),
+         ('yearly', 'Year(s)'),
+         ],
+        default='none',
+        string='Recurrence',
+        help="Specify Interval for automatic invoice generation.",
+    )
+    recurring_interval = fields.Integer(
+        default=1,
+        string='Repeat Every',
+        help="Repeat every (Days/Week/Month/Year)",
+    )
 
     # TODO: account_payment_partner module
     # payment_mode_id = fields.Many2one(
@@ -51,9 +75,39 @@ class EducationEnrollment(models.Model):
 
     @api.onchange('invoicing_method_id')
     def _onchange_invoicing_method_id(self):
-        self.invoicing_line_ids = \
-            self.invoicing_method_id and \
-            self.invoicing_method_id.compute_invoicing_method() or False
+        self.enrollment_amount = self.invoicing_method_id.enrollment_amount
+        self.amount = self.invoicing_method_id.amount
+        self.quantity = self.invoicing_method_id.quantity
+        self.recurring_interval = self.invoicing_method_id.recurring_interval
+        self.recurring_rule_type = self.invoicing_method_id.recurring_rule_type
+        # self.invoicing_line_ids = \
+        #     self.invoicing_method_id and \
+        #     self.invoicing_method_id.compute_invoicing_method() or False
+
+    @api.multi
+    def compute_invoicing_method(self):
+        self.ensure_one()
+        amount = self.amount
+        invoicing_method_line_data = []
+        if self.enrollment_amount:
+            line_values = {
+                'sequence': 0,
+                'name': 'enrollment',
+                'quantity': 1,
+                'subtotal': self.enrollment_amount
+            }
+            invoicing_method_line_data.append((0, 0, line_values))
+            amount -= self.enrollment_amount
+        line_values = {
+            'sequence': 10,
+            'name': 'fee',
+            'quantity': self.quantity,
+            'subtotal': amount / self.quantity,
+            'recurring_rule_type': self.recurring_rule_type,
+            'recurring_interval': self.recurring_interval,
+        }
+        invoicing_method_line_data.append((0, 0, line_values))
+        self.invoicing_line_ids = invoicing_method_line_data
 
     @api.multi
     @api.depends('invoicing_line_ids.total',
@@ -165,24 +219,29 @@ class EducationEnrollment(models.Model):
         self.student_id.write({
             'customer': True
         })
+        self.compute_invoicing_method()
         self.invoices_generate()
 
     @api.multi
     def unlink(self):
         for record in self:
-            if not record.invoice_ids.filtered(lambda i: i.state in ['paid', 'open']):
+            if not record.invoice_ids.filtered(
+                    lambda i: i.state in ['paid', 'open']):
                 return super(EducationEnrollment, self).unlink()
             else:
                 raise ValidationError(
-                    _('You can not delete an enrollment with open or paid invoices'))
+                    _('You can not delete an enrollment with open '
+                      'or paid invoices'))
 
 
 class EducationEnrollmentInvoicingMethodLine(models.Model):
     _name = 'education.enrollment.invoicing.line'
     _order = "sequence"
 
-    name = fields.Char(
-        string='Name')
+    name = name = fields.Selection(
+        [('enrollment', 'Enrollment'),
+         ('fee', 'Fee')],
+        string='Type')
     state = fields.Selection(
         [('invoiced', 'Invoiced'),
          ('paid', 'Paid'),
