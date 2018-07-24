@@ -122,22 +122,17 @@ class EducationEnrollment(models.Model):
                 'education.enrollment') or 'New'
         return super(EducationEnrollment, self).create(vals)
 
-    @api.constrains('student_id', 'group_id', 'record_id')
+    @api.constrains('student_id', 'group_id', 'state')
     def _check_student_per_group(self):
-        for enrollment in self.search([]).filtered(
-                lambda e: e.student_id.id == self.student_id.id and
-            e.group_id.id == self.group_id.id and e.state
-                not in ('draft', 'drop')):
-            if enrollment.enrollment_date and enrollment.record_id:
-                if enrollment.group_id.id in enrollment.record_id.\
-                        enrollment_ids.mapped('group_id').ids and \
-                        self.record_id.id != enrollment.record_id.id:
-                    raise ValidationError(
-                        _("The student has already been enrolled in ")
-                        + enrollment.group_id.name)
-            # TODO; Check
-            # if enrollment.enrollment_date and enrollment.course_id.id == \
-            #         self.course_id.id and enrollment.pack \
-            #         and not enrollment.group_id:
-            #     raise ValidationError(
-            #         _("The student has already been enrolled in this pack"))
+        group_ids = self.env['education.group'].search([
+            ('course_id', '=', self.group_id.course_id.id),
+            ('state', '=', 'active')
+        ]).ids
+        other_enrollments = self.env['education.enrollment'].search([
+            ('student_id', '=', self.student_id.id),
+            ('group_id', 'in', group_ids),
+            ('state', '=', 'done')
+        ])
+        if self.state == 'done' and len(other_enrollments) > 1:
+            raise ValidationError(
+                _("The student has already been enrolled in other group"))
