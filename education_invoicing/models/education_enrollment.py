@@ -223,6 +223,11 @@ class EducationEnrollment(models.Model):
         self.invoices_generate()
 
     @api.multi
+    def action_cancel(self):
+        super(EducationEnrollment, self).action_cancel()
+        self.invoicing_line_ids = False
+
+    @api.multi
     def unlink(self):
         for record in self:
             if not record.invoice_ids.filtered(
