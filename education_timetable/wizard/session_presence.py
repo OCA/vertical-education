@@ -1,10 +1,9 @@
-
 # Copyright 2017 Pesol (<http://pesol.es>)
 #                Angel Moya <angel.moya@pesol.es>
 #                Luis Adan Jimenez Hernandez <luis.jimenez@pesol.es>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
-from odoo import models, api, fields, _
+from odoo import models, fields, api
 
 
 class EducationSessionPresence(models.TransientModel):
@@ -18,18 +17,6 @@ class EducationSessionPresence(models.TransientModel):
         comodel_name='education.session.presence.line',
         inverse_name='presence_id',
         string='Session Presence')
-
-    # @api.model
-    # def default_get(self, fields):
-    #     res = super(EducationSessionPresence, self).default_get(fields)
-    #     session_id = self.env.context.get('active_id')
-    #     session = self.env['education.session'].browse(session_id)
-    #     lines = []
-    #     for record in self.session_id.timetable_id.group_id.record_ids:
-    #             values.append((0,0,{'student_id': record.student_id.id}))
-    #     self.session_presence_ids = lines
-    #     res['session_presence_ids'] = lines
-    #     return res
 
     @api.onchange('session_id')
     def _onchange_session_students(self):

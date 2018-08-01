@@ -24,8 +24,6 @@
         'views/group_view.xml',
         'views/record_view.xml',
         'views/record_subject_view.xml',
-        #'views/student_view.xml',
-        #'views/teacher_view.xml',
         'views/partner_view.xml',
         'security/education_security.xml',
         'security/ir.model.access.csv',

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 # Copyright 2017 Pesol (<http://pesol.es>)
 #                Angel Moya <angel.moya@pesol.es>
 #                Luis Adan Jimenez Hernandez <luis.jimenez@pesol.es>
@@ -47,6 +47,8 @@ class EducationEnrollment(models.Model):
         string='Amount')
     enrollment_amount = fields.Float(
         string='Enrollment Amount')
+    first_fee_date = fields.Date(
+        string='First Fee Date')
     quantity = fields.Integer(
         string='Quantity',
         default=1)
@@ -166,10 +168,10 @@ class EducationEnrollment(models.Model):
                         last_date = fields.Date.from_string(
                             line_date) + relativedelta(days=a + 1)
                     elif line.recurring_rule_type == 'weekly':
-                        l = a + 1
+                        week_qty = a + 1
                         last_date = fields.Date.from_string(
-                            line_date) + relativedelta(days=(l) * 7)
-                    if line.recurring_rule_type == False:
+                            line_date) + relativedelta(days=(week_qty) * 7)
+                    if not line.recurring_rule_type:
                         last_date = line_date
 
                 invoice_line_data = {
@@ -180,8 +182,7 @@ class EducationEnrollment(models.Model):
                     'quantity': 1,
                     'price_unit': line.subtotal
                 }
-                # import wdb; wdb.set_trace()
-                invoice = invoice_obj.create({
+                invoice_obj.create({
                     'partner_id': self.student_id.id,
                     'enrollment_id': self.id,
                     'journal_id': account_journal_id.id,
@@ -192,7 +193,6 @@ class EducationEnrollment(models.Model):
                     'method_line_id': line.id,
                     'invoice_line_ids': [(0, 0, invoice_line_data)],
                     'enrollment_invoicing_line_id': line.id,
-                    #'payment_mode_id': self.payment_mode_id.id
                 })
                 line.write({
                     'state': 'draft',
