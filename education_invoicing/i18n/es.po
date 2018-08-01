@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-22 08:34+0000\n"
-"PO-Revision-Date: 2018-05-22 08:34+0000\n"
+"POT-Creation-Date: 2018-07-26 06:11+0000\n"
+"PO-Revision-Date: 2018-07-26 06:11+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,24 +16,34 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_invoicing
-#: code:addons/education_invoicing/models/education_enrollment.py:174
-#, python-format
-msgid "You can not delete an enrollment with open or paid invoices"
-msgstr "No puedes borrar una matrícula con facturas abiertas o pagadas"
-
-#. module: education_invoicing
 #: model:ir.ui.view,arch_db:education_invoicing.view_education_enrollment_invoicing_form
 msgid "<span class=\"o_stat_text\">\n"
-"                Invoices\n"
-"              </span>"
+"              Invoices\n"
+"            </span>"
 msgstr "<span class=\"o_stat_text\">\n"
-"                Facturas\n"
-"              </span>"
+"              Facturas\n"
+"            </span>"
 
 #. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_account_journal_id
+msgid "Account Journal"
+msgstr "Diario de contabilidad"
+
+#. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_amount
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_amount
 msgid "Amount"
 msgstr "Importe"
+
+#. module: education_invoicing
+#: model:ir.ui.view,arch_db:education_invoicing.view_education_enrollment_invoicing_form
+msgid "Amounts"
+msgstr "Importes"
+
+#. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_company_id
+msgid "Company"
+msgstr "Compañía"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_course_id
@@ -43,12 +53,16 @@ msgstr "Curso"
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_create_uid
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_create_uid
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_create_uid
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method_create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_create_date
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_create_date
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_create_date
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method_create_date
 msgid "Created on"
 msgstr "Creado en"
 
@@ -58,14 +72,17 @@ msgid "Date"
 msgstr "Fecha"
 
 #. module: education_invoicing
+#: selection:education.enrollment,recurring_rule_type:0
 #: selection:education.enrollment.invoicing.line,recurring_rule_type:0
 #: selection:education.invoicing.method,recurring_rule_type:0
 msgid "Day(s)"
-msgstr "Day(s)"
+msgstr "Día(s)"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_display_name
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_display_name
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_display_name
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method_display_name
 msgid "Display Name"
 msgstr "Nombre mostrado"
 
@@ -76,6 +93,7 @@ msgstr "Borrador"
 
 #. module: education_invoicing
 #: code:addons/education_invoicing/models/education_invoicing_method.py:73
+#: selection:education.enrollment.invoicing.line,name:0
 #: model:ir.model.fields,field_description:education_invoicing.field_account_invoice_enrollment_id
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_enrollment_id
 #, python-format
@@ -83,17 +101,30 @@ msgid "Enrollment"
 msgstr "Matrícula"
 
 #. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_enrollment_amount
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_enrollment_amount
 msgid "Enrollment Amount"
 msgstr "Importe Matrícula"
 
 #. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_enrollment_discount
+msgid "Enrollment Discount"
+msgstr "Descuento matrícula"
+
+#. module: education_invoicing
 #: code:addons/education_invoicing/models/education_invoicing_method.py:81
+#: selection:education.enrollment.invoicing.line,name:0
 #, python-format
 msgid "Fee"
 msgstr "Cuota"
 
 #. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_fee_discount
+msgid "Fee Discount"
+msgstr "Descuento cuota"
+
+#. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_account_invoice_group_id
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_group_id
 msgid "Group"
 msgstr "Grupo"
@@ -101,11 +132,19 @@ msgstr "Grupo"
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_id
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_id
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_id
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method_id
 msgid "ID"
 msgstr "ID (identificación)"
 
 #. module: education_invoicing
+#: model:ir.ui.view,arch_db:education_invoicing.view_education_enrollment_invoicing_form
+msgid "Interval"
+msgstr "Interval"
+
+#. module: education_invoicing
 #: model:ir.model,name:education_invoicing.model_account_invoice
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_invoice_id
 msgid "Invoice"
 msgstr "Factura"
 
@@ -125,8 +164,14 @@ msgstr "Facturado"
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoice_ids
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoices_count
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_invoice_ids
+#: model:ir.ui.view,arch_db:education_invoicing.view_education_enrollment_invoicing_form
 msgid "Invoices"
 msgstr "Facturas"
+
+#. module: education_invoicing
+#: model:ir.ui.view,arch_db:education_invoicing.view_education_enrollment_invoicing_form
+msgid "Invoicing"
+msgstr "Facturación"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_amount
@@ -173,18 +218,24 @@ msgstr "Precio método de facturación"
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line___last_update
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method___last_update
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice___last_update
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method___last_update
 msgid "Last Modified on"
-msgstr "Última modificación en"
+msgstr "Última Modificación en"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_write_uid
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_write_uid
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_write_uid
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method_write_uid
 msgid "Last Updated by"
 msgstr "Última actualización de"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_write_date
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_write_date
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_write_date
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method_write_date
 msgid "Last Updated on"
 msgstr "Última actualización en"
 
@@ -194,24 +245,31 @@ msgid "Manager"
 msgstr "Responsable"
 
 #. module: education_invoicing
+#: selection:education.enrollment,recurring_rule_type:0
 #: selection:education.enrollment.invoicing.line,recurring_rule_type:0
 #: selection:education.invoicing.method,recurring_rule_type:0
 msgid "Month(s)"
 msgstr "Mese(s)"
 
 #. module: education_invoicing
+#: selection:education.enrollment,recurring_rule_type:0
 #: selection:education.enrollment.invoicing.line,recurring_rule_type:0
 #: selection:education.invoicing.method,recurring_rule_type:0
 msgid "Month(s) last day"
 msgstr "Último día Mese(s)"
 
 #. module: education_invoicing
-#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_name
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_name
 msgid "Name"
 msgstr "Nombre"
 
 #. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_next_date
+msgid "Next Date"
+msgstr "Fecha proxima factura"
+
+#. module: education_invoicing
+#: selection:education.enrollment,recurring_rule_type:0
 #: selection:education.enrollment.invoicing.line,recurring_rule_type:0
 #: selection:education.enrollment.invoicing.line,state:0
 #: selection:education.invoicing.method,recurring_rule_type:0
@@ -219,7 +277,7 @@ msgid "None"
 msgstr "Ninguno"
 
 #. module: education_invoicing
-#: code:addons/education_invoicing/models/education_enrollment.py:248
+#: code:addons/education_invoicing/models/education_enrollment.py:304
 #, python-format
 msgid "Once the invoice has been paid, the line can not be deleted"
 msgstr "Las lineas con facturas pagadas no pueden ser borradas"
@@ -230,7 +288,13 @@ msgid "Paid"
 msgstr "Pagado"
 
 #. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_partial_amount
+msgid "Partial Amount"
+msgstr "Pago parcial"
+
+#. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_payment_mode_id
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_payment_mode_id
 msgid "Payment Mode"
 msgstr "Modo de pago"
 
@@ -241,12 +305,14 @@ msgstr "Fecha prevista"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_quantity
+#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_quantity
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_quantity
 msgid "Quantity"
 msgstr "Cantidad"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_recurring_rule_type
+#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_recurring_rule_type
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_recurring_rule_type
 msgid "Recurrence"
 msgstr "Recurrencia"
@@ -258,12 +324,14 @@ msgstr "Regenerar facturas"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_recurring_interval
+#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_recurring_interval
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_recurring_interval
 msgid "Repeat Every"
 msgstr "Repetir cada"
 
 #. module: education_invoicing
 #: model:ir.model.fields,help:education_invoicing.field_education_enrollment_invoicing_line_recurring_interval
+#: model:ir.model.fields,help:education_invoicing.field_education_enrollment_recurring_interval
 #: model:ir.model.fields,help:education_invoicing.field_education_invoicing_method_recurring_interval
 msgid "Repeat every (Days/Week/Month/Year)"
 msgstr "Repetir cada (días/semana/mes/año)"
@@ -275,6 +343,7 @@ msgstr "Secuencia"
 
 #. module: education_invoicing
 #: model:ir.model.fields,help:education_invoicing.field_education_enrollment_invoicing_line_recurring_rule_type
+#: model:ir.model.fields,help:education_invoicing.field_education_enrollment_recurring_rule_type
 #: model:ir.model.fields,help:education_invoicing.field_education_invoicing_method_recurring_rule_type
 msgid "Specify Interval for automatic invoice generation."
 msgstr "Especificar el intervalo para la generación automática de facturas."
@@ -290,16 +359,16 @@ msgid "Subtotal"
 msgstr "Subtotal"
 
 #. module: education_invoicing
-#: code:addons/education_invoicing/wizard/wizard_account_invoice.py:25
-#, python-format
-msgid "The partial amount must be lower than the total invoice amount"
-msgstr "El pago parcial debe ser menor que el total de la factura"
-
-#. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_total
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_total
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice_total
 msgid "Total"
 msgstr "Total"
+
+#. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_name
+msgid "Type"
+msgstr "Tipo"
 
 #. module: education_invoicing
 #: model:res.groups,name:education_invoicing.invoicing_user
@@ -307,22 +376,24 @@ msgid "User"
 msgstr "Usuario"
 
 #. module: education_invoicing
+#: selection:education.enrollment,recurring_rule_type:0
 #: selection:education.enrollment.invoicing.line,recurring_rule_type:0
 #: selection:education.invoicing.method,recurring_rule_type:0
 msgid "Week(s)"
 msgstr "Semana(s)"
 
 #. module: education_invoicing
+#: selection:education.enrollment,recurring_rule_type:0
 #: selection:education.enrollment.invoicing.line,recurring_rule_type:0
 #: selection:education.invoicing.method,recurring_rule_type:0
 msgid "Year(s)"
 msgstr "Año(s)"
 
 #. module: education_invoicing
-#: code:addons/education_invoicing/models/education_enrollment.py:174
+#: code:addons/education_invoicing/models/education_enrollment.py:233
 #, python-format
-msgid "You cannot delete this enrollment with paid invoices"
-msgstr "No puedes eliminar una matrícula con facturas pagadas o abiertas"
+msgid "You can not delete an enrollment with open or paid invoices"
+msgstr "No puedes borrar una matrícula con facturas abiertas o pagadas"
 
 #. module: education_invoicing
 #: model:ir.model,name:education_invoicing.model_education_course
@@ -363,6 +434,11 @@ msgstr "education.group.invoicing.method"
 #: model:ir.model,name:education_invoicing.model_education_invoicing_method
 msgid "education.invoicing.method"
 msgstr "education.invoicing.method"
+
+#. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method_amount
+msgid "invoicing Amount"
+msgstr "invoicing Amount"
 
 #. module: education_invoicing
 #: model:ir.model,name:education_invoicing.model_invoicing_method
