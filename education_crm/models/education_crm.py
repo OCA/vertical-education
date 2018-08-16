@@ -5,7 +5,6 @@
 
 from odoo import models, fields
 
-
 class Lead(models.Model):
     _inherit = 'crm.lead'
 

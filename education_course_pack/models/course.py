@@ -22,6 +22,5 @@ class EducationCourse(models.Model):
         column1='pack_id',
         column2='course_id',
         string='Included in Packs')
-
     # price = fields.Float(
     #     string='Price')
