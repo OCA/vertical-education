@@ -153,7 +153,8 @@ class EducationEnrollment(models.Model):
             ('company_id', '=', self.env.user.company_id.id)
         ], limit=1)
         last_date = False
-        date = self.group_id.date_from or fields.Date.today()
+        date = self.first_fee_date or self.group_id.date_from or \
+            fields.Date.today()
         for line in self.invoicing_line_ids.filtered(
                 lambda l: l.state == 'none' or l.state == 'draft'):
             line_date = date or line.date
