@@ -91,12 +91,16 @@ class EducationEnrollment(models.Model):
         self.ensure_one()
         amount = self.amount
         invoicing_method_line_data = []
+        date = self.first_fee_date or self.group_id.date_from or \
+            fields.Date.today()
+        today = fields.Date.today()
         if self.enrollment_amount:
             line_values = {
                 'sequence': 0,
                 'name': 'enrollment',
                 'quantity': 1,
-                'subtotal': self.enrollment_amount
+                'subtotal': self.enrollment_amount,
+                'date': today
             }
             invoicing_method_line_data.append((0, 0, line_values))
             amount -= self.enrollment_amount
@@ -107,6 +111,7 @@ class EducationEnrollment(models.Model):
             'subtotal': amount / self.quantity,
             'recurring_rule_type': self.recurring_rule_type,
             'recurring_interval': self.recurring_interval,
+            'date': date
         }
         invoicing_method_line_data.append((0, 0, line_values))
         self.invoicing_line_ids = invoicing_method_line_data
@@ -157,19 +162,19 @@ class EducationEnrollment(models.Model):
             fields.Date.today()
         for line in self.invoicing_line_ids.filtered(
                 lambda l: l.state == 'none' or l.state == 'draft'):
-            line_date = date or line.date
+            line_date = line.date or date
             if line.invoice_ids:
                 line.invoice_ids.unlink()
             for a in range(0, line.quantity):
                 if a >= 0:
                     if line.recurring_rule_type == 'monthly':
                         last_date = fields.Date.from_string(
-                            line_date) + relativedelta(months=a + 1)
+                            line_date) + relativedelta(months=a)
                     elif line.recurring_rule_type == 'daily':
                         last_date = fields.Date.from_string(
-                            line_date) + relativedelta(days=a + 1)
+                            line_date) + relativedelta(days=a)
                     elif line.recurring_rule_type == 'weekly':
-                        week_qty = a + 1
+                        week_qty = a
                         last_date = fields.Date.from_string(
                             line_date) + relativedelta(days=(week_qty) * 7)
                     if not line.recurring_rule_type:
