@@ -112,6 +112,11 @@ msgid "Enrollment Discount"
 msgstr "Descuento matrícula"
 
 #. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_first_fee_date
+msgid "First Fee Date"
+msgstr "Fecha Primera Cuota"
+
+#. module: education_invoicing
 #: code:addons/education_invoicing/models/education_invoicing_method.py:81
 #: selection:education.enrollment.invoicing.line,name:0
 #, python-format

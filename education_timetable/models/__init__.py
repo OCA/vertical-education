@@ -8,6 +8,5 @@ from . import timetable
 from . import session_ausence
 from . import timerange
 from . import session
-from . import student
-from . import teacher
+from . import partner
 from . import day

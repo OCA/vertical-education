@@ -5,6 +5,7 @@
 
 from odoo.tests.common import TransactionCase
 from odoo import fields
+import datetime
 
 
 class TestEducationTimetableLine(TransactionCase):
@@ -27,9 +28,10 @@ class TestEducationTimetableLine(TransactionCase):
         subject_id = self.env.ref('education.education_subject_1')
         teacher_id = self.env.ref('education.education_teacher_1')
         days = ('0', 'Monday')
-        date_from = fields.Date.from_string('2017/10/1')
-        date_to = fields.Date.from_string('2017/10/31')
-
+        date_from = fields.Date.today()
+        date_from_datetime = fields.Date.from_string(date_from)
+        date_to_datetime = date_from_datetime + datetime.timedelta(days=30)
+        date_to = fields.Date.to_string(date_to_datetime)
         # Create Timetable Line
         self.education_timetable_id = education_timetable_obj.create({
             'course_id': course_id.id,

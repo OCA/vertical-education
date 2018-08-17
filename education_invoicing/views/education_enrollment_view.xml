@@ -51,6 +51,7 @@
                 <field name="recurring_interval" class="oe_inline" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
                 <field name="recurring_rule_type" class="oe_inline" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
               </div>
+              <field name="first_fee_date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
             </group>
           </group>
           <group string="Invoices" attrs="{'invisible':[('state','=', 'draft')]}">
