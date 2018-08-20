@@ -40,6 +40,10 @@ class EducationRecordSubject(models.Model):
     subject_id = fields.Many2one(
         comodel_name='education.subject',
         string='Subject')
+    course_subject_id = fields.Many2one(
+        comodel_name='education.course.subject',
+        string='Subject',
+        compute='_compute_course_subject_id')
     record_id = fields.Many2one(
         comodel_name='education.record',
         string='Record')
@@ -53,6 +57,7 @@ class EducationRecordSubject(models.Model):
         string='Course',
         related='record_id.course_id',
         store=True)
+<<<<<<< HEAD
     faults = fields.Integer(
         string='Faults', compute='_compute_faults')
 
@@ -60,3 +65,12 @@ class EducationRecordSubject(models.Model):
     def _compute_faults(self):
         for subject in self:
             subject.faults = len(subject.ausence_ids)
+=======
+
+    @api.multi
+    def _compute_course_subject_id(self):
+        for record in self:
+            record.course_subject_id = record.course_id.subject_ids.filtered(
+                lambda s: s.subject_id == record.subject_id
+            )
+>>>>>>> dce30c729416a197a17a600670a39a81feb7d8f3

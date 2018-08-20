@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_course_weight_form" model="ir.ui.view">
+    <field name="name">view.education.course.weight.form</field>
+    <field name="model">education.course</field>
+    <field name='inherit_id' ref='education.view_education_course_form'/>
+    <field name="arch" type="xml">
+      <xpath expr="//form/sheet/notebook/page[@name='subjects']/field[@name='subject_ids']/tree/field[@name='subject_id']" position="after">
+          <field name="weight"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

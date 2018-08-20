@@ -19,8 +19,8 @@
             </group>
             <group name="information" col="4">
               <field name="group_id"/>
-              <field name="subject_id" domain="[('course_ids', 'in', group_id.course_id.subject_ids.ids)]"/>
-              <!-- TODO domain-->
+              <field name="subject_id" domain="[('course_ids', 'in', group_id.course_id.subject_ids.mapped('subject_id').ids)]"/>
+              <field name="weight"/>
               <field name="date"/>
             </group>
             <group string="Results" attrs="{'invisible': [('state', '=', 'draft')]}">

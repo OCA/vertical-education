@@ -5,3 +5,4 @@ from . import exam
 from . import group
 from . import result
 from . import student
+from . import course
