@@ -53,3 +53,10 @@ class EducationRecordSubject(models.Model):
         string='Course',
         related='record_id.course_id',
         store=True)
+    faults = fields.Integer(
+        string='Faults', compute='_compute_faults')
+
+    @api.multi
+    def _compute_faults(self):
+        for subject in self:
+            subject.faults = len(subject.ausence_ids)

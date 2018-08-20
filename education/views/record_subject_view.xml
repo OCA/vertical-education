@@ -10,6 +10,7 @@
               <field name="student_id" />
               <field name="course_id" />
               <field name="subject_id" />
+              <field name="faults"/>
             </group>
           </sheet>
         </form>
