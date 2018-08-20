@@ -14,8 +14,8 @@ class EducationSessionAusence(models.Model):
         comodel_name='education.session',
         string='Session')
 
-    record_subject_id = fields.Many2one(
-        comodel_name='education.record.subject',
+    record_subject_group_id = fields.Many2one(
+        comodel_name='education.record.subject.group',
         string='Subject Record')
 
     student_id = fields.Many2one(
@@ -29,10 +29,10 @@ class EducationSessionAusence(models.Model):
         string='Supporting Document')
 
 
-class EducationRecordSubject(models.Model):
-    _inherit = 'education.record.subject'
+class EducationRecordSubjectGroup(models.Model):
+    _inherit = 'education.record.subject.group'
 
     ausence_ids = fields.One2many(
         comodel_name='education.session.ausence',
-        inverse_name='record_subject_id',
+        inverse_name='record_subject_group_id',
         string='Ausence')
