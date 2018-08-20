@@ -21,6 +21,12 @@ msgid "Certification"
 msgstr "Diplomas"
 
 #. module: education_certification
+#: model:ir.model.fields,field_description:education_certification.field_education_certification_reception_date
+#: model:ir.ui.view,arch_db:education_certification.view_education_certification_search
+msgid "Reception Date"
+msgstr "Fecha Recogida"
+
+#. module: education_certification
 #: model:ir.actions.act_window,help:education_certification.education_certification_action
 msgid "Click to create a new Education Certification."
 msgstr "Click para crear un nuevo Diploma."

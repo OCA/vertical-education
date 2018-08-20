@@ -36,6 +36,9 @@ class EducationCertification(models.Model):
         comodel_name='education.record.subject',
         string='Record Subject')
 
+    reception_date = fields.Date(
+        string='Reception Date')
+
     @api.onchange('course_id')
     def _change_course_id(self):
         if not self.course_id:

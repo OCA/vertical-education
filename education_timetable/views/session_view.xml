@@ -20,6 +20,10 @@
               <field name="start_time"/>
               <field name="end_time"/>
             </group>
+            <group col="4">
+              <field name="teacher_id" domain="[('teacher','=',True)]"  attrs="{'readonly':[('teacher_assist','=', True)]}" />
+              <field name="teacher_assist"/>
+            </group>
             <group string="Session Ausences">
               <field name="ausence_ids" nolabel="1">
                 <tree>
@@ -43,8 +47,9 @@
       <field name="model">education.session</field>
       <field name="arch" type="xml">
         <tree string="Education Session">
-          <field name="timetable_id"/>
           <field name="date"/>
+          <field name="teacher_id"/>
+          <field name="teacher_assist"/>
           <field name="state"/>
         </tree>
       </field>
@@ -57,7 +62,7 @@
         <search string="Education Session">
           <field name="date"/>
           <field name="timetable_id"/>
-          <field name="timerange_id" />
+          <field name="timerange_id"/>
           <group string="Group By" name="groupby">
             <filter string="State" context="{'group_by': 'state'}"/>
             <filter string="Timetable" context="{'group_by': 'timetable_id'}"/>
@@ -100,7 +105,7 @@
       <field name="padding">3</field>
     </record>
 
-    <menuitem id="education_session_menu" parent="education_assistance_root" action="education_session_action" sequence="20"/>
+    <menuitem id="education_session_menu" parent="education_timetable.education_assistance_root" action="education_session_action" sequence="30"/>
 
   </data>
 </odoo>
