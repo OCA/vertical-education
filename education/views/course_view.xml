@@ -16,7 +16,7 @@
               <field name="name" nolabel="1" placeholder="Course Name"/>
             </group>
           </h1>
-          <group col="4">
+          <group  name="general" col="4">
             <field name="code"/>
             <field name="category_id"/>
             <field name="duration" widget="float_time"/>
