@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="view_record_subject_evaluation_form" model="ir.ui.view">
+    <field name="name">view.record_subject_evaluation.form</field>
+    <field name="model">education.record.subject</field>
+    <field name='inherit_id' ref='education.view_record_subject_form'/>
+    <field name="arch" type="xml">
+      <group name="main" position="after">
+        <group string="Evaulations">
+          <field name="evaluation_result_ids" nolabel="1">
+            <tree>
+              <field name="exam_id"/>
+              <field name="score"/>
+              <field name="weight"/>
+            </tree>
+          </field>
+          <group name="score">
+            <field name="score_type"/>
+            <field name="score_computed"/>
+            <field name="score_manual" attrs="{'invisible':[('score_type','!=', 'manual')]}"/>
+          </group>
+
+        </group>
+      </group>
+    </field>
+  </record>
+
+  <record id="view_education_record_score_form" model="ir.ui.view">
+    <field name="name">view.education.record.score.form</field>
+    <field name="model">education.record</field>
+    <field name='inherit_id' ref='education.view_education_record_form'/>
+    <field name="arch" type="xml">
+      <xpath expr="//form/sheet/group/field[@name='record_subject_ids']/tree/field[@name='subject_id']" position="after">
+        <field name="score"/>
+        <field name="weight"/>
+      </xpath>
+      <xpath expr="//form/sheet/group/field[@name='record_subject_ids']" position="after">
+        <group name="score">
+          <field name="score_type"/>
+          <field name="score_computed"/>
+          <field name="score_manual" attrs="{'invisible':[('score_type','!=', 'manual')]}"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>

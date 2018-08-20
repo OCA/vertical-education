@@ -53,12 +53,22 @@ class EducationSubject(models.Model):
 
     name = fields.Char(string='Name', required=True)
 
-    course_ids = fields.Many2many(
-        comodel_name='education.course',
-        relation='course_subject_rel',
-        column1='subject_id',
-        column2='course_id',
+    course_ids = fields.One2many(
+        comodel_name='education.course.subject',
+        inverse_name='subject_id',
         string='Courses')
+
+
+class EducationCourseSubject(models.Model):
+    _name = "education.course.subject"
+    _rec_name = 'subject_id'
+
+    course_id = fields.Many2one(
+        comodel_name='education.course',
+        string='Course')
+    subject_id = fields.Many2one(
+        comodel_name='education.subject',
+        string='Subject')
 
 
 class EducationCourse(models.Model):
@@ -76,16 +86,12 @@ class EducationCourse(models.Model):
     company_id = fields.Many2one(
         comodel_name='res.company',
         string='Company')
-    subject_ids = fields.Many2many(
-        comodel_name='education.subject',
-        relation='course_subject_rel',
-        column1='course_id',
-        column2='subject_id',
+    subject_ids = fields.One2many(
+        comodel_name='education.course.subject',
+        inverse_name='course_id',
         string='Subjects')
-
     duration = fields.Float(
         string='Duration',
         company_dependent=True)
-
     active = fields.Boolean(
         string='Active', default=True)

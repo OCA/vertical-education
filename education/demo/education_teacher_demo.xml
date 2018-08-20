@@ -10,12 +10,10 @@
       <field name="email">rain@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_21"/>
     </record>
 
     <record id="education_teacher_2" model="res.partner">
@@ -24,11 +22,9 @@
       <field name="email">sindelm@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_22"/>
     </record>
 
     <record id="education_teacher_3" model="res.partner">
@@ -37,12 +33,10 @@
       <field name="email">jade@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_23"/>
     </record>
 
     <record id="education_teacher_4" model="res.partner">
@@ -51,12 +45,10 @@
       <field name="email">kabal@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_24"/>
     </record>
 
     <record id="education_teacher_5" model="res.partner">
@@ -65,12 +57,10 @@
       <field name="email">nightwolf@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_25"/>
     </record>
 
     <record id="education_teacher_6" model="res.partner">
@@ -79,12 +69,10 @@
       <field name="email">shangtsung@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_26"/>
     </record>
 
     <record id="education_teacher_7" model="res.partner">
@@ -93,12 +81,10 @@
       <field name="email">kotalkahn@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_27"/>
     </record>
 
     <record id="education_teacher_8" model="res.partner">
@@ -107,12 +93,10 @@
       <field name="email">takahashitakeda@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_28"/>
     </record>
 
     <record id="education_teacher_9" model="res.partner">
@@ -121,12 +105,10 @@
       <field name="email">Kenshi@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_29"/>
     </record>
 
     <record id="education_teacher_10" model="res.partner">
@@ -135,12 +117,10 @@
       <field name="email">boraicho@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_30"/>
     </record>
 
     <record id="education_teacher_11" model="res.partner">
@@ -149,12 +129,10 @@
       <field name="email">jasonvoorhees@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_31"/>
     </record>
 
     <record id="education_teacher_12" model="res.partner">
@@ -163,12 +141,10 @@
       <field name="email">tanya@demo.com</field>
       <field name="city">New York</field>
       <field name="country_id" ref="base.us"/>
-      <field name="nationality" ref="base.us"/>
       <field name="type">contact</field>
       <field name="customer">True</field>
       <field name="teacher">True</field>
       <field name="active">True</field>
-      <field name="partner_id" ref="education_res_partner_32"/>
     </record>
 
   </data>

@@ -24,9 +24,11 @@
           </group>
           <notebook name="subjects">
             <page name="subjects" string="Subjects">
-              <group name="subjects">
-                <field name="subject_ids" nolabel='1'/>
-              </group>
+                <field name="subject_ids" nolabel='1'>
+                  <tree editable="bottom">
+                      <field name="subject_id"/>
+                  </tree>
+                </field>
             </page>
           </notebook>
         </sheet>
