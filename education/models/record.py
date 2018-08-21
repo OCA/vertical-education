@@ -57,11 +57,23 @@ class EducationRecordSubject(models.Model):
         comodel_name='education.record.subject.group',
         inverse_name='record_subject_id',
         string='Subjects by Group')
+    last_record_subject_group_id = fields.Many2one(
+        comodel_name='education.record.subject.group',
+        inverse_name='record_subject_id',
+        string='Last Group Record',
+        compute='_compute_last_record_subject_group_id')
+
+    @api.multi
+    def _compute_last_record_subject_group_id(self):
+        for record in self:
+            record.last_record_subject_group_id = \
+                record.record_subject_group_ids and \
+                record.record_subject_group_ids[-1]
 
 
 class EducationRecordSubjectGroup(models.Model):
     _name = 'education.record.subject.group'
-    _rec_name = 'subject_id'
+    _rec_name = 'group_id'
 
     record_subject_id = fields.Many2one(
         comodel_name='education.record.subject',
