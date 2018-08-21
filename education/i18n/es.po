@@ -605,6 +605,13 @@ msgid "Faculties"
 msgstr "Profesores"
 
 #. module: education
+#: model:ir.model.fields,field_description:education.field_res_partner_teacher
+#: model:ir.model.fields,field_description:education.field_res_users_teacher
+#: model:ir.ui.view,arch_db:education.view_res_partner_education_filter
+msgid "Teacher"
+msgstr "Profesor"
+
+#. module: education
 #: model:ir.ui.view,arch_db:education.view_education_student_form
 msgid "Faculty"
 msgstr "Profesor"
