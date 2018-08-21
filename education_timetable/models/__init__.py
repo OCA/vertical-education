@@ -10,3 +10,7 @@ from . import timerange
 from . import session
 from . import partner
 from . import day
+from . import course
+from . import group
+from . import education_vacation
+from . import record

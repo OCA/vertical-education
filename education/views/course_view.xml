@@ -16,7 +16,7 @@
               <field name="name" nolabel="1" placeholder="Course Name"/>
             </group>
           </h1>
-          <group col="4">
+          <group  name="general" col="4">
             <field name="code"/>
             <field name="category_id"/>
             <field name="duration" widget="float_time"/>
@@ -24,9 +24,11 @@
           </group>
           <notebook name="subjects">
             <page name="subjects" string="Subjects">
-              <group name="subjects">
-                <field name="subject_ids" nolabel='1'/>
-              </group>
+                <field name="subject_ids" nolabel='1'>
+                  <tree editable="bottom">
+                      <field name="subject_id"/>
+                  </tree>
+                </field>
             </page>
           </notebook>
         </sheet>

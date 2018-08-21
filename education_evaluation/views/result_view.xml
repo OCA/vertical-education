@@ -11,28 +11,13 @@
               <field name="student_id"/>
               <field name="score"/>
               <field name="exam_id"/>
-              <field name="record_subject_id"/>
+              <field name="record_subject_group_id"/>
             </group>
           </sheet>
         </form>
       </field>
     </record>
 
-    <record id="view_record_subject_evaluation_form" model="ir.ui.view">
-      <field name="name">view.record_subject_evaluation.form</field>
-      <field name="model">education.record.subject</field>
-      <field name='inherit_id' ref='education.view_record_subject_form'/>
-      <field name="arch" type="xml">
-        <group name="main" position="after">
-          <group string="Evaulations">
-            <field name="evaluation_result_ids" nolabel="1">
-              <field name="exam_id"/>
-              <field name="score"/>
-            </field>
-          </group>
-        </group>
-      </field>
-    </record>
     <record id="view_education_result_tree" model="ir.ui.view">
       <field name="name">view.education.result.tree</field>
       <field name="model">education.result</field>

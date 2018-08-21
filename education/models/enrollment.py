@@ -69,11 +69,18 @@ class EducationEnrollment(models.Model):
         self.state = 'cancel'
 
     @api.multi
+    def get_record_subject_values(self):
+        record_subject_values = []
+        for subject in self.subject_ids:
+            record_subject_values.append(
+                (0, 0, {'subject_id': subject.id})
+            )
+        return record_subject_values
+
+    @api.multi
     def get_record_values(self):
-        record_subject_values = [
-            (0, 0, {'subject_id': subject.id})
-            for subject in self.subject_ids
-        ]
+        self.ensure_one()
+
         # TODO: Check this
         # if not self.subject_ids and not self.course_id.subject_ids\
         #         and not self.pack:
@@ -82,7 +89,7 @@ class EducationEnrollment(models.Model):
         return {
             'student_id': self.student_id.id,
             'course_id': self.course_id.id,
-            'record_subject_ids': record_subject_values
+            'record_subject_ids': self.get_record_subject_values()
         }
 
     @api.multi
@@ -102,6 +109,8 @@ class EducationEnrollment(models.Model):
         if not record:
             data = self.get_record_values()
             record = record_obj.create(data)
+        record.record_subject_ids.write(
+            {'record_subject_group_ids': [(0, 0, {'enrollment_id': self.id})]})
         self.record_id = record.id
         self.student_id.student = True
         self.enrollment_date = fields.Date.today()

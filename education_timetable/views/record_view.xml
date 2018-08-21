@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <record id="view_record_subject_group_evaluation_form" model="ir.ui.view">
+    <field name="name">view.record_subject_group_evaluation.form</field>
+    <field name="model">education.record.subject.group</field>
+    <field name='inherit_id' ref='education.view_record_subject_group_form'/>
+    <field name="arch" type="xml">
+      <group name="main" position="after">
+        <group string="Ausences">
+          <field name="faults"/>
+          <field name="ausence_ids" nolabel="1" colspan="2">
+            <tree>
+              <field name="session_id"/>
+              <field name="notes"/>
+            </tree>
+          </field>
+        </group>
+      </group>
+    </field>
+  </record>
+
+    <record id="view_record_subject_faults_form" model="ir.ui.view">
+      <field name="name">view.record_subject_faults.form</field>
+      <field name="model">education.record.subject</field>
+      <field name='inherit_id' ref='education.view_record_subject_form'/>
+      <field name="arch" type="xml">
+            <group name="last_group" position="inside">
+              <field name="faults"/>
+              <field name="cons_faults"/>
+            </group>
+      </field>
+    </record>
+</odoo>

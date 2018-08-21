@@ -30,7 +30,7 @@ class EducationSessionPresence(models.TransientModel):
     def create_ausences(self):
         values = []
         self.ensure_one()
-        record_subject_obj = self.env['education.record.subject']
+        record_subject_group_obj = self.env['education.record.subject.group']
         students = self.session_id.ausence_ids.mapped('student_id')
         for line in self.session_presence_ids.filtered(
                 lambda l: l.lack):
@@ -39,15 +39,18 @@ class EducationSessionPresence(models.TransientModel):
                 course_id = timetable_id.group_id.course_id.id
                 subject_id = timetable_id.subject_id.id
                 student_id = line.student_id.id
-                record_subject = record_subject_obj.search([
+                group_id = timetable_id.group_id.id
+                record_subject_group = record_subject_group_obj.search([
                     ('course_id', '=', course_id),
                     ('student_id', '=', student_id),
                     ('subject_id', '=', subject_id),
+                    ('group_id', '=', group_id)
                 ])
                 ausence_values = ({
                     'session_id': self.env.context.get('active_id'),
                     'student_id': line.student_id.id,
-                    'record_subject_id': record_subject and record_subject.id,
+                    'record_subject_group_id': record_subject_group and
+                    record_subject_group.id,
                     'notes': line.notes,
                 })
                 values.append((0, 0, ausence_values))
