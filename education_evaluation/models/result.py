@@ -69,7 +69,9 @@ class EducationRecordSubject(models.Model):
         string='Weight',
         readonly=True)
     score = fields.Float(
-        string='Score')
+        string='Score',
+        related='last_record_subject_group_id.score',
+        readonly=True)
 
 
 class EducationRecordSubjectGroup(models.Model):

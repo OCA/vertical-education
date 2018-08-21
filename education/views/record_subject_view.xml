@@ -12,13 +12,15 @@
             <field name="subject_id"/>
           </group>
           <group name="group" string="Groups">
-            <field name="last_record_subject_group_id"/>
             <field name="record_subject_group_ids" nolabel="1" colspan="2">
               <tree>
                 <field name="group_id"/>
                 <field name="enrollment_id"/>
               </tree>
             </field>
+          </group>
+          <group name="last_group" string="Last Group">
+            <field name="last_record_subject_group_id"/>
           </group>
         </sheet>
       </form>

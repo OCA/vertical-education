@@ -27,12 +27,3 @@ class EducationSessionAusence(models.Model):
 
     supporting_document = fields.Boolean(
         string='Supporting Document')
-
-
-class EducationRecordSubjectGroup(models.Model):
-    _inherit = 'education.record.subject.group'
-
-    ausence_ids = fields.One2many(
-        comodel_name='education.session.ausence',
-        inverse_name='record_subject_group_id',
-        string='Ausence')
