@@ -26,6 +26,7 @@
       <field name="arch" type="xml">
             <group name="last_group" position="inside">
               <field name="faults"/>
+              <field name="cons_faults"/>
             </group>
       </field>
     </record>

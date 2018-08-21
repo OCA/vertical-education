@@ -7,6 +7,9 @@ class EducationRecordSubject(models.Model):
     faults = fields.Integer(
         string='Faults',
         related='last_record_subject_group_id.faults')
+    cons_faults = fields.Integer(
+        string='Consecutive Faults',
+        related='last_record_subject_group_id.cons_faults')
 
 
 class EducationRecordSubjectGroup(models.Model):
@@ -29,6 +32,7 @@ class EducationRecordSubjectGroup(models.Model):
         for subject in self:
             subject.faults = len(subject.ausence_ids)
 
+    # TODO:
     @api.multi
     def _compute_cons_faults(self):
         fault_prev = False
