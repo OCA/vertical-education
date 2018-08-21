@@ -15,4 +15,4 @@ class EducationCourse(models.Model):
     cons_faults = fields.Integer(
         string='Consecutive number of faults')
     max_cons_faults = fields.Integer(
-        string='Consecutive number of faults allowed')
+        string='Consecutive number of faults allowed') 
