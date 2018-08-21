@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_record_subject_group_form" model="ir.ui.view">
+      <field name="name">view.record_subject_group.form</field>
+      <field name="model">education.record.subject.group</field>
+      <field name="arch" type="xml">
+        <form string="Subject Group">
+          <sheet>
+            <group name="main">
+              <field name="group_id"/>
+              <field name="enrollment_id"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_record_subject_group_tree" model="ir.ui.view">
+      <field name="name">view.record_subject_group.tree</field>
+      <field name="model">education.record.subject.group</field>
+      <field name="arch" type="xml">
+        <tree string="Subject Group">
+          <field name="group_id"/>
+          <field name="enrollment_id"/>
+        </tree>
+      </field>
+    </record>
+
+</odoo>
