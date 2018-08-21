@@ -63,8 +63,18 @@ class EducationResult(models.Model):
 
 
 class EducationRecordSubject(models.Model):
-    _name = 'education.record.subject'
-    _inherit = ['education.record.subject', 'education.evaluable']
+    _inherit = 'education.record.subject'
+
+    weight = fields.Float(
+        string='Weight',
+        readonly=True)
+    score = fields.Float(
+        string='Score')
+
+
+class EducationRecordSubjectGroup(models.Model):
+    _name = 'education.record.subject.group'
+    _inherit = ['education.record.subject.group', 'education.evaluable']
 
     evaluation_result_ids = fields.One2many(
         comodel_name='education.result',
@@ -73,12 +83,8 @@ class EducationRecordSubject(models.Model):
 
     weight = fields.Float(
         string='Weight',
+        related='record_subject_id.weight',
         readonly=True)
-
-    @api.multi
-    def _compute_weight(self):
-        for record in self:
-            record.weight = record.subject_id
 
     @api.multi
     @api.depends('evaluation_result_ids.exam_id.weight',

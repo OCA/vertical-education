@@ -12,7 +12,8 @@
             <field name="subject_id"/>
           </group>
           <group name="group" string="Groups">
-            <field name="record_subject_group_ids" nolabel="1">
+            <field name="last_record_subject_group_id"/>
+            <field name="record_subject_group_ids" nolabel="1" colspan="2">
               <tree>
                 <field name="group_id"/>
                 <field name="enrollment_id"/>

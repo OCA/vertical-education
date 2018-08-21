@@ -22,6 +22,7 @@
         'views/subject_view.xml',
         'views/enrollment_view.xml',
         'views/group_view.xml',
+        'views/record_subject_group_view.xml',
         'views/record_view.xml',
         'views/record_subject_view.xml',
         'views/partner_view.xml',
