@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+
+  <record id="view_record_subject_score_form" model="ir.ui.view">
+    <field name="name">view.record_subject.form</field>
+    <field name="model">education.record.subject</field>
+    <field name='inherit_id' ref='education.view_record_subject_form'/>
+    <field name="arch" type="xml">
+          <group name="last_group" position="inside">
+            <field name="score"/>
+          </group>
+    </field>
+  </record>
+
   <record id="view_record_subject_evaluation_form" model="ir.ui.view">
     <field name="name">view.record_subject_evaluation.form</field>
     <field name="model">education.record.subject.group</field>
@@ -34,7 +46,7 @@
         <field name="weight"/>
       </xpath>
       <xpath expr="//form/sheet/group/field[@name='record_subject_ids']" position="after">
-        <group name="score">
+        <group name="score" string="Evaluation">
           <field name="score_type"/>
           <field name="score_computed"/>
           <field name="score_manual" attrs="{'invisible':[('score_type','!=', 'manual')]}"/>
