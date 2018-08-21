@@ -16,6 +16,7 @@
               <tree>
                 <field name="group_id"/>
                 <field name="enrollment_id"/>
+                <field name="faults"/>
               </tree>
             </field>
           </group>

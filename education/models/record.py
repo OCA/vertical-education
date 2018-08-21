@@ -89,3 +89,11 @@ class EducationRecordSubjectGroup(models.Model):
         string='Group',
         related='enrollment_id.group_id',
         readonly=True)
+    faults = fields.Integer(
+        string='Faults',
+        compute='_compute_faults')
+
+    @api.multi
+    def _compute_faults(self):
+        for subject in self:
+            subject.faults = len(subject.ausence_ids)
