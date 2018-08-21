@@ -7,7 +7,13 @@
         <field name="student_id" ref="education_student_1"/>
         <field name="course_id" ref="education_course_1"/>
         <field name="group_id" ref="education_group_1"/>
-        <field name="subject_ids" eval="[(6,0, [ref('education_subject_1'), ref('education_subject_5'), ref('education_subject_9'), ref('education_subject_13'), ref('education_subject_17')])]"/>
+        <field name="subject_ids" eval="[(6,0, [ref('education_subject_1'), ref('education_subject_5'), ref('education_subject_9')])]"/>
       </record>
+        <record id="education_enrollment_2" model="education.enrollment">
+          <field name="student_id" ref="education_student_1"/>
+          <field name="course_id" ref="education_course_1"/>
+          <field name="group_id" ref="education_group_2"/>
+          <field name="subject_ids" eval="[(6,0, [ref('education_subject_1')])]"/>
+        </record>
     </data>
   </odoo>

@@ -8,7 +8,7 @@ from odoo import models, fields
 
 class EducationVacation(models.Model):
     _name = 'education.vacation'
-    _inherit = 'education.timetable'
+    _inherit = 'education.timetable.line'
 
     name = fields.Char(
         string='Name')

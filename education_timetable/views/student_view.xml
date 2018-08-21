@@ -2,7 +2,7 @@
 <odoo>
   <record id="view_record_subject_evaluation_form" model="ir.ui.view">
     <field name="name">view.record_subject_evaluation.form</field>
-    <field name="model">education.record.subject</field>
+    <field name="model">education.record.subject.group</field>
     <field name='inherit_id' ref='education.view_record_subject_form'/>
     <field name="arch" type="xml">
       <group name="main" position="after">

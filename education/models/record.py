@@ -4,7 +4,7 @@ from odoo import models, fields, api, _
 
 
 class EducationRecord(models.Model):
-    _name = "education.record"
+    _name = 'education.record'
     _rec_name = 'code'
 
     code = fields.Char(
@@ -23,7 +23,7 @@ class EducationRecord(models.Model):
     record_subject_ids = fields.One2many(
         comodel_name='education.record.subject',
         inverse_name='record_id',
-        string='Enrollments')
+        string='Subjects Records')
 
     @api.model
     def create(self, vals):
@@ -34,7 +34,7 @@ class EducationRecord(models.Model):
 
 
 class EducationRecordSubject(models.Model):
-    _name = "education.record.subject"
+    _name = 'education.record.subject'
     _rec_name = 'subject_id'
 
     subject_id = fields.Many2one(
@@ -47,28 +47,45 @@ class EducationRecordSubject(models.Model):
         comodel_name='res.partner',
         string='Student',
         related='record_id.student_id',
-        store=True)
+        readonly=True)
     course_id = fields.Many2one(
         comodel_name='education.course',
         string='Course',
         related='record_id.course_id',
-        store=True)
-    faults = fields.Integer(
-        string='Faults',
-        compute='_compute_faults')
-    cons_faults = fields.Integer(
-        string='Consecutive faults',
-        compute='_compute_cons_faults')
+        readonly=True)
+    record_subject_group_ids = fields.One2many(
+        comodel_name='education.record.subject.group',
+        inverse_name='record_subject_id',
+        string='Subjects by Group')
 
-    @api.multi
-    def _compute_faults(self):
-        for subject in self:
-            subject.faults = len(subject.ausence_ids)
 
-    @api.multi
-    def _compute_cons_faults(self):
-        fault_prev = False
-        for faults in self.subject.ausence_ids:
-            if faults.subject_id == fault_prev:
-                self.subject.cons_faults += 1
-            fault_prev = faults.subject_id
+class EducationRecordSubjectGroup(models.Model):
+    _name = 'education.record.subject.group'
+    _rec_name = 'subject_id'
+
+    record_subject_id = fields.Many2one(
+        comodel_name='education.record.subject',
+        string='Subject Record')
+    subject_id = fields.Many2one(
+        comodel_name='education.subject',
+        string='Subject',
+        related='record_subject_id.subject_id',
+        readonly=True)
+    student_id = fields.Many2one(
+        comodel_name='res.partner',
+        string='Student',
+        related='record_subject_id.student_id',
+        readonly=True)
+    course_id = fields.Many2one(
+        comodel_name='education.course',
+        string='Course',
+        related='record_subject_id.course_id',
+        readonly=True)
+    enrollment_id = fields.Many2one(
+        comodel_name='education.enrollment',
+        string='Enrollment')
+    group_id = fields.Many2one(
+        comodel_name='education.group',
+        string='Group',
+        related='enrollment_id.group_id',
+        readonly=True)

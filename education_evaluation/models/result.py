@@ -4,7 +4,7 @@
 from odoo import models, fields, api
 
 
-class ModelName(models.AbstractModel):
+class EducationEvaluable(models.AbstractModel):
     _name = 'education.evaluable'
 
     score_type = fields.Selection(
@@ -46,14 +46,15 @@ class EducationResult(models.Model):
     score = fields.Float(
         string='Score')
 
-    record_subject_id = fields.Many2one(
-        comodel_name='education.record.subject',
+    record_subject_group_id = fields.Many2one(
+        comodel_name='education.record.subject.group',
         string='Subject Record')
 
     student_id = fields.Many2one(
         comodel_name='res.partner',
         string='Student',
-        related='record_subject_id.record_id.student_id')
+        related='record_subject_group_id.record_subject_id.'
+                'record_id.student_id')
 
     weight = fields.Float(
         string='Weight',
@@ -67,12 +68,11 @@ class EducationRecordSubject(models.Model):
 
     evaluation_result_ids = fields.One2many(
         comodel_name='education.result',
-        inverse_name='record_subject_id',
+        inverse_name='record_subject_group_id',
         string='Evaluations')
 
     weight = fields.Float(
         string='Weight',
-        related='course_subject_id.weight',
         readonly=True)
 
     @api.multi
@@ -97,12 +97,12 @@ class EducationRecord(models.Model):
     _inherit = ['education.record', 'education.evaluable']
 
     @api.multi
-    @api.depends('record_subject_ids.course_subject_id.weight',
+    @api.depends('record_subject_ids.weight',
                  'record_subject_ids.score')
     def _compute_score_computed(self):
         for record in self:
             subjects = record.record_subject_ids
-            total_weight = sum(subjects.mapped('course_subject_id.weight'))
+            total_weight = sum(subjects.mapped('weight'))
             record.score_computed = sum(subjects.mapped(
-                lambda e: e.course_subject_id.weight * e.score
+                lambda e: e.weight * e.score
             )) / (total_weight or 1)
