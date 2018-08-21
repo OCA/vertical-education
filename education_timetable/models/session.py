@@ -58,7 +58,6 @@ class EducationSession(models.Model):
 
     teacher_assist = fields.Boolean(
             string='Teacher assist')
-        
 
     @api.model
     def create(self, vals):

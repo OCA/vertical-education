@@ -27,6 +27,7 @@
         'views/teacher_view.xml',
         'views/course_view.xml',
         'views/group_view.xml',
+        'views/education_vacation_view.xml',
         'data/day_data.xml',
         'wizard/session_presence_view.xml',
         'security/timetable_security.xml',

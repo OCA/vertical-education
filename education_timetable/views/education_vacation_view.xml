@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <record id="view_education_vacation_form" model="ir.ui.view">
+      <field name="name">view.education_vacation.form</field>
+      <field name="model">education.vacation</field>
+      <field name="arch" type="xml">
+        <form string="Education Vacation">
+          <sheet>
+            <group name="main">
+              <field name="name"/>
+              <field name="init_date"/>
+              <field name="end_date"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="view_education_vacation_tree" model="ir.ui.view">
+      <field name="name">view.education_vacation.tree</field>
+      <field name="model">education.vacation</field>
+      <field name="arch" type="xml">
+        <tree string="Education  Vacation">
+          <field name="name"/>
+          <field name="init_date"/>
+          <field name="end_date"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_education_vacation_search" model="ir.ui.view">
+      <field name="name">view.education_vacation.search</field>
+      <field name="model">education.vacation</field>
+      <field name="arch" type="xml">
+        <search string="Education Vacation">
+          <field name="name"/>
+          <field name="init_date"/>
+          <field name="end_date"/>
+          <group string="Group By" name="groupby">
+            <filter string="Name" context="{'group_by': 'name'}"/>
+            <filter string="Init Date" context="{'group_by': 'init_date'}"/>
+            <filter string="End Date" context="{'group_by': 'end_date'}"/>
+          </group>
+        </search>
+      </field>
+    </record>
+
+    <record id="education_vacation_action" model="ir.actions.act_window">
+      <field name="name">Education Vacation</field>
+      <field name="res_model">education.vacation</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to create a new Education Vacation.
+        </p>
+      </field>
+    </record>
+
+    <menuitem id="education_vacation_menu" parent="education_timetable.education_assistance_root" action="education_vacation_action" sequence="20"/>
+
+  </data>
+</openerp>
