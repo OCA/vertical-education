@@ -55,9 +55,8 @@ class EducationSession(models.Model):
     timerange_id = fields.Many2one(
         comodel_name='education.timerange',
         string='Timerange')
-
     teacher_assist = fields.Boolean(
-            string='Teacher assist')
+        string='Teacher Assist')
 
     @api.model
     def create(self, vals):
