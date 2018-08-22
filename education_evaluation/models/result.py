@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import models, fields, api
+from odoo.exceptions import ValidationError
 
 
 class EducationEvaluable(models.AbstractModel):
@@ -21,6 +22,22 @@ class EducationEvaluable(models.AbstractModel):
         compute='_compute_score_computed')
     score_manual = fields.Float(
         string='Score')
+    grading_id = fields.Many2one(
+        string='Grading',
+        comodel_name='education.grading.scale',
+        readonly=True,
+        required=True)
+    grade_id = fields.Many2one(
+        string='Grade',
+        comodel_name='education.grade',
+        compute='_compute_grade')
+
+    @api.constrains('score_manual')
+    def _check_field(self):
+        dec = str(self.score_manual).split(".")[1]
+        if dec.__len__() > self.grading_id.decimals_number:
+            raise ValidationError(
+             "Max "+str(self.exam_id.grading_id.decimals_number)+" decimals")
 
     @api.multi
     @api.depends('score_type', 'score_manual', 'score_computed')
@@ -32,7 +49,17 @@ class EducationEvaluable(models.AbstractModel):
 
     @api.multi
     def _compute_score_computed(self):
-        pass
+        for evaluable in self:
+            evaluable.score_computed = round(
+                evaluable.score_computed, evaluable.grading_id.
+                decimals_number)
+
+    @api.multi
+    def _compute_grade(self):
+        for result in self:
+            for grade in result.grading_id.grade_ids:
+                if result.score >= grade.start:
+                    result.grade_id = grade
 
 
 class EducationResult(models.Model):
@@ -60,6 +87,25 @@ class EducationResult(models.Model):
         string='Weight',
         related='exam_id.weight',
         readonly=True)
+
+    grade_id = fields.Many2one(
+        string='Grade',
+        comodel_name='education.grade',
+        compute='_compute_grade')
+
+    @api.multi
+    def _compute_grade(self):
+        for result in self:
+            for grade in result.exam_id.grading_id.grade_ids:
+                if result.score <= grade.end:
+                    result.grade_id = grade
+
+    @api.constrains('score')
+    def _check_field(self):
+        dec = str(self.score).split(".")[1]
+        if dec.__len__() > self.exam_id.grading_id.decimals_number:
+            raise ValidationError(
+             "Max "+str(self.exam_id.grading_id.decimals_number)+" decimals")
 
 
 class EducationRecordSubject(models.Model):

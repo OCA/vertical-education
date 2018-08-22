@@ -8,3 +8,7 @@ class EducationCourseSubject(models.Model):
 
     weight = fields.Float(
         string='Weight')
+    grading_id = fields.Many2one(
+        comodel_name='education.grading.scale',
+        string='Grading',
+        required=True)

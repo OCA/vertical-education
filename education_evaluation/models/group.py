@@ -10,3 +10,6 @@ class EducationGroup(models.Model):
         comodel_name='education.exam',
         inverse_name='group_id',
         string='Exams')
+    grading_id = fields.Many2one(
+        string='Grading Scale',
+        comodel_name='education.grading.scale')

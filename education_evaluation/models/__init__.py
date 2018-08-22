@@ -7,3 +7,5 @@ from . import exam
 from . import group
 from . import result
 from . import student
+from . import grade
+from . import grading_scale

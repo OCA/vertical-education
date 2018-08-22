@@ -83,6 +83,10 @@ class EducationTimetableLine(models.Model):
         index=True,
         track_visibility='onchange',
         default=lambda self: self.env.user)
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        string='Company',
+        default=lambda self: self.env.user.company_id)
 
     @api.onchange('group_id')
     def _change_group_id(self):

@@ -37,5 +37,6 @@
         'demo/education_course_demo.xml',
         'demo/education_group_demo.xml',
         'demo/education_enrollment_demo.xml',
+        'demo/education_grading_scale.xml'
     ],
 }

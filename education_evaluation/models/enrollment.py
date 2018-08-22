@@ -4,6 +4,11 @@ from odoo import models, api
 class EducationEnrollment(models.Model):
     _inherit = "education.enrollment"
 
+    # grading_id = fields.Many2one(
+    #     comodel_name='education.grading.scale',
+    #     string='Grading',
+    #     required=True)
+
     @api.multi
     def action_done(self):
         super(EducationEnrollment, self).action_done()

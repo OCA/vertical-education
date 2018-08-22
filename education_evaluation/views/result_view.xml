@@ -12,6 +12,7 @@
               <field name="score"/>
               <field name="exam_id"/>
               <field name="record_subject_group_id"/>
+              <field name="grade_id"/>
             </group>
           </sheet>
         </form>
