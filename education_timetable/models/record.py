@@ -56,4 +56,4 @@ class EducationRecordSubjectGroup(models.Model):
                         max_consecutive_faults = consecutive_faults
                 else:
                     consecutive_faults = 0
-            subject.cons_faults = max_consecutive_faults
+            record_subject_group.cons_faults = max_consecutive_faults
