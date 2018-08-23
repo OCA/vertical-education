@@ -49,6 +49,7 @@
           <field name="group_id"/>
           <field name="subject_id"/>
           <field name="date"/>
+          <field name="grading_id"/>
           <field name="state"/>
         </tree>
       </field>

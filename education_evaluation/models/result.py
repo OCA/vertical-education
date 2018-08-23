@@ -25,8 +25,7 @@ class EducationEvaluable(models.AbstractModel):
     grading_id = fields.Many2one(
         string='Grading',
         comodel_name='education.grading.scale',
-        readonly=True,
-        required=True)
+        readonly=True)
     grade_id = fields.Many2one(
         string='Grade',
         comodel_name='education.grade',
@@ -117,6 +116,11 @@ class EducationRecordSubject(models.Model):
     score = fields.Float(
         string='Score',
         related='last_record_subject_group_id.score',
+        readonly=True)
+    grade_id = fields.Many2one(
+        string='Grade',
+        related='last_record_subject_group_id.grade_id',
+        comodel_name='education.grade',
         readonly=True)
 
 
