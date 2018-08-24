@@ -41,6 +41,11 @@ class EducationExam(models.Model):
         string='Date',
         required=True)
 
+    grading_id = fields.Many2one(
+        comodel_name='education.grading.scale',
+        string='Grading',
+        required=True)
+
     @api.onchange('group_id')
     def _change_group_id(self):
         if not self.group_id:

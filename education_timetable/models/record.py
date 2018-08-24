@@ -35,8 +35,25 @@ class EducationRecordSubjectGroup(models.Model):
     # TODO:
     @api.multi
     def _compute_cons_faults(self):
-        fault_prev = False
-        for faults in self.subject.ausence_ids:
-            if faults.subject_id == fault_prev:
-                self.subject.cons_faults += 1
-            fault_prev = faults.subject_id
+        timatable_obj = self.env['education.timetable.line']
+        session_obj = self.env['education.session']
+        for record_subject_group in self:
+            timetables = timatable_obj.search([
+                ('group_id', '=', record_subject_group.group_id.id),
+                ('subject_id', '=', record_subject_group.subject_id.id)
+            ])
+            sessions = session_obj.search([
+                ('timetable_id', 'in', timetables.ids),
+            ]).sorted(key=lambda r: r.date)
+            consecutive_faults = 0
+            max_consecutive_faults = 0
+            for session in sessions:
+                if session.ausence_ids.filtered(
+                        lambda a: a.student_id ==
+                        record_subject_group.enrollment_id.student_id):
+                    consecutive_faults += 1
+                    if max_consecutive_faults < consecutive_faults:
+                        max_consecutive_faults = consecutive_faults
+                else:
+                    consecutive_faults = 0
+            record_subject_group.cons_faults = max_consecutive_faults

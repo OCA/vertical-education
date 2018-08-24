@@ -15,3 +15,7 @@ class EducationEnrollment(models.Model):
             ])
             if course_subject:
                 record_subject.write({'weight': course_subject.weight})
+            for subject_group in record_subject.record_subject_group_ids:
+                subject_group.grading_id = self.course_id.grading_id
+        self.grading_id = self.course_id.grading_id
+        self.record_id.grading_id = self.grading_id

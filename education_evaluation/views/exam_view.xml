@@ -22,6 +22,7 @@
               <field name="subject_id" domain="[('course_ids', 'in', group_id.course_id.subject_ids.mapped('subject_id').ids)]"/>
               <field name="weight"/>
               <field name="date"/>
+              <field name="grading_id"/>
             </group>
             <group string="Results" attrs="{'invisible': [('state', '=', 'draft')]}">
               <field name="result_ids" nolabel="1">
@@ -48,6 +49,7 @@
           <field name="group_id"/>
           <field name="subject_id"/>
           <field name="date"/>
+          <field name="grading_id"/>
           <field name="state"/>
         </tree>
       </field>

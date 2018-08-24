@@ -8,6 +8,7 @@
     <field name="arch" type="xml">
           <group name="last_group" position="inside">
             <field name="score"/>
+            <field name="grade_id"/>
           </group>
     </field>
   </record>
@@ -29,6 +30,8 @@
           <group name="score">
             <field name="score_type"/>
             <field name="score_computed"/>
+            <field name="grading_id"/>
+            <field name="grade_id"/>
             <field name="score_manual" attrs="{'invisible':[('score_type','!=', 'manual')]}"/>
           </group>
         </group>
@@ -50,6 +53,8 @@
           <field name="score_type"/>
           <field name="score_computed"/>
           <field name="score_manual" attrs="{'invisible':[('score_type','!=', 'manual')]}"/>
+          <field name="grading_id"/>
+          <field name="grade_id"/>
         </group>
       </xpath>
     </field>
