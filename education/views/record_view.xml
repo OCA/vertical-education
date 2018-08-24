@@ -40,7 +40,7 @@
     <field name="name">view.education.record.tree</field>
     <field name="model">education.record</field>
     <field name="arch" type="xml">
-      <tree string="Educaiton record">
+      <tree string="Education record">
         <field name="code"/>
         <field name="student_id"/>
         <field name="course_id"/>

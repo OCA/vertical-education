@@ -44,7 +44,7 @@
     <field name="name">view.education.course.tree</field>
     <field name="model">education.course</field>
     <field name="arch" type="xml">
-      <tree string="Educaiton Course">
+      <tree string="Education Course">
         <field name="name"/>
         <field name="code"/>
         <field name="category_id"/>

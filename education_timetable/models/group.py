@@ -2,7 +2,7 @@
 #                Angel Moya <angel.moya@pesol.es>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
-from odoo import models, fields
+from odoo import models, fields, _
 
 
 class EducationGroup(models.Model):
@@ -16,3 +16,13 @@ class EducationGroup(models.Model):
         string='Consecutive number of faults')
     max_cons_faults = fields.Integer(
         string='Consecutive number of faults allowed')
+
+    def open_group_timetable(self):
+        return {
+            'name': _("Timetables"),
+            'view_mode': 'tree,form',
+            'res_model': 'education.timetable.line',
+            'src_model': 'education.group',
+            'type': 'ir.actions.act_window',
+            'domain': '[("group_id", "=", active_id)]'
+        }

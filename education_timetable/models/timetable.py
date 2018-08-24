@@ -93,7 +93,7 @@ class EducationTimetableLine(models.Model):
         if not self.group_id:
             return {'domain': {'subject_id': expression.FALSE_DOMAIN}}
         subject_fields_domain = [
-            ('id', 'in', self.course_id.subject_ids.ids)]
+            ('id', 'in', self.course_id.subject_ids.mapped('subject_id').ids)]
         return {'domain': {'subject_id': subject_fields_domain}}
 
     @api.multi
