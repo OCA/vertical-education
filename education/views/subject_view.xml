@@ -28,7 +28,7 @@
     <field name="name">view.education.subject.tree</field>
     <field name="model">education.subject</field>
     <field name="arch" type="xml">
-      <tree string="Educaiton subject">
+      <tree string="Education subject">
         <field name="name"/>
       </tree>
     </field>

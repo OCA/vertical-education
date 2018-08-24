@@ -60,7 +60,7 @@
     <field name="name">view.education.group.tree</field>
     <field name="model">education.group</field>
     <field name="arch" type="xml">
-      <tree string="Educaiton group">
+      <tree string="Education group">
         <field name="name"/>
         <field name="code"/>
         <field name="course_id"/>

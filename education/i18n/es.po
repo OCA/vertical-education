@@ -16,6 +16,31 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education
+#: model:ir.ui.view,arch_db:education.view_partner_education_form
+msgid "<span class=\"o_stat_text\">\n"
+"              Enrollments\n"
+"            </span>"
+msgstr "<span class=\"o_stat_text\">\n"
+"              Matrículas\n"
+"            </span>"
+
+#. module: education
+#: model:ir.ui.view,arch_db:education.view_partner_education_form
+msgid "<span class=\"o_stat_text\">\n"
+"              Groups\n"
+"            </span>"
+msgstr "<span class=\"o_stat_text\">\n"
+"              Grupos Académicos\n"
+"            </span>"
+
+#. module: education
+#: code:addons/education/models/partner.py:18
+#: code:addons/education/models/partner.py:29
+#, python-format
+msgid "Academic Groups"
+msgstr "Grupos Académicos"
+
+#. module: education
 #: model:ir.model.fields,field_description:education.field_education_enrollment_enrollment_date
 msgid "Enrollment Date"
 msgstr "Fecha de Matriculación"
@@ -506,23 +531,23 @@ msgstr "Duración"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_course_tree
-msgid "Educaiton Course"
-msgstr "Educaiton Course"
+msgid "Education Course"
+msgstr "Education Course"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_enrollment_tree
-msgid "Educaiton enrollment"
-msgstr "Educaiton enrollment"
+msgid "Education enrollment"
+msgstr "Education enrollment"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_group_tree
-msgid "Educaiton group"
-msgstr "Educaiton group"
+msgid "Education group"
+msgstr "Education group"
 
 #. module: education
 #: model:ir.ui.view,arch_db:education.view_education_record_tree
-msgid "Educaiton record"
-msgstr "Educaiton record"
+msgid "Education record"
+msgstr "Education record"
 
 #. module: education
 #: model:ir.module.category,name:education.education_category
@@ -585,9 +610,14 @@ msgid "Enroll"
 msgstr "Matricular"
 
 #. module: education
+#: code:addons/education/models/partner.py:40
 #: model:ir.actions.act_window,name:education.education_enrollment_action
 #: model:ir.model.fields,field_description:education.field_education_group_enrollment_ids
+#: model:ir.model.fields,field_description:education.field_education_record_enrollment_ids
 #: model:ir.ui.menu,name:education.education_enrollment
+#: model:ir.ui.view,arch_db:education.view_education_enrollment_tree
+#: model:ir.ui.view,arch_db:education.view_education_record_form
+#, python-format
 msgid "Enrollments"
 msgstr "Matrículas"
 
@@ -938,6 +968,11 @@ msgstr "Matrículas"
 #: model:ir.model.fields,field_description:education.field_education_record_subject_subject_id
 msgid "Subject"
 msgstr "Asignatura"
+
+#. module: education
+#: model:ir.actions.act_window,help:education.education_subject_action
+msgid "Click to create a new Subject."
+msgstr "Click to create a new Asignatura."
 
 #. module: education
 #: code:addons/education/models/group.py:13

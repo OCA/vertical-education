@@ -16,6 +16,21 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: education_timetable
+#: code:addons/education_timetable/models/group.py:22
+#, python-format
+msgid "Timetables"
+msgstr "Horarios"
+
+#. module: education_timetable
+#: model:ir.ui.view,arch_db:education_timetable.view_timetable_group_form
+msgid "<span class=\"o_stat_text\">\n"
+"              Timetable\n"
+"            </span>"
+msgstr "<span class=\"o_stat_text\">\n"
+"              Horario\n"
+"            </span>"
+
+#. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_ausence_ids
 msgid "Ausence"
 msgstr "Faltas"
@@ -52,6 +67,11 @@ msgstr "Click para crear un nuevo Horario."
 #: model:ir.actions.act_window,help:education_timetable.education_timerange_action
 msgid "Click to create a new Education timerange."
 msgstr "Click para crear un nuevo Rango Horario."
+
+#. module: education_timetable
+#: model:ir.actions.act_window,help:education_timetable.education_vacation_action
+msgid "Click to create a new Education Vacation."
+msgstr "Click para crear Vacaciones."
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_day_code
