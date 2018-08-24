@@ -57,7 +57,7 @@ class EducationEvaluable(models.AbstractModel):
     def _compute_grade(self):
         for result in self:
             for grade in result.grading_id.grade_ids:
-                if result.score >= grade.start:
+                if result.score <= grade.end:
                     result.grade_id = grade
 
 
@@ -74,7 +74,7 @@ class EducationResult(models.Model):
 
     record_subject_group_id = fields.Many2one(
         comodel_name='education.record.subject.group',
-        string='Subject Record')
+        string='Subject Record Group')
 
     student_id = fields.Many2one(
         comodel_name='res.partner',

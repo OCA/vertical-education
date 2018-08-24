@@ -45,6 +45,7 @@
     <field name='inherit_id' ref='education.view_education_record_form'/>
     <field name="arch" type="xml">
       <xpath expr="//form/sheet/group/field[@name='record_subject_ids']/tree/field[@name='subject_id']" position="after">
+        <field name="grade_id"/>
         <field name="score"/>
         <field name="weight"/>
       </xpath>

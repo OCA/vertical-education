@@ -5,7 +5,7 @@
     <data noupdate="1">
       <record id="education_enrollment_3" model="education.enrollment">
         <field name="student_id" ref="education_student_1"/>
-        <field name="course_id" ref="education_course_3"/>
+        <field name="course_id" ref="education_course_2"/>
         <field name="group_id" ref="education_group_1"/>
         <field name="subject_ids" eval="[(6,0, [ref('education_subject_1'), ref('education_subject_5'), ref('education_subject_9')])]"/>
       </record>

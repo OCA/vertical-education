@@ -119,7 +119,8 @@ class EducationEnrollment(models.Model):
     @api.onchange('course_id')
     def onchange_course_id(self):
         if self.course_id:
-            self.subject_ids = [(6, 0, self.course_id.subject_ids.ids)]
+            self.subject_ids = [
+                (6, 0, self.course_id.subject_ids.mapped('subject_id').ids)]
         else:
             self.subject_ids = False
         self.group_id = False

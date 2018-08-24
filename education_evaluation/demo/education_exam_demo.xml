@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright <YEAR(S)> <AUTHOR(S)>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+  <data noupdate="1">
+
+    <record id="education_exam_1" model="education.exam">
+      <field name="group_id" ref="education_group_1">
+      <field name="date">06/09/2018</field>
+      <field name="subject_id" ref="education_subject_1"/>
+      <field name="grading_id" ref="education_grading_scale_1"/>
+    </record>
+  </data>
+</odoo>

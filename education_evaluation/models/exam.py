@@ -71,7 +71,7 @@ class EducationExam(models.Model):
                     lambda r: r.subject_id == self.subject_id).mapped(
                     'record_subject_group_ids'):
             values.append((0, 0, {
-                'record_subject_group_ids': record_subject_group and
+                'record_subject_group_id': record_subject_group and
                 record_subject_group.id}))
         self.result_ids = values
 
