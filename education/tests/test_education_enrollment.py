@@ -4,6 +4,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html)
 
 from odoo.tests.common import TransactionCase
+from odoo.exceptions import ValidationError
 
 
 class TestEducationEnrollment(TransactionCase):
@@ -11,11 +12,32 @@ class TestEducationEnrollment(TransactionCase):
     def setUp(self):
         super(TestEducationEnrollment, self).setUp()
 
+        # Group data
+        self.group_1 = self.env.ref('education.education_group_1')
+
         # Enrollment data
         self.enrollment_1 = self.env.ref('education.education_enrollment_1')
         self.enrollment_2 = self.env.ref('education.education_enrollment_2')
 
+    def test_group(self):
+        """ Check group flow"""
+        self.group_1.action_active()
+        self.group_1.action_draft()
+        self.group_1.action_active()
+        self.group_1.action_done()
+        self.group_1.action_cancel()
+        self.group_1.action_draft()
+        self.group_1.action_active()
+
+    def test_group_unlink(self):
+        """ Check group unlink restriction"""
+        with self.assertRaises(ValidationError):
+            self.group_1.unlink()
+
     def test_enrollment(self):
+        """ Validate enrollment for a full course and check record.
+            Validate enrollment on same course for one subject and check
+            record for the subjects."""
         self.enrollment_1.action_done()
         record_subject_ids = \
             self.enrollment_1.record_id.record_subject_ids.mapped('subject_id')

@@ -26,5 +26,7 @@
         'security/ir.model.access.csv'
     ],
     'demo': [
+        'demo/education_grading_scale_demo.xml',
+        'demo/education_exam_demo.xml',
     ],
 }
