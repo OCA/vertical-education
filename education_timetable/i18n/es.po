@@ -4,22 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0\n"
+"Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-24 16:28+0000\n"
-"PO-Revision-Date: 2017-10-24 16:28+0000\n"
+"POT-Creation-Date: 2018-09-06 14:21+0000\n"
+"PO-Revision-Date: 2018-09-06 14:21+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-
-#. module: education_timetable
-#: code:addons/education_timetable/models/group.py:22
-#, python-format
-msgid "Timetables"
-msgstr "Horarios"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_timetable_group_form
@@ -31,20 +25,15 @@ msgstr "<span class=\"o_stat_text\">\n"
 "            </span>"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_ausence_ids
+#: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_group_ausence_ids
 msgid "Ausence"
 msgstr "Faltas"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_education_session_teacher_assist
-msgid "Teacher assist"
-msgstr "Asistencia Profesor"
-
-#. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_ids
-#: model:ir.model.fields,field_description:education_timetable.field_education_student_ausence_ids
-#: model:ir.ui.view,arch_db:education_timetable.view_education_student_form_timetable_inherit
-#: model:ir.ui.view,arch_db:education_timetable.view_record_subject_evaluation_form
+#: model:ir.model.fields,field_description:education_timetable.field_res_partner_ausence_ids
+#: model:ir.model.fields,field_description:education_timetable.field_res_users_ausence_ids
+#: model:ir.ui.view,arch_db:education_timetable.view_record_subject_group_evaluation_form
 msgid "Ausences"
 msgstr "Faltas de asistencia"
 
@@ -64,14 +53,14 @@ msgid "Click to create a new Education Timetable."
 msgstr "Click para crear un nuevo Horario."
 
 #. module: education_timetable
-#: model:ir.actions.act_window,help:education_timetable.education_timerange_action
-msgid "Click to create a new Education timerange."
-msgstr "Click para crear un nuevo Rango Horario."
-
-#. module: education_timetable
 #: model:ir.actions.act_window,help:education_timetable.education_vacation_action
 msgid "Click to create a new Education Vacation."
 msgstr "Click para crear Vacaciones."
+
+#. module: education_timetable
+#: model:ir.actions.act_window,help:education_timetable.education_timerange_action
+msgid "Click to create a new Education timerange."
+msgstr "Click para crear un nuevo Rango Horario."
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_day_code
@@ -80,30 +69,68 @@ msgid "Code"
 msgstr "Código"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_company_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_cons_faults
+msgid "Consecutive Faults"
+msgstr "Faltas consecutivas"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_group_cons_faults
+msgid "Consecutive faults"
+msgstr "Faltas consecutivas"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_course_cons_faults
+#: model:ir.model.fields,field_description:education_timetable.field_education_group_cons_faults
+msgid "Consecutive number of faults"
+msgstr "Número de faltas consecutivas"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_course_max_cons_faults
+#: model:ir.model.fields,field_description:education_timetable.field_education_group_max_cons_faults
+msgid "Consecutive number of faults allowed"
+msgstr "Número de faltas consecutivas permitidas"
+
+#. module: education_timetable
+#: model:ir.model,name:education_timetable.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_course_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_course_id
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
 msgid "Course"
 msgstr "Curso"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_create_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_create_uid
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_create_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_create_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_create_date
 msgid "Created on"
-msgstr "Creado el"
+msgstr "Creado en"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_date
@@ -113,30 +140,40 @@ msgstr "Fecha"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_day_ids
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_day_ids
 msgid "Days"
 msgstr "Días"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_display_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_display_name
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_display_name
 msgid "Display Name"
-msgstr "Nombre a mostrar"
+msgstr "Nombre mostrado"
 
 #. module: education_timetable
 #: selection:education.session,state:0
 #: selection:education.timetable.line,state:0
+#: selection:education.vacation,state:0
 msgid "Done"
 msgstr "Finalizado"
 
 #. module: education_timetable
 #: selection:education.session,state:0
 #: selection:education.timetable.line,state:0
+#: selection:education.vacation,state:0
 msgid "Draft"
 msgstr "Borrador"
+
+#. module: education_timetable
+#: model:ir.ui.view,arch_db:education_timetable.view_education_vacation_tree
+msgid "Education  Vacation"
+msgstr "Vacaciones"
 
 #. module: education_timetable
 #: model:ir.actions.act_window,name:education_timetable.education_session_action
@@ -154,12 +191,21 @@ msgstr "Faltas de asistecia"
 
 #. module: education_timetable
 #: model:ir.actions.act_window,name:education_timetable.education_timetable_action
+#: model:ir.module.category,name:education_timetable.timetable_category
 #: model:ir.ui.menu,name:education_timetable.education_timetable_menu
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_line_form
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_tree
 msgid "Education Timetable"
 msgstr "Horarios"
+
+#. module: education_timetable
+#: model:ir.actions.act_window,name:education_timetable.education_vacation_action
+#: model:ir.ui.menu,name:education_timetable.education_vacation_menu
+#: model:ir.ui.view,arch_db:education_timetable.view_education_vacation_form
+#: model:ir.ui.view,arch_db:education_timetable.view_education_vacation_search
+msgid "Education Vacation"
+msgstr "Vacaciones"
 
 #. module: education_timetable
 #: model:ir.actions.act_window,name:education_timetable.education_timerange_action
@@ -171,15 +217,12 @@ msgid "Education timerange"
 msgstr "Rango Horarios"
 
 #. module: education_timetable
-#: model:ir.ui.menu,name:education_timetable.education_assistance_root
-#: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
-msgid "Timetable"
-msgstr "Horario"
-
-#. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_date_to
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_date_to
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_end_date
+#: model:ir.ui.view,arch_db:education_timetable.view_education_vacation_search
 msgid "End Date"
-msgstr "Fecha finalización"
+msgstr "Fecha final"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_end_time
@@ -188,9 +231,12 @@ msgid "End time"
 msgstr "Hora fin"
 
 #. module: education_timetable
-#: selection:education.timetable.line,day:0
-msgid "Friday"
-msgstr "Viernes"
+#: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_faults
+#: model:ir.model.fields,field_description:education_timetable.field_education_record_subject_group_faults
+#: model:ir.ui.view,arch_db:education_timetable.view_timetable_course_form
+#: model:ir.ui.view,arch_db:education_timetable.view_timetable_group_form
+msgid "Faults"
+msgstr "Faltas"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_line_form
@@ -200,6 +246,7 @@ msgstr "Generar Sesiones"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_group_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_group_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_group_id
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
 msgid "Group"
 msgstr "Grupo"
@@ -208,18 +255,27 @@ msgstr "Grupo"
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timerange_search
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
+#: model:ir.ui.view,arch_db:education_timetable.view_education_vacation_search
 msgid "Group By"
 msgstr "Agrupar por"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_id
 msgid "ID"
-msgstr "ID"
+msgstr "ID (identificación)"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_init_date
+#: model:ir.ui.view,arch_db:education_timetable.view_education_vacation_search
+msgid "Init Date"
+msgstr "Fecha inicial"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_lack
@@ -227,48 +283,57 @@ msgid "Lack"
 msgstr "Falta"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_education_session___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange___last_update
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line___last_update
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation___last_update
 msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_write_uid
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_write_uid
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_write_uid
 msgid "Last Updated by"
-msgstr "Última actualización por"
+msgstr "Última actualización de"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_write_date
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_write_date
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_write_date
 msgid "Last Updated on"
-msgstr "Última actualización el"
+msgstr "Última actualización en"
 
 #. module: education_timetable
-#: selection:education.timetable.line,day:0
-msgid "Monday"
-msgstr "Lunes"
+#: model:res.groups,name:education_timetable.timetable_manager
+msgid "Manager"
+msgstr "Responsable"
 
 #. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_day_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_timerange_name
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_name
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_name
+#: model:ir.ui.view,arch_db:education_timetable.view_education_vacation_search
 msgid "Name"
 msgstr "Nombre"
 
 #. module: education_timetable
-#: code:addons/education_timetable/models/timetable_line.py:15
+#: code:addons/education_timetable/models/timetable.py:17
 #, python-format
 msgid "New"
 msgstr "Nuevo"
@@ -278,6 +343,25 @@ msgstr "Nuevo"
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_presence_line_notes
 msgid "Notes"
 msgstr "Notas"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_course_faults
+#: model:ir.model.fields,field_description:education_timetable.field_education_group_faults
+msgid "Number of faults"
+msgstr "Número de faltas"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_course_max_faults
+#: model:ir.model.fields,field_description:education_timetable.field_education_group_max_faults
+msgid "Number of faults allowed"
+msgstr "Número de faltas permitidas"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_user_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_user_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_user_id
+msgid "Salesperson"
+msgstr "Comercial"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_presence_form
@@ -307,17 +391,14 @@ msgid "Session Presence Lines"
 msgstr "Lineas de presencia"
 
 #. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_education_teacher_session_ids
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_session_ids
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_session_ids
+#: model:ir.model.fields,field_description:education_timetable.field_res_partner_session_ids
+#: model:ir.model.fields,field_description:education_timetable.field_res_users_session_ids
 #: model:ir.ui.view,arch_db:education_timetable.view_calendar_session
 #: model:ir.ui.view,arch_db:education_timetable.view_education_teacher_form_timetable_inherit
 msgid "Sessions"
 msgstr "Sesiones"
-
-#. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_education_teacher_form_timetable_inherit
-msgid "Teacher Sessions"
-msgstr "Asistencia Profesor"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_form_inherit
@@ -326,6 +407,7 @@ msgstr "Asignar Faltas"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_date_from
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_date_from
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
@@ -343,6 +425,7 @@ msgstr "Estado"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_state
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_state
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_state
 msgid "Status"
 msgstr "Estado"
 
@@ -365,9 +448,15 @@ msgstr "Asignar faltas asistencia"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_subject_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_subject_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_subject_id
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
 msgid "Subject"
-msgstr "Asignatura"
+msgstr "Asunto"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_record_subject_group_id
+msgid "Subject Record"
+msgstr "Subject Record"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_ausence_supporting_document
@@ -377,13 +466,21 @@ msgstr "Justificante"
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_teacher_id
 #: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_teacher_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_teacher_id
 msgid "Teacher"
 msgstr "Profesor"
 
 #. module: education_timetable
-#: model:ir.ui.view,arch_db:education_timetable.view_education_timetable_search
-msgid "teacher_id"
-msgstr "Profesor"
+#: model:ir.model.fields,field_description:education_timetable.field_education_session_teacher_assist
+msgid "Teacher Assist"
+msgstr "Asistencia Profesor"
+
+#. module: education_timetable
+#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_timerange_id
+#: model:ir.model.fields,field_description:education_timetable.field_education_vacation_timerange_id
+#: model:ir.ui.view,arch_db:education_timetable.view_education_timerange_form
+msgid "Time Range"
+msgstr "Rango Horario"
 
 #. module: education_timetable
 #: model:ir.model.fields,field_description:education_timetable.field_education_session_timerange_id
@@ -392,17 +489,8 @@ msgid "Timerange"
 msgstr "Rango horario"
 
 #. module: education_timetable
-#: selection:education.timetable.line,day:0
-msgid "Thursday"
-msgstr "Jueves"
-
-#. module: education_timetable
-#: model:ir.model.fields,field_description:education_timetable.field_education_timetable_line_timerange_id
-#: model:ir.ui.view,arch_db:education_timetable.view_education_timerange_form
-msgid "Time Range"
-msgstr "Rango Horario"
-
-#. module: education_timetable
+#: model:ir.ui.menu,name:education_timetable.education_assistance_root
+#: model:ir.ui.view,arch_db:education_timetable.view_calendar_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_search
 msgid "Timetable"
 msgstr "Horario"
@@ -413,14 +501,15 @@ msgid "Timetable Lines"
 msgstr "Lineas del horario"
 
 #. module: education_timetable
-#: selection:education.timetable.line,day:0
-msgid "Tuesday"
-msgstr "Martes"
+#: code:addons/education_timetable/models/group.py:22
+#, python-format
+msgid "Timetables"
+msgstr "Horarios"
 
 #. module: education_timetable
-#: selection:education.timetable.line,day:0
-msgid "Wednesday"
-msgstr "Miércoles"
+#: model:res.groups,name:education_timetable.timetable_user
+msgid "User"
+msgstr "Usuario"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_presence_form
@@ -430,7 +519,32 @@ msgstr "Asistente de Faltas"
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_session_presence_line_form
 msgid "Wizard Session Presence Lines"
-msgstr "Wizard Lineas de Asistencia"
+msgstr "Asistente Lineas de Asistencia"
+
+#. module: education_timetable
+#: model:ir.model,name:education_timetable.model_education_course
+msgid "education.course"
+msgstr "education.course"
+
+#. module: education_timetable
+#: model:ir.model,name:education_timetable.model_education_day
+msgid "education.day"
+msgstr "education.day"
+
+#. module: education_timetable
+#: model:ir.model,name:education_timetable.model_education_group
+msgid "education.group"
+msgstr "education.group"
+
+#. module: education_timetable
+#: model:ir.model,name:education_timetable.model_education_record_subject
+msgid "education.record.subject"
+msgstr "education.record.subject"
+
+#. module: education_timetable
+#: model:ir.model,name:education_timetable.model_education_record_subject_group
+msgid "education.record.subject.group"
+msgstr "education.record.subject.group"
 
 #. module: education_timetable
 #: model:ir.model,name:education_timetable.model_education_session
@@ -453,11 +567,6 @@ msgid "education.session.presence.line"
 msgstr "education.session.presence.line"
 
 #. module: education_timetable
-#: model:ir.model,name:education_timetable.model_education_student
-msgid "res.partner"
-msgstr "res.partner"
-
-#. module: education_timetable
 #: model:ir.model,name:education_timetable.model_education_timerange
 msgid "education.timerange"
 msgstr "education.timerange"
@@ -466,6 +575,11 @@ msgstr "education.timerange"
 #: model:ir.model,name:education_timetable.model_education_timetable_line
 msgid "education.timetable.line"
 msgstr "education.timetable.line"
+
+#. module: education_timetable
+#: model:ir.model,name:education_timetable.model_education_vacation
+msgid "education.vacation"
+msgstr "education.vacation"
 
 #. module: education_timetable
 #: model:ir.ui.view,arch_db:education_timetable.view_education_timerange_search
