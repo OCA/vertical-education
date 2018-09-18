@@ -21,7 +21,7 @@ class ResPartner(models.Model):
             'src_model': 'res.partner',
             'type': 'ir.actions.act_window',
             'domain': '[("enrollment_ids.student_id", "=", active_id)]',
-            'context': '{"search_default_state": "active"}'
+            # 'context': '{"search_default_state": "active"}'
         }
 
     def open_teacher_active_groups(self):

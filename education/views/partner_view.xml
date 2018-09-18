@@ -6,6 +6,7 @@
     <field name="model">res.partner</field>
     <field name="priority" eval="1"/>
     <field name='inherit_id' ref='base.view_partner_form'/>
+    <field name="domain">[('company_id', '=' company_id)]</field>
     <field name="arch" type="xml">
       <xpath expr="//div[@name='button_box']" position="inside">
         <button type="object" class="oe_stat_button" icon="fa fa-users" name="open_student_enrolled_groups" attrs="{'invisible': [('student', '=', False)]}">
