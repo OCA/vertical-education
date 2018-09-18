@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 06:11+0000\n"
-"PO-Revision-Date: 2018-07-26 06:11+0000\n"
+"POT-Creation-Date: 2018-09-18 10:58+0000\n"
+"PO-Revision-Date: 2018-09-18 10:58+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -112,11 +112,6 @@ msgid "Enrollment Discount"
 msgstr "Descuento matrícula"
 
 #. module: education_invoicing
-#: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_first_fee_date
-msgid "First Fee Date"
-msgstr "Fecha Primera Cuota"
-
-#. module: education_invoicing
 #: code:addons/education_invoicing/models/education_invoicing_method.py:81
 #: selection:education.enrollment.invoicing.line,name:0
 #, python-format
@@ -127,6 +122,11 @@ msgstr "Cuota"
 #: model:ir.model.fields,field_description:education_invoicing.field_education_invoicing_method_fee_discount
 msgid "Fee Discount"
 msgstr "Descuento cuota"
+
+#. module: education_invoicing
+#: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_first_fee_date
+msgid "First Fee Date"
+msgstr "Fecha primera cuota"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_account_invoice_group_id
@@ -145,7 +145,7 @@ msgstr "ID (identificación)"
 #. module: education_invoicing
 #: model:ir.ui.view,arch_db:education_invoicing.view_education_enrollment_invoicing_form
 msgid "Interval"
-msgstr "Interval"
+msgstr "Intervalo"
 
 #. module: education_invoicing
 #: model:ir.model,name:education_invoicing.model_account_invoice
@@ -156,7 +156,7 @@ msgstr "Factura"
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_date
 msgid "Invoice Date"
-msgstr "Fecha factura"
+msgstr "Fecha de la factura"
 
 #. module: education_invoicing
 #: selection:education.enrollment.invoicing.line,state:0
@@ -226,7 +226,7 @@ msgstr "Precio método de facturación"
 #: model:ir.model.fields,field_description:education_invoicing.field_wizard_account_invoice___last_update
 #: model:ir.model.fields,field_description:education_invoicing.field_wizard_invoicing_method___last_update
 msgid "Last Modified on"
-msgstr "Última Modificación en"
+msgstr "Última modificación en"
 
 #. module: education_invoicing
 #: model:ir.model.fields,field_description:education_invoicing.field_education_enrollment_invoicing_line_write_uid
@@ -282,7 +282,7 @@ msgid "None"
 msgstr "Ninguno"
 
 #. module: education_invoicing
-#: code:addons/education_invoicing/models/education_enrollment.py:304
+#: code:addons/education_invoicing/models/education_enrollment.py:315
 #, python-format
 msgid "Once the invoice has been paid, the line can not be deleted"
 msgstr "Las lineas con facturas pagadas no pueden ser borradas"
@@ -395,7 +395,7 @@ msgid "Year(s)"
 msgstr "Año(s)"
 
 #. module: education_invoicing
-#: code:addons/education_invoicing/models/education_enrollment.py:233
+#: code:addons/education_invoicing/models/education_enrollment.py:244
 #, python-format
 msgid "You can not delete an enrollment with open or paid invoices"
 msgstr "No puedes borrar una matrícula con facturas abiertas o pagadas"
