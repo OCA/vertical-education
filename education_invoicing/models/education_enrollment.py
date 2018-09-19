@@ -182,7 +182,7 @@ class EducationEnrollment(models.Model):
 
                 invoice_line_data = {
                     'product_id': product_id.id,
-                    'name': line.name,
+                    'name': self.course_id.name+'('+self.group_id.name+')',
                     'account_id':
                     account_journal_id.default_debit_account_id.id,
                     'quantity': 1,
