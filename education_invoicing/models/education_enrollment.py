@@ -163,6 +163,8 @@ class EducationEnrollment(models.Model):
         for line in self.invoicing_line_ids.filtered(
                 lambda l: l.state == 'none' or l.state == 'draft'):
             line_date = line.date or date
+            if line.subtotal == 0.0:
+                continue
             if line.invoice_ids:
                 line.invoice_ids.unlink()
             for a in range(0, line.quantity):
