@@ -5,7 +5,7 @@
     <field name="model">crm.lead</field>
     <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
     <field name="arch" type="xml">
-      <xpath expr="//button[@name='action_set_won']" position="after">
+      <xpath expr="//button[@name='action_set_won_rainbowman']" position="after">
         <button string="Create Enrollment" name="create_enrollment" type="object" context="{'default_partner_id': partner_id, 'default_course_id': course_id}" class="oe_highlight"/>
       </xpath>
       <xpath expr="//field[@name='partner_id']" position="before">
