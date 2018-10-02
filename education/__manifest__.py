@@ -1,6 +1,10 @@
+# Copyright (C) 2018-Today: Odoo Community Association (OCA)
+# @author: Angel Moya (angel.moya@pesol.es)
+# @author: Luis Adan Jimenez (luis.jimenez@pesol.es)
+# @author: Adrián Gómez (adrian.gomez@pesol.es)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-# Copyright <YEAR(S)> <AUTHOR(S)>
-# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
 {
     'name': 'Education',
     'summary': 'Education Management for Odoo',

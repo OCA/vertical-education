@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_education_exam,access_education_exam,model_education_exam,,1,1,1,1
-access_education_result,access_education_result,model_education_result,,1,1,1,1
-access_education_grade,access_education_grade,model_education_grade,,1,1,1,1
-access_education_grading_scale,access_education_grading_scale,model_education_grading_scale,,1,1,1,1

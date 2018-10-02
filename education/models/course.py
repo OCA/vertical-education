@@ -1,3 +1,9 @@
+# Copyright (C) 2018-Today: Odoo Community Association (OCA)
+# Copyright C)  2018-Today: Pesol (<http://pesol.es>)
+# @author: Angel Moya (angel.moya@pesol.es)
+# @author: Luis Adan Jimenez (luis.jimenez@pesol.es)
+# @author: Adrián Gómez (adrian.gomez@pesol.es)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
 from odoo import models, fields, api
