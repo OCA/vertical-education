@@ -27,13 +27,14 @@
     'summary': 'Manage Students, Faculties and Education Institute',
     'complexity': "easy",
     'description': """
-        This module provide core education management system over OpenERP
-        Features includes managing
-            * Student
-            * Faculty
-            * Course
-            * Batch
+This module provide core education management system over Odoo.
 
+Features includes managing:
+
+* Student
+* Faculty
+* Course
+* Batch
     """,
     'author': 'Tech Receptives',
     'website': 'http://www.openeducat.org',
