@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <menuitem id="education_base_menu" name="Education" sequence="1"/>
+
+    <menuitem id="education_student_root" parent="education.education_base_menu" name="Students" sequence="2"/>
+    <menuitem id="education_teacher_root" parent="education.education_base_menu" name="Teachers" sequence="4"/>
+    <menuitem id="education_course_root" parent="education.education_base_menu" name="Courses" sequence="3"/>
+    <menuitem id="education_invoicing_method_root" parent="education.education_base_menu" name="Invoicing Method" sequence="5"/>
+
+    <menuitem id="education_config_root" parent="education.education_base_menu" name="Configuration" sequence="20"/>
+    <menuitem id="education_exam_root" parent="education.education_base_menu" name="Exams" sequence="11"/>
+    <menuitem id="education_assistance_root" parent="education.education_base_menu" name="Assistance" sequence="12"/>
+  </data>
+
+</odoo>

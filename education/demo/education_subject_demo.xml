@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright <YEAR(S)> <AUTHOR(S)>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+  <data noupdate="1">
+    <record id="education_subject_1" model="education.subject">
+      <field name="name">Local Networks</field>
+    </record>
+
+    <record id="education_subject_2" model="education.subject">
+      <field name="name">Jquery</field>
+    </record>
+
+    <record id="education_subject_3" model="education.subject">
+      <field name="name">Database Systems</field>
+    </record>
+
+    <record id="education_subject_4" model="education.subject">
+      <field name="name">Ethical Hacking</field>
+    </record>
+
+    <record id="education_subject_5" model="education.subject">
+      <field name="name">O.S</field>
+    </record>
+
+    <record id="education_subject_6" model="education.subject">
+      <field name="name">JavaScript</field>
+    </record>
+
+    <record id="education_subject_7" model="education.subject">
+      <field name="name">The Database Management System</field>
+    </record>
+
+    <record id="education_subject_8" model="education.subject">
+      <field name="name">SQL Injection and XSS</field>
+    </record>
+
+    <record id="education_subject_9" model="education.subject">
+      <field name="name">information systems</field>
+    </record>
+
+    <record id="education_subject_10" model="education.subject">
+      <field name="name">Python</field>
+    </record>
+
+    <record id="education_subject_11" model="education.subject">
+      <field name="name">The Entity-Relationship Model</field>
+    </record>
+
+    <record id="education_subject_12" model="education.subject">
+      <field name="name">Network Hacking</field>
+    </record>
+
+    <record id="education_subject_13" model="education.subject">
+      <field name="name">Assembly and maintenance of equipment</field>
+    </record>
+
+    <record id="education_subject_14" model="education.subject">
+      <field name="name">C++</field>
+    </record>
+
+    <record id="education_subject_15" model="education.subject">
+      <field name="name">The Relational Model</field>
+    </record>
+
+    <record id="education_subject_16" model="education.subject">
+      <field name="name">Linux Administrator</field>
+    </record>
+
+    <record id="education_subject_17" model="education.subject">
+      <field name="name">Office applications</field>
+    </record>
+
+    <record id="education_subject_18" model="education.subject">
+      <field name="name">AngularJS</field>
+    </record>
+
+    <record id="education_subject_19" model="education.subject">
+      <field name="name">SQL</field>
+    </record>
+
+    <record id="education_subject_20" model="education.subject">
+      <field name="name">Physical security and Legal aspects</field>
+    </record>
+
+  </data>
+</odoo>

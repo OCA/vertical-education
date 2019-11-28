@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_course_form" model="ir.ui.view">
+    <field name="name">view.education.course.form</field>
+    <field name="model">education.course</field>
+    <field name="arch" type="xml">
+      <form string="Education Course">
+        <sheet>
+          <div class="oe_button_box" name="button_box">
+            <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+              <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+            </button>
+          </div>
+          <h1>
+            <group name="main" col="1">
+              <field name="code" nolabel="1" placeholder="Code"/>
+            </group>
+          </h1>
+          <group col="4">
+            <field name="name"/>
+            <field name="category_id"/>
+          </group>
+          <notebook name="subjects">
+            <page name="subjects" string="Subjects">
+              <group name="subjects">
+                <field name="subject_ids" nolabel='1'/>
+              </group>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_education_course_tree" model="ir.ui.view">
+    <field name="name">view.education.course.tree</field>
+    <field name="model">education.course</field>
+    <field name="arch" type="xml">
+      <tree string="Educaiton Course">
+        <field name="name"/>
+        <field name="code"/>
+        <field name="category_id"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_education_course_search" model="ir.ui.view">
+    <field name="name">view.education.course.search</field>
+    <field name="model">education.course</field>
+    <field name="arch" type="xml">
+      <search string="Courses">
+        <field name="name"/>
+        <field name="code"/>
+        <field name="category_id"/>
+        <filter name="active" string="Archived" domain="[('active', '=', False)]"/>
+        <group string="Group By" name="groupby">
+          <filter name="name" string="Name" context="{'group_by': 'name'}"/>
+          <filter name="code" string="Code" context="{'group_by': 'code'}"/>
+          <filter name="category_id" string="Category" context="{'group_by': 'category_id'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record id="education_course_action" model="ir.actions.act_window">
+    <field name="name">Courses</field>
+    <field name="res_model">education.course</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+        Click to create a new Course.
+      </p>
+    </field>
+  </record>
+
+  <menuitem id="education_course" parent="education_course_root" action="education_course_action" sequence="20"/>
+
+</odoo>

@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_education_record,access_education_record,model_education_record,,1,0,0,0
+access_education_group,access_education_group,model_education_group,,1,0,0,0
+access_education_course_category,access_education_course_category,model_education_course_category,,1,0,0,0
+access_education_subject,access_education_subject,model_education_subject,,1,0,0,0
+access_education_course,access_education_course,model_education_course,,1,0,0,0
+access_education_enrollment,access_education_enrollment,model_education_enrollment,,1,0,0,0
+access_education_student,access_education_student,model_education_student,,1,0,0,0
+access_education_teacher,access_education_teacher,model_education_teacher,,1,0,0,0

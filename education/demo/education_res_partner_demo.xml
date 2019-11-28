@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright <YEAR(S)> <AUTHOR(S)>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+
+<odoo>
+  <data noupdate="1">
+
+    <record id="education_res_partner_1" model="res.partner">
+      <field name="name">Meleena</field>
+      <field name="email">meleena@demo.com</field>
+    </record>
+
+    <record id="education_res_partner_2" model="res.partner">
+      <field name="name">Baraka</field>
+      <field name="email">baraka@demo.com</field>
+    </record>
+
+    <record id="education_res_partner_3" model="res.partner">
+      <field name="name">Scorpion</field>
+      <field name="email">baraka@demo.com</field>
+    </record>
+
+    <record id="education_res_partner_4" model="res.partner">
+      <field name="name">Sub Zero</field>
+    </record>
+
+    <record id="education_res_partner_5" model="res.partner">
+      <field name="name">Liu Kang</field>
+    </record>
+
+    <record id="education_res_partner_6" model="res.partner">
+      <field name="name">Smoke</field>
+    </record>
+
+    <record id="education_res_partner_7" model="res.partner">
+      <field name="name">Jax</field>
+    </record>
+
+    <record id="education_res_partner_8" model="res.partner">
+      <field name="name">Sonya</field>
+    </record>
+
+    <record id="education_res_partner_9" model="res.partner">
+      <field name="name">Sektor</field>
+    </record>
+
+    <record id="education_res_partner_10" model="res.partner">
+      <field name="name">Cyrax</field>
+    </record>
+
+    <record id="education_res_partner_11" model="res.partner">
+      <field name="name">Goro</field>
+    </record>
+
+    <record id="education_res_partner_12" model="res.partner">
+      <field name="name">Shao Kahn</field>
+    </record>
+
+    <record id="education_res_partner_13" model="res.partner">
+      <field name="name">Kitana</field>
+    </record>
+
+    <record id="education_res_partner_14" model="res.partner">
+      <field name="name">Ermac</field>
+    </record>
+
+    <record id="education_res_partner_15" model="res.partner">
+      <field name="name">Raiden</field>
+    </record>
+
+    <record id="education_res_partner_16" model="res.partner">
+      <field name="name">Johnny Cage</field>
+    </record>
+
+    <record id="education_res_partner_17" model="res.partner">
+      <field name="name">Kun Lao</field>
+    </record>
+
+    <record id="education_res_partner_18" model="res.partner">
+      <field name="name">Reptile</field>
+    </record>
+
+    <record id="education_res_partner_19" model="res.partner">
+      <field name="name">Quan Chi</field>
+    </record>
+
+    <record id="education_res_partner_20" model="res.partner">
+      <field name="name">Kano</field>
+    </record>
+
+    <record id="education_res_partner_21" model="res.partner">
+      <field name="name">Rain</field>
+    </record>
+
+    <record id="education_res_partner_22" model="res.partner">
+      <field name="name">Sindel</field>
+    </record>
+
+    <record id="education_res_partner_23" model="res.partner">
+      <field name="name">Jade</field>
+    </record>
+
+    <record id="education_res_partner_24" model="res.partner">
+      <field name="name">Kabal</field>
+    </record>
+
+    <record id="education_res_partner_25" model="res.partner">
+      <field name="name">Nightwolf</field>
+    </record>
+
+    <record id="education_res_partner_26" model="res.partner">
+      <field name="name">Shang Tsung</field>
+    </record>
+
+    <record id="education_res_partner_27" model="res.partner">
+      <field name="name">Kotal Kahn</field>
+    </record>
+
+    <record id="education_res_partner_28" model="res.partner">
+      <field name="name">Takahashi Takeda</field>
+    </record>
+
+    <record id="education_res_partner_29" model="res.partner">
+      <field name="name">Kenshi</field>
+    </record>
+
+    <record id="education_res_partner_30" model="res.partner">
+      <field name="name">Bo' Rai Cho</field>
+    </record>
+
+    <record id="education_res_partner_31" model="res.partner">
+      <field name="name">Jason Voorhees</field>
+    </record>
+
+    <record id="education_res_partner_32" model="res.partner">
+      <field name="name">Tanya</field>
+    </record>
+
+  </data>
+</odoo>

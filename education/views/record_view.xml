@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_education_record_form" model="ir.ui.view">
+    <field name="name">view.education.record.form</field>
+    <field name="model">education.record</field>
+    <field name="arch" type="xml">
+      <form string="Education record">
+        <sheet>
+          <h1>
+            <group name="main">
+              <field name="code" readonly="1"/>
+            </group>
+          </h1>
+          <group col="4">
+            <field name="student_id"/>
+            <field name="course_id"/>
+          </group>
+          <group string="Enrollments" name="enrollments">
+            <field name="enrollment_ids" nolabel="1" readonly="1">
+                <tree>
+                  <field name="code"/>
+                  <field name="group_id"/>
+                  <field name="state" />
+                </tree>
+            </field>
+          </group>
+          <group string="Subjects" name="subjects">
+            <field name="record_subject_ids" nolabel="1" readonly="1">
+                <tree>
+                  <field name="subject_id"/>
+                </tree>
+            </field>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_education_record_tree" model="ir.ui.view">
+    <field name="name">view.education.record.tree</field>
+    <field name="model">education.record</field>
+    <field name="arch" type="xml">
+      <tree string="Educaiton record">
+        <field name="code"/>
+        <field name="student_id"/>
+        <field name="course_id"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_education_record_search" model="ir.ui.view">
+    <field name="name">view.education.record.search</field>
+    <field name="model">education.record</field>
+    <field name="arch" type="xml">
+      <search string="records">
+        <field name="code"/>
+        <field name="student_id"/>
+        <field name="course_id"/>
+        <group string="Group By" name="groupby">
+          <filter string="Code" context="{'group_by': 'code'}"/>
+          <filter string="Student" context="{'group_by': 'student_id'}"/>
+          <filter string="Course" context="{'group_by': 'course_id'}"/>
+        </group>
+      </search>
+    </field>
+  </record>
+
+  <record id="education_record_action" model="ir.actions.act_window">
+    <field name="name">Records</field>
+    <field name="res_model">education.record</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+        Click to create a new Record.
+      </p>
+    </field>
+  </record>
+
+  <record id="record_sequence" model="ir.sequence">
+    <field name="name">Record Sequence</field>
+    <field name="code">education.record</field>
+    <field name="prefix">RCD</field>
+    <field name="padding">4</field>
+  </record>
+
+  <!-- <menuitem id="education_record" parent="education_student_root" action="education_record_action" sequence="20"/> -->
+
+</odoo>
