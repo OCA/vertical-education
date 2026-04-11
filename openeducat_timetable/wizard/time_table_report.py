@@ -85,12 +85,12 @@ class SessionReport(models.TransientModel):
         if data["state"] == "student":
             course_id = (
                 data["course_id"][0]
-                if isinstance(data["course_id"], (list, tuple))
+                if isinstance(data["course_id"], list | tuple)
                 else False
             )
             batch_id = (
                 data["batch_id"][0]
-                if isinstance(data["batch_id"], (list, tuple))
+                if isinstance(data["batch_id"], list | tuple)
                 else False
             )
             time_table_ids = self.env["op.session"].search(

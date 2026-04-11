@@ -20,7 +20,6 @@ msgstr ""
 msgid "<b>DATE: </b>"
 msgstr "<b>日期: </b>"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "<b>PRINCIPAL</b>"
 msgstr "<b>校长</b>"
 #. module: openeducat_core
@@ -38,7 +37,6 @@ msgid "<br/>\n"
 msgstr "<br/>\n"
 "                                                    出生年月:"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "<font color=\"white\">.</font>\n"
 "                                            is / was a bonafide student of this school / college\n"
 "                                            studying\n"
@@ -46,7 +44,6 @@ msgid "<font color=\"white\">.</font>\n"
 msgstr "<font color=\"white\">。</font>\n"
 "                                            是这个学校/大学的 bonafide 学生。"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "<strong>Bonafide Certificate</strong>"
 msgstr "<strong>Bonafide 证书</strong>"
 #. module: openeducat_core
@@ -104,8 +101,6 @@ msgstr "活动管理"
 msgid "Address"
 msgstr "地址"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Address Detail"
 msgstr "地址详细信息"
 #. module: openeducat_core
@@ -118,12 +113,10 @@ msgstr "地址类型"
 msgid "Address:"
 msgstr "地址："
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Admission Details"
 msgstr "入场详情"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_res_company_approval_authority
-#: model:ir.ui.view,arch_db:openeducat_core.view_company_form_openeducat_core
 msgid "Approval Authority"
 msgstr "审批权限"
 #. module: openeducat_core
@@ -252,8 +245,6 @@ msgstr "如果此联系人是员工, 请选中此框。"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_city
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_city
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "City"
 msgstr "城市"
 #. module: openeducat_core
@@ -261,7 +252,6 @@ msgstr "城市"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_category_code
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course_code
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_code
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_category_search
 msgid "Code"
 msgstr "代码"
 #. module: openeducat_core
@@ -336,15 +326,12 @@ msgstr "此联系人的退回电子邮件数的计数器"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_country_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_country_id
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Country"
 msgstr "国家"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch_course_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_course_course_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_course_id
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_course_form
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_course_search
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_course_tree
@@ -352,7 +339,6 @@ msgid "Course"
 msgstr "课程"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_course_detail_ids
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Course Details"
 msgstr "课程详情"
 #. module: openeducat_core
@@ -366,8 +352,6 @@ msgid "Courses"
 msgstr "课程"
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.faculty_create_employee_act
-#: model:ir.ui.view,arch_db:openeducat_core.op_faculty_create_employee_view
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 msgid "Create Employee"
 msgstr "创建员工"
 #. module: openeducat_core
@@ -376,19 +360,15 @@ msgid "Create Employee and User of Faculty"
 msgstr "创建员工和教师的用户"
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_wizard_op_faculty
-#: model:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
 msgid "Create User for selected Faculty(s)"
 msgstr "为所选教职员创建用户"
 #. module: openeducat_core
 #: model:ir.model,name:openeducat_core.model_wizard_op_student
-#: model:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
 msgid "Create User for selected Student(s)"
 msgstr "为所选学生创建用户"
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.action_faculty_user_create_view
 #: model:ir.actions.act_window,name:openeducat_core.action_student_user_create_view
-#: model:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
-#: model:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
 msgid "Create Users"
 msgstr "创建用户"
 #. module: openeducat_core
@@ -465,7 +445,6 @@ msgstr "你在这个债务人的信任程度"
 msgid "Display Name"
 msgstr "显示名称"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.aboutus_openeducat
 msgid "Education is an integral part of our society -- it enables\n"
 "                        individuals, community and other section of the society to\n"
 "                        endure the hardships of life with knowledge and intellect.\n"
@@ -473,7 +452,6 @@ msgid "Education is an integral part of our society -- it enables\n"
 "                        and other acts of freedom in the software related field."
 msgstr "教育是社会不可分割的一部分, 它使个人、社区和社会的其他部分能够以知识和智慧来忍受生活的艰辛。                        另一方面, 开源在软件相关领域充当教育和其他自由行为的燃料。"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Educational"
 msgstr "教育"
 #. module: openeducat_core
@@ -505,7 +483,6 @@ msgid "Employee"
 msgstr "员工"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch_end_date
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
 msgid "End Date"
 msgstr "结束日期"
 #. module: openeducat_core
@@ -515,7 +492,6 @@ msgid "End Date cannot be set before             Start Date."
 msgstr "结束日期不能在开始日期之前设置。"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course_evaluation_type
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_course_search
 msgid "Evaluation Type"
 msgstr "评估类型"
 #. module: openeducat_core
@@ -527,9 +503,6 @@ msgstr "评估类型"
 msgid "Faculties"
 msgstr "院 系"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.op_faculty_user_create_view
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_search
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_tree
 #: model:res.groups,name:openeducat_core.group_op_faculty
 msgid "Faculty"
@@ -550,8 +523,6 @@ msgstr "传真"
 msgid "Female"
 msgstr "女性"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "First Name"
 msgstr "名字"
 #. module: openeducat_core
@@ -611,11 +582,6 @@ msgstr "一般管理"
 msgid "Grade Weightage"
 msgstr "等级比重"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_category_search
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_course_search
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_search
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_search
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
 msgid "Group By..."
 msgstr "分组通过..。"
@@ -629,7 +595,6 @@ msgstr "有不甘条目"
 msgid "Helps you manage your institutes different-different users."
 msgstr "帮助您管理您的学院不同-不同的用户。"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "His / Her birthday as recorded in the General Register of\n"
 "                                            the\n"
 "                                            school / collage is"
@@ -683,7 +648,6 @@ msgstr "如果在系统中加载选定的语言, 则与此联系人相关的所�
 msgid "Image"
 msgstr "图像"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_company_form_openeducat_core
 msgid "Institute Detail"
 msgstr "学院简介"
 #. module: openeducat_core
@@ -736,12 +700,9 @@ msgstr "日记项目"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_lang
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_lang
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_search
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_search
 msgid "Language"
 msgstr "语言"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.kanban_view_faculty
 msgid "Language:"
 msgstr "语言："
 #. module: openeducat_core
@@ -765,8 +726,6 @@ msgstr "上次修改时间"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_last_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_last_name
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Last Name"
 msgstr "姓氏"
 #. module: openeducat_core
@@ -819,7 +778,6 @@ msgstr "最新发票和付款匹配日期"
 msgid "Login"
 msgstr "登录"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "Mail:"
 msgstr "邮件："
 #. module: openeducat_core
@@ -850,8 +808,6 @@ msgstr "消息"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_middle_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_middle_name
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Middle Name"
 msgstr "中间名"
 #. module: openeducat_core
@@ -860,7 +816,6 @@ msgstr "中间名"
 msgid "Mobile"
 msgstr "移动"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.kanban_view_faculty
 msgid "Mobile:"
 msgstr "移动："
 #. module: openeducat_core
@@ -874,14 +829,11 @@ msgstr "我的仪表板"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_name
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_name
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_category_search
 msgid "Name"
 msgstr "名字"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_nationality
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_nationality
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_search
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_search
 msgid "Nationality"
 msgstr "国籍"
 #. module: openeducat_core
@@ -924,7 +876,6 @@ msgstr "O ve"
 msgid "OpenEduCat"
 msgstr "OpenEduCat"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.aboutus_openeducat
 #: model:ir.ui.view,arch_db:openeducat_core.footer_default_openeducat
 msgid "OpenEduCat is a product developed by OpenEduCat Inc\n"
 "                        Solutions Pvt. Ltd., an expert company focusing in providing\n"
@@ -946,8 +897,6 @@ msgstr "退出"
 msgid "Other"
 msgstr "其他"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.aboutus_openeducat
-#: model:ir.ui.view,arch_db:openeducat_core.footer_default_openeducat
 msgid "Our products apply unique and powerful technology that\n"
 "                        helps educational institutes manage, connect, communicate and\n"
 "                        collaborate effectively among students, teachers and back\n"
@@ -955,7 +904,6 @@ msgid "Our products apply unique and powerful technology that\n"
 msgstr "我们的产品应用独特和强大的技术, 帮助教育机构管理, 连接, 沟通和合作, 有效地在学生, 教师和后台办公室。"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_course_parent_id
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_course_search
 msgid "Parent Course"
 msgstr "家长课程"
 #. module: openeducat_core
@@ -974,8 +922,6 @@ msgstr "伙伴"
 msgid "Payable Limit"
 msgstr "应付限额"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Personal Information"
 msgstr "个人信息"
 #. module: openeducat_core
@@ -984,7 +930,6 @@ msgstr "个人信息"
 msgid "Phone"
 msgstr "电话"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "Phone:"
 msgstr "电话："
 #. module: openeducat_core
@@ -1092,14 +1037,11 @@ msgid "Small-sized image of this contact. It is automatically resized as a 64x64
 msgstr "此联系人的小尺寸图像。它将自动调整为64x64px 图像, 并保留纵横比。在需要小图像的地方使用此字段。"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_batch_start_date
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_batch_search
 msgid "Start Date"
 msgstr "开始日期"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_state_id
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_state_id
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "State"
 msgstr "状态"
 #. module: openeducat_core
@@ -1108,21 +1050,15 @@ msgstr "状态"
 msgid "Street"
 msgstr "街"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Street..."
 msgstr "街。。。"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_street2
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_street2
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Street2"
 msgstr "Street2"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_course_student_id
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_search
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_student_tree
 #: model:res.groups,name:openeducat_core.group_op_student
 msgid "Student"
@@ -1148,12 +1084,10 @@ msgstr "学生 IdCard"
 #: model:ir.ui.menu,name:openeducat_core.menu_op_student_root
 #: model:ir.ui.menu,name:openeducat_core.menu_op_student_sub
 #: model:ir.ui.menu,name:openeducat_core.menu_op_student_sub_student
-#: model:ir.ui.view,arch_db:openeducat_core.op_student_user_create_view
 msgid "Students"
 msgstr "学生"
 #. module: openeducat_core
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
 #: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_tree
 msgid "Subject"
 msgstr "主题"
@@ -1169,8 +1103,6 @@ msgstr "主题 (s)"
 #. module: openeducat_core
 #: model:ir.actions.act_window,name:openeducat_core.act_open_op_subject_view
 #: model:ir.ui.menu,name:openeducat_core.menu_op_subject_sub
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_course_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
 msgid "Subjects"
 msgstr "科目"
 #. module: openeducat_core
@@ -1194,7 +1126,6 @@ msgstr "纳税标识号。如果公司受到税收的话, 请填写。使用的�
 msgid "OpenEduCat Inc"
 msgstr "技术 Receptives"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.aboutus_openeducat
 msgid "OpenEduCat Inc understand both Open Source and Educational\n"
 "                        needs of the society and have come up their novel approach\n"
 "                        for educational institute -- a full open source ERP solution,\n"
@@ -1203,7 +1134,6 @@ msgid "OpenEduCat Inc understand both Open Source and Educational\n"
 "                        collaborative efforts."
 msgstr "OpenEduCat Inc 了解社会的开源和教育需求, 提出了教育学院的新途径--全面开源 ERP 解决方案, 提供与管理和其他合作努力有关的各种活动的管理研究所。"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.kanban_view_faculty
 msgid "Tel:"
 msgstr "电话："
 #. module: openeducat_core
@@ -1246,7 +1176,6 @@ msgstr "此帐户将被用作当前合作伙伴的应收款帐户, 而不是默�
 msgid "This field holds the image used as avatar for this contact, limited to 1024x1024px"
 msgstr "此字段将图像用作此联系人的头像, 仅限于1024x1024px"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "This is to certify that"
 msgstr "这是为了证明"
 #. module: openeducat_core
@@ -1277,12 +1206,9 @@ msgstr "时区偏移量"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_faculty_title
 #: model:ir.model.fields,field_description:openeducat_core.field_op_student_title
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "Title"
 msgstr "标题"
 #. module: openeducat_core
-#: model:ir.actions.act_window,help:openeducat_core.open_board_faculty
 msgid "To add your first report into this dashboard, go to any\n"
 "                        menu, switch to list or graph view, and click\n"
 "                        <i>'Add to\n"
@@ -1294,7 +1220,6 @@ msgstr "要将第一个报表添加到此仪表板中, 请转到任何菜单, �
 "                        </i>\n"
 "                        中的扩展的搜索选项。"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "To the best of my knowledge, he / she bears a Good Moral\n"
 "                                            character."
 msgstr "根据我的知识, 他/她有很好的品德。"
@@ -1325,7 +1250,6 @@ msgid "Total amount you have to pay to this vendor."
 msgstr "您必须向此供应商支付的总金额。"
 #. module: openeducat_core
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_type
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_subject_search
 msgid "Type"
 msgstr "类型"
 #. module: openeducat_core
@@ -1348,7 +1272,6 @@ msgstr "用于登录系统"
 msgid "Used to select automatically the right address according to the context in sales and purchases documents."
 msgstr "用于根据销售和采购单据中的上下文自动选择正确的地址。"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "User"
 msgstr "用户"
 #. module: openeducat_core
@@ -1391,18 +1314,13 @@ msgstr "网站"
 msgid "Website of Partner or Company"
 msgstr "合作伙伴或公司网站"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.report_student_bonafide
 msgid "Year"
 msgstr "年"
 #. module: openeducat_core
-#: model:ir.actions.act_window,help:openeducat_core.open_board_faculty
-#: model:ir.actions.act_window,help:openeducat_core.open_board_student
 msgid "You can filter and group data before inserting into the\n"
 "                        dashboard using the search options."
 msgstr "在使用搜索选项插入仪表板之前, 可以对数据进行筛选和分组。"
 #. module: openeducat_core
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_faculty_form
-#: model:ir.ui.view,arch_db:openeducat_core.view_op_student_form
 msgid "ZIP"
 msgstr "Zip"
 #. module: openeducat_core

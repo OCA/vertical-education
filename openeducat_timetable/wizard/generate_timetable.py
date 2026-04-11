@@ -115,12 +115,10 @@ class GenerateSession(models.TransientModel):
                 curr_date = start_date + datetime.timedelta(n)
                 for line in session.time_table_lines:
                     if int(line.day) == curr_date.weekday():
-                        session_start_time = "%s:00" % "{:02.0f}:{:02.0f}".format(
-                            *divmod(line.session_start_time * 60, 60)
-                        )
-                        session_end_time = "%s:00" % "{:02.0f}:{:02.0f}".format(
-                            *divmod(line.session_end_time * 60, 60)
-                        )
+                        h_s, m_s = divmod(line.session_start_time * 60, 60)
+                        session_start_time = f"{int(h_s):02d}:{int(m_s):02d}:00"
+                        h_e, m_e = divmod(line.session_end_time * 60, 60)
+                        session_end_time = f"{int(h_e):02d}:{int(m_e):02d}:00"
                         final_start_date = datetime.datetime.strptime(
                             curr_date.strftime("%Y-%m-%d ") + session_start_time,
                             "%Y-%m-%d %H:%M:%S",

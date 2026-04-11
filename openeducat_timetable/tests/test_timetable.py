@@ -36,7 +36,7 @@ class TestFacultySession(TestTimetableCommon):
             )
         info("  Details Of Faculty Sessions:.....")
         for record in faculty:
-            info("      Sessions : %s" % record.session_ids.name)
+            info(f"      Sessions : {record.session_ids.name}")
 
 
 class TestTimetable(TestTimetableCommon):

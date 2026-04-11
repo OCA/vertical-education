@@ -483,7 +483,7 @@ class OpAdmission(models.Model):
         if not account_id:
             raise UserError(
                 _(
-                    f'There is no income account defined for this product: '
+                    f"There is no income account defined for this product: "
                     f'"{product.name}". '
                     "You may have to install a chart of account from Accounting "
                     "app, settings menu."
