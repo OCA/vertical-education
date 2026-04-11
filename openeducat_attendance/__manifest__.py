@@ -26,7 +26,7 @@
     "sequence": 3,
     "summary": "Manage Attendances",
     "complexity": "easy",
-    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy",
+    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy IAIN Parepare",
     "website": "https://github.com/OCA/vertical-education",
     "depends": ["openeducat_timetable"],
     "data": [

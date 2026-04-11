@@ -26,7 +26,7 @@
     "sequence": 1,
     "summary": "Manage Students, Faculties and Education Institute",
     "complexity": "easy",
-    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy",
+    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy IAIN Parepare",
     "website": "https://github.com/OCA/vertical-education",
     "depends": ["board", "hr", "web", "website"],
     "data": [

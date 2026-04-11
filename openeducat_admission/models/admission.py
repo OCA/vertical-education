@@ -233,10 +233,9 @@ class OpAdmission(models.Model):
                 if years < self.register_id.minimum_age_criteria:
                     raise ValidationError(
                         _(
-                            "Not Eligible for Admission minimum "
-                            "required age is :"
-                            " %s " % self.register_id.minimum_age_criteria
+                            "Not Eligible for Admission minimum required age is : %s"
                         )
+                        % self.register_id.minimum_age_criteria
                     )
 
     @api.constrains("name")
@@ -336,9 +335,7 @@ class OpAdmission(models.Model):
                     ]
                 )
                 if not total_admission < record.register_id.max_count:
-                    msg = "Max Admission In Admission Register :- (%s)" % (
-                        record.register_id.max_count
-                    )
+                    msg = f"Max Admission In Admission Register :- ({record.register_id.max_count})"
                     raise ValidationError(_(msg))
             if not record.student_id:
                 vals = record.get_student_vals()
@@ -483,11 +480,10 @@ class OpAdmission(models.Model):
         if not account_id:
             raise UserError(
                 _(
-                    'There is no income account defined for this product: "%s". \
-                   You may have to install a chart of account from Accounting \
-                   app, settings menu.'
+                    f'There is no income account defined for this product: "{product.name}". '
+                    'You may have to install a chart of account from Accounting '
+                    'app, settings menu.'
                 )
-                % (product.name,)
             )
         if self.fees <= 0.00:
             raise UserError(_("The value of the deposit amount must be positive."))
