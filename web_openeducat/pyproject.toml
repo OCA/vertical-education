@@ -1,3 +1,10 @@
-[build-system]
-requires = ["whool"]
-build-backend = "whool.buildapi"
+[project]
+name = \"web_openeducat\"
+version = \"18.0.1.0.0\"
+description = \"Web OpenEduCat\"
+authors = [{ name = \"OpenEduCat Inc, Odoo Community Association (OCA)\" }]
+license = { text = \"AGPL-3\" }
+dependencies = [\"website\"]
+
+[tool.whool]
+addon = true
