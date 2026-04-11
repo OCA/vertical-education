@@ -10,7 +10,7 @@ class OpSubjectRegistration(models.Model):
     course_id = fields.Many2one('op.course', required=True, tracking=True)
     batch_id = fields.Many2one('op.batch', tracking=True)
     compulsory_subject_ids = fields.Many2many('op.subject', 'subject_compulsory_rel', 'register_id', 'subject_id', string='Compulsory Subjects', readonly=True)
-    elective_subject_ids = fields.Many2many('op.subject', string='Elective Subjects')
+    elective_subject_ids = fields.Many2many('op.subject')
     state = fields.Selection([('draft', 'Draft'), ('submitted', 'Submitted'), ('approved', 'Approved'), ('rejected', 'Rejected')], default='draft', copy=False, tracking=True)
     max_unit_load = fields.Float('Maximum Unit Load', tracking=True)
     min_unit_load = fields.Float('Minimum Unit Load', tracking=True)
