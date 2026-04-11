@@ -124,10 +124,10 @@ class IssueMedia(models.TransientModel):
                     )
             else:
                 raise UserError(
-                    _("Maximum Number of media allowed for %s is : %s")
-                    % (
-                        media.student_id.name,
-                        media.library_card_id.library_card_type_id.allow_media,
-                    )
+                    _("Maximum Number of media allowed for %(student)s is : %(max)s")
+                    % {
+                        "student": media.student_id.name,
+                        "max": media.library_card_id.library_card_type_id.allow_media,
+                    }
                 )
             return value

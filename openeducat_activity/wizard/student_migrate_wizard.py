@@ -124,7 +124,8 @@ class StudentMigrate(models.TransientModel):
                                 "type_id": act_type.id,
                                 "date": self.date,
                                 "description": _(
-                                    f"Migration from {record.course_from_id.name} to {record.course_to_id.name}"
+                                    f"Migration from {record.course_from_id.name} "
+                                    f"to {record.course_to_id.name}"
                                 ),
                             }
                             self.env["op.activity"].create(activity_vals)
