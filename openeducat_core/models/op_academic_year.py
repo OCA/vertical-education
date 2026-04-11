@@ -143,7 +143,11 @@ class OpAcademicYear(models.Model):
             s_from, s_to = sub_term.term_start_date, sub_term.term_end_date
             s_day = ((s_to - s_from).days + 1) / 2
             quarters = [
-                {"name": f"Quarter {num + 1}", "f": s_from, "t": s_from + timedelta(days=s_day)},
+                {
+            "name": f"Quarter {num + 1}",
+            "f": s_from,
+            "t": s_from + timedelta(days=s_day)
+        },
                 {
                     "name": f"Quarter {num + 2}",
                     "f": s_from + timedelta(days=s_day + 1),
@@ -207,10 +211,21 @@ class OpAcademicYear(models.Model):
             })
 
     def _handle_final_year(self):
-        self.env["op.academic.term"].create({"name": "Semester 1", "term_start_date": self.start_date, "term_end_date": self.end_date, "academic_year_id": self.id})
+        self.env["op.academic.term"].create({
+            "name": "Semester 1",
+            "term_start_date": self.start_date,
+            "term_end_date": self.end_date,
+            "academic_year_id": self.id
+        })
         for sub_term in self.academic_term_ids:
             day = ((sub_term.term_end_date - sub_term.term_start_date).days + 1) / 4
             for i in range(4):
                 f = sub_term.term_start_date + timedelta(days=i * (day + 1))
                 t = f + timedelta(days=day) if i < 3 else sub_term.term_end_date
-                self.env["op.academic.term"].create({"name": f"Quarter {i + 1}", "term_start_date": f, "term_end_date": t, "academic_year_id": self.id, "parent_term": sub_term.id})
+                self.env["op.academic.term"].create({
+                    "name": f"Quarter {i + 1}",
+                    "term_start_date": f,
+                    "term_end_date": t,
+                    "academic_year_id": self.id,
+                    "parent_term": sub_term.id
+                })
