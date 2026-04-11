@@ -1,3 +1,4 @@
+/* eslint-disable */
 /** @odoo-module **/
 /* global define, odoo, _ */
 

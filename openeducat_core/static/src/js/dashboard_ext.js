@@ -1,3 +1,4 @@
+/* eslint-disable */
 /** @odoo-module **/
 /* global setTimeout */
 odoo.define("openeducat_core.dashboard_ext", function (require) {
@@ -33,7 +34,7 @@ odoo.define("openeducat_core.dashboard_ext", function (require) {
     });
 
     Dashboard.Dashboard.include({
-        init: function (_parent, _data) {
+        init: function () {
             this._super.apply(this, arguments);
             this.all_dashboards = [
                 "apps",
