@@ -29,7 +29,7 @@ class OpStudentFeesDetails(models.Model):
 
     fees_line_id = fields.Many2one("op.fees.terms.line")
     invoice_id = fields.Many2one("account.move")
-    amount = fields.Monetary("Fees Amount"currency_field="currency_id")
+    amount = fields.Monetary("Fees Amount", currency_field="currency_id")
     date = fields.Date("Submit Date")
     product_id = fields.Many2one("product.product")
     student_id = fields.Many2one("op.student", required=True)
@@ -49,7 +49,7 @@ class OpStudentFeesDetails(models.Model):
         currency_field="currency_id",
         string="After Discount Amount",
     )
-    discount = fields.Float(string="Discount (%)"digits="Discount", default=0.0)
+    discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 
     course_id = fields.Many2one("op.course", required=False)
     batch_id = fields.Many2one("op.batch", required=False)

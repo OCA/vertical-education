@@ -92,7 +92,7 @@ class OpAdmission(models.Model):
     is_student = fields.Boolean("Is Already Student")
     fees_term_id = fields.Many2one("op.fees.terms")
     active = fields.Boolean(default=True)
-    discount = fields.Float(string="Discount (%)"digits="Discount", default=0.0)
+    discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 
     fees_start_date = fields.Date()
     company_id = fields.Many2one("res.company", string="Company", default=lambda self: self.env.user.company_id
