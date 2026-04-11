@@ -74,7 +74,7 @@ class OpResultTemplate(models.Model):
         for record in self:
             marksheet_reg_id = self.env["op.marksheet.register"].create(
                 {
-                    "name": "Mark Sheet for %s" % record.exam_session_id.name,
+                    "name": f"Mark Sheet for {record.exam_session_id.name}",
                     "exam_session_id": record.exam_session_id.id,
                     "generated_date": fields.Date.today(),
                     "generated_by": self.env.uid,

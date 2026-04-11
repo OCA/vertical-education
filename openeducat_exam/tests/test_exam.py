@@ -50,7 +50,6 @@ class TestExamAttendees(TestExamCommon):
     def test_attendees(self):
         attendees = self.op_exam_attendees.search([])
         for _ in attendees:
-            attendees._sql_constraints
 
             for x in attendees:
                 x.onchange_exam()
@@ -118,8 +117,8 @@ class TestMarksheetline(TestExamCommon):
             data._check_marks()
             data._compute_total_marks()
             data._compute_percentage()
-            data._compute_grade()
-            data._compute_status()
+            data._compute_grade()()
+            data._compute_status()()
 
 
 class TestMarksheetRegister(TestExamCommon):
@@ -150,8 +149,8 @@ class TestResultLine(TestExamCommon):
         for data in result_line:
             logging.info(f"             {data.exam_id.name}")
 
-            data._compute_grade
-            data._compute_status
+            data._compute_grade()
+            data._compute_status()
             data.unlink()
 
 

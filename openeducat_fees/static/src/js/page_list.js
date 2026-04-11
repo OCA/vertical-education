@@ -1,8 +1,6 @@
-/* eslint-env es6 */
-/* eslint-disable no-undef */
+/** @odoo-module **/
 /* global define, odoo, _ */
 
-/** @odoo-module **/
 
 import {_t} from "@web/core/l10n/translation";
 import {registry} from "@web/core/registry";

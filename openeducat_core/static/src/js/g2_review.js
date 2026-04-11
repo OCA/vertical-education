@@ -1,8 +1,6 @@
-/* eslint-env es6 */
-/* eslint-disable no-undef */
+/** @odoo-module **/
 /* global define, odoo, _ */
 
-/** @odoo-module **/
 
 import {session} from "@web/session";
 import {Dialog} from "@web/core/dialog/dialog";

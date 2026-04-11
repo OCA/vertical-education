@@ -1,8 +1,6 @@
-/* eslint-env es6 */
-/* eslint-disable no-undef */
+/** @odoo-module **/
 /* global define, odoo, _ */
 
-/** @odoo-module **/
 
 import {CharField, charField} from "@web/views/fields/char/char_field";
 import {registry} from "@web/core/registry";

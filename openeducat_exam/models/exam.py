@@ -168,7 +168,7 @@ class OpExam(models.Model):
                 raise ValidationError(
                     _(
                         "The exam time overlaps with an existing exam for the same "
-                        "subject : %s" % ", ".join(existing_exams.mapped("name"))
+                        f"subject : {', '.join(existing_exams.mapped('name'))}"
                     )
                 )
 
