@@ -1,86 +1,52 @@
-###############################################################################
-#
-#    OpenEduCat Inc
-#    Copyright (C) 2009-TODAY OpenEduCat Inc(<https://www.openeducat.org>).
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Lesser General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Lesser General Public License for more details.
-#
-#    You should have received a copy of the GNU Lesser General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-###############################################################################
-
 import time
 from logging import info
-
 from .test_attendance_common import TestAttendanceCommon
 
-
 class TestAttendanceRegister(TestAttendanceCommon):
+
     def setUp(self):
         super().setUp()
 
     def test_case_attendance_register(self):
         register = self.op_attendance_register.search([])
         for record in register:
-            info(f"      Attendance Register : {record.name}")
-            info(f"      Course : {record.course_id.name}")
-            info(f"      Code : {record.code}")
-
+            info(f'      Attendance Register : {record.name}')
+            info(f'      Course : {record.course_id.name}')
+            info(f'      Code : {record.code}')
 
 class TestAttendanceSheet(TestAttendanceCommon):
+
     def setUp(self):
         super().setUp()
 
     def test_case_attendance_sheet(self):
-        sheet = self.op_attendance_sheet.create(
-            {
-                "name": "AS",
-                "attendance_date": time.strftime("%Y-%m-01"),
-                "register_id": self.env.ref(
-                    "openeducat_attendance." "op_attendance_register_1"
-                ).id,
-            }
-        )
-        info("  Details Of Attendance Sheet:.....")
+        sheet = self.op_attendance_sheet.create({'name': 'AS', 'attendance_date': time.strftime('%Y-%m-01'), 'register_id': self.env.ref('openeducat_attendance.op_attendance_register_1').id})
+        info('  Details Of Attendance Sheet:.....')
         for record in sheet:
             record.attendance_draft()
             record.attendance_start()
             record.attendance_done()
             record.attendance_cancel()
 
-
 class TestAttendanceLine(TestAttendanceCommon):
+
     def setUp(self):
         super().setUp()
 
     def test_case_attendance_line(self):
         line = self.op_attendance_line.search([])
-        info("  Details Of Attendance Lines:.....")
+        info('  Details Of Attendance Lines:.....')
         for record in line:
-            info(f"      Attendance Sheet : {record.attendance_id.name}")
-            info(f"      Student : {record.student_id.name}")
-            info(f"      Register : {record.register_id.name}")
-            info(f"      Present : {record.present}")
-
+            info(f'      Attendance Sheet : {record.attendance_id.name}')
+            info(f'      Student : {record.student_id.name}')
+            info(f'      Register : {record.register_id.name}')
+            info(f'      Present : {record.present}')
 
 class TestAttendanceWizard(TestAttendanceCommon):
+
     def setUp(self):
         super().setUp()
 
     def test_case_attendance_wizard(self):
-        student = self.op_attendance_wizard.create(
-            {
-                "from_date": time.strftime("%Y-%m-01"),
-                "to_date": time.strftime("%Y-%m-01"),
-            }
-        )
+        student = self.op_attendance_wizard.create({'from_date': time.strftime('%Y-%m-01'), 'to_date': time.strftime('%Y-%m-01')})
         student.print_report()

@@ -1,31 +1,9 @@
-###############################################################################
-#
-#    OpenEduCat Inc
-#    Copyright (C) 2009-TODAY OpenEduCat Inc(<https://www.openeducat.org>).
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Lesser General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Lesser General Public License for more details.
-#
-#    You should have received a copy of the GNU Lesser General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-###############################################################################
-
 import time
-
 from odoo import api, fields, models
 
-
 class ReportMarksheetReport(models.AbstractModel):
-    _name = "report.openeducat_exam.report_marksheet_report"
-    _description = "Exam Marksheet Report"
+    _name = 'report.openeducat_exam.report_marksheet_report'
+    _description = 'Exam Marksheet Report'
 
     def get_objects(self, objects):
         obj = []
@@ -41,7 +19,7 @@ class ReportMarksheetReport(models.AbstractModel):
 
     def get_date(self, date):
         date1 = fields.Date.to_date(date)
-        return str(date1.month) + " / " + str(date1.year)
+        return str(date1.month) + ' / ' + str(date1.year)
 
     def get_total(self, result_line):
         total = [x.exam_id.total_marks for x in result_line]
@@ -49,14 +27,6 @@ class ReportMarksheetReport(models.AbstractModel):
 
     @api.model
     def _get_report_values(self, docids, data=None):
-        docs = self.env["op.marksheet.line"].browse(docids)
-        docargs = {
-            "doc_model": "op.marksheet.line",
-            "docs": docs,
-            "time": time,
-            "get_objects": self.get_objects,
-            "get_lines": self.get_lines,
-            "get_date": self.get_date,
-            "get_total": self.get_total,
-        }
+        docs = self.env['op.marksheet.line'].browse(docids)
+        docargs = {'doc_model': 'op.marksheet.line', 'docs': docs, 'time': time, 'get_objects': self.get_objects, 'get_lines': self.get_lines, 'get_date': self.get_date, 'get_total': self.get_total}
         return docargs
