@@ -33,16 +33,16 @@ class IssueMedia(models.TransientModel):
     _inherit = "mail.thread"
     _description = "Issue Media Wizard"
 
-    media_id = fields.Many2one("op.media", "Media", required=True)
-    media_unit_id = fields.Many2one("op.media.unit", "Media Unit", required=True)
+    media_id = fields.Many2one("op.media", required=True)
+    media_unit_id = fields.Many2one("op.media.unit", required=True)
     type = fields.Selection(
         [("student", "Student"), ("faculty", "Faculty")],
         "Type",
         default="student",
         required=True,
     )
-    student_id = fields.Many2one("op.student", "Student")
-    faculty_id = fields.Many2one("op.faculty", "Faculty")
+    student_id = fields.Many2one("op.student")
+    faculty_id = fields.Many2one("op.faculty")
     library_card_id = fields.Many2one("op.library.card", required=True)
     issued_date = fields.Date(required=True, default=fields.Date.today())
     return_date = fields.Date(required=True)

@@ -25,10 +25,7 @@
     "sequence": 3,
     "summary": "Manage TimeTables",
     "complexity": "easy",
-    "author": (
-        "OpenEduCat Inc, Odoo Community Association (OCA), "
-        "Sufyaldy IAIN Parepare"
-    ),
+    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy",
     "website": "https://github.com/OCA/vertical-education",
     "depends": ["openeducat_classroom"],
     "data": [

@@ -26,10 +26,7 @@
     "sequence": 3,
     "summary": "Manage Classroom",
     "complexity": "easy",
-    "author": (
-        "OpenEduCat Inc, Odoo Community Association (OCA), "
-        "Sufyaldy IAIN Parepare"
-    ),
+    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy",
     "website": "https://github.com/OCA/vertical-education",
     "depends": ["openeducat_core", "openeducat_facility", "product"],
     "data": [

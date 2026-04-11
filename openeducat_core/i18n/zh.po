@@ -1434,3 +1434,4 @@ msgstr "学生"
 #: model:ir.model,name:openeducat_core.model_op_subject
 msgid "op.subject"
 msgstr "作品主题"
+

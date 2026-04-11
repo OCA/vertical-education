@@ -309,10 +309,12 @@ class OpAdmission(models.Model):
                                 "batch_id": student.batch_id
                                 and student.batch_id.id
                                 or False,
-                                "academic_years_id": student.register_id.academic_years_id.id
-                                or False,
-                                "academic_term_id": student.register_id.academic_term_id.id
-                                or False,
+                                "academic_years_id": (
+                                    student.register_id.academic_years_id.id
+                                ),
+                                "academic_term_id": (
+                                    student.register_id.academic_term_id.id
+                                ),
                                 "fees_term_id": student.fees_term_id.id,
                                 "fees_start_date": student.fees_start_date,
                                 "product_id": student.register_id.product_id.id,
