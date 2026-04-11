@@ -33,37 +33,34 @@ class OpAdmission(models.Model):
     _description = "Admission"
     _order = "id DESC"
 
-    name = fields.Char("Name", required=True, translate=True)
-    first_name = fields.Char("First Name", required=True, translate=True)
-    middle_name = fields.Char("Middle Name", translate=True)
-    last_name = fields.Char("Last Name", required=True, translate=True)
+    name = fields.Char(required=True, translate=True)
+    first_name = fields.Char(required=True, translate=True)
+    middle_name = fields.Char(translate=True)
+    last_name = fields.Char(required=True, translate=True)
     title = fields.Many2one("res.partner.title", "Title")
-    application_number = fields.Char(
-        "Application Number", size=16, copy=False, readonly=True, store=True
+    application_number = fields.Char(size=16, copy=False, readonly=True, store=True
     )
-    admission_date = fields.Date("Admission Date", copy=False)
-    application_date = fields.Datetime(
-        "Application Date",
-        required=True,
+    admission_date = fields.Date(copy=False)
+    application_date = fields.Datetime(required=True,
         copy=False,
         default=lambda self: fields.Datetime.now(),
     )
-    birth_date = fields.Date("Birth Date", required=True)
+    birth_date = fields.Date(required=True)
     course_id = fields.Many2one("op.course", "Course", required=True)
     batch_id = fields.Many2one("op.batch", "Batch", required=False)
-    street = fields.Char("Street", size=256)
-    street2 = fields.Char("Street2", size=256)
-    phone = fields.Char("Phone", size=16)
-    mobile = fields.Char("Mobile", size=16)
-    email = fields.Char("Email", size=256, required=True)
-    city = fields.Char("City", size=64)
-    zip = fields.Char("Zip", size=8)
+    street = fields.Char(size=256)
+    street2 = fields.Char(size=256)
+    phone = fields.Char(size=16)
+    mobile = fields.Char(size=16)
+    email = fields.Char(size=256, required=True)
+    city = fields.Char(size=64)
+    zip = fields.Char(size=8)
     state_id = fields.Many2one(
         "res.country.state", "States", domain="[('country_id', '=', country_id)]"
     )
     country_id = fields.Many2one("res.country", "Country")
-    fees = fields.Float("Fees")
-    image = fields.Image("image")
+    fees = fields.Float()
+    image = fields.Image()
     state = fields.Selection(
         [
             ("draft", "Draft"),
@@ -79,12 +76,12 @@ class OpAdmission(models.Model):
         default="draft",
         tracking=True,
     )
-    due_date = fields.Date("Due Date")
+    due_date = fields.Date()
     prev_institute_id = fields.Char("Previous Institute")
     prev_course_id = fields.Char("Previous Course")
     prev_result = fields.Char("Previous Result", size=256)
-    family_business = fields.Char("Family Business", size=256)
-    family_income = fields.Float("Family Income")
+    family_business = fields.Char(size=256)
+    family_income = fields.Float()
     gender = fields.Selection(
         [("m", "Male"), ("f", "Female")], string="Gender", required=True
     )
@@ -99,7 +96,7 @@ class OpAdmission(models.Model):
     active = fields.Boolean(default=True)
     discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 
-    fees_start_date = fields.Date("Fees Start Date")
+    fees_start_date = fields.Date()
     company_id = fields.Many2one(
         "res.company", string="Company", default=lambda self: self.env.user.company_id
     )

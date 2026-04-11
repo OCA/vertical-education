@@ -75,7 +75,9 @@ class TestFeesTerms(TestFeesCommon):
             {
                 "name": "Library Fees",
                 "code": "LIB_FEE",
-                "line_ids": [(4, self.env.ref("openeducat_fees.op_fees_term_line_6").id)],
+                "line_ids": [
+                    (4, self.env.ref("openeducat_fees.op_fees_term_line_6").id)
+                ],
             }
         )
         info("  Details Of Fees Terms :.....")

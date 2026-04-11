@@ -34,8 +34,8 @@ class OpExamAttendees(models.Model):
         default="present",
         required=True,
     )
-    marks = fields.Integer("Marks")
-    note = fields.Text("Note")
+    marks = fields.Integer()
+    note = fields.Text()
     exam_id = fields.Many2one("op.exam", "Exam", required=True, ondelete="cascade")
     course_id = fields.Many2one(
         "op.course",

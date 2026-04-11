@@ -29,9 +29,9 @@ class OpMediaPurchase(models.Model):
 
     name = fields.Char("Title", size=128, required=True)
     request_no = fields.Char("Request No.", readonly=True, copy=False, default="/")
-    request_date = fields.Date("Request Date", default=fields.Date.today())
+    request_date = fields.Date(default=fields.Date.today())
     author = fields.Char("Author(s)", size=256, required=True, tracking=True)
-    edition = fields.Char("Edition")
+    edition = fields.Char()
     publisher = fields.Char("Publisher(s)", size=256)
     course_ids = fields.Many2one("op.course", "Course", required=True, tracking=True)
     subject_ids = fields.Many2one("op.subject", "Subject", required=True, tracking=True)

@@ -16,9 +16,9 @@ class OpAcademicYear(models.Model):
     _name = "op.academic.year"
     _description = "Academic Year"
 
-    name = fields.Char("Name", required=True)
-    start_date = fields.Date("Start Date", required=True)
-    end_date = fields.Date("End Date", required=True)
+    name = fields.Char(required=True)
+    start_date = fields.Date(required=True)
+    end_date = fields.Date(required=True)
 
     term_structure = fields.Selection(
         [
@@ -65,8 +65,16 @@ class OpAcademicYear(models.Model):
         from_d, to_d = self.start_date, self.end_date
         day = ((to_d - from_d).days + 1) / 2
         res = [
-            {"name": "Semester 1", "from_d": from_d, "to_d": from_d + timedelta(days=day)},
-            {"name": "Semester 2", "from_d": from_d + timedelta(days=day + 1), "to_d": to_d},
+            {
+            "name": "Semester 1",
+            "from_d": from_d,
+            "to_d": from_d + timedelta(days=day),
+        },
+            {
+            "name": "Semester 2",
+            "from_d": from_d + timedelta(days=day + 1),
+            "to_d": to_d,
+        },
         ]
         for term in res:
             self.env["op.academic.term"].create({
@@ -80,8 +88,16 @@ class OpAcademicYear(models.Model):
         from_d, to_d = self.start_date, self.end_date
         day = ((to_d - from_d).days + 1) / 2
         res = [
-            {"name": "Semester 1", "from_d": from_d, "to_d": from_d + timedelta(days=day)},
-            {"name": "Semester 2", "from_d": from_d + timedelta(days=day + 1), "to_d": to_d},
+            {
+            "name": "Semester 1",
+            "from_d": from_d,
+            "to_d": from_d + timedelta(days=day),
+        },
+            {
+            "name": "Semester 2",
+            "from_d": from_d + timedelta(days=day + 1),
+            "to_d": to_d,
+        },
         ]
         num = 0
         for term in res:
@@ -98,8 +114,16 @@ class OpAcademicYear(models.Model):
                 s_from, s_to = sub_term.term_start_date, sub_term.term_end_date
                 s_day = ((s_to - s_from).days + 1) / 2
                 quarters = [
-                    {"name": f"Quarter {num + 1}", "f": s_from, "t": s_from + timedelta(days=s_day)},
-                    {"name": f"Quarter {num + 2}", "f": s_from + timedelta(days=s_day + 1), "t": s_to},
+                    {
+                        "name": f"Quarter {num + 1}",
+                        "f": s_from,
+                        "t": s_from + timedelta(days=s_day),
+                    },
+                    {
+                        "name": f"Quarter {num + 2}",
+                        "f": s_from + timedelta(days=s_day + 1),
+                        "t": s_to,
+                    },
                 ]
                 for q in quarters:
                     self.env["op.academic.term"].create({
@@ -120,7 +144,11 @@ class OpAcademicYear(models.Model):
             s_day = ((s_to - s_from).days + 1) / 2
             quarters = [
                 {"name": f"Quarter {num + 1}", "f": s_from, "t": s_from + timedelta(days=s_day)},
-                {"name": f"Quarter {num + 2}", "f": s_from + timedelta(days=s_day + 1), "t": s_from + timedelta(days=(s_to - s_from).days - 1)},
+                {
+                    "name": f"Quarter {num + 2}",
+                    "f": s_from + timedelta(days=s_day + 1),
+                    "t": s_from + timedelta(days=(s_to - s_from).days - 1),
+                },
                 {"name": f"Final Exam {final}", "f": s_to, "t": s_to},
             ]
             for q in quarters:
@@ -139,7 +167,11 @@ class OpAcademicYear(models.Model):
         day = ((to_d - from_d).days + 1) / 3
         res = [
             {"name": "Semester 1", "f": from_d, "t": from_d + timedelta(days=day)},
-            {"name": "Semester 2", "f": from_d + timedelta(days=day + 1), "t": from_d + timedelta(days=day * 2 + 1)},
+            {
+                "name": "Semester 2",
+                "f": from_d + timedelta(days=day + 1),
+                "t": from_d + timedelta(days=day * 2 + 1),
+            },
             {"name": "Semester 3", "f": from_d + timedelta(days=day * 2 + 2), "t": to_d},
         ]
         for t in res:

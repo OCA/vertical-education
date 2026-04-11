@@ -26,11 +26,9 @@ class StudentAttendance(models.TransientModel):
     _name = "student.attendance"
     _description = "Student Attendance"
 
-    from_date = fields.Date(
-        "From Date", required=True, default=lambda self: fields.Date.today()
+    from_date = fields.Date(required=True, default=lambda self: fields.Date.today()
     )
-    to_date = fields.Date(
-        "To Date", required=True, default=lambda self: fields.Date.today()
+    to_date = fields.Date(required=True, default=lambda self: fields.Date.today()
     )
 
     @api.constrains("from_date", "to_date")

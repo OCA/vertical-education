@@ -31,8 +31,8 @@ class OpExamSession(models.Model):
     course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
     batch_id = fields.Many2one("op.batch", "Batch", required=True, tracking=True)
     exam_code = fields.Char("Exam Session Code", size=16, required=True, tracking=True)
-    start_date = fields.Date("Start Date", required=True, tracking=True)
-    end_date = fields.Date("End Date", required=True, tracking=True)
+    start_date = fields.Date(required=True, tracking=True)
+    end_date = fields.Date(required=True, tracking=True)
     exam_ids = fields.One2many("op.exam", "session_id", "Exam(s)")
     exam_type = fields.Many2one(
         "op.exam.type", "Exam Type", required=True, tracking=True
@@ -94,10 +94,13 @@ class OpExamSession(models.Model):
                 if not_done_exams:
                     raise ValidationError(
                         _(
-                            "You cannot mark the session '%s' as Held because "
-                            "not all exams are Done. Pending exams: %s"
+                            "You cannot mark the session '%(name)s' as Held because "
+                            "not all exams are Done. Pending exams: %(exams)s"
                         )
-                        % (rec.name, ", ".join(not_done_exams.mapped("name")))
+                        % {
+                            "name": rec.name,
+                            "exams": ", ".join(not_done_exams.mapped("name")),
+                        }
                     )
             else:
                 raise ValidationError(

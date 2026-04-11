@@ -22,8 +22,7 @@ class BonafideCertificateWizard(models.TransientModel):
         required=True,
         default="passport",
     )
-    other_purpose = fields.Char(
-        "Other Purpose", help="Specify other purpose if selected"
+    other_purpose = fields.Char(help="Specify other purpose if selected"
     )
 
     @api.model

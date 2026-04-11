@@ -55,12 +55,11 @@ class OpMediaMovement(models.Model):
     library_card_id = fields.Many2one(
         "op.library.card", "Library Card", required=True, tracking=True
     )
-    issued_date = fields.Date(
-        "Issued Date", tracking=True, required=True, default=fields.Date.today()
+    issued_date = fields.Date(tracking=True, required=True, default=fields.Date.today()
     )
     return_date = fields.Date("Due Date", required=True)
-    actual_return_date = fields.Date("Actual Return Date")
-    penalty = fields.Float("Penalty")
+    actual_return_date = fields.Date()
+    penalty = fields.Float()
     partner_id = fields.Many2one("res.partner", "Person", tracking=True)
     reserver_name = fields.Char("Person Name", size=256)
     state = fields.Selection(

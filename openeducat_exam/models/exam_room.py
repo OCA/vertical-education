@@ -26,7 +26,7 @@ class OpExamRoom(models.Model):
     _name = "op.exam.room"
     _description = "Exam Room"
 
-    name = fields.Char("Name", size=256, required=True)
+    name = fields.Char(size=256, required=True)
     classroom_id = fields.Many2one("op.classroom", "Classroom", required=True)
     capacity = fields.Integer(
         "No of Seats", related="classroom_id.capacity", readonly=True

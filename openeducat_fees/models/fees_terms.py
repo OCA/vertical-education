@@ -26,8 +26,8 @@ class OpFeesTermsLine(models.Model):
     _rec_name = "due_days"
     _description = "Fees Details Line"
 
-    due_days = fields.Integer("Due Days")
-    due_date = fields.Date("Due Date")
+    due_days = fields.Integer()
+    due_date = fields.Date()
     value = fields.Float("Value (%)")
     fees_element_line = fields.One2many(
         "op.fees.element", "fees_terms_line_id", "Fees Elements"
@@ -40,14 +40,14 @@ class OpFeesTerms(models.Model):
     _inherit = "mail.thread"
     _description = "Fees Terms For Course"
 
-    name = fields.Char("Name", required=True)
-    active = fields.Boolean("Active", default=True)
+    name = fields.Char(required=True)
+    active = fields.Boolean(default=True)
     fees_terms = fields.Selection(
         [("fixed_days", "Fixed Fees of Days"), ("fixed_date", "Fixed Fees of Dates")],
         string="Term Type",
         default="fixed_days",
     )
-    code = fields.Char("Code", required=True)
+    code = fields.Char(required=True)
     note = fields.Text("Description")
     company_id = fields.Many2one(
         "res.company", "Company", required=True, default=lambda s: s.env.user.company_id
@@ -75,4 +75,4 @@ class OpStudentCourseInherit(models.Model):
     _inherit = "op.student.course"
 
     fees_term_id = fields.Many2one("op.fees.terms", "Fees Term")
-    fees_start_date = fields.Date("Fees Start Date")
+    fees_start_date = fields.Date()

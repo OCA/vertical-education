@@ -33,8 +33,7 @@ class OpMarksheetRegister(models.Model):
     marksheet_line = fields.One2many(
         "op.marksheet.line", "marksheet_reg_id", "Marksheets"
     )
-    generated_date = fields.Date(
-        "Generated Date", required=True, default=fields.Date.today(), tracking=True
+    generated_date = fields.Date(required=True, default=fields.Date.today(), tracking=True
     )
     generated_by = fields.Many2one(
         "res.users",
@@ -50,8 +49,7 @@ class OpMarksheetRegister(models.Model):
         required=True,
         tracking=True,
     )
-    total_pass = fields.Integer(
-        "Total Pass", compute="_compute_total_pass", tracking=True, store=True
+    total_pass = fields.Integer(compute="_compute_total_pass", tracking=True, store=True
     )
     total_failed = fields.Integer(
         "Total Fail", compute="_compute_total_failed", tracking=True, store=True

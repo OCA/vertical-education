@@ -30,13 +30,10 @@ class OpAdmissionRegister(models.Model):
     _description = "Admission Register"
     _order = "id DESC"
 
-    name = fields.Char("Name", required=True, readonly=True)
-    start_date = fields.Date(
-        "Start Date", required=True, readonly=True, default=fields.Date.today()
+    name = fields.Char(required=True, readonly=True)
+    start_date = fields.Date(required=True, readonly=True, default=fields.Date.today()
     )
-    end_date = fields.Date(
-        "End Date",
-        required=False,
+    end_date = fields.Date(required=False,
         readonly=True,
         default=(fields.Date.today() + relativedelta(days=30)),
     )

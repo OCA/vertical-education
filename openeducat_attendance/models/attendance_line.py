@@ -36,10 +36,10 @@ class OpAttendanceLine(models.Model):
         ondelete="cascade",
     )
     student_id = fields.Many2one("op.student", "Student", required=True, tracking=True)
-    present = fields.Boolean("Present", tracking=True)
+    present = fields.Boolean(tracking=True)
     excused = fields.Boolean("Absent Excused", tracking=True)
     absent = fields.Boolean("Absent Unexcused", tracking=True)
-    late = fields.Boolean("Late", tracking=True)
+    late = fields.Boolean(tracking=True)
     course_id = fields.Many2one(
         "op.course",
         "Course",
@@ -54,7 +54,7 @@ class OpAttendanceLine(models.Model):
         store=True,
         readonly=True,
     )
-    remark = fields.Char("Remark", size=256, tracking=True)
+    remark = fields.Char(size=256, tracking=True)
     attendance_date = fields.Date(
         "Date",
         related="attendance_id.attendance_date",

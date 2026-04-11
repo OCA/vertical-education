@@ -26,10 +26,9 @@ class OpLibraryCardType(models.Model):
     _name = "op.library.card.type"
     _description = "Library Card Type"
 
-    name = fields.Char("Name", size=256, required=True)
+    name = fields.Char(size=256, required=True)
     allow_media = fields.Integer("No Of Medias Allowed", default=10, required=True)
-    duration = fields.Integer(
-        "Duration", help="Duration in terms of Number of Lead Days", required=True
+    duration = fields.Integer(help="Duration in terms of Number of Lead Days", required=True
     )
     penalty_amt_per_day = fields.Float("Penalty Amount Per Day", required=True)
 
@@ -49,11 +48,11 @@ class OpLibraryCard(models.Model):
     _description = "Library Card"
 
     partner_id = fields.Many2one("res.partner", "Student/Faculty", required=True)
-    number = fields.Char("Number", size=256, readonly=True)
+    number = fields.Char(size=256, readonly=True)
     library_card_type_id = fields.Many2one(
         "op.library.card.type", "Card Type", required=True
     )
-    issue_date = fields.Date("Issue Date", required=True, default=fields.Date.today())
+    issue_date = fields.Date(required=True, default=fields.Date.today())
     type = fields.Selection(
         [("student", "Student"), ("faculty", "Faculty")],
         "Type",

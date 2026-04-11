@@ -28,7 +28,7 @@ class OpFacilityLine(models.Model):
     _description = "Manage Facility Line"
 
     facility_id = fields.Many2one("op.facility", "Facility", required=True)
-    quantity = fields.Float("Quantity", required=True)
+    quantity = fields.Float(required=True)
 
     @api.constrains("quantity")
     def check_quantity(self):

@@ -25,8 +25,8 @@ class OpMediaType(models.Model):
     _name = "op.media.type"
     _description = "Media Type"
 
-    name = fields.Char("Name", size=64, required=True)
-    code = fields.Char("Code", size=64, required=True)
+    name = fields.Char(size=64, required=True)
+    code = fields.Char(size=64, required=True)
 
     _sql_constraints = [
         (

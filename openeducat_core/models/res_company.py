@@ -24,9 +24,9 @@ from odoo import fields, models
 class ResCompany(models.Model):
     _inherit = "res.company"
 
-    signature = fields.Binary("Signature")
-    accreditation = fields.Text("Accreditation")
-    approval_authority = fields.Text("Approval Authority")
+    signature = fields.Binary()
+    accreditation = fields.Text()
+    approval_authority = fields.Text()
 
 
 class ResUsers(models.Model):

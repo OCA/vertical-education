@@ -38,6 +38,6 @@ class OpActivity(models.Model):
         "op.faculty", string="Faculty", default=lambda self: self._default_faculty()
     )
     type_id = fields.Many2one("op.activity.type", "Activity Type")
-    description = fields.Text("Description")
-    date = fields.Date("Date", default=fields.Date.today())
+    description = fields.Text()
+    date = fields.Date(default=fields.Date.today())
     active = fields.Boolean(default=True)

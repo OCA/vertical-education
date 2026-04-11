@@ -42,7 +42,7 @@ class OpAssignmentSubLine(models.Model):
 
     assignment_id = fields.Many2one("op.assignment", "Assignment", required=True)
     student_id = fields.Many2one("op.student", "Student", required=True)
-    description = fields.Text("Description", tracking=True)
+    description = fields.Text(tracking=True)
     state = fields.Selection(
         [
             ("draft", "Draft"),
@@ -55,14 +55,12 @@ class OpAssignmentSubLine(models.Model):
         default="draft",
         tracking=True,
     )
-    submission_date = fields.Datetime(
-        "Submission Date",
-        readonly=True,
+    submission_date = fields.Datetime(readonly=True,
         default=lambda self: fields.Datetime.now(),
         required=True,
     )
-    marks = fields.Float("Marks", tracking=True)
-    note = fields.Text("Note")
+    marks = fields.Float(tracking=True)
+    note = fields.Text()
     user_id = fields.Many2one("res.users", related="student_id.user_id", string="User")
     faculty_user_id = fields.Many2one(
         "res.users", related="assignment_id.faculty_id.user_id", string="Faculty User"

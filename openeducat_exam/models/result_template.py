@@ -33,9 +33,8 @@ class OpResultTemplate(models.Model):
     evaluation_type = fields.Selection(
         related="exam_session_id.evaluation_type", store=True, tracking=True
     )
-    name = fields.Char("Name", size=254, required=True, tracking=True)
-    result_date = fields.Date(
-        "Result Date", required=True, default=fields.Date.today(), tracking=True
+    name = fields.Char(size=254, required=True, tracking=True)
+    result_date = fields.Date(required=True, default=fields.Date.today(), tracking=True
     )
     grade_ids = fields.Many2many("op.grade.configuration", string="Grade Configuration")
     state = fields.Selection(

@@ -26,8 +26,8 @@ class OpProgram(models.Model):
     _inherit = "mail.thread"
     _description = "OpenEduCat Program"
 
-    name = fields.Char("Name", required=True, translate=True, tracking=True)
-    code = fields.Char("Code", size=16, required=True, translate=True)
+    name = fields.Char(required=True, translate=True, tracking=True)
+    code = fields.Char(size=16, required=True, translate=True)
     max_unit_load = fields.Float("Maximum Unit Load")
     min_unit_load = fields.Float("Minimum Unit Load")
     department_id = fields.Many2one(
@@ -49,4 +49,4 @@ class OpProgramLevel(models.Model):
     _inherit = "mail.thread"
     _description = "OpenEduCat Program level"
 
-    name = fields.Char("Name", required=True, translate=True, tracking=True)
+    name = fields.Char(required=True, translate=True, tracking=True)

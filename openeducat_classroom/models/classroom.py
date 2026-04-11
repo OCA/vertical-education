@@ -25,8 +25,8 @@ class OpClassroom(models.Model):
     _name = "op.classroom"
     _description = "Classroom"
 
-    name = fields.Char("Name", size=16, required=True)
-    code = fields.Char("Code", size=16, required=True)
+    name = fields.Char(size=16, required=True)
+    code = fields.Char(size=16, required=True)
     course_id = fields.Many2one("op.course", "Course")
     batch_id = fields.Many2one("op.batch", "Batch")
     capacity = fields.Integer(string="No of Seats", required=True)

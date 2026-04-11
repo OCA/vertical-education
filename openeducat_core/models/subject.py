@@ -26,9 +26,9 @@ class OpSubject(models.Model):
     _inherit = "mail.thread"
     _description = "Subject"
 
-    name = fields.Char("Name", size=128, required=True)
-    code = fields.Char("Code", size=256, required=True)
-    grade_weightage = fields.Float("Grade Weightage")
+    name = fields.Char(size=128, required=True)
+    code = fields.Char(size=256, required=True)
+    grade_weightage = fields.Float()
     type = fields.Selection(
         [
             ("theory", "Theory"),

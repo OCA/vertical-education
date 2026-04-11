@@ -39,12 +39,12 @@ class OpExam(models.Model):
         "op.batch", "Batch", related="session_id.batch_id", store=True, readonly=True
     )
     subject_id = fields.Many2one("op.subject", "Subject", required=True)
-    exam_code = fields.Char("Exam Code", size=16, required=True)
+    exam_code = fields.Char(size=16, required=True)
     attendees_line = fields.One2many(
         "op.exam.attendees", "exam_id", "Attendees", readonly=True
     )
-    start_time = fields.Datetime("Start Time", required=True)
-    end_time = fields.Datetime("End Time", required=True)
+    start_time = fields.Datetime(required=True)
+    end_time = fields.Datetime(required=True)
     state = fields.Selection(
         [
             ("draft", "Draft"),
@@ -59,10 +59,10 @@ class OpExam(models.Model):
         default="draft",
         tracking=True,
     )
-    note = fields.Text("Note")
+    note = fields.Text()
     responsible_id = fields.Many2many("op.faculty", string="Responsible")
     name = fields.Char("Exam", size=256, required=True)
-    total_marks = fields.Integer("Total Marks", required=True)
+    total_marks = fields.Integer(required=True)
     min_marks = fields.Integer("Passing Marks", required=True)
     active = fields.Boolean(default=True)
     attendees_count = fields.Integer(

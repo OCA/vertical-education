@@ -26,10 +26,10 @@ class GradingAssigment(models.Model):
     _name = "grading.assignment"
     _description = "Grading Assignment"
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char(required=True)
     course_id = fields.Many2one("op.course", "Course", required=True)
     subject_id = fields.Many2one("op.subject", string="Subject")
-    issued_date = fields.Datetime("Issued Date", required=True)
+    issued_date = fields.Datetime(required=True)
     assignment_type = fields.Many2one(
         "grading.assignment.type", string="Assignment Type", required=True
     )
@@ -52,8 +52,8 @@ class OpAssignment(models.Model):
     _inherits = {"grading.assignment": "grading_assignment_id"}
 
     batch_id = fields.Many2one("op.batch", "Batch", required=True)
-    marks = fields.Float("Marks", tracking=True)
-    description = fields.Text("Description", required=True)
+    marks = fields.Float(tracking=True)
+    description = fields.Text(required=True)
     state = fields.Selection(
         [
             ("draft", "Draft"),
@@ -66,7 +66,7 @@ class OpAssignment(models.Model):
         default="draft",
         tracking=True,
     )
-    submission_date = fields.Datetime("Submission Date", required=True, tracking=True)
+    submission_date = fields.Datetime(required=True, tracking=True)
     allocation_ids = fields.Many2many("op.student", string="Allocated To")
     assignment_sub_line = fields.One2many(
         "op.assignment.sub.line", "assignment_id", "Submission"

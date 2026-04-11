@@ -27,7 +27,7 @@ class OpSubjectRegistration(models.Model):
     _description = "Subject Registration Details"
     _inherit = ["mail.thread"]
 
-    name = fields.Char("Name", readonly=True, default="New")
+    name = fields.Char(readonly=True, default="New")
     student_id = fields.Many2one("op.student", "Student", tracking=True)
     course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
     batch_id = fields.Many2one("op.batch", "Batch", tracking=True)

@@ -33,7 +33,7 @@ class OpStudentFeesDetails(models.Model):
     date = fields.Date("Submit Date")
     product_id = fields.Many2one("product.product", "Product")
     student_id = fields.Many2one("op.student", "Student", required=True)
-    fees_factor = fields.Float("Fees Factor")
+    fees_factor = fields.Float()
     state = fields.Selection(
         [("draft", "Draft"), ("invoice", "Invoice Created"), ("cancel", "Cancel")],
         string="Status",

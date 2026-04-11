@@ -27,7 +27,7 @@ class OpAttendanceSheet(models.Model):
     _description = "Attendance Sheet"
     _order = "attendance_date desc"
 
-    name = fields.Char("Name", readonly=True, size=32)
+    name = fields.Char(readonly=True, size=32)
     register_id = fields.Many2one(
         "op.attendance.register", "Register", required=True, tracking=True
     )

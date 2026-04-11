@@ -28,7 +28,7 @@ class StudentMigrate(models.TransientModel):
     _name = "student.migrate"
     _description = "Student Migrate"
 
-    date = fields.Date("Date", required=True, default=fields.Date.today())
+    date = fields.Date(required=True, default=fields.Date.today())
     course_from_id = fields.Many2one("op.course", "From Course", required=True)
     course_to_id = fields.Many2one("op.course", "To Course")
     batch_id = fields.Many2one("op.batch", "To Batch")

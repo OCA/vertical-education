@@ -25,8 +25,8 @@ class OpExamType(models.Model):
     _name = "op.exam.type"
     _description = "Exam Type"
 
-    name = fields.Char("Name", size=256, required=True)
-    code = fields.Char("Code", size=16, required=True)
+    name = fields.Char(size=256, required=True)
+    code = fields.Char(size=16, required=True)
 
     _sql_constraints = [
         (

@@ -33,7 +33,7 @@ class OpStudentCourse(models.Model):
     )
     course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
     batch_id = fields.Many2one("op.batch", "Batch", tracking=True)
-    roll_number = fields.Char("Roll Number", tracking=True)
+    roll_number = fields.Char(tracking=True)
     subject_ids = fields.Many2many("op.subject", string="Subjects")
     academic_years_id = fields.Many2one("op.academic.year", "Academic Year")
     academic_term_id = fields.Many2one("op.academic.term", "Terms")
@@ -77,10 +77,10 @@ class OpStudent(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _inherits = {"res.partner": "partner_id"}
 
-    first_name = fields.Char("First Name", translate=True)
-    middle_name = fields.Char("Middle Name", translate=True)
-    last_name = fields.Char("Last Name", translate=True)
-    birth_date = fields.Date("Birth Date")
+    first_name = fields.Char(translate=True)
+    middle_name = fields.Char(translate=True)
+    last_name = fields.Char(translate=True)
+    birth_date = fields.Date()
     blood_group = fields.Selection(
         [
             ("A+", "A+ve"),
@@ -102,7 +102,7 @@ class OpStudent(models.Model):
     )
     nationality = fields.Many2one("res.country", "Nationality")
     emergency_contact = fields.Many2one("res.partner", "Emergency Contact")
-    visa_info = fields.Char("Visa Info", size=64)
+    visa_info = fields.Char(size=64)
     id_number = fields.Char("ID Card Number", size=64)
     partner_id = fields.Many2one(
         "res.partner", "Partner", required=True, ondelete="cascade"

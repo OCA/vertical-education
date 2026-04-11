@@ -27,5 +27,5 @@ class OpAsset(models.Model):
 
     asset_id = fields.Many2one("op.classroom", "Asset")
     product_id = fields.Many2one("product.product", "Product", required=True)
-    code = fields.Char("Code", size=256)
+    code = fields.Char(size=256)
     product_uom_qty = fields.Float("Quantity", required=True)
