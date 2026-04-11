@@ -35,11 +35,8 @@ class OpMediaPurchase(models.Model):
     publisher = fields.Char("Publisher(s)", size=256)
     course_ids = fields.Many2one("op.course", required=True, tracking=True)
     subject_ids = fields.Many2one("op.subject", required=True, tracking=True)
-    requested_id = fields.Many2one(
-        "res.partner", "Requested By", default=lambda self: self.env.user.partner_id.id
-    )
-    state = fields.Selection(
-        [
+    requested_id = fields.Many2one("res.partner", "Requested By", default=lambda self: self.env.user.partner_id.id)
+    state = fields.Selection([
             ("draft", "Draft"),
             ("request", "Requested"),
             ("reject", "Rejected"),

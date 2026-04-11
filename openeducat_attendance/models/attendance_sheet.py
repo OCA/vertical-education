@@ -28,27 +28,17 @@ class OpAttendanceSheet(models.Model):
     _order = "attendance_date desc"
 
     name = fields.Char(readonly=True, size=32)
-    register_id = fields.Many2one(
-        "op.attendance.register", "Register", required=True, tracking=True
-    )
-    course_id = fields.Many2one(
-        "op.course", related="register_id.course_id", store=True, readonly=True
-    )
-    batch_id = fields.Many2one(
-        "op.batch", "Batch", related="register_id.batch_id", store=True, readonly=True
-    )
+    register_id = fields.Many2one("op.attendance.register", required=True, tracking=True)
+    course_id = fields.Many2one("op.course", related="register_id.course_id", store=True, readonly=True)
+    batch_id = fields.Many2one("op.batch", related="register_id.batch_id", store=True, readonly=True)
     session_id = fields.Many2one("op.session")
-    attendance_date = fields.Date(
-        "Date", required=True, default=lambda self: fields.Date.today(), tracking=True
+    attendance_date = fields.Date("Date", required=True, default=lambda self: fields.Date.today(), tracking=True
     )
-    attendance_line = fields.One2many(
-        "op.attendance.line", "attendance_id", "Attendance Line"
-    )
+    attendance_line = fields.One2many("op.attendance.line", "attendance_id", "Attendance Line")
     faculty_id = fields.Many2one("op.faculty")
     active = fields.Boolean(default=True)
 
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("start", "Attendance Start"),
             ("done", "Attendance Taken"),

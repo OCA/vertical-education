@@ -35,12 +35,8 @@ class StudentMigrate(models.TransientModel):
     optional_sub = fields.Boolean("Optional Subjects")
     student_ids = fields.Many2many("op.student", string="Student(s)", required=True)
     course_completed = fields.Boolean(string="Course Completed?")
-    valid_to_course_ids = fields.Many2many(
-        "op.course", compute="_compute_valid_to_courses", string="Valid To Courses"
-    )
-    student_ids_domain = fields.Many2many(
-        "op.student", compute="_compute_student_domain", store=False
-    )
+    valid_to_course_ids = fields.Many2many("op.course", compute="_compute_valid_to_courses", string="Valid To Courses")
+    student_ids_domain = fields.Many2many("op.student", compute="_compute_student_domain", store=False)
     year_id = fields.Many2one("op.academic.year", "Academic Year")
     term_id = fields.Many2one("op.academic.term", "Terms")
 

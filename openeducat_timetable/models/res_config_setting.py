@@ -6,9 +6,7 @@ class ResConfigSettings(models.TransientModel):
 
     is_faculty_constraint = fields.Boolean(string="Faculty Constraint")
     is_classroom_constraint = fields.Boolean(string="Classroom Constraint")
-    is_batch_and_subject_constraint = fields.Boolean(
-        string="Batch and Subject Constraint"
-    )
+    is_batch_and_subject_constraint = fields.Boolean(string="Batch and Subject Constraint")
     is_batch_constraint = fields.Boolean(string="Batch Constraint")
 
     @api.model

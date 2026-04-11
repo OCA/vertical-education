@@ -8,8 +8,7 @@ class BonafideCertificateWizard(models.TransientModel):
 
     student_ids = fields.Many2many("op.student", string="Students", required=True)
 
-    certificate_purpose = fields.Selection(
-        [
+    certificate_purpose = fields.Selection([
             ("passport", "Passport Application"),
             ("bank_account", "Bank Account Opening"),
             ("scholarship", "Scholarship"),
@@ -21,8 +20,7 @@ class BonafideCertificateWizard(models.TransientModel):
         required=True,
         default="passport",
     )
-    other_purpose = fields.Char(help="Specify other purpose if selected"
-    )
+    other_purpose = fields.Char(help="Specify other purpose if selected")
 
     @api.model
     def default_get(self, fields):

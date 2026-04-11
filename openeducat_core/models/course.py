@@ -30,8 +30,7 @@ class OpCourse(models.Model):
     name = fields.Char(required=True, translate=True)
     code = fields.Char(size=16, required=True)
     parent_id = fields.Many2one("op.course", "Parent Course")
-    evaluation_type = fields.Selection(
-        [("normal", "Normal"), ("GPA", "GPA"), ("CWA", "CWA"), ("CCE", "CCE")],
+    evaluation_type = fields.Selection([("normal", "Normal"), ("GPA", "GPA"), ("CWA", "CWA"), ("CCE", "CCE")],
         "Evaluation Type",
         default="normal",
         required=True,
@@ -39,13 +38,10 @@ class OpCourse(models.Model):
     subject_ids = fields.Many2many("op.subject", string="Subject(s)")
     max_unit_load = fields.Float("Maximum Unit Load")
     min_unit_load = fields.Float("Minimum Unit Load")
-    department_id = fields.Many2one(
-        "op.department",
-        "Department",
+    department_id = fields.Many2one("op.department",
         default=lambda self: self.env.user.dept_id
         and self.env.user.dept_id.id
-        or False,
-    )
+        or False)
     active = fields.Boolean(default=True)
     program_id = fields.Many2one("op.program", tracking=True)
 

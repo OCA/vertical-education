@@ -28,19 +28,15 @@ class OpMarksheetLine(models.Model):
     _description = "Marksheet Line"
 
     marksheet_reg_id = fields.Many2one("op.marksheet.register", "Marksheet Register")
-    evaluation_type = fields.Selection(
-        related="marksheet_reg_id.exam_session_id.evaluation_type", store=True
-    )
+    evaluation_type = fields.Selection(related="marksheet_reg_id.exam_session_id.evaluation_type", store=True)
     student_id = fields.Many2one("op.student", required=True)
     result_line = fields.One2many("op.result.line", "marksheet_line_id", "Results")
-    total_marks = fields.Integer(compute="_compute_total_marks", store=True
-    )
+    total_marks = fields.Integer(compute="_compute_total_marks", store=True)
     percentage = fields.Float(compute="_compute_percentage", store=True)
     generated_date = fields.Date(required=True, default=fields.Date.today()
     )
     grade = fields.Char(readonly=True, compute="_compute_grade")
-    status = fields.Selection(
-        [("pass", "Pass"), ("fail", "Fail")],
+    status = fields.Selection([("pass", "Pass"), ("fail", "Fail")],
         "Status",
         compute="_compute_status",
         store=True,

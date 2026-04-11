@@ -31,17 +31,14 @@ class OpSubjectRegistration(models.Model):
     student_id = fields.Many2one("op.student", tracking=True)
     course_id = fields.Many2one("op.course", required=True, tracking=True)
     batch_id = fields.Many2one("op.batch", tracking=True)
-    compulsory_subject_ids = fields.Many2many(
-        "op.subject",
+    compulsory_subject_ids = fields.Many2many("op.subject",
         "subject_compulsory_rel",
         "register_id",
         "subject_id",
         string="Compulsory Subjects",
-        readonly=True,
-    )
+        readonly=True)
     elective_subject_ids = fields.Many2many("op.subject", string="Elective Subjects")
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("submitted", "Submitted"),
             ("approved", "Approved"),
@@ -54,9 +51,7 @@ class OpSubjectRegistration(models.Model):
     max_unit_load = fields.Float("Maximum Unit Load", tracking=True)
     min_unit_load = fields.Float("Minimum Unit Load", tracking=True)
     is_read = fields.Boolean(string="Read?", default=False)
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.company
-    )
+    company_id = fields.Many2one("res.company", default=lambda self: self.env.company)
 
     def action_reset_draft(self):
         self.state = "draft"

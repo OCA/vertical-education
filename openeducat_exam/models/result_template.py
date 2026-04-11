@@ -27,18 +27,13 @@ class OpResultTemplate(models.Model):
     _inherit = ["mail.thread"]
     _description = "Result Template"
 
-    exam_session_id = fields.Many2one(
-        "op.exam.session", "Exam Session", required=True, tracking=True
-    )
-    evaluation_type = fields.Selection(
-        related="exam_session_id.evaluation_type", store=True, tracking=True
-    )
+    exam_session_id = fields.Many2one("op.exam.session", required=True, tracking=True)
+    evaluation_type = fields.Selection(related="exam_session_id.evaluation_type", store=True, tracking=True)
     name = fields.Char(size=254, required=True, tracking=True)
     result_date = fields.Date(required=True, default=fields.Date.today()
     )
     grade_ids = fields.Many2many("op.grade.configuration", string="Grade Configuration")
-    state = fields.Selection(
-        [("draft", "Draft"), ("result_generated", "Result Generated")],
+    state = fields.Selection([("draft", "Draft"), ("result_generated", "Result Generated")],
         default="draft",
         tracking=True,
     )

@@ -36,44 +36,37 @@ class GenerateSession(models.TransientModel):
     course_id = fields.Many2one("op.course", required=True)
     batch_id = fields.Many2one("op.batch", required=True)
     time_table_lines = fields.One2many("gen.time.table.line", "gen_time_table")
-    time_table_lines_1 = fields.One2many(
-        "gen.time.table.line",
+    time_table_lines_1 = fields.One2many("gen.time.table.line",
         "gen_time_table",
         "Time Table Lines1",
         domain=[("day", "=", "0")],
     )
-    time_table_lines_2 = fields.One2many(
-        "gen.time.table.line",
+    time_table_lines_2 = fields.One2many("gen.time.table.line",
         "gen_time_table",
         "Time Table Lines2",
         domain=[("day", "=", "1")],
     )
-    time_table_lines_3 = fields.One2many(
-        "gen.time.table.line",
+    time_table_lines_3 = fields.One2many("gen.time.table.line",
         "gen_time_table",
         "Time Table Lines3",
         domain=[("day", "=", "2")],
     )
-    time_table_lines_4 = fields.One2many(
-        "gen.time.table.line",
+    time_table_lines_4 = fields.One2many("gen.time.table.line",
         "gen_time_table",
         "Time Table Lines4",
         domain=[("day", "=", "3")],
     )
-    time_table_lines_5 = fields.One2many(
-        "gen.time.table.line",
+    time_table_lines_5 = fields.One2many("gen.time.table.line",
         "gen_time_table",
         "Time Table Lines5",
         domain=[("day", "=", "4")],
     )
-    time_table_lines_6 = fields.One2many(
-        "gen.time.table.line",
+    time_table_lines_6 = fields.One2many("gen.time.table.line",
         "gen_time_table",
         "Time Table Lines6",
         domain=[("day", "=", "5")],
     )
-    time_table_lines_7 = fields.One2many(
-        "gen.time.table.line",
+    time_table_lines_7 = fields.One2many("gen.time.table.line",
         "gen_time_table",
         domain=[("day", "=", "6")],
     )
@@ -162,8 +155,7 @@ class GenerateSessionLine(models.TransientModel):
     session_start_time = fields.Float("Start Time")
     session_end_time = fields.Float("End Time")
     classroom_id = fields.Many2one("op.classroom")
-    day = fields.Selection(
-        [
+    day = fields.Selection([
             ("0", calendar.day_name[0]),
             ("1", calendar.day_name[1]),
             ("2", calendar.day_name[2]),

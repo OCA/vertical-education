@@ -43,8 +43,7 @@ class OpSession(models.Model):
 
     name = fields.Char(compute="_compute_name", store=True)
     timing_id = fields.Many2one("op.timing", tracking=True)
-    start_datetime = fields.Datetime(
-        "Start Time", required=True, default=lambda self: fields.Datetime.now()
+    start_datetime = fields.Datetime("Start Time", required=True, default=lambda self: fields.Datetime.now()
     )
     end_datetime = fields.Datetime("End Time", required=True)
     course_id = fields.Many2one("op.course", required=True)
@@ -54,8 +53,7 @@ class OpSession(models.Model):
     classroom_id = fields.Many2one("op.classroom")
     color = fields.Integer("Color Index")
     type = fields.Char(compute="_compute_day", string="Day", store=True)
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("confirm", "Confirmed"),
             ("done", "Done"),
@@ -64,15 +62,10 @@ class OpSession(models.Model):
         string="Status",
         default="draft",
     )
-    user_ids = fields.Many2many(
-        "res.users", compute="_compute_batch_users", store=True, string="Users"
-    )
+    user_ids = fields.Many2many("res.users", compute="_compute_batch_users", store=True, string="Users")
     active = fields.Boolean(default=True)
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
-    )
-    days = fields.Selection(
-        [
+    company_id = fields.Many2one("res.company", default=lambda self: self.env.user.company_id)
+    days = fields.Selection([
             ("monday", "Monday"),
             ("tuesday", "Tuesday"),
             ("wednesday", "Wednesday"),

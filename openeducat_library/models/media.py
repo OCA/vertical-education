@@ -33,8 +33,7 @@ class OpMedia(models.Model):
     author_ids = fields.Many2many("op.author", string="Author(s)", required=True)
     edition = fields.Char()
     description = fields.Text()
-    publisher_ids = fields.Many2many(
-        "op.publisher", string="Publisher(s)", required=True
+    publisher_ids = fields.Many2many("op.publisher", string="Publisher(s)", required=True
     )
     course_ids = fields.Many2many("op.course")
     movement_line = fields.One2many("op.media.movement", "media_id", "Movements")

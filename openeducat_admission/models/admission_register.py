@@ -40,15 +40,13 @@ class OpAdmissionRegister(models.Model):
     course_id = fields.Many2one("op.course", readonly=True, tracking=True)
     min_count = fields.Integer("Minimum No. of Admission", readonly=True)
     max_count = fields.Integer("Maximum No. of Admission", readonly=True, default=30)
-    product_id = fields.Many2one(
-        "product.product",
+    product_id = fields.Many2one("product.product",
         "Course Fees",
         domain=[("type", "=", "service")],
         tracking=True,
     )
     admission_ids = fields.One2many("op.admission", "register_id", "Admissions")
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("confirm", "Confirmed"),
             ("cancel", "Cancelled"),
@@ -62,30 +60,19 @@ class OpAdmissionRegister(models.Model):
     )
     active = fields.Boolean(default=True)
 
-    academic_years_id = fields.Many2one(
-        "op.academic.year", "Academic Year", readonly=True, tracking=True
-    )
-    academic_term_id = fields.Many2one(
-        "op.academic.term", "Terms", readonly=True, tracking=True
-    )
+    academic_years_id = fields.Many2one("op.academic.year", "Academic Year", readonly=True, tracking=True)
+    academic_term_id = fields.Many2one("op.academic.term", "Terms", readonly=True, tracking=True)
     minimum_age_criteria = fields.Integer("Minimum Required Age(Years)", default=3)
-    application_count = fields.Integer(
-        string="Total_record", compute="_compute_calculate_record_application"
-    )
+    application_count = fields.Integer(string="Total_record", compute="_compute_calculate_record_application")
     is_favorite = fields.Boolean(default=False)
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
-    )
+    company_id = fields.Many2one("res.company", default=lambda self: self.env.user.company_id)
     draft_count = fields.Integer(compute="_compute_counts")
     confirm_count = fields.Integer(compute="_compute_counts")
     done_count = fields.Integer(compute="_compute_counts")
     online_count = fields.Integer(compute="_compute_application_counts")
-    admission_base = fields.Selection(
-        [("program", "Program"), ("course", "Course")], default="course"
+    admission_base = fields.Selection([("program", "Program"), ("course", "Course")], default="course"
     )
-    admission_fees_line_ids = fields.One2many(
-        "op.admission.fees.line", "register_id", string="Admission Fees Configuration"
-    )
+    admission_fees_line_ids = fields.One2many("op.admission.fees.line", "register_id", string="Admission Fees Configuration")
 
     @api.onchange("admission_base")
     def onchange_admission_base(self):

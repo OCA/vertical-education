@@ -31,15 +31,12 @@ class OpMediaUnit(models.Model):
     media_id = fields.Many2one("op.media", required=True, tracking=True)
     barcode = fields.Char(size=20)
     movement_lines = fields.One2many("op.media.movement", "media_unit_id", "Movements")
-    state = fields.Selection(
-        [("available", "Available"), ("issue", "Issued")],
+    state = fields.Selection([("available", "Available"), ("issue", "Issued")],
         "State",
         default="available",
         tracking=True,
     )
-    media_type_id = fields.Many2one(
-        related="media_id.media_type_id", store=True, string="Media Type"
-    )
+    media_type_id = fields.Many2one(related="media_id.media_type_id", store=True)
     active = fields.Boolean(default=True)
 
     _sql_constraints = [

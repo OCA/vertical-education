@@ -38,8 +38,7 @@ class OpAdmission(models.Model):
     middle_name = fields.Char(translate=True)
     last_name = fields.Char(required=True, translate=True)
     title = fields.Many2one("res.partner.title")
-    application_number = fields.Char(size=16, copy=False, readonly=True, store=True
-    )
+    application_number = fields.Char(size=16, copy=False, readonly=True, store=True)
     admission_date = fields.Date(copy=False)
     application_date = fields.Datetime(required=True,
         copy=False,
@@ -55,14 +54,12 @@ class OpAdmission(models.Model):
     email = fields.Char(size=256, required=True)
     city = fields.Char(size=64)
     zip = fields.Char(size=8)
-    state_id = fields.Many2one(
-        "res.country.state", "States", domain="[('country_id', '=', country_id)]"
+    state_id = fields.Many2one("res.country.state", "States", domain="[('country_id', '=', country_id)]"
     )
     country_id = fields.Many2one("res.country")
     fees = fields.Float()
     image = fields.Image()
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("submit", "Submitted"),
             ("confirm", "Confirmed"),
@@ -82,14 +79,11 @@ class OpAdmission(models.Model):
     prev_result = fields.Char("Previous Result", size=256)
     family_business = fields.Char(size=256)
     family_income = fields.Float()
-    gender = fields.Selection(
-        [("m", "Male"), ("f", "Female")], string="Gender", required=True
+    gender = fields.Selection([("m", "Male"), ("f", "Female")], string="Gender", required=True
     )
     student_id = fields.Many2one("op.student")
     nbr = fields.Integer("No of Admission", readonly=True)
-    register_id = fields.Many2one(
-        "op.admission.register", "Admission Register", required=True
-    )
+    register_id = fields.Many2one("op.admission.register", "Admission Register", required=True)
     partner_id = fields.Many2one("res.partner")
     is_student = fields.Boolean("Is Already Student")
     fees_term_id = fields.Many2one("op.fees.terms")
@@ -97,13 +91,9 @@ class OpAdmission(models.Model):
     discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 
     fees_start_date = fields.Date()
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
-    )
+    company_id = fields.Many2one("res.company", default=lambda self: self.env.user.company_id)
     program_id = fields.Many2one("op.program", tracking=True)
-    course_ids = fields.Many2many(
-        "op.course", string="Courses", compute="_compute_course_ids"
-    )
+    course_ids = fields.Many2many("op.course", string="Courses", compute="_compute_course_ids")
 
     _sql_constraints = [
         (
@@ -551,8 +541,7 @@ class OpAdmission(models.Model):
 class OpStudentCourseInherit(models.Model):
     _inherit = "op.student.course"
 
-    product_id = fields.Many2one(
-        "product.product",
+    product_id = fields.Many2one("product.product",
         "Course Fees",
         domain=[("type", "=", "service")],
         tracking=True,
@@ -562,7 +551,5 @@ class OpStudentCourseInherit(models.Model):
 class ResConfigSettings(models.TransientModel):
     _inherit = "res.config.settings"
 
-    enable_create_student_user = fields.Boolean(
-        config_parameter="openeducat_admission.enable_create_student_user",
-        string="Create Student User",
-    )
+    enable_create_student_user = fields.Boolean(config_parameter="openeducat_admission.enable_create_student_user",
+        string="Create Student User")

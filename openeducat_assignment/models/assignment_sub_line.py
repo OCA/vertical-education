@@ -43,8 +43,7 @@ class OpAssignmentSubLine(models.Model):
     assignment_id = fields.Many2one("op.assignment", required=True)
     student_id = fields.Many2one("op.student", required=True)
     description = fields.Text(tracking=True)
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("submit", "Submitted"),
             ("reject", "Rejected"),
@@ -62,16 +61,10 @@ class OpAssignmentSubLine(models.Model):
     marks = fields.Float(tracking=True)
     note = fields.Text()
     user_id = fields.Many2one("res.users", related="student_id.user_id")
-    faculty_user_id = fields.Many2one(
-        "res.users", related="assignment_id.faculty_id.user_id", string="Faculty User"
-    )
-    user_boolean = fields.Boolean(
-        string="Check user", compute="_compute_get_user_group"
-    )
+    faculty_user_id = fields.Many2one("res.users", related="assignment_id.faculty_id.user_id")
+    user_boolean = fields.Boolean(string="Check user", compute="_compute_get_user_group")
     active = fields.Boolean(default=True)
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
-    )
+    company_id = fields.Many2one("res.company", default=lambda self: self.env.user.company_id)
 
     def act_draft(self):
         result = self.state = "draft"

@@ -28,9 +28,7 @@ class OpExamRoom(models.Model):
 
     name = fields.Char(size=256, required=True)
     classroom_id = fields.Many2one("op.classroom", required=True)
-    capacity = fields.Integer(
-        "No of Seats", related="classroom_id.capacity", readonly=True
-    )
+    capacity = fields.Integer("No of Seats", related="classroom_id.capacity", readonly=True)
 
     @api.onchange("classroom_id")
     def onchange_classroom(self):

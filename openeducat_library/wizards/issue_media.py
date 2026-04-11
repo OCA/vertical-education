@@ -35,8 +35,7 @@ class IssueMedia(models.TransientModel):
 
     media_id = fields.Many2one("op.media", required=True)
     media_unit_id = fields.Many2one("op.media.unit", required=True)
-    type = fields.Selection(
-        [("student", "Student"), ("faculty", "Faculty")],
+    type = fields.Selection([("student", "Student"), ("faculty", "Faculty")],
         default="student",
         required=True,
     )

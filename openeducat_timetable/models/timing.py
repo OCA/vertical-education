@@ -27,8 +27,7 @@ class OpTiming(models.Model):
     _order = "sequence"
 
     name = fields.Char(size=16, required=True)
-    hour = fields.Selection(
-        [
+    hour = fields.Selection([
             ("1", "1"),
             ("2", "2"),
             ("3", "3"),
@@ -45,8 +44,7 @@ class OpTiming(models.Model):
         "Hours",
         required=True,
     )
-    minute = fields.Selection(
-        [("00", "00"), ("15", "15"), ("30", "30"), ("45", "45")],
+    minute = fields.Selection([("00", "00"), ("15", "15"), ("30", "30"), ("45", "45")],
         required=True,
     )
     duration = fields.Float()

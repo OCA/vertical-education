@@ -27,18 +27,13 @@ class OpResultLine(models.Model):
     _rec_name = "marks"
     _description = "Result Line"
 
-    marksheet_line_id = fields.Many2one(
-        "op.marksheet.line", "Marksheet Line", ondelete="cascade"
-    )
+    marksheet_line_id = fields.Many2one("op.marksheet.line", ondelete="cascade")
     exam_id = fields.Many2one("op.exam", required=True)
-    evaluation_type = fields.Selection(
-        related="exam_id.session_id.evaluation_type", store=True
-    )
+    evaluation_type = fields.Selection(related="exam_id.session_id.evaluation_type", store=True)
     marks = fields.Integer(required=True)
     grade = fields.Char(readonly=True, compute="_compute_grade")
     student_id = fields.Many2one("op.student", required=True)
-    status = fields.Selection(
-        [("pass", "Pass"), ("fail", "Fail")],
+    status = fields.Selection([("pass", "Pass"), ("fail", "Fail")],
         "Status",
         compute="_compute_status",
         store=True,

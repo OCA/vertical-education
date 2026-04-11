@@ -38,20 +38,16 @@ class ResUsers(models.Model):
 
     student_line = fields.Many2one("op.student", "Line")
     user_line = fields.One2many("op.student", "user_id", "User Line")
-    child_ids = fields.Many2many(
-        "res.users",
+    child_ids = fields.Many2many("res.users",
         "res_user_first_rel1",
         "user_id",
         "res_user_second_rel1",
-        string="Childs",
-    )
+        string="Childs")
     dept_id = fields.Many2one("op.department", string="Department Name")
     department_ids = fields.Many2many("op.department", string="Allowed Department")
-    department_count = fields.Integer(
-        compute="_compute_department_count",
+    department_count = fields.Integer(compute="_compute_department_count",
         string="Number of Departments",
-        default=_department_count,
-    )
+        default=_department_count)
 
     def create_user(self, records, user_group=None):
         for rec in records:

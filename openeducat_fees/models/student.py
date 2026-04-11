@@ -34,21 +34,14 @@ class OpStudentFeesDetails(models.Model):
     product_id = fields.Many2one("product.product")
     student_id = fields.Many2one("op.student", required=True)
     fees_factor = fields.Float()
-    state = fields.Selection(
-        [("draft", "Draft"), ("invoice", "Invoice Created"), ("cancel", "Cancel")],
+    state = fields.Selection([("draft", "Draft"), ("invoice", "Invoice Created"), ("cancel", "Cancel")],
         string="Status",
         copy=False,
     )
-    invoice_state = fields.Selection(
-        related="invoice_id.state", string="Invoice Status", readonly=True
-    )
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
-    )
-    after_discount_amount = fields.Monetary(
-        compute="_compute_discount_amount",
-        currency_field="currency_id",
-    )
+    invoice_state = fields.Selection(related="invoice_id.state", string="Invoice Status", readonly=True)
+    company_id = fields.Many2one("res.company", default=lambda self: self.env.user.company_id)
+    after_discount_amount = fields.Monetary(compute="_compute_discount_amount",
+        currency_field="currency_id")
     discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 
     course_id = fields.Many2one("op.course", required=False)
@@ -68,12 +61,9 @@ class OpStudentFeesDetails(models.Model):
                 template.company_id.sudo().currency_id.id or main_company.currency_id.id
             )
 
-    currency_id = fields.Many2one(
-        "res.currency",
-        string="Currency",
+    currency_id = fields.Many2one("res.currency",
         compute="_compute_currency_id",
-        default=lambda self: self.env.user.company_id.currency_id.id,
-    )
+        default=lambda self: self.env.user.company_id.currency_id.id)
 
     def get_invoice(self):
         """Create invoice for fee payment process of student"""
@@ -175,12 +165,10 @@ class OpStudentFeesDetails(models.Model):
 class OpStudent(models.Model):
     _inherit = "op.student"
 
-    fees_detail_ids = fields.One2many(
-        "op.student.fees.details",
+    fees_detail_ids = fields.One2many("op.student.fees.details",
         "student_id",
         string="Fees Collection Details",
-        tracking=True,
-    )
+        tracking=True)
     fees_details_count = fields.Integer(compute="_compute_fees_details")
 
     @api.depends("fees_detail_ids")

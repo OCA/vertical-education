@@ -29,24 +29,16 @@ class OpExam(models.Model):
     _inherit = "mail.thread"
     _description = "Exam"
 
-    session_id = fields.Many2one(
-        "op.exam.session", "Exam Session", domain=[("state", "=", "schedule")]
+    session_id = fields.Many2one("op.exam.session", "Exam Session", domain=[("state", "=", "schedule")]
     )
-    course_id = fields.Many2one(
-        "op.course", related="session_id.course_id", store=True, readonly=True
-    )
-    batch_id = fields.Many2one(
-        "op.batch", "Batch", related="session_id.batch_id", store=True, readonly=True
-    )
+    course_id = fields.Many2one("op.course", related="session_id.course_id", store=True, readonly=True)
+    batch_id = fields.Many2one("op.batch", related="session_id.batch_id", store=True, readonly=True)
     subject_id = fields.Many2one("op.subject", required=True)
     exam_code = fields.Char(size=16, required=True)
-    attendees_line = fields.One2many(
-        "op.exam.attendees", "exam_id", "Attendees", readonly=True
-    )
+    attendees_line = fields.One2many("op.exam.attendees", "exam_id", "Attendees", readonly=True)
     start_time = fields.Datetime(required=True)
     end_time = fields.Datetime(required=True)
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("schedule", "Scheduled"),
             ("held", "Held"),
@@ -65,12 +57,8 @@ class OpExam(models.Model):
     total_marks = fields.Integer(required=True)
     min_marks = fields.Integer("Passing Marks", required=True)
     active = fields.Boolean(default=True)
-    attendees_count = fields.Integer(
-        string="Attendees Count", compute="_compute_attendees_count"
-    )
-    results_entered = fields.Boolean(
-        compute="_compute_results_entered", store=True
-    )
+    attendees_count = fields.Integer(compute="_compute_attendees_count")
+    results_entered = fields.Boolean(compute="_compute_results_entered", store=True)
 
     _sql_constraints = [
         ("unique_exam_code", "unique(exam_code)", "Code should be unique per exam!")

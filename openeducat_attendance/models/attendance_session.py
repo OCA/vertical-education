@@ -24,9 +24,7 @@ from odoo import fields, models
 class OpSession(models.Model):
     _inherit = "op.session"
 
-    attendance_sheet = fields.One2many(
-        "op.attendance.sheet", "session_id", string="Session"
-    )
+    attendance_sheet = fields.One2many("op.attendance.sheet", "session_id", string="Session")
 
     def get_attendance(self, context=None):
         sheet = self.env["op.attendance.sheet"].search([("session_id", "=", self.id)])

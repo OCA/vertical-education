@@ -30,18 +30,13 @@ class OpProgram(models.Model):
     code = fields.Char(size=16, required=True, translate=True)
     max_unit_load = fields.Float("Maximum Unit Load")
     min_unit_load = fields.Float("Minimum Unit Load")
-    department_id = fields.Many2one(
-        "op.department",
-        "Department",
+    department_id = fields.Many2one("op.department",
         default=lambda self: self.env.user.dept_id
         and self.env.user.dept_id.id
-        or False,
-    )
+        or False)
     active = fields.Boolean(default=True)
     image_1920 = fields.Image("Image", attachment=True)
-    program_level_id = fields.Many2one(
-        "op.program.level", "Program Level", required=True
-    )
+    program_level_id = fields.Many2one("op.program.level", required=True)
 
 
 class OpProgramLevel(models.Model):

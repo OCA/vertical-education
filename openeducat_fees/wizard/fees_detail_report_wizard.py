@@ -27,8 +27,7 @@ class FeesDetailReportWizard(models.TransientModel):
     _name = "fees.detail.report.wizard"
     _description = "Wizard For Fees Details Report"
 
-    fees_filter = fields.Selection(
-        [("student", "Student"), ("course", "Course")], "Fees Filter", required=True
+    fees_filter = fields.Selection([("student", "Student"), ("course", "Course")], "Fees Filter", required=True
     )
     student_id = fields.Many2one("op.student")
     course_id = fields.Many2one("op.course")

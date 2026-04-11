@@ -29,8 +29,7 @@ class OpSubject(models.Model):
     name = fields.Char(size=128, required=True)
     code = fields.Char(size=256, required=True)
     grade_weightage = fields.Float()
-    type = fields.Selection(
-        [
+    type = fields.Selection([
             ("theory", "Theory"),
             ("practical", "Practical"),
             ("both", "Both"),
@@ -40,19 +39,15 @@ class OpSubject(models.Model):
         default="theory",
         required=True,
     )
-    subject_type = fields.Selection(
-        [("compulsory", "Compulsory"), ("elective", "Elective")],
+    subject_type = fields.Selection([("compulsory", "Compulsory"), ("elective", "Elective")],
         "Subject Type",
         default="compulsory",
         required=True,
     )
-    department_id = fields.Many2one(
-        "op.department",
-        "Department",
+    department_id = fields.Many2one("op.department",
         default=lambda self: self.env.user.dept_id
         and self.env.user.dept_id.id
-        or False,
-    )
+        or False)
     active = fields.Boolean(default=True)
 
     _sql_constraints = [

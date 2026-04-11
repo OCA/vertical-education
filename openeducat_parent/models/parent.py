@@ -26,21 +26,17 @@ class OpParent(models.Model):
     _name = "op.parent"
     _description = "Parent"
 
-    name = fields.Many2one(
-        "res.partner", required=True, domain="[('is_parent', '=', True)]"
+    name = fields.Many2one("res.partner", required=True, domain="[('is_parent', '=', True)]"
     )
     user_id = fields.Many2one("res.users", store=True)
-    student_ids = fields.Many2many(
-        "op.student",
+    student_ids = fields.Many2many("op.student",
         string="Student(s)",
         required=True,
     )
     mobile = fields.Char()
     email = fields.Char()
     active = fields.Boolean(default=True)
-    relationship_id = fields.Many2one(
-        "op.parent.relationship", "Relation with Student", required=True
-    )
+    relationship_id = fields.Many2one("op.parent.relationship", "Relation with Student", required=True)
 
     _sql_constraints = [
         ("unique_parent", "unique(name)", "Can not create parent multiple times.!")

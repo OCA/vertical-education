@@ -28,17 +28,14 @@ class OpStudentCourse(models.Model):
     _inherit = "mail.thread"
     _rec_name = "student_id"
 
-    student_id = fields.Many2one(
-        "op.student", "Student", ondelete="cascade", tracking=True
-    )
+    student_id = fields.Many2one("op.student", ondelete="cascade", tracking=True)
     course_id = fields.Many2one("op.course", required=True, tracking=True)
     batch_id = fields.Many2one("op.batch", tracking=True)
     roll_number = fields.Char(tracking=True)
     subject_ids = fields.Many2many("op.subject", string="Subjects")
     academic_years_id = fields.Many2one("op.academic.year", "Academic Year")
     academic_term_id = fields.Many2one("op.academic.term", "Terms")
-    state = fields.Selection(
-        [("running", "Running"), ("finished", "Finished")],
+    state = fields.Selection([("running", "Running"), ("finished", "Finished")],
         string="Status",
         default="running",
     )
@@ -81,8 +78,7 @@ class OpStudent(models.Model):
     middle_name = fields.Char(translate=True)
     last_name = fields.Char(translate=True)
     birth_date = fields.Date()
-    blood_group = fields.Selection(
-        [
+    blood_group = fields.Selection([
             ("A+", "A+ve"),
             ("B+", "B+ve"),
             ("O+", "O+ve"),
@@ -94,8 +90,7 @@ class OpStudent(models.Model):
         ],
         string="Blood Group",
     )
-    gender = fields.Selection(
-        [("m", "Male"), ("f", "Female"), ("o", "Other")],
+    gender = fields.Selection([("m", "Male"), ("f", "Female"), ("o", "Other")],
         "Gender",
         required=True,
         default="m",
@@ -104,21 +99,15 @@ class OpStudent(models.Model):
     emergency_contact = fields.Many2one("res.partner")
     visa_info = fields.Char(size=64)
     id_number = fields.Char("ID Card Number", size=64)
-    partner_id = fields.Many2one(
-        "res.partner", "Partner", required=True, ondelete="cascade"
-    )
+    partner_id = fields.Many2one("res.partner", required=True, ondelete="cascade")
     user_id = fields.Many2one("res.users", ondelete="cascade")
     gr_no = fields.Char("Registration Number", size=20)
     category_id = fields.Many2one("op.category")
-    course_detail_ids = fields.One2many(
-        "op.student.course", "student_id", "Course Details", tracking=True
-    )
+    course_detail_ids = fields.One2many("op.student.course", "student_id", "Course Details", tracking=True)
     active = fields.Boolean(default=True)
-    certificate_number = fields.Char(
-        string="Certificate No.",
+    certificate_number = fields.Char(string="Certificate No.",
         readonly=True,
-        copy=False,
-    )
+        copy=False)
 
     _sql_constraints = [
         (

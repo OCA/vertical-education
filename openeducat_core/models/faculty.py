@@ -29,15 +29,12 @@ class OpFaculty(models.Model):
     _inherits = {"res.partner": "partner_id"}
     _parent_name = False
 
-    partner_id = fields.Many2one(
-        "res.partner", "Partner", required=True, ondelete="cascade"
-    )
+    partner_id = fields.Many2one("res.partner", required=True, ondelete="cascade")
     first_name = fields.Char(translate=True, required=True)
     middle_name = fields.Char(size=128)
     last_name = fields.Char(size=128, required=True)
     birth_date = fields.Date(required=True)
-    blood_group = fields.Selection(
-        [
+    blood_group = fields.Selection([
             ("A+", "A+ve"),
             ("B+", "B+ve"),
             ("O+", "O+ve"),
@@ -49,35 +46,25 @@ class OpFaculty(models.Model):
         ],
         string="Blood Group",
     )
-    gender = fields.Selection(
-        [("male", "Male"), ("female", "Female")], "Gender", required=True
+    gender = fields.Selection([("male", "Male"), ("female", "Female")], "Gender", required=True
     )
     nationality = fields.Many2one("res.country")
     emergency_contact = fields.Many2one("res.partner")
     visa_info = fields.Char(size=64)
     id_number = fields.Char("ID Card Number", size=64)
     login = fields.Char(related="partner_id.user_id.login", readonly=True)
-    last_login = fields.Datetime(
-        "Latest Connection", readonly=True, related="partner_id.user_id.login_date"
-    )
-    faculty_subject_ids = fields.Many2many(
-        "op.subject", string="Subject(s)", tracking=True
+    last_login = fields.Datetime("Latest Connection", readonly=True, related="partner_id.user_id.login_date")
+    faculty_subject_ids = fields.Many2many("op.subject", string="Subject(s)", tracking=True
     )
     emp_id = fields.Many2one("hr.employee", "HR Employee")
-    main_department_id = fields.Many2one(
-        "op.department",
-        "Main Department",
+    main_department_id = fields.Many2one("op.department",
         default=lambda self: self.env.user.dept_id
         and self.env.user.dept_id.id
-        or False,
-    )
-    allowed_department_ids = fields.Many2many(
-        "op.department",
-        string="Allowed Department",
+        or False)
+    allowed_department_ids = fields.Many2many("op.department",
         default=lambda self: self.env.user.department_ids
         and self.env.user.department_ids.ids
-        or False,
-    )
+        or False)
     active = fields.Boolean(default=True)
 
     @api.constrains("birth_date")

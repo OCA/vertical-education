@@ -20,8 +20,7 @@ class OpAcademicYear(models.Model):
     start_date = fields.Date(required=True)
     end_date = fields.Date(required=True)
 
-    term_structure = fields.Selection(
-        [
+    term_structure = fields.Selection([
             ("two_sem", "Two Semesters"),
             ("two_sem_qua", "Two Semesters Subdivision"),
             ("two_sem_final", "Two Semesters Subdivision Final"),
@@ -34,13 +33,9 @@ class OpAcademicYear(models.Model):
         default="two_sem",
         required=True,
     )
-    academic_term_ids = fields.One2many(
-        "op.academic.term", "academic_year_id", string="Academic Terms"
-    )
+    academic_term_ids = fields.One2many("op.academic.term", "academic_year_id", string="Academic Terms")
     create_boolean = fields.Boolean()
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
-    )
+    company_id = fields.Many2one("res.company", default=lambda self: self.env.user.company_id)
 
     def term_create(self):
         """Action button to create terms based on structure"""

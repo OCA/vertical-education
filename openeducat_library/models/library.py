@@ -29,8 +29,7 @@ class OpLibraryCardType(models.Model):
     name = fields.Char(size=256, required=True)
     allow_media = fields.Integer("No Of Medias Allowed", default=10, required=True)
     duration = fields.Integer(help="Duration in terms of Number of Lead Days",
-        required=True
-    )
+        required=True)
     penalty_amt_per_day = fields.Float("Penalty Amount Per Day", required=True)
 
     @api.constrains("allow_media", "duration", "penalty_amt_per_day")
@@ -50,21 +49,16 @@ class OpLibraryCard(models.Model):
 
     partner_id = fields.Many2one("res.partner", "Student/Faculty", required=True)
     number = fields.Char(size=256, readonly=True)
-    library_card_type_id = fields.Many2one(
-        "op.library.card.type", "Card Type", required=True
-    )
+    library_card_type_id = fields.Many2one("op.library.card.type", "Card Type", required=True)
     issue_date = fields.Date(required=True, default=fields.Date.today())
-    type = fields.Selection(
-        [("student", "Student"), ("faculty", "Faculty")],
+    type = fields.Selection([("student", "Student"), ("faculty", "Faculty")],
         "Type",
         default="student",
         required=True,
     )
-    student_id = fields.Many2one(
-        "op.student", "Student", domain=[("library_card_id", "=", False)]
+    student_id = fields.Many2one("op.student", domain=[("library_card_id", "=", False)]
     )
-    faculty_id = fields.Many2one(
-        "op.faculty", "Faculty", domain=[("library_card_id", "=", False)]
+    faculty_id = fields.Many2one("op.faculty", domain=[("library_card_id", "=", False)]
     )
     active = fields.Boolean(default=True)
 

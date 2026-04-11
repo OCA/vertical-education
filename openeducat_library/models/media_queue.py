@@ -33,11 +33,8 @@ class OpMediaQueue(models.Model):
     media_id = fields.Many2one("op.media", required=True, tracking=True)
     date_from = fields.Date("From Date", required=True, default=fields.Date.today())
     date_to = fields.Date("To Date", required=True)
-    user_id = fields.Many2one(
-        "res.users", "User", readonly=True, default=lambda self: self.env.uid
-    )
-    state = fields.Selection(
-        [("request", "Request"), ("accept", "Accepted"), ("reject", "Rejected")],
+    user_id = fields.Many2one("res.users", readonly=True, default=lambda self: self.env.uid)
+    state = fields.Selection([("request", "Request"), ("accept", "Accepted"), ("reject", "Rejected")],
         "Status",
         copy=False,
         default="request",

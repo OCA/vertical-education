@@ -30,8 +30,7 @@ class SessionReport(models.TransientModel):
     _name = "time.table.report"
     _description = "Generate Time Table Report"
 
-    state = fields.Selection(
-        [("faculty", "Faculty"), ("student", "Student")],
+    state = fields.Selection([("faculty", "Faculty"), ("student", "Student")],
         string="Select",
         required=True,
         default="faculty",
@@ -39,15 +38,13 @@ class SessionReport(models.TransientModel):
     course_id = fields.Many2one("op.course")
     batch_id = fields.Many2one("op.batch")
     faculty_id = fields.Many2one("op.faculty")
-    start_date = fields.Date(
-        required=True,
+    start_date = fields.Date(required=True,
         default=(
             datetime.today()
             - relativedelta(days=datetime.date(datetime.today()).weekday())
         ).strftime("%Y-%m-%d"),
     )
-    end_date = fields.Date(
-        required=True,
+    end_date = fields.Date(required=True,
         default=(
             datetime.today()
             + relativedelta(days=6 - datetime.date(datetime.today()).weekday())

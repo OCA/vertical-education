@@ -34,19 +34,15 @@ class OpExamSession(models.Model):
     start_date = fields.Date(required=True, tracking=True)
     end_date = fields.Date(required=True, tracking=True)
     exam_ids = fields.One2many("op.exam", "session_id", "Exam(s)")
-    exam_type = fields.Many2one(
-        "op.exam.type", "Exam Type", required=True, tracking=True
-    )
-    evaluation_type = fields.Selection(
-        [("normal", "Normal"), ("grade", "Grade")],
+    exam_type = fields.Many2one("op.exam.type", required=True, tracking=True)
+    evaluation_type = fields.Selection([("normal", "Normal"), ("grade", "Grade")],
         "Evolution Type",
         default="normal",
         required=True,
         tracking=True,
     )
     venue = fields.Many2one("res.partner", tracking=True)
-    state = fields.Selection(
-        [
+    state = fields.Selection([
             ("draft", "Draft"),
             ("schedule", "Scheduled"),
             ("held", "Held"),
