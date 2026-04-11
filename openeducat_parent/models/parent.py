@@ -175,7 +175,7 @@ class OpParent(models.Model):
 class OpStudent(models.Model):
     _inherit = "op.student"
 
-    parent_ids = fields.Many2many("op.parent", string="Parent")
+    parent_ids = fields.Many2many("op.parent")
 
     @api.model_create_multi
     def create(self, vals):

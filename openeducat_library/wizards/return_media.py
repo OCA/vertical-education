@@ -28,7 +28,7 @@ class ReturnMedia(models.TransientModel):
     _name = "return.media"
     _description = "Media Author"
 
-    media_id = fields.Many2one("op.media", "Media", readonly=True)
+    media_id = fields.Many2one("op.media", readonly=True)
     media_unit_id = fields.Many2one(
         "op.media.unit", "Media Unit", readonly=True, required=True
     )

@@ -28,9 +28,9 @@ class OpSubjectRegistration(models.Model):
     _inherit = ["mail.thread"]
 
     name = fields.Char(readonly=True, default="New")
-    student_id = fields.Many2one("op.student", "Student", tracking=True)
-    course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
-    batch_id = fields.Many2one("op.batch", "Batch", tracking=True)
+    student_id = fields.Many2one("op.student", tracking=True)
+    course_id = fields.Many2one("op.course", required=True, tracking=True)
+    batch_id = fields.Many2one("op.batch", tracking=True)
     compulsory_subject_ids = fields.Many2many(
         "op.subject",
         "subject_compulsory_rel",

@@ -27,12 +27,12 @@ class OpStudentFeesDetails(models.Model):
     _description = "Student Fees Details"
     _rec_name = "student_id"
 
-    fees_line_id = fields.Many2one("op.fees.terms.line", "Fees Line")
+    fees_line_id = fields.Many2one("op.fees.terms.line")
     invoice_id = fields.Many2one("account.move", "Invoice ID")
     amount = fields.Monetary("Fees Amount", currency_field="currency_id")
     date = fields.Date("Submit Date")
-    product_id = fields.Many2one("product.product", "Product")
-    student_id = fields.Many2one("op.student", "Student", required=True)
+    product_id = fields.Many2one("product.product")
+    student_id = fields.Many2one("op.student", required=True)
     fees_factor = fields.Float()
     state = fields.Selection(
         [("draft", "Draft"), ("invoice", "Invoice Created"), ("cancel", "Cancel")],
@@ -51,8 +51,8 @@ class OpStudentFeesDetails(models.Model):
     )
     discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 
-    course_id = fields.Many2one("op.course", "Course", required=False)
-    batch_id = fields.Many2one("op.batch", "Batch", required=False)
+    course_id = fields.Many2one("op.course", required=False)
+    batch_id = fields.Many2one("op.batch", required=False)
 
     @api.depends("discount")
     def _compute_discount_amount(self):

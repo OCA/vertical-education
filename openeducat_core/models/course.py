@@ -47,7 +47,7 @@ class OpCourse(models.Model):
         or False,
     )
     active = fields.Boolean(default=True)
-    program_id = fields.Many2one("op.program", string="Program", tracking=True)
+    program_id = fields.Many2one("op.program", tracking=True)
 
     _sql_constraints = [
         ("unique_course_code", "unique(code)", "Code should be unique per course!")

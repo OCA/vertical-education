@@ -37,7 +37,7 @@ class OpMediaMovement(models.Model):
     _rec_name = "media_id"
     _order = "id DESC"
 
-    media_id = fields.Many2one("op.media", "Media", required=True)
+    media_id = fields.Many2one("op.media", required=True)
     media_unit_id = fields.Many2one(
         "op.media.unit",
         "Media Unit",
@@ -50,8 +50,8 @@ class OpMediaMovement(models.Model):
         "Student/Faculty",
         required=True,
     )
-    student_id = fields.Many2one("op.student", "Student")
-    faculty_id = fields.Many2one("op.faculty", "Faculty")
+    student_id = fields.Many2one("op.student")
+    faculty_id = fields.Many2one("op.faculty")
     library_card_id = fields.Many2one(
         "op.library.card", "Library Card", required=True, tracking=True
     )
@@ -79,7 +79,7 @@ class OpMediaMovement(models.Model):
         related="media_id.media_type_id", store=True, string="Media Type"
     )
     user_id = fields.Many2one("res.users", string="Users")
-    invoice_id = fields.Many2one("account.move", "Invoice", readonly=True)
+    invoice_id = fields.Many2one("account.move", readonly=True)
     active = fields.Boolean(default=True)
     company_id = fields.Many2one(
         "res.company", string="Company", default=lambda self: self.env.user.company_id

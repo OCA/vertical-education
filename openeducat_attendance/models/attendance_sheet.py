@@ -37,14 +37,14 @@ class OpAttendanceSheet(models.Model):
     batch_id = fields.Many2one(
         "op.batch", "Batch", related="register_id.batch_id", store=True, readonly=True
     )
-    session_id = fields.Many2one("op.session", "Session")
+    session_id = fields.Many2one("op.session")
     attendance_date = fields.Date(
         "Date", required=True, default=lambda self: fields.Date.today(), tracking=True
     )
     attendance_line = fields.One2many(
         "op.attendance.line", "attendance_id", "Attendance Line"
     )
-    faculty_id = fields.Many2one("op.faculty", "Faculty")
+    faculty_id = fields.Many2one("op.faculty")
     active = fields.Boolean(default=True)
 
     state = fields.Selection(

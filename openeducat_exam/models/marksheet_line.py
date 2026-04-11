@@ -31,7 +31,7 @@ class OpMarksheetLine(models.Model):
     evaluation_type = fields.Selection(
         related="marksheet_reg_id.exam_session_id.evaluation_type", store=True
     )
-    student_id = fields.Many2one("op.student", "Student", required=True)
+    student_id = fields.Many2one("op.student", required=True)
     result_line = fields.One2many("op.result.line", "marksheet_line_id", "Results")
     total_marks = fields.Integer(compute="_compute_total_marks", store=True
     )

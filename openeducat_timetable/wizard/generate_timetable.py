@@ -33,8 +33,8 @@ class GenerateSession(models.TransientModel):
     _description = "Generate Sessions"
     _rec_name = "course_id"
 
-    course_id = fields.Many2one("op.course", "Course", required=True)
-    batch_id = fields.Many2one("op.batch", "Batch", required=True)
+    course_id = fields.Many2one("op.course", required=True)
+    batch_id = fields.Many2one("op.batch", required=True)
     time_table_lines = fields.One2many("gen.time.table.line", "gen_time_table")
     time_table_lines_1 = fields.One2many(
         "gen.time.table.line",
@@ -156,12 +156,12 @@ class GenerateSessionLine(models.TransientModel):
     _rec_name = "day"
 
     gen_time_table = fields.Many2one("generate.time.table", "Time Table", required=True)
-    faculty_id = fields.Many2one("op.faculty", "Faculty", required=True)
-    subject_id = fields.Many2one("op.subject", "Subject", required=True)
-    timing_id = fields.Many2one("op.timing", "Timing")
+    faculty_id = fields.Many2one("op.faculty", required=True)
+    subject_id = fields.Many2one("op.subject", required=True)
+    timing_id = fields.Many2one("op.timing")
     session_start_time = fields.Float("Start Time")
     session_end_time = fields.Float("End Time")
-    classroom_id = fields.Many2one("op.classroom", "Classroom")
+    classroom_id = fields.Many2one("op.classroom")
     day = fields.Selection(
         [
             ("0", calendar.day_name[0]),

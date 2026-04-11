@@ -37,7 +37,7 @@ class OpAdmissionRegister(models.Model):
         readonly=True,
         default=(fields.Date.today() + relativedelta(days=30)),
     )
-    course_id = fields.Many2one("op.course", "Course", readonly=True, tracking=True)
+    course_id = fields.Many2one("op.course", readonly=True, tracking=True)
     min_count = fields.Integer("Minimum No. of Admission", readonly=True)
     max_count = fields.Integer("Maximum No. of Admission", readonly=True, default=30)
     product_id = fields.Many2one(
@@ -97,7 +97,7 @@ class OpAdmissionRegister(models.Model):
                 self.program_id = None
                 self.admission_fees_line_ids = None
 
-    program_id = fields.Many2one("op.program", string="Program", tracking=True)
+    program_id = fields.Many2one("op.program", tracking=True)
 
     def _compute_counts(self):
         for record in self:
@@ -223,6 +223,6 @@ class AdmissionRegisterFeesLine(models.Model):
     _name = "op.admission.fees.line"
     _description = "Admission Fees Line"
 
-    course_id = fields.Many2one("op.course", string="Course", required=True)
+    course_id = fields.Many2one("op.course", required=True)
     course_fees_product_id = fields.Many2one("product.product", string="Course Fees")
     register_id = fields.Many2one("op.admission.register", string="Admission Register")

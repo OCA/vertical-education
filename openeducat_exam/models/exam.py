@@ -38,7 +38,7 @@ class OpExam(models.Model):
     batch_id = fields.Many2one(
         "op.batch", "Batch", related="session_id.batch_id", store=True, readonly=True
     )
-    subject_id = fields.Many2one("op.subject", "Subject", required=True)
+    subject_id = fields.Many2one("op.subject", required=True)
     exam_code = fields.Char(size=16, required=True)
     attendees_line = fields.One2many(
         "op.exam.attendees", "exam_id", "Attendees", readonly=True
@@ -60,7 +60,7 @@ class OpExam(models.Model):
         tracking=True,
     )
     note = fields.Text()
-    responsible_id = fields.Many2many("op.faculty", string="Responsible")
+    responsible_id = fields.Many2many("op.faculty")
     name = fields.Char("Exam", size=256, required=True)
     total_marks = fields.Integer(required=True)
     min_marks = fields.Integer("Passing Marks", required=True)

@@ -33,8 +33,7 @@ class OpMarksheetRegister(models.Model):
     marksheet_line = fields.One2many(
         "op.marksheet.line", "marksheet_reg_id", "Marksheets"
     )
-    generated_date = fields.Date(required=True, default=fields.Date.today(),
-        tracking=True
+    generated_date = fields.Date(required=True, default=fields.Date.today(), tracking=True
     )
     generated_by = fields.Many2one(
         "res.users",

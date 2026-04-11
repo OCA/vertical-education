@@ -52,8 +52,8 @@ class OpFaculty(models.Model):
     gender = fields.Selection(
         [("male", "Male"), ("female", "Female")], "Gender", required=True
     )
-    nationality = fields.Many2one("res.country", "Nationality")
-    emergency_contact = fields.Many2one("res.partner", "Emergency Contact")
+    nationality = fields.Many2one("res.country")
+    emergency_contact = fields.Many2one("res.partner")
     visa_info = fields.Char(size=64)
     id_number = fields.Char("ID Card Number", size=64)
     login = fields.Char(related="partner_id.user_id.login", readonly=True)

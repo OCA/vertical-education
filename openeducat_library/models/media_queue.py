@@ -30,7 +30,7 @@ class OpMediaQueue(models.Model):
 
     name = fields.Char("Sequence No", readonly=True, copy=False, default="/")
     partner_id = fields.Many2one("res.partner", "Student/Faculty")
-    media_id = fields.Many2one("op.media", "Media", required=True, tracking=True)
+    media_id = fields.Many2one("op.media", required=True, tracking=True)
     date_from = fields.Date("From Date", required=True, default=fields.Date.today())
     date_to = fields.Date("To Date", required=True)
     user_id = fields.Many2one(

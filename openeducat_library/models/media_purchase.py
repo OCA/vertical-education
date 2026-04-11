@@ -33,8 +33,8 @@ class OpMediaPurchase(models.Model):
     author = fields.Char("Author(s)", size=256, required=True, tracking=True)
     edition = fields.Char()
     publisher = fields.Char("Publisher(s)", size=256)
-    course_ids = fields.Many2one("op.course", "Course", required=True, tracking=True)
-    subject_ids = fields.Many2one("op.subject", "Subject", required=True, tracking=True)
+    course_ids = fields.Many2one("op.course", required=True, tracking=True)
+    subject_ids = fields.Many2one("op.subject", required=True, tracking=True)
     requested_id = fields.Many2one(
         "res.partner", "Requested By", default=lambda self: self.env.user.partner_id.id
     )
@@ -50,7 +50,7 @@ class OpMediaPurchase(models.Model):
         default="draft",
         tracking=True,
     )
-    media_type_id = fields.Many2one("op.media.type", "Media Type")
+    media_type_id = fields.Many2one("op.media.type")
     active = fields.Boolean(default=True)
 
     def act_requested(self):
