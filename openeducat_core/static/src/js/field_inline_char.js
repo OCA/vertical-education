@@ -16,10 +16,6 @@ export class InlineCharField extends CharField {
             this._createSizer();
             this._resizeInput();
         });
-    }
-
-    setup() {
-        super.setup();
         useEffect(() => {
             this._createSizer();
             this._resizeInput();

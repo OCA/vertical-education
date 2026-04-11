@@ -29,13 +29,13 @@ class TestExam(TestExamCommon):
     def test_details_of_Exam(self):
         exam = self.op_exam.search([])
         for x in exam:
-            logging.info("Exam Name: %s" % (x.name))
-            logging.info("Exam Session: %s" % (x.session_id.name))
-            logging.info("Exam course: %s" % (x.course_id.name))
-            logging.info("Exam Batch: %s" % (x.batch_id.name))
-            logging.info("Exam subject: %s" % (x.subject_id.name))
-            logging.info("Exam Total Marks: %s" % (x.total_marks))
-            logging.info("Exam Passing Marks: %s" % (x.min_marks))
+            logging.info(f"Exam Name: {x.name}")
+            logging.info(f"Exam Session: {x.session_id.name}")
+            logging.info(f"Exam course: {x.course_id.name}")
+            logging.info(f"Exam Batch: {x.batch_id.name}")
+            logging.info(f"Exam subject: {x.subject_id.name}")
+            logging.info(f"Exam Total Marks: {x.total_marks}")
+            logging.info(f"Exam Passing Marks: {x.min_marks}")
             logging.info("Exam Attendes:")
             for attendes in x.attendees_line:
                 logging.info(" %s" % (attendes.student_id.display_name))
@@ -66,9 +66,9 @@ class TestExamRoom(TestExamCommon):
         for data in room:
             if not data:
                 raise AssertionError("Error in data, please check for Exam Grades")
-            logging.info("Name: %s" % (data.name))
-            logging.info("Room Name : %s" % (data.classroom_id.name))
-            logging.info("Capacity : %s" % (data.capacity))
+            logging.info(f"Name: {data.name}")
+            logging.info(f"Room Name : {data.classroom_id.name}")
+            logging.info(f"Capacity : {data.capacity}")
 
             for res in room:
                 res.check_capacity()
@@ -82,8 +82,8 @@ class TestExamType(TestExamCommon):
         exam_type = self.op_exam_type.search([])
 
         for data in exam_type:
-            logging.info("Exam Type: %s" % (data.name))
-            logging.info("Exam code: %s" % (data.code))
+            logging.info(f"Exam Type: {data.name}")
+            logging.info(f"Exam code: {data.code}")
 
 
 class TestGrade(TestExamCommon):
@@ -96,9 +96,9 @@ class TestGrade(TestExamCommon):
         if not grade:
             raise AssertionError("Error in data, please check for Exam Grades")
         for data in grade:
-            logging.info("Min percentage : %s" % (data.min_per))
-            logging.info("Max percentage : %s" % (data.max_per))
-            logging.info("Result : %s" % (data.result))
+            logging.info(f"Min percentage : {data.min_per}")
+            logging.info(f"Max percentage : {data.max_per}")
+            logging.info(f"Result : {data.result}")
 
 
 class TestMarksheetline(TestExamCommon):
@@ -109,12 +109,12 @@ class TestMarksheetline(TestExamCommon):
         line = self.op_marksheet_line.search([])
 
         for data in line:
-            logging.info("Registration : %s" % (data.marksheet_reg_id.name))
-            logging.info("Evaluation Type : %s" % (data.evaluation_type))
-            logging.info("Percentage : %s" % (data.percentage))
-            logging.info("Date : %s" % (data.generated_date))
-            logging.info("Grade : %s" % (data.grade))
-            logging.info("Status : %s" % (data.status))
+            logging.info(f"Registration : {data.marksheet_reg_id.name}")
+            logging.info(f"Evaluation Type : {data.evaluation_type}")
+            logging.info(f"Percentage : {data.percentage}")
+            logging.info(f"Date : {data.generated_date}")
+            logging.info(f"Grade : {data.grade}")
+            logging.info(f"Status : {data.status}")
             data._check_marks()
             data._compute_total_marks()
             data._compute_percentage()
@@ -131,9 +131,9 @@ class TestMarksheetRegister(TestExamCommon):
 
         for data in register:
             logging.info("Marksheet Register : %s" % data.name)
-            logging.info("Exam Session : %s" % (data.exam_session_id.name))
+            logging.info(f"Exam Session : {data.exam_session_id.name}")
             for res in data.marksheet_line:
-                logging.info("Marksheets : %s" % (res.id))
+                logging.info(f"Marksheets : {res.id}")
 
         data._check_marks()
         data._compute_total_pass()
@@ -201,8 +201,10 @@ class TestRoomDistribution(TestExamCommon):
 
     def test_room_distribution(self):
         room = self.op_room_distribution.search([])
-        room._compute_get_total_student()
-        room._compute_get_room_capacity()
-        room.schedule_exam()
+        for record in room:
+            record._compute_get_total_student()
+            record._compute_get_room_capacity()
+            if record.room_ids and record.student_ids:
+                record.schedule_exam()
 
         logging.info("computed total students")

@@ -28,15 +28,9 @@ class OpExamRoom(models.Model):
 
     name = fields.Char("Name", size=256, required=True)
     classroom_id = fields.Many2one("op.classroom", "Classroom", required=True)
-    capacity = fields.Integer("No of Seats", related="classroom_id.capacity")
-
-    @api.constrains("capacity")
-    def check_capacity(self):
-        if self.capacity < 0:
-            raise ValidationError(_("Enter proper Capacity"))
-        elif self.capacity > self.classroom_id.capacity:
-            raise ValidationError(_("Capacity over Classroom capacity!"))
+    capacity = fields.Integer("No of Seats", related="classroom_id.capacity", readonly=True)
 
     @api.onchange("classroom_id")
     def onchange_classroom(self):
-        self.capacity = self.classroom_id.capacity
+        if self.classroom_id:
+            self.capacity = self.classroom_id.capacity

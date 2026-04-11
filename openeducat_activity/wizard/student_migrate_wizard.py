@@ -75,9 +75,10 @@ class StudentMigrate(models.TransientModel):
                     if record.course_from_id.parent_id != record.course_to_id.parent_id:
                         raise ValidationError(
                             _(
-                                "Can't migrate, As selected courses don't share same parent course!"
+                                "Can't migrate, As selected courses "
+                                "don't share same parent course!"
                             )
-                        )  # noqa
+                        )
             elif (record.course_from_id.program_id and record.course_to_id) or (
                 record.course_from_id.program_id and record.course_completed
             ):

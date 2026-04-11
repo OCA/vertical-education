@@ -25,7 +25,7 @@ class OpParentRelation(models.Model):
     _name = "op.parent.relationship"
     _description = "Relationships"
 
-    name = fields.Char("Name", required=True)
+    name = fields.Char(required=True)
 
     _sql_constraints = [
         (
