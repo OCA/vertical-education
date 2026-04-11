@@ -42,16 +42,16 @@ class OpSession(models.Model):
     _description = "Sessions"
 
     name = fields.Char(compute="_compute_name", store=True)
-    timing_id = fields.Many2one("op.timing", "Timing", tracking=True)
+    timing_id = fields.Many2one("op.timing"tracking=True)
     start_datetime = fields.Datetime(
         "Start Time", required=True, default=lambda self: fields.Datetime.now()
     )
     end_datetime = fields.Datetime("End Time", required=True)
-    course_id = fields.Many2one("op.course", "Course", required=True)
-    faculty_id = fields.Many2one("op.faculty", "Faculty", required=True)
-    batch_id = fields.Many2one("op.batch", "Batch", required=True)
-    subject_id = fields.Many2one("op.subject", "Subject", required=True)
-    classroom_id = fields.Many2one("op.classroom", "Classroom")
+    course_id = fields.Many2one("op.course"required=True)
+    faculty_id = fields.Many2one("op.faculty"required=True)
+    batch_id = fields.Many2one("op.batch"required=True)
+    subject_id = fields.Many2one("op.subject"required=True)
+    classroom_id = fields.Many2one("op.classroom")
     color = fields.Integer("Color Index")
     type = fields.Char(compute="_compute_day", string="Day", store=True)
     state = fields.Selection(

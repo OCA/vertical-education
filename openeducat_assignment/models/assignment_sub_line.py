@@ -40,8 +40,8 @@ class OpAssignmentSubLine(models.Model):
             else:
                 user.user_boolean = False
 
-    assignment_id = fields.Many2one("op.assignment", "Assignment", required=True)
-    student_id = fields.Many2one("op.student", "Student", required=True)
+    assignment_id = fields.Many2one("op.assignment"required=True)
+    student_id = fields.Many2one("op.student"required=True)
     description = fields.Text(tracking=True)
     state = fields.Selection(
         [

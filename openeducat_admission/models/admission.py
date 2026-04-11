@@ -37,7 +37,7 @@ class OpAdmission(models.Model):
     first_name = fields.Char(required=True, translate=True)
     middle_name = fields.Char(translate=True)
     last_name = fields.Char(required=True, translate=True)
-    title = fields.Many2one("res.partner.title", "Title")
+    title = fields.Many2one("res.partner.title")
     application_number = fields.Char(size=16, copy=False, readonly=True, store=True
     )
     admission_date = fields.Date(copy=False)
@@ -46,8 +46,8 @@ class OpAdmission(models.Model):
         default=lambda self: fields.Datetime.now(),
     )
     birth_date = fields.Date(required=True)
-    course_id = fields.Many2one("op.course", "Course", required=True)
-    batch_id = fields.Many2one("op.batch", "Batch", required=False)
+    course_id = fields.Many2one("op.course"required=True)
+    batch_id = fields.Many2one("op.batch"required=False)
     street = fields.Char(size=256)
     street2 = fields.Char(size=256)
     phone = fields.Char(size=16)
@@ -58,7 +58,7 @@ class OpAdmission(models.Model):
     state_id = fields.Many2one(
         "res.country.state", "States", domain="[('country_id', '=', country_id)]"
     )
-    country_id = fields.Many2one("res.country", "Country")
+    country_id = fields.Many2one("res.country")
     fees = fields.Float()
     image = fields.Image()
     state = fields.Selection(
@@ -85,14 +85,14 @@ class OpAdmission(models.Model):
     gender = fields.Selection(
         [("m", "Male"), ("f", "Female")], string="Gender", required=True
     )
-    student_id = fields.Many2one("op.student", "Student")
+    student_id = fields.Many2one("op.student")
     nbr = fields.Integer("No of Admission", readonly=True)
     register_id = fields.Many2one(
         "op.admission.register", "Admission Register", required=True
     )
-    partner_id = fields.Many2one("res.partner", "Partner")
+    partner_id = fields.Many2one("res.partner")
     is_student = fields.Boolean("Is Already Student")
-    fees_term_id = fields.Many2one("op.fees.terms", "Fees Term")
+    fees_term_id = fields.Many2one("op.fees.terms")
     active = fields.Boolean(default=True)
     discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 

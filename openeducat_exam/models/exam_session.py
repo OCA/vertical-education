@@ -28,8 +28,8 @@ class OpExamSession(models.Model):
     _description = "Exam Session"
 
     name = fields.Char("Exam Session", size=256, required=True, tracking=True)
-    course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
-    batch_id = fields.Many2one("op.batch", "Batch", required=True, tracking=True)
+    course_id = fields.Many2one("op.course"required=True, tracking=True)
+    batch_id = fields.Many2one("op.batch"required=True, tracking=True)
     exam_code = fields.Char("Exam Session Code", size=16, required=True, tracking=True)
     start_date = fields.Date(required=True, tracking=True)
     end_date = fields.Date(required=True, tracking=True)
@@ -44,7 +44,7 @@ class OpExamSession(models.Model):
         required=True,
         tracking=True,
     )
-    venue = fields.Many2one("res.partner", "Venue", tracking=True)
+    venue = fields.Many2one("res.partner"tracking=True)
     state = fields.Selection(
         [
             ("draft", "Draft"),

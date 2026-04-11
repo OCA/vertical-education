@@ -60,11 +60,9 @@ class OpLibraryCard(models.Model):
         default="student",
         required=True,
     )
-    student_id = fields.Many2one(
-        "op.student", "Student", domain=[("library_card_id", "=", False)]
+    student_id = fields.Many2one("op.student"domain=[("library_card_id", "=", False)]
     )
-    faculty_id = fields.Many2one(
-        "op.faculty", "Faculty", domain=[("library_card_id", "=", False)]
+    faculty_id = fields.Many2one("op.faculty"domain=[("library_card_id", "=", False)]
     )
     active = fields.Boolean(default=True)
 

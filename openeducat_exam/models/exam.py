@@ -38,7 +38,7 @@ class OpExam(models.Model):
     batch_id = fields.Many2one(
         "op.batch", "Batch", related="session_id.batch_id", store=True, readonly=True
     )
-    subject_id = fields.Many2one("op.subject", "Subject", required=True)
+    subject_id = fields.Many2one("op.subject"required=True)
     exam_code = fields.Char(size=16, required=True)
     attendees_line = fields.One2many(
         "op.exam.attendees", "exam_id", "Attendees", readonly=True

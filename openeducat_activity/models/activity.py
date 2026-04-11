@@ -33,7 +33,7 @@ class OpActivity(models.Model):
             or False
         )
 
-    student_id = fields.Many2one("op.student", "Student", required=True)
+    student_id = fields.Many2one("op.student"required=True)
     faculty_id = fields.Many2one(
         "op.faculty", string="Faculty", default=lambda self: self._default_faculty()
     )

@@ -29,9 +29,9 @@ class OpAttendanceRegister(models.Model):
 
     name = fields.Char(size=16, required=True, tracking=True)
     code = fields.Char(size=16, required=True, tracking=True)
-    course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
-    batch_id = fields.Many2one("op.batch", "Batch", required=True, tracking=True)
-    subject_id = fields.Many2one("op.subject", "Subject", tracking=True)
+    course_id = fields.Many2one("op.course"required=True, tracking=True)
+    batch_id = fields.Many2one("op.batch"required=True, tracking=True)
+    subject_id = fields.Many2one("op.subject"tracking=True)
     active = fields.Boolean(default=True)
 
     _sql_constraints = [
