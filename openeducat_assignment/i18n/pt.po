@@ -1,0 +1,853 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_assignment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-29 05:57+0000\n"
+"PO-Revision-Date: 2025-04-29 05:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_assignment
+#: model:mail.template,body_html:openeducat_assignment.email_template_assignment_submission_after
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\">\n"
+"                                                        <span style=\"font-size: 10px;\"/>\n"
+"                                                        <br/>\n"
+"                                                    </td>\n"
+"                                                    <td valign=\"middle\" align=\"right\">\n"
+"                                                        <img t-att-src=\"'/logo.png?company=%s' % object.company_id.id\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"'%s' % object.company_id.name\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <p>Dear</p>\n"
+"                                                        <strong>\n"
+"                                                            <t t-out=\"object.student_id.name or ''\"/>\n"
+"                                                        </strong>\n"
+"                                                        <p>Your Assignment Submission\n"
+"                                                            <strong>\n"
+"                                                                <t t-out=\"object.assignment_id.name or ''\"/>\n"
+"                                                            </strong>\n"
+"                                                            date\n"
+"                                                            <strong>(\n"
+"                                                                <t t-out=\"object.submission_date or ''\"/>)\n"
+"                                                            </strong>\n"
+"                                                            has\n"
+"                                                            been passed. Please submit it as soon as possible.\n"
+"                                                        </p>\n"
+"                                                        <p>Thank you.</p>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                        <t t-out=\"object.company_id.name or ''\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                                        <t t-out=\"object.company_id.phone or ''\"/>\n"
+"                                                        <t t-if=\"object.company_id.email\">\n"
+"                                                            |\n"
+"                                                            <a href=\"'mailto:%s'%20%20%7B%7B%20object.company_id.email%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                                                <t t-out=\"object.company_id.email or ''\"/>\n"
+"                                                            </a>\n"
+"                                                        </t>\n"
+"                                                        <t t-if=\"object.company_id.website\">\n"
+"                                                            |\n"
+"                                                            <a href=\"'%s'%20%20%7B%7B%20object.company_id.website%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                                                <t t-out=\"object.company_id.website or ''\"/>\n"
+"                                                            </a>\n"
+"                                                        </t>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: openeducat_assignment
+#: model:mail.template,body_html:openeducat_assignment.email_template_assignment_submission
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\">\n"
+"                    <tr>\n"
+"                        <td align=\"center\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                                <tbody>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\">\n"
+"                                                        <span style=\"font-size: 10px;\"/>\n"
+"                                                        <br/>\n"
+"                                                    </td>\n"
+"                                                    <td valign=\"middle\" align=\"right\">\n"
+"                                                        <img t-att-src=\"'/logo.png?company=%s' % object.company_id.id\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"'%s' % object.company_id.name\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                                        <p>Dear</p>\n"
+"                                                        <strong>\n"
+"                                                            <t t-out=\"object.student_id.name or ''\"/>\n"
+"                                                        </strong>\n"
+"                                                        <p>Your Assignment Submission\n"
+"                                                            <strong>\n"
+"                                                                <t t-out=\"object.assignment_id.name or ''\"/>\n"
+"                                                            </strong>\n"
+"                                                            date is\n"
+"                                                            <strong>\n"
+"                                                                <t t-out=\"object.submission_date or ''\"/>\n"
+"                                                            </strong>\n"
+"                                                            .\n"
+"                                                            Please submit it as soon as possible.\n"
+"                                                        </p>\n"
+"                                                        <p>Thank you.</p>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td style=\"text-align:center;\">\n"
+"                                                        <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                    <tr>\n"
+"                                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\">\n"
+"                                                        <t t-out=\"object.company_id.name or ''\"/>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                                <tr>\n"
+"                                                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                                        <t t-out=\"object.company_id.phone or ''\"/>\n"
+"                                                        <t t-if=\"object.company_id.email\">\n"
+"                                                            |\n"
+"                                                            <a href=\"'mailto:%s'%20%20%7B%7B%20object.company_id.email%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                                                <t t-out=\"object.company_id.email or ''\"/>\n"
+"                                                            </a>\n"
+"                                                        </t>\n"
+"                                                        <t t-if=\"object.company_id.website\">\n"
+"                                                            |\n"
+"                                                            <a href=\"'%s'%20%20%7B%7B%20object.company_id.website%20%7D%7D\" style=\"text-decoration:none; color: #454748;\">\n"
+"                                                                <t t-out=\"object.company_id.website or ''\"/>\n"
+"                                                            </a>\n"
+"                                                        </t>\n"
+"                                                    </td>\n"
+"                                                </tr>\n"
+"                                            </table>\n"
+"                                        </td>\n"
+"                                    </tr>\n"
+"                                </tbody>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Accept"
+msgstr "Aceitar"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment_sub_line__state__accept
+msgid "Accepted"
+msgstr "Aceito"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_needaction
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_needaction
+msgid "Action Needed"
+msgstr "Ação necessária"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__active
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__allocation_ids
+msgid "Allocated To"
+msgstr "Alocado para"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Allocation"
+msgstr "Alocação"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Allocation Infomation"
+msgstr "Infomação de alocação"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "Archived"
+msgstr "Arquivado"
+
+#. module: openeducat_assignment
+#: model:ir.model,name:openeducat_assignment.model_op_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__assignment_id
+#: model:ir.module.category,name:openeducat_assignment.module_category_all_op_assignment
+#: model:ir.module.category,name:openeducat_assignment.module_category_openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.assignment_smart_button
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_tree
+msgid "Assignment"
+msgstr "Atribuição"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_student__assignment_count
+msgid "Assignment Count"
+msgstr "Contagem de tarefas"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_graph
+msgid "Assignment Graph View"
+msgstr "Visualização do gráfico de atribuição"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Assignment Name"
+msgstr "Nome da atribuição"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_pivot
+msgid "Assignment Pivot View"
+msgstr "Visualização de pivô de atribuição"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_pivot
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_tree
+msgid "Assignment Sub Line"
+msgstr "Sub -linha de atribuição"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_graph
+msgid "Assignment Sub Line Graph View"
+msgstr "Visualização do gráfico de sub -linha de atribuição"
+
+#. module: openeducat_assignment
+#: model:ir.model,name:openeducat_assignment.model_op_assignment_sub_line
+#: model:mail.template,name:openeducat_assignment.email_template_assignment_submission
+msgid "Assignment Submission"
+msgstr "Envio de tarefas"
+
+#. module: openeducat_assignment
+#: model:ir.actions.act_window,name:openeducat_assignment.act_open_op_assignment_sub_line_view_pivot
+msgid "Assignment Submission Analysis Pivot"
+msgstr "Análise de submissão de tarefas pivô"
+
+#. module: openeducat_assignment
+#: model:mail.template,subject:openeducat_assignment.email_template_assignment_submission_after
+msgid "Assignment Submission Date Passed"
+msgstr "Data de envio da tarefa passada"
+
+#. module: openeducat_assignment
+#: model:base.automation,name:openeducat_assignment.test_rule_assignment_sub_line
+msgid "Assignment Submission Line"
+msgstr "Linha de envio de tarefas"
+
+#. module: openeducat_assignment
+#: model:base.automation,name:openeducat_assignment.test_rule_assignment_sub_line_after
+msgid "Assignment Submission Line after 1 Days"
+msgstr "Linha de envio de tarefas após 1 dia"
+
+#. module: openeducat_assignment
+#: model:mail.template,name:openeducat_assignment.email_template_assignment_submission_after
+msgid "Assignment Submission Passed"
+msgstr "Submissão de tarefas aprovada"
+
+#. module: openeducat_assignment
+#: model:ir.actions.act_window,name:openeducat_assignment.act_open_op_assignment_sub_line_view
+msgid "Assignment Submissions"
+msgstr "Envios de tarefas"
+
+#. module: openeducat_assignment
+#: model:ir.model,name:openeducat_assignment.model_grading_assignment_type
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__assignment_type
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__assignment_type
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+msgid "Assignment Type"
+msgstr "Tipo de atribuição"
+
+#. module: openeducat_assignment
+#: model:ir.actions.act_window,name:openeducat_assignment.act_open_op_assignment_type_view
+#: model:ir.ui.menu,name:openeducat_assignment.menu_op_assignment_type_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_type_tree
+msgid "Assignment Types"
+msgstr "Tipos de atribuição"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_student__allocation_ids
+msgid "Assignment(s)"
+msgstr "Atribuição (s)"
+
+#. module: openeducat_assignment
+#: model:ir.actions.act_window,name:openeducat_assignment.act_open_op_assignment_view
+#: model:ir.ui.menu,name:openeducat_assignment.menu_op_assignment_main
+#: model:ir.ui.menu,name:openeducat_assignment.menu_op_assignment_root
+#: model:ir.ui.menu,name:openeducat_assignment.menu_op_assignment_sub
+msgid "Assignments"
+msgstr "Tarefas"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_attachment_count
+msgid "Attachment Count"
+msgstr "Contagem de anexos"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__grading_assignment_type__assign_type__attendance
+msgid "Attendance"
+msgstr "Participação"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Basic Information"
+msgstr "Informações básicas"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__batch_id
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+msgid "Batch"
+msgstr "Lote"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment__state__cancel
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Change And Resubmit"
+msgstr "Mudar e reenviar"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment_sub_line__state__change
+msgid "Change Req."
+msgstr "Alterar req."
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Change Require"
+msgstr "Mudança exige"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__user_boolean
+msgid "Check user"
+msgstr "Verifique o usuário"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__code
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_type_search
+msgid "Code"
+msgstr "Código"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: openeducat_assignment
+#: model:ir.ui.menu,name:openeducat_assignment.menu_op_assignment_configuration
+msgid "Configuration"
+msgstr "Configuração"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__course_id
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__course_id
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+msgid "Course"
+msgstr "Curso"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__create_uid
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__create_uid
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__create_uid
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__create_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__create_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__create_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__description
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__description
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Description"
+msgstr "Descrição"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__display_name
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__display_name
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__display_name
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__display_name
+msgid "Display Name"
+msgstr "Nome de exibição"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment__state__draft
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment_sub_line__state__draft
+msgid "Draft"
+msgstr "Rascunho"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__faculty_id
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__faculty_id
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+msgid "Faculty"
+msgstr "Faculdade"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__faculty_user_id
+msgid "Faculty User"
+msgstr "Usuário do corpo docente"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Finish"
+msgstr "Terminar"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment__state__finish
+msgid "Finished"
+msgstr "Finalizado"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (parceiros)"
+
+#. module: openeducat_assignment
+#: model:ir.model,name:openeducat_assignment.model_grading_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__grading_assignment_id
+msgid "Grading Assignment"
+msgstr "Atribuição de classificação"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_type_search
+msgid "Group By..."
+msgstr "Grupo por ..."
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__has_message
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__has_message
+msgid "Has Message"
+msgstr "Tem mensagem"
+
+#. module: openeducat_assignment
+#: model:ir.module.category,description:openeducat_assignment.module_category_all_op_assignment
+msgid "Helps you manage your institutes different-different users."
+msgstr ""
+"Ajuda você a gerenciar seus institutos diferentes usuários diferentes."
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__id
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__id
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__id
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__id
+msgid "ID"
+msgstr "EU IA"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment__message_needaction
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment_sub_line__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se verificado, novas mensagens exigem sua atenção."
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment__message_has_error
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment_sub_line__message_has_error
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment_sub_line__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se verificado, algumas mensagens têm um erro de entrega."
+
+#. module: openeducat_assignment
+#. odoo-python
+#: code:addons/openeducat_assignment/models/assignment_sub_line.py:0
+msgid ""
+"Invalid Action!\n"
+" Parent can not             create Assignment Submissions!"
+msgstr ""
+"Ação inválida!\n"
+" O pai não pode criar envios de tarefas!"
+
+#. module: openeducat_assignment
+#. odoo-python
+#: code:addons/openeducat_assignment/models/assignment_sub_line.py:0
+msgid ""
+"Invalid Action!\n"
+" Parent can not edit             Assignment Submissions!"
+msgstr ""
+"Ação inválida!\n"
+" Os pais não podem editar envios de tarefas!"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_is_follower
+msgid "Is Follower"
+msgstr "É seguidor"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__issued_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__issued_date
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+msgid "Issued Date"
+msgstr "Data emitida"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__write_uid
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__write_uid
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__write_uid
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__write_uid
+msgid "Last Updated by"
+msgstr "Última atualização por"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__write_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__write_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__write_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: openeducat_assignment
+#: model:res.groups,name:openeducat_assignment.group_op_assignment_manager
+msgid "Manager"
+msgstr "Gerente"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__marks
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__marks
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "Marks"
+msgstr "Marcas"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_has_error
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_has_error
+msgid "Message Delivery error"
+msgstr "Erro de entrega de mensagens"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_ids
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_ids
+msgid "Messages"
+msgstr "Mensagens"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "Month"
+msgstr "Mês"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__name
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__name
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__name
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_type_search
+msgid "Name"
+msgstr "Nome"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__note
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Note"
+msgstr "Observação"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de ações"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de erros"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment_sub_line__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensagens que exigem ação"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment_sub_line__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensagens com erro de entrega"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__point
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__point
+msgid "Points"
+msgstr "Pontos"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Publish"
+msgstr "Publicar"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment__state__publish
+msgid "Published"
+msgstr "Publicado"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Reject"
+msgstr "Rejeitar"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment_sub_line__state__reject
+msgid "Rejected"
+msgstr "Rejeitado"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Resubmit"
+msgstr "Reenvie"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__reviewer
+msgid "Reviewer"
+msgstr "Revisor"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erro de entrega do SMS"
+
+#. module: openeducat_assignment
+#: model:ir.actions.server,name:openeducat_assignment.assignment_sub_line_action
+msgid "Server Actions Assignment Submission"
+msgstr "Submissão de atribuição de ações do servidor"
+
+#. module: openeducat_assignment
+#: model:ir.actions.server,name:openeducat_assignment.assignment_sub_line_action_after
+msgid "Server Actions Assignment Submission After 1 Days"
+msgstr "Ações do servidor envio de atribuição após 1 dia"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Set to Draft"
+msgstr "Definido para rascunho"
+
+#. module: openeducat_assignment
+#: model:ir.ui.menu,name:openeducat_assignment.menu_assignment_config
+msgid "Settings"
+msgstr "Configurações"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__state
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__state
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "State"
+msgstr "Estado"
+
+#. module: openeducat_assignment
+#: model:ir.model,name:openeducat_assignment.model_op_student
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__student_id
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "Student"
+msgstr "Estudante"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment__subject_id
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__subject_id
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+msgid "Subject"
+msgstr "Assunto"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__grading_assignment_type__assign_type__sub
+msgid "Subjective"
+msgstr "Subjetivo"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__assignment_sub_line
+msgid "Submission"
+msgstr "Submissão"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__submission_date
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__submission_date
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "Submission Date"
+msgstr "Data de envio"
+
+#. module: openeducat_assignment
+#. odoo-python
+#: code:addons/openeducat_assignment/models/assignment.py:0
+msgid "Submission Date cannot be set before Issue Date."
+msgstr "A data de envio não pode ser definida antes da data de emissão."
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__assignment_sub_line_count
+#: model:ir.ui.menu,name:openeducat_assignment.menu_op_assignment_sub_line_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_form
+msgid "Submissions"
+msgstr "Envios"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_form
+msgid "Submit"
+msgstr "Enviar"
+
+#. module: openeducat_assignment
+#: model:mail.template,subject:openeducat_assignment.email_template_assignment_submission
+msgid "Submit Your Assignment"
+msgstr "Envie sua tarefa"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields.selection,name:openeducat_assignment.selection__op_assignment_sub_line__state__submit
+msgid "Submitted"
+msgstr "Enviado"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_type_search
+msgid "Tag"
+msgstr "Marcação"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment_sub_line__faculty_user_id
+msgid "The internal user in charge of this contact."
+msgstr "O usuário interno encarregado deste contato."
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "Today"
+msgstr "Hoje"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_grading_assignment_type__assign_type
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_tree
+msgid "Type"
+msgstr "Tipo"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__user_id
+#: model:res.groups,name:openeducat_assignment.group_op_assignment_user
+msgid "User"
+msgstr "Usuário"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_assignment.field_op_assignment_sub_line__website_message_ids
+msgid "Website Messages"
+msgstr "Mensagens do site"
+
+#. module: openeducat_assignment
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment__website_message_ids
+#: model:ir.model.fields,help:openeducat_assignment.field_op_assignment_sub_line__website_message_ids
+msgid "Website communication history"
+msgstr "Histórico de comunicação do site"
+
+#. module: openeducat_assignment
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_search
+#: model_terms:ir.ui.view,arch_db:openeducat_assignment.view_op_assignment_sub_line_search
+msgid "Week"
+msgstr "Semana"
+
+#. module: openeducat_assignment
+#. odoo-python
+#: code:addons/openeducat_assignment/models/assignment_sub_line.py:0
+msgid "You can't delete none draft submissions!"
+msgstr "Você não pode excluir nenhum rascunho de envios!"

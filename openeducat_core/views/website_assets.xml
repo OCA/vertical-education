@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Jump to website after theme installation ========================================================================== -->
+        <record id="base.open_menu" model="ir.actions.todo">
+            <field name="action_id" ref="website.action_website"/>
+            <field name="state">open</field>
+        </record>
+
+</odoo>

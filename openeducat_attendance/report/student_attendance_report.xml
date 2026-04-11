@@ -1,0 +1,61 @@
+<odoo>
+        <template id="student_attendance_report">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page" style="font-family: 'Odoo Unicode Support Noto';">
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <div class="text-center">
+                            <h3>
+                                <strong>Student Attendance Detail</strong>
+                            </h3>
+                        </div>
+                        <br></br>
+                        <div class="row mt24">
+                            <div style="width:50%; margin-left:15px;">
+                                <b>Student Name:</b>
+                                <span t-esc="get_student_name"/>
+                            </div>
+                            <div style="width:50%; margin-left:15px;">
+                                <b>From Date:</b>
+                                <span t-esc="from_date" t-options="{'widget':'date'}"/>
+                                <b>To Date:</b>
+                                <span t-esc="to_date" t-options="{'widget':'date'}"/>
+                            </div>
+                        </div>
+                        <br/>
+                        <table class="table table-bordered">
+                            <thead class="text-center"
+                                   style="background-color:#eeeeee; font-size:14px; font-weight:600;">
+                                <th class="text-center">Date</th>
+                                <th class="text-center">Remark</th>
+                            </thead>
+                            <tbody class="text-center" style="font-size:12px;">
+                                <t t-foreach="get_data" t-as="obj">
+                                    <tr t-foreach="obj['line']" t-as="l">
+                                        <td class="text-center">
+                                            <span t-esc="l['absent_date']" t-options="{'widget':'date'}"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="l['remark']"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                                <tr t-foreach="get_data" t-as="obj">
+                                    <td class="text-center">
+                                        <b>Total Absence</b>
+                                    </td>
+                                    <td class="text-center">
+                                        <b>
+                                            <span t-esc="obj['total']"/>
+                                        </b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </template>
+</odoo>

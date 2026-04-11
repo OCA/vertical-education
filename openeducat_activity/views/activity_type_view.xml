@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id="view_op_activity_type_tree" model="ir.ui.view">
+            <field name="name">op.activity.type.list</field>
+            <field name="model">op.activity.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Activity Type">
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_activity_type_form" model="ir.ui.view">
+            <field name="name">op.activity.type.form</field>
+            <field name="model">op.activity.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Activity Type">
+                    <header/>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_activity_type_search" model="ir.ui.view">
+            <field name="name">op.activity.type.search</field>
+            <field name="model">op.activity.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Activity Type">
+                    <field name="name"/>
+                    <filter string="Archived" name="inactive"
+                            domain="[('active', '=', False)]"/>
+                    <newline/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_activity_type_view">
+            <field name="name">Activity Types</field>
+            <field name="path">activity-type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.activity.type</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_op_activity_type_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_activity_type_view_form">
+            <field name="act_window_id" ref="act_open_op_activity_type_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_activity_type_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_activity_type_view_tree">
+            <field name="act_window_id" ref="act_open_op_activity_type_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_activity_type_tree"/>
+        </record>
+</odoo>

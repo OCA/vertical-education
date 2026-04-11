@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <record id="parent_template_user" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Parent Template User</field>
+            <field name="login">parentportaltemplate</field>
+            <field name="active" eval="False"/>
+            <field name="groups_id" eval="[(6, 0, [ref('base.group_portal')])]"/>
+        </record>
+
+</odoo>

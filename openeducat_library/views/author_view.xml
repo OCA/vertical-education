@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record id="view_op_author_tree" model="ir.ui.view">
+            <field name="name">op.author.list</field>
+            <field name="model">op.author</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Author">
+                    <field name="name"/>
+                    <field name="media_ids" widget="many2many_tags"/>
+                    <field name="address" invisible="1"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_author_form" model="ir.ui.view">
+            <field name="name">op.author.form</field>
+            <field name="model">op.author</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Author">
+                    <header/>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="address"
+                                       context="{'show_address': 1}"
+                                       options='{"always_reload": True}'/>
+                            </group>
+                        </group>
+                        <group col="4" string="Media(s)">
+                            <field name="media_ids" colspan="4" nolabel="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_author_search" model="ir.ui.view">
+            <field name="name">op.author.search</field>
+            <field name="model">op.author</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Author">
+                    <field name="name"/>
+                    <field name="address"/>
+                    <field name="media_ids"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_author_view">
+            <field name="name">Authors</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.author</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="path">author</field>
+            <field name="search_view_id" ref="view_op_author_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_author_view_form">
+            <field name="act_window_id" ref="act_open_op_author_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_author_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_author_view_tree">
+            <field name="act_window_id" ref="act_open_op_author_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_author_tree"/>
+        </record>
+
+</odoo>

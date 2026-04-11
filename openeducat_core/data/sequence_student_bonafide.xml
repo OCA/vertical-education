@@ -1,0 +1,8 @@
+<odoo>
+    <record id="seq_student_bonafide_certificate" model="ir.sequence">
+        <field name="name">Student Bonafide Certificate</field>
+        <field name="code">op.student.certificate</field>
+        <field name="prefix">CERT/</field>
+        <field name="padding">5</field>
+    </record>
+</odoo>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record id="view_op_media_tree" model="ir.ui.view">
+            <field name="name">op.media.list</field>
+            <field name="model">op.media</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Media">
+                    <field name="name"/>
+                    <field name="media_type_id"/>
+                    <field name="isbn"/>
+                    <field name="internal_code"/>
+                    <field name="edition"/>
+                    <field name="description" optional="hide"/>
+                    <field name="tags" widget="many2many_tags" optional="hide"/>
+                    <field name="author_ids" widget="many2many_tags" optional="hide"/>
+                    <field name="publisher_ids" widget="many2many_tags" optional="hide"/>
+                    <field name="course_ids" widget="many2many_tags" optional="hide"/>
+                    <field name="subject_ids" widget="many2many_tags" optional="hide"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_media_form" model="ir.ui.view">
+            <field name="name">op.media.form</field>
+            <field name="model">op.media</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Media">
+                    <header/>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <h1>
+                            <field name="name" placeholder="Media Name" style="width: 50%%"/>
+                        </h1>
+                        <newline/>
+                        <group class="pt-2">
+                            <group>
+                                <field name="author_ids" widget="many2many_tags"/>
+                                <field name="isbn"/>
+                                <field name="edition"/>
+                                <field name="media_type_id"/>
+                            </group>
+                            <group>
+                                <field name="publisher_ids" widget="many2many_tags"/>
+                                <field name="internal_code"/>
+                                <field name="tags" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                        <notebook colspan="4">
+                            <page name="units" string="Units">
+                                <field name="unit_ids" colspan="4" nolabel="1"/>
+                            </page>
+                            <page name="description" string="Description">
+                                <field name="description" colspan="4"/>
+                            </page>
+                            <page name="education_details" string="Education Details">
+                                <group string='Courses'>
+                                    <field name="course_ids" nolabel="1" widget="many2many_tags" />
+                                </group>
+                                <group string="Subjects">
+                                    <field name="subject_ids" nolabel="1" widget="many2many_tags" />
+                                </group>
+                            </page>
+                            <page name="movements" string="Movements"
+                                  groups="openeducat_library.group_op_library">
+                                <field name="movement_line" colspan="4" nolabel="1"/>
+                            </page>
+                            <page name="media_queue_requests" string="Media Queue Requests">
+                                <field name="queue_ids" colspan="4" nolabel="1">
+                                    <list string="Media Queue Request">
+                                        <field name="user_id"/>
+                                        <field name="date_from"/>
+                                        <field name="date_to"/>
+                                        <field name="state"/>
+                                        <button name="do_accept" string="Accept" type="object"
+                                                invisible="state != 'request'" icon="fa-thumbs-up"
+                                                style="font-size: 15px;"
+                                                groups="openeducat_library.group_op_library"/>
+                                        <button name="do_reject" string="Reject" type="object"
+                                                invisible="state not in ('request','accept')" icon="fa-thumbs-down"
+                                                style="font-size: 15px;"
+                                                groups="openeducat_library.group_op_library"/>
+                                        <button name="do_request_again" string="Request Again"
+                                                invisible="state != 'reject'" type="object" icon="fa-undo"
+                                                style="font-size: 15px;"
+                                                groups="openeducat_library.group_op_library"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_media_search" model="ir.ui.view">
+            <field name="name">op.media.search</field>
+            <field name="model">op.media</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Media">
+                    <field name="name"/>
+                    <field name="isbn"/>
+                    <field name="tags"/>
+                    <field name="unit_ids"/>
+                    <field name="author_ids"/>
+                    <field name="edition"/>
+                    <field name="publisher_ids"/>
+                    <field name="course_ids"/>
+                    <field name="subject_ids"/>
+                    <field name="internal_code"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Edition" name="group_by_lbr_media_edition"
+                                domain="[]" context="{'group_by':'edition'}"/>
+                        <filter string="Type" name="group_by_lbr_media_type"
+                                domain="[]" context="{'group_by':'media_type_id'}"/>
+                        <filter string="Archived" name="inactive"
+                                domain="[('active', '=', False)]"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="view_op_media_pivot" model="ir.ui.view">
+            <field name="name">op.media.pivot</field>
+            <field name="model">op.media</field>
+            <field name="arch" type="xml">
+                <pivot string="Media">
+                    <field name="media_type_id" type="col"/>
+                    <field name="name" type="row"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_op_media_graph">
+            <field name="name">op.media.graph</field>
+            <field name="model">op.media</field>
+            <field name="arch" type="xml">
+                <graph string="Media" type="bar">
+                    <field name="name"/>
+                    <field name="media_type_id"/>
+                </graph>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_media_view">
+            <field name="name">All Media</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.media</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form,pivot,graph</field>
+            <field name="path">media</field>
+            <field name="search_view_id" ref="view_op_media_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_media_view_form">
+            <field name="act_window_id" ref="act_open_op_media_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_media_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_media_view_tree">
+            <field name="act_window_id" ref="act_open_op_media_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_media_tree"/>
+        </record>
+
+</odoo>

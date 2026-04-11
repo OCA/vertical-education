@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record id="view_op_grade_configuration_tree" model="ir.ui.view">
+            <field name="name">op.grade.configuration.list</field>
+            <field name="model">op.grade.configuration</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Grade Configuration">
+                    <field name="min_per"/>
+                    <field name="max_per"/>
+                    <field name="result"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_grade_configuration_form" model="ir.ui.view">
+            <field name="name">op.grade.configuration.form</field>
+            <field name="model">op.grade.configuration</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Grade Configuration">
+                    <header/>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="min_per"/>
+                                <field name="result"/>
+                            </group>
+                            <group>
+                                <field name="max_per"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_grade_configuration_view">
+            <field name="name">Grade Configuration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.grade.configuration</field>
+            <field name="path">grade-configuration</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_grade_configuration_view_form">
+            <field name="act_window_id" ref="act_open_op_grade_configuration_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_grade_configuration_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_grade_configuration_view_tree">
+            <field name="act_window_id" ref="act_open_op_grade_configuration_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_grade_configuration_tree"/>
+        </record>
+
+</odoo>

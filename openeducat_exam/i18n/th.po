@@ -1,0 +1,1292 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_exam
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-29 06:54+0000\n"
+"PO-Revision-Date: 2025-04-29 06:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"<b>Course\n"
+"                                                        </b>"
+msgstr ""
+"<b> หลักสูตร\n"
+"                                                        </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "<b>Course :</b>"
+msgstr "<b> หลักสูตร: </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "<b>Course:</b>"
+msgstr "<b> หลักสูตร: </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"<b>Exam\n"
+"                                                            Code\n"
+"                                                        </b>"
+msgstr ""
+"<b> สอบ\n"
+"                                                            รหัส\n"
+"                                                        </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"<b>Exam\n"
+"                                                            Name\n"
+"                                                        </b>"
+msgstr ""
+"<b> สอบ\n"
+"                                                            ชื่อ\n"
+"                                                        </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "<b>Exam Code:</b>"
+msgstr "<b> รหัสสอบ: </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "<b>Exam Name:</b>"
+msgstr "<b> ชื่อสอบ: </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "<b>Hall Ticket</b>"
+msgstr "<b> ตั๋วฮอลล์ </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "<b>Roll No :</b>"
+msgstr "<b> ม้วนหมายเลข: </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"<b>Student\n"
+"                                                            Name\n"
+"                                                        </b>"
+msgstr ""
+"<b> นักเรียน\n"
+"                                                            ชื่อ\n"
+"                                                        </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "<b>Student Name :</b>"
+msgstr "<b> ชื่อนักเรียน: </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "<b>Student Name:</b>"
+msgstr "<b> ชื่อนักเรียน: </b>"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"<strong>MarkSheet\n"
+"                                            </strong>"
+msgstr ""
+"<strong> marksheet\n"
+"                                            </strong>"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_attendees__status__absent
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "Absent"
+msgstr "ไม่มา"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_held_exam_form
+msgid "Absent Attendees"
+msgstr "ผู้เข้าร่วมประชุมที่ขาด"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_needaction
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_needaction
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_needaction
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_needaction
+msgid "Action Needed"
+msgstr "การดำเนินการที่จำเป็น"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__active
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__active
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__active
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__active
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__active
+msgid "Active"
+msgstr "คล่องแคล่ว"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/result_template.py:0
+msgid "All subject exam should be done."
+msgstr "การสอบวิชาทั้งหมดควรทำ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_template_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_template_search
+msgid "Archived"
+msgstr "ซึ่งเก็บถาวร"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_attachment_count
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_attachment_count
+msgid "Attachment Count"
+msgstr "จำนวนไฟล์แนบ"
+
+#. module: openeducat_exam
+#: model:ir.model.constraint,message:openeducat_exam.constraint_op_exam_attendees_unique_attendees
+msgid "Attendee must be unique per exam."
+msgstr "ผู้เข้าร่วมจะต้องไม่ซ้ำกันต่อการสอบ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__attendees_line
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__attendees_line
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+msgid "Attendees"
+msgstr "ผู้เข้าร่วมประชุม"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__attendees_count
+msgid "Attendees Count"
+msgstr "จำนวนผู้เข้าร่วมประชุม"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__batch_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__batch_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__batch_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__batch_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__batch_id
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_pivot
+msgid "Batch"
+msgstr "ชุด"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_form
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam__state__cancel
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_session__state__cancel
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_marksheet_register__state__cancelled
+msgid "Cancelled"
+msgstr "ยกเลิก"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__capacity
+msgid "Capacity"
+msgstr "ความจุ"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam_room.py:0
+msgid "Capacity over Classroom capacity!"
+msgstr "ความจุมากกว่าความจุในห้องเรียน!"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__classroom_id
+msgid "Classroom"
+msgstr "ห้องเรียน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__code
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_type_search
+msgid "Code"
+msgstr "รหัส"
+
+#. module: openeducat_exam
+#: model:ir.model.constraint,message:openeducat_exam.constraint_op_exam_session_unique_exam_session_code
+msgid "Code should be unique per exam session!"
+msgstr "รหัสควรไม่ซ้ำกันต่อเซสชันการสอบ!"
+
+#. module: openeducat_exam
+#: model:ir.model.constraint,message:openeducat_exam.constraint_op_exam_type_unique_exam_type_code
+msgid "Code should be unique per exam type!"
+msgstr "รหัสควรไม่ซ้ำกันต่อประเภทการสอบ!"
+
+#. module: openeducat_exam
+#: model:ir.model.constraint,message:openeducat_exam.constraint_op_exam_unique_exam_code
+msgid "Code should be unique per exam!"
+msgstr "รหัสควรเป็นเอกลักษณ์ต่อการสอบ!"
+
+#. module: openeducat_exam
+#: model:ir.ui.menu,name:openeducat_exam.menu_exam_configuration
+msgid "Configuration"
+msgstr "การกำหนดค่า"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_res_partner
+msgid "Contact"
+msgstr "ติดต่อ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__course_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__course_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__course_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__course_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__course_id
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_pivot
+msgid "Course"
+msgstr "คอร์ส"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__create_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__create_uid
+msgid "Created by"
+msgstr "สร้างโดย"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__create_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__create_date
+msgid "Created on"
+msgstr "สร้างขึ้นบน"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "Date"
+msgstr "วันที่"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__display_name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__display_name
+msgid "Display Name"
+msgstr "แสดงชื่อ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam__state__done
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_session__state__done
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+msgid "Done"
+msgstr "เสร็จแล้ว"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam__state__draft
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_session__state__draft
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_marksheet_register__state__draft
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_result_template__state__draft
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+msgid "Draft"
+msgstr "ร่าง"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__end_date
+msgid "End Date"
+msgstr "วันที่สิ้นสุด"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam_session.py:0
+msgid "End Date cannot be set before Start Date."
+msgstr "วันที่สิ้นสุดไม่สามารถตั้งค่าก่อนวันที่เริ่มต้น"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__end_time
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__end_time
+msgid "End Time"
+msgstr "เวลาสิ้นสุด"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam.py:0
+msgid "End Time cannot be set before Start Time."
+msgstr "เวลาสิ้นสุดไม่สามารถตั้งค่าก่อนเวลาเริ่มต้น"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam_room.py:0
+msgid "Enter proper Capacity"
+msgstr "เข้าสู่ความสามารถที่เหมาะสม"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/result_line.py:0
+msgid "Enter proper Marks or Percentage!"
+msgstr "ป้อนคะแนนหรือเปอร์เซ็นต์ที่เหมาะสม!"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/marksheet_line.py:0
+msgid "Enter proper marks or percentage!"
+msgstr "ป้อนคะแนนหรือเปอร์เซ็นต์ที่เหมาะสม!"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam.py:0
+msgid "Enter proper marks!"
+msgstr "ป้อนคะแนนที่เหมาะสม!"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/marksheet_register.py:0
+msgid "Enter proper pass or fail!"
+msgstr "ป้อนผ่านที่เหมาะสมหรือล้มเหลว!"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__evaluation_type
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__evaluation_type
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__evaluation_type
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__evaluation_type
+msgid "Evolution Type"
+msgstr "ประเภทวิวัฒนาการ"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__exam_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__exam_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__exam_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__name
+#: model:ir.module.category,name:openeducat_exam.module_category_all_op_exam
+#: model:ir.module.category,name:openeducat_exam.module_category_openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_calendar_view
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_search
+msgid "Exam"
+msgstr "การสอบ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"Exam\n"
+"                                                    Type"
+msgstr ""
+"การสอบ\n"
+"                                                    พิมพ์"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_exam_attendees_view
+#: model:ir.model,name:openeducat_exam.model_op_exam_attendees
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_exam_attendees_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_room_distribution_form
+msgid "Exam Attendees"
+msgstr "ผู้เข้าร่วมสอบ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_pivot
+msgid "Exam Attendees Pivot"
+msgstr "ผู้เข้าร่วมการสอบ Pivot"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__exam_code
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_search
+msgid "Exam Code"
+msgstr "รหัสสอบ"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_report_openeducat_exam_report_marksheet_report
+msgid "Exam Marksheet Report"
+msgstr "รายงานข้อเขียน"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+msgid "Exam Name"
+msgstr "ชื่อสอบ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_pivot
+msgid "Exam Pivot"
+msgstr "การสอบหมุน"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_exam_room
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_room_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_room_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_room_tree
+msgid "Exam Room"
+msgstr "ห้องสอบ"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_room_distribution_view
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_room_distribution_form
+msgid "Exam Room Distribution"
+msgstr "การกระจายห้องสอบ"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_exam_room_view
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__room_ids
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_exam_room_sub
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_room_distribution_form
+msgid "Exam Rooms"
+msgstr "ห้องสอบ"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_exam_session
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__session_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__exam_session_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__exam_session_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__exam_session
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_calendar_view
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+msgid "Exam Session"
+msgstr "เซสชันการสอบ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__exam_code
+msgid "Exam Session Code"
+msgstr "รหัสเซสชันการสอบ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_pivot
+msgid "Exam Session Pivot"
+msgstr "เซสชันการสอบเดือย"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_exam_session_view
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_exam_session
+msgid "Exam Sessions"
+msgstr "เซสชันการสอบ"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_report_openeducat_exam_report_ticket
+msgid "Exam Ticket Report"
+msgstr "รายงานตั๋วสอบ"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam.py:0
+msgid "Exam Time should in between Exam Session Dates."
+msgstr "เวลาสอบควรอยู่ระหว่างวันสอบวันที่"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_exam_type
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__exam_type
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_type_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_type_tree
+msgid "Exam Type"
+msgstr "ประเภทการสอบ"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_exam_type_view
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_exam_type_sub
+msgid "Exam Types"
+msgstr "ประเภทการสอบ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__exam_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__exam_id
+msgid "Exam(s)"
+msgstr "สอบ"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_exam_view
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__exams_count
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_exam_main
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_exam_root
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_school_exam_result
+msgid "Exams"
+msgstr "การสอบ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_marksheet_line__status__fail
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_result_line__status__fail
+msgid "Fail"
+msgstr "ล้มเหลว"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_follower_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_follower_ids
+msgid "Followers"
+msgstr "ผู้ติดตาม"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_partner_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "ผู้ติดตาม (พันธมิตร)"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_template_form
+msgid "Generate Result"
+msgstr "สร้างผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__generated_by
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+msgid "Generated By"
+msgstr "สร้างโดย"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__generated_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__generated_date
+msgid "Generated Date"
+msgstr "วันที่สร้างขึ้น"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__grade
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__grade
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_session__evaluation_type__grade
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "Grade"
+msgstr "ระดับ"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_grade_configuration_view
+#: model:ir.model,name:openeducat_exam.model_op_grade_configuration
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__grade_ids
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_grade_configuration
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_grade_configuration_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_grade_configuration_tree
+msgid "Grade Configuration"
+msgstr "การกำหนดค่าเกรด"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_template_form
+msgid "Grades"
+msgstr "เกรด"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_type_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_search
+msgid "Group By..."
+msgstr "กลุ่มโดย ..."
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__has_message
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__has_message
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__has_message
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__has_message
+msgid "Has Message"
+msgstr "มีข้อความ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam__state__held
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_session__state__held
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_held_exam_form
+msgid "Held"
+msgstr "จัดขึ้น"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_held_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+msgid "Held Exam"
+msgstr "การสอบที่จัดขึ้น"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_held_exam_view
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_held_exam_form
+msgid "Held Exam Wizard"
+msgstr "ตัวช่วยสร้างการสอบ"
+
+#. module: openeducat_exam
+#: model:ir.module.category,description:openeducat_exam.module_category_all_op_exam
+#: model:ir.module.category,description:openeducat_exam.module_category_openeducat_exam
+msgid "Helps you manage your institutes different-different users."
+msgstr "ช่วยให้คุณจัดการสถาบันผู้ใช้ที่แตกต่างกัน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__id
+msgid "ID"
+msgstr "รหัสประจำตัว"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam__message_needaction
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam_session__message_needaction
+#: model:ir.model.fields,help:openeducat_exam.field_op_marksheet_register__message_needaction
+#: model:ir.model.fields,help:openeducat_exam.field_op_result_template__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "หากตรวจสอบข้อความใหม่ต้องการความสนใจของคุณ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam__message_has_error
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam_session__message_has_error
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam_session__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_exam.field_op_marksheet_register__message_has_error
+#: model:ir.model.fields,help:openeducat_exam.field_op_marksheet_register__message_has_sms_error
+#: model:ir.model.fields,help:openeducat_exam.field_op_result_template__message_has_error
+#: model:ir.model.fields,help:openeducat_exam.field_op_result_template__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "หากตรวจสอบข้อความบางข้อความมีข้อผิดพลาดในการจัดส่ง"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_is_follower
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_is_follower
+msgid "Is Follower"
+msgstr "เป็นผู้ติดตาม"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__write_uid
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__write_uid
+msgid "Last Updated by"
+msgstr "อัปเดตล่าสุดโดย"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__write_date
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__write_date
+msgid "Last Updated on"
+msgstr "อัปเดตล่าสุด"
+
+#. module: openeducat_exam
+#: model:res.groups,name:openeducat_exam.group_op_exam_admin
+msgid "Manager"
+msgstr "ผู้จัดการ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__marks
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__marks
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_search
+msgid "Marks"
+msgstr "คะแนน"
+
+#. module: openeducat_exam
+#: model:ir.actions.report,name:openeducat_exam.report_marksheet
+msgid "Marksheet"
+msgstr "มาร์กชีท"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_marksheet_line
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__marksheet_line_id
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_tree
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_search
+msgid "Marksheet Line"
+msgstr "Rarksheet Line"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_marksheet_line_view
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_marksheet_line_sub
+msgid "Marksheet Lines"
+msgstr "เส้นมาร์กชีท"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_pivot
+msgid "Marksheet Pivot"
+msgstr "marksheet pivot"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_marksheet_register
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__marksheet_reg_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__name
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_tree
+msgid "Marksheet Register"
+msgstr "การลงทะเบียน Marksheet"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_marksheet_register_view
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_marksheet_register_sub
+msgid "Marksheet Registers"
+msgstr "Marksheet Registers"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__marksheet_line
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_form
+msgid "Marksheets"
+msgstr "มาร์กชีท"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__max_per
+msgid "Maximum Percentage"
+msgstr "เปอร์เซ็นต์สูงสุด"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/grade_configuration.py:0
+msgid "Maximum percentage should not be greater than 100"
+msgstr "เปอร์เซ็นต์สูงสุดไม่ควรมากกว่า 100"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_has_error
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_has_error
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_has_error
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_has_error
+msgid "Message Delivery error"
+msgstr "ข้อผิดพลาดในการส่งข้อความ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_ids
+msgid "Messages"
+msgstr "ข้อความ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__min_per
+msgid "Minimum Percentage"
+msgstr "เปอร์เซ็นต์ขั้นต่ำ"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/grade_configuration.py:0
+msgid "Minimum percentage should be not greater than Maximum percentage"
+msgstr "เปอร์เซ็นต์ขั้นต่ำควรไม่เกินเปอร์เซ็นต์สูงสุด"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"Month/Year\n"
+"                                                    of Passing"
+msgstr ""
+"เดือน/ปี\n"
+"                                                    ของการผ่าน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_room__name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_type__name
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__name
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_type_search
+msgid "Name"
+msgstr "ชื่อ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_session__evaluation_type__normal
+msgid "Normal"
+msgstr "ปกติ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__note
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__note
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_form
+msgid "Note"
+msgstr "บันทึก"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_needaction_counter
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr "จำนวนการกระทำ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_has_error_counter
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_has_error_counter
+msgid "Number of errors"
+msgstr "จำนวนข้อผิดพลาด"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam_session__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_exam.field_op_marksheet_register__message_needaction_counter
+#: model:ir.model.fields,help:openeducat_exam.field_op_result_template__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "จำนวนข้อความที่ต้องดำเนินการ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam_session__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_exam.field_op_marksheet_register__message_has_error_counter
+#: model:ir.model.fields,help:openeducat_exam.field_op_result_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "จำนวนข้อความที่มีข้อผิดพลาดในการจัดส่ง"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"Obtained\n"
+"                                                    Grade"
+msgstr ""
+"ที่ได้รับ\n"
+"                                                    ระดับ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"Obtained\n"
+"                                                    Marks"
+msgstr ""
+"ที่ได้รับ\n"
+"                                                    คะแนน"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"Obtained\n"
+"                                                    Marks/Total\n"
+"                                                    Marks"
+msgstr ""
+"ที่ได้รับ\n"
+"                                                    คะแนน/ทั้งหมด\n"
+"                                                    คะแนน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_marksheet_line__status__pass
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_result_line__status__pass
+msgid "Pass"
+msgstr "ผ่าน"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"Passing\n"
+"                                                    Marks"
+msgstr ""
+"การผ่าน\n"
+"                                                    คะแนน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__min_marks
+msgid "Passing Marks"
+msgstr "เครื่องหมายผ่าน"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam.py:0
+msgid "Passing Marks can't be greater than Total Marks"
+msgstr "เครื่องหมายผ่านไม่สามารถมากกว่าคะแนนทั้งหมด"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__percentage
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "Percentage"
+msgstr "เปอร์เซ็นต์"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/result_template.py:0
+msgid "Percentage range conflict with other record."
+msgstr "เปอร์เซ็นต์ช่วงความขัดแย้งกับบันทึกอื่น ๆ"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam_attendees.py:0
+msgid "Please Enter Marks between 0 to %d"
+msgstr "โปรดป้อนคะแนนระหว่าง 0 ถึง %d"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/wizard/room_distribution.py:0
+msgid "Please Enter both Room And student"
+msgstr "โปรดป้อนทั้งห้องและนักเรียน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_attendees__status__present
+msgid "Present"
+msgstr "ปัจจุบัน"
+
+#. module: openeducat_exam
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_exam_general
+msgid "Reporting"
+msgstr "การรายงาน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__responsible_id
+msgid "Responsible"
+msgstr "รับผิดชอบ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid "Result"
+msgstr "ผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_result_line_view_graph
+#: model:ir.ui.menu,name:openeducat_exam.menu_student_hall_ticket
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_graph_view
+msgid "Result Analysis"
+msgstr "การวิเคราะห์ผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__result_date
+msgid "Result Date"
+msgstr "วันที่ได้"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_result_template__state__result_generated
+msgid "Result Generated"
+msgstr "สร้างผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_result_line
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_tree
+msgid "Result Line"
+msgstr "สายผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_result_line_view
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_result_line_sub
+msgid "Result Lines"
+msgstr "บรรทัดผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_result_template
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__result_template_id
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_template_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_template_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_template_tree
+msgid "Result Template"
+msgstr "เทมเพลตผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.actions.act_window,name:openeducat_exam.act_open_op_result_template_view
+#: model:ir.ui.menu,name:openeducat_exam.menu_op_result_template
+msgid "Result Templates"
+msgstr "เทมเพลตผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam__state__result_updated
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+msgid "Result Updated"
+msgstr "อัปเดตผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_grade_configuration__result
+msgid "Result to Display"
+msgstr "ผลลัพธ์ในการแสดง"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__result_line
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_form
+msgid "Results"
+msgstr "ผลลัพธ์"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__room_id
+msgid "Room"
+msgstr "ห้อง"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__room_capacity
+msgid "Room Capacity"
+msgstr "ความจุ"
+
+#. module: openeducat_exam
+#: model:ir.model,name:openeducat_exam.model_op_room_distribution
+msgid "Room Distribution"
+msgstr "การกระจายห้องพัก"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/wizard/room_distribution.py:0
+msgid "Room capacity must be greater than total number of student"
+msgstr "ความจุห้องต้องสูงกว่าจำนวนนักเรียนทั้งหมด"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__message_has_sms_error
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "ข้อผิดพลาดในการจัดส่ง SMS"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+msgid "Schedule"
+msgstr "กำหนดการ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_form
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_room_distribution_form
+msgid "Schedule Exam"
+msgstr "การสอบกำหนดเวลา"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam__state__schedule
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_exam_session__state__schedule
+msgid "Scheduled"
+msgstr "ที่กำหนดไว้"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_form
+msgid "Set to Draft"
+msgstr "ตั้งค่าเป็นร่าง"
+
+#. module: openeducat_exam
+#: model:ir.ui.menu,name:openeducat_exam.menu_exam_config
+msgid "Settings"
+msgstr "การตั้งค่า"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__start_date
+msgid "Start Date"
+msgstr "วันที่เริ่มต้น"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__start_time
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__start_time
+msgid "Start Time"
+msgstr "เวลาเริ่มต้น"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__state
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__state
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__state
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_search
+msgid "State"
+msgstr "สถานะ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__status
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__status
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__state
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__status
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_search
+msgid "Status"
+msgstr "สถานะ"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_attendees__student_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__student_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_line__student_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__student_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_attendees_search
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_line_search
+msgid "Student"
+msgstr "นักเรียน"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "Student Image"
+msgstr "ภาพนักเรียน"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_result_line_search
+msgid "Students"
+msgstr "นักเรียน"
+
+#. module: openeducat_exam
+#: model:ir.actions.report,name:openeducat_exam.action_student_hall_ticket_report
+msgid "Students Hall Tickets"
+msgstr "ตั๋วนักเรียนฮอลล์"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/wizard/room_distribution.py:0
+msgid ""
+"Students are already scheduled for another exam during the specified time."
+msgstr "นักเรียนมีกำหนดการสอบอีกครั้งในช่วงเวลาที่กำหนด"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__subject_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_held_exam__subject_id
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__subject_id
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_search
+msgid "Subject"
+msgstr "เรื่อง"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "Supervisor Sign"
+msgstr "ป้ายกำกับ"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/models/exam.py:0
+msgid "The exam time overlaps with an existing exam for the same subject."
+msgstr "เวลาสอบทับซ้อนกับการสอบที่มีอยู่สำหรับเรื่องเดียวกัน"
+
+#. module: openeducat_exam
+#. odoo-python
+#: code:addons/openeducat_exam/wizard/room_distribution.py:0
+msgid "The selected rooms are already booked for the specified time."
+msgstr "ห้องพักที่เลือกได้ถูกจองไว้แล้วตามเวลาที่กำหนด"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_ticket
+msgid "Time"
+msgstr "เวลา"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.report_marksheet_report
+msgid ""
+"Total\n"
+"                                                    Marks"
+msgstr ""
+"ทั้งหมด\n"
+"                                                    คะแนน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__total_failed
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+msgid "Total Fail"
+msgstr "ทั้งหมดล้มเหลว"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__total_marks
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_line__total_marks
+msgid "Total Marks"
+msgstr "คะแนนรวม"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__total_pass
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_search
+msgid "Total Pass"
+msgstr "ผ่านทั้งหมด"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_room_distribution__total_student
+msgid "Total Student"
+msgstr "นักเรียนทั้งหมด"
+
+#. module: openeducat_exam
+#: model:res.groups,name:openeducat_exam.group_op_exam_user
+msgid "User"
+msgstr "ผู้ใช้"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_marksheet_register_form
+msgid "Validate Marksheet"
+msgstr "ตรวจสอบความถูกต้องของ marksheet"
+
+#. module: openeducat_exam
+#: model:ir.model.fields.selection,name:openeducat_exam.selection__op_marksheet_register__state__validated
+msgid "Validated"
+msgstr "ได้รับการตรวจสอบแล้ว"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__venue
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_faculty__is_venue
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_student__is_venue
+#: model:ir.model.fields,field_description:openeducat_exam.field_res_partner__is_venue
+#: model:ir.model.fields,field_description:openeducat_exam.field_res_users__is_venue
+msgid "Venue"
+msgstr "สถานที่จัดงาน"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_exam_session__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_marksheet_register__website_message_ids
+#: model:ir.model.fields,field_description:openeducat_exam.field_op_result_template__website_message_ids
+msgid "Website Messages"
+msgstr "ข้อความเว็บไซต์"
+
+#. module: openeducat_exam
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam__website_message_ids
+#: model:ir.model.fields,help:openeducat_exam.field_op_exam_session__website_message_ids
+#: model:ir.model.fields,help:openeducat_exam.field_op_marksheet_register__website_message_ids
+#: model:ir.model.fields,help:openeducat_exam.field_op_result_template__website_message_ids
+msgid "Website communication history"
+msgstr "ประวัติการสื่อสารเว็บไซต์"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_form
+msgid "exam"
+msgstr "การสอบ"
+
+#. module: openeducat_exam
+#: model_terms:ir.ui.view,arch_db:openeducat_exam.view_op_exam_session_pivot
+msgid "exam Code"
+msgstr "รหัสสอบ"

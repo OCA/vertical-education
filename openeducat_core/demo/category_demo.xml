@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+        <record id="category_asian" model="op.category">
+            <field name="name">Asian</field>
+            <field name="code">ASIAN</field>
+        </record>
+        <record id="category_mongoloid" model="op.category">
+            <field name="name">Mongoloid</field>
+            <field name="code">MONGOLOID</field>
+        </record>
+        <record id="category_pacific_islanders" model="op.category">
+            <field name="name">Pacific Islanders</field>
+            <field name="code">PACIFIC</field>
+        </record>
+        <record id="category_amerindians" model="op.category">
+            <field name="name">Amerindians</field>
+            <field name="code">AMERINDIANS</field>
+        </record>
+        <record id="category_roma" model="op.category">
+            <field name="name">Roma</field>
+            <field name="code">ROMA</field>
+        </record>
+        <record id="category_hawaiian" model="op.category">
+            <field name="name">Native Hawaiian</field>
+            <field name="code">HAWAIIAN</field>
+        </record>
+        <record id="category_african_american" model="op.category">
+            <field name="name">African American</field>
+            <field name="code">AFRICAN AMERICAN</field>
+        </record>
+        <record id="category_europoid" model="op.category">
+            <field name="name">Europoid</field>
+            <field name="code">EUROPOID</field>
+        </record>
+        <record id="category_caucasian" model="op.category">
+            <field name="name">Caucasian</field>
+            <field name="code">CAUCASIAN</field>
+        </record>
+</odoo>

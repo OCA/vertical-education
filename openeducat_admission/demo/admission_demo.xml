@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <record id="op_admission_1" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Emma J Parker</field>
+            <field name="first_name">Emma</field>
+            <field name="middle_name">J</field>
+            <field name="last_name">Parker</field>
+            <field name="gender">f</field>
+            <field name="email">emmaparker@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1992-05-06</field>
+            <field name="city">New York</field>
+            <field name="street">350 5th Avenue</field>
+            <field name="street2">Suite 2300</field>
+            <field name="zip">10118</field>
+            <field name="state_id" ref="base.state_us_25"/>
+            <field name="country_id" ref="base.us"/>
+            <field name="student_id" ref="openeducat_core.op_student_1"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_1.jpg"/>
+        </record>
+
+        <record id="op_admission_2" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">James M Garcia</field>
+            <field name="first_name">James</field>
+            <field name="middle_name">M</field>
+            <field name="last_name">Garcia</field>
+            <field name="gender">m</field>
+            <field name="email">jamesgarcia@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">draft</field>
+            <field name="birth_date">1989-11-05</field>
+            <field name="city">Berlin</field>
+            <field name="street">Alexanderplatz 7</field>
+            <field name="street2">Apartment 12B</field>
+            <field name="zip">10178</field>
+            <field name="state_id" ref="base.state_de_be"/>
+            <field name="country_id" ref="base.de"/>
+            <field name="student_id" ref="openeducat_core.op_student_2"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_2.jpg"/>
+        </record>
+
+        <record id="op_admission_3" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Priya R Reddy</field>
+            <field name="first_name">Priya</field>
+            <field name="middle_name">R</field>
+            <field name="last_name">Reddy</field>
+            <field name="gender">f</field>
+            <field name="email">priyareddy@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">confirm</field>
+            <field name="birth_date">1991-03-12</field>
+            <field name="city">Mumbai</field>
+            <field name="street">25 Marine Drive</field>
+            <field name="street2">Flat 7A, Tower B</field>
+            <field name="zip">400020</field>
+            <field name="state_id" ref="base.state_in_mh"/>
+            <field name="country_id" ref="base.in"/>
+            <field name="student_id" ref="openeducat_core.op_student_3"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_3.jpg"/>
+        </record>
+
+        <record id="op_admission_4" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Alex J Parker</field>
+            <field name="first_name">Alex</field>
+            <field name="middle_name">J</field>
+            <field name="last_name">Parker</field>
+            <field name="gender">m</field>
+            <field name="email">alexparker@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">draft</field>
+            <field name="birth_date">1991-05-16</field>
+            <field name="city">New York</field>
+            <field name="street">350 5th Avenue</field>
+            <field name="street2">Suite 2300</field>
+            <field name="zip">10118</field>
+            <field name="state_id" ref="base.state_us_25"/>
+            <field name="country_id" ref="base.us"/>
+            <field name="student_id" ref="openeducat_core.op_student_4"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_4.jpg"/>
+        </record>
+
+        <record id="op_admission_5" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Taye K Kamau</field>
+            <field name="first_name">Taye</field>
+            <field name="middle_name">K</field>
+            <field name="last_name">Kamau</field>
+            <field name="gender">m</field>
+            <field name="email">tayekamau@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1991-09-12</field>
+            <field name="city">São Paulo</field>
+            <field name="street">Avenida Paulista 1000</field>
+            <field name="street2">Apartment 15B</field>
+            <field name="zip">01310-100</field>
+            <field name="state_id" ref="base.state_br_sp"/>
+            <field name="country_id" ref="base.br"/>
+            <field name="student_id" ref="openeducat_core.op_student_5"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_5.jpg"/>
+        </record>
+
+        <record id="op_admission_6" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Tony J Mitchell</field>
+            <field name="first_name">Tony</field>
+            <field name="middle_name">J</field>
+            <field name="last_name">Mitchell</field>
+            <field name="gender">m</field>
+            <field name="email">tonymitchell@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1990-12-12</field>
+            <field name="city">Lyon</field>
+            <field name="street">45 Rue de la République</field>
+            <field name="street2">Apt 3A</field>
+            <field name="zip">69002</field>
+            <field name="state_id"/>
+            <field name="country_id" ref="base.fr"/>
+            <field name="student_id" ref="openeducat_core.op_student_6"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_6.jpg"/>
+        </record>
+
+        <record id="op_admission_7" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Sofia M Rossi</field>
+            <field name="first_name">Sofia</field>
+            <field name="middle_name">M</field>
+            <field name="last_name">Rossi</field>
+            <field name="gender">f</field>
+            <field name="email">sofiarossi@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1990-09-01</field>
+            <field name="city">Rome</field>
+            <field name="street">Via del Corso 200</field>
+            <field name="street2">Apartment 4B</field>
+            <field name="zip">00186</field>
+            <field name="state_id" ref="base.state_it_ag"/>
+            <field name="country_id" ref="base.it"/>
+            <field name="student_id" ref="openeducat_core.op_student_7"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_7.jpg"/>
+        </record>
+
+        <record id="op_admission_8" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Lucas D Lewis</field>
+            <field name="first_name">Lucas</field>
+            <field name="middle_name">D</field>
+            <field name="last_name">Lewis</field>
+            <field name="gender">m</field>
+            <field name="email">lucaslewis@example.com</field>
+            <field name="fees">100000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1990-06-10</field>
+            <field name="city">Toronto</field>
+            <field name="street">123 Queen Street West</field>
+            <field name="street2">Suite 250</field>
+            <field name="zip">M5H 2N2</field>
+            <field name="state_id" ref="base.state_ca_on"/>
+            <field name="country_id" ref="base.ca"/>
+            <field name="student_id" ref="openeducat_core.op_student_8"/>
+            <field name="course_id" ref="openeducat_core.op_course_4"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_11"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_1"/>
+            <field name="register_id" ref="op_admission_register_1"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_8.jpg"/>
+        </record>
+
+        <record id="op_admission_9" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Michael H Young</field>
+            <field name="first_name">Michael</field>
+            <field name="middle_name">H</field>
+            <field name="last_name">Young</field>
+            <field name="gender">f</field>
+            <field name="email">michaelyoung@example.com</field>
+            <field name="fees">80000.0</field>
+            <field name="state">confirm</field>
+            <field name="birth_date">1992-05-12</field>
+            <field name="city">Moscow</field>
+            <field name="street">10 Tverskaya Street</field>
+            <field name="street2">Apartment 5A</field>
+            <field name="zip">125009</field>
+            <field name="state_id" ref="base.state_ru_mow"/>
+            <field name="country_id" ref="base.ru"/>
+            <field name="student_id" ref="openeducat_core.op_student_9"/>
+            <field name="course_id" ref="openeducat_core.op_course_7"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_8"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_2"/>
+            <field name="register_id" ref="op_admission_register_2"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_9.jpg"/>
+        </record>
+
+        <record id="op_admission_10" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Joon H Kim</field>
+            <field name="first_name">Joon</field>
+            <field name="middle_name">H</field>
+            <field name="last_name">Kim</field>
+            <field name="gender">m</field>
+            <field name="email">joonkim
+            @example.com</field>
+            <field name="fees">80000.0</field>
+            <field name="state">confirm</field>
+            <field name="birth_date">1989-09-30</field>
+            <field name="city">Seoul</field>
+            <field name="street">25 Gangnam-daero</field>
+            <field name="street2">Apartment 10B</field>
+            <field name="zip">06236</field>
+            <field name="state_id"/>
+            <field name="country_id" ref="base.ca"/>
+            <field name="student_id" ref="openeducat_core.op_student_10"/>
+            <field name="course_id" ref="openeducat_core.op_course_7"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_8"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_2"/>
+            <field name="register_id" ref="op_admission_register_2"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_10.jpg"/>
+        </record>
+
+        <record id="op_admission_11" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Aarav M Sharma</field>
+            <field name="first_name">Aarav</field>
+            <field name="middle_name">M</field>
+            <field name="last_name">Sharma</field>
+            <field name="gender">m</field>
+            <field name="email">aaravsharma@example.com</field>
+            <field name="fees">80000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1990-07-12</field>
+            <field name="city">New Delhi</field>
+            <field name="street">45 Connaught Place</field>
+            <field name="street2">Flat 3C, Block B</field>
+            <field name="zip">110001</field>
+            <field name="state_id" ref="base.state_in_dl"/>
+            <field name="country_id" ref="base.in"/>
+            <field name="student_id" ref="openeducat_core.op_student_11"/>
+            <field name="course_id" ref="openeducat_core.op_course_7"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_8"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_2"/>
+            <field name="register_id" ref="op_admission_register_2"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_11.jpg"/>
+        </record>
+
+        <record id="op_admission_12" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">David L Adams</field>
+            <field name="first_name">David</field>
+            <field name="middle_name">L</field>
+            <field name="last_name">Adams</field>
+            <field name="gender">m</field>
+            <field name="email">davidadams@example.com</field>
+            <field name="fees">80000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1991-12-03</field>
+            <field name="city">Madrid</field>
+            <field name="street">Calle Gran Vía 28</field>
+            <field name="street2">Apartment 2B</field>
+            <field name="zip">28013</field>
+            <field name="state_id" ref="base.state_es_m"/>
+            <field name="country_id" ref="base.es"/>
+            <field name="student_id" ref="openeducat_core.op_student_12"/>
+            <field name="course_id" ref="openeducat_core.op_course_7"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_8"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_2"/>
+            <field name="register_id" ref="op_admission_register_2"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_12.jpg"/>
+        </record>
+
+        <record id="op_admission_13" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Imani J Jengo</field>
+            <field name="first_name">Imani</field>
+            <field name="middle_name">J</field>
+            <field name="last_name">Jengo</field>
+            <field name="gender">f</field>
+            <field name="email">imanijengo@example.com</field>
+            <field name="fees">30000.0</field>
+            <field name="state">confirm</field>
+            <field name="birth_date">1990-07-02</field>
+            <field name="city">Mexico City</field>
+            <field name="street">Av. Paseo de la Reforma 250</field>
+            <field name="street2">Apartment 12A</field>
+            <field name="zip">06600</field>
+            <field name="state_id" ref="base.state_mx_df"/>
+            <field name="country_id" ref="base.mx"/>
+            <field name="student_id" ref="openeducat_core.op_student_13"/>
+            <field name="course_id" ref="openeducat_core.op_course_5"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_4"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_3"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_13.jpg"/>
+        </record>
+
+        <record id="op_admission_14" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Daniel V King</field>
+            <field name="first_name">Daniel</field>
+            <field name="middle_name">V</field>
+            <field name="last_name">King</field>
+            <field name="gender">m</field>
+            <field name="email">danielking@example.com</field>
+            <field name="fees">30000.0</field>
+            <field name="state">confirm</field>
+            <field name="birth_date">1991-03-18</field>
+            <field name="city">Jakarta</field>
+            <field name="street">Jl. Sudirman No. 45</field>
+            <field name="street2">Tower B, Floor 10</field>
+            <field name="zip">10250</field>
+            <field name="state_id" ref="base.state_id_jk"/>
+            <field name="country_id" ref="base.id"/>
+            <field name="student_id" ref="openeducat_core.op_student_14"/>
+            <field name="course_id" ref="openeducat_core.op_course_5"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_4"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_3"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_14.jpg"/>
+        </record>
+
+        <record id="op_admission_15" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Henry S Lee</field>
+            <field name="first_name">Henry</field>
+            <field name="middle_name">S</field>
+            <field name="last_name">Lee</field>
+            <field name="gender">m</field>
+            <field name="email">henrylee@example.com</field>
+            <field name="fees">30000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">1991-11-02</field>
+            <field name="city">Amsterdam</field>
+            <field name="street">Damrak 100</field>
+            <field name="street2">Apartment 3C</field>
+            <field name="zip">1012 LP</field>
+            <field name="state_id" ref="base.state_nl_nh"/>
+            <field name="country_id" ref="base.nl"/>
+            <field name="student_id" ref="openeducat_core.op_student_15"/>
+            <field name="course_id" ref="openeducat_core.op_course_5"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_7"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_3"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_15.jpg"/>
+        </record>
+
+        <record id="op_admission_16" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Camila M Brooks</field>
+            <field name="first_name">Camila</field>
+            <field name="middle_name">M</field>
+            <field name="last_name">Brooks</field>
+            <field name="gender">f</field>
+            <field name="email">camilabrooks@example.com</field>
+            <field name="fees">30000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">2003-01-06</field>
+            <field name="city">London</field>
+            <field name="street">221B Baker Street</field>
+            <field name="street2">Apartment 2A</field>
+            <field name="zip">NW1 6XE</field>
+            <field name="state_id" ref="base.state_uk98"/>
+            <field name="country_id" ref="base.uk"/>
+            <field name="student_id" ref="openeducat_core.op_student_16"/>
+            <field name="course_id" ref="openeducat_core.op_course_5"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_7"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_3"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_16.jpg"/>
+        </record>
+
+        <record id="op_admission_17" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Ruby N Johnson</field>
+            <field name="first_name">Ruby</field>
+            <field name="middle_name">N</field>
+            <field name="last_name">Johnson</field>
+            <field name="gender">f</field>
+            <field name="email">rubyjohnson@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">confirm</field>
+            <field name="birth_date">2003-12-03</field>
+            <field name="city">Sydney</field>
+            <field name="street">100 George Street</field>
+            <field name="street2">Apartment 5C</field>
+            <field name="zip">2000</field>
+            <field name="state_id" ref="base.state_au_2"/>
+            <field name="country_id" ref="base.au"/>
+            <field name="student_id" ref="openeducat_core.op_student_17"/>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_4"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_17.jpg"/>
+        </record>
+
+        <record id="op_admission_18" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Bella L Carter</field>
+            <field name="first_name">Bella</field>
+            <field name="middle_name">L</field>
+            <field name="last_name">Carter</field>
+            <field name="gender">f</field>
+            <field name="email">bellacarter@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">2003-12-03</field>
+            <field name="city">Bern</field>
+            <field name="street">Bundesgasse 15</field>
+            <field name="street2">Apartment 2A</field>
+            <field name="zip">3011</field>
+            <field name="state_id" ref="base.state_ch_be"/>
+            <field name="country_id" ref="base.ch"/>
+            <field name="student_id" ref="openeducat_core.op_student_18"/>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_4"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_18.jpg"/>
+        </record>
+
+        <record id="op_admission_19" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Sekou O Omari</field>
+            <field name="first_name">Sekou</field>
+            <field name="middle_name">O</field>
+            <field name="last_name">Omari</field>
+            <field name="gender">m</field>
+            <field name="email">sekouomari@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">2002-03-05</field>
+            <field name="city">Warsaw</field>
+            <field name="street">Aleje Jerozolimskie 100</field>
+            <field name="street2">Apartment 5B</field>
+            <field name="zip">00-807</field>
+            <field name="state_id"/>
+            <field name="country_id" ref="base.pl"/>
+            <field name="student_id" ref="openeducat_core.op_student_19"/>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_4"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_19.jpg"/>
+        </record>
+
+        <record id="op_admission_20" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Sam A Phillips</field>
+            <field name="first_name">Sam</field>
+            <field name="middle_name">A</field>
+            <field name="last_name">Phillips</field>
+            <field name="gender">m</field>
+            <field name="email">samphillips@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">done</field>
+            <field name="birth_date">2003-09-04</field>
+            <field name="city">Stockholm</field>
+            <field name="street">Drottninggatan 50</field>
+            <field name="street2">Apartment 4C</field>
+            <field name="zip">111 21</field>
+            <field name="state_id" ref="base.state_se_ab"/>
+            <field name="country_id" ref="base.se"/>
+            <field name="student_id" ref="openeducat_core.op_student_20"/>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_4"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_20.jpg"/>
+        </record>
+
+        <record id="op_admission_21" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Ben T Wood</field>
+            <field name="first_name">Ben</field>
+            <field name="middle_name">T</field>
+            <field name="last_name">Wood</field>
+            <field name="gender">m</field>
+            <field name="email">benwood@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">draft</field>
+            <field name="birth_date">1998-06-20</field>
+            <field name="city">Buenos Aires</field>
+            <field name="street">Avenida 9 de Julio 500</field>
+            <field name="street2">Apartment 3A</field>
+            <field name="zip">C1043AAS</field>
+            <field name="state_id" ref="base.state_ar_b"/>
+            <field name="country_id" ref="base.ar"/>
+            <field name="student_id" ref="openeducat_core.op_student_21"/>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_4"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_admission/static/img/student_21.jpg"/>
+        </record>
+
+        <record id="op_admission_22" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Oren H Shimon</field>
+            <field name="first_name">Oren</field>
+            <field name="middle_name">H</field>
+            <field name="last_name">Shimon</field>
+            <field name="gender">m</field>
+            <field name="email">orenshimon@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">draft</field>
+            <field name="birth_date">2002-01-10</field>
+            <field name="city">Tel Aviv</field>
+            <field name="street">100 Dizengoff Street</field>
+            <field name="street2">Apartment 7B</field>
+            <field name="zip">6311611</field>
+            <field name="state_id"/>
+            <field name="country_id" ref="base.il"/>
+            <field name="student_id" ref="openeducat_core.op_student_22"/>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_4"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+             <field name="image" type="base64"
+                   file="openeducat_core/static/img/student_22.jpg"/>
+        </record>
+
+        <record id="op_admission_23" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Lily G Hill</field>
+            <field name="first_name">Lily</field>
+            <field name="middle_name">G</field>
+            <field name="last_name">Hill</field>
+            <field name="gender">f</field>
+            <field name="email">lilyhill@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">draft</field>
+            <field name="birth_date">1996-05-02</field>
+            <field name="city">Cape Town</field>
+            <field name="street">75 Long Street</field>
+            <field name="street2">Apartment 4C</field>
+            <field name="zip">8001</field>
+            <field name="state_id" ref="base.state_za_wc"/>
+            <field name="country_id" ref="base.za"/>
+            <field name="student_id" ref="openeducat_core.op_student_23"/>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_4"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_core/static/img/student_23.jpg"/>
+        </record>
+        <record id="op_admission_24" model="op.admission">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Jun W Wu</field>
+            <field name="first_name">Jun</field>
+            <field name="middle_name">W</field>
+            <field name="last_name">Wu</field>
+            <field name="gender">m</field>
+            <field name="email">junwu@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">draft</field>
+            <field name="birth_date">2003-12-18</field>
+            <field name="city">Beijing</field>
+            <field name="street">456 Zhongshan Avenue</field>
+            <field name="street2">Room 12B, Tower A</field>
+            <field name="zip">100010</field>
+            <field name="state_id" ref="base.state_cn_BJ"/>
+            <field name="country_id" ref="base.cn"/>
+            <field name="student_id" ref="openeducat_core.op_student_24"/>
+            <field name="course_id" ref="openeducat_core.op_course_7"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_8"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_2"/>
+            <field name="register_id" ref="op_admission_register_2"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_core/static/img/student_24.jpg"/>
+        </record>
+        <record id="op_admission_25" model="op.admission">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Samira B Bassam</field>
+            <field name="first_name">Samira</field>
+            <field name="middle_name">B</field>
+            <field name="last_name">Bassam</field>
+            <field name="gender">f</field>
+            <field name="email">samirabassam@example.com</field>
+            <field name="fees">20000.0</field>
+            <field name="state">draft</field>
+            <field name="birth_date">1992-07-25</field>
+            <field name="city">Riyadh</field>
+            <field name="street">250 King Fahd Road</field>
+            <field name="street2">Apartment 10B</field>
+            <field name="zip">11564</field>
+            <field name="state_id" ref="base.state_sa_70"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="student_id" ref="openeducat_core.op_student_25"/>
+            <field name="course_id" ref="openeducat_core.op_course_5"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_4"/>
+            <field name="fees_term_id" ref="openeducat_fees.op_fees_term_3"/>
+            <field name="register_id" ref="op_admission_register_3"/>
+            <field name="application_date" eval="DateTime.now()"/>
+            <field name="admission_date" eval="DateTime.now()"/>
+            <field name="image" type="base64"
+                   file="openeducat_core/static/img/student_25.jpg"/>
+        </record>
+
+        <record id="openeducat_core.op_user_faculty" model="res.users">
+            <field name="groups_id"
+            eval="[(4,ref('openeducat_admission.group_op_admission_user'))]"/>
+        </record>
+</odoo>

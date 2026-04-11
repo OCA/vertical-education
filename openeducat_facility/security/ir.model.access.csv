@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_op_facility_user,name_op_facility_user,model_op_facility,openeducat_facility.group_op_facility_user,1,0,0,0
+access_op_facility_manager,name_op_facility_manager,model_op_facility,openeducat_facility.group_op_facility_manager,1,1,1,1
+access_op_facility_line_user,name_op_facility_line_user,model_op_facility_line,openeducat_facility.group_op_facility_user,1,0,0,0
+access_op_facility_line_manager,name_op_facility_line_manager,model_op_facility_line,openeducat_facility.group_op_facility_manager,1,1,1,1

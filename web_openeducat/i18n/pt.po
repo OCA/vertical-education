@@ -1,0 +1,1152 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version:Odoo Server 17.0"
+"Report-Msgid-Bugs-To:"
+"POT-Creation-Date:2024-02-16 04:25+0000"
+"PO-Revision-Date:2024-02-16 04:25+0000"
+"Last-Translator:"
+"Language-Team:"
+"MIME-Version:1.0"
+"Content-Type:text/plain; charset=UTF-8"
+"Content-Transfer-Encoding:"
+"Plural-Forms:"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.brand_promotion_inherit
+msgid "- An awesome"
+msgstr "- Um incrível"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-calendar-o me-2 \"/>\n"
+"                                                        June, 30th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2 \"/>\n"
+" 30 de junho de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-calendar-o me-2 \"/>\n"
+"                                    June, 30th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2 \"/>\n"
+" 30 de junho de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+"                                                        Feb, 24th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+" 24 de fevereiro de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+"                                                        July, 14th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+" 14 de julho de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+"                                                    Aug, 24th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+" 24 de agosto de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+"                                    Feb, 24th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+" 24 de fevereiro de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+"                                    July, 14th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+" 14 de julho de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+"                                Aug, 24th 2018"
+msgstr ""
+"<i class=\"fa fa-calendar-o me-2\"/>\n"
+" 24 de agosto de 2018"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+"                                                    <span class=\"icon_text text-o-color-5\">Duration : 1yr</span>"
+msgstr ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+" <span class=\"icon_text text-o-color-5\">Duração: 1 ano</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+"                                                    <span class=\"icon_text text-o-color-5\">Duration : 2yrs</span>"
+msgstr ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+" <span class=\"icon_text text-o-color-5\">Duração: 2 anos</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+"                                                    <span class=\"icon_text text-o-color-5\">Duration : 4yrs</span>"
+msgstr ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+" <span class=\"icon_text text-o-color-5\">Duração: 4 anos</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+"                                <span class=\"icon_text text-o-color-5\">Duration : 1yr</span>"
+msgstr ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+" <span class=\"icon_text text-o-color-5\">Duração: 1 ano</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+"                                <span class=\"icon_text text-o-color-5\">Duration : 2yrs</span>"
+msgstr ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+" <span class=\"icon_text text-o-color-5\">Duração: 2 anos</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+"                                <span class=\"icon_text text-o-color-5\">Duration : 4yrs</span>"
+msgstr ""
+"<i class=\"fa fa-clock-o text-primary icon_style\"/>\n"
+" <span class=\"icon_text text-o-color-5\">Duração: 4 anos</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                                                10"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 10"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                                                12"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 12"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                                                15"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 15"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                                                20"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 20"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                            10"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 10"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                            12"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 12"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                            15"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 15"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+"                                            20"
+msgstr ""
+"<i class=\"fa fa-comments-o text-primary\"/>\n"
+" 20"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                                                Helen R. Penny"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" Helen R. Penny"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                                                May C. Dyer"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" May C. Dyer"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                                                Peggy C. Schuler"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" Peggy C. Schuler"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                                                Viola C. Anderson"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" Viola C. Anderson"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                            Helen R. Penny"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" Helen R. Penny"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                            May C. Dyer"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" May C. Dyer"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                            Peggy C. Schuler"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" Peggy C. Schuler"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+"                                            Viola C. Anderson"
+msgstr ""
+"<i class=\"fa fa-user text-primary\"/>\n"
+" Viola C. Anderson"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid "<span class=\"blog-title\">Education</span>"
+msgstr "<span class=\"blog-title\">Educação</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<span class=\"event-date\">12th</span>\n"
+"                                                        <span>Feb</span>"
+msgstr ""
+"<span class=\"event-date\">12</span>\n"
+" <span>fevereiro</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+msgid ""
+"<span class=\"event-date\">12th</span>\n"
+"                                    <span>Feb</span>"
+msgstr ""
+"<span class=\"event-date\">12</span>\n"
+" <span>fevereiro</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<span class=\"event-date\">1st</span>\n"
+"                                                        <span>Jan</span>"
+msgstr ""
+"<span class=\"event-date\">1º</span>\n"
+" <span>janeiro</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+msgid ""
+"<span class=\"event-date\">1st</span>\n"
+"                                    <span>Jan</span>"
+msgstr ""
+"<span class=\"event-date\">1º</span>\n"
+" <span>janeiro</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"<span class=\"event-date\">2nd</span>\n"
+"                                                        <span>Dec</span>"
+msgstr ""
+"<span class=\"event-date\">2º</span>\n"
+" <span>dezembro</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+msgid ""
+"<span class=\"event-date\">2nd</span>\n"
+"                                    <span>Dec</span>"
+msgstr ""
+"<span class=\"event-date\">2º</span>\n"
+" <span>dezembro</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid "<span class=\"heading\">Addmission Going On</span>"
+msgstr "<span class=\"heading\">Adição em andamento</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid "<span class=\"heading\">Post Graduation Course</span>"
+msgstr "<span class=\"heading\">Curso de Pós-Graduação</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span style=\"font-size:1.5em;\">160</span>"
+msgstr "<span style=\"font-size:1.5em;\">160</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span style=\"font-size:1.5em;\">200</span>"
+msgstr "<span style=\"font-size:1.5em;\">200</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span style=\"font-size:1.5em;\">670</span>"
+msgstr "<span style=\"font-size:1.5em;\">670</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span style=\"font-size:1.5em;\">890</span>"
+msgstr "<span style=\"font-size:1.5em;\">890</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span>10:30 am</span>"
+msgstr "<span>10h30</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span>11:30 am</span>"
+msgstr "<span>11h30</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span>12:00 pm</span>"
+msgstr "<span>12h</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span>Birmingham ,Alabama</span>"
+msgstr "<span>Birmingham, Alabama</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "<span>Copyright &amp;copy;</span>"
+msgstr "<span>Direitos autorais e cópia;</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span>San Francisco ,California</span>"
+msgstr "<span>São Francisco, Califórnia</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "<span>Sitka ,Alaska</span>"
+msgstr "<span>Sitka, Alasca</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid "A variation of the ordinary."
+msgstr "Uma variação do comum."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.about-us
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid "ABOUT US"
+msgstr "SOBRE NÓS"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"APPLY\n"
+"                                                        NOW"
+msgstr ""
+"APPLY\n"
+"                                                        NOW"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid ""
+"APPLY\n"
+"                                    NOW"
+msgstr ""
+"INSCREVA-SE\n"
+" AGORA"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "AWARD WINNING"
+msgstr "PREMIADO"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "AYESHA HOQUE"
+msgstr "AYESHA HOQUE"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"About\n"
+"                                                    <span class=\"font-weight-normal\">US</span>"
+msgstr ""
+"Sobre\n"
+" <span class=\"font-weight-normal\">EUA</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.about-us
+msgid ""
+"About\n"
+"                                <span class=\"font-weight-normal\">US</span>"
+msgstr ""
+"Sobre\n"
+" <span class=\"font-weight-normal\">EUA</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "About Us"
+msgstr "Sobre nós"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "Academic Conference Maui."
+msgstr "Conferência Acadêmica Maui."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Admission"
+msgstr "Admissão"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid "Apparel Manufacturing"
+msgstr "Fabricação de vestuário"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Best\n"
+"                                                    <span class=\"font-weight-normal\">Teacher</span>"
+msgstr ""
+"Melhor\n"
+" <span class=\"font-weight-normal\">Professor</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid ""
+"Best\n"
+"                                <span class=\"font-weight-normal\">Teacher</span>"
+msgstr ""
+"Melhor\n"
+" <span class=\"font-weight-normal\">Professor</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Brand Assets"
+msgstr "Ativos da marca"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid "CONTACT US"
+msgstr "CONTATE-NOS"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "COURSES"
+msgstr "CURSOS"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Company name"
+msgstr "Nome da empresa"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid "Computer Engineering"
+msgstr "Engenharia Informática"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Contact Us"
+msgstr "Contate-nos"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "Dennis Fries"
+msgstr "Dennis Fries"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "DiplomaCourses"
+msgstr "DiplomaCursos"
+
+#. module: web_openeducat
+#. odoo-javascript
+#: code:addons/web_openeducat/static/src/xml/base_inherit.xml:0
+#, python-format
+msgid "Documentation"
+msgstr "Documentação"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "EXTRA LINKS"
+msgstr "LINKS EXTRAS"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "Emi Matsuura"
+msgstr "Emi Matsuura"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "FACULTIES"
+msgstr "FACULDADES"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "Fawad Khan"
+msgstr "Fawad Khan"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "GALLARY"
+msgstr "GALERIA"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "GRADUATE"
+msgstr "DIPLOMADO"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid "Graphic Design &amp; Multimedia"
+msgstr "Design Gráfico e Multimídia"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "Health &amp; Safety Awareness."
+msgstr "Saúde e Sensibilização para a segurança."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Home"
+msgstr "Lar"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid "In Publicing and graphic."
+msgstr "Em Publicação e gráfica."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "Kelly Staats"
+msgstr "Kelly Staats"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid "Learn english in ease."
+msgstr "Aprenda inglês com facilidade."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "Lecturer"
+msgstr "Conferencista"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid "Library Management"
+msgstr "Gestão de Biblioteca"
+
+#. module: web_openeducat
+#. odoo-javascript
+#: code:addons/web_openeducat/static/src/xml/base_inherit.xml:0
+#, python-format
+msgid "Log out"
+msgstr "Sair"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Lorem ipsum dolor sit amet,\n"
+"                                                            consectetur adipisicing elit,\n"
+"                                                            sed do eiusmod tempor incididunt ut labore et dolore\n"
+"                                                            magna aliqua. Ut enim\n"
+"                                                            ad minim veniam, quis nostrud exercitation"
+msgstr ""
+"A dor em si é muito importante,\n"
+" será seguida por um aumento no número de pessoas,\n"
+" mas acontecerá ao mesmo tempo que o trabalho de parto e a dor\n"
+" algumas coisas grandes. Para chegar aos mínimos detalhes, qual é o nosso exercício?"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid ""
+"Lorem ipsum dolor sit amet,\n"
+"                                        consectetur adipisicing elit,\n"
+"                                        sed do eiusmod tempor incididunt ut labore et dolore\n"
+"                                        magna aliqua. Ut enim\n"
+"                                        ad minim veniam, quis nostrud exercitation"
+msgstr ""
+"A dor em si é muito importante,\n"
+" será seguida por um aumento no número de pessoas,\n"
+" mas acontecerá ao mesmo tempo que o trabalho de parto e a dor\n"
+" algumas coisas grandes. Para chegar aos mínimos detalhes, qual é o nosso exercício?"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Lorem ipsum dolor sit amet, conse ctetur\n"
+"                                                    adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et\n"
+"                                                    dolore magna aliqua. Ut enim fugiat nulla pariatur. Excepteur sint\n"
+"                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt\n"
+"                                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste\n"
+"                                                    natus error sit"
+msgstr ""
+"A dor em si é muito importante, vai consistir em cortar a gordura, mas ao "
+"mesmo tempo vou cortar para trabalhar e uma dor muito grande. Pois não há "
+"como escapar A menos que estejam cegos pela luxúria, eles não saem; são "
+"culpados aqueles que abandonam seus deveres. Mas para que você possa ver de "
+"onde nasce todo esse erro"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+msgid ""
+"Lorem ipsum dolor sit amet, conse ctetur\n"
+"                                adipi sicing elit, sed do eiusm od tempor incidi dunt ut labore et\n"
+"                                dolore magna aliqua. Ut enim fugiat nulla pariatur. Excepteur sint\n"
+"                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt\n"
+"                                mollit anim id est laborum. Sed ut perspiciatis unde omnis iste\n"
+"                                natus error sit"
+msgstr ""
+"A dor em si é muito importante, vai consistir em cortar a gordura, mas ao "
+"mesmo tempo vou cortar para trabalhar e uma dor muito grande. Pois não há "
+"como escapar A menos que estejam cegos pela luxúria, eles não saem; são "
+"culpados aqueles que abandonam seus deveres. Mas para que você possa ver de "
+"onde nasce todo esse erro"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,\n"
+"                                                        sed do eiusm od tempor incidi dunt ut labore et dolore."
+msgstr ""
+"A dor em si é muito importante, vai ser o resultado do corte da gordura, mas"
+" vou cortar ao mesmo tempo que o trabalho de parto e a dor."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid ""
+"Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,\n"
+"                                    sed do eiusm od tempor incidi dunt ut labore et dolore."
+msgstr ""
+"A dor em si é muito importante, vai ser o resultado do corte da gordura, mas"
+" vou cortar ao mesmo tempo que o trabalho de parto e a dor."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Make\n"
+"                                                                Your Own World"
+msgstr ""
+"Crie\n"
+" seu próprio mundo"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid ""
+"Make\n"
+"                                            Your Own World"
+msgstr ""
+"Crie\n"
+" seu próprio mundo"
+
+#. module: web_openeducat
+#. odoo-javascript
+#: code:addons/web_openeducat/static/src/xml/base_inherit.xml:0
+#, python-format
+msgid "My Odoo.com account"
+msgstr "Minha conta Odoo.com"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.brand_promotion_inherit
+msgid "Open Source ERP for Educational Institutes"
+msgstr "ERP de código aberto para instituições educacionais"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.brand_promotion_inherit
+msgid "Openeducat"
+msgstr "Openeducat"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Other Programs"
+msgstr "Outros programas"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Our\n"
+"                                                    <span class=\"font-weight-bold\">Courses</span>"
+msgstr ""
+"Nossos\n"
+" <span class=\"font-weight-bold\">Cursos</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Our\n"
+"                                                    <span class=\"font-weight-normal\">Achievement</span>"
+msgstr ""
+"Nossa\n"
+" <span class=\"font-weight-normal\">Conquista</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Our\n"
+"                                                    <span class=\"font-weight-normal\">Event</span>"
+msgstr ""
+"Nosso\n"
+" <span class=\"font-weight-normal\">Evento</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Our\n"
+"                                                    <span class=\"font-weight-normal\">Newsfeed</span>"
+msgstr ""
+"Nosso\n"
+" <span class=\"font-weight-normal\">feed de notícias</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid ""
+"Our\n"
+"                                <span class=\"font-weight-bold\">Courses</span>"
+msgstr ""
+"Nossos\n"
+" <span class=\"font-weight-bold\">Cursos</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+msgid ""
+"Our\n"
+"                                <span class=\"font-weight-normal\">Achievement</span>"
+msgstr ""
+"Nossa\n"
+" <span class=\"font-weight-normal\">Conquista</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+msgid ""
+"Our\n"
+"                                <span class=\"font-weight-normal\">Event</span>"
+msgstr ""
+"Nosso\n"
+" <span class=\"font-weight-normal\">Evento</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid ""
+"Our\n"
+"                                <span class=\"font-weight-normal\">Newsfeed</span>"
+msgstr ""
+"Nosso\n"
+" <span class=\"font-weight-normal\">feed de notícias</span>"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "PG Programs"
+msgstr "Programas PG"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid "Placement Facility"
+msgstr "Instalação de colocação"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.brand_promotion_inherit
+msgid "Powered by"
+msgstr "Distribuído por"
+
+#. module: web_openeducat
+#. odoo-javascript
+#: code:addons/web_openeducat/static/src/xml/base_inherit.xml:0
+#, python-format
+msgid "Preferences"
+msgstr "Preferências"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Privacy &amp; Policy"
+msgstr "Privacidade e privacidade Política"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Privacy Policy"
+msgstr "política de Privacidade"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"Pvolupttem accusantium doloremque laudantium, totam\n"
+"                                                        erspiciatis unde omnis iste\n"
+"                                                        natus error ."
+msgstr ""
+"Quem acusa e elogia a paixão e a dor vê o todo\n"
+" de onde nasce todo este erro."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+msgid ""
+"Pvolupttem accusantium doloremque laudantium, totam\n"
+"                                    erspiciatis unde omnis iste\n"
+"                                    natus error ."
+msgstr ""
+"Quem acusa e elogia a paixão e a dor vê o todo\n"
+" de onde nasce todo este erro."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "QUICK LINKS"
+msgstr "LINKS RÁPIDOS"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "STUDENTS"
+msgstr "ESTUDANTES"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid "Scholarship Facility"
+msgstr "Centro de bolsas de estudo"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Short Courses"
+msgstr "Cursos de curta duração"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "Social Sciences &amp; Education."
+msgstr "Ciências Sociais e Ciências Sociais Educação."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.slider
+msgid "Student Management"
+msgstr "Gestão Estudantil"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "Students Of AMMT Department"
+msgstr "Alunos do Departamento AMMT"
+
+#. module: web_openeducat
+#. odoo-javascript
+#: code:addons/web_openeducat/static/src/xml/base_inherit.xml:0
+#, python-format
+msgid "Support"
+msgstr "Apoiar"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "Tempor incididunt magna aliqua."
+msgstr "Algumas grandes coisas aconteceram naquela época."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Terms &amp; Conditions"
+msgstr "Termos e Condições Condições"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "Terms &amp; Conditions of Use"
+msgstr "Termos e Condições Condições de Uso"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid "Testing is a great thing."
+msgstr "Testar é uma coisa ótima."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid "UG Programs"
+msgstr "E Programas"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.footer
+msgid ""
+"Ugiat nulla pariatur. Edeserunt mollit anim id est laborum. Sed ut\n"
+"                                perspiciatis unde omnis iste natu"
+msgstr ""
+"Que não haja criação. Comeram e amoleceram a alma, ou seja, os petiscos. Mas"
+" para que você possa ver de onde tudo isso nasceu"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid "VIEW MORE"
+msgstr "VEJA MAIS"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "Vern G. Shor"
+msgstr "Vern G. Shor"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+msgid "doloremque laudan tium, totam ersps uns iste natus"
+msgstr "Eu o louvo por sua dor, o mundo inteiro, até ele nascer"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"eiusmod tempor incididunt ut labore et dolore magna\n"
+"                                                    aliqua. Ut enim ad minim ven iam, quis nostrud exer citation ullamco\n"
+"                                                    laboris nisi ut\n"
+"                                                    perspiciatis unde omnis iste natus error sit voluptate."
+msgstr ""
+"Da mesma forma, aconteceram ao mesmo tempo, com grande trabalho e dor. Pois "
+"vamos agora aos mínimos detalhes, não exerçamos a citação de nenhum "
+"trabalho, exceto para que você possa perceber de onde todo esse erro nasce "
+"do prazer."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.about-us
+msgid ""
+"eiusmod tempor incididunt ut labore et dolore magna\n"
+"                                aliqua. Ut enim ad minim ven iam, quis nostrud exer citation ullamco\n"
+"                                laboris nisi ut\n"
+"                                perspiciatis unde omnis iste natus error sit voluptate."
+msgstr ""
+"Da mesma forma, aconteceram ao mesmo tempo, com grande trabalho e dor. Pois "
+"vamos agora aos mínimos detalhes, não exerçamos a citação de nenhum "
+"trabalho, exceto para que você possa perceber de onde todo esse erro nasce "
+"do prazer."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "event1"
+msgstr "evento1"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "event2"
+msgstr "evento2"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "event3"
+msgstr "evento3"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid "img1"
+msgstr "img1"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid ""
+"magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor\n"
+"                                incid."
+msgstr ""
+"algumas coisas ótimas Pois chegarei ao mínimo, exceto que isso pode "
+"acontecer em algum momento."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid "magna aliqua. Ut enim ad minim veniam, nisi ut aliquiptempor incid."
+msgstr ""
+"algumas coisas ótimas Pois chegarei ao mínimo, a menos que isso aconteça "
+"algum dia."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
+"                                                    <br/>\n"
+"                                                    veniam\n"
+"                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip"
+msgstr ""
+"com o tempo, eles ocorrem com grande trabalho e dor. Pois chego ao mínimo\n"
+" <br/>\n"
+" que pode praticar qualquer tipo de trabalho, exceto como alguém"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
+"                                                    <br/>\n"
+"                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"
+msgstr ""
+"com o tempo, eles ocorrem com grande trabalho e dor. Pois, falando nos "
+"mínimos detalhes, ninguém pode praticar qualquer tipo de trabalho, exceto "
+"como alguém"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.home_page
+msgid ""
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
+"                                                    veniam,\n"
+"                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip"
+msgstr ""
+"com o tempo, eles ocorrem com grande trabalho e dor. Pois, chegando aos "
+"mínimos detalhes, nenhum de nós é treinado em qualquer tipo de trabalho, "
+"exceto como algum tipo de pessoa."
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.ourcourse
+msgid ""
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
+"                                <br/>\n"
+"                                veniam\n"
+"                                quis nostrud exercitation ullamco laboris nisi ut aliquip"
+msgstr ""
+"com o tempo, eles ocorrem com grande trabalho e dor. Pois chego ao mínimo\n"
+" <br/>\n"
+" que pode praticar qualquer tipo de trabalho, exceto como alguém"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.achievement
+#: model_terms:ir.ui.view,arch_db:web_openeducat.event
+#: model_terms:ir.ui.view,arch_db:web_openeducat.newsfeed
+#: model_terms:ir.ui.view,arch_db:web_openeducat.teacher
+msgid ""
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
+"                                <br/>\n"
+"                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"
+msgstr ""
+"com o tempo, eles ocorrem com grande trabalho e dor. Pois, falando nos "
+"mínimos detalhes, ninguém pode praticar qualquer tipo de trabalho, exceto "
+"como alguém"
+
+#. module: web_openeducat
+#: model_terms:ir.ui.view,arch_db:web_openeducat.about-us
+msgid ""
+"tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
+"                                veniam,\n"
+"                                quis nostrud exercitation ullamco laboris nisi ut aliquip"
+msgstr ""
+"com o tempo, eles ocorrem com grande trabalho e dor. Pois, chegando aos "
+"mínimos detalhes, nenhum de nós é treinado em qualquer tipo de trabalho, "
+"exceto como algum tipo de pessoa."
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_student_bonafide_parent" inherit_id="openeducat_core.report_student_bonafide">
+        <xpath expr="//p/strong[2]" position="after">
+            <t t-if="o.parent_ids">
+                <t t-if="o.gender == 'm'"> Son of </t>
+                <t t-elif="o.gender == 'f'"> Daughter of </t>
+                <t t-else=""> Child of </t>
+                <strong><span t-out="o.parent_ids.name.title.shortcut or ''"/></strong>
+                <strong><span t-out="o.parent_ids.name.name or ''"/></strong>
+            </t>
+        </xpath>
+    </template>
+</odoo>

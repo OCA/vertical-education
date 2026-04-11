@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="enable_student_user_id" forcecreate="0" model="ir.config_parameter">
+        <field name="key">openeducat_admission.enable_create_student_user</field>
+        <field name="value">True</field>
+    </record>
+</odoo>

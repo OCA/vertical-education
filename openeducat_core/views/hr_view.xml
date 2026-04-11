@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id="view_employee_form_address_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.form.address.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <field name="private_state_id" position="attributes">
+                    <attribute name="context">{'show_address': 1, 'employee': True}</attribute>
+                    <attribute name="options">{"always_reload": True, "highlight_first_line": True}</attribute>
+                </field>
+                <field name="address_id" position="attributes">
+                    <attribute name="context">{'show_address': 1}</attribute>
+                    <attribute name="options">{"always_reload": True, "highlight_first_line": True}</attribute>
+                </field>
+                <field name="user_id" position="attributes">
+                    <attribute name="string">Related User</attribute>
+                    <attribute name="domain">[('partner_id', '=', 'address_home_id')]</attribute>
+                </field>
+            </field>
+        </record>
+</odoo>

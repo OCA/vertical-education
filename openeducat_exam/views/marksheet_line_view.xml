@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record id="view_op_marksheet_line_tree" model="ir.ui.view">
+            <field name="name">op.marksheet.line.list</field>
+            <field name="model">op.marksheet.line</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Marksheet Line">
+                    <field name="student_id"/>
+                    <field name="total_marks"/>
+                    <field name="percentage"/>
+                    <field name="grade" invisible="evaluation_type != 'grade'"/>
+                    <field name="status"/>
+                    <field name="evaluation_type"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_marksheet_line_form" model="ir.ui.view">
+            <field name="name">op.marksheet.line.form</field>
+            <field name="model">op.marksheet.line</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Marksheet Line">
+                    <header/>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <group>
+                            <group>
+                                <field name="student_id"/>
+                                <field name="total_marks"/>
+                                <field name="grade" invisible="evaluation_type != 'grade'"/>
+                            </group>
+                            <group>
+                                <field name="status"/>
+                                <field name="percentage"/>
+                                <field name="evaluation_type"/>
+                            </group>
+                        </group>
+                        <group string="Results">
+                            <field name="result_line" colspan='2' nolabel="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_marksheet_line_search" model="ir.ui.view">
+            <field name="name">op.marksheet.line.search</field>
+            <field name="model">op.marksheet.line</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Marksheet Line">
+                    <field name="marksheet_reg_id"/>
+                    <field name="student_id"/>
+                    <field name="total_marks"/>
+                    <field name="percentage"/>
+                    <filter string="Archived" name="inactive"
+                            domain="[('active', '=', False)]"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Marksheet Register" name="group_by_marksheet_line_register"
+                                domain="[]" context="{'group_by':'marksheet_reg_id'}"/>
+                        <filter string="Student" name="group_by_marksheet_line_student"
+                                domain="[]" context="{'group_by':'student_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_op_marksheet_line_pivot">
+            <field name="name">op.marksheet.line.pivot</field>
+            <field name="model">op.marksheet.line</field>
+            <field name="arch" type="xml">
+                <pivot string="Marksheet Pivot">
+                    <field name="student_id" type="row"/>
+                    <field name="status" type="col"/>
+                    <field name="percentage" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_marksheet_line_view">
+            <field name="name">Marksheet Lines</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.marksheet.line</field>
+            <field name="path">marksheet-line</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form,pivot</field>
+            <field name="search_view_id" ref="view_op_marksheet_line_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_marksheet_line_view_form">
+            <field name="act_window_id" ref="act_open_op_marksheet_line_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_marksheet_line_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_marksheet_line_view_tree">
+            <field name="act_window_id" ref="act_open_op_marksheet_line_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_marksheet_line_tree"/>
+        </record>
+
+</odoo>

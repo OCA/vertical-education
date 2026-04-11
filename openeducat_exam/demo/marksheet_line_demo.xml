@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <record id="op_marksheet_line_1" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_1"/>
+            <field name="student_id" ref="openeducat_core.op_student_1"/>
+        </record>
+
+        <record id="op_marksheet_line_2" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_1"/>
+            <field name="student_id" ref="openeducat_core.op_student_2"/>
+        </record>
+
+        <record id="op_marksheet_line_3" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_1"/>
+            <field name="student_id" ref="openeducat_core.op_student_3"/>
+        </record>
+
+        <record id="op_marksheet_line_4" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_1"/>
+            <field name="student_id" ref="openeducat_core.op_student_4"/>
+        </record>
+
+        <record id="op_marksheet_line_5" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_2"/>
+            <field name="student_id" ref="openeducat_core.op_student_9"/>
+        </record>
+
+        <record id="op_marksheet_line_6" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_2"/>
+            <field name="student_id" ref="openeducat_core.op_student_10"/>
+        </record>
+
+        <record id="op_marksheet_line_7" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_2"/>
+            <field name="student_id" ref="openeducat_core.op_student_11"/>
+        </record>
+
+        <record id="op_marksheet_line_8" model="op.marksheet.line">
+            <field name="marksheet_reg_id" ref="op_marksheet_register_2"/>
+            <field name="student_id" ref="openeducat_core.op_student_12"/>
+        </record>
+
+</odoo>

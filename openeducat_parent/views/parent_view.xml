@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record model="ir.ui.view" id="parent_student_form_view">
+            <field name="name">op.student.form</field>
+            <field name="model">op.student</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_student_form"/>
+            <field name="priority" eval="12"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button name="get_parent"
+                        class="btn oe_stat_button"
+                        icon="fa-user-o"
+                        type="object"
+                        groups="openeducat_parent.group_op_parent_manager">
+                        <div class="o_field_widget o_stat_info">
+                            <span class="o_stat_text">Parents</span>
+                        </div>
+                    </button>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_op_parent_tree" model="ir.ui.view">
+            <field name="name">op.parent.list</field>
+            <field name="model">op.parent</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Parent">
+                    <field name="name"/>
+                    <field name="mobile" required="1"/>
+                    <field name="student_ids" widget="many2many_tags"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_parent_form" model="ir.ui.view">
+            <field name="name">op.parent.form</field>
+            <field name="model">op.parent</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Parent">
+                    <header>
+                        <button type="object" name="create_parent_user"
+                                string="Create Parent User"
+                                groups="openeducat_parent.group_op_parent_manager"
+                                class="oe_highlight"
+                                invisible="user_id != False"/>
+                    </header>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <group>
+                            <group>
+                                <field name="name" placeholder="Parent Name"/>
+                                <field name="mobile" />
+                                <field name="email" />
+                            </group>
+                            <group>
+                                <field name="user_id" readonly="1"/>
+                                <field name="relationship_id" required="1"/>
+                            </group>
+                        </group>
+                        <separator colspan="4" string="Student(s)"/>
+                        <field name="student_ids"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_parent_search" model="ir.ui.view">
+            <field name="name">op.parent.search</field>
+            <field name="model">op.parent</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Parent">
+                    <field name="name"/>
+                    <field name="student_ids"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Name" name="group_by_parent_name"
+                                domain="[]" context="{'group_by':'name'}"/>
+                        <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_parent_view">
+            <field name="name">Parents</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.parent</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="path">parent</field>
+            <field name="search_view_id" ref="view_op_parent_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_parent_view_form">
+            <field name="act_window_id" ref="act_open_op_parent_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_parent_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_parent_view_tree">
+            <field name="act_window_id" ref="act_open_op_parent_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_parent_tree"/>
+        </record>
+
+</odoo>

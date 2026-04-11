@@ -1,0 +1,41 @@
+<odoo noupdate="1">
+        <record id="attendance_type_present" model="op.attendance.type">
+            <field name="name">Present</field>
+            <field name="present">True</field>
+            <field name="late">False</field>
+            <field name="absent">False</field>
+            <field name="excused">False</field>
+        </record>
+
+        <record id="attendance_type_late" model="op.attendance.type">
+            <field name="name">Late</field>
+            <field name="present">False</field>
+            <field name="late">True</field>
+            <field name="absent">False</field>
+            <field name="excused">False</field>
+        </record>
+
+        <record id="attendance_type_absent" model="op.attendance.type">
+            <field name="name">Absent</field>
+            <field name="present">False</field>
+            <field name="late">False</field>
+            <field name="absent">True</field>
+            <field name="excused">False</field>
+        </record>
+
+        <record id="attendance_type_absent_excused" model="op.attendance.type">
+            <field name="name">Absent Excused</field>
+            <field name="present">False</field>
+            <field name="late">False</field>
+            <field name="absent">True</field>
+            <field name="excused">True</field>
+        </record>
+
+        <record id="attendance_type_late_excused" model="op.attendance.type">
+            <field name="name">Late Excused</field>
+            <field name="present">False</field>
+            <field name="late">True</field>
+            <field name="absent">False</field>
+            <field name="excused">True</field>
+        </record>
+</odoo>

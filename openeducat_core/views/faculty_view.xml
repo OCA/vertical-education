@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record model="ir.ui.view" id="kanban_view_faculty">
+            <field name="name">Faculty Kanban</field>
+            <field name="model">op.faculty</field>
+            <field name="arch" type="xml">
+                <kanban sample="1">
+                    <field name="id"/>
+                    <field name="image_1920"/>
+                    <templates>
+                        <t t-name="card" class="flex-row">
+                            <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                            <aside class="o_kanban_aside_full">
+                                <t t-if="record.image_1920.value">
+                                    <div class="o_kanban_image_fill position-relative w-100">
+                                        <field name="image_1920" alt="Contact image" class="h-100" widget="image" options="{'img_class': 'object-fit-cover'}"/>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="o_kanban_image_fill position-relative w-100">
+                                        <field name="avatar_128" class="h-100" widget="image" options="{'img_class': 'object-fit-cover'}"/>
+                                    </div>
+                                </t>
+                            </aside>
+                            <main class="ml16 ps-2 ps-md-0">
+                                <div class="mb-1">
+                                    <field name="name" class="mb-0 fw-bold fs-5"/>
+                                </div>
+                                <div t-if="record.city.raw_value or record.country_id.raw_value">
+                                    <field name="city"/>
+                                    <span t-if="record.city.raw_value and record.country_id.raw_value">, </span>
+                                    <field name="country_id"/>
+                                </div>
+                                <field name="email" class="text-truncate"/>
+                                <footer><field name="activity_ids" widget="kanban_activity" class="ms-auto mt-auto" style="padding-bottom:6px;"/></footer>
+                            </main>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="view_op_faculty_tree" model="ir.ui.view">
+            <field name="name">op.faculty.list</field>
+            <field name="model">op.faculty</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Faculty">
+                    <field name="title"/>
+                    <field name="name"/>
+                    <field name="gender" optional="hide"/>
+                    <field name="phone" optional="hide"/>
+                    <field name="mobile" optional="hide"/>
+                    <field name="email" optional="hide"/>
+                    <field name="blood_group"/>
+                    <field name="emergency_contact"/>
+                    <field name="main_department_id" groups="openeducat_core.group_multi_department"/>
+                    <field name="allowed_department_ids" widget="many2many_tags"
+                           groups="openeducat_core.group_multi_department"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_faculty_form" model="ir.ui.view">
+            <field name="name">op.faculty.form</field>
+            <field name="model">op.faculty</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Faculty">
+                    <header groups="openeducat_core.group_op_back_office_admin">
+                    </header>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box">
+                        </div>
+
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible = "active == True"/>
+
+                        <div style="width:100%;" class="row align-items-center">
+                            <div class="mb16 col-8 col-lg-10 px-4">
+                                <div class="d-flex faculty-name">
+                                    <h1 class="">
+                                        <field name="title" widget="inline_many2one" placeholder="Title"/>
+                                    </h1>
+                                    <div class="">
+                                        <h1 class="d-lg-flex flex-wrap align-items-center gap-1">
+                                            <field name="name" placeholder="Name" required="1" invisible="1"/>
+                                            <field name="first_name" widget="inline_char" required="1" placeholder="First Name"/>
+                                            <field name="middle_name" widget="inline_char" placeholder="Middle Name"/>
+                                            <field name="last_name" widget="inline_char" placeholder="Last Name"/>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-lg-2">
+                                <field name="image_1920" widget="image" class="oe_left oe_avatar"/>
+                            </div>
+                        </div>
+                        <notebook colspan="4">
+                            <page name="personal_information" string="Personal Information">
+                                <group>
+                                    <group>
+                                        <field name="gender"/>
+                                        <field name="birth_date"/>
+                                        <label for="type"/>
+                                        <div name="div_type">
+                                            <field class="oe_inline" name="type"/>
+                                        </div>
+                                        <label for="street" string="Address"/>
+                                        <div name="o_address_format">
+                                            <field name="street" placeholder="Street..."/>
+                                            <field name="street2" placeholder="Street2"/>
+                                            <div class="address_format">
+                                                <field name="city" placeholder="City" style="width: 40%"/>
+                                                <field name="state_id" class="oe_no_button" placeholder="State"
+                                                       style="width: 37%" options="{&quot;no_open&quot;: True}"/>
+                                                <field name="zip" placeholder="ZIP" style="width: 20%"/>
+                                            </div>
+                                            <field name="country_id" placeholder="Country" class="oe_no_button"
+                                                   options="{&quot;no_open&quot;: True}"/>
+                                        </div>
+                                        <field name="emergency_contact" context="{'show_address': 1}"
+                                               options="{&quot;always_reload&quot;: True}"/>
+                                    </group>
+                                    <group>
+                                        <field name="email"/>
+                                        <field name="phone"/>
+                                        <field name="mobile"/>
+                                        <field name="nationality"/>
+                                        <field name="lang"/>
+                                        <field name="emp_id"/>
+                                        <field name="main_department_id"
+                                               groups="openeducat_core.group_multi_department"/>
+                                        <field name="blood_group"/>
+                                        <field name="visa_info"/>
+                                        <field name="allowed_department_ids" widget="many2many_tags"
+                                               groups="openeducat_core.group_multi_department"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="subjects" string="Subjects">
+                                <field name="faculty_subject_ids" colspan="4" nolabel="1"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_faculty_search" model="ir.ui.view">
+            <field name="name">op.faculty.search</field>
+            <field name="model">op.faculty</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Faculty">
+                    <field name="name"/>
+                    <field name="blood_group"/>
+                    <field name="main_department_id"/>
+                    <field name="allowed_department_ids"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter name="blood_group" string="Blood Group" domain="[]"
+                                context="{'group_by':'blood_group'}"/>
+                        <filter name="nationality" string="Nationality" domain="[]"
+                                context="{'group_by':'nationality'}"/>
+                        <filter name="language" string="Language" domain="[]" context="{'group_by':'lang'}"/>
+                        <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="faculty_view_activity" model="ir.ui.view">
+            <field name="name">op.faculty.activity</field>
+            <field name="model">op.faculty</field>
+            <field name="arch" type="xml">
+                <activity string="Contacts">
+                    <field name="id"/>
+                    <templates>
+                        <div t-name="activity-box">
+                            <img t-att-src="activity_image('op.faculty', 'image_1920', record.id.raw_value)" role="img" t-att-title="record.name.value" t-att-alt="record.name.value"/>
+                            <div class="ms-2">
+                                <field name="name" display="full" class="o_text_block"/>
+                            </div>
+                        </div>
+                    </templates>
+                </activity>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_faculty_view">
+            <field name="name">Faculties</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.faculty</field>
+            <field name="path">faculty</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">kanban,list,form,activity</field>
+            <field name="search_view_id" ref="view_op_faculty_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_faculty_view_form">
+            <field name="act_window_id" ref="act_open_op_faculty_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_faculty_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_faculty_view_tree">
+            <field name="act_window_id" ref="act_open_op_faculty_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_faculty_tree"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_faculty_view_kanban">
+            <field name="act_window_id" ref="act_open_op_faculty_view"/>
+            <field name="sequence" eval="5"/>
+            <field name="view_mode">kanban</field>
+            <field name="view_id" ref="kanban_view_faculty"/>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_faculty_view_2">
+            <field name="name">Faculties</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.faculty</field>
+            <field name="path">faculties</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">kanban,list,form</field>
+            <field name="search_view_id" ref="view_op_faculty_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+</odoo>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record id="view_parent_relationship_tree" model="ir.ui.view">
+            <field name="name">op.parent.relationship.list</field>
+            <field name="model">op.parent.relationship</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Relationships">
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_parent_relationship_form" model="ir.ui.view">
+            <field name="name">op.parent.relationship.form</field>
+            <field name="model">op.parent.relationship</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Relationships">
+                    <header/>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_parent_relationship_view">
+            <field name="name">Relationships</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.parent.relationship</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="path">parent-relationship</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_parent_relationship_view_form">
+            <field name="act_window_id" ref="act_open_op_parent_relationship_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_parent_relationship_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_parent_relationship_view_tree">
+            <field name="act_window_id" ref="act_open_op_parent_relationship_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_parent_relationship_tree"/>
+        </record>
+
+</odoo>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record id="view_op_media_queue_tree" model="ir.ui.view">
+            <field name="name">op.media.queue.list</field>
+            <field name="model">op.media.queue</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Media Queue Request">
+                    <field name='name'/>
+                    <field name="media_id"/>
+                    <field name="user_id"/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="state"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_media_queue_form" model="ir.ui.view">
+            <field name="name">op.media.queue.form</field>
+            <field name="model">op.media.queue</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="media Queue Request">
+                    <header groups="base.group_user">
+                        <button name="do_accept" string="Accept" type="object"
+                                invisible="state != 'request'" class="oe_highlight"
+                                groups="openeducat_library.group_op_library"/>
+                        <button name="do_reject" string="Reject" type="object"
+                                invisible="state not in ('request','accept')"
+                                groups="openeducat_library.group_op_library"/>
+                        <button name="do_request_again" string="Request Again"
+                        invisible="state != 'reject'" type="object"
+                                groups="openeducat_library.group_op_library_user,openeducat_library.group_op_library"/>
+                        <field name="state" widget="statusbar" statusbar_visible="request,reject,accept"
+                               statusbar_colors='{"reject":"red"}'/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="active" invisible="1"/>
+                            <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                    invisible="active == True"/>
+                            <div style="font-size:20px;font-weight:bold;">
+                                <field name="name"/>
+                            </div>
+                        </group>
+                        <group class="pt-3">
+                            <group>
+                                <field name="user_id" placeholder="Name"/>
+                                <field name="date_from"/>
+                            </group>
+                            <group>
+                                <field name="media_id" placeholder="Media"/>
+                                <field name="date_to"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_media_queue_search" model="ir.ui.view">
+            <field name="name">op.media.queue.search</field>
+            <field name="model">op.media.queue</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Media Queue Request">
+                    <field name="user_id"/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="state"/>
+                    <field name="media_id"/>
+                    <filter string="Archived" name="inactive"
+                            domain="[('active', '=', False)]"/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Media" name="group_by_lbr_media_queue_media"
+                                domain="[]" context="{'group_by':'media_id'}"/>
+                        <filter string="User" name="group_by_lbr_media_queue_user"
+                                domain="[]" context="{'group_by':'user_id'}"/>
+                        <filter string="Status" name="group_by_lbr_media_queue_state"
+                                domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="view_op_media_queue_pivot" model="ir.ui.view">
+            <field name="name">op.media.queue.pivot</field>
+            <field name="model">op.media.queue</field>
+            <field name="arch" type="xml">
+                <pivot string="Media Queue Request">
+                    <field name="media_id" type="col"/>
+                    <field name="user_id" type="row"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record id="view_op_media_queue_graph" model="ir.ui.view">
+            <field name="name">op.media.queue.graph</field>
+            <field name="model">op.media.queue</field>
+            <field name="arch" type="xml">
+                <graph string="Media Queue Request" type="bar">
+                    <field name="user_id"/>
+                    <field name="media_id"/>
+                </graph>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_media_queue_view">
+            <field name="name">Media Queue Requests</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.media.queue</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form,pivot,graph</field>
+            <field name="path">media-queue</field>
+            <field name="search_view_id" ref="view_op_media_queue_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_media_queue_view_form">
+            <field name="act_window_id" ref="act_open_op_media_queue_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_media_queue_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_media_queue_view_tree">
+            <field name="act_window_id" ref="act_open_op_media_queue_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_media_queue_tree"/>
+        </record>
+
+</odoo>

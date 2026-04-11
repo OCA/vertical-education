@@ -1,0 +1,421 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-29 10:20+0000\n"
+"PO-Revision-Date: 2025-04-29 10:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__active
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: openeducat_activity
+#: model:ir.module.category,name:openeducat_activity.module_category_all_op_activity
+#: model:ir.module.category,name:openeducat_activity.module_category_openeducat_activity
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.activity_smart_button
+msgid "Activity"
+msgstr "Activité"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_student__activity_count
+msgid "Activity Count"
+msgstr "Nombre d'activités"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Décoration d'exception d'activité"
+
+#. module: openeducat_activity
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_graph
+msgid "Activity Graph View"
+msgstr "Vue de graphique d'activité"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_student__activity_log
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_form
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_search
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_tree
+msgid "Activity Log"
+msgstr "Journal d'activité"
+
+#. module: openeducat_activity
+#: model:ir.actions.act_window,name:openeducat_activity.act_open_op_activity_view
+#: model:ir.ui.menu,name:openeducat_activity.menu_op_activity_sub
+msgid "Activity Logs"
+msgstr "Journaux d'activité"
+
+#. module: openeducat_activity
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_pivot
+msgid "Activity Pivot"
+msgstr "Pivot d'activité"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_state
+msgid "Activity State"
+msgstr "État d'activité"
+
+#. module: openeducat_activity
+#: model:ir.model,name:openeducat_activity.model_op_activity_type
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__type_id
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_type_search
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_type_tree
+msgid "Activity Type"
+msgstr "Type d'activité"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icône de type d'activité"
+
+#. module: openeducat_activity
+#: model:ir.actions.act_window,name:openeducat_activity.act_open_op_activity_type_view
+#: model:ir.ui.menu,name:openeducat_activity.menu_op_activity_type_sub
+msgid "Activity Types"
+msgstr "Types d'activités"
+
+#. module: openeducat_activity
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_form
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_search
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_type_form
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_type_search
+msgid "Archived"
+msgstr "Archivé"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: openeducat_activity
+#. odoo-python
+#: code:addons/openeducat_activity/wizard/student_migrate_wizard.py:0
+msgid "Can't migrate, As selected courses don't share same parent course!"
+msgstr ""
+"Je ne peux pas migrer, car les cours sélectionnés ne partagent pas le même "
+"cours parent!"
+
+#. module: openeducat_activity
+#. odoo-python
+#: code:addons/openeducat_activity/wizard/student_migrate_wizard.py:0
+msgid "Can't migrate, Proceed for new admission"
+msgstr "Ne peut pas migrer, procéder à une nouvelle admission"
+
+#. module: openeducat_activity
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.student_migrate_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__course_completed
+msgid "Course Completed?"
+msgstr "Cours terminé?"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__create_uid
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__create_uid
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__create_date
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__create_date
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__create_date
+msgid "Created on"
+msgstr "Créé sur"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__date
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__date
+msgid "Date"
+msgstr "Date"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__description
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.view_op_activity_form
+msgid "Description"
+msgstr "Description"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__display_name
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__display_name
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__faculty_id
+msgid "Faculty"
+msgstr "Faculté"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icône géniale de police, par exemple FA-TASS"
+
+#. module: openeducat_activity
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.student_migrate_form
+msgid "Forward"
+msgstr "Avant"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__course_from_id
+msgid "From Course"
+msgstr "De cours"
+
+#. module: openeducat_activity
+#. odoo-python
+#: code:addons/openeducat_activity/wizard/student_migrate_wizard.py:0
+msgid "From Course must not be same as To Course!"
+msgstr "Du cours ne doit pas être le même que le cours!"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__has_message
+msgid "Has Message"
+msgstr "A un message"
+
+#. module: openeducat_activity
+#: model:ir.module.category,description:openeducat_activity.module_category_all_op_activity
+#: model:ir.module.category,description:openeducat_activity.module_category_openeducat_activity
+msgid "Helps you manage your institutes different-different users."
+msgstr "Vous aide à gérer vos instituts différents utilisateurs différente."
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__id
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__id
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__id
+msgid "ID"
+msgstr "IDENTIFIANT"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_exception_icon
+msgid "Icon"
+msgstr "Icône"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icône pour indiquer une activité d'exception."
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "S'il est vérifié, les nouveaux messages nécessitent votre attention."
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__message_has_error
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "S'il est vérifié, certains messages ont une erreur de livraison."
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_is_follower
+msgid "Is Follower"
+msgstr "Est un adepte"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__write_uid
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__write_uid
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__write_date
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__write_date
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour sur"
+
+#. module: openeducat_activity
+#: model:res.groups,name:openeducat_activity.group_activity_manager
+msgid "Manager"
+msgstr "Directeur"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison de messages"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: openeducat_activity
+#. odoo-python
+#: code:addons/openeducat_activity/wizard/student_migrate_wizard.py:0
+msgid "Migration From {} to Completed Course"
+msgstr "Migration de {} au cours terminé"
+
+#. module: openeducat_activity
+#. odoo-python
+#: code:addons/openeducat_activity/wizard/student_migrate_wizard.py:0
+msgid "Migration from {} to {}"
+msgstr "Migration de {} vers {}"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Ma date limite d'activité"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity_type__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Date limite d'activité suivante"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_summary
+msgid "Next Activity Summary"
+msgstr "Résumé de l'activité suivante"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_type_id
+msgid "Next Activity Type"
+msgstr "Type d'activité suivante"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Nombre de messages nécessitant une action"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__optional_sub
+msgid "Optional Subjects"
+msgstr "Sujets facultatifs"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur responsable"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur de livraison SMS"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Statut basé sur les activités\n"
+"En retard: la date d'échéance est déjà adoptée\n"
+"Aujourd'hui: la date d'activité est aujourd'hui\n"
+"Planifié: activités futures."
+
+#. module: openeducat_activity
+#: model:ir.model,name:openeducat_activity.model_op_student
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__student_id
+msgid "Student"
+msgstr "Étudiant"
+
+#. module: openeducat_activity
+#: model:ir.model,name:openeducat_activity.model_op_activity
+msgid "Student Activity"
+msgstr "Activité des étudiants"
+
+#. module: openeducat_activity
+#: model:ir.model,name:openeducat_activity.model_student_migrate
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.student_migrate_form
+msgid "Student Migrate"
+msgstr "L'étudiant migrate"
+
+#. module: openeducat_activity
+#: model:ir.actions.act_window,name:openeducat_activity.act_open_student_migrate_view
+#: model:ir.ui.menu,name:openeducat_activity.menu_student_migrate
+msgid "Student Migration"
+msgstr "Migration des étudiants"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__student_ids
+#: model_terms:ir.ui.view,arch_db:openeducat_activity.student_migrate_form
+msgid "Student(s)"
+msgstr "Étudiants)"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__batch_id
+msgid "To Batch"
+msgstr "À un lot"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_student_migrate__course_to_id
+msgid "To Course"
+msgstr "Pour cours"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type de l'activité d'exception enregistrée."
+
+#. module: openeducat_activity
+#: model:res.groups,name:openeducat_activity.group_activity_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,field_description:openeducat_activity.field_op_activity__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site Web"
+
+#. module: openeducat_activity
+#: model:ir.model.fields,help:openeducat_activity.field_op_activity__website_message_ids
+msgid "Website communication history"
+msgstr "Historique de communication du site Web"

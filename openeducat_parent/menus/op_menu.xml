@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <menuitem id="menu_op_parent_root" name="Parents"
+                  parent="openeducat_core.menu_op_school_root"
+                  action="act_open_op_parent_view"
+                  groups="openeducat_parent.group_op_parent_manager"
+                  sequence="25"/>
+
+         <menuitem id="menu_op_school_config_parent" name="Parents"
+                  parent="openeducat_core.menu_op_school_config"
+                  sequence="60"/>
+
+        <menuitem id="menu_op_parent_relationship_sub_parent" name="Relationships"
+                  parent="menu_op_school_config_parent" sequence="20"
+                  action="act_open_op_parent_relationship_view"
+                  groups="openeducat_parent.group_op_parent_manager"/>
+
+        <menuitem id="hr.menu_hr_root" name="Human Resources"
+                  sequence="110"/>
+
+</odoo>

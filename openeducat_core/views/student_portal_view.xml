@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="student_portal_view" model="ir.ui.view">
+        <field name="name">User portal</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_type']" position="after">
+                <field name="is_parent"/>
+                <label for="is_parent"/>
+                <field name="is_student"/>
+                <label for="is_student"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

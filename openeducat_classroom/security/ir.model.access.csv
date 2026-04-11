@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_op_classroom_back_office_admin,name_op_classroom_back_office_admin,model_op_classroom,openeducat_classroom.group_op_classroom_manager,1,1,1,1
+access_op_asset_faculty,name_op_asset_faculty,model_op_asset,openeducat_classroom.group_op_classroom_user,1,0,0,0
+access_op_asset_back_office_admin,name_op_asset_back_office_admin,model_op_asset,openeducat_classroom.group_op_classroom_manager,1,1,1,1
+access_op_classroom_faculty,name_op_classroom_faculty,model_op_classroom,openeducat_classroom.group_op_classroom_user,1,1,0,0

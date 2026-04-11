@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <record id="op_faculty_1" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">William D Mitchell</field>
+            <field name="first_name">William</field>
+            <field name="middle_name">D</field>
+            <field name="last_name">Mitchell</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1983-02-01</field>
+            <field name="blood_group">B+</field>
+            <field name="email">williammitchell@example.com</field>
+            <field name="city">Espoo</field>
+            <field name="street">Otaniementie 25</field>
+            <field name="street2">Building A, Floor 3</field>
+            <field name="zip">02150</field>
+            <field name="state_id" ref="base.state_fi_18"/>
+            <field name="country_id" ref="base.fi"/>
+            <field name="nationality" ref="base.fi"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_21"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_1.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_1"/>
+            <field name="faculty_subject_ids"
+               eval="[(4,ref('openeducat_core.op_subject_1')),(4,ref('openeducat_core.op_subject_2')),(4,ref('openeducat_core.op_subject_5')),(4,ref('openeducat_core.op_subject_26')),(4,ref('openeducat_core.op_subject_27')),(4,ref('openeducat_core.op_subject_28')),(4,ref('openeducat_core.op_subject_29')),(4,ref('openeducat_core.op_subject_28')),(4,ref('openeducat_core.op_subject_29')),(4,ref('openeducat_core.op_subject_30')),(4,ref('openeducat_core.op_subject_31'))]"/>
+        </record>
+
+        <record id="op_faculty_2" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">John C White</field>
+            <field name="first_name">John</field>
+            <field name="middle_name">C</field>
+            <field name="last_name">White</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1993-02-05</field>
+            <field name="blood_group">O+</field>
+            <field name="email">johnwhite@example.com</field>
+            <field name="city">Paris</field>
+            <field name="street">100 George Street</field>
+            <field name="street2">Suite 5</field>
+            <field name="zip">2000</field>
+            <field name="state_id" ref="base.state_au_2"/>
+            <field name="country_id" ref="base.fr"/>
+            <field name="nationality" ref="base.fr"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_22"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_2.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_3"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_10')),(4,ref('openeducat_core.op_subject_12'))]"/>
+        </record>
+
+        <record id="op_faculty_3" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Robert F Moore</field>
+            <field name="first_name">Robert</field>
+            <field name="middle_name">F</field>
+            <field name="last_name">Moore</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1982-09-04</field>
+            <field name="blood_group">A-</field>
+            <field name="email">robertfmoore@example.com</field>
+            <field name="city">Buenos Aires</field>
+            <field name="street">25 de Mayo 150</field>
+            <field name="street2">Piso 2</field>
+            <field name="zip">C1002ABF</field>
+            <field name="state_id" ref="base.state_ar_c"/>
+            <field name="country_id" ref="base.dk"/>
+            <field name="nationality" ref="base.dk"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_23"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_3.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_3"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_20')),(4,ref('openeducat_core.op_subject_63'))]"/>
+        </record>
+
+        <record id="op_faculty_4" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Mary L Johnson</field>
+            <field name="first_name">Mary</field>
+            <field name="middle_name">L</field>
+            <field name="last_name">Johnson</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1984-06-04</field>
+            <field name="blood_group">A+</field>
+            <field name="email">maryljohnson@example.com</field>
+            <field name="city">Auckland</field>
+            <field name="street">45 Queen Street</field>
+            <field name="street2">Level 3</field>
+            <field name="zip">1010</field>
+            <field name="state_id" ref="base.state_nz_auk"/>
+            <field name="country_id" ref="base.nz"/>
+            <field name="nationality" ref="base.nz"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_24"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_4.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_2"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_18')),(4,ref('openeducat_core.op_subject_23')),(4,ref('openeducat_core.op_subject_24')),(4,ref('openeducat_core.op_subject_25'))]"/>
+        </record>
+
+        <record id="op_faculty_5" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Thomas L Turner</field>
+            <field name="first_name">Thomas</field>
+            <field name="middle_name">L</field>
+            <field name="last_name">Turner</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1982-08-09</field>
+            <field name="blood_group">O+</field>
+            <field name="email">thomaslturner@example.com</field>
+            <field name="city">Berlin</field>
+            <field name="street">Unter den Linden 10</field>
+            <field name="street2">Suite 4</field>
+            <field name="zip">10117</field>
+            <field name="state_id" ref="base.state_de_be"/>
+            <field name="country_id" ref="base.de"/>
+            <field name="nationality" ref="base.de"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_25"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_5.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_2"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_19')),(4,ref('openeducat_core.op_subject_21')),(4,ref('openeducat_core.op_subject_22')),(4,ref('openeducat_core.op_subject_23'))]"/>
+        </record>
+
+        <record id="op_faculty_6" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Alice T Foster</field>
+            <field name="first_name">Alice</field>
+            <field name="middle_name">T</field>
+            <field name="last_name">Foster</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1980-09-05</field>
+            <field name="blood_group">B+</field>
+            <field name="email">alicefoster@example.com</field>
+            <field name="city">São Paulo</field>
+            <field name="street">Avenida Paulista 1000</field>
+            <field name="street2">Apartamento 12B</field>
+            <field name="zip">01310-100</field>
+            <field name="state_id" ref="base.state_br_sp"/>
+            <field name="country_id" ref="base.dk"/>
+            <field name="nationality" ref="base.dk"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_26"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_6.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_4"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_6')),(4,ref('openeducat_core.op_subject_8'))]"/>
+        </record>
+
+        <record id="op_faculty_7" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Cheng F Feng</field>
+            <field name="first_name">Cheng</field>
+            <field name="middle_name">F</field>
+            <field name="last_name">Feng</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1985-06-17</field>
+            <field name="blood_group">A-</field>
+            <field name="email">chengfeng@example.com</field>
+            <field name="city">Shanghai</field>
+            <field name="street">789 Renmin Road</field>
+            <field name="street2">Apt 305, Building 8</field>
+            <field name="zip">200020</field>
+            <field name="state_id" ref="base.state_cn_SN"/>
+            <field name="country_id" ref="base.cn"/>
+            <field name="nationality" ref="base.cn"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_27"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_7.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_4"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_9')),(4,ref('openeducat_core.op_subject_11'))]"/>
+        </record>
+
+        <record id="op_faculty_8" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Raj K Khanna</field>
+            <field name="first_name">Raj</field>
+            <field name="middle_name">K</field>
+            <field name="last_name">Khanna</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1987-08-04</field>
+            <field name="blood_group">B+</field>
+            <field name="email">rajkhanna@example.com</field>
+            <field name="city">Ahmedabad</field>
+            <field name="street">Manelchok</field>
+            <field name="street2">A 5</field>
+            <field name="zip">380015</field>
+            <field name="state_id" ref="base.state_in_gj"/>
+            <field name="country_id" ref="base.in"/>
+            <field name="nationality" ref="base.in"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_28"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_8.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_4"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_13')),(4,ref('openeducat_core.op_subject_14')),(4,ref('openeducat_core.op_subject_16')),(4,ref('openeducat_core.op_subject_149'))]"/>
+        </record>
+
+        <record id="op_faculty_9" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Xiulan Z Zhang</field>
+            <field name="first_name">Xiulan</field>
+            <field name="middle_name">Z</field>
+            <field name="last_name">Zhang</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1982-04-06</field>
+            <field name="blood_group">B-</field>
+            <field name="email">xiulanzhang@example.com</field>
+            <field name="city">Beijing</field>
+            <field name="street">456 Zhongshan Avenue</field>
+            <field name="street2">Room 12B, Tower A</field>
+            <field name="zip">100010</field>
+            <field name="state_id" ref="base.state_cn_BJ"/>
+            <field name="country_id" ref="base.cn"/>
+            <field name="nationality" ref="base.cn"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_29"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_9.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_3"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_34')),(4,ref('openeducat_core.op_subject_77')),(4,ref('openeducat_core.op_subject_61')),(4,ref('openeducat_core.op_subject_67'))]"/>
+        </record>
+
+        <record id="op_faculty_10" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Sarah P Clark</field>
+            <field name="first_name">Sarah</field>
+            <field name="middle_name">P</field>
+            <field name="last_name">Clark</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1981-03-15</field>
+            <field name="blood_group">A-</field>
+            <field name="email">sarahpclark@example.com</field>
+            <field name="city">Mexico City</field>
+            <field name="street">Paseo de la Reforma 250</field>
+            <field name="street2">Apt 7B</field>
+            <field name="zip">06500</field>
+            <field name="state_id"
+                   ref="base.state_mx_mor"/> <!-- Example: Ciudad de México -->
+            <field name="country_id" ref="base.mx"/>
+            <field name="nationality" ref="base.mx"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_30"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_10.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_1"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_4')),(4,ref('openeducat_core.op_subject_5'))]"/>
+        </record>
+
+        <record id="op_faculty_11" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Grace L Cooper</field>
+            <field name="first_name">Grace</field>
+            <field name="middle_name">L</field>
+            <field name="last_name">Cooper</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1978-05-21</field>
+            <field name="blood_group">B+</field>
+            <field name="email">gracecooper@example.com</field>
+            <field name="city">Oslo</field>
+            <field name="street">Karl Johans gate 47</field>
+            <field name="street2">Suite 8</field>
+            <field name="zip">0162</field>
+            <field name="state_id" ref="base.state_no_03"/>
+            <field name="country_id" ref="base.gl"/>
+            <field name="nationality" ref="base.gl"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_38"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_11.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_1"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_26')),(4,ref('openeducat_core.op_subject_27'))]"/>
+        </record>
+
+        <record id="op_faculty_12" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Ruby D Wilson</field>
+            <field name="first_name">Ruby</field>
+            <field name="middle_name">D</field>
+            <field name="last_name">Wilson</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1983-08-24</field>
+            <field name="blood_group">A+</field>
+            <field name="email">rubydwilson@example.com</field>
+            <field name="city">Rio de Janeiro</field>
+            <field name="street">Avenida Atlântica 1702</field>
+            <field name="street2">Apartment 15C</field>
+            <field name="zip">22021-001</field>
+            <field name="state_id" ref="base.state_br_rj"/>
+            <field name="country_id" ref="base.br"/>
+            <field name="nationality" ref="base.br"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_39"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_12.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_3"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_17')),(4,ref('openeducat_core.op_subject_20'))]"/>
+        </record>
+
+        <record id="op_faculty_13" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_mister"/>
+            <field name="name">Yusuf I Ibrahim	</field>
+            <field name="first_name">Yusuf</field>
+            <field name="middle_name">I</field>
+            <field name="last_name">Ibrahim</field>
+            <field name="gender">male</field>
+            <field name="birth_date">1986-03-07</field>
+            <field name="blood_group">AB+</field>
+            <field name="email">yusufibrahim@example.com</field>
+            <field name="city">Riyadh</field>
+            <field name="street">King Fahd Road 245</field>
+            <field name="street2">Building 10</field>
+            <field name="zip">11564</field>
+            <field name="state_id" ref="base.state_sa_32"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="nationality" ref="base.sa"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_40"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_13.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_3"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_78')),(4,ref('openeducat_core.op_subject_79')),(4,ref('openeducat_core.op_subject_92'))]"/>
+        </record>
+
+        <record id="op_faculty_14" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Amina K Kone</field>
+            <field name="first_name">Amina</field>
+            <field name="middle_name">K</field>
+            <field name="last_name">Kone</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1979-02-22</field>
+            <field name="blood_group">A-</field>
+            <field name="email">aminakone@example.com</field>
+            <field name="city">Johannesburg</field>
+            <field name="street">20 Nelson Mandela Square</field>
+            <field name="street2">Suite 5A</field>
+            <field name="zip">2196</field>
+            <field name="state_id" ref="base.state_za_gt"/>
+            <field name="country_id" ref="base.za"/>
+            <field name="nationality" ref="base.za"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_41"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_14.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_1"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_135')),(4,ref('openeducat_core.op_subject_136'))]"/>
+        </record>
+
+        <record id="op_faculty_15" model="op.faculty">
+            <field name="title" ref="base.res_partner_title_miss"/>
+            <field name="name">Grace S Davis</field>
+            <field name="first_name">Grace</field>
+            <field name="middle_name">S</field>
+            <field name="last_name">Davis</field>
+            <field name="gender">female</field>
+            <field name="birth_date">1984-01-30</field>
+            <field name="blood_group">B+</field>
+            <field name="email">gracesdavis@example.com</field>
+            <field name="city">Helsinki</field>
+            <field name="street">15 Mannerheimintie</field>
+            <field name="street2">Apartment 4B</field>
+            <field name="zip">00100</field>
+            <field name="state_id" ref="base.state_fi_11"/>
+            <field name="country_id" ref="base.fi"/>
+            <field name="nationality" ref="base.fi"/>
+            <field name="type">contact</field>
+            <field name="active">True</field>
+            <field name="partner_id" ref="op_res_partner_42"/>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_15.jpg"/>
+            <field name="main_department_id" ref="openeducat_core.op_department_1"/>
+            <field name="faculty_subject_ids" eval="[(4,ref('openeducat_core.op_subject_31')),(4,ref('openeducat_core.op_subject_32'))]"/>
+        </record>
+</odoo>

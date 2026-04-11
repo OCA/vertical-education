@@ -1,0 +1,193 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* openeducat_classroom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-29 05:53+0000\n"
+"PO-Revision-Date: 2025-04-29 05:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__active
+msgid "Active"
+msgstr "Активный"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Archived"
+msgstr "Архивированный"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__asset_id
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__asset_line
+msgid "Asset"
+msgstr "Объект"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+msgid "Asset Management"
+msgstr "Управление активами"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__batch_id
+msgid "Batch"
+msgstr "Партия"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Capacity"
+msgstr "Емкость"
+
+#. module: openeducat_classroom
+#: model:ir.ui.menu,name:openeducat_classroom.menu_op_school_config_class_room
+msgid "Class Room Management"
+msgstr "Управление номером класса"
+
+#. module: openeducat_classroom
+#: model:ir.actions.act_window,name:openeducat_classroom.act_open_op_classroom_view
+#: model:ir.ui.menu,name:openeducat_classroom.menu_op_classroom_sub
+msgid "Class Rooms"
+msgstr "Классные комнаты"
+
+#. module: openeducat_classroom
+#: model:ir.model,name:openeducat_classroom.model_op_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_facility_line__classroom_id
+#: model:ir.module.category,name:openeducat_classroom.module_category_all_op_classroom
+#: model:ir.module.category,name:openeducat_classroom.module_category_openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_tree
+msgid "Classroom"
+msgstr "Классная комната"
+
+#. module: openeducat_classroom
+#: model:ir.model,name:openeducat_classroom.model_op_asset
+msgid "Classroom Assets"
+msgstr "Активы в классе"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__code
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__code
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Code"
+msgstr "Код"
+
+#. module: openeducat_classroom
+#: model:ir.model.constraint,message:openeducat_classroom.constraint_op_classroom_unique_classroom_code
+msgid "Code should be unique per classroom!"
+msgstr "Код должен быть уникальным в классе!"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__course_id
+msgid "Course"
+msgstr "Курс"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__create_uid
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__create_uid
+msgid "Created by"
+msgstr "Создан"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__create_date
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__create_date
+msgid "Created on"
+msgstr "Создан на"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__display_name
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_form
+msgid "Facilities"
+msgstr "Удобства"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__facilities
+msgid "Facility Lines"
+msgstr "Условия"
+
+#. module: openeducat_classroom
+#: model:ir.model.constraint,message:openeducat_classroom.constraint_op_facility_line_unique_facility_classroom
+msgid ""
+"Facility name exists. Please choose a unique name or update the quantity."
+msgstr ""
+"Название объекта существует. Пожалуйста, выберите уникальное имя или "
+"обновите количество."
+
+#. module: openeducat_classroom
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Group By..."
+msgstr "Группа по ..."
+
+#. module: openeducat_classroom
+#: model:ir.module.category,description:openeducat_classroom.module_category_all_op_classroom
+#: model:ir.module.category,description:openeducat_classroom.module_category_openeducat_classroom
+msgid "Helps you manage your institutes different-different users."
+msgstr "Помогает вам управлять вашими институтами различными пользователями."
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__id
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__id
+msgid "ID"
+msgstr "ИДЕНТИФИКАТОР"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__write_uid
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__write_uid
+msgid "Last Updated by"
+msgstr "Последнее обновлено"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__write_date
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__write_date
+msgid "Last Updated on"
+msgstr "Последнее обновлено"
+
+#. module: openeducat_classroom
+#: model:ir.model,name:openeducat_classroom.model_op_facility_line
+msgid "Manage Facility Line"
+msgstr "Управление линейкой объекта"
+
+#. module: openeducat_classroom
+#: model:res.groups,name:openeducat_classroom.group_op_classroom_manager
+msgid "Manager"
+msgstr "Менеджер"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__name
+#: model_terms:ir.ui.view,arch_db:openeducat_classroom.view_op_classroom_search
+msgid "Name"
+msgstr "Имя"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_classroom__capacity
+msgid "No Of Person"
+msgstr "Нет человека"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__product_id
+msgid "Product"
+msgstr "Продукт"
+
+#. module: openeducat_classroom
+#: model:ir.model.fields,field_description:openeducat_classroom.field_op_asset__product_uom_qty
+msgid "Quantity"
+msgstr "Количество"
+
+#. module: openeducat_classroom
+#: model:res.groups,name:openeducat_classroom.group_op_classroom_user
+msgid "User"
+msgstr "Пользователь"

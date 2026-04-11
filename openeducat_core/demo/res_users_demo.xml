@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- oca-hooks:disable=xml-redundant-module-name -->
+<odoo noupdate="1">
+        <record id="op_user_student" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Emma</field>
+            <field name="password">student</field>
+            <field name="login">student@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_1"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+            <field name="dept_id" ref="openeducat_core.op_department_3"/>
+            <field name="department_ids"
+                   eval="[(4,ref('openeducat_core.op_department_3'))]"/>
+        </record>
+        <record id="op_user_student_2" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">James</field>
+            <field name="password">student</field>
+            <field name="login">James@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_2"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_3" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Priya</field>
+            <field name="password">student</field>
+            <field name="login">Priya@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_3"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_4" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Alex</field>
+            <field name="password">student</field>
+            <field name="login">Alex@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_4"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_5" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Taye</field>
+            <field name="password">student</field>
+            <field name="login">Taye@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_5"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_6" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Tony</field>
+            <field name="password">student</field>
+            <field name="login">Tony@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_6"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_7" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Sofia</field>
+            <field name="password">student</field>
+            <field name="login">Sofia@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_7"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_8" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Lucas</field>
+            <field name="password">student</field>
+            <field name="login">Lucas@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_8"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_9" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Michael</field>
+            <field name="password">student</field>
+            <field name="login">Michael@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_9"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_10" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Joon</field>
+            <field name="password">student</field>
+            <field name="login">Joon@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_10"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_11" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Aarav</field>
+            <field name="password">student</field>
+            <field name="login">Aarav@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_11"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_12" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">David</field>
+            <field name="password">student</field>
+            <field name="login">David@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_12"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_13" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Imani</field>
+            <field name="password">student</field>
+            <field name="login">Imani@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_13"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_14" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Daniel</field>
+            <field name="password">student</field>
+            <field name="login">Daniel@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_14"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_15" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Henry</field>
+            <field name="password">student</field>
+            <field name="login">Henry@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_15"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_16" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Camila</field>
+            <field name="password">student</field>
+            <field name="login">Camila@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_16"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_17" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Ruby</field>
+            <field name="password">student</field>
+            <field name="login">Ruby@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_17"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_18" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Bella</field>
+            <field name="password">student</field>
+            <field name="login">Bella@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_18"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_19" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Sekou</field>
+            <field name="password">student</field>
+            <field name="login">Sekou@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_19"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_20" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Sam</field>
+            <field name="password">student</field>
+            <field name="login">Sam@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_20"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_21" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Ben</field>
+            <field name="password">student</field>
+            <field name="login">Ben@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_33"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_22" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Oren</field>
+            <field name="password">student</field>
+            <field name="login">Oren@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_22"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_23" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Lily</field>
+            <field name="password">student</field>
+            <field name="login">Lily@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_23"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_24" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Jun</field>
+            <field name="password">student</field>
+            <field name="login">Jun@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_24"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+        <record id="op_user_student_25" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Samira</field>
+            <field name="password">student</field>
+            <field name="login">Samira@openeducat.com</field>
+            <field name="is_student">True</field>
+            <field name="tz">Asia/Kolkata</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_25"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('base.group_portal'))]"/>
+        </record>
+
+
+        <record id="op_user_faculty" model="res.users">
+            <field name="login">faculty@openeducat.com</field>
+            <field name="password">faculty</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_21"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('openeducat_core.group_op_faculty'))]"/>
+            <field name="dept_id" ref="openeducat_core.op_department_1"/>
+            <field name="department_ids"
+                   eval="[(4,ref('openeducat_core.op_department_1'))]"/>
+        </record>
+
+        <record id="base.user_demo" model="res.users">
+            <field name="department_ids"
+                   eval="[(4,ref('openeducat_core.op_department_3'))]"/>
+        </record>
+
+        <record id="op_user_bo" model="res.users">
+            <field name="login">backoffice@openeducat.com</field>
+            <field name="password">backoffice</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_31"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('openeducat_core.group_op_back_office_admin'))]"/>
+            <field name="dept_id" ref="openeducat_core.op_department_3"/>
+            <field name="department_ids"
+                   eval="[(4,ref('openeducat_core.op_department_3'))]"/>
+        </record>
+
+        <record id="op_user_boa" model="res.users">
+            <field name="login">backofficeadmin@openeducat.com</field>
+            <field name="password">backofficeadmin</field>
+            <field name="partner_id" ref="openeducat_core.op_res_partner_32"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id"
+                   eval="[(4,ref('openeducat_core.group_op_back_office_admin'))]"/>
+            <field name="dept_id" ref="openeducat_core.op_department_3"/>
+            <field name="department_ids"
+                   eval="[(4,ref('openeducat_core.op_department_3'))]"/>
+        </record>
+
+        <record id="base.user_admin" model="res.users">
+            <field name="dept_id" ref="openeducat_core.op_department_3"/>
+            <field name="department_ids"
+                   eval="[(4,ref('openeducat_core.op_department_1')),
+                   (4,ref('openeducat_core.op_department_2')),
+                   (4,ref('openeducat_core.op_department_3')),
+                   (4,ref('openeducat_core.op_department_4'))]"/>
+        </record>
+
+        <record id="openeducat_core.op_res_partner_1" model="res.partner">
+            <field name="user_id" ref="openeducat_core.op_user_student"/>
+        </record>
+
+        <record id="openeducat_core.op_res_partner_21" model="res.partner">
+            <field name="user_id" ref="openeducat_core.op_user_faculty"/>
+        </record>
+
+        <record id="openeducat_core.op_res_partner_31" model="res.partner">
+            <field name="user_id" ref="openeducat_core.op_user_bo"/>
+        </record>
+
+        <record id="openeducat_core.op_res_partner_32" model="res.partner">
+            <field name="user_id" ref="openeducat_core.op_user_boa"/>
+        </record>
+</odoo>

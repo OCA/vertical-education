@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <record id="view_fees_terms_tree" model="ir.ui.view">
+            <field name="name">op.fees.terms.list</field>
+            <field name="model">op.fees.terms</field>
+            <field name="type">list</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Fees Reminder Terms" js_class="fees_wizard_list">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="code"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_fees_terms_form" model="ir.ui.view">
+            <field name="name">op.fees.terms.form</field>
+            <field name="model">op.fees.terms</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Fees Reminder Terms">
+                    <header/>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="code"/>
+                                <field name="active"/>
+                                <field name="fees_terms" required="1"/>
+                            </group>
+                            <group>
+                                <field name="discount"/>
+                            </group>
+                        </group>
+                        <field name="note" placeholder="Description..." class="mt32"/>
+                        <separator string="Terms" colspan="4"/>
+                        <field name="line_ids">
+                            <list>
+                                <field name="due_days"
+                                       column_invisible="parent.fees_terms != 'fixed_days'" required="parent.fees_terms == 'fixed_days'"/>
+                                <field name="due_date"
+                                       column_invisible="parent.fees_terms != 'fixed_date'" required="parent.fees_terms == 'fixed_date'"/>
+                                <field name="value" required="1"/>
+                                <field name="fees_element_line" required="1"/>
+                            </list>
+                            <form string="Fees Term Line">
+                                <group colspan="4">
+                                    <field name="due_days"
+                                           invisible="parent.fees_terms != 'fixed_days'" required="parent.fees_terms == 'fixed_days'"/>
+                                    <field name="due_date" invisible="parent.fees_terms != 'fixed_date'" required="parent.fees_terms == 'fixed_date'"
+                                           />
+                                    <field name="value" required="1"/>
+                                   <separator string="Fees Elements" colspan="4"/>
+                                    <field name="fees_element_line" nolabel="1">
+                                        <list string="Information" editable="top">
+                                            <field name="product_id"/>
+                                            <field name="value"/>
+                                        </list>
+                                    </field>
+                                </group>
+                            </form>
+                        </field>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_fees_terms_search" model="ir.ui.view">
+            <field name="name">op.fees.terms.search</field>
+            <field name="model">op.fees.terms</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Fees Reminder Terms">
+                    <field name="name" select="True"/>
+                    <filter string="Archived" name="inactive"
+                            domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_fees_terms_view">
+            <field name="name">Fees Terms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.fees.terms</field>
+            <field name="path">fees-terms</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_fees_terms_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_fees_terms_view_form">
+            <field name="act_window_id" ref="act_open_fees_terms_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_fees_terms_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_fees_terms_view_tree">
+            <field name="act_window_id" ref="act_open_fees_terms_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_fees_terms_tree"/>
+        </record>
+
+        <menuitem id="menu_fees_terms"
+                  parent="openeducat_core.menu_op_school_config"
+                  sequence="4"
+                  groups="openeducat_fees.group_op_fees_admin"
+                  action="act_open_fees_terms_view"/>
+
+        <record id="view_op_student_course_form_inherit" model="ir.ui.view">
+            <field name="name">op.student.course.form.inherit</field>
+            <field name="model">op.student.course</field>
+            <field name="inherit_id" ref="openeducat_core.view_op_student_course_form"/>
+            <field name="arch" type="xml">
+                <field name="academic_years_id" position="after">
+                    <field name="fees_term_id"/>
+                </field>
+                <field name="academic_term_id" position="after">
+                    <field name="fees_start_date"/>
+                </field>
+            </field>
+        </record>
+
+</odoo>

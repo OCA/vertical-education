@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_bonafide_certificate_wizard_form" model="ir.ui.view">
+        <field name="name">bonafide.certificate.wizard.form</field>
+        <field name="model">bonafide.certificate.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Bonafide Certificate">
+                <group>
+                    <field name="student_ids" readonly="1" widget="many2many_tags"/>
+                    <field name="certificate_purpose" required="1"/>
+                    <field name="other_purpose"
+                           invisible="certificate_purpose != 'other'"
+                           required="certificate_purpose == 'other'"/>
+                </group>
+                <footer>
+                    <button name="action_print_bonafide_certificate"
+                            string="Print Certificate"
+                            type="object"
+                            class="btn-primary"/>
+                    <button string="Cancel"
+                            class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_bonafide_certificate_wizard" model="ir.actions.act_window">
+        <field name="name">Bonafide Certificate</field>
+        <field name="res_model">bonafide.certificate.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="openeducat_core.model_op_student"/>
+    </record>
+</odoo>

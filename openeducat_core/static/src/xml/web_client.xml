@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-inherit="web.WebClient" t-inherit-mode="extension">
+        <xpath expr="//ActionContainer" position="before">
+            <G2Review></G2Review>
+        </xpath>
+    </t>
+
+    <t t-name="openeducat_core.InlineCharField" t-inherit="web.CharField" t-inherit-mode="primary">
+        <xpath expr="//input" position="attributes">
+            <attribute name="style">width:1px;min-width:10px;max-width:100%;display:inline-block;</attribute>
+            <attribute name="t-on-input">onInputType</attribute>
+        </xpath>
+    </t>
+
+    <t t-name="openeducat_core.Many2XAutocomplete" t-inherit="web.Many2XAutocomplete" t-inherit-mode="primary">
+        <xpath expr="//input" position="attributes">
+            <attribute name="style">width:1px;min-width:10px;max-width:100%;display:inline-block;</attribute>
+            <attribute name="t-on-input">onInputTypeMany2One</attribute>
+            <attribute name="t-ref">input</attribute>
+        </xpath>
+    </t>
+
+</templates>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <record id="op_res_partner_1" model="res.partner">
+            <field name="name">Emma</field>
+            <field name="mobile">1234567001</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_1.jpg"/>
+        </record>
+
+        <record id="op_res_partner_2" model="res.partner">
+            <field name="name">James</field>
+            <field name="mobile">1234567002</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_2.jpg"/>
+        </record>
+
+        <record id="op_res_partner_3" model="res.partner">
+            <field name="name">Priya</field>
+            <field name="mobile">1234567003</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_3.jpg"/>
+        </record>
+
+        <record id="op_res_partner_4" model="res.partner">
+            <field name="name">Alex</field>
+            <field name="mobile">1234567004</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_4.jpg"/>
+        </record>
+
+        <record id="op_res_partner_5" model="res.partner">
+            <field name="name">Taye</field>
+            <field name="mobile">1234567005</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_5.jpg"/>
+        </record>
+
+        <record id="op_res_partner_6" model="res.partner">
+            <field name="name">Tony</field>
+            <field name="mobile">1234567006</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_6.jpg"/>
+        </record>
+
+        <record id="op_res_partner_7" model="res.partner">
+            <field name="name">Sofia</field>
+            <field name="mobile">1234567007</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_7.jpg"/>
+        </record>
+
+        <record id="op_res_partner_8" model="res.partner">
+            <field name="name">Lucas</field>
+            <field name="mobile">1234567008</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_8.jpg"/>
+        </record>
+
+        <record id="op_res_partner_9" model="res.partner">
+            <field name="name">Michael</field>
+            <field name="mobile">1234567009</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_9.jpg"/>
+        </record>
+
+        <record id="op_res_partner_10" model="res.partner">
+            <field name="name">Joon</field>
+            <field name="mobile">1234567010</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_10.jpg"/>
+        </record>
+
+        <record id="op_res_partner_11" model="res.partner">
+            <field name="name">Aarav</field>
+            <field name="mobile">1234567011</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_11.jpg"/>
+        </record>
+
+        <record id="op_res_partner_12" model="res.partner">
+            <field name="name">David</field>
+            <field name="mobile">1234567012</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_12.jpg"/>
+        </record>
+
+        <record id="op_res_partner_13" model="res.partner">
+            <field name="name">Imani</field>
+            <field name="mobile">1234567013</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_13.jpg"/>
+        </record>
+
+        <record id="op_res_partner_14" model="res.partner">
+            <field name="name">Daniel</field>
+            <field name="mobile">1234567014</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_14.jpg"/>
+        </record>
+
+        <record id="op_res_partner_15" model="res.partner">
+            <field name="name">Henry</field>
+            <field name="mobile">1234567015</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_15.jpg"/>
+        </record>
+
+        <record id="op_res_partner_16" model="res.partner">
+            <field name="name">Camila</field>
+            <field name="mobile">1234567016</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_16.jpg"/>
+        </record>
+
+        <record id="op_res_partner_17" model="res.partner">
+            <field name="name">Ruby</field>
+            <field name="mobile">1234567017</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_17.jpg"/>
+        </record>
+
+        <record id="op_res_partner_18" model="res.partner">
+            <field name="name">Bella</field>
+            <field name="mobile">1234567018</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_18.jpg"/>
+        </record>
+
+        <record id="op_res_partner_19" model="res.partner">
+            <field name="name">Sekou</field>
+            <field name="mobile">1234567019</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_19.jpg"/>
+        </record>
+
+        <record id="op_res_partner_20" model="res.partner">
+            <field name="name">Sam</field>
+            <field name="mobile">1234567020</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_20.jpg"/>
+        </record>
+
+        <record id="op_res_partner_21" model="res.partner">
+            <field name="name">William</field>
+            <field name="mobile">1234567021</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_1.jpg"/>
+        </record>
+
+        <record id="op_res_partner_22" model="res.partner">
+            <field name="name">John</field>
+            <field name="mobile">1234567022</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_2.jpg"/>
+        </record>
+
+        <record id="op_res_partner_23" model="res.partner">
+            <field name="name">Robert</field>
+            <field name="mobile">1234567023</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_3.jpg"/>
+        </record>
+
+        <record id="op_res_partner_24" model="res.partner">
+            <field name="name">Mary</field>
+            <field name="mobile">1234567024</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_4.jpg"/>
+        </record>
+
+        <record id="op_res_partner_25" model="res.partner">
+            <field name="name">Thomas</field>
+            <field name="mobile">1234567025</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_5.jpg"/>
+        </record>
+
+        <record id="op_res_partner_26" model="res.partner">
+            <field name="name">Alice</field>
+            <field name="mobile">1234567026</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_6.jpg"/>
+        </record>
+
+        <record id="op_res_partner_27" model="res.partner">
+            <field name="name">Cheng</field>
+            <field name="mobile">1234567027</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_7.jpg"/>
+        </record>
+
+        <record id="op_res_partner_28" model="res.partner">
+            <field name="name">Raj</field>
+            <field name="mobile">1234567028</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_8.jpg"/>
+        </record>
+
+        <record id="op_res_partner_29" model="res.partner">
+            <field name="name">Xiulan</field>
+            <field name="mobile">1234567029</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_9.jpg"/>
+        </record>
+
+        <record id="op_res_partner_30" model="res.partner">
+            <field name="name">Sarah</field>
+            <field name="mobile">1234567030</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_10.jpg"/>
+        </record>
+
+        <record id="op_res_partner_31" model="res.partner">
+            <field name="name">Siddharth</field>
+            <field name="mobile">1234567031</field>
+            <field name="email">siddharth@demo.com</field>
+        </record>
+
+        <record id="op_res_partner_32" model="res.partner">
+            <field name="name">Ajay</field>
+            <field name="mobile">1234567032</field>
+            <field name="email">ajay@demo.com</field>
+        </record>
+
+        <record id="op_res_partner_33" model="res.partner">
+            <field name="name">Ben</field>
+            <field name="mobile">1234567033</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_21.jpg"/>
+        </record>
+
+        <record id="op_res_partner_34" model="res.partner">
+            <field name="name">Oren</field>
+            <field name="mobile">1234567034</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_22.jpg"/>
+        </record>
+
+        <record id="op_res_partner_35" model="res.partner">
+            <field name="name">Lily</field>
+            <field name="mobile">1234567035</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_23.jpg"/>
+        </record>
+
+        <record id="op_res_partner_36" model="res.partner">
+            <field name="name">Jun</field>
+            <field name="mobile">1234567036</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_24.jpg"/>
+        </record>
+
+        <record id="op_res_partner_37" model="res.partner">
+            <field name="name">Samira</field>
+            <field name="mobile">1234567037</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/student_25.jpg"/>
+        </record>
+
+        <record id="op_res_partner_38" model="res.partner">
+            <field name="name">Grace</field>
+            <field name="mobile">1234567038</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_11.jpg"/>
+        </record>
+
+        <record id="op_res_partner_39" model="res.partner">
+            <field name="name">Ruby</field>
+            <field name="mobile">1234567039</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_12.jpg"/>
+        </record>
+
+        <record id="op_res_partner_40" model="res.partner">
+            <field name="name">Yusuf</field>
+            <field name="mobile">1234567040</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_13.jpg"/>
+        </record>
+
+        <record id="op_res_partner_41" model="res.partner">
+            <field name="name">Amina</field>
+            <field name="mobile">1234567041</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_14.jpg"/>
+        </record>
+
+        <record id="op_res_partner_42" model="res.partner">
+            <field name="name">Grace</field>
+            <field name="mobile">1234567042</field>
+            <field name="image_1920" type="base64"
+                   file="openeducat_core/static/img/faculty_15.jpg"/>
+        </record>
+
+</odoo>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="website.FieldFeesTermsDisplay">
+        <style>
+            .custom-radio-label {
+            padding: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            cursor: pointer;
+            user-select: none;
+            display: inline-block; /* Key change: Use inline-block */
+            margin-right: 10px;
+            margin-bottom: 10px; /* Add margin bottom for spacing */
+            font-size: 18px;
+            font-weight: 500;
+            width: 350px;
+            height: 100px;
+            padding-bottom : 5px !important;
+            display: flex;
+            padding-top : 10px !important;
+            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe
+            UI", Roboto, "Helvetica Neue", Ubuntu, "Noto Sans", Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color
+            Emoji";
+            }
+            .img {
+            max-width: 50px;
+            max-height: 50px;
+            margin-top: 5px;
+            }
+            .term-description {
+            text-align: center;
+            }
+            .custom-radio-label:hover {
+            border-color: #71639e !important;
+            border-width: 2px !important;
+            }
+
+            .custom-radio-label.active {
+            border-color: #71639e !important;
+            border-width: 2px !important;
+            }
+
+            .custom-radio-label.selected {
+            border-color: #71639e !important;
+            border-width: 2px !important;
+            }
+
+            .o_website_sale_fees_terms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            }
+
+            .term-description {
+            font-size: 15px;
+            margin-top: 5px;
+            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe
+            UI", Roboto, "Helvetica Neue", Ubuntu, "Noto Sans", Arial, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color
+            Emoji";
+            white-space: pre-wrap;
+            font-weight: normal !important;
+            text-align: left !important;
+            }
+
+            .fees-terms-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 10px;
+            }
+        </style>
+        <div class="fees-terms-container">
+            <t t-foreach="terms" t-as="term" t-key="term.value">
+                <label class="d-flex flex-column align-items-start">
+                    <input type="radio" t-att-value="term.value"
+                           t-att-name="props.name" t-att-checked="term_index === 0"
+                           style="opacity: 0; position: absolute;"/>
+                    <span t-attf-class="custom-radio-label {{ term.value == props.record.data[props.name] ? 'active' : '' }}"
+                        t-on-click="() => this._onClickLabel(term.value)">
+                        <div style="margin:10px">
+                            <img t-attf-src="{{ ImagePath[term.value] }}"
+                                 alt="No Image" class="img"/>
+                        </div>
+                        <div style="margin-left:8px;text-align:left">
+                            <t t-esc="term.label"/>
+                            <div class="term-description">
+                                <p t-esc="description[term.value]"/>
+                            </div>
+                        </div>
+                    </span>
+                </label>
+            </t>
+        </div>
+    </t>
+</templates>

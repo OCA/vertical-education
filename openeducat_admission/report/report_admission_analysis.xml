@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <template id="report_admission_analysis">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="font">
+                        <div class="page" style="font-family: 'Odoo Unicode Support Noto';">
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <div class="text-center">
+                                <h3>
+                                    <strong>Admission Analysis</strong>
+                                </h3>
+                            </div>
+                            <div class="row mt24">
+                                <div style="width:50%; margin-left:15px;">
+                                    <b>Course:</b>
+                                    <span t-out="'%s' % data['course_id'][1] if data['course_id'][1] else ''"/>
+                                </div>
+                                <div style="width:50%; margin-left:15px;">
+                                    <b>From Date:</b>
+                                    <span t-esc="data['start_date']" t-options="{'widget':'date'}"/>
+                                    <b>To Date:</b>
+                                    <span t-esc="data['end_date']" t-options="{'widget':'date'}"/>
+                                </div>
+                            </div>
+                            <br></br>
+                            <table class="table table-bordered">
+                                <thead class="text-center"
+                                       style="background-color:#eeeeee; font-size:14px; font-weight:600;">
+                                    <th>Student Name</th>
+                                    <th>Application No.</th>
+                                </thead>
+                                <tbody class="text-center" style="font-size:12px;">
+                                    <tr t-foreach="get_data" t-as="data">
+                                        <td>
+                                            <span t-esc="data['name']"/>
+                                        </td>
+                                        <td>
+                                            <span t-out="'%s' %data['application_no'] if data['application_no'] else ''"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br></br>
+                            <b>Total Number of Students :</b>
+                            <span t-esc="get_total_student"/>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </template>
+</odoo>

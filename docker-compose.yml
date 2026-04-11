@@ -1,0 +1,29 @@
+version: '3.1'
+services:
+  web:
+    image: odoo:18.0
+    depends_on:
+      - db
+    ports:
+      - "8065:8069"
+    volumes:
+      - odoo-web-data-openeducat:/var/lib/odoo
+      - .:/mnt/extra-addons
+    restart: always
+    environment:
+      - HOST=db
+      - USER=odoo
+      - PASSWORD=odoo
+
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+    volumes:
+      - odoo-db-data-openeducat:/var/lib/postgresql/data
+
+volumes:
+  odoo-web-data-openeducat:
+  odoo-db-data-openeducat:

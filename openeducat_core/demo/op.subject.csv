@@ -1,0 +1,154 @@
+id,code,department_id/id,name,subject_type,type
+openeducat_core.op_subject_1,FDPC-T,openeducat_core.op_department_1,Fundamentals of Programming using C (Theory),Compulsory,Both
+openeducat_core.op_subject_2,FDPC-P,openeducat_core.op_department_1,Fundamentals of Programming using C (Practical),Compulsory,Practical
+openeducat_core.op_subject_3,DMM,openeducat_core.op_department_1,Digital and Mobile Media Marketing,Elective,Theory
+openeducat_core.op_subject_4,MA,openeducat_core.op_department_1,Mathematical Aptitude,Compulsory,Theory
+openeducat_core.op_subject_5,DBMS-T,openeducat_core.op_department_1,Database Management Systems (Theory),Compulsory,Both
+openeducat_core.op_subject_6,PSY-1,openeducat_core.op_department_4,Developmental Psychology-1,Compulsory,Theory
+openeducat_core.op_subject_7,DVBI-T,openeducat_core.op_department_1,Data Visualization for Business Intelligence,Compulsory,Theory
+openeducat_core.op_subject_8,ISC-T,openeducat_core.op_department_4,Indian Society and culture,Compulsory,Theory
+openeducat_core.op_subject_9,SF,openeducat_core.op_department_4,Soft Skills,Compulsory,Theory
+openeducat_core.op_subject_10,ELM-CE,openeducat_core.op_department_3,Elements of Civil Engineering,Compulsory,Theory
+openeducat_core.op_subject_11,CCSE,openeducat_core.op_department_4,Climate Change & Sustainable Environment,Compulsory,Theory
+openeducat_core.op_subject_12,CE-DRW,openeducat_core.op_department_3,Civil Engineering Drawings,Compulsory,Theory
+openeducat_core.op_subject_13,PSY-2,openeducat_core.op_department_4,Developmental Psychology-2,Compulsory,Theory
+openeducat_core.op_subject_14,DH,openeducat_core.op_department_4,Digital Health,Compulsory,Theory
+openeducat_core.op_subject_15,CHE-CH,openeducat_core.op_department_3,Chemistry,Compulsory,Both
+openeducat_core.op_subject_16,MA-T,openeducat_core.op_department_4,Mathematical,Compulsory,Theory
+openeducat_core.op_subject_17,EG-CH,openeducat_core.op_department_3,Engineering Graphics,Compulsory,Theory
+openeducat_core.op_subject_18,FOA-1,openeducat_core.op_department_2,Fundamentals of Accounting-1,Compulsory,Theory
+openeducat_core.op_subject_19,ME,openeducat_core.op_department_2,Micro Economics,Compulsory,Theory
+openeducat_core.op_subject_20,MTH-1-T,openeducat_core.op_department_3,Mathematics - I,Compulsory,Theory
+openeducat_core.op_subject_21,POM,openeducat_core.op_department_2,Principles of Marketing,Compulsory,Theory
+openeducat_core.op_subject_22,BC,openeducat_core.op_department_2,Business Communication,Compulsory,Theory
+openeducat_core.op_subject_23,FA-2,openeducat_core.op_department_2,Financial Accounting-2,Compulsory,Theory
+openeducat_core.op_subject_24,CB,openeducat_core.op_department_2,Consumer Behaviour,Compulsory,Theory
+openeducat_core.op_subject_25,CEBM,openeducat_core.op_department_2,Creativity Event and Brand Management,Compulsory,Theory
+openeducat_core.op_subject_26,SE,openeducat_core.op_department_1,Software Engineering,Compulsory,Theory
+openeducat_core.op_subject_27,DS,openeducat_core.op_department_1,Data Structures,Compulsory,Both
+openeducat_core.op_subject_28,JP,openeducat_core.op_department_1,Java Programming,Compulsory,Both
+openeducat_core.op_subject_29,ADMS,openeducat_core.op_department_1,Advanced Database Management Systems,Compulsory,Theory
+openeducat_core.op_subject_30,AJP,openeducat_core.op_department_1,Advanced Java Programming,Compulsory,Theory
+openeducat_core.op_subject_31,CA,openeducat_core.op_department_1,Comprehensive Assessment,Compulsory,Theory
+openeducat_core.op_subject_32,CG,openeducat_core.op_department_1,Computer Graphics,Compulsory,Theory
+openeducat_core.op_subject_33,OODJ-T,openeducat_core.op_department_1,Object Oriented Development with JAVA (Theory),Compulsory,Theory
+openeducat_core.op_subject_34,DS-T,openeducat_core.op_department_3,Data Structure (Theory),Compulsory,Theory
+openeducat_core.op_subject_35,SS-AE,openeducat_core.op_department_3,Soil Science & Agriculture for Engineers,Compulsory,Theory
+openeducat_core.op_subject_37,OST-IM,openeducat_core.op_department_3,Open-Source Tool,Compulsory,Theory
+openeducat_core.op_subject_38,CACED-CE,openeducat_core.op_department_3,Computer Aided Civil Engineering Drawing,Compulsory,Theory
+openeducat_core.op_subject_39,MS-CE,openeducat_core.op_department_3,Mechanics of Solids,Compulsory,Theory
+openeducat_core.op_subject_40,CT-CE,openeducat_core.op_department_3,Construction Technology,Compulsory,Theory
+openeducat_core.op_subject_41,IFM-CE,openeducat_core.op_department_3,Introduction to Fluid Mechanics,Compulsory,Theory
+openeducat_core.op_subject_42,PR-CE,openeducat_core.op_department_3,Product Realization,Compulsory,Theory
+openeducat_core.op_subject_43,MM-CE,openeducat_core.op_department_3,Mechanics of Materials,Compulsory,Theory
+openeducat_core.op_subject_44,GTE-CE,openeducat_core.op_department_3,Geo-Technical Engineering,Compulsory,Theory
+openeducat_core.op_subject_45,TE-CE,openeducat_core.op_department_3,Transportation Engineering,Compulsory,Theory
+openeducat_core.op_subject_46,DRCS-CE,openeducat_core.op_department_3,Design of Reinforced Concrete Structures,Compulsory,Theory
+openeducat_core.op_subject_47,SI1-CE,openeducat_core.op_department_3,Summer Internship-1,Compulsory,Both
+openeducat_core.op_subject_48,DSS-CE,openeducat_core.op_department_3,Design of Steel Structures,Compulsory,Theory
+openeducat_core.op_subject_49,ESV-CE,openeducat_core.op_department_3,Estimation - Costing and Valuation,Compulsory,Theory
+openeducat_core.op_subject_50,MTS-CE,openeducat_core.op_department_3,Model Testing & Simulation,Compulsory,Theory
+openeducat_core.op_subject_51,CPME-CE,openeducat_core.op_department_3,Construction Project Management and Economics,Compulsory,Theory
+openeducat_core.op_subject_52,PRJ1-CE,openeducat_core.op_department_3,PROJECT-1,Compulsory,Practical
+openeducat_core.op_subject_53,SI2-CE,openeducat_core.op_department_3,Summer Internship-2,Compulsory,Both
+openeducat_core.op_subject_54,PPE-CE,openeducat_core.op_department_3,Project Planning & Economics,Compulsory,Theory
+openeducat_core.op_subject_55,PRJ2-CE,openeducat_core.op_department_3,Project-2,Compulsory,Practical
+openeducat_core.op_subject_56,CS-IM,openeducat_core.op_department_3,Communication Skills,Compulsory,Theory
+openeducat_core.op_subject_57,ES-IM,openeducat_core.op_department_3,Environmental Science,Compulsory,Theory
+openeducat_core.op_subject_58,DT-IM,openeducat_core.op_department_3,Design Thinking,Compulsory,Theory
+openeducat_core.op_subject_59,ICTW-IM,openeducat_core.op_department_3,ICT workshop,Compulsory,Theory
+openeducat_core.op_subject_60,ACTW-IM,openeducat_core.op_department_3,Advanced Communication & Technical Writing,Compulsory,Theory
+openeducat_core.op_subject_61,DDS-IM,openeducat_core.op_department_3,Design of Data Structures,Compulsory,Theory
+openeducat_core.op_subject_62,DMS-IM,openeducat_core.op_department_3,Database Management System,Compulsory,Theory
+openeducat_core.op_subject_63,DM-IM,openeducat_core.op_department_3,Discrete Mathematics,Compulsory,Theory
+openeducat_core.op_subject_64,OSL-IM,openeducat_core.op_department_3,Operating System Laboratory,Compulsory,Theory
+openeducat_core.op_subject_65,CNL-IM,openeducat_core.op_department_3,Computer Network Laboratory,Compulsory,Theory
+openeducat_core.op_subject_66,PPD-IM,openeducat_core.op_department_3,Programming in Python with Full Stack Development,Compulsory,Theory
+openeducat_core.op_subject_67,DAA-IM,openeducat_core.op_department_3,Design and Analysis of Algorithms,Compulsory,Theory
+openeducat_core.op_subject_68,PCE-IM,openeducat_core.op_department_3,Professionalism & Corporate Ethics,Compulsory,Theory
+openeducat_core.op_subject_69,SEL-IM,openeducat_core.op_department_3,Software Engineering Laboratory,Compulsory,Theory
+openeducat_core.op_subject_70,DVDA-IM,openeducat_core.op_department_3,Data visualization and Data Analytics,Compulsory,Theory
+openeducat_core.op_subject_71,CD-IM,openeducat_core.op_department_3,Compiler Design,Compulsory,Theory
+openeducat_core.op_subject_72,MEAD-IM,openeducat_core.op_department_3,MEA(R)N Stack Web Development,Compulsory,Theory
+openeducat_core.op_subject_73,INS-IM,openeducat_core.op_department_3,Information and Network Security,Compulsory,Theory
+openeducat_core.op_subject_74,DSL-IM,openeducat_core.op_department_3,Data Science Laboratory,Compulsory,Theory
+openeducat_core.op_subject_75,INT-IM,openeducat_core.op_department_3,Internship,Compulsory,Both
+openeducat_core.op_subject_76,MSOL-CH,openeducat_core.op_department_3,Mechanics of Solid,Compulsory,Theory
+openeducat_core.op_subject_77,PPSO-CH,openeducat_core.op_department_3,Programming for Problem Solving,Compulsory,Theory
+openeducat_core.op_subject_78,PFPP-CH,openeducat_core.op_department_3,Particle and Fluid Particle Processing,Compulsory,Theory
+openeducat_core.op_subject_79,FML-CH,openeducat_core.op_department_3,Fluid Mechanics Lab,Compulsory,Theory
+openeducat_core.op_subject_81,HT-CH,openeducat_core.op_department_3,Heat Transfer,Compulsory,Theory
+openeducat_core.op_subject_82,MT1-CH,openeducat_core.op_department_3,Mass Transfer-I,Compulsory,Theory
+openeducat_core.op_subject_83,MT2-CH,openeducat_core.op_department_3,Mass Transfer -II,Compulsory,Theory
+openeducat_core.op_subject_84,CRE1-CH,openeducat_core.op_department_3,Chemical Reaction Engineering-I,Compulsory,Theory
+openeducat_core.op_subject_85,SI1-CH,openeducat_core.op_department_3,Summer Internship-I,Compulsory,Both
+openeducat_core.op_subject_86,CRE2-CH,openeducat_core.op_department_3,Chemical Reaction Engineering- II,Compulsory,Theory
+openeducat_core.op_subject_87,PED-CH,openeducat_core.op_department_3,Process Equipment Design,Compulsory,Theory
+openeducat_core.op_subject_88,PRJ1-CH,openeducat_core.op_department_3,Project-I,Compulsory,Practical
+openeducat_core.op_subject_89,SI2-CH,openeducat_core.op_department_3,Summer Internship-II,Compulsory,Both
+openeducat_core.op_subject_90,PRJ2-CH,openeducat_core.op_department_3,Project II,Compulsory,Practical
+openeducat_core.op_subject_91,CEPDE-CH,openeducat_core.op_department_3,Chemical Engineering Plant Design & Economics,Compulsory,Theory
+openeducat_core.op_subject_92,EM-EE,openeducat_core.op_department_3,Engineering Mechanics,Compulsory,Theory
+openeducat_core.op_subject_93,FE-EE,openeducat_core.op_department_3,Fundamentals of Electrical and Electronics Engineering,Compulsory,Theory
+openeducat_core.op_subject_94,EWPL-EE,openeducat_core.op_department_3,Electrical Workshop Practice Lab,Compulsory,Theory
+openeducat_core.op_subject_95,EDC-EE,openeducat_core.op_department_3,Electronics devices and circuits,Compulsory,Theory
+openeducat_core.op_subject_96,EGL-EE,openeducat_core.op_department_3,Engineering Graphics Lab,Compulsory,Theory
+openeducat_core.op_subject_97,DE-EE,openeducat_core.op_department_3,Digital Electronics,Compulsory,Theory
+openeducat_core.op_subject_98,EEM-EE,openeducat_core.op_department_3,Electronics Equipment and Maintenance,Compulsory,Theory
+openeducat_core.op_subject_99,ECN-EE,openeducat_core.op_department_3,Electronic Circuits and Network,Compulsory,Theory
+openeducat_core.op_subject_100,PE-EE,openeducat_core.op_department_3,Power Electronics,Compulsory,Theory
+openeducat_core.op_subject_101,DCS-EE,openeducat_core.op_department_3,Digital Communication Systems,Compulsory,Theory
+openeducat_core.op_subject_102,LIC-EE,openeducat_core.op_department_3,Linear Integrated Circuits,Compulsory,Theory
+openeducat_core.op_subject_103,MWCL-EE,openeducat_core.op_department_3,Mobile and Wireless Communication Lab,Compulsory,Theory
+openeducat_core.op_subject_104,EMS-EE,openeducat_core.op_department_3,Embedded Systems,Compulsory,Theory
+openeducat_core.op_subject_105,IA-EE,openeducat_core.op_department_3,Industrial Automation,Compulsory,Theory
+openeducat_core.op_subject_106,IC-EE,openeducat_core.op_department_3,Indian Constitution,Compulsory,Theory
+openeducat_core.op_subject_107,SS-EE,openeducat_core.op_department_3,Signal and Systems,Compulsory,Theory
+openeducat_core.op_subject_108,CNDC-EE,openeducat_core.op_department_3,Computer Networking and Data Communication,Compulsory,Theory
+openeducat_core.op_subject_109,DCN-CC-T,openeducat_core.op_department_1,Data Communication and Networking (Theory),Compulsory,Theory
+openeducat_core.op_subject_110,CC1-CC-T,openeducat_core.op_department_1,Cloud Computing -I (T),Compulsory,Theory
+openeducat_core.op_subject_111,FED-CC-T,openeducat_core.op_department_1,Front End Development with .NET (Theory),Compulsory,Theory
+openeducat_core.op_subject_112,DIGIL-CC-T,openeducat_core.op_department_1,Digital Literacy,Compulsory,Theory
+openeducat_core.op_subject_113,CC2-CC-T,openeducat_core.op_department_1,Cloud Computing -II (T),Compulsory,Theory
+openeducat_core.op_subject_114,INTMP1-T,openeducat_core.op_department_1,Internship/Mini Project-1,Compulsory,Practical
+openeducat_core.op_subject_115,EN-CC-T,openeducat_core.op_department_1,Software Engineering (Theory),Compulsory,Theory
+openeducat_core.op_subject_116,MAP-BD,openeducat_core.op_department_1,Mobile Apps Development,Compulsory,Theory
+openeducat_core.op_subject_117,WAD-BD,openeducat_core.op_department_1,Big Data Analytics- II,Compulsory,Theory
+openeducat_core.op_subject_118,MIPRJ-BB,openeducat_core.op_department_1,Minor Project,Compulsory,Practical
+openeducat_core.op_subject_119,MAJ-PRJ-BD,openeducat_core.op_department_1,Major Project,Compulsory,Practical
+openeducat_core.op_subject_120,SS-AEL,openeducat_core.op_department_3,Soil Science & Agriculture for Engineers Lab,Compulsory,Theory
+openeducat_core.op_subject_122,EP-AE,openeducat_core.op_department_3,Engineering Physics,Compulsory,Theory
+openeducat_core.op_subject_123,EC-AE,openeducat_core.op_department_3,Engineering Chemistry,Compulsory,Theory
+openeducat_core.op_subject_124,EM-AE,openeducat_core.op_department_3,Engineering Mechanics in Agriculture,Compulsory,Theory
+openeducat_core.op_subject_125,AWCE-AE,openeducat_core.op_department_3,Soil and Water Conservation Engineering,Compulsory,Theory
+openeducat_core.op_subject_126,FE-AE,openeducat_core.op_department_3,Food Engineering,Compulsory,Theory
+openeducat_core.op_subject_127,EPE-AE,openeducat_core.op_department_3,Farm Power Engineering,Compulsory,Theory
+openeducat_core.op_subject_128,FMI-AE,openeducat_core.op_department_3,Farm Machinery and Implements,Compulsory,Theory
+openeducat_core.op_subject_129,PHT-AE,openeducat_core.op_department_3,Post Harvest Technology,Compulsory,Theory
+openeducat_core.op_subject_130,SM-AE,openeducat_core.op_department_3,Strength of Material,Compulsory,Theory
+openeducat_core.op_subject_131,FTSC-AE,openeducat_core.op_department_3,Farm Tractor Systems and Controls,Compulsory,Theory
+openeducat_core.op_subject_132,APE-AE,openeducat_core.op_department_3,Agricultural Process Engineering,Compulsory,Theory
+openeducat_core.op_subject_133,AS-AE,openeducat_core.op_department_3,Agricultural Structures,Compulsory,Theory
+openeducat_core.op_subject_134,IFT-AE,openeducat_core.op_department_3,Industrial and Field Training cum Project Work,Compulsory,Both
+openeducat_core.op_subject_135,CP-CS-DSI,openeducat_core.op_department_1,Digital Securities Introduction,Compulsory,Theory
+openeducat_core.op_subject_136,CP-CS-CSC,openeducat_core.op_department_1,Cryptography and Secure communication,Compulsory,Theory
+openeducat_core.op_subject_137,CP-CS-AKC,openeducat_core.op_department_1,Asymmetric Key Cryptography,Compulsory,Both
+openeducat_core.op_subject_138,CP-CS-SKC,openeducat_core.op_department_1,Symmetric Key Cryptography,Compulsory,Both
+openeducat_core.op_subject_139,CP-CS-PKC,openeducat_core.op_department_1,Public Key Cryptography,Compulsory,Both
+openeducat_core.op_subject_140,CP-CS-CCLI,openeducat_core.op_department_1,Computer crime and legal issues,Compulsory,Theory
+openeducat_core.op_subject_141,AF-BM,openeducat_core.op_department_2,Business Mathematics,Compulsory,Theory
+openeducat_core.op_subject_142,AF-IFS,openeducat_core.op_department_2,Indian Financial System,Compulsory,Theory
+openeducat_core.op_subject_143,AF-SB,openeducat_core.op_department_2,Statistics for Business,Compulsory,Theory
+openeducat_core.op_subject_144,AF-CC,openeducat_core.op_department_2,Cost accounting,Compulsory,Theory
+openeducat_core.op_subject_145,AF-TGST,openeducat_core.op_department_2,Fundamentals of Indirect Taxation & GST,Compulsory,Theory
+openeducat_core.op_subject_146,AF-BL,openeducat_core.op_department_2,Business Law,Compulsory,Theory
+openeducat_core.op_subject_147,AF-MA,openeducat_core.op_department_2,Management Accounting,Compulsory,Theory
+openeducat_core.op_subject_148,AF-BE,openeducat_core.op_department_2,Business Environment,Compulsory,Theory
+openeducat_core.op_subject_149,SY-PY,openeducat_core.op_department_4,Social Psychology,Compulsory,Theory
+openeducat_core.op_subject_150,ES-PY,openeducat_core.op_department_4,Educational Psychology,Compulsory,Theory
+openeducat_core.op_subject_151,POP-PY,openeducat_core.op_department_4,Psychology of Personality,Compulsory,Theory
+openeducat_core.op_subject_152,PMH-PY,openeducat_core.op_department_4,Positive Mental Health,Compulsory,Theory
+openeducat_core.op_subject_153,IP-PY,openeducat_core.op_department_4,Indian Psychology,Compulsory,Theory
+openeducat_core.op_subject_154,PD-PY,openeducat_core.op_department_4,Psychological Disorders,Compulsory,Theory
+openeducat_core.op_subject_155,RP-PY,openeducat_core.op_department_4,Rehabilitation Psychology,Compulsory,Theory
+openeducat_core.op_subject_156,IDCS-PY,openeducat_core.op_department_4,Introduction to Diagnostics and Counselling Skills,Compulsory,Theory

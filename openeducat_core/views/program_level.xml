@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id="view_op_program_level_tree" model="ir.ui.view">
+            <field name="name">op.program.level.list</field>
+            <field name="model">op.program.level</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Program Level">
+                    <field name="name"/>
+                </list>
+            </field>
+        </record>
+        <record id="view_op_program_level_form" model="ir.ui.view">
+            <field name="name">op.program.level,form</field>
+            <field name="model">op.program.level</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Program Level">
+                    <header/>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box">
+                        </div>
+                        <div style="width:100%;" class="row align-items-center">
+                            <div class="mb16 col-8 col-lg-10 px-4">
+                                <div class="row oe_title">
+                                    <label for="name" string="Program Level"/>
+                                    <h1>
+                                        <field name="name" options="{'line_breaks': False}" widget="text"
+                                               default_focus="1"
+                                               placeholder="e.g. &quot;Master&quot;"/>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_op_program_level_view">
+            <field name="name">Program Level</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.program.level</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+</odoo>

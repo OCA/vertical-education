@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+        <!-- Library Card Type -->
+        <record id="view_op_library_card_type_tree" model="ir.ui.view">
+            <field name="name">op.library.card.type.list</field>
+            <field name="model">op.library.card.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Library Card Type">
+                    <field name="name"/>
+                    <field name="allow_media"/>
+                    <field name="duration"/>
+                    <field name="penalty_amt_per_day"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_library_card_type_form" model="ir.ui.view">
+            <field name="name">op.library.card.type.form</field>
+            <field name="model">op.library.card.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Library Card Type">
+                    <header/>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="duration"/>
+                            </group>
+                            <group>
+                                <field name="allow_media"/>
+                                <field name="penalty_amt_per_day"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_library_card_type_search" model="ir.ui.view">
+            <field name="name">op.library.card.type.search</field>
+            <field name="model">op.library.card.type</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Library Card Type">
+                    <field name="name"/>
+                    <field name="duration"/>
+                    <field name="penalty_amt_per_day"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_library_card_type_view">
+            <field name="name">Library Card Types</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.library.card.type</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_op_library_card_type_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_library_card_type_view_form">
+            <field name="act_window_id" ref="act_open_op_library_card_type_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_library_card_type_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_library_card_type_view_tree">
+            <field name="act_window_id" ref="act_open_op_library_card_type_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_library_card_type_tree"/>
+        </record>
+
+        <!-- Library Card -->
+        <record id="view_op_library_card_tree" model="ir.ui.view">
+            <field name="name">op.library.card.list</field>
+            <field name="model">op.library.card</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Library Card">
+                    <field name="number"/>
+                    <field name="issue_date"/>
+                    <field name="partner_id"/>
+                    <field name="library_card_type_id"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_library_card_form" model="ir.ui.view">
+            <field name="name">op.library.card.form</field>
+            <field name="model">op.library.card</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Library Card">
+                    <header/>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <group>
+                            <group>
+                                <field name="number"/>
+                                <field name="library_card_type_id"/>
+                                <field name="type"/>
+                                <field name="student_id" options="{'no_create': True , 'no_open': True}"
+                                invisible="type != 'student'" required= "type == 'student'"/>
+                                <field name="faculty_id" options="{'no_create': True , 'no_open': True}"
+                                invisible="type != 'faculty'" required= "type == 'faculty'"/>
+                            </group>
+                            <group>
+                                <field name="issue_date"/>
+                                <field name="partner_id" readonly="1" force_save="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_library_card_search" model="ir.ui.view">
+            <field name="name">op.library.card.search</field>
+            <field name="model">op.library.card</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Library Card">
+                    <field name="number"/>
+                    <field name="issue_date"/>
+                    <field name="partner_id"/>
+                    <field name="library_card_type_id"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Type" name="group_by_type"
+                                domain="[]" context="{'group_by': 'type'}"/>
+                        <filter string="Archived" name="inactive"
+                                domain="[('active', '=', False)]"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_library_card_view">
+            <field name="name">Library Cards</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.library.card</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="path">library-card</field>
+            <field name="search_view_id" ref="view_op_library_card_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_library_card_view_form">
+            <field name="act_window_id" ref="act_open_op_library_card_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_library_card_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_library_card_view_tree">
+            <field name="act_window_id" ref="act_open_op_library_card_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_library_card_tree"/>
+        </record>
+
+</odoo>

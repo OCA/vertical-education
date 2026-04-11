@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id="view_op_classroom_tree" model="ir.ui.view">
+            <field name="name">op.classroom.list</field>
+            <field name="model">op.classroom</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Classroom">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="course_id" optional="hide"/>
+                    <field name="batch_id" optional="hide"/>
+                    <field name="capacity"/>
+                    <field name="facilities"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_classroom_form" model="ir.ui.view">
+            <field name="name">op.classroom.form</field>
+            <field name="model">op.classroom</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Classroom">
+                    <header/>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="course_id"/>
+                                <field name="capacity"/>
+                            </group>
+                            <group>
+                                <field name="code"/>
+                                <field name="batch_id" domain="[('course_id','=',course_id)]"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page name="facilities" string="Facilities">
+                                <field name="facilities" colspan="4" nolabel="1"/>
+                            </page>
+                            <page name="asset_management" string="Asset Management">
+                                <field name="asset_line" colspan="4" nolabel="1">
+                                    <list editable="bottom">
+                                        <field name="product_id"/>
+                                        <field name="code"/>
+                                        <field name="product_uom_qty"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_classroom_search" model="ir.ui.view">
+            <field name="name">op.classroom.search</field>
+            <field name="model">op.classroom</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Classroom">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="capacity"/>
+                    <field name="facilities"/>
+                    <filter string="Archived" name="inactive"
+                            domain="[('active', '=', False)]"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter string="Name" name="group_by_classroom_name"
+                                domain="[]" context="{'group_by':'name'}"/>
+                        <filter string="Code" name="group_by_classroom_code"
+                                domain="[]" context="{'group_by':'code'}"/>
+                        <filter string="Capacity" name="group_by_classroom_capacity"
+                                domain="[]" context="{'group_by':'capacity'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_classroom_view">
+            <field name="name">Class Rooms</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.classroom</field>
+            <field name="path">classroom</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_op_classroom_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_classroom_view_form">
+            <field name="act_window_id" ref="act_open_op_classroom_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_classroom_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_classroom_view_tree">
+            <field name="act_window_id" ref="act_open_op_classroom_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_classroom_tree"/>
+        </record>
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <record id="op_attendance_register_1" model="op.attendance.register">
+            <field name="code">BCA-CC-S-1-R</field>
+            <field name="name">BCA-CC-S1-REG</field>
+            <field name="course_id" ref="openeducat_core.op_course_1"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_1"/>
+        </record>
+
+        <record id="op_attendance_register_2" model="op.attendance.register">
+            <field name="code">BA-PY-S-1-R</field>
+            <field name="name">BA-PY-S1-REG</field>
+            <field name="course_id" ref="openeducat_core.op_course_8"/>
+            <field name="batch_id" ref="openeducat_core.op_batch_5"/>
+        </record>
+</odoo>

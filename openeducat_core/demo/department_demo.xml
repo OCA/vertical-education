@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+        <record id="op_department_1" model="op.department">
+            <field name="name">Faculty of IT and Computer Science</field>
+            <field name="code">D1</field>
+        </record>
+
+        <record id="op_department_2" model="op.department">
+            <field name="name">Faculty of Commerce</field>
+            <field name="code">D2</field>
+        </record>
+
+        <record id="op_department_3" model="op.department">
+            <field name="name">Faculty of Engineering and Technology</field>
+            <field name="code">D3</field>
+        </record>
+
+        <record id="op_department_4" model="op.department">
+            <field name="name">Faculty of Liberal Arts</field>
+            <field name="code">D4</field>
+        </record>
+</odoo>

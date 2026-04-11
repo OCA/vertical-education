@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id="view_op_course_tree" model="ir.ui.view">
+            <field name="name">op.course.list</field>
+            <field name="model">op.course</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Course">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="evaluation_type"/>
+                    <field name="parent_id"/>
+                    <field name="min_unit_load" optional="hide"/>
+                    <field name="max_unit_load" optional="hide"/>
+                    <field name="subject_ids" widget="many2many_tags"/>
+                    <field name="department_id" groups="openeducat_core.group_multi_department"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_course_form" model="ir.ui.view">
+            <field name="name">op.course.form</field>
+            <field name="model">op.course</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Course">
+                    <header/>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box">
+                        </div>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible = "active == True"/>
+                        <div class="oe_title">
+                            <h1><field name="name" options="{'line_breaks': False}" widget="text" default_focus="1" placeholder="e.g. &quot;Computer Science for kids&quot;"/></h1>
+                        </div>
+                        <group class="pt-3">
+                            <group name="main">
+                                <field name="code"/>
+                                <field name="evaluation_type"/>
+                                <field name="min_unit_load"/>
+                                <field name="department_id" groups="openeducat_core.group_multi_department"/>
+                            </group>
+                            <group>
+                                <field name="parent_id"/>
+                                <field name="program_id"/>
+                                <field name="max_unit_load"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Subjects" name="subject">
+                                <field name="subject_ids" nolabel="1">
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_course_search" model="ir.ui.view">
+            <field name="name">op.course.search</field>
+            <field name="model">op.course</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Course">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="evaluation_type"/>
+                    <field name="parent_id"/>
+                    <field name="department_id"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                        <filter name="group_by_evaluation_type"
+                                string="Evaluation Type" domain="[]"
+                                context="{'group_by':'evaluation_type'}"/>
+                        <filter name="group_by_partner_course"
+                                string="Parent Course" domain="[]"
+                                context="{'group_by':'parent_id'}"/>
+                        <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="view_op_course_pivot" model="ir.ui.view">
+            <field name="name">op.course.pivot</field>
+            <field name="model">op.course</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <pivot string="Course">
+                    <field name="name" type="row"/>
+                    <field name="parent_id"/>
+                    <field name="max_unit_load"/>
+                    <field name="min_unit_load"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_course_view">
+            <field name="name">Courses</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.course</field>
+            <field name="path">courses</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form,pivot</field>
+            <field name="search_view_id" ref="view_op_course_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_course_view_form">
+            <field name="act_window_id" ref="act_open_op_course_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_course_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_course_view_tree">
+            <field name="act_window_id" ref="act_open_op_course_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_course_tree"/>
+        </record>
+</odoo>

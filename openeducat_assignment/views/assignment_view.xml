@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record id="view_op_assignment_tree" model="ir.ui.view">
+            <field name="name">op.assignment.list</field>
+            <field name="model">op.assignment</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <list string="Assignment">
+                    <field name="name"/>
+                    <field name="course_id"/>
+                    <field name="batch_id"/>
+                    <field name="subject_id"/>
+                    <field name="faculty_id" optional="show"/>
+                    <field name="reviewer" optional="show"/>
+                    <field name="assignment_type" string="Type" optional="show"/>
+                    <field name="issued_date" optional="show"/>
+                    <field name="submission_date" optional="show"/>
+                    <field name="allocation_ids" invisible="1"/>
+                    <field name="assignment_sub_line" invisible="1"/>
+                    <field name="state"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_op_assignment_form" model="ir.ui.view">
+            <field name="name">op.assignment.form</field>
+            <field name="model">op.assignment</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Assignment">
+                    <header>
+
+                        <button name="act_publish"
+                                invisible="state != 'draft'"
+                                type="object" string="Publish"
+                                class="oe_highlight" groups="openeducat_assignment.group_op_assignment_user"/>
+
+                        <button name="act_set_to_draft" invisible="state != 'publish'"
+                                type="object" string="Set to Draft"
+                                class="oe_highlight" groups="openeducat_assignment.group_op_assignment_user"/>
+
+                        <button name="act_finish" class="oe_highlight"
+                                invisible="state != 'publish'" type="object" string="Finish"
+                                groups="openeducat_assignment.group_op_assignment_user"/>
+
+                        <button name="act_cancel" invisible="state != 'publish'"
+                                type="object" string="Cancel"
+                                groups="openeducat_assignment.group_op_assignment_user"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,publish,finish"/>
+                    </header>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box">
+                            <button name="get_assignment_submissions" type="object" class="oe_stat_button" icon="fa-book" string="Submissions">
+                                <field name="assignment_sub_line_count" widget="statinfo" />
+                            </button>
+                        </div>
+                        <field name="active" invisible="1"/>
+
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                invisible="active == True"/>
+                        <div>
+                            <h1>
+
+                                <field name="name" placeholder="Assignment Name"
+                                       readonly="state !='draft'" style="width: 100%; font-size: 20px;"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="courses_subjects" invisible="1"/>
+                                <field name="course_id" readonly="state !='draft'"/>
+                                <field name="subject_id" readonly="state !='draft'" domain="[('id','in',courses_subjects)]"/>
+                                <field name="assignment_type" readonly="state !='draft'"/>
+                            </group>
+                            <group>
+                                <field name="batch_id" context="{'course_id': course_id,'get_parent_batch':1}"
+                                       readonly="state !='draft'"/>
+                                <field name="faculty_id" readonly="state !='draft'"/>
+                                <field name="reviewer" readonly="state !='draft'"/>
+                            </group>
+                        </group>
+                        <notebook colspan="4">
+                            <page name="basic_information" string="Basic Information">
+                                <group>
+                                    <group name="i_date">
+                                        <field name="issued_date" readonly="state !='draft'"/>
+                                        <field name="submission_date" readonly="state !='draft'"/>
+                                        <field name="marks" readonly="state !='draft'" required="1"/>
+                                    </group>
+                                </group>
+
+                                <group id="mark">
+                                    <field name="point" invisible="1"/>
+                                </group>
+                                <label for="description" string="Description" class="mt32"/>
+                                <field name="description" readonly="state !='draft'"
+                                       colspan="4"/>
+                            </page>
+                            <page name="allocation_infomation" string="Allocation Information">
+                                <field name="allocation_ids"
+                                       domain="[('course_detail_ids.course_id','=',course_id),('course_detail_ids.batch_id','=',batch_id)]"
+                                       colspan="4" nolabel="1">
+                                    <list string="Allocation">
+                                        <field name="title"/>
+                                        <field name="name"/>
+                                        <field name="middle_name"/>
+                                        <field name="last_name"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_op_assignment_pivot" model="ir.ui.view">
+            <field name="name">op.assignment.pivot</field>
+            <field name="model">op.assignment</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <pivot string="Assignment Pivot View">
+                    <field name="course_id" type="col"/>
+                    <field name="state" type="row"/>
+                </pivot>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_op_assignment_graph">
+            <field name="name">op.assignment.graph</field>
+            <field name="model">op.assignment</field>
+            <field name="arch" type="xml">
+                <graph string="Assignment Graph View" type="bar">
+                    <field name="course_id"/>
+                    <field name="state"/>
+                </graph>
+            </field>
+        </record>
+
+        <record id="view_op_assignment_search" model="ir.ui.view">
+            <field name="name">op.assignment.search</field>
+            <field name="model">op.assignment</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Assignment">
+                    <field name="name"/>
+                    <field name="course_id"/>
+                    <field name="batch_id"/>
+                    <field name="subject_id"/>
+                    <field name="faculty_id"/>
+                    <field name="marks"/>
+                    <field name="description"/>
+                    <field name="assignment_type"/>
+                    <field name="state"/>
+                    <field name="issued_date"/>
+                    <field name="submission_date"/>
+                    <field name="allocation_ids"/>
+                    <filter string="Today" name="filter_assignment_today"
+                            domain="[('submission_date', '&gt;=', time.strftime('%%Y-%%m-%%d 00:00:00')),('submission_date', '&lt;=', time.strftime('%%Y-%%m-%%d 23:59:59'))]"/>
+                    <filter string="Week" name="filter_assigenment_week"
+                            domain="[('submission_date', '&gt;=', (context_today()+relativedelta(weeks=-1,days=1,weekday=0)).strftime('%Y-%m-%d 00:00:00')),
+                                    ('submission_date', '&lt;', (context_today()+relativedelta(weekday=6)).strftime('%Y-%m-%d 23:59:59'))]"/>
+                    <filter string="Month" name="filter_assignment_month"
+                            domain="[('submission_date', '&lt;=', (datetime.date.today()+relativedelta(day=31)).strftime('%Y-%m-%d')),
+                                    ('submission_date', '&gt;=', (datetime.date.today()-relativedelta(day=1)).strftime('%Y-%m-%d'))]"/>
+                    <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+
+                    <group expand="0" string="Group By...">
+                        <filter string="Name" domain="[]" name="group_by_assignment_name"
+                                context="{'group_by':'name'}"/>
+                        <filter string="Course" domain="[]" name="group_by_assignment_course"
+                                context="{'group_by':'course_id'}"/>
+                        <filter string="Batch" domain="[]" name="group_by_assignment_batch"
+                                context="{'group_by':'batch_id'}"/>
+                        <filter string="Subject" domain="[]" name="group_by_assignment_subject"
+                                context="{'group_by':'subject_id'}"/>
+                        <filter string="Faculty" domain="[]" name="group_by_assignment_faculty"
+                                context="{'group_by':'faculty_id'}"/>
+                        <filter string="Marks" domain="[]" name="group_by_assignment_marks"
+                                context="{'group_by':'marks'}"/>
+                        <filter string="Assignment Type" domain="[]" name="group_by_assignment_type"
+                                context="{'group_by':'assignment_type'}"/>
+                        <filter string="State" domain="[]" name="group_by_assignment_state"
+                                context="{'group_by':'state'}"/>
+                        <filter string="Issued Date" domain="[]" name="group_by_assignment_issued_date"
+                                context="{'group_by':'issued_date'}"/>
+                        <filter string="Submission Date" domain="[]" name="group_by_assignment_submission"
+                                context="{'group_by':'submission_date'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_open_op_assignment_view">
+            <field name="name">Assignments</field>
+            <field name="path">assignment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.assignment</field>
+            <field name="binding_view_types">form</field>
+            <field name="view_mode">list,form,pivot,graph</field>
+            <field name="search_view_id" ref="view_op_assignment_search"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_assignment_view_form">
+            <field name="act_window_id" ref="act_open_op_assignment_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_op_assignment_form"/>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="act_open_op_assignment_view_tree">
+            <field name="act_window_id" ref="act_open_op_assignment_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">list</field>
+            <field name="view_id" ref="view_op_assignment_tree"/>
+        </record>
+</odoo>
