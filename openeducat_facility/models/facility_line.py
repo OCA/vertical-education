@@ -27,7 +27,7 @@ class OpFacilityLine(models.Model):
     _rec_name = "facility_id"
     _description = "Manage Facility Line"
 
-    facility_id = fields.Many2one("op.facility"required=True)
+    facility_id = fields.Many2one("op.facility", required=True)
     quantity = fields.Float(required=True)
 
     @api.constrains("quantity")

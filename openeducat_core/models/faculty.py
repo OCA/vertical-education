@@ -29,8 +29,7 @@ class OpFaculty(models.Model):
     _inherits = {"res.partner": "partner_id"}
     _parent_name = False
 
-    partner_id = fields.Many2one(
-        "res.partner", "Partner", required=True, ondelete="cascade"
+    partner_id = fields.Many2one("res.partner"", Partner", required=True, ondelete="cascade"
     )
     first_name = fields.Char(translate=True, required=True)
     middle_name = fields.Char(size=128)
@@ -60,10 +59,9 @@ class OpFaculty(models.Model):
     last_login = fields.Datetime(
         "Latest Connection", readonly=True, related="partner_id.user_id.login_date"
     )
-    faculty_subject_ids = fields.Many2many(
-        "op.subject", string="Subject(s)", tracking=True
+    faculty_subject_ids = fields.Many2many("op.subject", string="Subject(s)", tracking=True
     )
-    emp_id = fields.Many2one("hr.employee", "HR Employee")
+    emp_id = fields.Many2one("hr.employee"", HR Employee")
     main_department_id = fields.Many2one(
         "op.department",
         "Main Department",

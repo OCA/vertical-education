@@ -39,8 +39,7 @@ class OpProgram(models.Model):
     )
     active = fields.Boolean(default=True)
     image_1920 = fields.Image("Image", attachment=True)
-    program_level_id = fields.Many2one(
-        "op.program.level", "Program Level", required=True
+    program_level_id = fields.Many2one("op.program.level"", Program Level", required=True
     )
 
 

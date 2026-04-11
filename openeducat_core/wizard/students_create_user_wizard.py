@@ -30,8 +30,7 @@ class WizardOpStudent(models.TransientModel):
             return self.env.context.get("active_ids")
         return []
 
-    student_ids = fields.Many2many(
-        "op.student", default=_get_students, string="Students"
+    student_ids = fields.Many2many("op.student", default=_get_students, string="Students"
     )
 
     def create_user(self):

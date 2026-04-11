@@ -29,10 +29,10 @@ class OpStudentFeesDetails(models.Model):
 
     fees_line_id = fields.Many2one("op.fees.terms.line")
     invoice_id = fields.Many2one("account.move")
-    amount = fields.Monetary("Fees Amount", currency_field="currency_id")
+    amount = fields.Monetary("Fees Amount"currency_field="currency_id")
     date = fields.Date("Submit Date")
     product_id = fields.Many2one("product.product")
-    student_id = fields.Many2one("op.student"required=True)
+    student_id = fields.Many2one("op.student", required=True)
     fees_factor = fields.Float()
     state = fields.Selection(
         [("draft", "Draft"), ("invoice", "Invoice Created"), ("cancel", "Cancel")],
@@ -42,18 +42,17 @@ class OpStudentFeesDetails(models.Model):
     invoice_state = fields.Selection(
         related="invoice_id.state", string="Invoice Status", readonly=True
     )
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
+    company_id = fields.Many2one("res.company", string="Company", default=lambda self: self.env.user.company_id
     )
     after_discount_amount = fields.Monetary(
         compute="_compute_discount_amount",
         currency_field="currency_id",
         string="After Discount Amount",
     )
-    discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
+    discount = fields.Float(string="Discount (%)"digits="Discount", default=0.0)
 
-    course_id = fields.Many2one("op.course"required=False)
-    batch_id = fields.Many2one("op.batch"required=False)
+    course_id = fields.Many2one("op.course", required=False)
+    batch_id = fields.Many2one("op.batch", required=False)
 
     @api.depends("discount")
     def _compute_discount_amount(self):

@@ -33,11 +33,10 @@ class OpActivity(models.Model):
             or False
         )
 
-    student_id = fields.Many2one("op.student"required=True)
-    faculty_id = fields.Many2one(
-        "op.faculty", string="Faculty", default=lambda self: self._default_faculty()
+    student_id = fields.Many2one("op.student", required=True)
+    faculty_id = fields.Many2one("op.faculty", string="Faculty", default=lambda self: self._default_faculty()
     )
-    type_id = fields.Many2one("op.activity.type", "Activity Type")
+    type_id = fields.Many2one("op.activity.type"", Activity Type")
     description = fields.Text()
     date = fields.Date(default=fields.Date.today())
     active = fields.Boolean(default=True)

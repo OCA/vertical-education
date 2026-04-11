@@ -37,7 +37,7 @@ class OpMediaMovement(models.Model):
     _rec_name = "media_id"
     _order = "id DESC"
 
-    media_id = fields.Many2one("op.media"required=True)
+    media_id = fields.Many2one("op.media", required=True)
     media_unit_id = fields.Many2one(
         "op.media.unit",
         "Media Unit",
@@ -52,15 +52,14 @@ class OpMediaMovement(models.Model):
     )
     student_id = fields.Many2one("op.student")
     faculty_id = fields.Many2one("op.faculty")
-    library_card_id = fields.Many2one(
-        "op.library.card", "Library Card", required=True, tracking=True
+    library_card_id = fields.Many2one("op.library.card"", Library Card", required=True, tracking=True
     )
     issued_date = fields.Date(tracking=True, required=True, default=fields.Date.today()
     )
     return_date = fields.Date("Due Date", required=True)
     actual_return_date = fields.Date()
     penalty = fields.Float()
-    partner_id = fields.Many2one("res.partner", "Person", tracking=True)
+    partner_id = fields.Many2one("res.partner"", Person", tracking=True)
     reserver_name = fields.Char("Person Name", size=256)
     state = fields.Selection(
         [
@@ -79,10 +78,9 @@ class OpMediaMovement(models.Model):
         related="media_id.media_type_id", store=True, string="Media Type"
     )
     user_id = fields.Many2one("res.users", string="Users")
-    invoice_id = fields.Many2one("account.move"readonly=True)
+    invoice_id = fields.Many2one("account.move", readonly=True)
     active = fields.Boolean(default=True)
-    company_id = fields.Many2one(
-        "res.company", string="Company", default=lambda self: self.env.user.company_id
+    company_id = fields.Many2one("res.company", string="Company", default=lambda self: self.env.user.company_id
     )
 
     def get_diff_day(self):

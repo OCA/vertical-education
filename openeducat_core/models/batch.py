@@ -31,7 +31,7 @@ class OpBatch(models.Model):
     name = fields.Char(size=32, required=True)
     start_date = fields.Date(required=True, default=fields.Date.today())
     end_date = fields.Date(required=True)
-    course_id = fields.Many2one("op.course"required=True)
+    course_id = fields.Many2one("op.course", required=True)
     active = fields.Boolean(default=True)
 
     _sql_constraints = [

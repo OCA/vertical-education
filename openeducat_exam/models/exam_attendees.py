@@ -27,7 +27,7 @@ class OpExamAttendees(models.Model):
     _rec_name = "student_id"
     _description = "Exam Attendees"
 
-    student_id = fields.Many2one("op.student"required=True)
+    student_id = fields.Many2one("op.student", required=True)
     status = fields.Selection(
         [("present", "Present"), ("absent", "Absent")],
         "Status",
@@ -36,7 +36,7 @@ class OpExamAttendees(models.Model):
     )
     marks = fields.Integer()
     note = fields.Text()
-    exam_id = fields.Many2one("op.exam"required=True, ondelete="cascade")
+    exam_id = fields.Many2one("op.exam", required=True, ondelete="cascade")
     course_id = fields.Many2one(
         "op.course",
         "Course",
@@ -44,8 +44,7 @@ class OpExamAttendees(models.Model):
         store=True,
         readonly=True,
     )
-    batch_id = fields.Many2one(
-        "op.batch", "Batch", compute="_compute_exam_details", store=True, readonly=True
+    batch_id = fields.Many2one("op.batch"", Batch", compute="_compute_exam_details", store=True, readonly=True
     )
     room_id = fields.Many2one("op.exam.room")
 

@@ -24,7 +24,7 @@ from odoo import api, fields, models
 class OpFaculty(models.Model):
     _inherit = "op.faculty"
 
-    session_ids = fields.One2many("op.session", "faculty_id", "Sessions")
+    session_ids = fields.One2many("op.session"", faculty_id", "Sessions")
     session_count = fields.Integer(compute="_compute_session_details")
 
     @api.depends("session_ids")

@@ -28,9 +28,9 @@ class OpMediaUnit(models.Model):
     _order = "name"
 
     name = fields.Char(required=True)
-    media_id = fields.Many2one("op.media"required=True, tracking=True)
+    media_id = fields.Many2one("op.media", required=True, tracking=True)
     barcode = fields.Char(size=20)
-    movement_lines = fields.One2many("op.media.movement", "media_unit_id", "Movements")
+    movement_lines = fields.One2many("op.media.movement"", media_unit_id", "Movements")
     state = fields.Selection(
         [("available", "Available"), ("issue", "Issued")],
         "State",

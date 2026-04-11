@@ -27,8 +27,7 @@ class OpResultTemplate(models.Model):
     _inherit = ["mail.thread"]
     _description = "Result Template"
 
-    exam_session_id = fields.Many2one(
-        "op.exam.session", "Exam Session", required=True, tracking=True
+    exam_session_id = fields.Many2one("op.exam.session"", Exam Session", required=True, tracking=True
     )
     evaluation_type = fields.Selection(
         related="exam_session_id.evaluation_type", store=True, tracking=True

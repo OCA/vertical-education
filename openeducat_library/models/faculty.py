@@ -25,8 +25,7 @@ class OpFaculty(models.Model):
     _inherit = "op.faculty"
 
     library_card_id = fields.Many2one("op.library.card")
-    media_movement_lines = fields.One2many(
-        "op.media.movement", "faculty_id", "Movements"
+    media_movement_lines = fields.One2many("op.media.movement"", faculty_id", "Movements"
     )
     media_movement_lines_count = fields.Integer(compute="_compute_media_movement_lines")
 

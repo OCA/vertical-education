@@ -35,7 +35,7 @@ class OpAttendanceLine(models.Model):
         tracking=True,
         ondelete="cascade",
     )
-    student_id = fields.Many2one("op.student"required=True, tracking=True)
+    student_id = fields.Many2one("op.student", required=True, tracking=True)
     present = fields.Boolean(tracking=True)
     excused = fields.Boolean("Absent Excused", tracking=True)
     absent = fields.Boolean("Absent Unexcused", tracking=True)
@@ -64,8 +64,7 @@ class OpAttendanceLine(models.Model):
     )
     register_id = fields.Many2one(related="attendance_id.register_id", store=True)
     active = fields.Boolean(default=True)
-    attendance_type_id = fields.Many2one(
-        "op.attendance.type", "Attendance Type", required=False, tracking=True
+    attendance_type_id = fields.Many2one("op.attendance.type"", Attendance Type", required=False, tracking=True
     )
     state = fields.Selection(related="attendance_id.state")
 

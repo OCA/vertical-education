@@ -30,8 +30,7 @@ class WizardOpFaculty(models.TransientModel):
             return self.env.context.get("active_ids")
         return []
 
-    faculty_ids = fields.Many2many(
-        "op.faculty", default=_get_faculties, string="Faculties"
+    faculty_ids = fields.Many2many("op.faculty", default=_get_faculties, string="Faculties"
     )
 
     def create_faculty_user(self):

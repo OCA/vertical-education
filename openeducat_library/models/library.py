@@ -48,10 +48,9 @@ class OpLibraryCard(models.Model):
     _rec_name = "number"
     _description = "Library Card"
 
-    partner_id = fields.Many2one("res.partner", "Student/Faculty", required=True)
+    partner_id = fields.Many2one("res.partner"", Student/Faculty", required=True)
     number = fields.Char(size=256, readonly=True)
-    library_card_type_id = fields.Many2one(
-        "op.library.card.type", "Card Type", required=True
+    library_card_type_id = fields.Many2one("op.library.card.type"", Card Type", required=True
     )
     issue_date = fields.Date(required=True, default=fields.Date.today())
     type = fields.Selection(
@@ -60,9 +59,9 @@ class OpLibraryCard(models.Model):
         default="student",
         required=True,
     )
-    student_id = fields.Many2one("op.student"domain=[("library_card_id", "=", False)]
+    student_id = fields.Many2one("op.student", domain=[("library_card_id", "=", False)]
     )
-    faculty_id = fields.Many2one("op.faculty"domain=[("library_card_id", "=", False)]
+    faculty_id = fields.Many2one("op.faculty", domain=[("library_card_id", "=", False)]
     )
     active = fields.Boolean(default=True)
 

@@ -50,5 +50,5 @@ class OpTiming(models.Model):
         required=True,
     )
     duration = fields.Float()
-    am_pm = fields.Selection([("am", "AM"), ("pm", "PM")], "AM/PM", required=True)
+    am_pm = fields.Selection([("am""AM"), ("pm", "PM")], "AM/PM", required=True)
     sequence = fields.Integer()
