@@ -1,0 +1,17 @@
+id,code,course_id/id,end_date,name,start_date
+openeducat_core.op_batch_1,BCA-CC-SEM-1-A,openeducat_core.op_course_1,2025-10-13,BCA BATCH-A,2025-04-01
+openeducat_core.op_batch_2,MCA-BD-SEM-1-A,openeducat_core.op_course_2,2025-10-13,MCA BATCH-A,2025-04-01
+openeducat_core.op_batch_3,MCA-BD-SEM-2-A,openeducat_core.op_course_3,2026-05-15,MCA BATCH-A,2025-11-02
+openeducat_core.op_batch_4,BCOM-AF-SEM-1-A,openeducat_core.op_course_5,2025-10-13,BCOM BATCH-A,2025-04-01
+openeducat_core.op_batch_5,BA-PY-SEM-1-A,openeducat_core.op_course_8,2025-10-13,BA BATCH-A,2025-04-01
+openeducat_core.op_batch_6,BCA-CC-SEM-1-B,openeducat_core.op_course_1,2025-10-13,BCA BATCH-B,2025-04-01
+openeducat_core.op_batch_7,BCOM-AF-SEM-1-B,openeducat_core.op_course_5,2025-10-13,BCOM BATCH-B,2025-04-01
+openeducat_core.op_batch_8,BTECH-CE-SEM-1-A,openeducat_core.op_course_7,2025-10-13,BTECH BATCH-A,2025-04-01
+openeducat_core.op_batch_9,BT-CH-SEM-1-A,openeducat_core.op_course_9,2025-10-13,BTECH BATCH-A,2025-04-01
+openeducat_core.op_batch_10,BA-PY-SEM-2-A,openeducat_core.op_course_10,2025-10-13,BA BATCH-A,2025-04-01
+openeducat_core.op_batch_11,BCA-CC-SEM-2-A,openeducat_core.op_course_4,2025-10-13,BCA BATCH-A,2025-04-01
+openeducat_core.op_batch_12,BCOM-AF-SEM-2,openeducat_core.op_course_6,2025-10-13,BCOM BATCH-A,2025-04-01
+openeducat_core.op_batch_13,CYBER-SECURITY-A,openeducat_core.op_course_13,2025-07-01,CYBER-SECURITY BATCH-A,2025-04-01
+openeducat_core.op_batch_14,DIP-AE-S1-A,openeducat_core.op_course_11,2025-10-13,DIPLOMA BATCH-A,2025-04-01
+openeducat_core.op_batch_15,DIP-EE-S1-A,openeducat_core.op_course_12,2025-10-13,DIPLOMA BATCH-A,2025-04-01
+openeducat_core.op_batch_16,IE-CSE-M-S1-A,openeducat_core.op_course_14,2025-10-13,CSE-MICROSOFT BATCH-A,2025-04-01

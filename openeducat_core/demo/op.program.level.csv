@@ -1,0 +1,14 @@
+id,name
+openeducat_core.program_level_1,Masters
+openeducat_core.program_level_2,Bachelors
+openeducat_core.program_level_3,Certificate Programs
+openeducat_core.program_level_4,Diploma
+openeducat_core.program_level_5,Doctoral Programs
+openeducat_core.program_level_6,Fellowship Programs
+openeducat_core.program_level_7,Global Programs
+openeducat_core.program_level_8,Industry Embedded Programs
+openeducat_core.program_level_9,Lateral Entry Programs
+openeducat_core.program_level_10,Post Graduate Diploma Program
+openeducat_core.program_level_11,Online Programs
+openeducat_core.program_level_12,Pathway Programs
+openeducat_core.program_level_13,Post Doctoral Programs

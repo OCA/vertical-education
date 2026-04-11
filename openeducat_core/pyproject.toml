@@ -1,0 +1,11 @@
+[project]
+name = "openeducat_core"
+version = "18.0.1.0.0"
+description = "Manage Students, Faculties and Education Institute"
+authors = [{ name = "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy" }]
+license = { text = "AGPL-3" }
+dependencies = ["board", "hr", "web", "website"]
+
+[tool.whool]
+# This tells whool this is an Odoo addon
+addon = true

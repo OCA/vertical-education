@@ -1,0 +1,62 @@
+from odoo import _, api, fields, models
+from odoo.exceptions import ValidationError
+
+class OpFaculty(models.Model):
+    _name = 'op.faculty'
+    _description = 'OpenEduCat Faculty'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _inherits = {'res.partner': 'partner_id'}
+    _parent_name = False
+    partner_id = fields.Many2one('res.partner', required=True, ondelete='cascade')
+    first_name = fields.Char(translate=True, required=True)
+    middle_name = fields.Char(size=128)
+    last_name = fields.Char(size=128, required=True)
+    birth_date = fields.Date(required=True)
+    blood_group = fields.Selection([('A+', 'A+ve'), ('B+', 'B+ve'), ('O+', 'O+ve'), ('AB+', 'AB+ve'), ('A-', 'A-ve'), ('B-', 'B-ve'), ('O-', 'O-ve'), ('AB-', 'AB-ve')])
+    gender = fields.Selection([('male', 'Male'), ('female', 'Female')], required=True)
+    nationality = fields.Many2one('res.country')
+    emergency_contact = fields.Many2one('res.partner')
+    visa_info = fields.Char(size=64)
+    id_number = fields.Char('ID Card Number', size=64)
+    login = fields.Char(related='partner_id.user_id.login', readonly=True)
+    last_login = fields.Datetime('Latest Connection', readonly=True, related='partner_id.user_id.login_date')
+    faculty_subject_ids = fields.Many2many('op.subject', string='Subject(s)', tracking=True)
+    emp_id = fields.Many2one('hr.employee', 'HR Employee')
+    main_department_id = fields.Many2one('op.department', default=lambda self: self.env.user.dept_id and self.env.user.dept_id.id or False)
+    allowed_department_ids = fields.Many2many('op.department', default=lambda self: self.env.user.department_ids and self.env.user.department_ids.ids or False)
+    active = fields.Boolean(default=True)
+
+    @api.constrains('birth_date')
+    def _check_birthdate(self):
+        for record in self:
+            if record.birth_date > fields.Date.today():
+                raise ValidationError(_("Birth Date can't be greater than current date!"))
+
+    @api.onchange('first_name', 'middle_name', 'last_name')
+    def _onchange_name(self):
+        fname = self.first_name or ''
+        mname = self.middle_name or ''
+        lname = self.last_name or ''
+        if fname or mname or lname:
+            self.name = ' '.join(filter(None, [fname, mname, lname]))
+        else:
+            self.name = 'New'
+
+    def create_employee(self):
+        for record in self:
+            vals = {'name': record.name, 'country_id': record.nationality.id, 'gender': record.gender}
+            emp_id = self.env['hr.employee'].create(vals)
+            record.write({'emp_id': emp_id.id})
+            record.partner_id.write({'partner_share': True, 'employee': True})
+
+    @api.model
+    def get_import_templates(self):
+        return [{'label': _('Import Template for Faculties'), 'template': '/openeducat_core/static/xls/op_faculty.xls'}]
+
+    class PartnerTitle(models.Model):
+        _inherit = 'res.partner.title'
+
+        @api.depends('shortcut')
+        def _compute_display_name(self):
+            for record in self:
+                record.display_name = f'{record.shortcut}'
