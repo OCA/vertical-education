@@ -72,7 +72,7 @@ class OpAdmissionRegister(models.Model):
     application_count = fields.Integer(
         string="Total_record", compute="_compute_calculate_record_application"
     )
-    is_favorite = fields.Boolean(string="Is Favorite", default=False)
+    is_favorite = fields.Boolean(default=False)
     company_id = fields.Many2one(
         "res.company", string="Company", default=lambda self: self.env.user.company_id
     )

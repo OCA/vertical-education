@@ -172,7 +172,15 @@ class OpAcademicYear(models.Model):
                 "f": from_d + timedelta(days=day + 1),
                 "t": from_d + timedelta(days=day * 2 + 1),
             },
-            {"name": "Semester 3", "f": from_d + timedelta(days=day * 2 + 2), "t": to_d},
+            {
+
+                "name": "Semester 3",
+
+                "f": from_d + timedelta(days=day * 2 + 2),
+
+                "t": to_d
+
+            },
         ]
         for t in res:
             self.env["op.academic.term"].create({

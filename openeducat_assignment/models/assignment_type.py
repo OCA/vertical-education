@@ -14,8 +14,8 @@ class GradingAssigmentType(models.Model):
     _name = "grading.assignment.type"
     _description = "Assignment Type"
 
-    name = fields.Char(string="Name", required=True)
-    code = fields.Char(string="Code")
+    name = fields.Char(required=True)
+    code = fields.Char()
     assign_type = fields.Selection(
         [("sub", "Subjective"), ("attendance", "Attendance")],
         string="Type",

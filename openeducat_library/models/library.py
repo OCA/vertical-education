@@ -28,7 +28,8 @@ class OpLibraryCardType(models.Model):
 
     name = fields.Char(size=256, required=True)
     allow_media = fields.Integer("No Of Medias Allowed", default=10, required=True)
-    duration = fields.Integer(help="Duration in terms of Number of Lead Days", required=True
+    duration = fields.Integer(help="Duration in terms of Number of Lead Days",
+        required=True
     )
     penalty_amt_per_day = fields.Float("Penalty Amount Per Day", required=True)
 

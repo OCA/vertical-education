@@ -60,4 +60,3 @@ WebClient.components = {
     ...WebClient.components,
     G2Review,
 };
-return G2ReviewDialog;
