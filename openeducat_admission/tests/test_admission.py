@@ -106,7 +106,7 @@ class TestAdmissionregister(TestAdmissionCommon):
         register = self.op_register.search([])
 
         for registers in register:
-            logging.info("Admission registar Name : %s :" % (registers.name))
+            logging.info(f"Admission registar Name : {registers.name} :")
 
         register.confirm_register()
         register.set_to_draft()

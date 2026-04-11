@@ -335,7 +335,10 @@ class OpAdmission(models.Model):
                     ]
                 )
                 if not total_admission < record.register_id.max_count:
-                    msg = f"Max Admission In Admission Register :- ({record.register_id.max_count})"
+                    msg = (
+                        "Max Admission In Admission Register :- "
+                        f"({record.register_id.max_count})"
+                    )
                     raise ValidationError(_(msg))
             if not record.student_id:
                 vals = record.get_student_vals()
@@ -480,7 +483,8 @@ class OpAdmission(models.Model):
         if not account_id:
             raise UserError(
                 _(
-                    f'There is no income account defined for this product: "{product.name}". '
+                    f'There is no income account defined for this product: '
+                    f'"{product.name}". '
                     "You may have to install a chart of account from Accounting "
                     "app, settings menu."
                 )
