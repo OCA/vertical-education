@@ -36,10 +36,10 @@ class TestMedia(TestLibraryCommon):
             )
         info("  Details Of Library Media:.....")
         for record in media:
-            info("      Name : %s" % record.name)
-            info("      Media Type : %s" % record.media_type_id.name)
-            info("      ISBN Code : %s" % record.isbn)
-            info("      Course : %s" % record.course_ids.name)
+            info(f"      Name : {record.name}")
+            info(f"      Media Type : {record.media_type_id.name}")
+            info(f"      ISBN Code : {record.isbn}")
+            info(f"      Course : {record.course_ids.name}")
 
 
 class TestMediaUnit(TestLibraryCommon):
@@ -69,10 +69,10 @@ class TestMediaMovement(TestLibraryCommon):
             )
         info("  Details Of Library Media Movements:.....")
         for record in mediamovement:
-            info("      Media : %s" % record.media_id.name)
-            info("      Media Unit : %s" % record.media_unit_id.name)
-            info("      Person : %s" % record.partner_id.name)
-            info("      Library Card : %s" % record.library_card_id.number)
+            info(f"      Media : {record.media_id.name}")
+            info(f"      Media Unit : {record.media_unit_id.name}")
+            info(f"      Person : {record.partner_id.name}")
+            info(f"      Library Card : {record.library_card_id.number}")
             record._check_date()
             record.check_actual_return_date()
             record.onchange_media_unit_id()
@@ -97,11 +97,11 @@ class TestMediaPurchase(TestLibraryCommon):
         )
         info("  Details Of Library Media Purchase:.....")
         for record in mediapurchase:
-            info("      Title : %s" % record.name)
-            info("      Author : %s" % record.author)
-            info("      Requested By : %s" % record.requested_id.name)
-            info("      Course : %s" % record.course_ids.name)
-            info("      Subject : %s" % record.subject_ids.name)
+            info(f"      Title : {record.name}")
+            info(f"      Author : {record.author}")
+            info(f"      Requested By : {record.requested_id.name}")
+            info(f"      Course : {record.course_ids.name}")
+            info(f"      Subject : {record.subject_ids.name}")
             record.act_requested()
             record.act_accept()
             record.act_reject()
@@ -141,10 +141,10 @@ class TestLibraryCardType(TestLibraryCommon):
             )
         info("  Details Of Library Card Type:.....")
         for record in cardtype:
-            info("      Name : %s" % record.name)
-            info("      No of medias Allowed : %s" % record.allow_media)
-            info("      Duration : %s" % record.duration)
-            info("      Penalty : %s" % record.penalty_amt_per_day)
+            info(f"      Name : {record.name}")
+            info(f"      No of medias Allowed : {record.allow_media}")
+            info(f"      Duration : {record.duration}")
+            info(f"      Penalty : {record.penalty_amt_per_day}")
             record.check_details()
 
 
@@ -168,10 +168,10 @@ class TestLibraryCard(TestLibraryCommon):
             raise AssertionError("Error in data, please check for library card details")
         info("  Details Of Library Card:.....")
         for record in card:
-            info("      Number : %s" % record.number)
-            info("      Card Type : %s" % record.library_card_type_id.name)
-            info("      Student/Faculty : %s" % record.partner_id.name)
-            info("      Issue Date : %s" % record.issue_date)
+            info(f"      Number : {record.number}")
+            info(f"      Card Type : {record.library_card_type_id.name}")
+            info(f"      Student/Faculty : {record.partner_id.name}")
+            info(f"      Issue Date : {record.issue_date}")
             record.onchange_type()
             record.onchange_student_faculty()
 

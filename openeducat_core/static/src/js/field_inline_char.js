@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* eslint-env es6 */
 /* eslint-disable no-undef */
 /* global define, odoo, _ */

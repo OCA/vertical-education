@@ -109,7 +109,7 @@ class SessionReport(models.TransientModel):
         else:
             faculty_id = (
                 data["faculty_id"][0]
-                if isinstance(data["faculty_id"], (list, tuple))
+                if isinstance(data["faculty_id"], list | tuple)
                 else False
             )
             teacher_time_table_ids = self.env["op.session"].search(

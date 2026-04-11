@@ -31,9 +31,9 @@ class TestAttendanceRegister(TestAttendanceCommon):
     def test_case_attendance_register(self):
         register = self.op_attendance_register.search([])
         for record in register:
-            info("      Attendance Register : %s" % record.name)
-            info("      Course : %s" % record.course_id.name)
-            info("      Code : %s" % record.code)
+            info(f"      Attendance Register : {record.name}")
+            info(f"      Course : {record.course_id.name}")
+            info(f"      Code : {record.code}")
 
 
 class TestAttendanceSheet(TestAttendanceCommon):
@@ -66,10 +66,10 @@ class TestAttendanceLine(TestAttendanceCommon):
         line = self.op_attendance_line.search([])
         info("  Details Of Attendance Lines:.....")
         for record in line:
-            info("      Attendance Sheet : %s" % record.attendance_id.name)
-            info("      Student : %s" % record.student_id.name)
-            info("      Register : %s" % record.register_id.name)
-            info("      Present : %s" % record.present)
+            info(f"      Attendance Sheet : {record.attendance_id.name}")
+            info(f"      Student : {record.student_id.name}")
+            info(f"      Register : {record.register_id.name}")
+            info(f"      Present : {record.present}")
 
 
 class TestAttendanceWizard(TestAttendanceCommon):

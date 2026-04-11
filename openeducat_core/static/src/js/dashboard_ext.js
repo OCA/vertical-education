@@ -1,4 +1,4 @@
-/* eslint-disable */
+/** @odoo-module **/
 /* global setTimeout */
 odoo.define("openeducat_core.dashboard_ext", function (require) {
     "use strict";

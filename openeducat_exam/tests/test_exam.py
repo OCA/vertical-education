@@ -38,7 +38,7 @@ class TestExam(TestExamCommon):
             logging.info(f"Exam Passing Marks: {x.min_marks}")
             logging.info("Exam Attendes:")
             for attendes in x.attendees_line:
-                logging.info(" %s" % (attendes.student_id.display_name))
+                logging.info(f" {attendes.student_id.display_name}")
             x._check_marks()
             x._check_date_time()
 
@@ -130,7 +130,7 @@ class TestMarksheetRegister(TestExamCommon):
         register = self.op_marksheet_register.search([])
 
         for data in register:
-            logging.info("Marksheet Register : %s" % data.name)
+            logging.info(f"Marksheet Register : {data.name}")
             logging.info(f"Exam Session : {data.exam_session_id.name}")
             for res in data.marksheet_line:
                 logging.info(f"Marksheets : {res.id}")
@@ -148,7 +148,7 @@ class TestResultLine(TestExamCommon):
         result_line = self.op_result_line.search([])
         logging.info("Marksheet Line :")
         for data in result_line:
-            logging.info("             %s" % data.exam_id.name)
+            logging.info(f"             {data.exam_id.name}")
 
             data._compute_grade
             data._compute_status
@@ -163,8 +163,8 @@ class TestResultTemplate(TestExamCommon):
         result_Template = self.op_result_template.search([])
         logging.info("Name : ")
         for data in result_Template:
-            logging.info("    %s" % data.name)
-            logging.info("State : %s" % data.state)
+            logging.info(f"    {data.name}")
+            logging.info(f"State : {data.state}")
         data._check_exam_session()
         data._check_min_max_per()
         data.generate_result()
@@ -178,9 +178,9 @@ class TestExamSession(TestExamCommon):
         exam_session = self.op_exam_session.search([])
         logging.info("Name :")
         for data in exam_session:
-            logging.info("   %s" % data.name)
-            logging.info("Start Date : %s" % data.start_date)
-            logging.info("End Date : %s" % data.end_date)
+            logging.info(f"   {data.name}")
+            logging.info(f"Start Date : {data.start_date}")
+            logging.info(f"End Date : {data.end_date}")
 
         data._check_date_time()
         data.onchange_course()

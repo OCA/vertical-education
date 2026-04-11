@@ -29,7 +29,7 @@ from odoo.addons.portal.controllers.web import Home as home
 class OpeneducatHome(home):
     @http.route()
     def web_login(self, redirect=None, *args, **kw):
-        response = super().web_login(redirect=redirect, *args, **kw)
+        response = super().web_login(redirect, *args, **kw)
         if not redirect and request.params["login_success"]:
             if (
                 request.env["res.users"]

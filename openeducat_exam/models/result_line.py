@@ -54,7 +54,8 @@ class OpResultLine(models.Model):
     def _compute_grade(self):
         for record in self:
             if record.evaluation_type == "grade":
-                grades = record.marksheet_line_id.marksheet_reg_id.result_template_id.grade_ids
+                template = record.marksheet_line_id.marksheet_reg_id.result_template_id
+                grades = template.grade_ids
                 if grades:
                     for grade in grades:
                         if (

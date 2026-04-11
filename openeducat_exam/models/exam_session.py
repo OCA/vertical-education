@@ -94,15 +94,16 @@ class OpExamSession(models.Model):
                 if not_done_exams:
                     raise ValidationError(
                         _(
-                            "You cannot mark the session '%s' as Held because not all exams are Done. "
-                            "Pending exams: %s"
+                            "You cannot mark the session '%s' as Held because "
+                            "not all exams are Done. Pending exams: %s"
                         )
                         % (rec.name, ", ".join(not_done_exams.mapped("name")))
                     )
             else:
                 raise ValidationError(
                     _(
-                        "You cannot mark the session '%s' as Held because no exams are linked."
+                        "You cannot mark the session '%s' as Held because no "
+                        "exams are linked."
                     )
                     % rec.name
                 )
