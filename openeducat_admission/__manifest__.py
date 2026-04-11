@@ -26,7 +26,10 @@
     "sequence": 3,
     "summary": "Manage Admissions" "",
     "complexity": "easy",
-    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy IAIN Parepare",
+    "author": (
+        "OpenEduCat Inc, Odoo Community Association (OCA), "
+        "Sufyaldy IAIN Parepare"
+    ),
     "website": "https://github.com/OCA/vertical-education",
     "depends": ["openeducat_core", "openeducat_fees"],
     "data": [
