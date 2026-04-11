@@ -74,6 +74,7 @@ class TestFeesTerms(TestFeesCommon):
         terms = self.op_fees_terms.create(
             {
                 "name": "Library Fees",
+                "code": "LIB_FEE",
                 "line_ids": self.env.ref("openeducat_fees.op_fees_term_line_6"),
             }
         )

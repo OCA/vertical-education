@@ -32,14 +32,14 @@ class TestClassroom(TestClassroomCommon):
         if not classroom:
             raise AssertionError("Error in data, please check for reference Classroom")
         for record in classroom:
-            info("      Class Name: %s" % record.name)
-            info("      Code : %s" % record.code)
-            info("      Course Name : %s" % record.course_id.name)
-            info("      Capacity : %s" % record.capacity)
+            info(f"      Class Name: {record.name}")
+            info(f"      Code : {record.code}")
+            info(f"      Course Name : {record.course_id.name}")
+            info(f"      Capacity : {record.capacity}")
             for rec in record.facilities:
-                info("      facilities : %s" % rec.facility_id.name)
+                info(f"      facilities : {rec.facility_id.name}")
             for rec1 in record.asset_line:
-                info("      asset_line : %s" % rec1.product_id.name)
+                info(f"      asset_line : {rec1.product_id.name}")
             record.onchange_course()
 
 
@@ -69,6 +69,6 @@ class TestAsset(TestClassroomCommon):
             }
         )
         for record in assets:
-            info("      Asset Name: %s" % record.asset_id.name)
-            info("      Product Name : %s" % record.product_id.name)
-            info("      Product Quantity : %s" % record.product_uom_qty)
+            info(f"      Asset Name: {record.asset_id.name}")
+            info(f"      Product Name : {record.product_id.name}")
+            info(f"      Product Quantity : {record.product_uom_qty}")

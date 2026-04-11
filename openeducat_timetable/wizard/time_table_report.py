@@ -83,10 +83,16 @@ class SessionReport(models.TransientModel):
             ["start_date", "end_date", "course_id", "batch_id", "state", "faculty_id"]
         )[0]
         if data["state"] == "student":
+            course_id = (
+                data["course_id"][0] if isinstance(data["course_id"], (list, tuple)) else False
+            )
+            batch_id = (
+                data["batch_id"][0] if isinstance(data["batch_id"], (list, tuple)) else False
+            )
             time_table_ids = self.env["op.session"].search(
                 [
-                    ("course_id", "=", data["course_id"][0]),
-                    ("batch_id", "=", data["batch_id"][0]),
+                    ("course_id", "=", course_id),
+                    ("batch_id", "=", batch_id),
                     ("start_datetime", ">=", data["start_date"]),
                     ("end_datetime", "<=", data["end_date"]),
                 ],
@@ -97,11 +103,16 @@ class SessionReport(models.TransientModel):
                 "openeducat_timetable.report_student_timetable_generate"
             )
         else:
+            faculty_id = (
+                data["faculty_id"][0]
+                if isinstance(data["faculty_id"], (list, tuple))
+                else False
+            )
             teacher_time_table_ids = self.env["op.session"].search(
                 [
                     ("start_datetime", ">=", data["start_date"]),
                     ("end_datetime", "<=", data["end_date"]),
-                    ("faculty_id", "=", data["faculty_id"][0]),
+                    ("faculty_id", "=", faculty_id),
                 ],
                 order="start_datetime asc",
             )

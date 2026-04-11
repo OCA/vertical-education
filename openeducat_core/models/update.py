@@ -102,13 +102,13 @@ class PublisherWarrantyContract(AbstractModel):
         try:
             try:
                 self._get_system_logs()
-            except Exception:
+            except Exception as e:
                 if cron_mode:  # we don't want to see any stack trace in cron
                     return False
                 _logger.debug("Exception while sending a get logs messages", exc_info=1)
                 raise UserError(
                     _("Error during communication with the  warranty server.")
-                )
+                ) from e
         except Exception:
             if cron_mode:
                 return False  # we don't want to see any stack trace in cron

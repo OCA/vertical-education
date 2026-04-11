@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* global define, odoo, _ */
+
 /** @odoo-module **/
 
 import {session} from "@web/session";

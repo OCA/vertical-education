@@ -31,7 +31,7 @@ class ResConfigSettings(models.TransientModel):
         return res
 
     def set_values(self):
-        super().set_values()
+        res = super().set_values()
         param = self.env["ir.config_parameter"].sudo()
         param.set_param("timetable.is_faculty_constraint", self.is_faculty_constraint)
         param.set_param(
@@ -42,3 +42,4 @@ class ResConfigSettings(models.TransientModel):
             self.is_batch_and_subject_constraint,
         )
         param.set_param("timetable.is_batch_constraint", self.is_batch_constraint)
+        return res

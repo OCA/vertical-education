@@ -139,6 +139,9 @@ class OpStudent(models.Model):
         else:
             self.name = "New"
 
+    def _onchange_name(self):
+        return self._onchange_name_1()
+
     @api.constrains("birth_date")
     def _check_birthdate(self):
         for record in self:

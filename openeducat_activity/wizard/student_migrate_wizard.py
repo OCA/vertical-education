@@ -159,6 +159,9 @@ class StudentMigrate(models.TransientModel):
                                 reg_id.action_submitted()
                                 reg_id.action_approve()
 
+    def student_by_course(self):
+        return self.student_migrate_forward()
+
     @api.depends("course_from_id")
     def _compute_valid_to_courses(self):
         for rec in self:

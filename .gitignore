@@ -86,3 +86,9 @@ docs/_build/
 
 # OCA rules
 !static/lib/
+
+# Docker configuration
+docker-compose.yml
+.env
+odoo_data/
+db_data/

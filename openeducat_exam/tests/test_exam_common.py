@@ -37,4 +37,3 @@ class TestExamCommon(common.TransactionCase):
         self.op_result_template = self.env["op.result.template"]
         self.op_held_exam = self.env["op.held.exam"]
         self.op_room_distribution = self.env["op.room.distribution"]
-        self.student_hall_ticket = self.env["student.hall.ticket"]

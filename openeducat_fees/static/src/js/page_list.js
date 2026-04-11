@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* global define, odoo, _ */
+
 /** @odoo-module **/
 
 import {_t} from "@web/core/l10n/translation";

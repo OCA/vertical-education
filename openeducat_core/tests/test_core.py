@@ -90,10 +90,21 @@ class TestCore(TestCoreCommon):
         new_student.create_student_user()
 
     def test_case_7_subject_registartion(self):
+        student = self.env.ref("openeducat_core.op_student_1")
+        course = self.env.ref("openeducat_core.op_course_2")
+        batch = self.env.ref("openeducat_core.op_batch_1")
+
+        # Ensure student is admitted to the course first
+        self.env["op.student.course"].create({
+            "student_id": student.id,
+            "course_id": course.id,
+            "batch_id": batch.id,
+        })
+
         vals = {
-            "student_id": self.env.ref("openeducat_core.op_student_1").id,
-            "course_id": self.env.ref("openeducat_core.op_course_2").id,
-            "batch_id": self.env.ref("openeducat_core.op_batch_1").id,
+            "student_id": student.id,
+            "course_id": course.id,
+            "batch_id": batch.id,
         }
         registrations = self.subject_registration.create(vals)
 

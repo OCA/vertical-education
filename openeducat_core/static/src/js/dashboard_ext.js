@@ -1,24 +1,9 @@
+/* global setTimeout */
 odoo.define("openeducat_core.dashboard_ext", function (require) {
     "use strict";
     var Widget = require("web.Widget");
     var Dashboard = require("web_settings_dashboard");
-    Dashboard.Dashboard.include({
-        init: function (parent, data) {
-            this._super.apply(this, arguments);
-            this.all_dashboards = [
-                "apps",
-                "invitations",
-                "company",
-                "share",
-                "orgInfo",
-            ];
-        },
-        load_orgInfo: function (data) {
-            return new DashboardOrgInfo(this, data.orgInfo).replace(
-                this.$(".o_dashboard_org_info")
-            );
-        },
-    });
+
     var DashboardOrgInfo = Widget.extend({
         template: "DashboardOrgInfo",
         init: function (parent, data) {
@@ -43,6 +28,24 @@ odoo.define("openeducat_core.dashboard_ext", function (require) {
                     );
                 });
             }, 1500);
+        },
+    });
+
+    Dashboard.Dashboard.include({
+        init: function (parent, data) {
+            this._super.apply(this, arguments);
+            this.all_dashboards = [
+                "apps",
+                "invitations",
+                "company",
+                "share",
+                "orgInfo",
+            ];
+        },
+        load_orgInfo: function (data) {
+            return new DashboardOrgInfo(this, data.orgInfo).replace(
+                this.$(".o_dashboard_org_info")
+            );
         },
     });
 });

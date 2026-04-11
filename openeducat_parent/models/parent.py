@@ -35,8 +35,8 @@ class OpParent(models.Model):
         string="Student(s)",
         required=True,
     )
-    mobile = fields.Char(string="Mobile")
-    email = fields.Char(string="Email")
+    mobile = fields.Char()
+    email = fields.Char()
     active = fields.Boolean(default=True)
     relationship_id = fields.Many2one(
         "op.parent.relationship", "Relation with Student", required=True

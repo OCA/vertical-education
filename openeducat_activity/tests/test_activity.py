@@ -33,11 +33,11 @@ class TestActivity(TestActivityCommon):
             raise AssertionError("Error in data, please check for reference ")
         info("Details of Activity")
         for record in activity:
-            info("      Student : %s" % record.student_id.name)
-            info("      Faculty : %s" % record.faculty_id.name)
-            info("      Activity Type : %s" % record.type_id.name)
-            info("      Description : %s" % record.description)
-            info("      Date : %s" % record.date)
+            info(f"      Student : {record.student_id.name}")
+            info(f"      Faculty : {record.faculty_id.name}")
+            info(f"      Activity Type : {record.type_id.name}")
+            info(f"      Description : {record.description}")
+            info(f"      Date : {record.date}")
 
 
 class TestActivityType(TestActivityCommon):
@@ -50,7 +50,7 @@ class TestActivityType(TestActivityCommon):
             raise AssertionError("Error in data, please check for Activity type")
         info("Details of achievement_type")
         for category in activity_type:
-            info("      Activity : %s" % category.name)
+            info(f"      Activity : {category.name}")
 
 
 class TestStudentMigrateWizard(TestActivityCommon):

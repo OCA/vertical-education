@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* global define, odoo, _ */
+
 /** @odoo-module **/
 
 import {PageDependencies} from "@website/components/dialog/page_properties";
