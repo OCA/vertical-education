@@ -117,8 +117,8 @@ class TestMarksheetline(TestExamCommon):
             data._check_marks()
             data._compute_total_marks()
             data._compute_percentage()
-            data._compute_grade()()
-            data._compute_status()()
+            data._compute_grade()
+            data._compute_status()
 
 
 class TestMarksheetRegister(TestExamCommon):

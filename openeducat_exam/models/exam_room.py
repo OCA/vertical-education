@@ -39,8 +39,10 @@ class OpExamRoom(models.Model):
 
     def check_capacity(self):
         """Check if room capacity is valid and greater than zero."""
-        if self.capacity <= 0:
-            raise ValidationError(
-                _("Room capacity must be greater than zero for room '%s'.") % self.name
-            )
+        for rec in self:
+            if rec.classroom_id and rec.capacity <= 0:
+                raise ValidationError(
+                    _("Room capacity must be greater than zero for room '%s'.")
+                    % rec.name
+                )
         return True
