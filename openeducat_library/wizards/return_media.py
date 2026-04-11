@@ -33,7 +33,7 @@ class ReturnMedia(models.TransientModel):
         "op.media.unit", "Media Unit", readonly=True, required=True
     )
     actual_return_date = fields.Date(
-        "Actual Return Date", default=lambda self: fields.Date.today(), required=True
+        default=lambda self: fields.Date.today(), required=True
     )
 
     def do_return(self):

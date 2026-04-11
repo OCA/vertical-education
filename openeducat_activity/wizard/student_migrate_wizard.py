@@ -89,7 +89,8 @@ class StudentMigrate(models.TransientModel):
                     ):
                         raise ValidationError(
                             _(
-                                "Can't migrate, As selected courses don't share same Program!"
+                                "Can't migrate, As selected courses "
+                                "don't share same Program!"
                             )
                         )
             else:
