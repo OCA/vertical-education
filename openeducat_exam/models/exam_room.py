@@ -34,3 +34,11 @@ class OpExamRoom(models.Model):
     def onchange_classroom(self):
         if self.classroom_id:
             self.capacity = self.classroom_id.capacity
+
+    def check_capacity(self):
+        """Check if room capacity is valid and greater than zero."""
+        if self.capacity <= 0:
+            raise ValidationError(
+                _("Room capacity must be greater than zero for room '%s'.") % self.name
+            )
+        return True
