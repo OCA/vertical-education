@@ -214,9 +214,10 @@ class OpAdmission(models.Model):
             if application_date < start_date or application_date > end_date:
                 raise ValidationError(
                     _(
-                        "Application Date should be between Start Date & End Date of Admission Register."
+                        "Application Date should be between "
+                        "Start Date & End Date of Admission Register."
                     )
-                )  # noqa
+                )
 
     @api.constrains("birth_date")
     def _check_birthdate(self):

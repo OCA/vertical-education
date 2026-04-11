@@ -43,9 +43,9 @@ class IssueMedia(models.TransientModel):
     )
     student_id = fields.Many2one("op.student", "Student")
     faculty_id = fields.Many2one("op.faculty", "Faculty")
-    library_card_id = fields.Many2one("op.library.card", "Library Card", required=True)
-    issued_date = fields.Date("Issued Date", required=True, default=fields.Date.today())
-    return_date = fields.Date("Return Date", required=True)
+    library_card_id = fields.Many2one("op.library.card", required=True)
+    issued_date = fields.Date(required=True, default=fields.Date.today())
+    return_date = fields.Date(required=True)
     partner_id = fields.Many2one("res.partner", "Person", tracking=True)
 
     @api.constrains("issued_date", "return_date")
