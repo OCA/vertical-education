@@ -232,9 +232,7 @@ class OpAdmission(models.Model):
                 years = day // 365
                 if years < self.register_id.minimum_age_criteria:
                     raise ValidationError(
-                        _(
-                            "Not Eligible for Admission minimum required age is : %s"
-                        )
+                        _("Not Eligible for Admission minimum required age is : %s")
                         % self.register_id.minimum_age_criteria
                     )
 
@@ -483,8 +481,8 @@ class OpAdmission(models.Model):
             raise UserError(
                 _(
                     f'There is no income account defined for this product: "{product.name}". '
-                    'You may have to install a chart of account from Accounting '
-                    'app, settings menu.'
+                    "You may have to install a chart of account from Accounting "
+                    "app, settings menu."
                 )
             )
         if self.fees <= 0.00:

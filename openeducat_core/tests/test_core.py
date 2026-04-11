@@ -95,11 +95,13 @@ class TestCore(TestCoreCommon):
         batch = self.env.ref("openeducat_core.op_batch_1")
 
         # Ensure student is admitted to the course first
-        self.env["op.student.course"].create({
-            "student_id": student.id,
-            "course_id": course.id,
-            "batch_id": batch.id,
-        })
+        self.env["op.student.course"].create(
+            {
+                "student_id": student.id,
+                "course_id": course.id,
+                "batch_id": batch.id,
+            }
+        )
 
         vals = {
             "student_id": student.id,

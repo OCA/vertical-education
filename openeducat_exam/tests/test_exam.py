@@ -69,11 +69,9 @@ class TestExamRoom(TestExamCommon):
             logging.info(f"Name: {data.name}")
             logging.info(f"Room Name : {data.classroom_id.name}")
             logging.info(f"Capacity : {data.capacity}")
- 
+
             for res in room:
                 res.check_capacity()
-
-
 
 
 class TestExamType(TestExamCommon):
