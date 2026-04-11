@@ -14,7 +14,7 @@ class OpMedia(models.Model):
     publisher_ids = fields.Many2many('op.publisher', string='Publisher(s)', required=True)
     course_ids = fields.Many2many('op.course')
     movement_line = fields.One2many('op.media.movement', 'media_id', 'Movements')
-    subject_ids = fields.Many2many('op.subject', string='Subjects')
+    subject_ids = fields.Many2many('op.subject')
     internal_code = fields.Char(size=64)
     queue_ids = fields.One2many('op.media.queue', 'media_id', 'Media Queue')
     unit_ids = fields.One2many('op.media.unit', 'media_id', 'Units')
