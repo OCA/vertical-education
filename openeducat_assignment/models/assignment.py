@@ -27,10 +27,11 @@ class GradingAssigment(models.Model):
     _description = "Grading Assignment"
 
     name = fields.Char(required=True)
-    course_id = fields.Many2one("op.course", required=True)
+    course_id = fields.Many2one("op.course", "Course", required=True)
     subject_id = fields.Many2one("op.subject", string="Subject")
     issued_date = fields.Datetime(required=True)
-    assignment_type = fields.Many2one("grading.assignment.type", string="Assignment Type", required=True
+    assignment_type = fields.Many2one(
+        "grading.assignment.type", string="Assignment Type", required=True
     )
     faculty_id = fields.Many2one(
         "op.faculty",
@@ -50,7 +51,7 @@ class OpAssignment(models.Model):
     _order = "submission_date DESC"
     _inherits = {"grading.assignment": "grading_assignment_id"}
 
-    batch_id = fields.Many2one("op.batch", required=True)
+    batch_id = fields.Many2one("op.batch", "Batch", required=True)
     marks = fields.Float(tracking=True)
     description = fields.Text(required=True)
     state = fields.Selection(
@@ -67,11 +68,13 @@ class OpAssignment(models.Model):
     )
     submission_date = fields.Datetime(required=True, tracking=True)
     allocation_ids = fields.Many2many("op.student", string="Allocated To")
-    assignment_sub_line = fields.One2many("op.assignment.sub.line"", assignment_id", "Submission"
+    assignment_sub_line = fields.One2many(
+        "op.assignment.sub.line", "assignment_id", "Submission"
     )
-    reviewer = fields.Many2one("op.faculty")
+    reviewer = fields.Many2one("op.faculty", "Reviewer")
     active = fields.Boolean(default=True)
-    grading_assignment_id = fields.Many2one("grading.assignment"", Grading Assignment", required=True, ondelete="cascade"
+    grading_assignment_id = fields.Many2one(
+        "grading.assignment", "Grading Assignment", required=True, ondelete="cascade"
     )
     assignment_sub_line_count = fields.Integer(
         "Submissions", compute="_compute_assignment_count_compute"

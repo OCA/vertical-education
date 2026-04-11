@@ -45,7 +45,7 @@ class IssueMedia(models.TransientModel):
     library_card_id = fields.Many2one("op.library.card", required=True)
     issued_date = fields.Date(required=True, default=fields.Date.today())
     return_date = fields.Date(required=True)
-    partner_id = fields.Many2one("res.partner"", Person", tracking=True)
+    partner_id = fields.Many2one("res.partner", "Person", tracking=True)
 
     @api.constrains("issued_date", "return_date")
     def _check_date(self):

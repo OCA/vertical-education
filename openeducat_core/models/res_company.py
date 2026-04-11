@@ -36,8 +36,8 @@ class ResUsers(models.Model):
     def _department_count(self):
         return self.env["op.department"].sudo().search_count([])
 
-    student_line = fields.Many2one("op.student"", Line")
-    user_line = fields.One2many("op.student"", user_id", "User Line")
+    student_line = fields.Many2one("op.student", "Line")
+    user_line = fields.One2many("op.student", "user_id", "User Line")
     child_ids = fields.Many2many(
         "res.users",
         "res_user_first_rel1",

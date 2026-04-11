@@ -27,9 +27,11 @@ class OpMarksheetRegister(models.Model):
     _inherit = ["mail.thread"]
     _description = "Marksheet Register"
 
-    exam_session_id = fields.Many2one("op.exam.session"", Exam Session", required=True, tracking=True
+    exam_session_id = fields.Many2one(
+        "op.exam.session", "Exam Session", required=True, tracking=True
     )
-    marksheet_line = fields.One2many("op.marksheet.line"", marksheet_reg_id", "Marksheets"
+    marksheet_line = fields.One2many(
+        "op.marksheet.line", "marksheet_reg_id", "Marksheets"
     )
     generated_date = fields.Date(required=True, default=fields.Date.today(),
         tracking=True
@@ -54,7 +56,8 @@ class OpMarksheetRegister(models.Model):
         "Total Fail", compute="_compute_total_failed", tracking=True, store=True
     )
     name = fields.Char("Marksheet Register", size=256, required=True, tracking=True)
-    result_template_id = fields.Many2one("op.result.template"", Result Template", required=True, tracking=True
+    result_template_id = fields.Many2one(
+        "op.result.template", "Result Template", required=True, tracking=True
     )
     active = fields.Boolean(default=True)
 

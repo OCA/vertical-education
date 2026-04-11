@@ -28,14 +28,15 @@ class OpStudentCourse(models.Model):
     _inherit = "mail.thread"
     _rec_name = "student_id"
 
-    student_id = fields.Many2one("op.student"", Student", ondelete="cascade", tracking=True
+    student_id = fields.Many2one(
+        "op.student", "Student", ondelete="cascade", tracking=True
     )
-    course_id = fields.Many2one("op.course", required=True, tracking=True)
-    batch_id = fields.Many2one("op.batch", tracking=True)
+    course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
+    batch_id = fields.Many2one("op.batch", "Batch", tracking=True)
     roll_number = fields.Char(tracking=True)
     subject_ids = fields.Many2many("op.subject", string="Subjects")
-    academic_years_id = fields.Many2one("op.academic.year"", Academic Year")
-    academic_term_id = fields.Many2one("op.academic.term"", Terms")
+    academic_years_id = fields.Many2one("op.academic.year", "Academic Year")
+    academic_term_id = fields.Many2one("op.academic.term", "Terms")
     state = fields.Selection(
         [("running", "Running"), ("finished", "Finished")],
         string="Status",
@@ -99,16 +100,18 @@ class OpStudent(models.Model):
         required=True,
         default="m",
     )
-    nationality = fields.Many2one("res.country")
-    emergency_contact = fields.Many2one("res.partner")
+    nationality = fields.Many2one("res.country", "Nationality")
+    emergency_contact = fields.Many2one("res.partner", "Emergency Contact")
     visa_info = fields.Char(size=64)
     id_number = fields.Char("ID Card Number", size=64)
-    partner_id = fields.Many2one("res.partner"", Partner", required=True, ondelete="cascade"
+    partner_id = fields.Many2one(
+        "res.partner", "Partner", required=True, ondelete="cascade"
     )
-    user_id = fields.Many2one("res.users", ondelete="cascade")
+    user_id = fields.Many2one("res.users", "User", ondelete="cascade")
     gr_no = fields.Char("Registration Number", size=20)
-    category_id = fields.Many2one("op.category")
-    course_detail_ids = fields.One2many("op.student.course"", student_id", "Course Details", tracking=True
+    category_id = fields.Many2one("op.category", "Category")
+    course_detail_ids = fields.One2many(
+        "op.student.course", "student_id", "Course Details", tracking=True
     )
     active = fields.Boolean(default=True)
     certificate_number = fields.Char(

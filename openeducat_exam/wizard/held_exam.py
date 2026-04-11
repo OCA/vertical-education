@@ -25,10 +25,10 @@ class OpHeldExam(models.TransientModel):
     _name = "op.held.exam"
     _description = "Held Exam"
 
-    course_id = fields.Many2one("op.course")
-    batch_id = fields.Many2one("op.batch")
-    exam_id = fields.Many2one("op.exam")
-    subject_id = fields.Many2one("op.subject")
+    course_id = fields.Many2one("op.course", "Course")
+    batch_id = fields.Many2one("op.batch", "Batch")
+    exam_id = fields.Many2one("op.exam", "Exam")
+    subject_id = fields.Many2one("op.subject", "Subject")
     attendees_line = fields.Many2many("op.exam.attendees", string="Attendees")
 
     @api.model

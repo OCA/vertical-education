@@ -18,7 +18,6 @@ class BonafideCertificateWizard(models.TransientModel):
             ("address_proof", "Address Proof"),
             ("other", "Other"),
         ],
-        string="Certificate Purpose",
         required=True,
         default="passport",
     )

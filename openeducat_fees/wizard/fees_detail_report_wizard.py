@@ -30,8 +30,8 @@ class FeesDetailReportWizard(models.TransientModel):
     fees_filter = fields.Selection(
         [("student", "Student"), ("course", "Course")], "Fees Filter", required=True
     )
-    student_id = fields.Many2one("op.student")
-    course_id = fields.Many2one("op.course")
+    student_id = fields.Many2one("op.student", "Student")
+    course_id = fields.Many2one("op.course", "Course")
 
     def print_report(self):
         data = {}

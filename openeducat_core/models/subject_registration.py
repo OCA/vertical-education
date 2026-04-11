@@ -28,9 +28,9 @@ class OpSubjectRegistration(models.Model):
     _inherit = ["mail.thread"]
 
     name = fields.Char(readonly=True, default="New")
-    student_id = fields.Many2one("op.student", tracking=True)
-    course_id = fields.Many2one("op.course", required=True, tracking=True)
-    batch_id = fields.Many2one("op.batch", tracking=True)
+    student_id = fields.Many2one("op.student", "Student", tracking=True)
+    course_id = fields.Many2one("op.course", "Course", required=True, tracking=True)
+    batch_id = fields.Many2one("op.batch", "Batch", tracking=True)
     compulsory_subject_ids = fields.Many2many(
         "op.subject",
         "subject_compulsory_rel",
@@ -48,14 +48,14 @@ class OpSubjectRegistration(models.Model):
             ("rejected", "Rejected"),
         ],
         default="draft",
-        string="State",
         copy=False,
         tracking=True,
     )
     max_unit_load = fields.Float("Maximum Unit Load", tracking=True)
     min_unit_load = fields.Float("Minimum Unit Load", tracking=True)
     is_read = fields.Boolean(string="Read?", default=False)
-    company_id = fields.Many2one("res.company", string="Company", default=lambda self: self.env.company
+    company_id = fields.Many2one(
+        "res.company", string="Company", default=lambda self: self.env.company
     )
 
     def action_reset_draft(self):

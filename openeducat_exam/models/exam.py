@@ -29,15 +29,19 @@ class OpExam(models.Model):
     _inherit = "mail.thread"
     _description = "Exam"
 
-    session_id = fields.Many2one("op.exam.session"", Exam Session", domain=[("state", "=", "schedule")]
+    session_id = fields.Many2one(
+        "op.exam.session", "Exam Session", domain=[("state", "=", "schedule")]
     )
-    course_id = fields.Many2one("op.course", related=", session_id.course_id", store=True, readonly=True
+    course_id = fields.Many2one(
+        "op.course", related="session_id.course_id", store=True, readonly=True
     )
-    batch_id = fields.Many2one("op.batch"", Batch", related="session_id.batch_id", store=True, readonly=True
+    batch_id = fields.Many2one(
+        "op.batch", "Batch", related="session_id.batch_id", store=True, readonly=True
     )
-    subject_id = fields.Many2one("op.subject", required=True)
+    subject_id = fields.Many2one("op.subject", "Subject", required=True)
     exam_code = fields.Char(size=16, required=True)
-    attendees_line = fields.One2many("op.exam.attendees"", exam_id", "Attendees", readonly=True
+    attendees_line = fields.One2many(
+        "op.exam.attendees", "exam_id", "Attendees", readonly=True
     )
     start_time = fields.Datetime(required=True)
     end_time = fields.Datetime(required=True)
@@ -65,7 +69,7 @@ class OpExam(models.Model):
         string="Attendees Count", compute="_compute_attendees_count"
     )
     results_entered = fields.Boolean(
-        string="Results Entered", compute="_compute_results_entered", store=True
+        compute="_compute_results_entered", store=True
     )
 
     _sql_constraints = [

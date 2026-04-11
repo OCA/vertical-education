@@ -26,7 +26,8 @@ class OpParent(models.Model):
     _name = "op.parent"
     _description = "Parent"
 
-    name = fields.Many2one("res.partner", required=True, domain="[(', is_parent', '=', True)]"
+    name = fields.Many2one(
+        "res.partner", required=True, domain="[('is_parent', '=', True)]"
     )
     user_id = fields.Many2one("res.users", store=True)
     student_ids = fields.Many2many(
@@ -37,7 +38,8 @@ class OpParent(models.Model):
     mobile = fields.Char()
     email = fields.Char()
     active = fields.Boolean(default=True)
-    relationship_id = fields.Many2one("op.parent.relationship"", Relation with Student", required=True
+    relationship_id = fields.Many2one(
+        "op.parent.relationship", "Relation with Student", required=True
     )
 
     _sql_constraints = [

@@ -30,7 +30,7 @@ class AdmissionAnalysis(models.TransientModel):
     _name = "admission.analysis"
     _description = "Admission Analysis Wizard"
 
-    course_id = fields.Many2one("op.course", required=True)
+    course_id = fields.Many2one("op.course", "Course", required=True)
     start_date = fields.Date(default=time.strftime("%Y-%m-01"), required=True
     )
     end_date = fields.Date(required=True)

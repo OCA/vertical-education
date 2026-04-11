@@ -29,7 +29,8 @@ class OpFaculty(models.Model):
     _inherits = {"res.partner": "partner_id"}
     _parent_name = False
 
-    partner_id = fields.Many2one("res.partner"", Partner", required=True, ondelete="cascade"
+    partner_id = fields.Many2one(
+        "res.partner", "Partner", required=True, ondelete="cascade"
     )
     first_name = fields.Char(translate=True, required=True)
     middle_name = fields.Char(size=128)
@@ -51,17 +52,18 @@ class OpFaculty(models.Model):
     gender = fields.Selection(
         [("male", "Male"), ("female", "Female")], "Gender", required=True
     )
-    nationality = fields.Many2one("res.country")
-    emergency_contact = fields.Many2one("res.partner")
+    nationality = fields.Many2one("res.country", "Nationality")
+    emergency_contact = fields.Many2one("res.partner", "Emergency Contact")
     visa_info = fields.Char(size=64)
     id_number = fields.Char("ID Card Number", size=64)
     login = fields.Char(related="partner_id.user_id.login", readonly=True)
     last_login = fields.Datetime(
         "Latest Connection", readonly=True, related="partner_id.user_id.login_date"
     )
-    faculty_subject_ids = fields.Many2many("op.subject", string="Subject(s)", tracking=True
+    faculty_subject_ids = fields.Many2many(
+        "op.subject", string="Subject(s)", tracking=True
     )
-    emp_id = fields.Many2one("hr.employee"", HR Employee")
+    emp_id = fields.Many2one("hr.employee", "HR Employee")
     main_department_id = fields.Many2one(
         "op.department",
         "Main Department",

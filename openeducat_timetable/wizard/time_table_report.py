@@ -36,9 +36,9 @@ class SessionReport(models.TransientModel):
         required=True,
         default="faculty",
     )
-    course_id = fields.Many2one("op.course")
-    batch_id = fields.Many2one("op.batch")
-    faculty_id = fields.Many2one("op.faculty")
+    course_id = fields.Many2one("op.course", "Course")
+    batch_id = fields.Many2one("op.batch", "Batch")
+    faculty_id = fields.Many2one("op.faculty", "Faculty")
     start_date = fields.Date(
         required=True,
         default=(

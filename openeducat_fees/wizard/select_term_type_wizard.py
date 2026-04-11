@@ -31,7 +31,7 @@ class SelectFeesTermTypeWizard(models.TransientModel):
             ("fixed_days", "Fixed Fees of Days"),
             ("fixed_date", "Fixed Fees of Dates"),
         ],
-        )
+    )
 
     def action_open_wizard(self):
         return {

@@ -27,12 +27,13 @@ class OpClassroom(models.Model):
 
     name = fields.Char(size=16, required=True)
     code = fields.Char(size=16, required=True)
-    course_id = fields.Many2one("op.course")
-    batch_id = fields.Many2one("op.batch")
+    course_id = fields.Many2one("op.course", "Course")
+    batch_id = fields.Many2one("op.batch", "Batch")
     capacity = fields.Integer(string="No of Seats", required=True)
-    facilities = fields.One2many("op.facility.line"", classroom_id", string="Facility Lines"
+    facilities = fields.One2many(
+        "op.facility.line", "classroom_id", string="Facility Lines"
     )
-    asset_line = fields.One2many("op.asset"", asset_id", string="Asset")
+    asset_line = fields.One2many("op.asset", "asset_id", string="Asset")
     active = fields.Boolean(default=True)
 
     _sql_constraints = [

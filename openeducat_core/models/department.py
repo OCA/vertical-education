@@ -27,7 +27,7 @@ class OpDepartment(models.Model):
 
     name = fields.Char(required=True)
     code = fields.Char(required=True)
-    parent_id = fields.Many2one("op.department"", Parent Department")
+    parent_id = fields.Many2one("op.department", "Parent Department")
 
     @api.model_create_multi
     def create(self, vals):

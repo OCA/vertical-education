@@ -24,7 +24,7 @@ from odoo import fields, models
 class OpFacilityLine(models.Model):
     _inherit = "op.facility.line"
 
-    classroom_id = fields.Many2one("op.classroom")
+    classroom_id = fields.Many2one("op.classroom", "Classroom")
 
     _sql_constraints = [
         (

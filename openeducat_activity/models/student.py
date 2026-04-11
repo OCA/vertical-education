@@ -24,7 +24,7 @@ from odoo import fields, models
 class OpStudent(models.Model):
     _inherit = "op.student"
 
-    activity_log = fields.One2many("op.activity"", student_id")
+    activity_log = fields.One2many("op.activity", "student_id")
     activity_count = fields.Integer(compute="_compute_count")
 
     def get_activity(self):

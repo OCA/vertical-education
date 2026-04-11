@@ -29,18 +29,20 @@ class StudentMigrate(models.TransientModel):
     _description = "Student Migrate"
 
     date = fields.Date(required=True, default=fields.Date.today())
-    course_from_id = fields.Many2one("op.course"", From Course", required=True)
-    course_to_id = fields.Many2one("op.course"", To Course")
-    batch_id = fields.Many2one("op.batch"", To Batch")
+    course_from_id = fields.Many2one("op.course", "From Course", required=True)
+    course_to_id = fields.Many2one("op.course", "To Course")
+    batch_id = fields.Many2one("op.batch", "To Batch")
     optional_sub = fields.Boolean("Optional Subjects")
     student_ids = fields.Many2many("op.student", string="Student(s)", required=True)
     course_completed = fields.Boolean(string="Course Completed?")
-    valid_to_course_ids = fields.Many2many("op.course", compute=", _compute_valid_to_courses", string="Valid To Courses"
+    valid_to_course_ids = fields.Many2many(
+        "op.course", compute="_compute_valid_to_courses", string="Valid To Courses"
     )
-    student_ids_domain = fields.Many2many("op.student", compute=", _compute_student_domain", store=False
+    student_ids_domain = fields.Many2many(
+        "op.student", compute="_compute_student_domain", store=False
     )
-    year_id = fields.Many2one("op.academic.year"", Academic Year")
-    term_id = fields.Many2one("op.academic.term"", Terms")
+    year_id = fields.Many2one("op.academic.year", "Academic Year")
+    term_id = fields.Many2one("op.academic.term", "Terms")
 
     @api.depends("course_from_id")
     def _compute_student_domain(self):

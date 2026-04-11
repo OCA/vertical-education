@@ -29,9 +29,10 @@ class OpFeesTermsLine(models.Model):
     due_days = fields.Integer()
     due_date = fields.Date()
     value = fields.Float("Value (%)")
-    fees_element_line = fields.One2many("op.fees.element"", fees_terms_line_id", "Fees Elements"
+    fees_element_line = fields.One2many(
+        "op.fees.element", "fees_terms_line_id", "Fees Elements"
     )
-    fees_id = fields.Many2one("op.fees.terms")
+    fees_id = fields.Many2one("op.fees.terms", "Fees")
 
 
 class OpFeesTerms(models.Model):
@@ -48,11 +49,12 @@ class OpFeesTerms(models.Model):
     )
     code = fields.Char(required=True)
     note = fields.Text("Description")
-    company_id = fields.Many2one("res.company"", Company", required=True, default=lambda s: s.env.user.company_id
+    company_id = fields.Many2one(
+        "res.company", "Company", required=True, default=lambda s: s.env.user.company_id
     )
     no_days = fields.Integer("No of Days")
-    day_type = fields.Selection([("before""Before"), ("after", "After")], "Type")
-    line_ids = fields.One2many("op.fees.terms.line"", fees_id", "Terms")
+    day_type = fields.Selection([("before", "Before"), ("after", "After")], "Type")
+    line_ids = fields.One2many("op.fees.terms.line", "fees_id", "Terms")
     discount = fields.Float(string="Discount (%)", digits="Discount", default=0.0)
 
     @api.constrains("line_ids")
@@ -72,5 +74,5 @@ class OpFeesTerms(models.Model):
 class OpStudentCourseInherit(models.Model):
     _inherit = "op.student.course"
 
-    fees_term_id = fields.Many2one("op.fees.terms")
+    fees_term_id = fields.Many2one("op.fees.terms", "Fees Term")
     fees_start_date = fields.Date()

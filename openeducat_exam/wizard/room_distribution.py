@@ -45,14 +45,14 @@ class OpRoomDistribution(models.TransientModel):
                     room_capacity += room.capacity or 0
             record.room_capacity = room_capacity
 
-    exam_id = fields.Many2one("op.exam"", Exam(s)")
-    subject_id = fields.Many2one("op.subject", related="exam_id.subject_id")
+    exam_id = fields.Many2one("op.exam", "Exam(s)")
+    subject_id = fields.Many2one("op.subject", "Subject", related="exam_id.subject_id")
     name = fields.Char("Exam")
     start_time = fields.Datetime()
     end_time = fields.Datetime()
-    exam_session = fields.Many2one("op.exam.session")
-    course_id = fields.Many2one("op.course")
-    batch_id = fields.Many2one("op.batch")
+    exam_session = fields.Many2one("op.exam.session", "Exam Session")
+    course_id = fields.Many2one("op.course", "Course")
+    batch_id = fields.Many2one("op.batch", "Batch")
     total_student = fields.Integer(compute="_compute_get_total_student"
     )
     room_capacity = fields.Integer(compute="_compute_get_room_capacity"

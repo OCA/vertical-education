@@ -40,8 +40,8 @@ class OpAssignmentSubLine(models.Model):
             else:
                 user.user_boolean = False
 
-    assignment_id = fields.Many2one("op.assignment", required=True)
-    student_id = fields.Many2one("op.student", required=True)
+    assignment_id = fields.Many2one("op.assignment", "Assignment", required=True)
+    student_id = fields.Many2one("op.student", "Student", required=True)
     description = fields.Text(tracking=True)
     state = fields.Selection(
         [
@@ -61,14 +61,16 @@ class OpAssignmentSubLine(models.Model):
     )
     marks = fields.Float(tracking=True)
     note = fields.Text()
-    user_id = fields.Many2one("res.users", related=", student_id.user_id", string="User")
-    faculty_user_id = fields.Many2one("res.users", related=", assignment_id.faculty_id.user_id", string="Faculty User"
+    user_id = fields.Many2one("res.users", related="student_id.user_id", string="User")
+    faculty_user_id = fields.Many2one(
+        "res.users", related="assignment_id.faculty_id.user_id", string="Faculty User"
     )
     user_boolean = fields.Boolean(
         string="Check user", compute="_compute_get_user_group"
     )
     active = fields.Boolean(default=True)
-    company_id = fields.Many2one("res.company", string="Company", default=lambda self: self.env.user.company_id
+    company_id = fields.Many2one(
+        "res.company", string="Company", default=lambda self: self.env.user.company_id
     )
 
     def act_draft(self):
