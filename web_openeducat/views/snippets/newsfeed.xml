@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <template name="NewsFeed" id="newsfeed">
         <section id="newsfeed" class="pt64 pb64">
@@ -10,8 +9,9 @@
                             <h2 class="font-weight-bold text_format">Our
                                 <span class="font-weight-normal">Newsfeed</span>
                             </h2>
-                            <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                <br/>
+                            <p
+                            >tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                <br />
                                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             </p>
                         </div>
@@ -19,8 +19,10 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb32">
                         <div class="hovereffect">
                             <a href="#">
-                                <img src="/web_openeducat/static/src/img/blog-1.jpg"
-                                     class="img-fluid"/>
+                                <img
+                                    src="/web_openeducat/static/src/img/blog-1.jpg"
+                                    class="img-fluid"
+                                />
                             </a>
                         </div>
                         <div class="bg-white">
@@ -29,17 +31,19 @@
                                 <h6 class="font-weight-bold">
                                     <a href="#">Testing is a great thing.</a>
                                 </h6>
-                                <p class="text-o-color-5">doloremque laudan tium, totam ersps uns iste natus</p>
+                                <p
+                                    class="text-o-color-5"
+                                >doloremque laudan tium, totam ersps uns iste natus</p>
                                 <ul class="d-flex list-unstyled">
                                     <li class="me-4">
                                         <a href="#">
-                                            <i class="fa fa-user text-primary"></i>
+                                            <i class="fa fa-user text-primary" />
                                             Helen R. Penny
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-comments-o text-primary"></i>
+                                            <i class="fa fa-comments-o text-primary" />
                                             15
                                         </a>
                                     </li>
@@ -47,7 +51,7 @@
                             </div>
                             <div class="blog-date bg-secondary">
                                 <a href="#" class="text-white">
-                                    <i class="fa fa-calendar-o me-2"></i>
+                                    <i class="fa fa-calendar-o me-2" />
                                     Feb, 24th 2018
                                 </a>
                             </div>
@@ -56,8 +60,10 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb32">
                         <div class="hovereffect">
                             <a href="#">
-                                <img src="/web_openeducat/static/src/img/blog-2.jpg"
-                                     class="img-fluid"/>
+                                <img
+                                    src="/web_openeducat/static/src/img/blog-2.jpg"
+                                    class="img-fluid"
+                                />
                             </a>
                         </div>
                         <div class="bg-white">
@@ -66,17 +72,19 @@
                                 <h6 class="font-weight-bold">
                                     <a href="#">A variation of the ordinary.</a>
                                 </h6>
-                                <p class="text-o-color-5">doloremque laudan tium, totam ersps uns iste natus</p>
+                                <p
+                                    class="text-o-color-5"
+                                >doloremque laudan tium, totam ersps uns iste natus</p>
                                 <ul class="d-flex list-unstyled">
                                     <li class="me-4">
                                         <a href="#">
-                                            <i class="fa fa-user text-primary"></i>
+                                            <i class="fa fa-user text-primary" />
                                             Viola C. Anderson
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-comments-o text-primary"></i>
+                                            <i class="fa fa-comments-o text-primary" />
                                             10
                                         </a>
                                     </li>
@@ -84,18 +92,19 @@
                             </div>
                             <div class="blog-date bg-secondary">
                                 <a href="#" class="text-white">
-                                    <i class="fa fa-calendar-o me-2 "></i>
+                                    <i class="fa fa-calendar-o me-2 " />
                                     June, 30th 2018
                                 </a>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb32">
                         <div class="hovereffect">
                             <a href="#">
-                                <img src="/web_openeducat/static/src/img/blog-3.jpg"
-                                     class="img-fluid"/>
+                                <img
+                                    src="/web_openeducat/static/src/img/blog-3.jpg"
+                                    class="img-fluid"
+                                />
                             </a>
                         </div>
                         <div class="bg-white">
@@ -104,17 +113,19 @@
                                 <h6 class="font-weight-bold">
                                     <a href="#">In Publicing and graphic.</a>
                                 </h6>
-                                <p class="text-o-color-5">doloremque laudan tium, totam ersps uns iste natus</p>
+                                <p
+                                    class="text-o-color-5"
+                                >doloremque laudan tium, totam ersps uns iste natus</p>
                                 <ul class="d-flex list-unstyled">
                                     <li class="me-4">
                                         <a href="#">
-                                            <i class="fa fa-user text-primary"></i>
+                                            <i class="fa fa-user text-primary" />
                                             Peggy C. Schuler
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-comments-o text-primary"></i>
+                                            <i class="fa fa-comments-o text-primary" />
                                             12
                                         </a>
                                     </li>
@@ -122,7 +133,7 @@
                             </div>
                             <div class="blog-date bg-secondary">
                                 <a href="#" class="text-white">
-                                    <i class="fa fa-calendar-o me-2"></i>
+                                    <i class="fa fa-calendar-o me-2" />
                                     July, 14th 2018
                                 </a>
                             </div>
@@ -131,8 +142,10 @@
                     <div class="col-12 col-sm-12 col-md-6 col-lg-3">
                         <div class="hovereffect">
                             <a href="#">
-                                <img src="/web_openeducat/static/src/img/blog-4.jpg"
-                                     class="img-fluid"/>
+                                <img
+                                    src="/web_openeducat/static/src/img/blog-4.jpg"
+                                    class="img-fluid"
+                                />
                             </a>
                         </div>
                         <div class="bg-white">
@@ -141,17 +154,19 @@
                                 <h6 class="font-weight-bold">
                                     <a href="#">Learn english in ease.</a>
                                 </h6>
-                                <p class="text-o-color-5">doloremque laudan tium, totam ersps uns iste natus</p>
+                                <p
+                                    class="text-o-color-5"
+                                >doloremque laudan tium, totam ersps uns iste natus</p>
                                 <ul class="d-flex list-unstyled">
                                     <li class="me-4">
                                         <a href="#">
-                                            <i class="fa fa-user text-primary"></i>
+                                            <i class="fa fa-user text-primary" />
                                             May C. Dyer
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-comments-o text-primary"></i>
+                                            <i class="fa fa-comments-o text-primary" />
                                             20
                                         </a>
                                     </li>
@@ -160,7 +175,7 @@
                         </div>
                         <div class="blog-date bg-secondary">
                             <a href="#" class="text-white">
-                                <i class="fa fa-calendar-o me-2"></i>
+                                <i class="fa fa-calendar-o me-2" />
                                 Aug, 24th 2018
                             </a>
                         </div>

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 ###############################################################################
 #
 #    OpenEduCat Inc
@@ -20,45 +19,45 @@
 ###############################################################################
 
 {
-    'name': 'Web OpenEduCat',
-    'category': 'Website',
+    "name": "Web OpenEduCat",
+    "category": "Website",
     "sequence": 3,
-    'version': '18.0.1.0',
-    'license': 'AGPL-3',
-    'author': 'OpenEduCat Inc | Sufyaldy',
-    'website': 'https://www.openeducat.org | https://iainpare.ac.id',
-    'data': [
-        'views/assets.xml',
-        'views/snippets/slider.xml',
-        'views/snippets/about-us.xml',
-        'views/snippets/ourcourse.xml',
-        'views/snippets/achievement.xml',
-        'views/snippets/teacher.xml',
-        'views/snippets/event.xml',
-        'views/snippets/newsfeed.xml',
-        'views/snippets/footer.xml',
-        'views/image_library.xml'
+    "version": "18.0.1.0.0",
+    "license": "AGPL-3",
+    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy",
+    "website": "https://github.com/OCA/vertical-education",
+    "data": [
+        "views/assets.xml",
+        "views/snippets/slider.xml",
+        "views/snippets/about-us.xml",
+        "views/snippets/ourcourse.xml",
+        "views/snippets/achievement.xml",
+        "views/snippets/teacher.xml",
+        "views/snippets/event.xml",
+        "views/snippets/newsfeed.xml",
+        "views/snippets/footer.xml",
+        "views/image_library.xml",
     ],
-    'qweb': [
+    "qweb": [
         "static/src/xml/base_inherit.xml",
     ],
-    'demo': [
-        'data/homepage_demo.xml',
-        'data/footer_template.xml',
+    "demo": [
+        "data/homepage_demo.xml",
+        "data/footer_template.xml",
     ],
-    'images': [
-        'static/description/web_openeducat_banner.jpg',
+    "images": [
+        "static/description/web_openeducat_banner.jpg",
     ],
-    'depends': [
-        'website',
+    "depends": [
+        "website",
     ],
-    'application': True,
-    'assets': {
-        'web.assets_frontend': [
-            '/web_openeducat/static/src/scss/homepage.scss',
+    "application": True,
+    "assets": {
+        "web.assets_frontend": [
+            "/web_openeducat/static/src/scss/homepage.scss",
         ],
-        'web._assets_primary_variables': [
-            '/web_openeducat/static/src/scss/primary_variables.scss'
+        "web._assets_primary_variables": [
+            "/web_openeducat/static/src/scss/primary_variables.scss"
         ],
-    }
+    },
 }

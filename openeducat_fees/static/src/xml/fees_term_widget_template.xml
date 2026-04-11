@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <templates>
     <t t-name="website.FieldFeesTermsDisplay">
         <style>
@@ -74,19 +74,28 @@
         <div class="fees-terms-container">
             <t t-foreach="terms" t-as="term" t-key="term.value">
                 <label class="d-flex flex-column align-items-start">
-                    <input type="radio" t-att-value="term.value"
-                           t-att-name="props.name" t-att-checked="term_index === 0"
-                           style="opacity: 0; position: absolute;"/>
-                    <span t-attf-class="custom-radio-label {{ term.value == props.record.data[props.name] ? 'active' : '' }}"
-                        t-on-click="() => this._onClickLabel(term.value)">
+                    <input
+                        type="radio"
+                        t-att-value="term.value"
+                        t-att-name="props.name"
+                        t-att-checked="term_index === 0"
+                        style="opacity: 0; position: absolute;"
+                    />
+                    <span
+                        t-attf-class="custom-radio-label {{ term.value == props.record.data[props.name] ? 'active' : '' }}"
+                        t-on-click="() => this._onClickLabel(term.value)"
+                    >
                         <div style="margin:10px">
-                            <img t-attf-src="{{ ImagePath[term.value] }}"
-                                 alt="No Image" class="img"/>
+                            <img
+                                t-attf-src="{{ ImagePath[term.value] }}"
+                                alt="No Image"
+                                class="img"
+                            />
                         </div>
                         <div style="margin-left:8px;text-align:left">
-                            <t t-esc="term.label"/>
+                            <t t-esc="term.label" />
                             <div class="term-description">
-                                <p t-esc="description[term.value]"/>
+                                <p t-esc="description[term.value]" />
                             </div>
                         </div>
                     </span>

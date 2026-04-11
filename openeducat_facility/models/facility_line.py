@@ -27,10 +27,10 @@ class OpFacilityLine(models.Model):
     _rec_name = "facility_id"
     _description = "Manage Facility Line"
 
-    facility_id = fields.Many2one('op.facility', 'Facility', required=True)
-    quantity = fields.Float('Quantity', required=True)
+    facility_id = fields.Many2one("op.facility", "Facility", required=True)
+    quantity = fields.Float("Quantity", required=True)
 
-    @api.constrains('quantity')
+    @api.constrains("quantity")
     def check_quantity(self):
         for record in self:
             if record.quantity <= 0.0:

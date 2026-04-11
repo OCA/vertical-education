@@ -27,58 +27,61 @@ class OpMarksheetLine(models.Model):
     _rec_name = "student_id"
     _description = "Marksheet Line"
 
-    marksheet_reg_id = fields.Many2one(
-        'op.marksheet.register', 'Marksheet Register')
+    marksheet_reg_id = fields.Many2one("op.marksheet.register", "Marksheet Register")
     evaluation_type = fields.Selection(
-        related='marksheet_reg_id.exam_session_id.evaluation_type',
-        store=True)
-    student_id = fields.Many2one('op.student', 'Student', required=True)
-    result_line = fields.One2many(
-        'op.result.line', 'marksheet_line_id', 'Results')
-    total_marks = fields.Integer("Total Marks",
-                                 compute='_compute_total_marks',
-                                 store=True)
-    percentage = fields.Float("Percentage", compute='_compute_percentage',
-                              store=True)
+        related="marksheet_reg_id.exam_session_id.evaluation_type", store=True
+    )
+    student_id = fields.Many2one("op.student", "Student", required=True)
+    result_line = fields.One2many("op.result.line", "marksheet_line_id", "Results")
+    total_marks = fields.Integer(
+        "Total Marks", compute="_compute_total_marks", store=True
+    )
+    percentage = fields.Float("Percentage", compute="_compute_percentage", store=True)
     generated_date = fields.Date(
-        'Generated Date', required=True,
-        default=fields.Date.today())
-    grade = fields.Char('Grade', readonly=True, compute='_compute_grade')
-    status = fields.Selection([
-        ('pass', 'Pass'),
-        ('fail', 'Fail')
-    ], 'Status', compute='_compute_status', store=True)
+        "Generated Date", required=True, default=fields.Date.today()
+    )
+    grade = fields.Char("Grade", readonly=True, compute="_compute_grade")
+    status = fields.Selection(
+        [("pass", "Pass"), ("fail", "Fail")],
+        "Status",
+        compute="_compute_status",
+        store=True,
+    )
     active = fields.Boolean(default=True)
 
-    @api.constrains('total_marks', 'percentage')
+    @api.constrains("total_marks", "percentage")
     def _check_marks(self):
         for record in self:
             if (record.total_marks < 0.0) or (record.percentage < 0.0):
                 raise ValidationError(_("Enter proper marks or percentage!"))
 
-    @api.depends('result_line.marks')
+    @api.depends("result_line.marks")
     def _compute_total_marks(self):
         for record in self:
-            record.total_marks = sum([
-                int(x.marks) for x in record.result_line])
+            record.total_marks = sum([int(x.marks) for x in record.result_line])
 
-    @api.depends('total_marks')
+    @api.depends("total_marks")
     def _compute_percentage(self):
         for record in self:
             total_exam_marks = sum(
-                [int(x.exam_id.total_marks) for x in record.result_line])
-            record.percentage = \
-                record.total_marks and \
-                (100 * record.total_marks) / total_exam_marks or 0.0
+                [int(x.exam_id.total_marks) for x in record.result_line]
+            )
+            record.percentage = (
+                record.total_marks
+                and (100 * record.total_marks) / total_exam_marks
+                or 0.0
+            )
 
-    @api.depends('percentage')
+    @api.depends("percentage")
     def _compute_grade(self):
         for record in self:
-            if record.evaluation_type == 'grade':
+            if record.evaluation_type == "grade":
                 grades = record.marksheet_reg_id.result_template_id.grade_ids
                 for grade in grades:
-                    if grade.min_per <= record.percentage and \
-                            grade.max_per >= record.percentage:
+                    if (
+                        grade.min_per <= record.percentage
+                        and grade.max_per >= record.percentage
+                    ):
                         record.grade = grade.result
                         break
                     else:
@@ -86,10 +89,10 @@ class OpMarksheetLine(models.Model):
             else:
                 record.grade = None
 
-    @api.depends('result_line.status')
+    @api.depends("result_line.status")
     def _compute_status(self):
         for record in self:
-            record.status = 'pass'
+            record.status = "pass"
             for result in record.result_line:
-                if result.status == 'fail':
-                    record.status = 'fail'
+                if result.status == "fail":
+                    record.status = "fail"

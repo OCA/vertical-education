@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <template name="Event" id="event">
-        <section class="pt64 pb64" id="event"
-                 style="background-image:url(&quot; /web_openeducat/static/src/img/bg-3.jpg &quot;)">
+        <section
+            class="pt64 pb64"
+            id="event"
+            style="background-image:url(&quot; /web_openeducat/static/src/img/bg-3.jpg &quot;)"
+        >
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 pb32">
@@ -11,8 +13,9 @@
                             <h2 class="font-weight-bold text_format">Our
                                 <span class="font-weight-normal">Event</span>
                             </h2>
-                            <p>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                <br/>
+                            <p
+                            >tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                <br />
                                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             </p>
                         </div>
@@ -21,9 +24,11 @@
                         <div class="single-event bg-white">
                             <div class="event-img">
                                 <a href="#" target="_blank">
-                                    <img src="/web_openeducat/static/src/img/event-1.jpg"
-                                         alt="event1"
-                                         class="img-fluid"/>
+                                    <img
+                                        src="/web_openeducat/static/src/img/event-1.jpg"
+                                        alt="event1"
+                                        class="img-fluid"
+                                    />
                                 </a>
 
                                 <div class="event-date-wrap">
@@ -35,19 +40,21 @@
                                 <h5 class="font-weight-bold">
                                     <a href="#">Academic Conference Maui.</a>
                                 </h5>
-                                <p class="text-o-color-5">Pvolupttem accusantium doloremque laudantium, totam
+                                <p
+                                    class="text-o-color-5"
+                                >Pvolupttem accusantium doloremque laudantium, totam
                                     erspiciatis unde omnis iste
                                     natus error .
                                 </p>
                                 <div class="event-meta-wrap">
                                     <div class="event-meta pb8 media">
-                                        <i class="fa fa-location-arrow"></i>
+                                        <i class="fa fa-location-arrow" />
                                         <div class="media-body">
                                             <span>Birmingham ,Alabama</span>
                                         </div>
                                     </div>
                                     <div class="event-meta media">
-                                        <i class="fa fa-clock-o"></i>
+                                        <i class="fa fa-clock-o" />
                                         <div class="media-body">
                                             <span>10:30 am</span>
                                         </div>
@@ -55,17 +62,16 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb16">
                         <div class="single-event bg-white">
                             <div class="event-img">
                                 <a href="#" target="_blank">
-
-                                    <img src="/web_openeducat/static/src/img/event-2.jpg"
-                                         alt="event2"
-                                         class="img-fluid"/>
+                                    <img
+                                        src="/web_openeducat/static/src/img/event-2.jpg"
+                                        alt="event2"
+                                        class="img-fluid"
+                                    />
                                 </a>
 
                                 <div class="event-date-wrap">
@@ -77,19 +83,21 @@
                                 <h5 class="font-weight-bold">
                                     <a href="#">Social Sciences &amp; Education.</a>
                                 </h5>
-                                <p class="text-o-color-5">Pvolupttem accusantium doloremque laudantium, totam
+                                <p
+                                    class="text-o-color-5"
+                                >Pvolupttem accusantium doloremque laudantium, totam
                                     erspiciatis unde omnis iste
                                     natus error .
                                 </p>
                                 <div class="event-meta-wrap">
                                     <div class="event-meta pb8 media">
-                                        <i class="fa fa-location-arrow"></i>
+                                        <i class="fa fa-location-arrow" />
                                         <div class="media-body">
                                             <span>Sitka ,Alaska</span>
                                         </div>
                                     </div>
                                     <div class="event-meta media">
-                                        <i class="fa fa-clock-o"></i>
+                                        <i class="fa fa-clock-o" />
                                         <div class="media-body">
                                             <span>11:30 am</span>
                                         </div>
@@ -97,16 +105,16 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb16">
                         <div class="single-event bg-white">
                             <div class="event-img">
                                 <a href="#" target="_blank">
-
-                                    <img src="/web_openeducat/static/src/img/event-3.jpg"
-                                         alt="event3"
-                                         class="img-fluid"/>
+                                    <img
+                                        src="/web_openeducat/static/src/img/event-3.jpg"
+                                        alt="event3"
+                                        class="img-fluid"
+                                    />
                                 </a>
 
                                 <div class="event-date-wrap">
@@ -118,19 +126,21 @@
                                 <h5 class="font-weight-bold">
                                     <a href="#">Health &amp; Safety Awareness.</a>
                                 </h5>
-                                <p class="text-o-color-5">Pvolupttem accusantium doloremque laudantium, totam
+                                <p
+                                    class="text-o-color-5"
+                                >Pvolupttem accusantium doloremque laudantium, totam
                                     erspiciatis unde omnis iste
                                     natus error .
                                 </p>
                                 <div class="event-meta-wrap">
                                     <div class="event-meta pb8 media">
-                                        <i class="fa fa-location-arrow"></i>
+                                        <i class="fa fa-location-arrow" />
                                         <div class="media-body">
                                             <span>San Francisco ,California</span>
                                         </div>
                                     </div>
                                     <div class="event-meta media">
-                                        <i class="fa fa-clock-o"></i>
+                                        <i class="fa fa-clock-o" />
                                         <div class="media-body">
                                             <span>12:00 pm</span>
                                         </div>
@@ -138,7 +148,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

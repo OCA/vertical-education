@@ -29,10 +29,10 @@ class ReportMediaBarcode(models.AbstractModel):
 
     @api.model
     def _get_report_values(self, docids, data=None):
-        docs = self.env['op.media'].browse(docids)
+        docs = self.env["op.media"].browse(docids)
         docargs = {
-            'doc_model': 'op.media',
-            'docs': docs,
-            'time': time,
+            "doc_model": "op.media",
+            "docs": docs,
+            "time": time,
         }
         return docargs

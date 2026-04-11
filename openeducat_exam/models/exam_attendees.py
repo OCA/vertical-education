@@ -27,29 +27,37 @@ class OpExamAttendees(models.Model):
     _rec_name = "student_id"
     _description = "Exam Attendees"
 
-    student_id = fields.Many2one('op.student', 'Student', required=True)
+    student_id = fields.Many2one("op.student", "Student", required=True)
     status = fields.Selection(
-        [('present', 'Present'), ('absent', 'Absent')],
-        'Status', default="present", required=True)
-    marks = fields.Integer('Marks')
-    note = fields.Text('Note')
-    exam_id = fields.Many2one(
-        'op.exam', 'Exam', required=True, ondelete="cascade")
-    course_id = fields.Many2one('op.course', 'Course',
-                                compute='_compute_exam_details',
-                                store=True, readonly=True)
-    batch_id = fields.Many2one('op.batch', 'Batch',
-                               compute='_compute_exam_details',
-                               store=True, readonly=True)
-    room_id = fields.Many2one('op.exam.room', 'Room')
+        [("present", "Present"), ("absent", "Absent")],
+        "Status",
+        default="present",
+        required=True,
+    )
+    marks = fields.Integer("Marks")
+    note = fields.Text("Note")
+    exam_id = fields.Many2one("op.exam", "Exam", required=True, ondelete="cascade")
+    course_id = fields.Many2one(
+        "op.course",
+        "Course",
+        compute="_compute_exam_details",
+        store=True,
+        readonly=True,
+    )
+    batch_id = fields.Many2one(
+        "op.batch", "Batch", compute="_compute_exam_details", store=True, readonly=True
+    )
+    room_id = fields.Many2one("op.exam.room", "Room")
 
     _sql_constraints = [
-        ('unique_attendees',
-         'unique(student_id,exam_id)',
-         'Attendee must be unique per exam.'),
+        (
+            "unique_attendees",
+            "unique(student_id,exam_id)",
+            "Attendee must be unique per exam.",
+        ),
     ]
 
-    @api.onchange('marks')
+    @api.onchange("marks")
     def _onchange_marks(self):
         if self.exam_id:
             for attendee in self.exam_id.attendees_line:
@@ -58,7 +66,7 @@ class OpExamAttendees(models.Model):
                     return
             self.exam_id.results_entered = False
 
-    @api.depends('exam_id')
+    @api.depends("exam_id")
     def _compute_exam_details(self):
         for record in self:
             if record.exam_id:
@@ -68,7 +76,7 @@ class OpExamAttendees(models.Model):
                 record.course_id = False
                 record.batch_id = False
 
-    @api.onchange('exam_id')
+    @api.onchange("exam_id")
     def onchange_exam(self):
         if self.exam_id:
             self.course_id = self.exam_id.session_id.course_id.id
@@ -78,15 +86,17 @@ class OpExamAttendees(models.Model):
             self.batch_id = False
         self.student_id = False
 
-    @api.constrains('marks', 'status')
+    @api.constrains("marks", "status")
     def _check_marks(self):
         for record in self:
-            if record.status == 'present':
+            if record.status == "present":
                 if record.exam_id and (
-                        record.marks < 0 or record.marks > record.exam_id.total_marks):
+                    record.marks < 0 or record.marks > record.exam_id.total_marks
+                ):
                     raise ValidationError(
                         _("Please Enter Marks between 0 and %d for a present student.")
-                        % record.exam_id.total_marks)
-            elif record.status == 'absent':
+                        % record.exam_id.total_marks
+                    )
+            elif record.status == "absent":
                 if record.marks and record.marks != 0:
                     record.marks = 0

@@ -1,11 +1,11 @@
 /** @odoo-module **/
 
-import { CharField, charField } from "@web/views/fields/char/char_field";
-import { registry } from "@web/core/registry";
-import { onMounted, useEffect } from "@odoo/owl";
+import {CharField, charField} from "@web/views/fields/char/char_field";
+import {registry} from "@web/core/registry";
+import {onMounted, useEffect} from "@odoo/owl";
 
 export class InlineCharField extends CharField {
-    static template = 'openeducat_core.InlineCharField';
+    static template = "openeducat_core.InlineCharField";
 
     setup() {
         super.setup();

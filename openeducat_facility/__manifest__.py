@@ -19,30 +19,28 @@
 ###############################################################################
 
 {
-    'name': 'OpenEduCat Facility',
-    'version': '18.0.1.0',
-    'license': 'AGPL-3',
-    'category': 'Education',
+    "name": "OpenEduCat Facility",
+    "version": "18.0.1.0.0",
+    "license": "AGPL-3",
+    "category": "Education",
     "sequence": 3,
-    'summary': 'Manage Facility',
-    'complexity': "easy",
-    'author': 'OpenEduCat Inc | Sufyaldy',
-    'website': 'https://www.openeducat.org | https://iainpare.ac.id',
-    'depends': ['openeducat_core'],
-    'data': [
-        'security/op_facility_security.xml',
-        'security/ir.model.access.csv',
-        'views/facility_view.xml',
-        'views/facility_line_view.xml',
-        'menus/op_menu.xml',
+    "summary": "Manage Facility",
+    "complexity": "easy",
+    "author": "OpenEduCat Inc, Odoo Community Association (OCA), Sufyaldy",
+    "website": "https://github.com/OCA/vertical-education",
+    "depends": ["openeducat_core"],
+    "data": [
+        "security/op_facility_security.xml",
+        "security/ir.model.access.csv",
+        "views/facility_view.xml",
+        "views/facility_line_view.xml",
+        "menus/op_menu.xml",
     ],
-    'demo': [
-        'demo/facility_demo.xml'
+    "demo": ["demo/facility_demo.xml"],
+    "images": [
+        "static/description/openeducat-facility_banner.jpg",
     ],
-    'images': [
-        'static/description/openeducat-facility_banner.jpg',
-    ],
-    'installable': True,
-    'auto_install': False,
-    'application': True,
+    "installable": True,
+    "auto_install": False,
+    "application": True,
 }

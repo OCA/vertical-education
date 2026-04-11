@@ -1,14 +1,14 @@
 /** @odoo-module **/
 
-import { Many2OneField, many2OneField } from "@web/views/fields/many2one/many2one_field";
-import { registry } from "@web/core/registry";
-import { Many2XAutocomplete } from "@web/views/fields/relational_utils";
-import { onMounted, useRef } from "@odoo/owl";
+import {Many2OneField, many2OneField} from "@web/views/fields/many2one/many2one_field";
+import {registry} from "@web/core/registry";
+import {Many2XAutocomplete} from "@web/views/fields/relational_utils";
+import {onMounted, useRef} from "@odoo/owl";
 
-export class AutoMany2XAutocomplete extends Many2XAutocomplete{
-    static template = 'openeducat_core.Many2XAutocomplete';
+export class AutoMany2XAutocomplete extends Many2XAutocomplete {
+    static template = "openeducat_core.Many2XAutocomplete";
     setup() {
-        this.input = useRef('input');
+        this.input = useRef("input");
         super.setup();
         onMounted(() => {
             this._createSizer();
@@ -16,7 +16,7 @@ export class AutoMany2XAutocomplete extends Many2XAutocomplete{
         });
     }
 
-    onChange({ inputValue }) {
+    onChange({inputValue}) {
         super.onChange(...arguments);
         this._resizeInput();
     }
@@ -40,7 +40,7 @@ export class AutoMany2XAutocomplete extends Many2XAutocomplete{
     }
 
     _resizeInput(defaultValue = null) {
-        const input = this.autoCompleteContainer.el.querySelector('input');
+        const input = this.autoCompleteContainer.el.querySelector("input");
         if (!input) return;
 
         const value = defaultValue || input.value || input.placeholder || "";
@@ -55,8 +55,8 @@ export class AutoMany2XAutocomplete extends Many2XAutocomplete{
 export class InlineMany2OneField extends Many2OneField {
     static components = {
         ...Many2OneField.components,
-        Many2XAutocomplete: AutoMany2XAutocomplete
-    }
+        Many2XAutocomplete: AutoMany2XAutocomplete,
+    };
     setup() {
         super.setup();
         onMounted(() => {
